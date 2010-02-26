@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-02-23 14:39+0200\n"
-"PO-Revision-Date: 2010-02-23 18:46+0200\n"
+"PO-Revision-Date: 2010-02-26 16:48+0200\n"
 "Last-Translator: Leonid Kanter <leon@asplinux.ru>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -19,33 +19,33 @@ msgstr ""
 
 #: ../data/solang.desktop.in.in.h:1
 msgid "@PACKAGE_NAME@ Photo Manager"
-msgstr ""
+msgstr "Управлние фотографиями в @PACKAGE_NAME@"
 
 #: ../data/solang.desktop.in.in.h:2
 msgid "Organize, enjoy and share your photos"
-msgstr ""
+msgstr "Организация, просмотри и размещение фотографий"
 
 #: ../data/solang.desktop.in.in.h:3
 msgid "Photo Manager"
-msgstr ""
+msgstr "Управление фотографиями"
 
 #: ../src/application/main-window.cpp:229
 msgid "_Photo"
-msgstr ""
+msgstr "_Фотографии"
 
 #: ../src/application/main-window.cpp:238
 #: ../src/renderer/browser-renderer.cpp:130
 msgid "_Edit"
-msgstr ""
+msgstr "_Правка"
 
 #: ../src/application/main-window.cpp:243
 #: ../src/renderer/browser-renderer.cpp:135
 msgid "_Add to Export Queue"
-msgstr ""
+msgstr "_Добавить в очередь экспорта"
 
 #: ../src/application/main-window.cpp:250
 msgid "_Clear Export Queue"
-msgstr ""
+msgstr "_Очистить очередь экспорта"
 
 #: ../src/application/main-window.cpp:255
 msgid "_View"
@@ -57,7 +57,7 @@ msgstr "Па_нель инструментов"
 
 #: ../src/application/main-window.cpp:260
 msgid "Show or hide the toolbar in the current window"
-msgstr ""
+msgstr "Показать или скрыть панель инструментов в текущем окне"
 
 #: ../src/application/main-window.cpp:266
 msgid "_Statusbar"
@@ -69,11 +69,11 @@ msgstr "Показать или скрыть строку состояния в 
 
 #: ../src/application/main-window.cpp:274
 msgid "_Full Screen"
-msgstr ""
+msgstr "_Во весь экран"
 
 #: ../src/application/main-window.cpp:275
 msgid "Show the current photo in full screen mode"
-msgstr ""
+msgstr "Показать текущую фотографию в полноэкранном режиме"
 
 #: ../src/application/main-window.cpp:292
 msgid "_Help"
@@ -81,12 +81,14 @@ msgstr "_Справка"
 
 #: ../src/application/main-window.cpp:597
 msgid "A photo manager for GNOME"
-msgstr ""
+msgstr "Управление фотографиями для среды GNOME"
 
 #. Translators: Put your names here.
 #: ../src/application/main-window.cpp:628
 msgid "translator-credits"
 msgstr ""
+"Slava Zanko <slavazanko@gmail.com>\n"
+"Леонид Кантер <leon@asplinux.ru>"
 
 #: ../src/application/main-window.cpp:633
 msgctxt "Project website"
@@ -111,7 +113,7 @@ msgstr "Диафрагма"
 
 #: ../src/attribute/basic-exif-view.cpp:171
 msgid "ISO speed"
-msgstr "ISO"
+msgstr "Значение ISO"
 
 #: ../src/attribute/basic-exif-view.cpp:190
 msgid "Metering mode"
@@ -127,15 +129,15 @@ msgstr "Баланс белого"
 
 #: ../src/attribute/date-manager.cpp:50
 msgid "Picture Taken Date"
-msgstr ""
+msgstr "Дата съемки"
 
 #: ../src/attribute/property-manager.cpp:49
 msgid "Properties"
-msgstr ""
+msgstr "Свойства"
 
 #: ../src/attribute/property-manager.cpp:75
 msgid "Basic"
-msgstr ""
+msgstr "Основные"
 
 #: ../src/attribute/property-manager.cpp:76
 msgid "Histogram"
@@ -147,70 +149,70 @@ msgstr "Поиск"
 
 #: ../src/attribute/search-manager.cpp:66
 msgid "Select _All"
-msgstr ""
+msgstr "Выделить _все"
 
 #: ../src/attribute/search-manager.cpp:67
 msgid "Select all the filters in this list"
-msgstr ""
+msgstr "Выделить все фильтры в списке"
 
 #: ../src/attribute/search-manager.cpp:75
 msgid "_Remove"
-msgstr ""
+msgstr "_Удалить"
 
 #: ../src/attribute/search-manager.cpp:76
 msgid "Remove the selected filters from this list"
-msgstr ""
+msgstr "Удалить выделенные фильтры из списка"
 
 #: ../src/attribute/tag-manager.cpp:54
 msgid "Tags"
-msgstr ""
+msgstr "Метки"
 
 #: ../src/attribute/tag-manager.cpp:100
 msgid "_Tags"
-msgstr ""
+msgstr "_Метки"
 
 #: ../src/attribute/tag-manager.cpp:105
 msgid "Create New _Tag..."
-msgstr ""
+msgstr "Создать _новую метку..."
 
 #: ../src/attribute/tag-manager.cpp:112
 msgid "_Edit Selected Tag..."
-msgstr ""
+msgstr "_Изменить выделенную метку..."
 
 #: ../src/attribute/tag-manager.cpp:119
 msgid "_Delete Selected Tag"
-msgstr ""
+msgstr "_Удалить выделенную метку"
 
 #: ../src/attribute/tag-manager.cpp:125
 msgid "_Attach Tag to Selection"
-msgstr ""
+msgstr "_Добавить метку к выбранному"
 
 #: ../src/attribute/tag-manager.cpp:132
 msgid "_Remove Tag From Selection"
-msgstr ""
+msgstr "_Удалить метку с выбранного"
 
 #: ../src/attribute/tag-new-dialog.cpp:39
 #: ../src/attribute/tag-new-dialog.cpp:69
 msgid "Parent:"
-msgstr ""
+msgstr "Родительская:"
 
 #: ../src/attribute/tag-new-dialog.cpp:44
 #: ../src/attribute/tag-new-dialog.cpp:74
 msgid "Name:"
-msgstr ""
+msgstr "Имя:"
 
 #: ../src/attribute/tag-new-dialog.cpp:49
 #: ../src/attribute/tag-new-dialog.cpp:79
 msgid "Description:"
-msgstr ""
+msgstr "Описание:"
 
 #: ../src/attribute/tag-new-dialog.cpp:56
 msgid "Create New Tag"
-msgstr ""
+msgstr "Создание новой метки"
 
 #: ../src/attribute/tag-new-dialog.cpp:127
 msgid "Select Tag Icon"
-msgstr ""
+msgstr "Выберите значок этой метки"
 
 #: ../src/common/exif-data.cpp:161
 msgctxt "Flash"
@@ -225,42 +227,42 @@ msgstr "Включена"
 #: ../src/common/exif-data.cpp:199
 msgctxt "Metering mode"
 msgid "Average"
-msgstr ""
+msgstr "Средний"
 
 #: ../src/common/exif-data.cpp:204
 msgctxt "Metering mode"
 msgid "Center Weighted Average"
-msgstr ""
+msgstr "Центровзвешенный"
 
 #: ../src/common/exif-data.cpp:208
 msgctxt "Metering mode"
 msgid "Spot"
-msgstr ""
+msgstr "Точечный"
 
 #: ../src/common/exif-data.cpp:212
 msgctxt "Metering mode"
 msgid "Multi-spot"
-msgstr ""
+msgstr "Матричный"
 
 #: ../src/common/exif-data.cpp:216
 msgctxt "Metering mode"
 msgid "Pattern"
-msgstr ""
+msgstr "Шаблонный"
 
 #: ../src/common/exif-data.cpp:220
 msgctxt "Metering mode"
 msgid "Partial"
-msgstr ""
+msgstr "Полуавтоматический"
 
 #: ../src/common/exif-data.cpp:236
 msgctxt "White balance"
 msgid "Automatic"
-msgstr "Авто"
+msgstr "Автоматический"
 
 #: ../src/common/exif-data.cpp:240
 msgctxt "White balance"
 msgid "Manual"
-msgstr "Вручную"
+msgstr "Ручной"
 
 #: ../src/common/histogram-viewer.cpp:38
 msgid "Type"
@@ -286,84 +288,84 @@ msgstr "RGB"
 
 #: ../src/common/histogram-viewer.cpp:86
 msgid "Red"
-msgstr ""
+msgstr "Красный"
 
 #: ../src/common/histogram-viewer.cpp:91
 msgid "Green"
-msgstr ""
+msgstr "Зелёный"
 
 #: ../src/common/histogram-viewer.cpp:96
 msgid "Blue"
-msgstr ""
+msgstr "Синий"
 
 #: ../src/editor/editor.cpp:113
 msgid "T_ools"
-msgstr ""
+msgstr "У_тилиты"
 
 #: ../src/editor/editor.cpp:117
 msgid "_Transform"
-msgstr ""
+msgstr "_Преобразование"
 
 #: ../src/editor/editor.cpp:123
 msgid "Flip _Horizontal"
-msgstr ""
+msgstr "_Горизонтальное отражение"
 
 #: ../src/editor/editor.cpp:124
 msgid "Mirror the photo horizontally"
-msgstr ""
+msgstr "Отразить фото по горизонтали"
 
 #: ../src/editor/editor.cpp:135
 msgid "Flip _Vertical"
-msgstr ""
+msgstr "_Вертикальное отражение"
 
 #: ../src/editor/editor.cpp:136
 msgid "Mirror the photo vertically"
-msgstr ""
+msgstr "Отразить фото по вертикали"
 
 #: ../src/editor/editor.cpp:147
 msgid "_Rotate Clockwise"
-msgstr ""
+msgstr "Повернуть по _часовой"
 
 #: ../src/editor/editor.cpp:148
 msgid "Rotate the photo 90 degrees to the right"
-msgstr ""
+msgstr "Повернуть фото на 90 градусов вправо"
 
 #: ../src/editor/editor.cpp:159
 msgid "Rotate Counterc_lockwise"
-msgstr ""
+msgstr "Повернуть п_ротив часовой"
 
 #: ../src/editor/editor.cpp:160
 msgid "Rotate the photo 90 degrees to the left"
-msgstr ""
+msgstr "Повернуть фото на 90 градусов влево"
 
 #: ../src/editor/flip-horiz-operation.cpp:43
 msgid "Flipping horizontally..."
-msgstr ""
+msgstr "Отражение по горизонтали..."
 
 #: ../src/editor/flip-operation.cpp:59
 msgid "Flipping..."
-msgstr ""
+msgstr "Отражение..."
 
 #: ../src/editor/flip-vert-operation.cpp:43
 msgid "Flipping vertically..."
-msgstr ""
+msgstr "Отражение по вертикали..."
 
 #: ../src/editor/rotate-clock-operation.cpp:43
 msgid "Rotating clockwise..."
-msgstr ""
+msgstr "Поворот по часовой стрелке..."
 
 #: ../src/editor/rotate-counter-operation.cpp:43
 msgid "Rotating counterclockwise..."
-msgstr ""
+msgstr "Поворот против часовой стрелки..."
 
 #: ../src/editor/rotate-operation.cpp:57
 msgid "Rotating..."
-msgstr ""
+msgstr "Поворот..."
 
 #: ../src/exporter/brasero-destination.cpp:91
 #: ../src/exporter/directory-destination.cpp:90
 msgid "Exporting photos"
-msgstr ""
+msgstr "Экспорт фотографий"
 
 #: ../src/exporter/brasero-destination.cpp:166
 msgid "_CD/DVD..."
@@ -375,7 +377,7 @@ msgstr "Экспорт на CD/DVD"
 
 #: ../src/exporter/directory-destination.cpp:178
 msgid "Select Folder"
-msgstr ""
+msgstr "Выберите папку"
 
 #: ../src/exporter/directory-destination.cpp:187
 msgid "_Folder..."
@@ -387,15 +389,15 @@ msgstr "Экспорт"
 
 #: ../src/exporter/exporter-dialog.cpp:42
 msgid "_Destination:"
-msgstr ""
+msgstr "_Назначение:"
 
 #: ../src/exporter/exporter-dialog.cpp:44
 msgid "_Detect duplicates"
-msgstr ""
+msgstr "_Определять дубликаты"
 
 #: ../src/exporter/exporter-dialog.cpp:48
 msgid "_Create an archive"
-msgstr ""
+msgstr "Со_здать архив"
 
 #: ../src/exporter/exporter-dialog.cpp:66
 msgctxt "A group of UI controls"
@@ -419,11 +421,11 @@ msgstr "С_лайдшоу"
 #: ../src/renderer/browser-renderer.cpp:144
 #: ../src/renderer/enlarged-renderer.cpp:305
 msgid "Start a slideshow view of the photos"
-msgstr "Начать просмотри фото в режиме слайдшоу"
+msgstr "Начать просмотр фотографий в режиме слайдшоу"
 
 #: ../src/renderer/browser-renderer.cpp:153
 msgid "Enlarge or shrink the thumbnails"
-msgstr ""
+msgstr "Увеличить или уменьшить миниатюры"
 
 #: ../src/renderer/browser-renderer.cpp:175
 #: ../src/renderer/enlarged-renderer.cpp:317
@@ -431,32 +433,32 @@ msgstr ""
 #: ../src/renderer/enlarged-renderer.cpp:462
 #: ../src/renderer/enlarged-renderer.cpp:471
 msgid "_Zoom In"
-msgstr ""
+msgstr "_Увеличить"
 
 #: ../src/renderer/browser-renderer.cpp:176
 msgid "Enlarge the thumbnails"
-msgstr ""
+msgstr "Увеличить миниатюры"
 
 #: ../src/renderer/browser-renderer.cpp:187
 msgid "_Zoom Out"
-msgstr ""
+msgstr "У_меньшить"
 
 #: ../src/renderer/browser-renderer.cpp:188
 msgid "Shrink the thumbnails"
-msgstr ""
+msgstr "Уменьшить миниатюры"
 
 #: ../src/renderer/browser-renderer.cpp:199
 #: ../src/renderer/enlarged-renderer.cpp:312
 msgid "_Go"
-msgstr ""
+msgstr "Пе_реход"
 
 #: ../src/renderer/browser-renderer.cpp:204
 msgid "_Previous Page"
-msgstr ""
+msgstr "П_редыдущая страница"
 
 #: ../src/renderer/browser-renderer.cpp:205
 msgid "Go to the previous page in the collection"
-msgstr ""
+msgstr "Перейти к предыдущей странице в коллекции"
 
 #: ../src/renderer/browser-renderer.cpp:208
 #: ../src/renderer/enlarged-renderer.cpp:378
@@ -501,7 +503,7 @@ msgstr "Перейти к последней странице коллекции
 #: ../src/renderer/enlarged-renderer.cpp:72
 msgctxt "Mode or view"
 msgid "Enlarged"
-msgstr ""
+msgstr "Увеличение"
 
 #: ../src/renderer/enlarged-renderer.cpp:318
 #: ../src/renderer/enlarged-renderer.cpp:454
@@ -512,7 +514,7 @@ msgstr ""
 #: ../src/renderer/slideshow-window.cpp:119
 #: ../src/renderer/slideshow-window.cpp:128
 msgid "Enlarge the photo"
-msgstr "Увеличить фото"
+msgstr "Увеличить фотографию"
 
 #: ../src/renderer/enlarged-renderer.cpp:320
 #: ../src/renderer/slideshow-window.cpp:74
@@ -521,13 +523,13 @@ msgstr "Увеличить фото"
 #: ../src/renderer/slideshow-window.cpp:127
 msgctxt "Zoom"
 msgid "In"
-msgstr ""
+msgstr "Увеличить"
 
 #: ../src/renderer/enlarged-renderer.cpp:331
 #: ../src/renderer/enlarged-renderer.cpp:480
 #: ../src/renderer/enlarged-renderer.cpp:489
 msgid "Zoom _Out"
-msgstr ""
+msgstr "У_меньшить"
 
 #: ../src/renderer/enlarged-renderer.cpp:332
 #: ../src/renderer/enlarged-renderer.cpp:481
@@ -536,7 +538,7 @@ msgstr ""
 #: ../src/renderer/slideshow-window.cpp:137
 #: ../src/renderer/slideshow-window.cpp:146
 msgid "Shrink the photo"
-msgstr ""
+msgstr "Уменьшить фотографию"
 
 #: ../src/renderer/enlarged-renderer.cpp:334
 #: ../src/renderer/slideshow-window.cpp:83
@@ -544,7 +546,7 @@ msgstr ""
 #: ../src/renderer/slideshow-window.cpp:145
 msgctxt "Zoom"
 msgid "Out"
-msgstr ""
+msgstr "Уменьшить"
 
 #: ../src/renderer/enlarged-renderer.cpp:345
 msgid "_Normal Size"
@@ -553,7 +555,7 @@ msgstr "_Нормальный размер"
 #: ../src/renderer/enlarged-renderer.cpp:346
 #: ../src/renderer/slideshow-window.cpp:93
 msgid "Show the photo at its normal size"
-msgstr "Показать фото в его нормальном размере"
+msgstr "Показать фотографию в её оригинальном размере"
 
 #: ../src/renderer/enlarged-renderer.cpp:349
 #: ../src/renderer/slideshow-window.cpp:92
@@ -563,76 +565,76 @@ msgstr "Нормальный"
 
 #: ../src/renderer/enlarged-renderer.cpp:360
 msgid "Best _Fit"
-msgstr ""
+msgstr "_Оптимальный"
 
 #: ../src/renderer/enlarged-renderer.cpp:361
 #: ../src/renderer/slideshow-window.cpp:102
 msgid "Fit the photo to the window"
-msgstr ""
+msgstr "По размеру текущего окна"
 
 #: ../src/renderer/enlarged-renderer.cpp:363
 #: ../src/renderer/slideshow-window.cpp:101
 msgctxt "Zoom"
 msgid "Fit"
-msgstr ""
+msgstr "Оптимальный"
 
 #: ../src/renderer/enlarged-renderer.cpp:374
 #: ../src/renderer/enlarged-renderer.cpp:420
 msgid "_Previous Photo"
-msgstr "П_редыдущее фото"
+msgstr "П_редыдущая фотография"
 
 #: ../src/renderer/enlarged-renderer.cpp:375
 #: ../src/renderer/enlarged-renderer.cpp:421
 #: ../src/renderer/slideshow-renderer.cpp:170
 #: ../src/renderer/slideshow-renderer.cpp:214
 msgid "Go to the previous photo in the collection"
-msgstr "Перейти к предыдущему фото в коллекции"
+msgstr "Перейти к предыдущей фотографии в коллекции"
 
 #: ../src/renderer/enlarged-renderer.cpp:389
 #: ../src/renderer/enlarged-renderer.cpp:429
 msgid "_Next Photo"
-msgstr "С_ледующее фото"
+msgstr "С_ледующая фотография"
 
 #: ../src/renderer/enlarged-renderer.cpp:390
 #: ../src/renderer/enlarged-renderer.cpp:430
 #: ../src/renderer/slideshow-renderer.cpp:179
 #: ../src/renderer/slideshow-renderer.cpp:223
 msgid "Go to the next photo in the collection"
-msgstr "Перейти к следующему фото в коллекции"
+msgstr "Перейти к следующей фотографии в коллекции"
 
 #: ../src/renderer/enlarged-renderer.cpp:404
 #: ../src/renderer/enlarged-renderer.cpp:437
 msgid "_First Photo"
-msgstr "_Первое фото"
+msgstr "_Первая фотография"
 
 #: ../src/renderer/enlarged-renderer.cpp:405
 #: ../src/renderer/enlarged-renderer.cpp:438
 #: ../src/renderer/slideshow-renderer.cpp:162
 #: ../src/renderer/slideshow-renderer.cpp:206
 msgid "Go to the first photo in the collection"
-msgstr "Перейти к первому фото в коллекции"
+msgstr "Перейти к первой фотографии в коллекции"
 
 #: ../src/renderer/enlarged-renderer.cpp:412
 #: ../src/renderer/enlarged-renderer.cpp:445
 msgid "_Last Photo"
-msgstr "_Последнее фото"
+msgstr "_Последняя фотография"
 
 #: ../src/renderer/enlarged-renderer.cpp:413
 #: ../src/renderer/enlarged-renderer.cpp:446
 #: ../src/renderer/slideshow-renderer.cpp:187
 #: ../src/renderer/slideshow-renderer.cpp:231
 msgid "Go to the last photo in the collection"
-msgstr "Перейти к последнему фото в коллекции"
+msgstr "Перейти к последней фотографии в коллекции"
 
 #: ../src/renderer/slideshow-renderer.cpp:161
 #: ../src/renderer/slideshow-renderer.cpp:205
 msgctxt "Navigation"
 msgid "First"
-msgstr "Первое"
+msgstr "Первая"
 
 #: ../src/renderer/slideshow-renderer.cpp:186
 #: ../src/renderer/slideshow-renderer.cpp:230
 msgctxt "Navigation"
 msgid "Last"
-msgstr "Последнее"
+msgstr "Последняя"
 
