@@ -3,11 +3,12 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Leonid Kanter <leon@asplinux.ru>, 2010.
+# Slava Zanko <slavazanko@gmail.com>, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-23 14:39+0200\n"
+"POT-Creation-Date: 2010-02-27 23:20+0200\n"
 "PO-Revision-Date: 2010-02-26 16:48+0200\n"
 "Last-Translator: Leonid Kanter <leon@asplinux.ru>\n"
 "Language-Team: Russian <ru@li.org>\n"
@@ -15,15 +16,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../data/solang.desktop.in.in.h:1
 msgid "@PACKAGE_NAME@ Photo Manager"
-msgstr "Управлние фотографиями в @PACKAGE_NAME@"
+msgstr "Управление фотографиями в @PACKAGE_NAME@"
 
 #: ../data/solang.desktop.in.in.h:2
 msgid "Organize, enjoy and share your photos"
-msgstr "Организация, просмотри и размещение фотографий"
+msgstr "Организация, просмотр и размещение фотографий"
 
 #: ../data/solang.desktop.in.in.h:3
 msgid "Photo Manager"
@@ -181,7 +183,7 @@ msgstr "_Изменить выделенную метку..."
 
 #: ../src/attribute/tag-manager.cpp:119
 msgid "_Delete Selected Tag"
-msgstr "_Удалить выделенную метку"
+msgstr "Удалить _выделенную метку"
 
 #: ../src/attribute/tag-manager.cpp:125
 msgid "_Attach Tag to Selection"
@@ -304,7 +306,7 @@ msgstr "У_тилиты"
 
 #: ../src/editor/editor.cpp:117
 msgid "_Transform"
-msgstr "_Преобразование"
+msgstr "Пр_еобразование"
 
 #: ../src/editor/editor.cpp:123
 msgid "Flip _Horizontal"
@@ -324,7 +326,7 @@ msgstr "Отразить фото по вертикали"
 
 #: ../src/editor/editor.cpp:147
 msgid "_Rotate Clockwise"
-msgstr "Повернуть по _часовой"
+msgstr "Повернуть _по часовой"
 
 #: ../src/editor/editor.cpp:148
 msgid "Rotate the photo 90 degrees to the right"
@@ -416,7 +418,7 @@ msgstr "_Экспорт"
 #: ../src/renderer/browser-renderer.cpp:143
 #: ../src/renderer/enlarged-renderer.cpp:304
 msgid "_Slideshow"
-msgstr "С_лайдшоу"
+msgstr "_Слайдшоу"
 
 #: ../src/renderer/browser-renderer.cpp:144
 #: ../src/renderer/enlarged-renderer.cpp:305
@@ -581,7 +583,7 @@ msgstr "Оптимальный"
 #: ../src/renderer/enlarged-renderer.cpp:374
 #: ../src/renderer/enlarged-renderer.cpp:420
 msgid "_Previous Photo"
-msgstr "П_редыдущая фотография"
+msgstr "Предыдущая ф_отография"
 
 #: ../src/renderer/enlarged-renderer.cpp:375
 #: ../src/renderer/enlarged-renderer.cpp:421
@@ -605,7 +607,7 @@ msgstr "Перейти к следующей фотографии в колле�
 #: ../src/renderer/enlarged-renderer.cpp:404
 #: ../src/renderer/enlarged-renderer.cpp:437
 msgid "_First Photo"
-msgstr "_Первая фотография"
+msgstr "Пе_рвая фотография"
 
 #: ../src/renderer/enlarged-renderer.cpp:405
 #: ../src/renderer/enlarged-renderer.cpp:438
@@ -617,7 +619,7 @@ msgstr "Перейти к первой фотографии в коллекци�
 #: ../src/renderer/enlarged-renderer.cpp:412
 #: ../src/renderer/enlarged-renderer.cpp:445
 msgid "_Last Photo"
-msgstr "_Последняя фотография"
+msgstr "После_дняя фотография"
 
 #: ../src/renderer/enlarged-renderer.cpp:413
 #: ../src/renderer/enlarged-renderer.cpp:446
@@ -637,4 +639,3 @@ msgstr "Первая"
 msgctxt "Navigation"
 msgid "Last"
 msgstr "Последняя"
-
