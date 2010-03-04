@@ -56,43 +56,6 @@ class Engine :
         void
         criteria_changed() throw();
 
-        /* void */
-        /* import(const PhotoPtr & photo, */
-        /*        const IPhotoSourcePtr & source, */
-        /*        const IStoragePtr & selected_storage, */
-        /*        const TagList & tags) throw(); */
-
-        /* void */
-        /* import(const PhotoPtr & photo, */
-        /*        const IPhotoSourcePtr & source, */
-        /*        const IStoragePtr & selected_storage, */
-        /*        const TagList & tags, */
-        /*        const ProgressObserverPtr & observer) throw(); */
-
-        /* void */
-        /* import(const PhotoList & photos, */
-        /*        const IPhotoSourcePtr & source,  */
-        /*        const IStoragePtr & selected_storage, */
-        /*        const TagList & tags) throw(); */
-
-        /* void */
-        /* import(const PhotoList & photos, */
-        /*        const IPhotoSourcePtr & source,  */
-        /*        const IStoragePtr & selected_storage, */
-        /*        const TagList & tags, */
-        /*        const ProgressObserverPtr & observer) throw(); */
-
-        /* void */
-        /* import(const IPhotoSourcePtr & source, */
-        /*        const IStoragePtr & selected_storage, */
-        /*        const TagList & tags) throw(); */
-
-        /* void */
-        /* import(const IPhotoSourcePtr & source, */
-        /*        const IStoragePtr & selected_storage, */
-        /*        const TagList & tags, */
-        /*        const ProgressObserverPtr & observer) throw(); */
-
         void
         search_async(const IPhotoSearchCriteriaList & criteria,
                      const Database::SlotAsyncPhotos & slot) const
