@@ -1,6 +1,6 @@
 /* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*- */
 /*
- * Copyright (C) 2009 Santanu Sinha <santanu.sinha@gmail.com>
+ * Copyright (C) 2010 Debarshi Ray <rishi@gnu.org>
  *
  * Solang is free software: you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
@@ -16,19 +16,27 @@
  * with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+#ifdef HAVE_CONFIG_H
 #include "config.h"
+#endif // HAVE_CONFIG_H
 
-#include "non-copyable.h"
+#include "finally.h"
 
 namespace Solang
 {
 
-NonCopyable::NonCopyable()
+Finally::Finally(const sigc::slot<void> & s) throw() :
+    NonCopyable(),
+    s_(s)
 {
 }
 
-NonCopyable::~NonCopyable()
+Finally::~Finally()
 {
-} 
+    if (true == s_)
+    {
+        s_();
+    }
+}
 
 } // namespace Solang

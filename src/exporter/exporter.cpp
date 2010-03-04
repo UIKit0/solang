@@ -211,14 +211,16 @@ Exporter::on_exporter_dialog_response(
                            = exporter_dialog->get_create_archive();
             photoDestination_->set_create_archive(create_archive);
 
-            Glib::ThreadPool & thread_pool
-                = application_->get_thread_pool();
             Engine & engine = application_->get_engine();
+            const PhotoList & export_queue
+                                  = engine.get_export_queue();
 
-            thread_pool.push(
-                sigc::bind(sigc::mem_fun1(engine,
-                                          &Engine::export_photos),
-                           photoDestination_));
+            const ProgressObserverPtr observer
+                = ProgressObserver<sigc::signal<void> >::create(
+                      application_->get_progress_dialog());
+
+            photoDestination_->export_photos_async(export_queue,
+                                                   observer);
             break;
         }
 

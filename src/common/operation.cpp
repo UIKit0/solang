@@ -29,8 +29,9 @@ extern "C"
 #include <geglmm/buffer.h>
 #include <geglmm/processor.h>
 
+#include "finally.h"
+#include "i-progress-observer.h"
 #include "operation.h"
-#include "progress-observer.h"
 
 namespace Solang
 {
@@ -46,13 +47,12 @@ Operation::~Operation() throw()
 
 BufferPtr
 Operation::apply(const BufferPtr & buffer,
-                 const ProgressObserverPtr & observer) throw()
+                 const ProgressObserverPtr & observer)
+                 throw(Glib::Thread::Exit)
 {
     if (0 != observer)
     {
-        observer->set_event_description(get_description());
-        observer->set_num_events(100);
-        observer->set_current_events(0);
+        observer->set_description(get_description());
     }
 
     const NodePtr root = Gegl::Node::create();
@@ -69,7 +69,7 @@ Operation::apply(const BufferPtr & buffer,
 
     const NodePtr buffer_sink = root->new_child("operation",
                                                 "gegl:buffer-sink");
-    GeglBuffer * output_buffer;
+    GeglBuffer * output_buffer = 0;
     gegl_node_set(buffer_sink->gobj(),
                   "buffer", &output_buffer,
                   NULL);
@@ -79,24 +79,24 @@ Operation::apply(const BufferPtr & buffer,
     gdouble progress;
     GeglProcessor * const processor = gegl_node_new_processor(
                                           buffer_sink->gobj(), 0);
+    const Finally finally(sigc::bind(sigc::ptr_fun(&g_object_unref),
+                                     processor));
 
     while (true == gegl_processor_work(processor, &progress))
     {
         if (0 != observer)
         {
-            observer->set_current_events(static_cast<guint64>(
-                                             progress * 100.0));
-            if (true == observer->get_stop())
+            observer->set_fraction(progress);
+            if (true == observer->is_cancelled())
             {
-                break;
+                // FIXME: Find a better way to do this.
+                if (0 != output_buffer)
+                {
+                    g_object_unref(output_buffer);
+                }
+                throw Glib::Thread::Exit();
             }
         }
-    }
-    g_object_unref(processor);
-
-    if (0 != observer)
-    {
-        observer->reset();
     }
 
     return Glib::wrap(output_buffer, false);

@@ -43,9 +43,7 @@ class Engine :
         typedef std::map<Glib::ustring, IStoragePtr> StorageMap;
 
     public:
-        Engine(int & argc, char ** & argv,
-               const ProgressObserverPtr & observer
-                   = ProgressObserverPtr()) throw();
+        Engine(int & argc, char ** & argv) throw();
 
         ~Engine() throw();
 
@@ -58,42 +56,42 @@ class Engine :
         void
         criteria_changed() throw();
 
-        void
-        import(const PhotoPtr & photo,
-               const IPhotoSourcePtr & source,
-               const IStoragePtr & selected_storage,
-               const TagList & tags) throw();
+        /* void */
+        /* import(const PhotoPtr & photo, */
+        /*        const IPhotoSourcePtr & source, */
+        /*        const IStoragePtr & selected_storage, */
+        /*        const TagList & tags) throw(); */
 
-        void
-        import(const PhotoPtr & photo,
-               const IPhotoSourcePtr & source,
-               const IStoragePtr & selected_storage,
-               const TagList & tags,
-               const ProgressObserverPtr & observer) throw();
+        /* void */
+        /* import(const PhotoPtr & photo, */
+        /*        const IPhotoSourcePtr & source, */
+        /*        const IStoragePtr & selected_storage, */
+        /*        const TagList & tags, */
+        /*        const ProgressObserverPtr & observer) throw(); */
 
-        void
-        import(const PhotoList & photos,
-               const IPhotoSourcePtr & source, 
-               const IStoragePtr & selected_storage,
-               const TagList & tags) throw();
+        /* void */
+        /* import(const PhotoList & photos, */
+        /*        const IPhotoSourcePtr & source,  */
+        /*        const IStoragePtr & selected_storage, */
+        /*        const TagList & tags) throw(); */
 
-        void
-        import(const PhotoList & photos,
-               const IPhotoSourcePtr & source, 
-               const IStoragePtr & selected_storage,
-               const TagList & tags,
-               const ProgressObserverPtr & observer) throw();
+        /* void */
+        /* import(const PhotoList & photos, */
+        /*        const IPhotoSourcePtr & source,  */
+        /*        const IStoragePtr & selected_storage, */
+        /*        const TagList & tags, */
+        /*        const ProgressObserverPtr & observer) throw(); */
 
-        void
-        import(const IPhotoSourcePtr & source,
-               const IStoragePtr & selected_storage,
-               const TagList & tags) throw();
+        /* void */
+        /* import(const IPhotoSourcePtr & source, */
+        /*        const IStoragePtr & selected_storage, */
+        /*        const TagList & tags) throw(); */
 
-        void
-        import(const IPhotoSourcePtr & source,
-               const IStoragePtr & selected_storage,
-               const TagList & tags,
-               const ProgressObserverPtr & observer) throw();
+        /* void */
+        /* import(const IPhotoSourcePtr & source, */
+        /*        const IStoragePtr & selected_storage, */
+        /*        const TagList & tags, */
+        /*        const ProgressObserverPtr & observer) throw(); */
 
         void
         search_async(const IPhotoSearchCriteriaList & criteria,
@@ -101,17 +99,7 @@ class Engine :
                      throw();
 
         void
-        export_photos(const IPhotoDestinationPtr & destination)
-                      throw();
-
-        void
-        export_photos(const IPhotoDestinationPtr & destination,
-                      const ProgressObserverPtr & observer) throw();
-
-        void
-        erase(const PhotoList & photos,
-              const ProgressObserverPtr & observer 
-                  = ProgressObserverPtr());
+        erase(const PhotoList & photos);
 
         void
         get_tags_async(const Database::SlotAsyncTags & slot) const
@@ -165,9 +153,6 @@ class Engine :
         PhotoList
         get_photos() throw();
 
-        inline const ProgressObserverPtr &
-        get_default_observer();
-
         inline SearchCriterionRepo &
         get_criterion_repo();
 
@@ -175,8 +160,6 @@ class Engine :
         get_delete_actions();
 
     private:
-        ProgressObserverPtr observer_;
-
         Glib::Dispatcher photoExportBegin_;
 
         Glib::Dispatcher photoExportEnd_;
@@ -211,12 +194,6 @@ class Engine :
 
         DeletionQueue deleteActions_;
 };
-
-inline const ProgressObserverPtr &
-Engine::get_default_observer()
-{
-    return observer_;
-}
 
 inline SearchCriterionRepo &
 Engine::get_criterion_repo()

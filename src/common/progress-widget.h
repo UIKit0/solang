@@ -1,6 +1,6 @@
 /* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*- */
 /*
- * Copyright (C) 2010, 2009 Debarshi Ray <rishi@gnu.org>
+ * Copyright (C) 2010 Debarshi Ray <rishi@gnu.org>
  *
  * Solang is free software: you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
@@ -23,37 +23,52 @@
  * libnautilus-private/nautilus-progress-info.h
  */
 
-#ifndef SOLANG_PROGRESS_DIALOG_H
-#define SOLANG_PROGRESS_DIALOG_H
+#ifndef SOLANG_WIDGET_H
+#define SOLANG_WIDGET_H
 
+#include <glibmm.h>
 #include <gtkmm.h>
 
 namespace Solang
 {
 
-class ProgressDialog :
-    public Gtk::Dialog 
+class ProgressWidget :
+    public Gtk::VBox
 {
     public:
-        ProgressDialog(Gtk::Window & parent) throw();
+        ProgressWidget() throw();
 
         virtual
-        ~ProgressDialog() throw();
+        ~ProgressWidget() throw();
 
         void
-        attach(Gtk::Widget & child) throw();
+        set_details(const Glib::ustring & details) throw();
 
         void
-        detach(Gtk::Widget & child) throw();
+        set_fraction(gdouble fraction) throw();
 
-    protected:
-        virtual bool
-        on_delete_event(GdkEventAny * event);
+        void
+        set_status(const Glib::ustring & status) throw();
+
+        Glib::SignalProxy0<void>
+        signal_cancelled() throw();
 
     private:
-        guint num_;
+        Gtk::Button button_;
+
+        Gtk::HBox hBox_;
+
+        Gtk::Image image_;
+
+        Gtk::Label detailsLabel_;
+
+        Gtk::Label statusLabel_;
+
+        Gtk::ProgressBar progressBar_;
+
+        Gtk::VBox vBox_;
 };
 
 } // namespace Solang
 
-#endif // SOLANG_PROGRESS_DIALOG_H
+#endif // SOLANG_WIDGET_H

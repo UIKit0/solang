@@ -21,7 +21,7 @@
 #endif
 
 #include "deletion-queue.h"
-#include "progress-observer.h"
+#include "i-progress-observer.h"
 
 namespace Solang
 {
@@ -91,8 +91,8 @@ DeletionQueue::execute_actions(
             throw;
         }
     }
-    observer->set_event_description( "Executing delete actions" );
-    observer->set_num_events( actions_.size() );
+    observer->set_description( "Executing delete actions" );
+    observer->set_total( actions_.size() );
     for( DeleteActionList::iterator action = actions_.begin();
                                 action != actions_.end(); action++ )
     {
@@ -106,7 +106,7 @@ DeletionQueue::execute_actions(
             observer->reset();
             throw;
         }
-        observer->receive_event_notifiation();
+        observer->progress();
     }
 }
 

@@ -31,6 +31,7 @@
 #include "flip-vert-operation.h"
 #include "i-renderer.h"
 #include "non-copyable.h"
+#include "progress-observer.h"
 #include "rotate-clock-operation.h"
 #include "rotate-counter-operation.h"
 
@@ -248,12 +249,8 @@ Editor::apply_async(const IOperationPtr & operation) throw()
 
     if (editablePhotos_.end() == iter)
     {
-        Engine & engine = application_->get_engine();
-        const ProgressObserverPtr & observer = engine.get_default_observer();
-
         editable_photo = EditablePhotoPtr(new EditablePhoto(
-                                              currentPhoto_,
-                                              observer));
+                                              currentPhoto_));
         editablePhotos_.insert(std::make_pair(current_uri,
                                               editable_photo));
     }
@@ -262,11 +259,16 @@ Editor::apply_async(const IOperationPtr & operation) throw()
         editable_photo = iter->second;
     }
 
+    const ProgressObserverPtr observer
+        = ProgressObserver<Glib::Dispatcher>::create(
+              application_->get_progress_dialog());
+
     editable_photo->apply_async(
         operation,
         sigc::bind(sigc::mem_fun(*this,
                                  &Editor::on_action_edit_photo_end),
-                   editable_photo));
+                   editable_photo),
+        observer);
 }
 
 void

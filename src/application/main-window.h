@@ -81,11 +81,6 @@ class MainWindow :
         void
         set_busy(bool busy) throw();
 
-        void
-        connect_progress(
-                const ProgressObserverPtr &observer ) throw();
-
-
     protected:
         std::string
         get_user_layout_file() throw();
@@ -120,12 +115,6 @@ class MainWindow :
         virtual bool
         on_delete_event(GdkEventAny * event);
 
-        void
-        on_progress() throw();
-
-        void
-        on_reset() throw();
-
         ApplicationPtr application_;
 
         ActionGroupPtr actionGroup_;
@@ -141,10 +130,6 @@ class MainWindow :
         Gtk::HBox hBox_;
 
         Gtk::Statusbar statusBar_;
-
-        Gtk::ProgressBar progress_;
-
-        ProgressObserverPtr observer_;
 
         GtkWidget * const dock_;
 

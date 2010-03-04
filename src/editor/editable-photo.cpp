@@ -21,25 +21,27 @@
 #include "config.h"
 #endif // HAVE_CONFIG_H
 
+#include <algorithm>
+
 #include <geglmm.h>
 #include <geglmm/buffer.h>
 
 #include "buffer-maker.h"
 #include "buffer-pixbuf-converter.h"
 #include "editable-photo.h"
+#include "finally.h"
 #include "i-operation.h"
+#include "i-progress-observer.h"
 #include "photo.h"
 
 namespace Solang
 {
 
-EditablePhoto::EditablePhoto(const PhotoPtr & photo,
-                             const ProgressObserverPtr & observer) throw() :
+EditablePhoto::EditablePhoto(const PhotoPtr & photo) throw() :
     buffer_(0),
     photo_(photo),
     pixbuf_(0),
     pending_(),
-    observer_(observer),
     applyEnd_(),
     threadPool_(1, false)
 {
@@ -49,15 +51,34 @@ EditablePhoto::EditablePhoto(const PhotoPtr & photo,
 
 EditablePhoto::~EditablePhoto() throw()
 {
+    if (true == pending_.empty())
+    {
+        return;
+    }
+
+    const Triplet & current = pending_.front();
+    const ProgressObserverPtr & observer = current.third;
+
+    if (0 != observer)
+    {
+        observer->cancel();
+    }
 }
 
 void
 EditablePhoto::apply_async(const IOperationPtr & operation,
-                           const SlotAsyncReady & slot) throw()
+                           const SlotAsyncReady & slot,
+                           const ProgressObserverPtr & observer)
+                           throw()
 {
     const SlotAsyncReadyPtr slot_copy(new SlotAsyncReady(slot));
 
-    pending_.push(std::make_pair(operation, slot_copy));
+    Triplet triplet;
+    triplet.first = operation;
+    triplet.second = slot_copy;
+    triplet.third = observer;
+
+    pending_.push(triplet);
     if (1 < pending_.size())
     {
         return;
@@ -70,19 +91,23 @@ EditablePhoto::apply_async(const IOperationPtr & operation,
 void
 EditablePhoto::apply_begin() throw()
 {
-    const std::pair<IOperationPtr, SlotAsyncReadyPtr> & current
-        = pending_.front();
+    const Triplet & current = pending_.front();
 
     threadPool_.push(sigc::bind(
                          sigc::mem_fun(*this,
                                        &EditablePhoto::apply_worker),
-                         current.first));
+                         current.first,
+                         current.third));
 }
 
 void
-EditablePhoto::apply_worker(const IOperationPtr & operation)
+EditablePhoto::apply_worker(const IOperationPtr & operation,
+                            const ProgressObserverPtr & observer)
                             throw(Glib::Thread::Exit)
 {
+    const Finally finally(sigc::mem_fun(applyEnd_,
+                                        &Glib::Dispatcher::emit));
+
     if (0 == buffer_)
     {
         std::string path;
@@ -100,19 +125,17 @@ EditablePhoto::apply_worker(const IOperationPtr & operation)
         buffer_ = buffer_maker(path);
     }
 
-    buffer_ = operation->apply(buffer_, observer_);
+    buffer_ = operation->apply(buffer_, observer);
 g_warning("done op");
     BufferPixbufConverter buffer_pixbuf_converter;
     pixbuf_ = buffer_pixbuf_converter(buffer_);
 g_warning("done pixbuf");
-    applyEnd_.emit();
 }
 
 void
 EditablePhoto::on_apply_end() throw()
 {
-    const std::pair<IOperationPtr, SlotAsyncReadyPtr> current
-        = pending_.front();
+    const Triplet current = pending_.front();
 
     pending_.pop();
     photo_->set_buffer(pixbuf_);
@@ -120,6 +143,17 @@ EditablePhoto::on_apply_end() throw()
     if (0 != current.second && 0 != *current.second)
     {
         (*current.second)();
+    }
+
+    const ProgressObserverPtr & observer = current.third;
+
+    // Clear the pending queue if:
+    // + an operation was cancelled
+    // + the buffer could not be created
+    if (true == observer->is_cancelled() || 0 == buffer_)
+    {
+        PendingOperationQueue tmp;
+        std::swap(pending_, tmp);
     }
 
     if (true == pending_.empty())

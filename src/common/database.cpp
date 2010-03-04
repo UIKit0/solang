@@ -31,7 +31,6 @@
 #include "exif-data.h"
 #include "photo.h"
 #include "photo-tag.h"
-#include "progress-observer.h"
 #include "tag.h"
 #include "date-photo-info.h"
 
@@ -179,34 +178,29 @@ Database::search_async(const IPhotoSearchCriteriaList & criteria,
 
 //Group by year
 DatePhotoInfoList
-Database::get_dates_with_picture_count(
-              const ProgressObserverPtr & observer)
+Database::get_dates_with_picture_count()
 {
     Glib::ustring sql
         = "select 0, 0, mod_year, count(*) from photos ";
     sql += "group by mod_year";
-    return get_dates_with_picture_count( sql, observer );
+    return get_dates_with_picture_count( sql );
 }
 
 //Group by year, month
 DatePhotoInfoList
-Database::get_dates_with_picture_count(
-              gint year,
-              const ProgressObserverPtr & observer)
+Database::get_dates_with_picture_count(gint year)
 {
     std::ostringstream sout;
     sout<<"select 0, mod_month, mod_year, count(*) from photos ";
     sout<<"where mod_year="<<year<<" ";
     sout<<"group by mod_year,mod_month ";
 //    sout<<"order by mod_year desc, mod_month desc";
-    return get_dates_with_picture_count( sout.str(), observer );
+    return get_dates_with_picture_count( sout.str() );
 }
 
 //Group by year, month, day
 DatePhotoInfoList
-Database::get_dates_with_picture_count(
-              gint year, gint month,
-              const ProgressObserverPtr & observer)
+Database::get_dates_with_picture_count(gint year, gint month)
 {
     std::ostringstream sout;
     sout<<"select mod_day, mod_month, mod_year, count(*) from photos ";
@@ -214,13 +208,11 @@ Database::get_dates_with_picture_count(
     sout<<"and mod_month="<<month<<" ";
     sout<<"group by mod_year,mod_month,mod_day ";
 //    sout<<"order by mod_year desc, mod_month desc, mod_day desc";
-    return get_dates_with_picture_count( sout.str(), observer );
+    return get_dates_with_picture_count( sout.str() );
 }
 
 DatePhotoInfoList
-Database::get_dates_with_picture_count(
-              const Glib::ustring & sql,
-              const ProgressObserverPtr & observer)
+Database::get_dates_with_picture_count(const Glib::ustring & sql)
 {
     DatePhotoInfoList infos;
 
@@ -233,20 +225,8 @@ Database::get_dates_with_picture_count(
         const gint32 numRows
                          = static_cast<gint32>(model->get_n_rows());
 
-        if (0 != observer)
-        {
-            observer->set_event_description(_("Summarizing photos"));
-            observer->set_num_events(numRows);
-            observer->set_current_events(0);
-        }
-
         for( gint32 row = 0; row < numRows; row++ )
         {
-            if (0 != observer && true == observer->get_stop())
-            {
-                break;
-            }
-
             infos.push_back(
                 DatePhotoInfo(
                     ModificationDate(
@@ -254,16 +234,6 @@ Database::get_dates_with_picture_count(
                         model->get_value_at( 1, row ).get_int(),
                         model->get_value_at( 2, row ).get_int()),
                     model->get_value_at( 3, row ).get_int()));
-
-            if (0 != observer)
-            {
-                observer->receive_event_notifiation();
-            }
-        }
-
-        if (0 != observer)
-        {
-            observer->reset();
         }
     }
     catch (Glib::Error &e)

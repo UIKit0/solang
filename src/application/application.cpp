@@ -44,7 +44,6 @@
 #include "i-plugin.h"
 //#include "importer.h"
 #include "photo.h"
-#include "progress-observer.h"
 #include "property-manager.h"
 #include "search-manager.h"
 #include "slideshow-renderer.h"
@@ -178,10 +177,9 @@ Application::Application(int & argc, char ** & argv) throw() :
     sigc::trackable(),
     threadPool_(4, false),
     iconFactory_(Gtk::IconFactory::create()),
-    observer_( new ProgressObserver() ),
-    engine_(argc, argv, observer_),
+    engine_(argc, argv),
     mainWindow_(),
-    progressDialog_(engine_.get_default_observer()),
+    progressDialog_(mainWindow_),
     listStore_(Gtk::ListStore::create(BrowserModelColumnRecord())),
     listStoreIter_(),
     plugins_(),
@@ -246,14 +244,6 @@ Application::Application(int & argc, char ** & argv) throw() :
     engine_.signal_criteria_changed().connect(
         sigc::mem_fun(*this,
                       &Application::on_criteria_changed));
-    engine_.photo_export_begin().connect(sigc::mem_fun(*this,
-        &Application::show_progress_dialog));
-    engine_.photo_export_end().connect(sigc::mem_fun(*this,
-        &Application::hide_progress_dialog));
-    engine_.photo_import_begin().connect(sigc::mem_fun(*this,
-        &Application::show_progress_dialog));
-    engine_.photo_import_end().connect(sigc::mem_fun(*this,
-        &Application::hide_progress_dialog));
 
     Thumbnailer & thumbnailer = Thumbnailer::instance();
     thumbnailer.signal_ready().connect(
@@ -342,8 +332,6 @@ Application::init() throw()
     ContentTypeRepo::instance()->init();
 
     mainWindow_.init(*this);
-
-    mainWindow_.connect_progress( engine_.get_default_observer() );
 
     initEnd_.emit(*this);
 }
@@ -462,13 +450,6 @@ Application::init_end() throw()
     return initEnd_;
 }
 
-void
-Application::hide_progress_dialog() throw()
-{
-    progressDialog_.hide();
-    engine_.get_default_observer()->reset();
-}
-
 sigc::signal<void, Application &> &
 Application::list_store_change_begin() throw()
 {
@@ -539,14 +520,6 @@ Application::on_thumbnailer_ready(PhotoList & photos) const throw()
     }
 }
 
-void
-Application::show_progress_dialog() throw()
-{
-    progressDialog_.set_transient_for(mainWindow_);
-    progressDialog_.show_all();
-}
-
-
 Glib::ThreadPool &
 Application::get_thread_pool() throw()
 {
@@ -563,6 +536,12 @@ MainWindow &
 Application::get_main_window() throw()
 {
     return mainWindow_;
+}
+
+ProgressDialog &
+Application::get_progress_dialog() throw()
+{
+    return progressDialog_;
 }
 
 const ListStorePtr &

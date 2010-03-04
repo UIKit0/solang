@@ -46,12 +46,9 @@ class BraseroDestination :
         final(Application & application) throw();
 
         virtual void
-        export_photo(const PhotoPtr & photo,
-                     const ProgressObserverPtr & observer) throw();
-
-        virtual void
-        export_photos(const PhotoList & photos,
-                      const ProgressObserverPtr & observer) throw();
+        export_photos_async(const PhotoList & photos,
+                            const ProgressObserverPtr & observer)
+                            throw();
 
         virtual void
         final() throw();
@@ -82,10 +79,14 @@ class BraseroDestination :
 
     protected:
         void
-        brasero_burn_begin_idle() throw();
+        export_photo_async(const PhotoPtr & photo,
+                           const ProgressObserverPtr &) throw();
 
         void
-        on_brasero_burn_begin() throw();
+        brasero_burn_begin() throw();
+
+        void
+        brasero_burn_begin_idle() throw();
 
         BraseroDrive * braseroDrive_;
 
@@ -94,8 +95,6 @@ class BraseroDestination :
         BraseroTrackDataCfg * braseroTrackDataCfg_;
 
         GtkWidget * braseroDriveSelection_;
-
-        Glib::Dispatcher braseroBurnBegin_;
 
         sigc::signal<void, bool> initEnd_;
 

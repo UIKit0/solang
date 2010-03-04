@@ -12,6 +12,7 @@ src/attribute/tag-new-dialog.cpp
 src/common/exif-data.cpp
 src/common/histogram-viewer.cpp
 src/common/progress-dialog.cpp
+src/common/progress-observer.h
 src/editor/editor.cpp
 src/editor/flip-horiz-operation.cpp
 src/editor/flip-operation.cpp

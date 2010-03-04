@@ -29,7 +29,6 @@
 
 #include "export-queue-operations.h"
 #include "main-window.h"
-#include "progress-observer.h"
 
 namespace Solang
 {
@@ -208,8 +207,6 @@ MainWindow::MainWindow() throw() :
     spinnerToolItem_(),
     hBox_(false, 6),
     statusBar_(),
-    progress_(),
-    observer_(),
     dock_(gdl_dock_new()),
     dockBar_(gdl_dock_bar_new(GDL_DOCK(dock_))),
     layout_(gdl_dock_layout_new(GDL_DOCK(dock_))),
@@ -325,7 +322,6 @@ MainWindow::MainWindow() throw() :
 
     statusBar_.set_has_resize_grip(true);
     vBox_.pack_start(statusBar_, Gtk::PACK_SHRINK, 0);
-    statusBar_.pack_start(progress_, Gtk::PACK_SHRINK, 0);
 
     show_all_children();
 }
@@ -834,45 +830,6 @@ MainWindow::set_busy(bool busy) throw()
     }
 
     spinnerToolItem_.set_spinning(busy);
-}
-
-void
-MainWindow::connect_progress( const ProgressObserverPtr &observer ) throw()
-{
-    observer_ = observer;
-    progress_.set_fraction( 0.0L );
-
-    observer_->progress().connect(
-        sigc::mem_fun(*this,
-                      &MainWindow::on_progress));
-
-    observer_->dispatcher_reset().connect(
-        sigc::mem_fun(*this,
-                      &MainWindow::on_reset));
-}
-
-void
-MainWindow::on_progress() throw()
-{
-    const guint64 num_events = observer_->get_num_events();
-    if (0 == num_events)
-    {
-        return;
-    }
-
-    const double percentage =
-        static_cast<double>(observer_->get_current_events())
-        / static_cast<double>(num_events);
-
-    progress_.set_fraction( percentage );
-    progress_.show();
-}
-
-void
-MainWindow::on_reset() throw()
-{
-    progress_.hide();
-    progress_.set_fraction(0.0);
 }
 
 } // namespace Solang

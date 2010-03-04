@@ -43,12 +43,9 @@ class DirectoryDestination :
         final(Application & application) throw();
 
         virtual void
-        export_photo(const PhotoPtr & photo,
-                     const ProgressObserverPtr & observer) throw();
-
-        virtual void
-        export_photos(const PhotoList & photos,
-                      const ProgressObserverPtr & observer) throw();
+        export_photos_async(const PhotoList & photos,
+                            const ProgressObserverPtr & observer)
+                            throw();
 
         virtual void
         final() throw();
@@ -78,6 +75,23 @@ class DirectoryDestination :
         set_create_archive(bool value) throw();
 
     protected:
+        void
+        export_photo_async(const PhotoPtr & photo,
+                           const PhotoListPtr & pending,
+                           const ProgressObserverPtr & observer)
+                           throw();
+
+        void
+        on_async_copy_ready(const AsyncResultPtr & async_result,
+                            const FilePtr & file,
+                            const PhotoListPtr & pending,
+                            const ProgressObserverPtr & observer)
+                            throw();
+
+        void
+        on_child_watch(GPid, int, const std::string & filename)
+                       throw();
+
         bool createArchive_;
 
         std::string filename_;

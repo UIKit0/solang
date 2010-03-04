@@ -16,6 +16,8 @@ libcommon_la_SOURCES = \
 	delete-action.h \
 	db-object.cpp \
 	db-object.h \
+	finally.cpp \
+	finally.h \
 	tracker-client.cpp \
 	tracker-client.h \
 	content-type-repo.cpp \
@@ -47,6 +49,8 @@ libcommon_la_SOURCES = \
 	i-photo-source.h \
 	i-plugin.cpp \
 	i-plugin.h \
+	i-progress-observer.cpp \
+	i-progress-observer.h \
 	i-renderer.cpp \
 	i-renderer.h \
 	i-renderer-selector.cpp \
@@ -65,8 +69,9 @@ libcommon_la_SOURCES = \
 	pixbuf-maker.h \
 	progress-dialog.cpp \
 	progress-dialog.h \
-	progress-observer.cpp \
 	progress-observer.h \
+	progress-widget.cpp \
+	progress-widget.h \
 	renderer-selector.h \
 	scale-action.cpp \
 	scale-action.h \

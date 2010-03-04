@@ -1,5 +1,6 @@
 /* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*- */
 /*
+ * Copyright (C) 2010 Debarshi Ray <rishi@gnu.org>
  * Copyright (C) 2009 Santanu Sinha <santanu.sinha@gmail.com>
  *
  * Solang is free software: you can redistribute it and/or modify it
@@ -19,124 +20,218 @@
 #ifndef SOLANG_PROGRESS_OBSERVER_H
 #define SOLANG_PROGRESS_OBSERVER_H
 
-#include <tr1/memory>
+#include <glibmm/i18n.h>
+#include <sigc++/sigc++.h>
 
-#include <glibmm.h>
+#include "i-progress-observer.h"
+#include "progress-dialog.h"
+#include "progress-widget.h"
+#include "types.h"
+#include "utils.h"
 
 namespace Solang
 {
 
-class ProgressObserver
+template <typename T>
+class ProgressObserver :
+    public IProgressObserver
 {
     public:
-        ProgressObserver() throw();
+        static ProgressObserverPtr
+        create(ProgressDialog & progress_dialog);
 
-        ProgressObserver(const ProgressObserver & source) throw();
-
-        ProgressObserver &
-        operator=(const ProgressObserver & source) throw();
-
+        virtual
         ~ProgressObserver() throw();
 
-        inline guint64
-        get_num_events() const throw();
+        virtual bool
+        is_finished() const throw();
 
-        void
-        set_num_events(guint64 numEvents) throw();
-
-        inline guint64
-        get_current_events() const throw();
-
-        void
-        set_current_events(guint64 current_events) throw();
-
-        inline const Glib::ustring &
-        get_event_description() const throw();
-
-        void
-        set_event_description(const Glib::ustring & event_description)
-                              throw();
-
-        inline bool
-        get_stop() const throw();
-
-        void
-        set_stop(bool value) throw();
-
-        void
-        receive_event_notifiation() throw();
-
-        inline Glib::Dispatcher &
-        description_changed() throw();
-
-        inline Glib::Dispatcher &
+        virtual void
         progress() throw();
 
-        Glib::Dispatcher &
-        dispatcher_reset() throw();
+        virtual void
+        set_description(const Glib::ustring & description) throw();
 
-        void 
-        reset() throw();
+        virtual void
+        set_fraction(gdouble fraction) throw();
+
+        virtual void
+        set_total(guint64 total) throw();
+
+    protected:
+        ProgressObserver(ProgressDialog & progress_dialog) throw();
+
+        virtual void
+        on_cancelled();
 
     private:
-        guint64 numEvents_;
+        void
+        clean_up() throw();
 
-        guint64 currentEvents_;
+        void
+        on_fraction_changed() throw();
 
-        Glib::Dispatcher descriptionChanged_;
-
-        Glib::Dispatcher progress_;
-
-        Glib::Dispatcher reset_;
+        T fractionChanged_;
 
         mutable Glib::Mutex mutex_;
 
-        Glib::ustring eventDescription_;
+        gdouble fraction_;
 
-        bool stop_;
+        guint64 current_;
+
+        guint64 total_;
+
+        ProgressDialog & progressDialog_;
+
+        ProgressWidget progressWidget_;
+
+        sigc::connection connectionFractionChanged_;
 };
 
-
-inline guint64
-ProgressObserver::get_num_events() const throw()
+template <typename T>
+ProgressObserver<T>::ProgressObserver(ProgressDialog & progress_dialog)
+                                      throw() :
+    IProgressObserver(),
+    fractionChanged_(),
+    mutex_(),
+    fraction_(0.0),
+    current_(0),
+    total_(0),
+    progressDialog_(progress_dialog),
+    progressWidget_(),
+    connectionFractionChanged_()
 {
-    Glib::Mutex::Lock lock(mutex_);
-    return numEvents_;
+    fractionChanged_.connect(
+        sigc::mem_fun(*this,
+                      &ProgressObserver::on_fraction_changed));
+    progressWidget_.signal_cancelled().connect(
+        sigc::mem_fun(*this,
+                      &ProgressObserver::cancel));
 }
 
-inline guint64
-ProgressObserver::get_current_events() const throw()
+template <typename T>
+ProgressObserver<T>::~ProgressObserver() throw()
 {
-    Glib::Mutex::Lock lock(mutex_);
-    return currentEvents_;
+    clean_up();
 }
 
-inline const Glib::ustring &
-ProgressObserver::get_event_description() const throw()
+template <typename T>
+void
+ProgressObserver<T>::clean_up() throw()
 {
-    Glib::Mutex::Lock lock(mutex_);
-    return eventDescription_;
+    if (0 != progressWidget_.get_parent())
+    {
+        progressDialog_.detach(progressWidget_);
+    }
 }
 
-inline bool
-ProgressObserver::get_stop() const throw()
+template <typename T>
+ProgressObserverPtr
+ProgressObserver<T>::create(ProgressDialog & progress_dialog)
 {
-    Glib::Mutex::Lock lock(mutex_);
-    return stop_;
+    return ProgressObserverPtr(new ProgressObserver<T>(
+                                       progress_dialog));
 }
 
-inline Glib::Dispatcher &
-ProgressObserver::description_changed() throw()
+template <typename T>
+bool
+ProgressObserver<T>::is_finished() const throw()
 {
     Glib::Mutex::Lock lock(mutex_);
-    return descriptionChanged_;
+    return (0 < total_) ? (current_ == total_)
+                        : is_equal(1.0, fraction_);
 }
 
-inline Glib::Dispatcher &
-ProgressObserver::progress() throw()
+template <typename T>
+void
+ProgressObserver<T>::on_cancelled()
+{
+    clean_up();
+    connectionFractionChanged_.block();
+}
+
+template <typename T>
+void
+ProgressObserver<T>::on_fraction_changed() throw()
+{
+    {
+        Glib::Mutex::Lock lock(mutex_);
+
+        progressWidget_.set_fraction(fraction_);
+
+        if (0 < total_)
+        {
+            // Translators: Progress bar text. eg., 13 of 42 completed.
+            const Glib::ustring details = Glib::ustring::compose(
+                                              _("%1 of %2 completed"),
+                                              current_,
+                                              total_);
+            progressWidget_.set_details(details);
+        }
+        else
+        {
+            // Translators: Progress bar text. eg., 13% completed.
+            const Glib::ustring details = Glib::ustring::compose(
+                                              _("%1%% complete"),
+                                              fraction_ * 100.0);
+            progressWidget_.set_details(details);
+        }
+    }
+
+    if (0 == progressWidget_.get_parent())
+    {
+        progressDialog_.attach(progressWidget_);
+    }
+}
+
+template <typename T>
+void
+ProgressObserver<T>::progress() throw()
+{
+    if (true == is_cancelled())
+    {
+        return;
+    }
+
+    {
+        Glib::Mutex::Lock lock(mutex_);
+        current_++;
+        fraction_ = static_cast<gdouble>(current_)
+                    / static_cast<gdouble>(total_);
+    }
+    fractionChanged_.emit();
+}
+
+template <typename T>
+void
+ProgressObserver<T>::set_description(const Glib::ustring & description)
+                                     throw()
+{
+    progressWidget_.set_status(description);
+}
+
+template <typename T>
+void
+ProgressObserver<T>::set_fraction(gdouble fraction) throw()
+{
+    if (true == is_cancelled())
+    {
+        return;
+    }
+
+    {
+        Glib::Mutex::Lock lock(mutex_);
+        fraction_ = fraction;
+    }
+    fractionChanged_.emit();
+}
+
+template <typename T>
+void
+ProgressObserver<T>::set_total(guint64 total) throw()
 {
     Glib::Mutex::Lock lock(mutex_);
-    return progress_;
+    total_ = total;
 }
 
 } // namespace Solang

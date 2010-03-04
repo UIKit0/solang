@@ -28,15 +28,12 @@
 #include "i-photo-destination.h"
 #include "i-photo-source.h"
 #include "photo-tag.h"
-#include "progress-observer.h"
 #include "tag.h"
 
 namespace Solang
 {
 
-Engine::Engine(int & argc, char ** & argv,
-               const ProgressObserverPtr & observer) throw() :
-    observer_(observer),
+Engine::Engine(int & argc, char ** & argv) throw() :
     photoExportBegin_(),
     photoExportEnd_(),
     photoImportBegin_(),
@@ -67,7 +64,7 @@ Engine::init(Glib::ustring str)
 void
 Engine::final()
 {
-    deleteActions_.execute_actions( observer_ );
+    deleteActions_.execute_actions();
 }
 
 void
@@ -79,116 +76,116 @@ Engine::criteria_changed() throw()
     criteriaChanged_.emit(criteria);
 }
 
-void
-Engine::import(const PhotoPtr & photo,
-               const IPhotoSourcePtr & source,
-               const IStoragePtr & selected_storage,
-               const TagList & tags) throw()
-{
-    import(photo, source, selected_storage, tags, observer_);
-    return;
-}
+/* void */
+/* Engine::import(const PhotoPtr & photo, */
+/*                const IPhotoSourcePtr & source, */
+/*                const IStoragePtr & selected_storage, */
+/*                const TagList & tags) throw() */
+/* { */
+/*     import(photo, source, selected_storage, tags, observer_); */
+/*     return; */
+/* } */
 
-void
-Engine::import(const PhotoPtr & photo,
-               const IPhotoSourcePtr & source,
-               const IStoragePtr & selected_storage,
-               const TagList & tags,
-               const ProgressObserverPtr & observer) throw()
-{
-    photoImportBegin_.emit();
-#if 0
-    for (TagList::const_iterator it = tags.begin();
-         it != tags.end(); it++)
-    {
-        (*it)->save(database_);
-    }
-#endif
-    PhotoPtr imp_photo = source->import(photo, selected_storage,
-                                    tags, database_, observer);
-    photoImportEnd_.emit();
+/* void */
+/* Engine::import(const PhotoPtr & photo, */
+/*                const IPhotoSourcePtr & source, */
+/*                const IStoragePtr & selected_storage, */
+/*                const TagList & tags, */
+/*                const ProgressObserverPtr & observer) throw() */
+/* { */
+/*     photoImportBegin_.emit(); */
+/* #if 0 */
+/*     for (TagList::const_iterator it = tags.begin(); */
+/*          it != tags.end(); it++) */
+/*     { */
+/*         (*it)->save(database_); */
+/*     } */
+/* #endif */
+/*     PhotoPtr imp_photo = source->import(photo, selected_storage, */
+/*                                     tags, database_, observer); */
+/*     photoImportEnd_.emit(); */
 
-    PhotoList imp_photos;
-    imp_photos.push_back(imp_photo);
-    {
-        Glib::Mutex::Lock lock(mutex_);
-        photos_ = imp_photos;
-    }
+/*     PhotoList imp_photos; */
+/*     imp_photos.push_back(imp_photo); */
+/*     { */
+/*         Glib::Mutex::Lock lock(mutex_); */
+/*         photos_ = imp_photos; */
+/*     } */
 
-    return;
-}
+/*     return; */
+/* } */
 
-void
-Engine::import(const PhotoList & photos,
-               const IPhotoSourcePtr & source,
-               const IStoragePtr & selected_storage,
-               const TagList & tags) throw()
-{
-    import(photos, source, selected_storage, tags, observer_);
-    return;
-}
+/* void */
+/* Engine::import(const PhotoList & photos, */
+/*                const IPhotoSourcePtr & source, */
+/*                const IStoragePtr & selected_storage, */
+/*                const TagList & tags) throw() */
+/* { */
+/*     import(photos, source, selected_storage, tags, observer_); */
+/*     return; */
+/* } */
 
-void
-Engine::import(const PhotoList & photos,
-               const IPhotoSourcePtr & source,
-               const IStoragePtr & selected_storage,
-               const TagList & tags,
-               const ProgressObserverPtr & observer) throw()
-{
-    photoImportBegin_.emit();
-#if 0
-    for (TagList::const_iterator it = tags.begin();
-         it != tags.end(); it++)
-    {
-        (*it)->save(database_);
-    }
-#endif
-    PhotoList imp_photos = source->import(photos, selected_storage,
-                                          tags, database_, observer);
-    photoImportEnd_.emit();
+/* void */
+/* Engine::import(const PhotoList & photos, */
+/*                const IPhotoSourcePtr & source, */
+/*                const IStoragePtr & selected_storage, */
+/*                const TagList & tags, */
+/*                const ProgressObserverPtr & observer) throw() */
+/* { */
+/*     photoImportBegin_.emit(); */
+/* #if 0 */
+/*     for (TagList::const_iterator it = tags.begin(); */
+/*          it != tags.end(); it++) */
+/*     { */
+/*         (*it)->save(database_); */
+/*     } */
+/* #endif */
+/*     PhotoList imp_photos = source->import(photos, selected_storage, */
+/*                                           tags, database_, observer); */
+/*     photoImportEnd_.emit(); */
 
-    {
-        Glib::Mutex::Lock lock(mutex_);
-        photos_ = imp_photos;
-    }
+/*     { */
+/*         Glib::Mutex::Lock lock(mutex_); */
+/*         photos_ = imp_photos; */
+/*     } */
 
-    return;
-}
+/*     return; */
+/* } */
 
-void
-Engine::import(const IPhotoSourcePtr & source,
-               const IStoragePtr & selected_storage,
-               const TagList & tags) throw()
-{
-    import(source, selected_storage, tags, observer_);
-    return;
-}
+/* void */
+/* Engine::import(const IPhotoSourcePtr & source, */
+/*                const IStoragePtr & selected_storage, */
+/*                const TagList & tags) throw() */
+/* { */
+/*     import(source, selected_storage, tags, observer_); */
+/*     return; */
+/* } */
 
-void
-Engine::import(const IPhotoSourcePtr & source,
-               const IStoragePtr & selected_storage,
-               const TagList & tags,
-               const ProgressObserverPtr & observer) throw()
-{
-    photoImportBegin_.emit();
-#if 0
-    for (TagList::const_iterator it = tags.begin();
-         it != tags.end(); it++)
-    {
-        (*it)->save(database_);
-    }
-#endif
-    PhotoList imp_photos = source->import(selected_storage, tags,
-                                          database_, observer);
-    photoImportEnd_.emit();
+/* void */
+/* Engine::import(const IPhotoSourcePtr & source, */
+/*                const IStoragePtr & selected_storage, */
+/*                const TagList & tags, */
+/*                const ProgressObserverPtr & observer) throw() */
+/* { */
+/*     photoImportBegin_.emit(); */
+/* #if 0 */
+/*     for (TagList::const_iterator it = tags.begin(); */
+/*          it != tags.end(); it++) */
+/*     { */
+/*         (*it)->save(database_); */
+/*     } */
+/* #endif */
+/*     PhotoList imp_photos = source->import(selected_storage, tags, */
+/*                                           database_, observer); */
+/*     photoImportEnd_.emit(); */
 
-    {
-        Glib::Mutex::Lock lock(mutex_);
-        photos_ = imp_photos;
-    }
+/*     { */
+/*         Glib::Mutex::Lock lock(mutex_); */
+/*         photos_ = imp_photos; */
+/*     } */
 
-    return;
-}
+/*     return; */
+/* } */
 
 void
 Engine::search_async(const IPhotoSearchCriteriaList & criteria,
@@ -199,37 +196,8 @@ Engine::search_async(const IPhotoSearchCriteriaList & criteria,
 }
 
 void
-Engine::export_photos(const IPhotoDestinationPtr & destination)
-                      throw()
+Engine::erase(const PhotoList & photos)
 {
-    export_photos(destination, observer_);
-    return;
-}
-
-void
-Engine::export_photos(const IPhotoDestinationPtr & destination,
-                      const ProgressObserverPtr & observer) throw()
-{
-    photoExportBegin_.emit();
-    destination->export_photos(exportQueue_, observer);
-    photoExportEnd_.emit();
-
-    return;
-}
-
-
-void
-Engine::erase(const PhotoList & photos,
-              const ProgressObserverPtr & observer)
-{
-    ProgressObserverPtr obs = (observer) ? observer : observer_;
-
-    if (obs)
-    {
-        obs->set_num_events(photos.size());
-        obs->set_event_description("Removing Selected Photos");
-    }
-
     return;
 }
 
@@ -243,20 +211,19 @@ Engine::get_tags_async(const Database::SlotAsyncTags & slot) const
 DatePhotoInfoList
 Engine::get_dates_with_picture_count()
 {
-    return database_.get_dates_with_picture_count( observer_ );
+    return database_.get_dates_with_picture_count( );
 }
 
 DatePhotoInfoList
 Engine::get_dates_with_picture_count( gint year )
 {
-    return database_.get_dates_with_picture_count(year, observer_ );
+    return database_.get_dates_with_picture_count(year);
 }
 
 DatePhotoInfoList
 Engine::get_dates_with_picture_count( gint year, gint month )
 {
-    return database_.get_dates_with_picture_count(year, month,
-                                                  observer_ );
+    return database_.get_dates_with_picture_count(year, month);
 }
 
 Glib::Dispatcher &

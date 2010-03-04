@@ -40,28 +40,34 @@ class EditablePhoto
         typedef std::tr1::shared_ptr<SlotAsyncReady>
             SlotAsyncReadyPtr;
 
-        typedef std::queue<std::pair<IOperationPtr,
-                                     SlotAsyncReadyPtr> >
-            PendingOperationQueue;
-
-        EditablePhoto(const PhotoPtr & photo,
-                      const ProgressObserverPtr & observer) throw();
+        EditablePhoto(const PhotoPtr & photo) throw();
 
         ~EditablePhoto() throw();
 
         void
         apply_async(const IOperationPtr & operation,
-                    const SlotAsyncReady & slot) throw();
+                    const SlotAsyncReady & slot,
+                    const ProgressObserverPtr & observer) throw();
 
         PhotoPtr &
         get_photo() throw();
 
     private:
+        struct Triplet
+        {
+            IOperationPtr first;
+            SlotAsyncReadyPtr second;
+            ProgressObserverPtr third;
+        };
+
+        typedef std::queue<Triplet> PendingOperationQueue;
+
         void
         apply_begin() throw();
 
         void
-        apply_worker(const IOperationPtr & operation)
+        apply_worker(const IOperationPtr & operation,
+                     const ProgressObserverPtr & observer)
                      throw(Glib::Thread::Exit);
 
         void
@@ -74,8 +80,6 @@ class EditablePhoto
         PixbufPtr pixbuf_;
 
         PendingOperationQueue pending_;
-
-        ProgressObserverPtr observer_;
 
         Glib::Dispatcher applyEnd_;
 

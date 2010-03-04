@@ -25,9 +25,9 @@
 #include <glibmm/i18n.h>
 
 #include "brasero-destination.h"
+#include "i-progress-observer.h"
 #include "photo.h"
 #include "photo-destination-enums.h"
-#include "progress-observer.h"
 
 namespace Solang
 {
@@ -38,14 +38,9 @@ BraseroDestination::BraseroDestination() throw() :
     braseroSessionCfg_(0),
     braseroTrackDataCfg_(0),
     braseroDriveSelection_(0),
-    braseroBurnBegin_(),
     initEnd_()
 {
     brasero_burn_library_start(0, 0);
-
-    braseroBurnBegin_.connect(
-        sigc::mem_fun(*this,
-                      &BraseroDestination::on_brasero_burn_begin));
 }
 
 BraseroDestination::~BraseroDestination() throw()
@@ -65,10 +60,9 @@ BraseroDestination::final(Application & application) throw()
 }
 
 void
-BraseroDestination::export_photo(
+BraseroDestination::export_photo_async(
                           const PhotoPtr & photo,
-                          const ProgressObserverPtr & observer)
-                          throw()
+                          const ProgressObserverPtr &) throw()
 {
     brasero_track_data_cfg_add(braseroTrackDataCfg_,
                                photo->get_uri().c_str(),
@@ -76,7 +70,7 @@ BraseroDestination::export_photo(
 }
 
 void
-BraseroDestination::export_photos(
+BraseroDestination::export_photos_async(
                           const PhotoList & photos,
                           const ProgressObserverPtr & observer)
                           throw()
@@ -84,13 +78,6 @@ BraseroDestination::export_photos(
     if (0 == braseroDrive_)
     {
         return;
-    }
-
-    if (0 != observer)
-    {
-        observer->set_event_description(_("Exporting photos"));
-        observer->set_num_events(photos.size());
-        observer->set_current_events(0);
     }
 
     braseroSessionCfg_ = brasero_session_cfg_new();
@@ -109,23 +96,13 @@ BraseroDestination::export_photos(
 
     for (it = photos.begin(); photos.end() != it; it++)
     {
-        export_photo(*it, observer);
-
-        if (0 != observer)
-        {
-            observer->receive_event_notifiation();
-        }
+        export_photo_async(*it, observer);
     }
 
     g_object_unref(braseroTrackDataCfg_);
     braseroTrackDataCfg_ = 0;
 
-    if (0 != observer)
-    {
-        observer->reset();
-    }
-
-    braseroBurnBegin_.emit();
+    brasero_burn_begin();
 }
 
 void BraseroDestination::final() throw()
@@ -191,6 +168,15 @@ BraseroDestination::set_create_archive(bool value) throw()
 }
 
 void
+BraseroDestination::brasero_burn_begin() throw()
+{
+    Glib::signal_idle().connect_once(
+        sigc::mem_fun(*this,
+                      &BraseroDestination::brasero_burn_begin_idle),
+        Glib::PRIORITY_LOW);
+}
+
+void
 BraseroDestination::brasero_burn_begin_idle() throw()
 {
     GtkWidget * const burn_dialog = brasero_burn_dialog_new();
@@ -203,23 +189,6 @@ BraseroDestination::brasero_burn_begin_idle() throw()
 
     g_object_unref(braseroSessionCfg_);
     braseroSessionCfg_ = 0;
-}
-
-void
-BraseroDestination::on_brasero_burn_begin() throw()
-{
-    // FIXME: Sometimes the brasero_burn_dialog_run gets stuck and
-    //        freezes the application. This is a workaround.
-
-    while (true == Gtk::Main::events_pending())
-    {
-        Gtk::Main::iteration();
-    }
-
-    Glib::signal_idle().connect_once(
-        sigc::mem_fun(*this,
-                      &BraseroDestination::brasero_burn_begin_idle),
-        Glib::PRIORITY_LOW);
 }
 
 } // namespace Solang

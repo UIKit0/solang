@@ -51,6 +51,7 @@ class Processor;
 namespace Gio
 {
 
+class AsyncResult;
 class DataInputStream;
 class File;
 
@@ -185,6 +186,11 @@ typedef std::tr1::shared_ptr<const IPlugin> ConstIPluginPtr;
 typedef std::tr1::shared_ptr<IPlugin> IPluginPtr;
 typedef std::vector<IPluginPtr> IPluginList;
 
+class IProgressObserver;
+typedef Glib::RefPtr<const IProgressObserver>
+    ConstProgressObserverPtr;
+typedef Glib::RefPtr<IProgressObserver> ProgressObserverPtr;
+
 class IRenderer;
 typedef const IRenderer * ConstIRendererPtr;
 typedef IRenderer * IRendererPtr;
@@ -202,6 +208,7 @@ typedef std::tr1::shared_ptr<const Photo> ConstPhotoPtr;
 typedef std::tr1::shared_ptr<Photo> PhotoPtr;
 typedef Photo * UnrefPhotoPtr;
 typedef std::vector<PhotoPtr> PhotoList;
+typedef std::tr1::shared_ptr<PhotoList> PhotoListPtr;
 
 class IPhotoSearchCriteria;
 typedef std::tr1::shared_ptr<const IPhotoSearchCriteria>
@@ -221,11 +228,6 @@ typedef Glib::RefPtr<const ProgressDialog> ConstProgressDialogPtr;
 typedef Glib::RefPtr<ProgressDialog> ProgressDialogPtr;
 
 typedef Glib::RefPtr<Glib::Dispatcher> DispatcherPtr;
-
-class ProgressObserver;
-typedef std::tr1::shared_ptr<const ProgressObserver>
-    ConstProgressObserverPtr;
-typedef std::tr1::shared_ptr<ProgressObserver> ProgressObserverPtr;
 
 class IStorage;
 typedef std::tr1::shared_ptr<const IStorage> ConstIStoragePtr;
@@ -280,6 +282,9 @@ typedef Glib::RefPtr<Gegl::Node> NodePtr;
 
 typedef Glib::RefPtr<const Gegl::Processor> ConstProcessorPtr;
 typedef Glib::RefPtr<Gegl::Processor> ProcessorPtr;
+
+typedef Glib::RefPtr<const Gio::AsyncResult> ConstAsyncResultPtr;
+typedef Glib::RefPtr<Gio::AsyncResult> AsyncResultPtr;
 
 typedef Glib::RefPtr<const Gio::DataInputStream>
     ConstDataInputStreamPtr;

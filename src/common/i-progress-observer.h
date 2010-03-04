@@ -16,30 +16,44 @@
  * with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef SOLANG_OPERATION_H
-#define SOLANG_OPERATION_H
+#ifndef SOLANG_I_PROGRESS_OBSERVER_H
+#define SOLANG_I_PROGRESS_OBSERVER_H
 
-#include "i-operation.h"
+#include <giomm.h>
+#include <glibmm.h>
 
 namespace Solang
 {
 
-class Operation :
-    public IOperation
+class IProgressObserver :
+    public Gio::Cancellable
 {
     public:
-        virtual BufferPtr
-        apply(const BufferPtr & buffer,
-              const ProgressObserverPtr & observer)
-              throw(Glib::Thread::Exit);
+        virtual
+        ~IProgressObserver() throw() = 0;
+
+        virtual bool
+        is_finished() const throw() = 0;
+
+        virtual void
+        progress() throw() = 0;
+
+        virtual void
+        set_description(const Glib::ustring & description)
+                        throw() = 0;
+
+        virtual void
+        set_fraction(gdouble fraction) throw() = 0;
+
+        virtual void
+        set_total(guint64 total) throw() = 0;
 
     protected:
-        virtual
-        ~Operation() throw() = 0;
+        IProgressObserver() throw();
 
-        Operation() throw();
+    private:
 };
 
 } // namespace Solang
 
-#endif // SOLANG_OPERATION_H
+#endif // SOLANG_I_PROGRESS_OBSERVER_H

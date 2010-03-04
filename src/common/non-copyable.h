@@ -26,7 +26,7 @@ class NonCopyable
 {
 public:
     virtual
-    ~NonCopyable() throw();
+    ~NonCopyable();
 
 protected:
     NonCopyable();

@@ -28,9 +28,9 @@
 #include <glibmm/i18n.h>
 
 #include "directory-destination.h"
+#include "i-progress-observer.h"
 #include "photo.h"
 #include "photo-destination-enums.h"
-#include "progress-observer.h"
 
 namespace Solang
 {
@@ -60,8 +60,9 @@ DirectoryDestination::final(Application & application) throw()
 }
 
 void
-DirectoryDestination::export_photo(
+DirectoryDestination::export_photo_async(
                           const PhotoPtr & photo,
+                          const PhotoListPtr & pending,
                           const ProgressObserverPtr & observer)
                           throw()
 {
@@ -69,27 +70,30 @@ DirectoryDestination::export_photo(
     const FilePtr dest = Gio::File::create_for_path(
                              filename_ + "/" + file->get_basename());
 
-    try
-    {
-        file->copy(dest, Gio::FILE_COPY_NONE);
-    }
-    catch (const Gio::Error & e)
-    {
-        g_warning("%s", e.what().c_str());
-    }
+    file->copy_async(
+        dest,
+        sigc::slot<void, goffset, goffset>(),
+        sigc::bind(
+            sigc::mem_fun(*this,
+                          &DirectoryDestination::on_async_copy_ready),
+            file,
+            pending,
+            observer),
+        observer,
+        Gio::FILE_COPY_NONE,
+        Glib::PRIORITY_DEFAULT);
 }
 
 void
-DirectoryDestination::export_photos(
+DirectoryDestination::export_photos_async(
                           const PhotoList & photos,
                           const ProgressObserverPtr & observer)
                           throw()
 {
     if (0 != observer)
     {
-        observer->set_event_description(_("Exporting photos"));
-        observer->set_num_events(photos.size());
-        observer->set_current_events(0);
+        observer->set_description(_("Exporting photos"));
+        observer->set_total(photos.size());
     }
 
     if (true == createArchive_)
@@ -116,32 +120,10 @@ DirectoryDestination::export_photos(
         }
     }
 
-    PhotoList::const_iterator it;
+    const PhotoListPtr pending(new PhotoList(photos.begin(),
+                                             photos.end()));
 
-    for (it = photos.begin(); photos.end() != it; it++)
-    {
-        export_photo(*it, observer);
-
-        if (0 != observer)
-        {
-            observer->receive_event_notifiation();
-        }
-    }
-
-    if (true == createArchive_)
-    {
-        const std::string command_line
-            = "file-roller --add-to=" + filename_ + ".zip"
-              + " --add " + filename_;
-
-        Glib::spawn_command_line_sync(command_line);
-        g_remove(filename_.c_str());
-    }
-
-    if (0 != observer)
-    {
-        observer->reset();
-    }
+    export_photo_async(pending->back(), pending, observer);
 
     return;
 }
@@ -154,6 +136,95 @@ sigc::signal<void, bool> &
 DirectoryDestination::init_end() throw()
 {
     return initEnd_;
+}
+
+void
+DirectoryDestination::on_async_copy_ready(
+                          const AsyncResultPtr & async_result,
+                          const FilePtr & file,
+                          const PhotoListPtr & pending,
+                          const ProgressObserverPtr & observer)
+                          throw()
+{
+    try
+    {
+        file->copy_finish(async_result);
+    }
+    catch (const Gio::Error & e)
+    {
+        switch (e.code())
+        {
+        case Gio::Error::CANCELLED:
+            return;
+            break;
+
+        default:
+            g_warning("%s", e.what().c_str());
+            break;
+        }
+    }
+
+    if (0 != observer)
+    {
+        observer->progress();
+    }
+
+    pending->pop_back();
+
+    if (true == pending->empty())
+    {
+        if (true == createArchive_)
+        {
+            const std::string command_line
+                = Glib::find_program_in_path("file-roller")
+                  + " --add-to=" + filename_ + ".zip"
+                  + " --add " + filename_;
+
+            GPid pid;
+
+            try
+            {
+                Glib::spawn_async(
+                          "",
+                          Glib::shell_parse_argv(command_line),
+                          static_cast<Glib::SpawnFlags>(0),
+                          sigc::slot<void>(),
+                          &pid);
+            }
+            catch (const Glib::ShellError & e)
+            {
+                g_warning("%s", e.what().c_str());
+                return;
+            }
+            catch (const Glib::SpawnError & e)
+            {
+                g_warning("%s", e.what().c_str());
+                return;
+            }
+
+            Glib::signal_child_watch().connect(
+                sigc::bind(
+                    sigc::mem_fun(
+                        *this,
+                        &DirectoryDestination::on_child_watch),
+                    filename_),
+                pid,
+                Glib::PRIORITY_DEFAULT);
+        }
+    }
+    else
+    {
+        export_photo_async(pending->back(), pending, observer);
+    }
+}
+
+void
+DirectoryDestination::on_child_watch(GPid,
+                                     int,
+                                     const std::string & filename)
+                                     throw()
+{
+    g_remove(filename.c_str());
 }
 
 void

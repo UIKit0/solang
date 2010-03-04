@@ -91,27 +91,22 @@ class Database
 
         //Group by year
         DatePhotoInfoList
-        get_dates_with_picture_count( const ProgressObserverPtr &);
+        get_dates_with_picture_count( );
 
         //Group by year, month
         DatePhotoInfoList
-        get_dates_with_picture_count( gint year,
-                            const ProgressObserverPtr &);
+        get_dates_with_picture_count( gint year );
 
         //Group by year, month, day
         DatePhotoInfoList
-        get_dates_with_picture_count(
-            gint year, gint month,
-            const ProgressObserverPtr &);
+        get_dates_with_picture_count(gint year, gint month);
 
         void
         get_tags_async(const SlotAsyncTags & slot) const throw();
 
     private:
         DatePhotoInfoList
-        get_dates_with_picture_count(
-            const Glib::ustring & sql,
-            const ProgressObserverPtr &);
+        get_dates_with_picture_count(const Glib::ustring & sql);
 
         void
         on_async_exif_data(std::vector<UStringList> & result,

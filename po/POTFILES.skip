@@ -1,6 +1,7 @@
 data/edit-toolbar.ui
 data/save-modified-photos.ui
 data/solang.desktop.in
+src/common/progress-widget.cpp
 src/common/spinner-dialog.cpp
 src/importer/camera-import-widget.cpp
 src/importer/camera-source.cpp

@@ -47,7 +47,8 @@ class IOperation :
 
         virtual BufferPtr
         apply(const BufferPtr & buffer,
-              const ProgressObserverPtr & observer) throw() = 0;
+              const ProgressObserverPtr & observer)
+              throw(Glib::Thread::Exit) = 0;
 
         virtual Glib::ustring
         get_description() const throw() = 0;

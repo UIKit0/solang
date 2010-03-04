@@ -71,6 +71,9 @@ class Application :
         MainWindow &
         get_main_window() throw();
 
+        ProgressDialog &
+        get_progress_dialog() throw();
+
         const ListStorePtr &
         get_list_store() throw();
 
@@ -107,9 +110,6 @@ class Application :
         add_photos_to_model(const PhotoList & photos) throw();
 
         void
-        hide_progress_dialog() throw();
-
-        void
         on_async_search(PhotoList & photos) throw();
 
         void
@@ -119,14 +119,9 @@ class Application :
         void
         on_thumbnailer_ready(PhotoList & photos) const throw();
 
-        void
-        show_progress_dialog() throw();
-
         Glib::ThreadPool threadPool_;
 
         IconFactoryPtr iconFactory_;
-
-        ProgressObserverPtr observer_;
 
         Engine engine_;
 
