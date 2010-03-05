@@ -28,7 +28,11 @@
 #include <giomm.h>
 
 #include "application.h"
+
+#ifdef HAVE_BRASERO
 #include "brasero-destination.h"
+#endif // HAVE_BRASERO
+
 #include "browser-model-column-record.h"
 #include "browser-renderer.h"
 //#include "camera-source.h"
@@ -289,11 +293,13 @@ Application::init() throw()
                                                true));
     plugins_.push_back(directory_exporter);
 
+#ifdef HAVE_BRASERO
     IPhotoDestinationPtr brasero_destination(
                              new BraseroDestination());
     IPluginPtr brasero_exporter(new Exporter(brasero_destination,
                                              false));
     plugins_.push_back(brasero_exporter);
+#endif // HAVE_BRASERO
 
 //    IPhotoSourcePtr directory_source(new DirectorySource());
 //    IPluginPtr directory_importer(new Importer(directory_source, true));

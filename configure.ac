@@ -35,7 +35,6 @@ if test x"$DBUS_BINDING_TOOL" = x"no"; then
 fi
 
 PKG_CHECK_MODULES(BABL, [babl])
-PKG_CHECK_MODULES(BRASERO, [libbrasero-burn >= 2.28.3])
 PKG_CHECK_MODULES(DBUS, [dbus-glib-1])
 PKG_CHECK_MODULES(GDL, [gdl-1.0])
 PKG_CHECK_MODULES(GEGLMM, [geglmm >= 0.1.0])
@@ -43,6 +42,28 @@ PKG_CHECK_MODULES(GTKIMAGEVIEW, [gtkimageview])
 PKG_CHECK_MODULES(GTKMM, [gtkmm-2.4 >= 2.8])
 PKG_CHECK_MODULES(TRACKER, [tracker-client-0.7 >= 0.7.16])
 
+AC_ARG_ENABLE(
+    [brasero-exporter],
+    [AS_HELP_STRING(
+        [--disable-brasero-exporter],
+        [disable the Brasero-based CD/DVD exporter (default=auto)])],
+    [],
+    [enable_brasero_exporter=auto])
+AS_IF([test "x$enable_brasero_exporter" != xno],
+      [PKG_CHECK_MODULES(
+           [BRASERO],
+           [libbrasero-burn >= 2.28.3],
+           [have_brasero=yes
+            AC_DEFINE([HAVE_BRASERO],
+                      [1],
+                      [Define to 1 if you have Brasero >= 2.28.3])],
+           [if test "x$enable_brasero_exporter" != xauto; then
+                AC_MSG_FAILURE(
+                    [Can't enable the Brasero-based CD/DVD exporter])
+            fi])],
+      [have_brasero=no])
+AM_CONDITIONAL([BUILD_BRASERO_EXPORTER],
+               [test "x$have_brasero" = xyes])
 
 AC_CONFIG_FILES([
 Makefile
@@ -68,3 +89,8 @@ src/renderer/Makefile
 po/Makefile.in
 ])
 AC_OUTPUT
+
+AC_MSG_RESULT([
+Building $PACKAGE_NAME with prefix=$prefix
+Brasero-based CD/DVD exporter: $have_brasero
+])

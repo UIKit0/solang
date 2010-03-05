@@ -8,10 +8,18 @@ libexporter_la_SOURCES = \
 	photo-destination.h \
 	photo-destination.cpp \
 	photo-destination-enums.h \
-	brasero-destination.cpp \
-	brasero-destination.h \
 	directory-destination.h \
 	directory-destination.cpp
+
+if BUILD_BRASERO_EXPORTER
+libexporter_la_SOURCES += \
+	brasero-destination.cpp \
+	brasero-destination.h
+endif
+
+EXTRA_libexporter_la_SOURCES = \
+	brasero-destination.cpp \
+	brasero-destination.h
 
 AM_CPPFLAGS = \
 	-DPACKAGE_LOCALE_DIR=\""${datadir}/locale"\" \
