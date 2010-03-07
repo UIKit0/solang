@@ -34,6 +34,11 @@ if test x"$DBUS_BINDING_TOOL" = x"no"; then
     AC_MSG_ERROR([could not find dbus-binding-tool in \$PATH.])
 fi
 
+AC_CHECK_HEADERS([archive.h],
+                 [ARCHIVE_LIBS=-larchive
+                  AC_SUBST([ARCHIVE_LIBS])],
+                 [AC_MSG_FAILURE([Can't find libarchive.])])
+
 PKG_CHECK_MODULES(BABL, [babl])
 PKG_CHECK_MODULES(DBUS, [dbus-glib-1])
 PKG_CHECK_MODULES(GDL, [gdl-1.0])

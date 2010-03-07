@@ -1,6 +1,6 @@
 /* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*- */
 /*
- * Copyright (C) 2009 Debarshi Ray <rishi@gnu.org>
+ * Copyright (C) 2009, 2010 Debarshi Ray <rishi@gnu.org>
  * Copyright (C) 2009 Santanu Sinha <santanu.sinha@gmail.com>
  *
  * Solang is free software: you can redistribute it and/or modify it
@@ -27,6 +27,7 @@
 #include <glib/gstdio.h>
 #include <glibmm/i18n.h>
 
+#include "archive-maker.h"
 #include "directory-destination.h"
 #include "i-progress-observer.h"
 #include "photo.h"
@@ -96,34 +97,30 @@ DirectoryDestination::export_photos_async(
         observer->set_total(photos.size());
     }
 
+    const PhotoListPtr pending(new PhotoList(photos.begin(),
+                                             photos.end()));
+
     if (true == createArchive_)
     {
         Glib::Date date;
         date.set_time_current();
 
-        const std::string tmp_dirname = date.format_string("%Y%m%d");
+        const std::string dest = date.format_string("%Y%m%d") + ".zip";
         filename_ += "/";
-        filename_ += tmp_dirname;
+        filename_ += dest;
 
-        if (false == Glib::file_test(filename_,
-                                     Glib::FILE_TEST_EXISTS))
-        {
-            try
-            {
-                Gio::File::create_for_path(
-                    filename_)->make_directory_with_parents();
-            }
-            catch (const Gio::Error & e)
-            {
-                g_warning("%s", e.what().c_str());
-            }
-        }
+        const ArchiveMakerPtr archive_maker = ArchiveMaker::create();
+        archive_maker->make_async(
+            filename_,
+            pending,
+            sigc::bind(sigc::slot<void, const ArchiveMakerPtr &>(),
+                       archive_maker),
+            observer);
     }
-
-    const PhotoListPtr pending(new PhotoList(photos.begin(),
-                                             photos.end()));
-
-    export_photo_async(pending->back(), pending, observer);
+    else
+    {
+        export_photo_async(pending->back(), pending, observer);
+    }
 
     return;
 }
@@ -171,48 +168,7 @@ DirectoryDestination::on_async_copy_ready(
 
     pending->pop_back();
 
-    if (true == pending->empty())
-    {
-        if (true == createArchive_)
-        {
-            const std::string command_line
-                = Glib::find_program_in_path("file-roller")
-                  + " --add-to=" + filename_ + ".zip"
-                  + " --add " + filename_;
-
-            GPid pid;
-
-            try
-            {
-                Glib::spawn_async(
-                          "",
-                          Glib::shell_parse_argv(command_line),
-                          static_cast<Glib::SpawnFlags>(0),
-                          sigc::slot<void>(),
-                          &pid);
-            }
-            catch (const Glib::ShellError & e)
-            {
-                g_warning("%s", e.what().c_str());
-                return;
-            }
-            catch (const Glib::SpawnError & e)
-            {
-                g_warning("%s", e.what().c_str());
-                return;
-            }
-
-            Glib::signal_child_watch().connect(
-                sigc::bind(
-                    sigc::mem_fun(
-                        *this,
-                        &DirectoryDestination::on_child_watch),
-                    filename_),
-                pid,
-                Glib::PRIORITY_DEFAULT);
-        }
-    }
-    else
+    if (false == pending->empty())
     {
         export_photo_async(pending->back(), pending, observer);
     }

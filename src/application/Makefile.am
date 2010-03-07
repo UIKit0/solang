@@ -21,6 +21,7 @@ solang_LDADD = \
 	$(top_builddir)/src/attribute/libattribute.la \
 	$(top_builddir)/src/editor/libeditor.la \
 	$(top_builddir)/src/common/libcommon.la \
+	$(ARCHIVE_LIBS) \
 	$(BRASERO_LIBS) \
 	$(DBUS_LIBS) \
 	$(GTKIMAGEVIEW_LIBS) \

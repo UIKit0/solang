@@ -10,6 +10,8 @@ BUILT_SOURCES = \
 
 libcommon_la_SOURCES = \
 	$(libcommon_la_built_sources) \
+	archive-maker.cpp \
+	archive-maker.h \
 	database.cpp \
 	database.h \
 	delete-action.cpp \
