@@ -1,0 +1,782 @@
+# German translation for solang.
+# Copyright (C) 2010 solang's COPYRIGHT HOLDER
+# This file is distributed under the same license as the solang package.
+# Mario Blättermann <mariobl@gnome.org>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: solang master\n"
+"POT-Creation-Date: 2010-03-07 20:55+0000\n"
+"PO-Revision-Date: 2010-03-07 23:43+0100\n"
+"Last-Translator: Mario Blättermann <mariobl@gnome.org>\n"
+"Language-Team: German <gnome-de@gnome.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+
+#: C/legal.xml:3(p)
+msgid ""
+"This work is licensed under a <link href=\"http://creativecommons.org/"
+"licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
+"License</link>."
+msgstr ""
+"Dieses Werk ist lizenziert unter einer <link href=\"http://creativecommons."
+"org/licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 "
+"Unported License</link>."
+
+#: C/legal.xml:6(p)
+msgid ""
+"As a special exception, the copyright holders give you permission to copy, "
+"modify, and distribute the example code contained in this document under the "
+"terms of your choosing, without restriction."
+msgstr ""
+"Als besondere Ausnahme erteilen Ihnen die Urheberrechtsinhaber die "
+"Genehmigung, den in diesem Dokument enthaltenen Beispielcode ohne "
+"Einschränkung unter den Bedingungen Ihrer Wahl zu verbreiten."
+
+#: C/tags_manage.page:7(desc)
+msgid "Create, modify and delete tags."
+msgstr "Erstellen, Bearbeiten und Löschen von Markierungen."
+
+#: C/tags_manage.page:11(name) C/keys.page:9(name) C/howto_search.page:10(name)
+#: C/tags_intro.page:9(name) C/intro.page:10(name)
+#: C/photos_by_page.page:10(name) C/index.page:7(name) C/tags_use.page:11(name)
+#: C/import.page:10(name) C/export_folder.page:10(name)
+msgid "Florent Thévenet"
+msgstr "Florent Thévenet"
+
+#: C/tags_manage.page:12(email) C/keys.page:10(email)
+#: C/howto_search.page:11(email) C/tags_intro.page:10(email)
+#: C/intro.page:11(email) C/photos_by_page.page:11(email) C/index.page:8(email)
+#: C/tags_use.page:12(email) C/import.page:11(email)
+#: C/export_folder.page:11(email)
+msgid "feuloren@free.fr"
+msgstr "feuloren@free.fr"
+
+#: C/tags_manage.page:16(title)
+msgid "Manage your tags"
+msgstr "Ihre Markierungen verwalten"
+
+#: C/tags_manage.page:19(title)
+msgid "Create a tag"
+msgstr "Eine Markierung erstellen"
+
+#: C/tags_manage.page:21(p)
+msgid "You can quickly create tags."
+msgstr "Sie können Markierungen schnell und einfach bearbeiten."
+
+#: C/tags_manage.page:25(p)
+msgid ""
+"From the <gui>main</gui> window, choose <guiseq><gui>Tags</gui><gui>Create "
+"New Tag...</gui></guiseq>."
+msgstr ""
+"Wählen Sie im <gui>Hauptfenster</gui> <guiseq><gui>Markierungen</"
+"gui><gui>Neue Markierung erstellen …</gui></guiseq>."
+
+#: C/tags_manage.page:29(p)
+msgid ""
+"In the <gui>Create New Tag</gui> window, enter the name of your tag and enter "
+"an optional description."
+msgstr ""
+"Geben Sie im Fenster <gui>Neue Markierung erstellen</gui> den Namen und "
+"wahlweise auch eine Beschreibung der Markierung ein."
+
+#: C/tags_manage.page:32(p)
+msgid "Press <gui>OK</gui> to validate the creation of the tag."
+msgstr ""
+"Klicken Sie auf <gui>OK</gui>, um die Erstellung der Markierung zu bestätigen."
+
+#: C/tags_manage.page:39(title)
+msgid "Modify a Tag"
+msgstr "Eine Markierung bearbeiten"
+
+#: C/tags_manage.page:41(p)
+msgid "You can modify the name and the description of a tag."
+msgstr "Sie können den Namen und die Beschreibung einer Markierung ändern."
+
+#: C/tags_manage.page:45(p)
+msgid ""
+"From the <gui>main</gui> window, choose <guiseq><gui>Tags</gui><gui>Edit "
+"Selected Tag...</gui></guiseq>."
+msgstr ""
+"Wählen Sie im <gui>Hauptfenster</gui> <guiseq><gui>Markierungen</"
+"gui><gui>Gewählte Markierung bearbeiten …</gui></guiseq>."
+
+#: C/tags_manage.page:49(p)
+msgid "In the <gui>Edit Tag</gui> window, modify the field you want."
+msgstr ""
+"Im Fenster <gui>Markierung bearbeiten</gui> können Sie die gewünschten Felder "
+"ändern."
+
+#: C/tags_manage.page:52(p)
+msgid "Press <gui>OK</gui> to save the modifications of the tag."
+msgstr ""
+"Klicken Sie auf <gui>OK</gui>, um die Änderungen an dieser Markierung zu "
+"speichern."
+
+#: C/tags_manage.page:58(title)
+msgid "Delete a tag."
+msgstr "Eine Markierung entfernen."
+
+#: C/tags_manage.page:60(p)
+msgid "You can delete a tag."
+msgstr "Sie können eine Markierung entfernen."
+
+#: C/tags_manage.page:64(p)
+msgid "In the <gui>Tag List</gui>, click on the tag you want to delete."
+msgstr ""
+"Klicken Sie in der <gui>Markierungsliste</gui> auf die Markierung, welche Sie "
+"löschen wollen."
+
+#: C/tags_manage.page:67(p)
+msgid ""
+"Choose <guiseq><gui>Tags</gui><gui>Delete Selected Tag</gui></guiseq> to "
+"delete this tag."
+msgstr ""
+"Wählen Sie <guiseq><gui>Markierungen</gui><gui>Ausgewählte Markierung "
+"löschen</gui></guiseq>, um diese Markierung zu löschen."
+
+#: C/keys.page:5(desc)
+msgid "You are going to love your keyboard."
+msgstr "Sie werden beginnen, Ihre Tastatur zu lieben …"
+
+#: C/keys.page:14(title)
+msgid "Keyboard shortcuts"
+msgstr "Tastenkombinationen"
+
+#: C/keys.page:17(title)
+msgid "View"
+msgstr "Ansicht"
+
+#: C/keys.page:20(p)
+msgid "Fullscreen"
+msgstr "Vollbild"
+
+#: C/keys.page:20(p)
+msgid "Go to fullscreen mode and go back to windowed mode."
+msgstr "Zwischen Vollbildmodus und normalem Fenstermodus wechseln."
+
+#: C/keys.page:21(key)
+msgid "F11"
+msgstr "F11"
+
+#: C/keys.page:24(p)
+msgid "Slideshow"
+msgstr "Diaschau"
+
+#: C/keys.page:24(p)
+msgid "Go to slideshow mode."
+msgstr "In den Diaschau-Modus wechseln."
+
+#: C/keys.page:25(key)
+msgid "F5"
+msgstr "F5"
+
+#: C/keys.page:28(p)
+msgid "Zoom In"
+msgstr "Vergrößern"
+
+#: C/keys.page:28(p)
+msgid "Enlarge the picture or the thumbnails."
+msgstr "Das Bild oder die Vorschaubilder vergrößern."
+
+#: C/keys.page:29(key) C/keys.page:33(key) C/keys.page:37(key)
+#: C/keys.page:47(key)
+msgid "Ctrl"
+msgstr "Strg"
+
+#: C/keys.page:29(key)
+msgid "+"
+msgstr "+"
+
+#: C/keys.page:32(p)
+msgid "Zoom Out"
+msgstr "Verkleinern"
+
+#: C/keys.page:32(p)
+msgid "Reduce the size of the picture or the thumbnails."
+msgstr "Die Größe des Bildes oder der Vorschaubilder reduzieren."
+
+#: C/keys.page:33(key)
+msgid "-"
+msgstr "-"
+
+#: C/keys.page:36(p)
+msgid "Normal size"
+msgstr "Normale Größe"
+
+#: C/keys.page:36(p)
+msgid "Display image in its normal size (only in <gui>Enlarged mode</gui>)."
+msgstr ""
+"Das Bild in seiner normalen Größe anzeigen (nur im <gui>Vergrößert-Modus</"
+"gui>)."
+
+#: C/keys.page:37(key)
+msgid "0"
+msgstr "0"
+
+#: C/keys.page:43(title) C/index.page:38(title)
+msgid "Tags"
+msgstr "Markierungen"
+
+#: C/keys.page:46(p)
+msgid "Attach Tag to Selection"
+msgstr "Markierung zur Auswahl hinzufügen"
+
+#: C/keys.page:46(p)
+msgid "Attach the selected tag to the selected photos."
+msgstr "Die gewählte Markierung zu den gewählten Fotos hinzufügen."
+
+#: C/keys.page:47(key)
+msgid "T"
+msgstr "T"
+
+#: C/keys.page:67(title)
+msgid "Navigation (In <gui>Browser mode</gui>)"
+msgstr "Navigation (In <gui>Browser-Modus</gui>)"
+
+#: C/keys.page:70(p)
+msgid "Previous Page"
+msgstr "Vorherige Seite"
+
+#: C/keys.page:70(p)
+msgid "Go to the previous page."
+msgstr "Zur vorherigen Seite gehen."
+
+#: C/keys.page:71(key) C/keys.page:75(key) C/keys.page:79(key)
+#: C/keys.page:83(key) C/keys.page:93(key) C/keys.page:97(key)
+#: C/keys.page:101(key) C/keys.page:105(key)
+msgid "Alt"
+msgstr "Alt"
+
+#: C/keys.page:71(key) C/keys.page:93(key)
+msgid "Left"
+msgstr "Links"
+
+#: C/keys.page:74(p)
+msgid "Next Page"
+msgstr "Nächste Seite"
+
+#: C/keys.page:74(p)
+msgid "Go to the next page."
+msgstr "Zur nächsten Seite gehen."
+
+#: C/keys.page:75(key) C/keys.page:97(key)
+msgid "Right"
+msgstr "Rechts"
+
+#: C/keys.page:78(p)
+msgid "First Page"
+msgstr "Erste Seite"
+
+#: C/keys.page:78(p)
+msgid "Go to the first page."
+msgstr "Zur ersten Seite gehen."
+
+#: C/keys.page:79(key) C/keys.page:101(key)
+msgid "Home"
+msgstr "Pos1"
+
+#: C/keys.page:82(p)
+msgid "Last Page"
+msgstr "Letzte Seite"
+
+#: C/keys.page:82(p)
+msgid "Go to the last page."
+msgstr "Zur letzten Seite gehen."
+
+#: C/keys.page:83(key) C/keys.page:105(key)
+msgid "End"
+msgstr "End"
+
+#: C/keys.page:89(title)
+msgid "Navigation (In <gui>Enlarged mode</gui>)"
+msgstr "Navigation (Im <gui>Vergrößert-Modus</gui>)"
+
+#: C/keys.page:92(p)
+msgid "Previous Photo"
+msgstr "Vorheriges Foto"
+
+#: C/keys.page:92(p)
+msgid "Go to the previous photo."
+msgstr "Zum vorherigen Foto gehen."
+
+#: C/keys.page:96(p)
+msgid "Next Photo"
+msgstr "Nächstes Foto"
+
+#: C/keys.page:96(p)
+msgid "Go to the next photo."
+msgstr "Zum nächsten Foto gehen."
+
+#: C/keys.page:100(p)
+msgid "First Photo"
+msgstr "Erstes Foto"
+
+#: C/keys.page:100(p)
+msgid "Go to the first photo."
+msgstr "Zum ersten Foto in der Sammlung gehen."
+
+#: C/keys.page:104(p)
+msgid "Last Photo"
+msgstr "Letztes Foto"
+
+#: C/keys.page:104(p)
+msgid "Go to the last photo."
+msgstr "Zum letzten Foto in der Sammlung gehen."
+
+#: C/howto_search.page:6(desc)
+msgid "Filters your photos."
+msgstr "Filtert Ihre Fotos."
+
+#: C/howto_search.page:15(title)
+msgid "How do I use the search function?"
+msgstr "Wie benutze ich die Suchfunktion?"
+
+#: C/howto_search.page:17(p)
+msgid ""
+"Actually you have to drag and drop one or more filters to the <gui>Search "
+"Basket</gui>. <app>Solang</app> will display only photos that correspond to "
+"all the filters you have chosen. Today only tags are filters."
+msgstr ""
+"Derzeit müssen Sie einen oder mehrere Filter in den <gui>Suchkorb</gui> "
+"ziehen und dort ablegen. <app>Solang</app> zeigt dann nur Fotos an, die auf "
+"alle von Ihnen gewählten Filter passen. Gegenwärtig können nur Markierungen "
+"als Filter verwendet werden."
+
+#: C/howto_search.page:19(p)
+msgid ""
+"To add a filter drag a tag from the <gui>Tag List</gui> to the <gui>Search "
+"Basket</gui>."
+msgstr ""
+"Um einen Filter hinzuzufügen, ziehen Sie eine Markierung aus der "
+"<gui>Markierungsliste</gui> in den <gui>Suchkorb</gui> und legen Sie sie dort "
+"ab."
+
+#: C/howto_search.page:20(p)
+msgid ""
+"To remove all the filters, right-click on a filter and choose <gui>Select "
+"All</gui>, then righ-click on the same filter and choose <gui>Remove</gui>."
+msgstr ""
+"Um alle Filter zu entfernen, klicken Sie mit der rechten Maustaste auf einen "
+"Filter und wählen Sie <gui>Alles auswählen</gui>. Dann klicken Sie erneut auf "
+"den gleichen Filter und wählen Sie <gui>Entfernen</gui>."
+
+#: C/howto_search.page:21(p)
+msgid ""
+"To remove one filter, right-click on the filter you want to remove in the "
+"<gui>Search Basket</gui> and choose <gui>Remove</gui>."
+msgstr ""
+"Um einen Filter zu entfernen, klicken Sie im <gui>Suchkorb</gui> mit der "
+"rechten Maustaste auf den gewünschten Filter und wählen Sie <gui>Entfernen</"
+"gui>."
+
+#: C/howto_search.page:24(p)
+msgid ""
+"What's more you can use the <gui>Free text search</gui> entry to filter "
+"photos name."
+msgstr ""
+"Sie können das <gui>Textsuchfeld</gui> verwenden, um Fotos nach Namen zu "
+"filtern."
+
+#: C/howto_search.page:26(p)
+msgid ""
+"Write the text you want to search in the <gui>Free text search</gui> entry"
+msgstr "Geben Sie den zu suchenden Text in die <gui>Textsuchzeile</gui> ein."
+
+#: C/howto_search.page:27(p)
+msgid "Press <key>Enter</key>"
+msgstr "Drücken Sie die <key>Eingabetaste</key>."
+
+#: C/tags_intro.page:5(desc)
+msgid "An introduction to tags"
+msgstr "Einführung in Markierungen"
+
+#: C/tags_intro.page:14(title)
+msgid "What's a tag?"
+msgstr "Was ist eine Markierung?"
+
+#: C/tags_intro.page:15(p)
+msgid ""
+"Tags are keyword you can use to label and organize your photos. You may have "
+"already seen it in weblogs."
+msgstr ""
+"Markierungen sind Schlüsselwörter, die Sie zum Beschriften und Organisieren "
+"Ihrer Fotos verwenden können. Vielleicht haben Sie solche Markierungen schon "
+"in Weblogs gesehen."
+
+#: C/tags_intro.page:16(p)
+msgid ""
+"<app>Solang</app> uses tags to help you organizing your photos. In fact, you "
+"can use tags to organize your photos the way you want!"
+msgstr ""
+"<app>Solang</app> benutzt Markierungen, um Sie beim Organisieren Ihrer Fotos "
+"zu unterstützen. Faktisch können Sie Markierungen dazu verwenden, Ihre Fotos "
+"in jeglicher von Ihnen gewünschter Weise zu ordnen!"
+
+#: C/tags_intro.page:17(p)
+msgid ""
+"For example, some people uses tags to create \"albums\" of their holiday "
+"photos. Some others use tags to show what friends are in their photos, to "
+"view only photos from one geographical place or distinguish the photos they "
+"have modified."
+msgstr ""
+"Beispielsweise könnten Benutzer Markierungen dazu verwenden, Alben ihrer "
+"Urlaubsfotos zu erstellen. Andere dagegen benutzen Markierungen, um zu "
+"zeigen, welche ihrer Freunde auf den Fotos zu sehen sind, um nur Fotos von "
+"einem geografischen Ort zu zeigen oder um bearbeitete Fotos von "
+"unbearbeiteten unterscheiden zu können."
+
+#: C/tags_intro.page:19(p)
+msgid ""
+"<app>Solang</app> allows you to use tags as filters to view only photos that "
+"have some tags attached to them."
+msgstr ""
+"<app>Solang</app> ermöglicht Ihnen, diese Markierungen als Filter zu "
+"verwenden, so dass nur Fotos angezeigt werden, die eine bestimmte Markierung "
+"enthalten."
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/intro.page:24(None)
+msgid "@@image: 'figures/main-window.png'; md5=3531b20d31fd0896d595d3fd691e4944"
+msgstr ""
+
+#: C/intro.page:6(desc)
+msgid "Introduction to the <app>Solang</app> photos manager."
+msgstr "Einführung in die Fotoverwaltung <app>Solang</app>."
+
+#: C/intro.page:15(title)
+msgid "Introduction to <app>Solang</app>"
+msgstr "Einführung in <app>Solang</app>"
+
+#: C/intro.page:16(p)
+msgid ""
+"<app>Solang</app> is a photo manager for the GNOME desktop. It lets you "
+"manage your collection of photos by tagging them and searching through them "
+"based on various criteria -- tags, EXIF data, dates."
+msgstr ""
+"<app>Solang</app> ist eine Fotoverwaltung für die GNOME-Arbeitsumgebung. Sie "
+"ermöglicht Ihnen die Verwaltung Ihrer Fotosammlung. Sie können Ihre Fotos mit "
+"Markierungen kennzeichnen oder die Sammlung anhand verschiedener Kriterien "
+"durchsuchen, wie Markierungen, EXIF-Daten oder Zeit- und Datumsangaben."
+
+#: C/intro.page:17(p)
+msgid ""
+"You don't need to care about importing your photos to view them, as soon as "
+"you add photos to your computer you can enjoy them right into <app>Solang</"
+"app>. In the same way, if you attached tags to a photo from the <app>File "
+"manager</app>, they are automatically recognized in <app>Solang</app>."
+msgstr ""
+"Sie brauchen keine Fotos zu importieren, um sie betrachten zu können. Sobald "
+"Sie Fotos auf Ihrem Rechner haben, können Sie diese direkt in <app>Solang</"
+"app> anzeigen. Außerdem werden Markierungen, die Sie zu Fotos im "
+"<app>Dateimanager</app> hinzugefügt haben, automatisch von <app>Solang</app> "
+"berücksichtigt."
+
+#: C/intro.page:18(p)
+msgid ""
+"If your photos are the wrong way around you can rotate them or flip them in "
+"one click."
+msgstr ""
+"Falls Ihre Fotos falsch ausgerichtet sind, können Sie sie mit einem einzigen "
+"Klick drehen oder spiegeln."
+
+#: C/intro.page:19(p)
+msgid ""
+"You can enjoy your photos with your friends thanks to the slideshow feature "
+"and the fullscreen mode."
+msgstr ""
+"Dank der Diaschaufunktion und dem Vollbildmodus können Sie Ihre Fotos mit "
+"Ihren Freunden gemeinsam genießen."
+
+#: C/intro.page:22(title)
+msgid "<gui>Main</gui> window"
+msgstr "<gui>Hauptfenster</gui>"
+
+#: C/intro.page:23(desc)
+msgid "<app>Solang</app> main window"
+msgstr "<app>Solang</app>-Hauptfenster"
+
+#: C/intro.page:25(p)
+msgid "<app>Solang</app> main window."
+msgstr "<app>Solang</app>-Hauptfenster."
+
+#: C/photos_by_page.page:6(desc)
+msgid "To view more than 50 photos."
+msgstr "Betrachten von mehr als 50 Fotos."
+
+#: C/photos_by_page.page:15(title)
+msgid "I don't see all my photos."
+msgstr "Ich sehe nicht alle meine Fotos."
+
+#: C/photos_by_page.page:16(p)
+msgid ""
+"<app>Solang</app> only display 50 photos by page, so you can only preview 50 "
+"photos at once."
+msgstr ""
+"<app>Solang</app> kann nur 50 Fotos pro Seite anzeigen, so dass Sie nur 50 "
+"Fotos gleichzeitig betrachten können."
+
+#: C/photos_by_page.page:17(p)
+msgid "Hopefully there are multiple pages."
+msgstr "Hoffentlich gibt es dann auch mehrere Seiten."
+
+#: C/photos_by_page.page:18(p)
+msgid "To go to the next page you can"
+msgstr "Um zur nächsten Seite zu gehen, können Sie Folgendes tun:"
+
+#: C/photos_by_page.page:21(p)
+msgid "Click on the <gui>Next page</gui> button in the <gui>Toolbar</gui>."
+msgstr ""
+"Klick Sie auf den Knopf <gui>Nächste Seite</gui> in der <gui>Werkzeugleiste</"
+"gui>."
+
+#: C/photos_by_page.page:24(p)
+msgid "Press <keyseq><key>Alt</key><key>Page Down</key></keyseq>."
+msgstr "Drücken Sie <keyseq><key>Alt</key><key>Pfeiltaste ab</key></keyseq>."
+
+#: C/photos_by_page.page:27(p)
+msgid ""
+"Choose <guiseq><gui>Go</gui><gui>Next Page</gui></guiseq> from the <gui>Main "
+"Window</gui>."
+msgstr ""
+"Wählen Sie <guiseq><gui>Gehe zu</gui><gui>Nächste Seite</gui></guiseq> im "
+"<gui>Hauptfenster</gui>."
+
+#: C/photos_by_page.page:30(p)
+msgid "To go to the previous page you can"
+msgstr "Um zur vorherigen Seite zu gehen, können Sie folgendes tun:"
+
+#: C/photos_by_page.page:33(p)
+msgid "Click on the <gui>Previous page</gui> button in the <gui>Toolbar</gui>."
+msgstr ""
+"Klicken Sie auf den Knopf <gui>Vorherige Seite</gui> in der "
+"<gui>Werkzeugleiste</gui>."
+
+#: C/photos_by_page.page:36(p)
+msgid "Press <keyseq><key>Alt</key><key>Page Up</key></keyseq>."
+msgstr "Drücken Sie <keyseq><key>Alt</key><key>Pfeiltaste auf</key></keyseq>."
+
+#: C/photos_by_page.page:39(p)
+msgid ""
+"Choose <guiseq><gui>Go</gui><gui>Previous Page</gui></guiseq> from the "
+"<gui>Main Window</gui>."
+msgstr ""
+"Wählen Sie <guiseq><gui>Gehe zu</gui><gui>Vorherige Seite</gui></guiseq> im "
+"<gui>Hauptfenster</gui>."
+
+#: C/index.page:13(title)
+msgid "<app>Solang</app> Help"
+msgstr "<app>Solang</app>-Hilfe"
+
+#: C/index.page:16(p)
+msgid ""
+"This guide is created for <app>Solang</app>'s 0.4 series. Since there have "
+"been some UI regressions from the 0.3 series, this guide may not cover some "
+"features of <app>Solang</app> 0.3, mostly the import process."
+msgstr ""
+"Dieses Handbuch wurde für die Versionsreihe 0.4 von <app>Solang</app> "
+"geschrieben. Da es gegenüber der Version 0.3 einige Einschränkungen in der "
+"Benutzeroberfläche gegeben hat, könnte dieses Handbuch einige "
+"Funktionsmerkmale der Version 0.3 nicht abdecken, insbesondere bezüglich des "
+"Importprozesses."
+
+#: C/index.page:22(title)
+msgid "General Questions"
+msgstr "Allgemeine Fragen"
+
+#: C/index.page:31(title)
+msgid "Exporting photos"
+msgstr "Fotos exportieren"
+
+#: C/index.page:47(title)
+msgid "Tips and Tricks"
+msgstr "Tipps und Tricks"
+
+#: C/tags_use.page:7(desc)
+msgid "Attach tags to photos and remove them."
+msgstr "Markierungen zu Fotos hinzufügen oder entfernen."
+
+#: C/tags_use.page:16(title)
+msgid "Attach tags to photos"
+msgstr "Markierungen zu Fotos hinzufügen"
+
+#: C/tags_use.page:19(title)
+msgid "Attach a tag to photos."
+msgstr "Markierungen zu Fotos hinzufügen."
+
+#: C/tags_use.page:21(p)
+msgid "You can attach a tag to one or more photos at once."
+msgstr ""
+"Sie können eine Markierung zu einem oder zu mehreren Fotos gleichzeitig "
+"hinzufügen."
+
+#: C/tags_use.page:25(p)
+msgid ""
+"From the <gui>main</gui> window, select one or more photos you want to tag."
+msgstr ""
+"Wählen Sie im <gui>Hauptfenster</gui> eines oder mehrere Fotos aus, die Sie "
+"mit Markierungen versehen wollen."
+
+#: C/tags_use.page:28(p)
+msgid ""
+"In the <gui>Tag List</gui>, click on the tag you want to attach to these "
+"photos."
+msgstr ""
+"Klicken Sie in der <gui>Markierungsliste</gui> auf die Markierung, welche Sie "
+"diesen Fotos zuordnen wollen."
+
+#: C/tags_use.page:31(p)
+msgid ""
+"Choose <guiseq><gui>Tags</gui><gui>Attach Tag to Selection</gui></guiseq> or "
+"press <keyseq><key>Ctrl</key><key>T</key></keyseq> to attach the tag to these "
+"photos."
+msgstr ""
+"Wählen Sie <guiseq><gui>Markierungen</gui><gui>Markierung zur Auswahl "
+"hinzufügen</gui></guiseq> oder drücken Sie <keyseq><key>Strg</key><key>T</"
+"key></keyseq>, um die Markierung zu den Fotos hinzuzufügen."
+
+#: C/tags_use.page:37(title)
+msgid "Remove a tag from photos."
+msgstr "Eine Markierung von einem Foto entfernen."
+
+#: C/tags_use.page:39(p)
+msgid "You can remove a tag from one or more photos at once."
+msgstr ""
+"Sie können eine Markierung von einem oder mehreren Fotos gleichzeitig "
+"entfernen."
+
+#: C/tags_use.page:43(p)
+msgid ""
+"From the <gui>main</gui> window, select one or more photos you want to untag."
+msgstr ""
+"Wählen Sie im <gui>Hauptfenster</gui> ein oder mehrere Fotos aus, von denen "
+"Sie die Markierung entfernen wollen."
+
+#: C/tags_use.page:46(p)
+msgid ""
+"In the <gui>Tag List</gui>, click on the tag you want to remove from these "
+"photos."
+msgstr ""
+"Klicken Sie in der <gui>Markierungsliste</gui> auf die Markierung, welche Sie "
+"von diesen Fotos entfernen wollen."
+
+#: C/tags_use.page:49(p)
+msgid ""
+"Choose <guiseq><gui>Tags</gui><gui>Remove Tag From Selection</gui></guiseq> "
+"to remove the tag from these photos."
+msgstr ""
+"Wählen Sie <guiseq><gui>Markierungen</gui><gui>Markierung aus der Auswahl "
+"entfernen</gui></guiseq>, um die Markierung von diesen Fotos zu entfernen."
+
+#: C/import.page:6(desc)
+msgid "To view your photos in <app>Solang</app>."
+msgstr "Betrachten Ihrer Fotos in <app>Solang</app>."
+
+#: C/import.page:15(title)
+msgid "I can't see any photos"
+msgstr "Ich kann keine Bilder sehen"
+
+#: C/import.page:16(p)
+msgid ""
+"Solang only displays photos that are indexed by the <app>Tracker search tool</"
+"app>, if you don't see your photos Tracker may not be running or your photos "
+"may not be indexed. To make sure Tracker indexes your photos use the "
+"<app>Search tool preferences</app> from the <gui>System</gui> menu."
+msgstr ""
+"<gui>Solang</gui> kann nur Fotos anzeigen, die vom <app>Tracker-Suchwerkzeug</"
+"app> indiziert wurden. Falls Sie also keine Fotos sehen, könnte entweder "
+"<app>Tracker</app> nicht laufen oder Ihre Fotos wurden noch nicht indiziert. "
+"Um sicher zu gehen, dass <app>Tracker</app> Ihre Fotos indiziert, verwenden "
+"Sie die Einstellungen der <app>Tracker Suche</app> im Menü <gui>System</gui>."
+
+#: C/export_folder.page:6(desc)
+msgid "To copy photos in a archive or a folder."
+msgstr "Kopieren von Fotos in ein Archiv oder einen Ordner."
+
+#: C/export_folder.page:15(title)
+msgid "Archive your photos"
+msgstr "Archivieren Ihrer Fotos"
+
+#: C/export_folder.page:16(p)
+msgid ""
+"You can copy photos to a directory of your computer or put them in a archive."
+msgstr ""
+"Sie können Fotos in einen Ordner auf Ihrem Rechner kopieren oder sie in ein "
+"Archiv verschieben."
+
+#: C/export_folder.page:18(p)
+msgid ""
+"First you have to add the photos you want to export to the export queue. "
+"There are many ways to add a photo to the Export Queue."
+msgstr ""
+"Zunächst müssen Sie die zu exportierenden Fotos zur Exportwarteschlange "
+"hinzufügen. Es gibt mehrere Möglichkeiten, ein Foto zur Exportwarteschlange "
+"hinzuzufügen."
+
+#: C/export_folder.page:21(p)
+msgid "Right-click on a photo."
+msgstr "Klicken Sie mit der rechten Maustaste auf ein Foto."
+
+#: C/export_folder.page:24(p)
+msgid "Choose <gui>Add to Export Queue</gui>."
+msgstr "Wählen Sie <gui>Zur Exportwarteschlange hinzufügen</gui>."
+
+#: C/export_folder.page:29(p)
+msgid "Select one or more photos you want to export."
+msgstr ""
+"Wählen Sie ein Foto oder mehrere Fotos aus, welche Sie exportieren wollen."
+
+#: C/export_folder.page:32(p)
+msgid "Choose <guiseq><gui>Edit</gui><gui>Add to Export Queue</gui></guiseq>."
+msgstr ""
+"Wählen Sie <guiseq><gui>Bearbeiten</gui><gui>Zur Exportwarteschlange "
+"hinzufügen</gui></guiseq>."
+
+#: C/export_folder.page:36(p)
+msgid "Now you have to export your Export Queue to a folder."
+msgstr "Nun müssen Sie die Exportwarteschlange in einen Ordner exportieren."
+
+#: C/export_folder.page:39(p)
+msgid ""
+"Choose <guiseq><gui>Photos</gui><gui>Export to</gui><gui>Folder...</gui></"
+"guiseq>."
+msgstr ""
+"Wählen Sie <guiseq><gui>Fotos</gui><gui>Exportieren nach</gui><gui>Ordner …</"
+"gui></guiseq>."
+
+#: C/export_folder.page:42(p)
+msgid ""
+"From the <gui>Export</gui> window, choose the directory you want your photos "
+"to be exported to."
+msgstr ""
+"Wählen Sie im <gui>Export</gui>-Fenster den Ordner aus, in den Sie die Fotos "
+"exportieren wollen."
+
+#: C/export_folder.page:45(p)
+msgid ""
+"Check <gui>Create an archive</gui> if you want your photos to be packed up in "
+"a compressed archive. It can be useful if you want to send the photos by e-"
+"mail. The archive will be named with the current date following the pattern "
+"\"yyyymmdd.zip\" and saved in the directory you have chosen. Otherwise your "
+"photos will be copied directly to the directory you have chosen."
+msgstr ""
+"Aktivieren Sie das Ankreuzfeld <gui>Ein Archiv erstellen</gui>, wenn Sie die "
+"Fotos in einem gepackten Archiv speichern wollen. Das kann sinnvoll sein, "
+"wenn Sie die Fotos per E-Mail versenden wollen. Das Archiv erhält einen "
+"Namen, der dem Schema »jjjjmmtt.zip« folgt. Es wird in dem von Ihnen gewählten "
+"Ordner gespeichert. Anderenfalls werden die Fotos direkt in den von Ihnen "
+"gewählten Ordner kopiert."
+
+#: C/export_folder.page:49(p)
+msgid "Choose <gui>Export</gui> to export the photos."
+msgstr "Wählen Sie <gui>Exportieren</gui>, um die Fotos zu exportieren."
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: C/index.page:0(None)
+msgid "translator-credits"
+msgstr "Mario Blättermann <mariobl@gnome.org>, 2010."
