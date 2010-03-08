@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: solang.po.master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=solang&component=General\n"
-"POT-Creation-Date: 2010-02-02 21:32+0000\n"
-"PO-Revision-Date: 2010-02-06 12:26+0100\n"
+"POT-Creation-Date: 2010-03-05 14:09+0000\n"
+"PO-Revision-Date: 2010-03-08 23:57+0100\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -30,67 +30,66 @@ msgstr "Organice, diviértase y comparta sus fotos"
 msgid "Photo Manager"
 msgstr "Gestor de fotografías"
 
-#: ../src/application/main-window.cpp:250
+#: ../src/application/main-window.cpp:226
 msgid "_Photo"
 msgstr "_Foto"
 
-#: ../src/application/main-window.cpp:259
+#: ../src/application/main-window.cpp:235
 #: ../src/renderer/browser-renderer.cpp:130
 msgid "_Edit"
 msgstr "_Editar"
 
-#: ../src/application/main-window.cpp:264
+#: ../src/application/main-window.cpp:240
 #: ../src/renderer/browser-renderer.cpp:135
 msgid "_Add to Export Queue"
 msgstr "_Añadir a la cola de exportación"
 
-#: ../src/application/main-window.cpp:271
+#: ../src/application/main-window.cpp:247
 msgid "_Clear Export Queue"
 msgstr "_Limpiar la cola de exportación"
 
-#: ../src/application/main-window.cpp:276
+#: ../src/application/main-window.cpp:252
 msgid "_View"
 msgstr "_Ver"
 
-#: ../src/application/main-window.cpp:280
+#: ../src/application/main-window.cpp:256
 msgid "_Toolbar"
 msgstr "Barra de _herramientas"
 
-#: ../src/application/main-window.cpp:281
+#: ../src/application/main-window.cpp:257
 msgid "Show or hide the toolbar in the current window"
 msgstr "Muestra u oculta la barra de herramientas en la ventana actual"
 
-#: ../src/application/main-window.cpp:287
+#: ../src/application/main-window.cpp:263
 msgid "_Statusbar"
 msgstr "Barra de _estado"
 
-#: ../src/application/main-window.cpp:288
+#: ../src/application/main-window.cpp:264
 msgid "Show or hide the statusbar in the current window"
 msgstr "Muestra u oculta la barra de estado en la ventana actual"
 
-#: ../src/application/main-window.cpp:295
+#: ../src/application/main-window.cpp:271
 msgid "_Full Screen"
 msgstr "Pantalla _completa"
 
-#: ../src/application/main-window.cpp:296
+#: ../src/application/main-window.cpp:272
 msgid "Show the current photo in full screen mode"
 msgstr "Mostrar la foto actual en modo a pantalla completa"
 
-#: ../src/application/main-window.cpp:313
+#: ../src/application/main-window.cpp:289
 msgid "_Help"
 msgstr "Ay_uda"
 
-#: ../src/application/main-window.cpp:618
+#: ../src/application/main-window.cpp:593
 msgid "A photo manager for GNOME"
 msgstr "Un gestor de fotos para GNOME"
 
 #. Translators: Put your names here.
-#: ../src/application/main-window.cpp:669
+#: ../src/application/main-window.cpp:624
 msgid "translator-credits"
 msgstr "Jorge González <jorgegonz@svn.gnome.org>, 2007-2008."
 
-#: ../src/application/main-window.cpp:674
-#| msgid "%1 Website"
+#: ../src/application/main-window.cpp:629
 msgctxt "Project website"
 msgid "%1 Website"
 msgstr "Página web %1"
@@ -143,23 +142,23 @@ msgstr "Básico"
 msgid "Histogram"
 msgstr "Histograma"
 
-#: ../src/attribute/search-manager.cpp:53
+#: ../src/attribute/search-manager.cpp:52
 msgid "Search"
 msgstr "Buscar"
 
-#: ../src/attribute/search-manager.cpp:67
+#: ../src/attribute/search-manager.cpp:66
 msgid "Select _All"
 msgstr "Seleccionar _todo"
 
-#: ../src/attribute/search-manager.cpp:68
+#: ../src/attribute/search-manager.cpp:67
 msgid "Select all the filters in this list"
 msgstr "Seleccionar todos los filtros en esta lista"
 
-#: ../src/attribute/search-manager.cpp:76
+#: ../src/attribute/search-manager.cpp:75
 msgid "_Remove"
 msgstr "_Quitar"
 
-#: ../src/attribute/search-manager.cpp:77
+#: ../src/attribute/search-manager.cpp:76
 msgid "Remove the selected filters from this list"
 msgstr "Quitar los filtros seleccionados de esta lista"
 
@@ -215,19 +214,16 @@ msgid "Select Tag Icon"
 msgstr "Seleccionar el icono de la etiqueta"
 
 #: ../src/common/exif-data.cpp:161
-#| msgid "Off"
 msgctxt "Flash"
 msgid "Off"
 msgstr "Apagado"
 
 #: ../src/common/exif-data.cpp:165
-#| msgid "On"
 msgctxt "Flash"
 msgid "On"
 msgstr "Encendido"
 
 #: ../src/common/exif-data.cpp:199
-#| msgid "Average"
 msgctxt "Metering mode"
 msgid "Average"
 msgstr "Media"
@@ -238,7 +234,6 @@ msgid "Center Weighted Average"
 msgstr "Media ponderada"
 
 #: ../src/common/exif-data.cpp:208
-#| msgid "Export"
 msgctxt "Metering mode"
 msgid "Spot"
 msgstr "Punto"
@@ -249,25 +244,21 @@ msgid "Multi-spot"
 msgstr "Multipunto"
 
 #: ../src/common/exif-data.cpp:216
-#| msgid "Pattern"
 msgctxt "Metering mode"
 msgid "Pattern"
 msgstr "Patrón"
 
 #: ../src/common/exif-data.cpp:220
-#| msgid "Partial"
 msgctxt "Metering mode"
 msgid "Partial"
 msgstr "Parcial"
 
 #: ../src/common/exif-data.cpp:236
-#| msgid "Automatic"
 msgctxt "White balance"
 msgid "Automatic"
 msgstr "Automático"
 
 #: ../src/common/exif-data.cpp:240
-#| msgid "Manual"
 msgctxt "White balance"
 msgid "Manual"
 msgstr "Manual"
@@ -281,13 +272,11 @@ msgid "Channels"
 msgstr "Canales"
 
 #: ../src/common/histogram-viewer.cpp:68
-#| msgid "Linear"
 msgctxt "Scale"
 msgid "Linear"
 msgstr "Lineal"
 
 #: ../src/common/histogram-viewer.cpp:73
-#| msgid "Logarithmic"
 msgctxt "Scale"
 msgid "Logarithmic"
 msgstr "Logarítmico"
@@ -308,43 +297,55 @@ msgstr "Verde"
 msgid "Blue"
 msgstr "Azul"
 
-#: ../src/editor/editor.cpp:113
+#: ../src/common/progress-dialog.cpp:36
+msgid "Pending Operations"
+msgstr "Operaciones pendientes"
+
+#: ../src/common/progress-observer.h:166
+msgid "%1 of %2 completed"
+msgstr "%1 de %2 completadas"
+
+#: ../src/common/progress-observer.h:175
+msgid "%1%% complete"
+msgstr "%1%% completadas"
+
+#: ../src/editor/editor.cpp:114
 msgid "T_ools"
 msgstr "_Herramientas"
 
-#: ../src/editor/editor.cpp:117
+#: ../src/editor/editor.cpp:118
 msgid "_Transform"
 msgstr "_Transformar"
 
-#: ../src/editor/editor.cpp:123
+#: ../src/editor/editor.cpp:124
 msgid "Flip _Horizontal"
 msgstr "Voltear _horizontalmente"
 
-#: ../src/editor/editor.cpp:124
+#: ../src/editor/editor.cpp:125
 msgid "Mirror the photo horizontally"
 msgstr "Espejar la imagen horizontalmente"
 
-#: ../src/editor/editor.cpp:135
+#: ../src/editor/editor.cpp:136
 msgid "Flip _Vertical"
 msgstr "Voltear _verticalmente"
 
-#: ../src/editor/editor.cpp:136
+#: ../src/editor/editor.cpp:137
 msgid "Mirror the photo vertically"
 msgstr "Espejar la imagen verticalmente"
 
-#: ../src/editor/editor.cpp:147
+#: ../src/editor/editor.cpp:148
 msgid "_Rotate Clockwise"
 msgstr "_Rotar en sentido horario"
 
-#: ../src/editor/editor.cpp:148
+#: ../src/editor/editor.cpp:149
 msgid "Rotate the photo 90 degrees to the right"
 msgstr "Rotar la foto 90 grados a la derecha"
 
-#: ../src/editor/editor.cpp:159
+#: ../src/editor/editor.cpp:160
 msgid "Rotate Counterc_lockwise"
 msgstr "Rotar en sentido _antihorario"
 
-#: ../src/editor/editor.cpp:160
+#: ../src/editor/editor.cpp:161
 msgid "Rotate the photo 90 degrees to the left"
 msgstr "Rotar la foto 90 grados a la izquierda"
 
@@ -352,7 +353,7 @@ msgstr "Rotar la foto 90 grados a la izquierda"
 msgid "Flipping horizontally..."
 msgstr "Volteando horizontalmente…"
 
-#: ../src/editor/flip-operation.cpp:57
+#: ../src/editor/flip-operation.cpp:59
 msgid "Flipping..."
 msgstr "Volteando…"
 
@@ -368,19 +369,27 @@ msgstr "Rotando en el sentido del reloj…"
 msgid "Rotating counterclockwise..."
 msgstr "Rotando en sentido contrario al reloj…"
 
-#: ../src/editor/rotate-operation.cpp:55
+#: ../src/editor/rotate-operation.cpp:57
 msgid "Rotating..."
 msgstr "Rotando…"
 
-#: ../src/exporter/directory-destination.cpp:90
+#: ../src/exporter/brasero-destination.cpp:143
+msgid "_CD/DVD..."
+msgstr "_CD/DVD…"
+
+#: ../src/exporter/brasero-destination.cpp:185
+msgid "Export to CD/DVD"
+msgstr "Exportar a CD/DVD"
+
+#: ../src/exporter/directory-destination.cpp:95
 msgid "Exporting photos"
 msgstr "Exportando fotos"
 
-#: ../src/exporter/directory-destination.cpp:178
+#: ../src/exporter/directory-destination.cpp:249
 msgid "Select Folder"
 msgstr "Seleccionar carpeta"
 
-#: ../src/exporter/directory-destination.cpp:187
+#: ../src/exporter/directory-destination.cpp:258
 msgid "_Folder..."
 msgstr "_Carpeta…"
 
@@ -401,13 +410,11 @@ msgid "_Create an archive"
 msgstr "_Crear un archivador"
 
 #: ../src/exporter/exporter-dialog.cpp:66
-#| msgid "General"
 msgctxt "A group of UI controls"
 msgid "General"
 msgstr "General"
 
 #: ../src/exporter/exporter-dialog.cpp:78
-#| msgid "Options"
 msgctxt "A group of UI controls"
 msgid "Options"
 msgstr "Opciones"
@@ -417,12 +424,12 @@ msgid "_Export"
 msgstr "_Exportar"
 
 #: ../src/renderer/browser-renderer.cpp:143
-#: ../src/renderer/enlarged-renderer.cpp:277
+#: ../src/renderer/enlarged-renderer.cpp:304
 msgid "_Slideshow"
 msgstr "_Diapositivas"
 
 #: ../src/renderer/browser-renderer.cpp:144
-#: ../src/renderer/enlarged-renderer.cpp:278
+#: ../src/renderer/enlarged-renderer.cpp:305
 msgid "Start a slideshow view of the photos"
 msgstr "Iniciar la muestra de las fotos como diapositivas"
 
@@ -431,10 +438,10 @@ msgid "Enlarge or shrink the thumbnails"
 msgstr "Agrandar o encoger las miniaturas"
 
 #: ../src/renderer/browser-renderer.cpp:175
-#: ../src/renderer/enlarged-renderer.cpp:290
-#: ../src/renderer/enlarged-renderer.cpp:426
-#: ../src/renderer/enlarged-renderer.cpp:435
-#: ../src/renderer/enlarged-renderer.cpp:444
+#: ../src/renderer/enlarged-renderer.cpp:317
+#: ../src/renderer/enlarged-renderer.cpp:453
+#: ../src/renderer/enlarged-renderer.cpp:462
+#: ../src/renderer/enlarged-renderer.cpp:471
 msgid "_Zoom In"
 msgstr "_Ampliar"
 
@@ -451,7 +458,7 @@ msgid "Shrink the thumbnails"
 msgstr "Encoger las miniaturas"
 
 #: ../src/renderer/browser-renderer.cpp:199
-#: ../src/renderer/enlarged-renderer.cpp:285
+#: ../src/renderer/enlarged-renderer.cpp:312
 msgid "_Go"
 msgstr "_Ir"
 
@@ -464,10 +471,9 @@ msgid "Go to the previous page in the collection"
 msgstr "Ir a la página anterior de la colección"
 
 #: ../src/renderer/browser-renderer.cpp:208
-#: ../src/renderer/enlarged-renderer.cpp:351
-#: ../src/renderer/slideshow-renderer.cpp:143
-#: ../src/renderer/slideshow-renderer.cpp:187
-#| msgid "Previous"
+#: ../src/renderer/enlarged-renderer.cpp:378
+#: ../src/renderer/slideshow-renderer.cpp:169
+#: ../src/renderer/slideshow-renderer.cpp:213
 msgctxt "Navigation"
 msgid "Previous"
 msgstr "Anterior"
@@ -481,10 +487,9 @@ msgid "Go to the next page in the collection"
 msgstr "Ir a la siguiente página de la colección"
 
 #: ../src/renderer/browser-renderer.cpp:224
-#: ../src/renderer/enlarged-renderer.cpp:366
-#: ../src/renderer/slideshow-renderer.cpp:152
-#: ../src/renderer/slideshow-renderer.cpp:196
-#| msgid "Next"
+#: ../src/renderer/enlarged-renderer.cpp:393
+#: ../src/renderer/slideshow-renderer.cpp:178
+#: ../src/renderer/slideshow-renderer.cpp:222
 msgctxt "Navigation"
 msgid "Next"
 msgstr "Siguiente"
@@ -506,15 +511,14 @@ msgid "Go to the last page in the collection"
 msgstr "Ir a la última página de la colección"
 
 #: ../src/renderer/enlarged-renderer.cpp:72
-#| msgid "Enlarged"
 msgctxt "Mode or view"
 msgid "Enlarged"
 msgstr "Agrandada"
 
-#: ../src/renderer/enlarged-renderer.cpp:291
-#: ../src/renderer/enlarged-renderer.cpp:427
-#: ../src/renderer/enlarged-renderer.cpp:436
-#: ../src/renderer/enlarged-renderer.cpp:445
+#: ../src/renderer/enlarged-renderer.cpp:318
+#: ../src/renderer/enlarged-renderer.cpp:454
+#: ../src/renderer/enlarged-renderer.cpp:463
+#: ../src/renderer/enlarged-renderer.cpp:472
 #: ../src/renderer/slideshow-window.cpp:75
 #: ../src/renderer/slideshow-window.cpp:110
 #: ../src/renderer/slideshow-window.cpp:119
@@ -522,130 +526,124 @@ msgstr "Agrandada"
 msgid "Enlarge the photo"
 msgstr "Agrandar la foto"
 
-#: ../src/renderer/enlarged-renderer.cpp:293
+#: ../src/renderer/enlarged-renderer.cpp:320
 #: ../src/renderer/slideshow-window.cpp:74
 #: ../src/renderer/slideshow-window.cpp:109
 #: ../src/renderer/slideshow-window.cpp:118
 #: ../src/renderer/slideshow-window.cpp:127
-#| msgid "In"
 msgctxt "Zoom"
 msgid "In"
 msgstr "Ampliar"
 
-#: ../src/renderer/enlarged-renderer.cpp:304
-#: ../src/renderer/enlarged-renderer.cpp:453
-#: ../src/renderer/enlarged-renderer.cpp:462
+#: ../src/renderer/enlarged-renderer.cpp:331
+#: ../src/renderer/enlarged-renderer.cpp:480
+#: ../src/renderer/enlarged-renderer.cpp:489
 msgid "Zoom _Out"
 msgstr "_Reducir"
 
-#: ../src/renderer/enlarged-renderer.cpp:305
-#: ../src/renderer/enlarged-renderer.cpp:454
-#: ../src/renderer/enlarged-renderer.cpp:463
+#: ../src/renderer/enlarged-renderer.cpp:332
+#: ../src/renderer/enlarged-renderer.cpp:481
+#: ../src/renderer/enlarged-renderer.cpp:490
 #: ../src/renderer/slideshow-window.cpp:84
 #: ../src/renderer/slideshow-window.cpp:137
 #: ../src/renderer/slideshow-window.cpp:146
 msgid "Shrink the photo"
 msgstr "Encoger la foto"
 
-#: ../src/renderer/enlarged-renderer.cpp:307
+#: ../src/renderer/enlarged-renderer.cpp:334
 #: ../src/renderer/slideshow-window.cpp:83
 #: ../src/renderer/slideshow-window.cpp:136
 #: ../src/renderer/slideshow-window.cpp:145
-#| msgid "Out"
 msgctxt "Zoom"
 msgid "Out"
 msgstr "Reducir"
 
-#: ../src/renderer/enlarged-renderer.cpp:318
+#: ../src/renderer/enlarged-renderer.cpp:345
 msgid "_Normal Size"
 msgstr "Tamaño _normal"
 
-#: ../src/renderer/enlarged-renderer.cpp:319
+#: ../src/renderer/enlarged-renderer.cpp:346
 #: ../src/renderer/slideshow-window.cpp:93
 msgid "Show the photo at its normal size"
 msgstr "Mostrar la foto en su tamaño normal"
 
-#: ../src/renderer/enlarged-renderer.cpp:322
+#: ../src/renderer/enlarged-renderer.cpp:349
 #: ../src/renderer/slideshow-window.cpp:92
-#| msgid "Normal"
 msgctxt "Zoom"
 msgid "Normal"
 msgstr "Normal"
 
-#: ../src/renderer/enlarged-renderer.cpp:333
+#: ../src/renderer/enlarged-renderer.cpp:360
 msgid "Best _Fit"
 msgstr "Ajuste _óptimo"
 
-#: ../src/renderer/enlarged-renderer.cpp:334
+#: ../src/renderer/enlarged-renderer.cpp:361
 #: ../src/renderer/slideshow-window.cpp:102
 msgid "Fit the photo to the window"
 msgstr "Ajustar la foto al tamaño de la ventana"
 
-#: ../src/renderer/enlarged-renderer.cpp:336
+#: ../src/renderer/enlarged-renderer.cpp:363
 #: ../src/renderer/slideshow-window.cpp:101
-#| msgid "Fit"
 msgctxt "Zoom"
 msgid "Fit"
 msgstr "Ajustar"
 
-#: ../src/renderer/enlarged-renderer.cpp:347
-#: ../src/renderer/enlarged-renderer.cpp:393
+#: ../src/renderer/enlarged-renderer.cpp:374
+#: ../src/renderer/enlarged-renderer.cpp:420
 msgid "_Previous Photo"
 msgstr "Foto _anterior"
 
-#: ../src/renderer/enlarged-renderer.cpp:348
-#: ../src/renderer/enlarged-renderer.cpp:394
-#: ../src/renderer/slideshow-renderer.cpp:144
-#: ../src/renderer/slideshow-renderer.cpp:188
+#: ../src/renderer/enlarged-renderer.cpp:375
+#: ../src/renderer/enlarged-renderer.cpp:421
+#: ../src/renderer/slideshow-renderer.cpp:170
+#: ../src/renderer/slideshow-renderer.cpp:214
 msgid "Go to the previous photo in the collection"
 msgstr "Ir a la anterior foto de la colección"
 
-#: ../src/renderer/enlarged-renderer.cpp:362
-#: ../src/renderer/enlarged-renderer.cpp:402
+#: ../src/renderer/enlarged-renderer.cpp:389
+#: ../src/renderer/enlarged-renderer.cpp:429
 msgid "_Next Photo"
 msgstr "_Siguiente foto"
 
-#: ../src/renderer/enlarged-renderer.cpp:363
-#: ../src/renderer/enlarged-renderer.cpp:403
-#: ../src/renderer/slideshow-renderer.cpp:153
-#: ../src/renderer/slideshow-renderer.cpp:197
+#: ../src/renderer/enlarged-renderer.cpp:390
+#: ../src/renderer/enlarged-renderer.cpp:430
+#: ../src/renderer/slideshow-renderer.cpp:179
+#: ../src/renderer/slideshow-renderer.cpp:223
 msgid "Go to the next photo in the collection"
 msgstr "Ir a la siguiente foto de la colección"
 
-#: ../src/renderer/enlarged-renderer.cpp:377
-#: ../src/renderer/enlarged-renderer.cpp:410
+#: ../src/renderer/enlarged-renderer.cpp:404
+#: ../src/renderer/enlarged-renderer.cpp:437
 msgid "_First Photo"
 msgstr "_Primera foto"
 
-#: ../src/renderer/enlarged-renderer.cpp:378
-#: ../src/renderer/enlarged-renderer.cpp:411
-#: ../src/renderer/slideshow-renderer.cpp:136
-#: ../src/renderer/slideshow-renderer.cpp:180
+#: ../src/renderer/enlarged-renderer.cpp:405
+#: ../src/renderer/enlarged-renderer.cpp:438
+#: ../src/renderer/slideshow-renderer.cpp:162
+#: ../src/renderer/slideshow-renderer.cpp:206
 msgid "Go to the first photo in the collection"
 msgstr "Ir a la primera foto de la colección"
 
-#: ../src/renderer/enlarged-renderer.cpp:385
-#: ../src/renderer/enlarged-renderer.cpp:418
+#: ../src/renderer/enlarged-renderer.cpp:412
+#: ../src/renderer/enlarged-renderer.cpp:445
 msgid "_Last Photo"
 msgstr "Ú_ltima foto"
 
-#: ../src/renderer/enlarged-renderer.cpp:386
-#: ../src/renderer/enlarged-renderer.cpp:419
-#: ../src/renderer/slideshow-renderer.cpp:161
-#: ../src/renderer/slideshow-renderer.cpp:205
+#: ../src/renderer/enlarged-renderer.cpp:413
+#: ../src/renderer/enlarged-renderer.cpp:446
+#: ../src/renderer/slideshow-renderer.cpp:187
+#: ../src/renderer/slideshow-renderer.cpp:231
 msgid "Go to the last photo in the collection"
 msgstr "Ir a la última foto de la colección"
 
-#: ../src/renderer/slideshow-renderer.cpp:135
-#: ../src/renderer/slideshow-renderer.cpp:179
-#| msgid "First"
+#: ../src/renderer/slideshow-renderer.cpp:161
+#: ../src/renderer/slideshow-renderer.cpp:205
 msgctxt "Navigation"
 msgid "First"
 msgstr "Primera"
 
-#: ../src/renderer/slideshow-renderer.cpp:160
-#: ../src/renderer/slideshow-renderer.cpp:204
-#| msgid "Last"
+#: ../src/renderer/slideshow-renderer.cpp:186
+#: ../src/renderer/slideshow-renderer.cpp:230
 msgctxt "Navigation"
 msgid "Last"
 msgstr "Última"
