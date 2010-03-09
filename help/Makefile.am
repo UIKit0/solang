@@ -17,6 +17,6 @@ DOC_PAGES = \
 	keys.page \
 	tags_manage.page
 
-DOC_LINGUAS = de
+DOC_LINGUAS = de es
 
 dist-hook: doc-dist-hook
