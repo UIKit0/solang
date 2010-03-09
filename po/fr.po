@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: solang 0.4 fr\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=solang&component=General\n"
-"POT-Creation-Date: 2010-02-27 21:38+0000\n"
+"POT-Creation-Date: 2010-03-05 14:09+0000\n"
 "PO-Revision-Date: 2010-02-24 22:29+0100\n"
 "Last-Translator: Claude Paroz <claude@2xlibre.net>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
@@ -30,68 +30,68 @@ msgstr "Organisez, profitez et partagez vos photos"
 msgid "Photo Manager"
 msgstr "Gestionnaire de photos"
 
-#: ../src/application/main-window.cpp:229
+#: ../src/application/main-window.cpp:226
 msgid "_Photo"
 msgstr "_Photo"
 
-#: ../src/application/main-window.cpp:238
+#: ../src/application/main-window.cpp:235
 #: ../src/renderer/browser-renderer.cpp:130
 msgid "_Edit"
 msgstr "É_dition"
 
-#: ../src/application/main-window.cpp:243
+#: ../src/application/main-window.cpp:240
 #: ../src/renderer/browser-renderer.cpp:135
 msgid "_Add to Export Queue"
 msgstr "_Ajouter à la file d'exportation"
 
-#: ../src/application/main-window.cpp:250
+#: ../src/application/main-window.cpp:247
 msgid "_Clear Export Queue"
 msgstr "_Vider la file d'exportation"
 
-#: ../src/application/main-window.cpp:255
+#: ../src/application/main-window.cpp:252
 msgid "_View"
 msgstr "_Affichage"
 
-#: ../src/application/main-window.cpp:259
+#: ../src/application/main-window.cpp:256
 msgid "_Toolbar"
 msgstr "_Barre d'outils"
 
-#: ../src/application/main-window.cpp:260
+#: ../src/application/main-window.cpp:257
 msgid "Show or hide the toolbar in the current window"
 msgstr "Affiche ou masque la barre d'outils dans la fenêtre actuelle"
 
-#: ../src/application/main-window.cpp:266
+#: ../src/application/main-window.cpp:263
 msgid "_Statusbar"
 msgstr "_Barre d'état"
 
-#: ../src/application/main-window.cpp:267
+#: ../src/application/main-window.cpp:264
 msgid "Show or hide the statusbar in the current window"
 msgstr "Affiche ou masque la barre d'état dans la fenêtre actuelle"
 
-#: ../src/application/main-window.cpp:274
+#: ../src/application/main-window.cpp:271
 msgid "_Full Screen"
 msgstr "_Plein écran"
 
-#: ../src/application/main-window.cpp:275
+#: ../src/application/main-window.cpp:272
 msgid "Show the current photo in full screen mode"
 msgstr "Affiche la photo actuelle en mode plein écran"
 
-#: ../src/application/main-window.cpp:292
+#: ../src/application/main-window.cpp:289
 msgid "_Help"
 msgstr "Aid_e"
 
-#: ../src/application/main-window.cpp:597
+#: ../src/application/main-window.cpp:593
 msgid "A photo manager for GNOME"
 msgstr "Un gestionnaire de photos pour GNOME"
 
 #. Translators: Put your names here.
-#: ../src/application/main-window.cpp:628
+#: ../src/application/main-window.cpp:624
 msgid "translator-credits"
 msgstr ""
 "Florent Thévenet <feuloren@free.fr>\n"
 "Claude Paroz <claude@2xlibre.net>"
 
-#: ../src/application/main-window.cpp:633
+#: ../src/application/main-window.cpp:629
 msgctxt "Project website"
 msgid "%1 Website"
 msgstr "Site Web %1"
@@ -299,43 +299,55 @@ msgstr "Vert"
 msgid "Blue"
 msgstr "Bleu"
 
-#: ../src/editor/editor.cpp:113
+#: ../src/common/progress-dialog.cpp:36
+msgid "Pending Operations"
+msgstr "Opérations en attente"
+
+#: ../src/common/progress-observer.h:166
+msgid "%1 of %2 completed"
+msgstr "%1 sur %2 effectuées"
+
+#: ../src/common/progress-observer.h:175
+msgid "%1%% complete"
+msgstr "%1%% effectuée"
+
+#: ../src/editor/editor.cpp:114
 msgid "T_ools"
 msgstr "_Outils"
 
-#: ../src/editor/editor.cpp:117
+#: ../src/editor/editor.cpp:118
 msgid "_Transform"
 msgstr "_Transformer"
 
-#: ../src/editor/editor.cpp:123
+#: ../src/editor/editor.cpp:124
 msgid "Flip _Horizontal"
 msgstr "Retourner _horizontalement"
 
-#: ../src/editor/editor.cpp:124
+#: ../src/editor/editor.cpp:125
 msgid "Mirror the photo horizontally"
 msgstr "Retourne la photo horizontalement"
 
-#: ../src/editor/editor.cpp:135
+#: ../src/editor/editor.cpp:136
 msgid "Flip _Vertical"
 msgstr "Retourner _verticalement"
 
-#: ../src/editor/editor.cpp:136
+#: ../src/editor/editor.cpp:137
 msgid "Mirror the photo vertically"
 msgstr "Retourne la photo verticalement"
 
-#: ../src/editor/editor.cpp:147
+#: ../src/editor/editor.cpp:148
 msgid "_Rotate Clockwise"
 msgstr "Rotation à _droite"
 
-#: ../src/editor/editor.cpp:148
+#: ../src/editor/editor.cpp:149
 msgid "Rotate the photo 90 degrees to the right"
 msgstr "Tourne la photo de 90° vers la droite"
 
-#: ../src/editor/editor.cpp:159
+#: ../src/editor/editor.cpp:160
 msgid "Rotate Counterc_lockwise"
 msgstr "Rotation à _gauche"
 
-#: ../src/editor/editor.cpp:160
+#: ../src/editor/editor.cpp:161
 msgid "Rotate the photo 90 degrees to the left"
 msgstr "Tourne la photo de 90° vers la gauche"
 
@@ -363,24 +375,23 @@ msgstr "Rotation vers la gauche..."
 msgid "Rotating..."
 msgstr "Rotation..."
 
-#: ../src/exporter/brasero-destination.cpp:91
-#: ../src/exporter/directory-destination.cpp:90
-msgid "Exporting photos"
-msgstr "Exportation de photos"
-
-#: ../src/exporter/brasero-destination.cpp:166
+#: ../src/exporter/brasero-destination.cpp:143
 msgid "_CD/DVD..."
 msgstr "_CD/DVD..."
 
-#: ../src/exporter/brasero-destination.cpp:199
+#: ../src/exporter/brasero-destination.cpp:185
 msgid "Export to CD/DVD"
 msgstr "Exporter vers un CD ou un DVD"
 
-#: ../src/exporter/directory-destination.cpp:178
+#: ../src/exporter/directory-destination.cpp:95
+msgid "Exporting photos"
+msgstr "Exportation de photos"
+
+#: ../src/exporter/directory-destination.cpp:249
 msgid "Select Folder"
 msgstr "Choisir un dossier"
 
-#: ../src/exporter/directory-destination.cpp:187
+#: ../src/exporter/directory-destination.cpp:258
 msgid "_Folder..."
 msgstr "D_ossier..."
 
