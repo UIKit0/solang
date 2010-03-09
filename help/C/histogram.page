@@ -1,0 +1,64 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="topic"
+      id="histogram">
+<info>
+	<link type="guide" xref="index_tips"/>
+	<desc>
+	It's not just beautiful.
+	</desc>
+	<credit type="author">
+		<name>Florent Thévenet</name>
+		<email>feuloren@free.fr</email>
+	</credit>
+	<include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>
+</info>
+<title>What is an histogram ?</title>
+
+<section>
+	<title>What's that ?</title>
+	<p>Take the following mosaic and imagine one order the squares by color and them stack them up in piles. It will give us the color distribution of the mosaic.</p>
+
+  <figure>
+    <title>The mosaic</title>
+    <media type="image" src="figures/grid.png" mime="image/png" style="right">
+      <p>The mosaic</p>
+    </media>
+  </figure>
+  <figure>
+    <title>Its color distribution</title>
+    <media type="image" src="figures/stack.png" mime="image/png" style="right">
+      <p>Its color distribution.</p>
+    </media>
+  </figure>
+
+	<p>You know that a digital photography is composed of millions of colored dots called pixels. If instead of ordering the pixels by color, one order them by brightness, from the darker to the lighter, it gives us the histogram of that photo. <app>Solang</app> automatically create an histogram with 256 levels of brightness, the height of each stack indicate us the number of pixel of that brightness in the image.</p>
+
+  <figure>
+    <title>The original image</title>
+    <media type="image" src="figures/histogram_original.jpg" mime="image/jpg" style="right">
+      <p>An image of sea and beach.</p>
+    </media>
+  </figure>
+  <figure>
+    <title>Its histogram</title>
+    <desc>In a real histogram there is no white spaces between each stack; here the histogram is in shade of Grey to allow you to distinguish each stack and the three tones: the shadows - near from black (0) -, the midtones and the highlights - near from white (255) -.</desc>
+    <media type="image" src="figures/histogram_bar.gif" mime="image/gif" style="right">
+      <p>The histogram associated to that image</p>
+    </media>
+  </figure>
+  <figure>
+    <title>Its histogram</title>
+    <media type="image" src="figures/histogram_original.gif" mime="image/gif" style="right">
+      <p>The histogram associated to that image</p>
+    </media>
+  </figure>
+
+</section>
+
+<section>
+<title>How to use these histograms</title>
+<p>Histograms are useful because they let you see if your images are correctly exposed. Take the following examples.</p>
+
+</section>
+
+</page>

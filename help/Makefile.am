@@ -15,7 +15,8 @@ DOC_PAGES = \
 	tags_intro.page \
 	howto_search.page \
 	keys.page \
-	tags_manage.page
+	tags_manage.page \
+	histogram.page
 
 DOC_LINGUAS = de es
 
