@@ -44,7 +44,6 @@ Engine::Engine(int & argc, char ** & argv) throw() :
     selectionChanged_(),
     mutex_(),
     exportQueue_(),
-    photos_(),
     currentStorageSystems_(),
     database_(),
     criterionRepo_(),
@@ -167,13 +166,6 @@ PhotoList &
 Engine::get_export_queue() throw()
 {
     return exportQueue_;
-}
-
-PhotoList
-Engine::get_photos() throw()
-{
-    Glib::Mutex::Lock lock(mutex_);
-    return photos_;
 }
 
 } //namespace Solang

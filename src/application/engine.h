@@ -113,9 +113,6 @@ class Engine :
         PhotoList &
         get_export_queue() throw();
 
-        PhotoList
-        get_photos() throw();
-
         inline SearchCriterionRepo &
         get_criterion_repo();
 
@@ -143,8 +140,6 @@ class Engine :
         Glib::Mutex mutex_;
 
         PhotoList exportQueue_;
-
-        PhotoList photos_;
 
         //The following are populated 
         //from gconf
