@@ -1,6 +1,6 @@
 /* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*- */
 /*
- * Copyright (C) 2009 Debarshi Ray <rishi@gnu.org>
+ * Copyright (C) 2009, 2010 Debarshi Ray <rishi@gnu.org>
  *
  * Solang is free software: you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
@@ -49,7 +49,6 @@ Thumbnailer::Thumbnailer() throw() :
 
 Thumbnailer::~Thumbnailer() throw()
 {
-    signalTimeout_.disconnect();
 }
 
 void
@@ -113,14 +112,9 @@ Thumbnailer::on_signal_started(guint handle) throw()
 {
 }
 
-bool
+void
 Thumbnailer::process() throw()
 {
-    if (true == pendingList_.empty())
-    {
-        return true;
-    }
-
     UStringList mime_types;
     UStringList uris;
 
@@ -142,24 +136,20 @@ Thumbnailer::process() throw()
                                  &Thumbnailer::on_async_queue),
                    pendingList_));
     pendingList_.clear();
-
-    return true;
 }
 
 void
 Thumbnailer::push(const PhotoPtr & photo) throw()
 {
-    pendingList_.push_back(photo);
-
-    if (0 == signalTimeout_)
+    if (true == pendingList_.empty())
     {
-        signalTimeout_
-            = Glib::signal_timeout().connect(
-                  sigc::mem_fun(*this,
-                                &Thumbnailer::process),
-                  100,
-                  Glib::PRIORITY_DEFAULT);
+        Glib::signal_timeout().connect_once(
+            sigc::mem_fun(*this, &Thumbnailer::process),
+            100,
+            Glib::PRIORITY_DEFAULT);
     }
+
+    pendingList_.push_back(photo);
 }
 
 sigc::signal<void, PhotoList &> &

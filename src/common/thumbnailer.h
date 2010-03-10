@@ -1,6 +1,6 @@
 /* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*- */
 /*
- * Copyright (C) 2009 Debarshi Ray <rishi@gnu.org>
+ * Copyright (C) 2009, 2010 Debarshi Ray <rishi@gnu.org>
  *
  * Solang is free software: you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
@@ -66,7 +66,7 @@ class Thumbnailer :
         void
         on_signal_started(guint handle) throw();
 
-        bool
+        void
         process(void) throw();
 
         std::map<guint, std::map<Glib::ustring, PhotoPtr> > map_;
@@ -74,8 +74,6 @@ class Thumbnailer :
         PhotoList pendingList_;
 
         ThumbnailerProxy thumbnailerProxy_;
-
-        sigc::connection signalTimeout_;
 
         sigc::signal<void, PhotoList &> ready_;
 };
