@@ -1,0 +1,648 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Yuri Chornoivan <yurchor@ukr.net>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-03-11 10:04+0200\n"
+"PO-Revision-Date: 2010-02-25 09:12+0200\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <translation@linux.org.ua>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: ../data/solang.desktop.in.in.h:1
+msgid "@PACKAGE_NAME@ Photo Manager"
+msgstr "Програма для керування @PACKAGE_NAME@"
+
+#: ../data/solang.desktop.in.in.h:2
+msgid "Organize, enjoy and share your photos"
+msgstr "Впорядкуйте, роздивіться і поділіться своїми фотографіями"
+
+#: ../data/solang.desktop.in.in.h:3
+msgid "Photo Manager"
+msgstr "Впорядник фотографій"
+
+#: ../src/application/main-window.cpp:226
+msgid "_Photo"
+msgstr "_Фотографія"
+
+#: ../src/application/main-window.cpp:235
+#: ../src/renderer/browser-renderer.cpp:130
+msgid "_Edit"
+msgstr "_Правка"
+
+#: ../src/application/main-window.cpp:240
+#: ../src/renderer/browser-renderer.cpp:135
+msgid "_Add to Export Queue"
+msgstr "_Додати до черги експортування"
+
+#: ../src/application/main-window.cpp:247
+msgid "_Clear Export Queue"
+msgstr "С_порожнити чергу експортування"
+
+#: ../src/application/main-window.cpp:252
+msgid "_View"
+msgstr "П_ерегляд"
+
+#: ../src/application/main-window.cpp:256
+msgid "_Toolbar"
+msgstr "Па_нель інструментів"
+
+#: ../src/application/main-window.cpp:257
+msgid "Show or hide the toolbar in the current window"
+msgstr "Показати або приховати панель інструментів у поточному вікні"
+
+#: ../src/application/main-window.cpp:263
+msgid "_Statusbar"
+msgstr "_Смужка стану"
+
+#: ../src/application/main-window.cpp:264
+msgid "Show or hide the statusbar in the current window"
+msgstr "Показати або приховати смужку стану у поточному вікні"
+
+#: ../src/application/main-window.cpp:271
+msgid "_Full Screen"
+msgstr "_Повноекранний режим"
+
+#: ../src/application/main-window.cpp:272
+msgid "Show the current photo in full screen mode"
+msgstr "Показати поточну фотографію у повноекранному режимі"
+
+#: ../src/application/main-window.cpp:289
+msgid "_Help"
+msgstr "_Довідка"
+
+#: ../src/application/main-window.cpp:593
+msgid "A photo manager for GNOME"
+msgstr "Впорядник фотографій для GNOME"
+
+#. Translators: Put your names here.
+#: ../src/application/main-window.cpp:624
+msgid "translator-credits"
+msgstr "Юрій Чорноіван <yurchor@ukr.net>"
+
+#: ../src/application/main-window.cpp:629
+msgctxt "Project website"
+msgid "%1 Website"
+msgstr "Веб-сайт %1"
+
+#: ../src/attribute/basic-exif-view.cpp:93
+msgid "Camera"
+msgstr "Фотоапарат"
+
+#: ../src/attribute/basic-exif-view.cpp:112
+msgid "Exposure time"
+msgstr "Час експозиції"
+
+#: ../src/attribute/basic-exif-view.cpp:132
+msgid "Flash"
+msgstr "Спалах"
+
+#: ../src/attribute/basic-exif-view.cpp:152
+msgid "F-number"
+msgstr "Число діафрагми:"
+
+#: ../src/attribute/basic-exif-view.cpp:171
+msgid "ISO speed"
+msgstr "Світлочутливість ISO"
+
+#: ../src/attribute/basic-exif-view.cpp:190
+msgid "Metering mode"
+msgstr "Режим вимірювання"
+
+#: ../src/attribute/basic-exif-view.cpp:211
+msgid "Focal length"
+msgstr "Фокальна відстань"
+
+#: ../src/attribute/basic-exif-view.cpp:231
+msgid "White balance"
+msgstr "Баланс білого"
+
+#: ../src/attribute/date-manager.cpp:50
+msgid "Picture Taken Date"
+msgstr "Дата зйомки"
+
+#: ../src/attribute/property-manager.cpp:49
+msgid "Properties"
+msgstr "Властивості"
+
+#: ../src/attribute/property-manager.cpp:75
+msgid "Basic"
+msgstr "Основні"
+
+#: ../src/attribute/property-manager.cpp:76
+msgid "Histogram"
+msgstr "Гістограма"
+
+#: ../src/attribute/search-manager.cpp:52
+msgid "Search"
+msgstr "Пошук"
+
+#: ../src/attribute/search-manager.cpp:66
+msgid "Select _All"
+msgstr "Позначити _всі"
+
+#: ../src/attribute/search-manager.cpp:67
+msgid "Select all the filters in this list"
+msgstr "Позначити всі фільтри у списку"
+
+#: ../src/attribute/search-manager.cpp:75
+msgid "_Remove"
+msgstr "В_илучити"
+
+#: ../src/attribute/search-manager.cpp:76
+msgid "Remove the selected filters from this list"
+msgstr "Вилучити позначені фільтри зі списку"
+
+#: ../src/attribute/tag-manager.cpp:54
+msgid "Tags"
+msgstr "Мітки"
+
+#: ../src/attribute/tag-manager.cpp:100
+msgid "_Tags"
+msgstr "_Мітки"
+
+#: ../src/attribute/tag-manager.cpp:105
+msgid "Create New _Tag..."
+msgstr "Створити _мітку…"
+
+#: ../src/attribute/tag-manager.cpp:112
+msgid "_Edit Selected Tag..."
+msgstr "_Змінити позначену мітку…"
+
+#: ../src/attribute/tag-manager.cpp:119
+msgid "_Delete Selected Tag"
+msgstr "Ви_лучити позначену мітку"
+
+#: ../src/attribute/tag-manager.cpp:125
+msgid "_Attach Tag to Selection"
+msgstr "_Додати мітку до позначеного"
+
+#: ../src/attribute/tag-manager.cpp:132
+msgid "_Remove Tag From Selection"
+msgstr "Ви_лучити мітку з позначеного"
+
+#: ../src/attribute/tag-new-dialog.cpp:39
+#: ../src/attribute/tag-new-dialog.cpp:69
+msgid "Parent:"
+msgstr "Батьківська:"
+
+#: ../src/attribute/tag-new-dialog.cpp:44
+#: ../src/attribute/tag-new-dialog.cpp:74
+msgid "Name:"
+msgstr "Назва:"
+
+#: ../src/attribute/tag-new-dialog.cpp:49
+#: ../src/attribute/tag-new-dialog.cpp:79
+msgid "Description:"
+msgstr "Опис:"
+
+#: ../src/attribute/tag-new-dialog.cpp:56
+msgid "Create New Tag"
+msgstr "Створення мітки"
+
+#: ../src/attribute/tag-new-dialog.cpp:127
+msgid "Select Tag Icon"
+msgstr "Вибір піктограми мітки"
+
+#: ../src/common/exif-data.cpp:161
+msgctxt "Flash"
+msgid "Off"
+msgstr "Вимкнено"
+
+#: ../src/common/exif-data.cpp:165
+msgctxt "Flash"
+msgid "On"
+msgstr "Увімкнено"
+
+#: ../src/common/exif-data.cpp:199
+msgctxt "Metering mode"
+msgid "Average"
+msgstr "Середнє"
+
+#: ../src/common/exif-data.cpp:204
+msgctxt "Metering mode"
+msgid "Center Weighted Average"
+msgstr "Середнє відносно центру"
+
+#: ../src/common/exif-data.cpp:208
+msgctxt "Metering mode"
+msgid "Spot"
+msgstr "Пляма"
+
+#: ../src/common/exif-data.cpp:212
+msgctxt "Metering mode"
+msgid "Multi-spot"
+msgstr "Мульти-пляма"
+
+#: ../src/common/exif-data.cpp:216
+msgctxt "Metering mode"
+msgid "Pattern"
+msgstr "Шкала"
+
+#: ../src/common/exif-data.cpp:220
+msgctxt "Metering mode"
+msgid "Partial"
+msgstr "Частковий"
+
+#: ../src/common/exif-data.cpp:236
+msgctxt "White balance"
+msgid "Automatic"
+msgstr "Автоматично"
+
+#: ../src/common/exif-data.cpp:240
+msgctxt "White balance"
+msgid "Manual"
+msgstr "Вручну"
+
+#: ../src/common/histogram-viewer.cpp:38
+msgid "Type"
+msgstr "Тип"
+
+#: ../src/common/histogram-viewer.cpp:43
+msgid "Channels"
+msgstr "Канали"
+
+#: ../src/common/histogram-viewer.cpp:68
+msgctxt "Scale"
+msgid "Linear"
+msgstr "Лінійний"
+
+#: ../src/common/histogram-viewer.cpp:73
+msgctxt "Scale"
+msgid "Logarithmic"
+msgstr "Логарифмічний"
+
+#: ../src/common/histogram-viewer.cpp:81
+msgid "RGB"
+msgstr "RGB"
+
+#: ../src/common/histogram-viewer.cpp:86
+msgid "Red"
+msgstr "Червоний"
+
+#: ../src/common/histogram-viewer.cpp:91
+msgid "Green"
+msgstr "Зелений"
+
+#: ../src/common/histogram-viewer.cpp:96
+msgid "Blue"
+msgstr "Синій"
+
+#: ../src/common/progress-dialog.cpp:36
+msgid "Pending Operations"
+msgstr "Операції для завершення"
+
+#: ../src/common/progress-observer.h:166
+msgid "%1 of %2 completed"
+msgstr "Завершено %1 з %2"
+
+#: ../src/common/progress-observer.h:175
+msgid "%1%% complete"
+msgstr "Завершено %1%%"
+
+#: ../src/editor/editor.cpp:114
+msgid "T_ools"
+msgstr "І_нструменти"
+
+#: ../src/editor/editor.cpp:118
+msgid "_Transform"
+msgstr "П_еретворення"
+
+#: ../src/editor/editor.cpp:124
+msgid "Flip _Horizontal"
+msgstr "Віддзеркалити гор_изонтально"
+
+#: ../src/editor/editor.cpp:125
+msgid "Mirror the photo horizontally"
+msgstr "Віддзеркалити фотографію горизонтально."
+
+#: ../src/editor/editor.cpp:136
+msgid "Flip _Vertical"
+msgstr "Віддзеркалити _вертикально"
+
+#: ../src/editor/editor.cpp:137
+msgid "Mirror the photo vertically"
+msgstr "Віддзеркалити фотографію вертикально"
+
+#: ../src/editor/editor.cpp:148
+msgid "_Rotate Clockwise"
+msgstr "П_овернути за год. стрілкою"
+
+#: ../src/editor/editor.cpp:149
+msgid "Rotate the photo 90 degrees to the right"
+msgstr "Повернути фотографію на 90° за годинниковою стрілкою"
+
+#: ../src/editor/editor.cpp:160
+msgid "Rotate Counterc_lockwise"
+msgstr "Повернути п_роти год. стрілки"
+
+#: ../src/editor/editor.cpp:161
+msgid "Rotate the photo 90 degrees to the left"
+msgstr "Повернути фотографію на 90° проти годинникової стрілки"
+
+#: ../src/editor/flip-horiz-operation.cpp:43
+msgid "Flipping horizontally..."
+msgstr "Перевернути горизонтально…"
+
+#: ../src/editor/flip-operation.cpp:59
+msgid "Flipping..."
+msgstr "Перевертання…"
+
+#: ../src/editor/flip-vert-operation.cpp:43
+msgid "Flipping vertically..."
+msgstr "Перевернути вертикально…"
+
+#: ../src/editor/rotate-clock-operation.cpp:43
+msgid "Rotating clockwise..."
+msgstr "Обертання за год. стрілкою…"
+
+#: ../src/editor/rotate-counter-operation.cpp:43
+msgid "Rotating counterclockwise..."
+msgstr "Обертання проти год. стрілки…"
+
+#: ../src/editor/rotate-operation.cpp:57
+msgid "Rotating..."
+msgstr "Обертання…"
+
+#: ../src/exporter/brasero-destination.cpp:143
+msgid "_CD/DVD..."
+msgstr "_КД/DVD…"
+
+#: ../src/exporter/brasero-destination.cpp:185
+msgid "Export to CD/DVD"
+msgstr "Експортувати на КД/DVD"
+
+#: ../src/exporter/directory-destination.cpp:96
+msgid "Exporting photos"
+msgstr "Експортування фотографій"
+
+#: ../src/exporter/directory-destination.cpp:205
+msgid "Select Folder"
+msgstr "Вибір теки"
+
+#: ../src/exporter/directory-destination.cpp:214
+msgid "_Folder..."
+msgstr "_Тека…"
+
+#: ../src/exporter/exporter-dialog.cpp:33
+msgid "Export"
+msgstr "Експорт"
+
+#: ../src/exporter/exporter-dialog.cpp:42
+msgid "_Destination:"
+msgstr "_Призначення:"
+
+#: ../src/exporter/exporter-dialog.cpp:44
+msgid "_Detect duplicates"
+msgstr "Ви_явлення дублікатів"
+
+#: ../src/exporter/exporter-dialog.cpp:48
+msgid "_Create an archive"
+msgstr "С_творити архів"
+
+#: ../src/exporter/exporter-dialog.cpp:66
+msgctxt "A group of UI controls"
+msgid "General"
+msgstr "Загальне"
+
+#: ../src/exporter/exporter-dialog.cpp:78
+msgctxt "A group of UI controls"
+msgid "Options"
+msgstr "Параметри"
+
+#: ../src/exporter/exporter-dialog.cpp:111
+msgid "_Export"
+msgstr "_Експортувати"
+
+#: ../src/renderer/browser-renderer.cpp:143
+#: ../src/renderer/enlarged-renderer.cpp:304
+msgid "_Slideshow"
+msgstr "П_оказ слайдів"
+
+#: ../src/renderer/browser-renderer.cpp:144
+#: ../src/renderer/enlarged-renderer.cpp:305
+msgid "Start a slideshow view of the photos"
+msgstr "Почати перегляд показу слайдів"
+
+#: ../src/renderer/browser-renderer.cpp:153
+msgid "Enlarge or shrink the thumbnails"
+msgstr "Збільшити або зменшити мініатюри"
+
+#: ../src/renderer/browser-renderer.cpp:175
+#: ../src/renderer/enlarged-renderer.cpp:317
+#: ../src/renderer/enlarged-renderer.cpp:453
+#: ../src/renderer/enlarged-renderer.cpp:462
+#: ../src/renderer/enlarged-renderer.cpp:471
+msgid "_Zoom In"
+msgstr "З_більшити"
+
+#: ../src/renderer/browser-renderer.cpp:176
+msgid "Enlarge the thumbnails"
+msgstr "Збільшити мініатюри"
+
+#: ../src/renderer/browser-renderer.cpp:187
+msgid "_Zoom Out"
+msgstr "З_меншити"
+
+#: ../src/renderer/browser-renderer.cpp:188
+msgid "Shrink the thumbnails"
+msgstr "Зменшити мініатюри"
+
+#: ../src/renderer/browser-renderer.cpp:199
+#: ../src/renderer/enlarged-renderer.cpp:312
+msgid "_Go"
+msgstr "Пе_рехід"
+
+#: ../src/renderer/browser-renderer.cpp:204
+msgid "_Previous Page"
+msgstr "_Попередня сторінка"
+
+#: ../src/renderer/browser-renderer.cpp:205
+msgid "Go to the previous page in the collection"
+msgstr "Перейти до попередньої сторінки у збірці"
+
+#: ../src/renderer/browser-renderer.cpp:208
+#: ../src/renderer/enlarged-renderer.cpp:378
+#: ../src/renderer/slideshow-renderer.cpp:169
+#: ../src/renderer/slideshow-renderer.cpp:213
+msgctxt "Navigation"
+msgid "Previous"
+msgstr "Попередня"
+
+#: ../src/renderer/browser-renderer.cpp:220
+msgid "_Next Page"
+msgstr "_Наступна сторінка"
+
+#: ../src/renderer/browser-renderer.cpp:221
+msgid "Go to the next page in the collection"
+msgstr "Перейти до наступної сторінки у збірці"
+
+#: ../src/renderer/browser-renderer.cpp:224
+#: ../src/renderer/enlarged-renderer.cpp:393
+#: ../src/renderer/slideshow-renderer.cpp:178
+#: ../src/renderer/slideshow-renderer.cpp:222
+msgctxt "Navigation"
+msgid "Next"
+msgstr "Далі"
+
+#: ../src/renderer/browser-renderer.cpp:235
+msgid "_First Page"
+msgstr "Пер_ша сторінка"
+
+#: ../src/renderer/browser-renderer.cpp:236
+msgid "Go to the first page in the collection"
+msgstr "Перейти до першої сторінки збірки"
+
+#: ../src/renderer/browser-renderer.cpp:248
+msgid "_Last Page"
+msgstr "_Остання сторінка"
+
+#: ../src/renderer/browser-renderer.cpp:249
+msgid "Go to the last page in the collection"
+msgstr "Перейти до останньої сторінки у збірці"
+
+#: ../src/renderer/enlarged-renderer.cpp:72
+msgctxt "Mode or view"
+msgid "Enlarged"
+msgstr "Збільшений"
+
+#: ../src/renderer/enlarged-renderer.cpp:318
+#: ../src/renderer/enlarged-renderer.cpp:454
+#: ../src/renderer/enlarged-renderer.cpp:463
+#: ../src/renderer/enlarged-renderer.cpp:472
+#: ../src/renderer/slideshow-window.cpp:75
+#: ../src/renderer/slideshow-window.cpp:110
+#: ../src/renderer/slideshow-window.cpp:119
+#: ../src/renderer/slideshow-window.cpp:128
+msgid "Enlarge the photo"
+msgstr "Збільшити фотографія"
+
+#: ../src/renderer/enlarged-renderer.cpp:320
+#: ../src/renderer/slideshow-window.cpp:74
+#: ../src/renderer/slideshow-window.cpp:109
+#: ../src/renderer/slideshow-window.cpp:118
+#: ../src/renderer/slideshow-window.cpp:127
+msgctxt "Zoom"
+msgid "In"
+msgstr "Вхідна"
+
+#: ../src/renderer/enlarged-renderer.cpp:331
+#: ../src/renderer/enlarged-renderer.cpp:480
+#: ../src/renderer/enlarged-renderer.cpp:489
+msgid "Zoom _Out"
+msgstr "З_меншити"
+
+#: ../src/renderer/enlarged-renderer.cpp:332
+#: ../src/renderer/enlarged-renderer.cpp:481
+#: ../src/renderer/enlarged-renderer.cpp:490
+#: ../src/renderer/slideshow-window.cpp:84
+#: ../src/renderer/slideshow-window.cpp:137
+#: ../src/renderer/slideshow-window.cpp:146
+msgid "Shrink the photo"
+msgstr "Зменшити фотографію"
+
+#: ../src/renderer/enlarged-renderer.cpp:334
+#: ../src/renderer/slideshow-window.cpp:83
+#: ../src/renderer/slideshow-window.cpp:136
+#: ../src/renderer/slideshow-window.cpp:145
+msgctxt "Zoom"
+msgid "Out"
+msgstr "Вихідна"
+
+#: ../src/renderer/enlarged-renderer.cpp:345
+msgid "_Normal Size"
+msgstr "_Звичайний розмір"
+
+#: ../src/renderer/enlarged-renderer.cpp:346
+#: ../src/renderer/slideshow-window.cpp:93
+msgid "Show the photo at its normal size"
+msgstr "Показати фотографію з використанням звичайних для неї розмірів"
+
+#: ../src/renderer/enlarged-renderer.cpp:349
+#: ../src/renderer/slideshow-window.cpp:92
+msgctxt "Zoom"
+msgid "Normal"
+msgstr "Звичайний"
+
+#: ../src/renderer/enlarged-renderer.cpp:360
+msgid "Best _Fit"
+msgstr "Пі_дібрати розмір"
+
+#: ../src/renderer/enlarged-renderer.cpp:361
+#: ../src/renderer/slideshow-window.cpp:102
+msgid "Fit the photo to the window"
+msgstr "Підібрати розмір фотографії за розмірами вікна"
+
+#: ../src/renderer/enlarged-renderer.cpp:363
+#: ../src/renderer/slideshow-window.cpp:101
+msgctxt "Zoom"
+msgid "Fit"
+msgstr "Вмістити"
+
+#: ../src/renderer/enlarged-renderer.cpp:374
+#: ../src/renderer/enlarged-renderer.cpp:420
+msgid "_Previous Photo"
+msgstr "_Попередня фотографія"
+
+#: ../src/renderer/enlarged-renderer.cpp:375
+#: ../src/renderer/enlarged-renderer.cpp:421
+#: ../src/renderer/slideshow-renderer.cpp:170
+#: ../src/renderer/slideshow-renderer.cpp:214
+msgid "Go to the previous photo in the collection"
+msgstr "Перейти до попередньої фотографії у збірці"
+
+#: ../src/renderer/enlarged-renderer.cpp:389
+#: ../src/renderer/enlarged-renderer.cpp:429
+msgid "_Next Photo"
+msgstr "_Наступна фотографія"
+
+#: ../src/renderer/enlarged-renderer.cpp:390
+#: ../src/renderer/enlarged-renderer.cpp:430
+#: ../src/renderer/slideshow-renderer.cpp:179
+#: ../src/renderer/slideshow-renderer.cpp:223
+msgid "Go to the next photo in the collection"
+msgstr "Перейти до наступної фотографії у збірці"
+
+#: ../src/renderer/enlarged-renderer.cpp:404
+#: ../src/renderer/enlarged-renderer.cpp:437
+msgid "_First Photo"
+msgstr "П_ерша фотографія"
+
+#: ../src/renderer/enlarged-renderer.cpp:405
+#: ../src/renderer/enlarged-renderer.cpp:438
+#: ../src/renderer/slideshow-renderer.cpp:162
+#: ../src/renderer/slideshow-renderer.cpp:206
+msgid "Go to the first photo in the collection"
+msgstr "Перейти до першої фотографії у збірці"
+
+#: ../src/renderer/enlarged-renderer.cpp:412
+#: ../src/renderer/enlarged-renderer.cpp:445
+msgid "_Last Photo"
+msgstr "_Остання фотографія"
+
+#: ../src/renderer/enlarged-renderer.cpp:413
+#: ../src/renderer/enlarged-renderer.cpp:446
+#: ../src/renderer/slideshow-renderer.cpp:187
+#: ../src/renderer/slideshow-renderer.cpp:231
+msgid "Go to the last photo in the collection"
+msgstr "Перейти до останньої фотографії у збірці"
+
+#: ../src/renderer/slideshow-renderer.cpp:161
+#: ../src/renderer/slideshow-renderer.cpp:205
+msgctxt "Navigation"
+msgid "First"
+msgstr "Перша"
+
+#: ../src/renderer/slideshow-renderer.cpp:186
+#: ../src/renderer/slideshow-renderer.cpp:230
+msgctxt "Navigation"
+msgid "Last"
+msgstr "Остання"
