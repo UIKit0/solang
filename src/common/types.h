@@ -21,6 +21,7 @@
 #define SOLANG_TYPES_H
 
 #include <map>
+#include <set>
 #include <vector>
 #include <tr1/memory>
 
@@ -216,6 +217,7 @@ class Photo;
 typedef std::tr1::shared_ptr<const Photo> ConstPhotoPtr;
 typedef std::tr1::shared_ptr<Photo> PhotoPtr;
 typedef Photo * UnrefPhotoPtr;
+typedef std::set<PhotoPtr> PhotoSet;
 typedef std::vector<PhotoPtr> PhotoList;
 typedef std::tr1::shared_ptr<PhotoList> PhotoListPtr;
 

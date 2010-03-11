@@ -110,7 +110,7 @@ class Engine :
             return DatabasePtr(&database_);
         }
 
-        PhotoList &
+        PhotoSet &
         get_export_queue() throw();
 
         inline SearchCriterionRepo &
@@ -139,7 +139,7 @@ class Engine :
 
         Glib::Mutex mutex_;
 
-        PhotoList exportQueue_;
+        PhotoSet exportQueue_;
 
         //The following are populated 
         //from gconf

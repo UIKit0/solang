@@ -20,6 +20,9 @@
 #include "config.h"
 #endif // HAVE_CONFIG_H
 
+#include <algorithm>
+#include <iterator>
+
 #include "application.h"
 #include "export-queue-operations.h"
 
@@ -60,7 +63,7 @@ void
 ExportQueueCleaner::operator()(void) throw()
 {
     Engine & engine = application_->get_engine();
-    PhotoList & queue = engine.get_export_queue();
+    PhotoSet & queue = engine.get_export_queue();
     queue.clear();
 }
 
@@ -99,13 +102,14 @@ void
 ExportQueueInserter::operator()(void) throw()
 {
     Engine & engine = application_->get_engine();
-    PhotoList & queue = engine.get_export_queue();
+    PhotoSet & queue = engine.get_export_queue();
     RendererRegistry & renderer_registry
                            = application_->get_renderer_registry();
     const IRendererPtr renderer = renderer_registry.get_current();
     const PhotoList & photos = renderer->get_current_selection();
 
-    queue.insert(queue.end(), photos.begin(), photos.end());
+    std::copy(photos.begin(), photos.end(),
+              std::inserter(queue, queue.begin()));
 }
 
 } // namespace Solang

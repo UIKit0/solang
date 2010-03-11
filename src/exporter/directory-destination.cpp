@@ -21,6 +21,8 @@
 #include "config.h"
 #endif // HAVE_CONFIG_H
 
+#include <algorithm>
+#include <iterator>
 #include <string>
 
 #include <giomm.h>
@@ -87,7 +89,7 @@ DirectoryDestination::export_photo_async(
 
 void
 DirectoryDestination::export_photos_async(
-                          const PhotoList & photos,
+                          const PhotoSet & photos,
                           const ProgressObserverPtr & observer)
                           throw()
 {
@@ -97,8 +99,9 @@ DirectoryDestination::export_photos_async(
         observer->set_total(photos.size());
     }
 
-    const PhotoListPtr pending(new PhotoList(photos.begin(),
-                                             photos.end()));
+    const PhotoListPtr pending(new PhotoList());
+    std::copy(photos.begin(), photos.end(),
+              std::inserter(*pending, pending->begin()));
 
     if (true == createArchive_)
     {

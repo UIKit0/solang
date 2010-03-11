@@ -46,7 +46,7 @@ class BraseroDestination :
         final(Application & application) throw();
 
         virtual void
-        export_photos_async(const PhotoList & photos,
+        export_photos_async(const PhotoSet & photos,
                             const ProgressObserverPtr & observer)
                             throw();
 

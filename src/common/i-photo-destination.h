@@ -46,7 +46,7 @@ class IPhotoDestination :
         final(Application & application) throw() = 0;
 
         virtual void
-        export_photos_async(const PhotoList & photos,
+        export_photos_async(const PhotoSet & photos,
                             const ProgressObserverPtr & observer)
                             throw() = 0;
 

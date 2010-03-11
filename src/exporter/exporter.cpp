@@ -212,8 +212,8 @@ Exporter::on_exporter_dialog_response(
             photoDestination_->set_create_archive(create_archive);
 
             Engine & engine = application_->get_engine();
-            const PhotoList & export_queue
-                                  = engine.get_export_queue();
+            const PhotoSet & export_queue
+                                 = engine.get_export_queue();
 
             const ProgressObserverPtr observer
                 = ProgressObserver<sigc::signal<void> >::create(

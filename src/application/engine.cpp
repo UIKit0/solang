@@ -162,7 +162,7 @@ Engine::signal_criteria_changed() throw()
     return criteriaChanged_;
 }
 
-PhotoList &
+PhotoSet &
 Engine::get_export_queue() throw()
 {
     return exportQueue_;
