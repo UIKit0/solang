@@ -57,7 +57,7 @@ AC_ARG_ENABLE(
 AS_IF([test "x$enable_brasero_exporter" != xno],
       [PKG_CHECK_MODULES(
            [BRASERO],
-           [libbrasero-burn >= 2.28.3],
+           [libbrasero-burn >= 2.28.3 libbrasero-media >= 2.28.3],
            [have_brasero=yes
             AC_DEFINE([HAVE_BRASERO],
                       [1],

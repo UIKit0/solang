@@ -51,7 +51,7 @@ Dependencies:
 -------------
  - babl
  - libarchive
- - libbrasero-burn >= 2.28.3
+ - libbrasero-burn >= 2.28.3 & libbrasero-media >= 2.28.3
  - dbus-glib-1
  - gdl-1.0
  - gegl
