@@ -54,9 +54,6 @@ class Photo :
         parse_exif_data(const UStringList & data,
                         ExifData & exif_data) throw();
 
-        Photo(const Glib::ustring & uri,
-              const Glib::ustring & content_type) throw();
-
         virtual
         ~Photo() throw();
 
@@ -125,6 +122,11 @@ class Photo :
         get_delete_action() throw();
 
     private:
+        friend class PhotoFactory;
+
+        Photo(const Glib::ustring & uri,
+              const Glib::ustring & content_type) throw();
+
         Glib::ustring uri_;
 
         Glib::ustring contentType_; //content type

@@ -44,6 +44,9 @@ class Thumbnailer :
         sigc::signal<void, PhotoList &> &
         signal_ready() throw();
 
+        void
+        shutdown() throw();
+
     private:
         friend class Singleton<Thumbnailer>;
 

@@ -158,4 +158,12 @@ Thumbnailer::signal_ready() throw()
     return ready_;
 }
 
+void
+Thumbnailer::shutdown() throw()
+{
+    notify_callbacks();
+    pendingList_.clear();
+    map_.clear();
+}
+
 } // namespace Solang

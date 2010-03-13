@@ -258,6 +258,9 @@ Application::Application(int & argc, char ** & argv) throw() :
 Application::~Application() throw()
 {
     threadPool_.shutdown(false);
+
+    Thumbnailer & thumbnailer = Thumbnailer::instance();
+    thumbnailer.shutdown();
 }
 
 void

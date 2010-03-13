@@ -65,6 +65,8 @@ libcommon_la_SOURCES = \
 	operation.h \
 	photo.cpp \
 	photo.h \
+	photo-factory.cpp \
+	photo-factory.h \
 	plugin.cpp \
 	plugin.h \
 	pixbuf-maker.cpp \

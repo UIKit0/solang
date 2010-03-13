@@ -30,6 +30,7 @@
 #include "database.h"
 #include "exif-data.h"
 #include "photo.h"
+#include "photo-factory.h"
 #include "photo-tag.h"
 #include "tag.h"
 #include "date-photo-info.h"
@@ -293,12 +294,15 @@ void
 Database::on_async_photos(std::vector<UStringList> & result,
                           const SlotAsyncPhotos & slot) const throw()
 {
+    PhotoFactory & photo_factory = PhotoFactory::instance();
     PhotoList photos;
+
     for (std::vector<UStringList>::const_iterator it = result.begin();
          result.end() != it;
          it++)
     {
-        PhotoPtr photo(new Photo((*it)[0], (*it)[1]));
+        PhotoPtr photo = photo_factory.create_photo((*it)[0],
+                                                    (*it)[1]);
         photos.push_back(photo);
     }
 
