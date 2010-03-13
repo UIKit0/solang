@@ -158,7 +158,6 @@ ThumbnailView::get_photo_from_path(const Gtk::TreeModel::Path & path)
                                    throw()
 {
     const TreeModelPtr & model = get_model();
-    g_object_ref(model->gobj());
 
     Gtk::TreeModel::iterator model_iter = model->get_iter(path);
     Gtk::TreeModel::Row row = *model_iter;
