@@ -31,25 +31,25 @@
     </media>
   </figure>
 
-	<p>You know that a digital photography is composed of millions of colored dots called pixels. If instead of ordering the pixels by color, one order them by brightness, from the darker to the lighter, it gives us the histogram of that photo. <app>Solang</app> automatically create an histogram with 256 levels of brightness, the height of each stack indicate us the number of pixel of that brightness in the image.</p>
+	<p>You know that a digital photography is composed of millions of colored dots called pixels. If instead of ordering the pixels by color, one order them by brightness, from the darker to the lighter, it gives us the histogram of that photo. <app>Solang</app> automatically create an histogram with 256 levels of brightness, the height of each stack indicate us the number of pixel of that brightness in the photo.</p>
 
   <figure>
-    <title>The original image</title>
+    <title>The original photo</title>
     <media type="image" src="figures/histogram_original.jpg" mime="image/jpg" style="right">
-      <p>An image of sea and beach.</p>
+      <p>An photo of sea and beach.</p>
     </media>
   </figure>
   <figure>
     <title>Its histogram</title>
     <desc>In a real histogram there is no white spaces between each stack; here the histogram is in shade of Grey to allow you to distinguish each stack and the three tones: the shadows - near from black (0) -, the midtones and the highlights - near from white (255) -.</desc>
     <media type="image" src="figures/histogram_bar.gif" mime="image/gif" style="right">
-      <p>The histogram associated to that image</p>
+      <p>The histogram associated to that photo</p>
     </media>
   </figure>
   <figure>
     <title>Its histogram</title>
     <media type="image" src="figures/histogram_original.gif" mime="image/gif" style="right">
-      <p>The histogram associated to that image</p>
+      <p>The histogram associated to that photo</p>
     </media>
   </figure>
 
@@ -57,7 +57,62 @@
 
 <section>
 <title>How to use these histograms</title>
-<p>Histograms are useful because they let you see if your images are correctly exposed. Take the following examples.</p>
+<p>Histograms are useful because they let you see if your photos are correctly exposed. Take the following examples.</p>
+<table frame="all" rules="rows cols" shade="rows">
+    <tr>
+    <td><p>Photo normal</p></td>
+    <td><p>Histogram</p></td>
+    </tr>
+    <tr>
+    <td><p>Correctly exposed photo</p></td>
+    <td></td>
+    </tr>
+
+    <tr>
+    <td><p>Photo overexposed</p></td>
+    <td><p>Histogram</p></td>
+    </tr>
+    <tr>
+    <td><p>Overexposed photo</p></td>
+    <td></td>
+    </tr>
+
+    <tr>
+    <td><p>Photo underexposed</p></td>
+    <td><p>Histogram</p></td>
+    </tr>
+    <tr>
+    <td><p>Underexposed photo</p></td>
+    <td></td>
+    </tr>
+
+    <tr>
+    <td><p>Photo Too much contrast</p></td>
+    <td><p>Histogram</p></td>
+    </tr>
+    <tr>
+    <td><p>Photo with too much contrast</p></td>
+    <td></td>
+    </tr>
+
+    <tr>
+    <td><p>Photo too low contrast</p></td>
+    <td><p>Histogram</p></td>
+    </tr>
+    <tr>
+    <td><p>Photo with too low contrast</p></td>
+    <td></td>
+    </tr>
+
+    <tr>
+    <td><p>Photo modified</p></td>
+    <td><p>Histogram</p></td>
+    </tr>
+    <tr>
+    <td><p>Photo with modified contrast</p></td>
+    <td></td>
+    </tr>
+</table>
 
 </section>
 
