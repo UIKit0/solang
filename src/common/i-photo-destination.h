@@ -1,6 +1,6 @@
 /* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*- */
 /*
- * Copyright (C) 2009 Debarshi Ray <rishi@gnu.org>
+ * Copyright (C) 2009, 2010 Debarshi Ray <rishi@gnu.org>
  * Copyright (C) 2009 Santanu Sinha <santanu.sinha@gmail.com>
  *
  * Solang is free software: you can redistribute it and/or modify it
@@ -46,7 +46,7 @@ class IPhotoDestination :
         final(Application & application) throw() = 0;
 
         virtual void
-        export_photos_async(const PhotoSet & photos,
+        export_photos_async(const PhotoListPtr & photos,
                             const ProgressObserverPtr & observer)
                             throw() = 0;
 

@@ -71,7 +71,7 @@ BraseroDestination::export_photo_async(
 
 void
 BraseroDestination::export_photos_async(
-                          const PhotoSet & photos,
+                          const PhotoListPtr & photos,
                           const ProgressObserverPtr & observer)
                           throw()
 {
@@ -92,9 +92,9 @@ BraseroDestination::export_photos_async(
         BRASERO_TRACK(braseroTrackDataCfg_),
         NULL);
 
-    PhotoSet::const_iterator it;
+    PhotoList::const_iterator it;
 
-    for (it = photos.begin(); photos.end() != it; it++)
+    for (it = photos->begin(); photos->end() != it; it++)
     {
         export_photo_async(*it, observer);
     }

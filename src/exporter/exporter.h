@@ -1,6 +1,6 @@
 /* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*- */
 /*
- * Copyright (C) 2009 Debarshi Ray <rishi@gnu.org>
+ * Copyright (C) 2009, 2010 Debarshi Ray <rishi@gnu.org>
  *
  * Solang is free software: you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
@@ -61,7 +61,15 @@ class Exporter :
 
     protected:
         void
+        export_photos_async(bool create_archive) throw();
+
+        void
         on_action_photo_export() throw();
+
+        void
+        on_archive_maker_ready(const ArchiveMakerPtr &,
+                               const std::string & archive_path,
+                               const PhotoListPtr & photos) throw();
 
         void
         on_photo_destination_init_end(bool status) throw();

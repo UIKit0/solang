@@ -1,6 +1,6 @@
 /* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*- */
 /*
- * Copyright (C) 2009 Debarshi Ray <rishi@gnu.org>
+ * Copyright (C) 2009, 2010 Debarshi Ray <rishi@gnu.org>
  *
  * Solang is free software: you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
@@ -20,14 +20,21 @@
 #include "config.h"
 #endif // HAVE_CONFIG_H
 
+#include <algorithm>
+#include <iterator>
+#include <sstream>
+#include <string>
+
 #include <sigc++/sigc++.h>
 
 #include "application.h"
+#include "archive-maker.h"
 //#include "directory-storage.h"
 #include "engine.h"
 #include "exporter-dialog.h"
 #include "exporter.h"
 #include "i-photo-destination.h"
+#include "photo-factory.h"
 #include "progress-observer.h"
 
 namespace Solang
@@ -167,9 +174,79 @@ Exporter::visit_renderer(SlideshowRenderer & slideshow_renderer)
 }
 
 void
+Exporter::export_photos_async(bool create_archive) throw()
+{
+    Engine & engine = application_->get_engine();
+    const PhotoSet & export_queue = engine.get_export_queue();
+
+    const PhotoListPtr photos(new PhotoList());
+    std::copy(export_queue.begin(), export_queue.end(),
+              std::inserter(*photos, photos->begin()));
+
+    const ProgressObserverPtr observer
+        = ProgressObserver<sigc::signal<void> >::create(
+              application_->get_progress_dialog());
+
+    if (true == create_archive)
+    {
+        observer->set_description(_("Creating archive"));
+        observer->set_total(photos->size());
+
+        GTimeVal time;
+        g_get_current_time(&time);
+
+        const std::string & username = Glib::get_user_name();
+        std::ostringstream sout;
+        sout << Glib::get_tmp_dir() << "/"
+             << "Photos-" << username << "-" << time.tv_sec << ".zip";
+
+        // FIXME: We need to ensure that this is unique.
+        const std::string & archive_path = sout.str();
+
+        const ArchiveMakerPtr archive_maker = ArchiveMaker::create();
+        archive_maker->make_async(
+            archive_path,
+            photos,
+            sigc::bind(
+                sigc::mem_fun(*this,
+                              &Exporter::on_archive_maker_ready),
+                archive_maker,
+                archive_path,
+                photos),
+            observer);
+    }
+    else
+    {
+        photoDestination_->export_photos_async(photos, observer);
+    }
+}
+
+void
 Exporter::on_action_photo_export() throw()
 {
     photoDestination_->init(*application_);
+}
+
+void
+Exporter::on_archive_maker_ready(const ArchiveMakerPtr &,
+                                 const std::string & archive_path,
+                                 const PhotoListPtr & photos) throw()
+{
+    photos->clear();
+
+    PhotoFactory & photo_factory = PhotoFactory::instance();
+
+    // This does not represent a photo, but we can get away with it.
+    const PhotoPtr photo  = photo_factory.create_photo(
+                                Glib::filename_to_uri(archive_path),
+                                "application/zip");
+    photos->push_back(photo);
+
+    const ProgressObserverPtr observer
+        = ProgressObserver<sigc::signal<void> >::create(
+              application_->get_progress_dialog());
+
+    photoDestination_->export_photos_async(photos, observer);
 }
 
 void
@@ -209,18 +286,9 @@ Exporter::on_exporter_dialog_response(
 
             const bool create_archive
                            = exporter_dialog->get_create_archive();
+
             photoDestination_->set_create_archive(create_archive);
-
-            Engine & engine = application_->get_engine();
-            const PhotoSet & export_queue
-                                 = engine.get_export_queue();
-
-            const ProgressObserverPtr observer
-                = ProgressObserver<sigc::signal<void> >::create(
-                      application_->get_progress_dialog());
-
-            photoDestination_->export_photos_async(export_queue,
-                                                   observer);
+            export_photos_async(create_archive);
             break;
         }
 

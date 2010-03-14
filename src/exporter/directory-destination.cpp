@@ -21,15 +21,12 @@
 #include "config.h"
 #endif // HAVE_CONFIG_H
 
-#include <algorithm>
-#include <iterator>
 #include <string>
 
 #include <giomm.h>
 #include <glib/gstdio.h>
 #include <glibmm/i18n.h>
 
-#include "archive-maker.h"
 #include "directory-destination.h"
 #include "i-progress-observer.h"
 #include "photo.h"
@@ -89,41 +86,17 @@ DirectoryDestination::export_photo_async(
 
 void
 DirectoryDestination::export_photos_async(
-                          const PhotoSet & photos,
+                          const PhotoListPtr & photos,
                           const ProgressObserverPtr & observer)
                           throw()
 {
     if (0 != observer)
     {
         observer->set_description(_("Exporting photos"));
-        observer->set_total(photos.size());
+        observer->set_total(photos->size());
     }
 
-    const PhotoListPtr pending(new PhotoList());
-    std::copy(photos.begin(), photos.end(),
-              std::inserter(*pending, pending->begin()));
-
-    if (true == createArchive_)
-    {
-        Glib::Date date;
-        date.set_time_current();
-
-        const std::string dest = date.format_string("%Y%m%d") + ".zip";
-        filename_ += "/";
-        filename_ += dest;
-
-        const ArchiveMakerPtr archive_maker = ArchiveMaker::create();
-        archive_maker->make_async(
-            filename_,
-            pending,
-            sigc::bind(sigc::slot<void, const ArchiveMakerPtr &>(),
-                       archive_maker),
-            observer);
-    }
-    else
-    {
-        export_photo_async(pending->back(), pending, observer);
-    }
+    export_photo_async(photos->back(), photos, observer);
 
     return;
 }
