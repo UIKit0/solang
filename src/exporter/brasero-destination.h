@@ -88,6 +88,8 @@ class BraseroDestination :
         void
         brasero_burn_begin_idle() throw();
 
+        bool createArchive_;
+
         BraseroDrive * braseroDrive_;
 
         BraseroSessionCfg * braseroSessionCfg_;

@@ -34,6 +34,7 @@ namespace Solang
 
 BraseroDestination::BraseroDestination() throw() :
     PhotoDestination(),
+    createArchive_(false),
     braseroDrive_(0),
     braseroSessionCfg_(0),
     braseroTrackDataCfg_(0),
@@ -152,7 +153,7 @@ BraseroDestination::get_name() const throw()
 gint
 BraseroDestination::get_options() const throw()
 {
-    return PHOTO_DESTINATION_CREATE_ARCHIVE_FALSE;
+    return PHOTO_DESTINATION_CREATE_ARCHIVE_OPTIONAL;
 }
 
 Gtk::StockID
@@ -164,7 +165,7 @@ BraseroDestination::get_stock_id() const throw()
 void
 BraseroDestination::set_create_archive(bool value) throw()
 {
-    // NB: Creation of archives is not supported.
+    createArchive_ = value;
 }
 
 void
