@@ -53,6 +53,7 @@ ExporterDialog::ExporterDialog(Gtk::Widget & browser,
     sourceOptions_(source_options)
 {
     set_border_width(12);
+    set_resizable(false);
 
     Gtk::VBox * const dialog_vbox = get_vbox();
     dialog_vbox->set_spacing(18);
