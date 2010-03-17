@@ -35,3 +35,12 @@ xmldocs.make
 *.o
 *.patch
 *~
+help/cs/legal.xml
+help/cs/.xml2po.mo
+help/cs/*.page
+help/de/legal.xml
+help/de/.xml2po.mo
+help/de/*.page
+help/es/legal.xml
+help/es/.xml2po.mo
+help/es/*.page
