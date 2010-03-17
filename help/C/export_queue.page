@@ -1,0 +1,34 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="topic"
+      id="export_queue">
+<info>
+	<desc>
+	Mark the photos you want to export.
+	</desc>
+	<credit type="author">
+		<name>Florent Thévenet</name>
+		<email>feuloren@free.fr</email>
+	</credit>
+	<include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>
+</info>
+<title>Manage the export queue</title>
+<p>Before exporting photos you have to put them in the Export Queue.</p>
+
+<steps>
+	<item>
+	<p>Right-click on a photo.</p>
+	</item>
+	<item>
+	<p>Choose <gui>Add to Export Queue</gui>.</p>
+	</item>
+</steps>
+<steps>
+	<item>
+	<p>Select one or more photos.</p>
+	</item>
+	<item>
+	<p>Choose <guiseq><gui>Edit</gui><gui>Add to Export Queue</gui></guiseq>.</p>
+	</item>
+</steps>
+
+</page>
