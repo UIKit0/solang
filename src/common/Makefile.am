@@ -34,6 +34,8 @@ libcommon_la_SOURCES = \
 	exif-data.h \
 	export-queue-operations.cpp \
 	export-queue-operations.h \
+	hig-dialog.cpp \
+	hig-dialog.h \
 	histogram-viewer.cpp \
 	histogram-viewer.h \
 	histogram.cpp \
