@@ -30,7 +30,7 @@ namespace Solang
 
 ExporterDialog::ExporterDialog(Gtk::Widget & browser,
                                gint source_options) throw() :
-    Gtk::Dialog(_("Export"), true, false),
+    HIGDialog(_("Export"), true, false),
     generalVBox_(false, 6),
     optionsVBox_(false, 6),
     generalLabel_("", Gtk::ALIGN_LEFT, Gtk::ALIGN_CENTER, false),
@@ -52,14 +52,13 @@ ExporterDialog::ExporterDialog(Gtk::Widget & browser,
     exportImage_(Gtk::Stock::APPLY, Gtk::ICON_SIZE_BUTTON),
     sourceOptions_(source_options)
 {
-    set_border_width(12);
     set_resizable(false);
 
-    Gtk::VBox * const dialog_vbox = get_vbox();
-    dialog_vbox->set_spacing(18);
+    Gtk::VBox & content_area = get_content_area();
+    content_area.set_spacing(18);
 
-    dialog_vbox->pack_start(generalVBox_, Gtk::PACK_SHRINK, 0);
-    dialog_vbox->pack_start(optionsVBox_, Gtk::PACK_SHRINK, 0);
+    content_area.pack_start(generalVBox_, Gtk::PACK_SHRINK, 0);
+    content_area.pack_start(optionsVBox_, Gtk::PACK_SHRINK, 0);
 
     generalLabel_.set_use_markup(true);
     {
