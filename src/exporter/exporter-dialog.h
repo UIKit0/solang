@@ -47,25 +47,19 @@ class ExporterDialog :
         virtual void
         on_response(int response_id);
 
-        Gtk::VBox generalVBox_;
+        Gtk::VBox destinationVBox_;
 
         Gtk::VBox optionsVBox_;
 
-        Gtk::Label generalLabel_;
+        Gtk::Label destinationLabel_;
 
-        Gtk::Alignment generalAlignment_;
+        Gtk::Alignment destinationAlignment_;
 
         Gtk::Label optionsLabel_;
 
         Gtk::Alignment optionsAlignment_;
 
-        Gtk::HBox generalHBox_;
-
         Gtk::VBox optionsVBox2_;
-
-        Gtk::Label destinationLabel_;
-
-        Gtk::CheckButton duplicatesCheckButton_;
 
         Gtk::CheckButton * archiveCheckButton_;
 

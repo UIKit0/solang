@@ -31,17 +31,14 @@ namespace Solang
 ExporterDialog::ExporterDialog(Gtk::Widget & browser,
                                gint source_options) throw() :
     HIGDialog(_("Export"), true, false),
-    generalVBox_(false, 6),
+    destinationVBox_(false, 6),
     optionsVBox_(false, 6),
-    generalLabel_("", Gtk::ALIGN_LEFT, Gtk::ALIGN_CENTER, false),
-    generalAlignment_(Gtk::ALIGN_CENTER, Gtk::ALIGN_CENTER, 1.0, 1.0),
+    destinationLabel_("", Gtk::ALIGN_LEFT, Gtk::ALIGN_CENTER, false),
+    destinationAlignment_(Gtk::ALIGN_CENTER, Gtk::ALIGN_CENTER,
+                          1.0, 1.0),
     optionsLabel_("", Gtk::ALIGN_LEFT, Gtk::ALIGN_CENTER, false),
     optionsAlignment_(Gtk::ALIGN_CENTER, Gtk::ALIGN_CENTER, 1.0, 1.0),
-    generalHBox_(false, 12),
     optionsVBox2_(false, 6),
-    destinationLabel_(_("_Destination:"), Gtk::ALIGN_LEFT,
-                      Gtk::ALIGN_CENTER, true),
-    duplicatesCheckButton_(_("_Detect duplicates"), true),
     archiveCheckButton_((source_options
                          & PHOTO_DESTINATION_CREATE_ARCHIVE_OPTIONAL)
                          ? Gtk::manage(new Gtk::CheckButton(
@@ -53,24 +50,29 @@ ExporterDialog::ExporterDialog(Gtk::Widget & browser,
     sourceOptions_(source_options)
 {
     set_resizable(false);
+    set_size_request(330, -1);
 
     Gtk::VBox & content_area = get_content_area();
     content_area.set_spacing(18);
 
-    content_area.pack_start(generalVBox_, Gtk::PACK_SHRINK, 0);
+    content_area.pack_start(destinationVBox_, Gtk::PACK_SHRINK, 0);
     content_area.pack_start(optionsVBox_, Gtk::PACK_SHRINK, 0);
 
-    generalLabel_.set_use_markup(true);
+    destinationLabel_.set_use_markup(true);
     {
         Glib::ustring markup = "<b>";
-        markup += C_("A group of UI controls", "General");
+        markup += C_("A group of UI controls", "Destination");
         markup += "</b>";
-        generalLabel_.set_markup(markup);
+        destinationLabel_.set_markup(markup);
     }
-    generalVBox_.pack_start(generalLabel_, Gtk::PACK_SHRINK, 0);
+    destinationVBox_.pack_start(destinationLabel_,
+                                Gtk::PACK_SHRINK,
+                                0);
 
-    generalAlignment_.set_padding(0, 0, 12, 0);
-    generalVBox_.pack_start(generalAlignment_, Gtk::PACK_SHRINK, 0);
+    destinationAlignment_.set_padding(0, 0, 12, 0);
+    destinationVBox_.pack_start(destinationAlignment_,
+                                Gtk::PACK_SHRINK,
+                                0);
 
     optionsLabel_.set_use_markup(true);
     {
@@ -84,18 +86,10 @@ ExporterDialog::ExporterDialog(Gtk::Widget & browser,
     optionsAlignment_.set_padding(0, 0, 12, 0);
     optionsVBox_.pack_start(optionsAlignment_, Gtk::PACK_SHRINK, 0);
 
-    generalAlignment_.add(generalHBox_);
+    // Insert a Gtk::Widget specific to the particular destination.
+    destinationAlignment_.add(browser);
+
     optionsAlignment_.add(optionsVBox2_);
-
-    destinationLabel_.set_use_underline(true);
-    generalHBox_.pack_start(destinationLabel_, Gtk::PACK_SHRINK, 0);
-
-    // Insert a Gtk::Widget specific to the particular source.
-    generalHBox_.pack_start(browser, Gtk::PACK_EXPAND_WIDGET, 0);
-
-    duplicatesCheckButton_.set_use_underline(true);
-    optionsVBox2_.pack_start(duplicatesCheckButton_,
-                             Gtk::PACK_SHRINK, 0);
 
     if (0 != archiveCheckButton_)
     {
