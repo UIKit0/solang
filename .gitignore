@@ -44,3 +44,6 @@ help/de/*.page
 help/es/legal.xml
 help/es/.xml2po.mo
 help/es/*.page
+help/uk/legal.xml
+help/uk/.xml2po.mo
+help/uk/*.page
