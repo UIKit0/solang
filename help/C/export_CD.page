@@ -1,0 +1,36 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="topic"
+      id="export_CD">
+<info>
+	<link type="guide" xref="index_export"/>
+	<desc>
+	To copy photos in a archive or a folder.
+	</desc>
+	<credit type="author">
+		<name>Florent Thévenet</name>
+		<email>feuloren@free.fr</email>
+	</credit>
+	<include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>
+</info>
+<title>Burn a photo CD</title>
+<p>You can burn a CD with your photos.</p>
+
+<p>First you have to <link xref="export_queue">add the photos you want to export to the Export Queue</link>.</p>
+
+<p>Now you can burn the photos from the Export Queue.</p>
+<steps>
+	<item>
+	<p>Choose <guiseq><gui>Photos</gui><gui>Export to</gui><gui>CD...</gui></guiseq>.</p>
+	</item>
+	<item>
+	<p>From the <gui>Export</gui> window, choose the CD you want to burn your photos on.</p>
+	</item>
+	<item>
+	<p>Check <gui>Create an archive</gui> if you want your photos to be packed up in a compressed archive. Thanks to this function you can put more photos on the same CD but devices like DVD players won't be able to display your photos.
+	Otherwise your photos will be burned directly to the CD.</p>
+	</item>
+	<item>
+	<p>Choose <gui>Export</gui> to export the photos.</p>
+	</item>
+</steps>
+</page>

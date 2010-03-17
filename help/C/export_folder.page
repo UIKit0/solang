@@ -15,23 +15,7 @@
 <title>Archive your photos</title>
 <p>You can copy photos to a directory of your computer or put them in a archive.</p>
 
-<p>First you have to add the photos you want to export to the export queue. There are many ways to add a photo to the Export Queue.</p>
-<steps>
-	<item>
-	<p>Right-click on a photo.</p>
-	</item>
-	<item>
-	<p>Choose <gui>Add to Export Queue</gui>.</p>
-	</item>
-</steps>
-<steps>
-	<item>
-	<p>Select one or more photos you want to export.</p>
-	</item>
-	<item>
-	<p>Choose <guiseq><gui>Edit</gui><gui>Add to Export Queue</gui></guiseq>.</p>
-	</item>
-</steps>
+<p>First you have to <link xref="export_queue">add the photos you want to export to the Export Queue</link>.</p>
 
 <p>Now you have to export your Export Queue to a folder.</p>
 <steps>
