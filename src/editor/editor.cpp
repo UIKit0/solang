@@ -94,7 +94,7 @@ OperationFactory<T>::create() throw()
 }
 
 const std::string Editor::uiFile_
-    = PACKAGE_DATA_DIR"/"PACKAGE_TARNAME"/ui/"
+    = PACKAGE_DATA_DIR G_DIR_SEPARATOR_S "ui" G_DIR_SEPARATOR_S
           PACKAGE_TARNAME"-editor.ui";
 
 Editor::Editor() throw() :

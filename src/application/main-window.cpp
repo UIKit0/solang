@@ -182,12 +182,10 @@ const std::string MainWindow::copyingFile_
 
 const std::string MainWindow::layoutFile_
                       = PACKAGE_DATA_DIR G_DIR_SEPARATOR_S
-                        PACKAGE_TARNAME G_DIR_SEPARATOR_S
                         PACKAGE_TARNAME"-layout.xml";
 
 const std::string MainWindow::uiFile_
                       = PACKAGE_DATA_DIR G_DIR_SEPARATOR_S
-                        PACKAGE_TARNAME G_DIR_SEPARATOR_S
                         "ui" G_DIR_SEPARATOR_S
                         PACKAGE_TARNAME".ui";
 

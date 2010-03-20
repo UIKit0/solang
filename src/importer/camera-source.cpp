@@ -1,5 +1,6 @@
 /* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*- */
 /*
+ * Copyright (C) 2010 Debarshi Ray <rishi@gnu.org>
  * Copyright (C) 2009 Santanu Sinha <santanu.sinha@gmail.com>
  *
  * Solang is free software: you can redistribute it and/or modify it
@@ -50,27 +51,27 @@ CameraSource::CameraSource() throw()
     Gtk::IconSource icon_source;
     Gtk::IconSet icon_set_camera_photo;
 
-    icon_source.set_filename(
-        PACKAGE_DATA_DIR"/"PACKAGE_TARNAME
-            "/pixmaps/camera-photo-16.png");
+    icon_source.set_filename(PACKAGE_DATA_DIR G_DIR_SEPARATOR_S
+                             "pixmaps" G_DIR_SEPARATOR_S
+                             "camera-photo-16.png");
     icon_source.set_size(Gtk::IconSize(16));
     icon_set_camera_photo.add_source(icon_source);
 
-    icon_source.set_filename(
-        PACKAGE_DATA_DIR"/"PACKAGE_TARNAME
-            "/pixmaps/camera-photo-22.png");
+    icon_source.set_filename(PACKAGE_DATA_DIR G_DIR_SEPARATOR_S
+                             "pixmaps" G_DIR_SEPARATOR_S
+                             "camera-photo-22.png");
     icon_source.set_size(Gtk::IconSize(22));
     icon_set_camera_photo.add_source(icon_source);
 
-    icon_source.set_filename(
-        PACKAGE_DATA_DIR"/"PACKAGE_TARNAME
-            "/pixmaps/camera-photo-24.png");
+    icon_source.set_filename(PACKAGE_DATA_DIR G_DIR_SEPARATOR_S
+                             "pixmaps" G_DIR_SEPARATOR_S
+                             "camera-photo-24.png");
     icon_source.set_size(Gtk::IconSize(24));
     icon_set_camera_photo.add_source(icon_source);
 
-    icon_source.set_filename(
-        PACKAGE_DATA_DIR"/"PACKAGE_TARNAME
-            "/pixmaps/camera-photo-32.png");
+    icon_source.set_filename(PACKAGE_DATA_DIR G_DIR_SEPARATOR_S
+                             "pixmaps" G_DIR_SEPARATOR_S
+                             "camera-photo-32.png");
     icon_source.set_size(Gtk::IconSize(32));
     icon_set_camera_photo.add_source(icon_source);
 

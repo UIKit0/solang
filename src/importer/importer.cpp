@@ -1,6 +1,6 @@
 /* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*- */
 /*
- * Copyright (C) 2009 Debarshi Ray <rishi@gnu.org>
+ * Copyright (C) 2009, 2010 Debarshi Ray <rishi@gnu.org>
  * Copyright (C) 2009 Santanu Sinha <santanu.sinha@gmail.com>
  *
  * Solang is free software: you can redistribute it and/or modify it
@@ -38,7 +38,7 @@ namespace Solang
 {
 
 static const std::string uiFile
-    = PACKAGE_DATA_DIR"/"PACKAGE_TARNAME"/ui/"
+    = PACKAGE_DATA_DIR G_DIR_SEPARATOR_S "ui" G_DIR_SEPARATOR_S
           PACKAGE_TARNAME"-importer.ui";
     
 Importer::Importer(const IPhotoSourcePtr & photo_source, bool standard)

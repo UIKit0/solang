@@ -38,7 +38,7 @@ namespace Solang
 static const guint interval = 4; // s
 
 static const std::string uiFile
-    = PACKAGE_DATA_DIR"/"PACKAGE_TARNAME"/ui/"
+    = PACKAGE_DATA_DIR G_DIR_SEPARATOR_S "ui" G_DIR_SEPARATOR_S
           PACKAGE_TARNAME"-slideshow-renderer.ui";
 
 SlideshowRenderer::SlideshowRenderer() throw() :

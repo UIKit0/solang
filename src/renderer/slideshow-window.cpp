@@ -32,7 +32,7 @@ namespace Solang
 static const guint toolBarInterval = 2; // s
 
 static const std::string uiFile
-    = PACKAGE_DATA_DIR"/"PACKAGE_TARNAME"/ui/"
+    = PACKAGE_DATA_DIR G_DIR_SEPARATOR_S "ui" G_DIR_SEPARATOR_S
            PACKAGE_TARNAME"-slideshow.ui";
 
 static void

@@ -38,7 +38,7 @@ namespace Solang
 {
 
 const std::string SearchManager::uiFile_
-    = PACKAGE_DATA_DIR"/"PACKAGE_TARNAME"/ui/"
+    = PACKAGE_DATA_DIR G_DIR_SEPARATOR_S "ui" G_DIR_SEPARATOR_S
           PACKAGE_TARNAME"-search-manager.ui";
 
 SearchManager::SearchManager() throw() :

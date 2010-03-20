@@ -369,33 +369,33 @@ Application::add_icons() throw()
     Gtk::IconSource icon_source;
     Gtk::IconSet icon_set_slideshow_play;
 
-    icon_source.set_filename(
-        PACKAGE_DATA_DIR"/"PACKAGE_TARNAME
-            "/pixmaps/slideshow-play-16.png");
+    icon_source.set_filename(PACKAGE_DATA_DIR G_DIR_SEPARATOR_S
+                             "pixmaps" G_DIR_SEPARATOR_S
+                             "slideshow-play-16.png");
     icon_source.set_size(Gtk::IconSize(16));
     icon_set_slideshow_play.add_source(icon_source);
 
-    icon_source.set_filename(
-        PACKAGE_DATA_DIR"/"PACKAGE_TARNAME
-            "/pixmaps/slideshow-play-22.png");
+    icon_source.set_filename(PACKAGE_DATA_DIR G_DIR_SEPARATOR_S
+                             "pixmaps" G_DIR_SEPARATOR_S
+                             "slideshow-play-22.png");
     icon_source.set_size(Gtk::IconSize(22));
     icon_set_slideshow_play.add_source(icon_source);
 
-    icon_source.set_filename(
-        PACKAGE_DATA_DIR"/"PACKAGE_TARNAME
-            "/pixmaps/slideshow-play-24.png");
+    icon_source.set_filename(PACKAGE_DATA_DIR G_DIR_SEPARATOR_S
+                             "pixmaps" G_DIR_SEPARATOR_S
+                             "slideshow-play-24.png");
     icon_source.set_size(Gtk::IconSize(24));
     icon_set_slideshow_play.add_source(icon_source);
 
-    icon_source.set_filename(
-        PACKAGE_DATA_DIR"/"PACKAGE_TARNAME
-            "/pixmaps/slideshow-play-32.png");
+    icon_source.set_filename(PACKAGE_DATA_DIR G_DIR_SEPARATOR_S
+                             "pixmaps" G_DIR_SEPARATOR_S
+                             "slideshow-play-32.png");
     icon_source.set_size(Gtk::IconSize(32));
     icon_set_slideshow_play.add_source(icon_source);
 
-    icon_source.set_filename(
-        PACKAGE_DATA_DIR"/"PACKAGE_TARNAME
-            "/pixmaps/slideshow-play-48.png");
+    icon_source.set_filename(PACKAGE_DATA_DIR G_DIR_SEPARATOR_S
+                             "pixmaps" G_DIR_SEPARATOR_S
+                             "slideshow-play-48.png");
     icon_source.set_size(Gtk::IconSize(48));
     icon_set_slideshow_play.add_source(icon_source);
 

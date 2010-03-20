@@ -1,6 +1,6 @@
 /* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*- */
 /*
- * Copyright (C) 2009 Debarshi Ray <rishi@gnu.org>
+ * Copyright (C) 2009, 2010 Debarshi Ray <rishi@gnu.org>
  * 
  * Solang is free software: you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
@@ -359,8 +359,9 @@ FlickrSource::FlickrSource() throw() :
     Gtk::IconSource icon_source;
     Gtk::IconSet icon_set_flickr;
 
-    icon_source.set_filename(
-        PACKAGE_DATA_DIR"/"PACKAGE_TARNAME"/pixmaps/flickr.png");
+    icon_source.set_filename(PACKAGE_DATA_DIR G_DIR_SEPARATOR_S
+                             "pixmaps" G_DIR_SEPARATOR_S
+                             "flickr.png");
     icon_source.set_size(Gtk::IconSize(24));
     icon_set_flickr.add_source(icon_source);
 

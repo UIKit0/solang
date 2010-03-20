@@ -40,7 +40,7 @@ namespace Solang
 {
 
 static const std::string uiFile
-    = PACKAGE_DATA_DIR"/"PACKAGE_TARNAME"/ui/"
+    = PACKAGE_DATA_DIR G_DIR_SEPARATOR_S "ui" G_DIR_SEPARATOR_S
           PACKAGE_TARNAME"-enlarged-renderer.ui";
 
 static void
@@ -82,21 +82,21 @@ EnlargedRenderer::EnlargedRenderer() throw() :
     Gtk::IconSource icon_source;
     Gtk::IconSet icon_set_mode_image_edit;
 
-    icon_source.set_filename(
-        PACKAGE_DATA_DIR"/"PACKAGE_TARNAME
-        "/pixmaps/mode-image-edit-16.png");
+    icon_source.set_filename(PACKAGE_DATA_DIR G_DIR_SEPARATOR_S
+                             "pixmaps" G_DIR_SEPARATOR_S
+                             "mode-image-edit-16.png");
     icon_source.set_size(Gtk::IconSize(16));
     icon_set_mode_image_edit.add_source(icon_source);
 
-    icon_source.set_filename(
-        PACKAGE_DATA_DIR"/"PACKAGE_TARNAME
-        "/pixmaps/mode-image-edit-22.png");
+    icon_source.set_filename(PACKAGE_DATA_DIR G_DIR_SEPARATOR_S
+                             "pixmaps" G_DIR_SEPARATOR_S
+                             "mode-image-edit-22.png");
     icon_source.set_size(Gtk::IconSize(22));
     icon_set_mode_image_edit.add_source(icon_source);
 
-    icon_source.set_filename(
-        PACKAGE_DATA_DIR"/"PACKAGE_TARNAME
-        "/pixmaps/mode-image-edit-24.png");
+    icon_source.set_filename(PACKAGE_DATA_DIR G_DIR_SEPARATOR_S
+                             "pixmaps" G_DIR_SEPARATOR_S
+                             "mode-image-edit-24.png");
     icon_source.set_size(Gtk::IconSize(24));
     icon_set_mode_image_edit.add_source(icon_source);
 

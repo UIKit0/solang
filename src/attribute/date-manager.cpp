@@ -35,7 +35,7 @@ namespace Solang
 {
 
 static const std::string uiFile
-    = PACKAGE_DATA_DIR"/"PACKAGE_TARNAME"/ui/"
+    = PACKAGE_DATA_DIR G_DIR_SEPARATOR_S "ui" G_DIR_SEPARATOR_S
           PACKAGE_TARNAME"-property-manager.ui";
 
 DateManager::DateManager() throw() :

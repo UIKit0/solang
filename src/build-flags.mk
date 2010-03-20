@@ -8,9 +8,10 @@ SOLANG_CFLAGS = \
 	-I$(top_srcdir)/src/renderer
 
 AM_CPPFLAGS = \
+	-DDATA_DIR=\""$(datadir)"\" \
 	-DPACKAGE_LOCALE_DIR=\""${datadir}/locale"\" \
 	-DPACKAGE_SRC_DIR=\""$(srcdir)"\" \
-	-DPACKAGE_DATA_DIR=\""$(datadir)"\" \
+	-DPACKAGE_DATA_DIR=\""$(pkgdatadir)"\" \
 	-DPACKAGE_DOC_DIR=\""$(docdir)"\" \
 	$(SOLANG_CFLAGS) \
 	$(BABL_CFLAGS) \

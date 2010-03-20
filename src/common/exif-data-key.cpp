@@ -36,7 +36,9 @@ Glib::ustring
 ExifDataKey::get_criteria_icon_path() const throw()
 {
     //TBD::CORRECT
-    return PACKAGE_DATA_DIR"/"PACKAGE_TARNAME"/pixmaps/tag-16.png";
+    return PACKAGE_DATA_DIR G_DIR_SEPARATOR_S
+           "pixmaps" G_DIR_SEPARATOR_S
+           "tag-16.png";
 }
 
 }

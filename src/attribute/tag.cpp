@@ -175,7 +175,9 @@ Tag::get_criteria_description() const throw()
 Glib::ustring
 Tag::get_criteria_icon_path() const throw()
 {
-    return PACKAGE_DATA_DIR"/"PACKAGE_TARNAME"/pixmaps/tag-16.png";
+    return PACKAGE_DATA_DIR G_DIR_SEPARATOR_S
+           "pixmaps" G_DIR_SEPARATOR_S
+           "tag-16.png";
 }
 
 const std::string &

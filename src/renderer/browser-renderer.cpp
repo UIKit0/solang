@@ -58,10 +58,10 @@ static const double ratioHeight
                           / static_cast<double>(initialZoomValue);
 
 static const std::string uiFile
-    = PACKAGE_DATA_DIR"/"PACKAGE_TARNAME"/ui/"
+    = PACKAGE_DATA_DIR G_DIR_SEPARATOR_S "ui" G_DIR_SEPARATOR_S
           PACKAGE_TARNAME"-browser-renderer.ui";
 static const std::string uiFileThumbnail
-    = PACKAGE_DATA_DIR"/"PACKAGE_TARNAME"/ui/"
+    = PACKAGE_DATA_DIR G_DIR_SEPARATOR_S "ui" G_DIR_SEPARATOR_S
           PACKAGE_TARNAME"-browser-renderer-thumbnail.ui";
 
 BrowserRenderer::BrowserRenderer() throw() :
@@ -98,26 +98,27 @@ BrowserRenderer::BrowserRenderer() throw() :
     Gtk::IconSource icon_source;
     Gtk::IconSet icon_set_mode_browse;
 
-    icon_source.set_filename(
-        PACKAGE_DATA_DIR"/"PACKAGE_TARNAME
-            "/pixmaps/mode-browse-16.png");
+    icon_source.set_filename(PACKAGE_DATA_DIR G_DIR_SEPARATOR_S
+                             "pixmaps" G_DIR_SEPARATOR_S
+                             "mode-browse-16.png");
     icon_source.set_size(Gtk::IconSize(16));
     icon_set_mode_browse.add_source(icon_source);
 
-    icon_source.set_filename(
-        PACKAGE_DATA_DIR"/"PACKAGE_TARNAME
-            "/pixmaps/mode-browse-22.png");
+    icon_source.set_filename(PACKAGE_DATA_DIR G_DIR_SEPARATOR_S
+                             "pixmaps" G_DIR_SEPARATOR_S
+                             "mode-browse-22.png");
     icon_source.set_size(Gtk::IconSize(22));
     icon_set_mode_browse.add_source(icon_source);
 
-    icon_source.set_filename(
-        PACKAGE_DATA_DIR"/"PACKAGE_TARNAME"/pixmaps/tag-new-24.png");
+    icon_source.set_filename(PACKAGE_DATA_DIR G_DIR_SEPARATOR_S
+                             "pixmaps" G_DIR_SEPARATOR_S
+                             "tag-new-24.png");
     icon_source.set_size(Gtk::IconSize(24));
     icon_set_mode_browse.add_source(icon_source);
 
-    icon_source.set_filename(
-        PACKAGE_DATA_DIR"/"PACKAGE_TARNAME
-            "/pixmaps/mode-browse-32.png");
+    icon_source.set_filename(PACKAGE_DATA_DIR G_DIR_SEPARATOR_S
+                             "pixmaps" G_DIR_SEPARATOR_S
+                             "mode-browse-32.png");
     icon_source.set_size(Gtk::IconSize(32));
     icon_set_mode_browse.add_source(icon_source);
 
