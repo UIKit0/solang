@@ -243,7 +243,7 @@ Application::Application(int & argc, char ** & argv) throw() :
         }
     }
 
-    add_icons();
+    Gtk::Window::set_default_icon_name(PACKAGE_TARNAME);
 
     engine_.signal_criteria_changed().connect(
         sigc::mem_fun(*this,
@@ -361,49 +361,6 @@ Application::final() throw()
     std::for_each(plugins_.rbegin(), plugins_.rend(),
                   Finalizer<IPluginPtr>(this));
     plugins_.clear();
-}
-
-void
-Application::add_icons() throw()
-{
-    Gtk::IconSource icon_source;
-    Gtk::IconSet icon_set_slideshow_play;
-
-    icon_source.set_filename(PACKAGE_DATA_DIR G_DIR_SEPARATOR_S
-                             "pixmaps" G_DIR_SEPARATOR_S
-                             "slideshow-play-16.png");
-    icon_source.set_size(Gtk::IconSize(16));
-    icon_set_slideshow_play.add_source(icon_source);
-
-    icon_source.set_filename(PACKAGE_DATA_DIR G_DIR_SEPARATOR_S
-                             "pixmaps" G_DIR_SEPARATOR_S
-                             "slideshow-play-22.png");
-    icon_source.set_size(Gtk::IconSize(22));
-    icon_set_slideshow_play.add_source(icon_source);
-
-    icon_source.set_filename(PACKAGE_DATA_DIR G_DIR_SEPARATOR_S
-                             "pixmaps" G_DIR_SEPARATOR_S
-                             "slideshow-play-24.png");
-    icon_source.set_size(Gtk::IconSize(24));
-    icon_set_slideshow_play.add_source(icon_source);
-
-    icon_source.set_filename(PACKAGE_DATA_DIR G_DIR_SEPARATOR_S
-                             "pixmaps" G_DIR_SEPARATOR_S
-                             "slideshow-play-32.png");
-    icon_source.set_size(Gtk::IconSize(32));
-    icon_set_slideshow_play.add_source(icon_source);
-
-    icon_source.set_filename(PACKAGE_DATA_DIR G_DIR_SEPARATOR_S
-                             "pixmaps" G_DIR_SEPARATOR_S
-                             "slideshow-play-48.png");
-    icon_source.set_size(Gtk::IconSize(48));
-    icon_set_slideshow_play.add_source(icon_source);
-
-    iconFactory_->add(Gtk::StockID(PACKAGE_TARNAME"-slideshow-play"),
-                      icon_set_slideshow_play);
-    iconFactory_->add_default();
-
-    Gtk::Window::set_default_icon_name(PACKAGE_TARNAME);
 }
 
 void

@@ -298,9 +298,9 @@ EnlargedRenderer::create_action_group() throw()
                                               __LINE__));
 
     actionGroup_->add(
-        Gtk::Action::create(
+        Gtk::Action::create_with_icon_name(
             "ActionViewEnlargedSlideshow",
-            Gtk::StockID(PACKAGE_TARNAME"-slideshow-play"),
+            "slideshow-play",
             _("_Slideshow"),
             _("Start a slideshow view of the photos")),
         Gtk::AccelKey("F5"),

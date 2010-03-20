@@ -79,12 +79,12 @@ The following pieces of artwork were borrowed from Eye of GNOME
 <nisses.mail@home.se> and Michael Montreal <michael.monreal@gmx.net>, and
 originally licensed under the GNU General Public License version 2 or later.
 
-+ data/slideshow-play-16.png
-+ data/slideshow-play-22.png
-+ data/slideshow-play-24.png
-+ data/slideshow-play-32.png
-+ data/slideshow-play-48.png
-+ data/slideshow-play.svg
++ data/icons/scalable/actions/slideshow-play.svg
++ data/icons/16x16/actions/slideshow-play.png
++ data/icons/32x32/actions/slideshow-play.png
++ data/icons/24x24/actions/slideshow-play.png
++ data/icons/22x22/actions/slideshow-play.png
++ data/icons/48x48/actions/slideshow-play.png
 
 The following pieces of artwork were borrowed from F-Spot (http://f-spot.org/).
 These are copyrighted by Jakub Steiner <jimmac@ximian.com> and Novell, and

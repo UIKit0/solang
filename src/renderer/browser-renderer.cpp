@@ -138,9 +138,9 @@ BrowserRenderer::BrowserRenderer() throw() :
                       &BrowserRenderer::on_action_add_to_export_queue));
 
     actionGroup_->add(
-        Gtk::Action::create(
+        Gtk::Action::create_with_icon_name(
             "ActionViewBrowserSlideshow",
-            Gtk::StockID(PACKAGE_TARNAME"-slideshow-play"),
+            "slideshow-play",
             _("_Slideshow"),
             _("Start a slideshow view of the photos")),
         Gtk::AccelKey("F5"),

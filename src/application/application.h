@@ -101,9 +101,6 @@ class Application :
 
     private:
         void
-        add_icons() throw();
-
-        void
         add_photo_to_model(const PhotoPtr & photo) throw();
 
         void

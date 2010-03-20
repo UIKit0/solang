@@ -25,12 +25,6 @@ pixmap_DATA = \
 	mode-image-edit-16.png \
 	mode-image-edit-22.png \
 	mode-image-edit-24.png \
-	slideshow-play-16.png \
-	slideshow-play-22.png \
-	slideshow-play-24.png \
-	slideshow-play-32.png \
-	slideshow-play-48.png \
-	slideshow-play.svg \
 	tag-16.png \
 	tag-22.png \
 	tag-new-16.png \
