@@ -100,29 +100,7 @@ libcommon_la_SOURCES = \
 	utils.cpp \
 	utils.h
 
-AM_CPPFLAGS = \
-	-DPACKAGE_LOCALE_DIR=\""${datadir}/locale"\" \
-	-DPACKAGE_SRC_DIR=\""$(srcdir)"\" \
-	-DPACKAGE_DATA_DIR=\""$(datadir)"\" \
-	-I$(top_builddir) \
-	-I$(top_srcdir)/src/application \
-	-I$(top_srcdir)/src/attribute \
-	-I$(top_srcdir)/src/common \
-	-I$(top_srcdir)/src/database \
-	-I$(top_srcdir)/src/editor \
-	-I$(top_srcdir)/src/importer \
-	-I$(top_srcdir)/src/renderer \
-	-I$(top_srcdir)/src/storage \
-	$(SOLANG_CFLAGS) \
-	$(DBUS_CFLAGS) \
-	$(GTKMM_CFLAGS) \
-	$(GDL_CFLAGS) \
-	$(GEGLMM_CFLAGS) \
-	$(BABL_CFLAGS) \
-	$(TRACKER_CFLAGS)
-
-AM_CXXFLAGS = \
-	 -Wall
+include $(top_srcdir)/src/build-flags.mk
 
 EXTRA_DIST = \
 	solang-marshal.list \

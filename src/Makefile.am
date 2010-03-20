@@ -5,3 +5,6 @@ SUBDIRS = \
 	exporter \
 	renderer \
 	application
+
+EXTRA_DIST = \
+	build-flags.mk
