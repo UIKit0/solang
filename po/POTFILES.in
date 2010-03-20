@@ -22,6 +22,7 @@ src/editor/rotate-counter-operation.cpp
 src/editor/rotate-operation.cpp
 src/exporter/brasero-destination.cpp
 src/exporter/directory-destination.cpp
+src/exporter/exporter.cpp
 src/exporter/exporter-dialog.cpp
 src/renderer/browser-renderer.cpp
 src/renderer/enlarged-renderer.cpp
