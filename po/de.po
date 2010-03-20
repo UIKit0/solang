@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: solang master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=solang&component=General\n"
-"POT-Creation-Date: 2010-03-05 14:09+0000\n"
-"PO-Revision-Date: 2010-03-08 01:07+0100\n"
+"POT-Creation-Date: 2010-03-20 16:19+0000\n"
+"PO-Revision-Date: 2010-03-21 00:00+0100\n"
 "Last-Translator: Mario Blättermann <mariobl@gnome.org>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -377,11 +377,11 @@ msgstr "Wird gegen den Uhrzeigersinn gedreht …"
 msgid "Rotating..."
 msgstr "Wird gedreht …"
 
-#: ../src/exporter/brasero-destination.cpp:143
+#: ../src/exporter/brasero-destination.cpp:144
 msgid "_CD/DVD..."
 msgstr "_CD/DVD …"
 
-#: ../src/exporter/brasero-destination.cpp:185
+#: ../src/exporter/brasero-destination.cpp:186
 msgid "Export to CD/DVD"
 msgstr "Auf CD/DVD exportieren"
 
@@ -389,13 +389,17 @@ msgstr "Auf CD/DVD exportieren"
 msgid "Exporting photos"
 msgstr "Fotos werden exportiert"
 
-#: ../src/exporter/directory-destination.cpp:249
+#: ../src/exporter/directory-destination.cpp:181
 msgid "Select Folder"
 msgstr "Ordner auswählen"
 
-#: ../src/exporter/directory-destination.cpp:258
+#: ../src/exporter/directory-destination.cpp:190
 msgid "_Folder..."
 msgstr "_Ordner …"
+
+#: ../src/exporter/exporter.cpp:192
+msgid "Creating archive"
+msgstr "Archiv anlegen"
 
 #: ../src/exporter/exporter-dialog.cpp:33
 msgid "Export"
