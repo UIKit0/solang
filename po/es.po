@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: solang.po.master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=solang&component=General\n"
-"POT-Creation-Date: 2010-03-05 14:09+0000\n"
-"PO-Revision-Date: 2010-03-08 23:57+0100\n"
+"POT-Creation-Date: 2010-03-20 23:44+0000\n"
+"PO-Revision-Date: 2010-03-21 16:46+0100\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -30,66 +30,66 @@ msgstr "Organice, diviértase y comparta sus fotos"
 msgid "Photo Manager"
 msgstr "Gestor de fotografías"
 
-#: ../src/application/main-window.cpp:226
+#: ../src/application/main-window.cpp:224
 msgid "_Photo"
 msgstr "_Foto"
 
-#: ../src/application/main-window.cpp:235
-#: ../src/renderer/browser-renderer.cpp:130
+#: ../src/application/main-window.cpp:233
+#: ../src/renderer/browser-renderer.cpp:131
 msgid "_Edit"
 msgstr "_Editar"
 
-#: ../src/application/main-window.cpp:240
-#: ../src/renderer/browser-renderer.cpp:135
+#: ../src/application/main-window.cpp:238
+#: ../src/renderer/browser-renderer.cpp:136
 msgid "_Add to Export Queue"
 msgstr "_Añadir a la cola de exportación"
 
-#: ../src/application/main-window.cpp:247
+#: ../src/application/main-window.cpp:245
 msgid "_Clear Export Queue"
 msgstr "_Limpiar la cola de exportación"
 
-#: ../src/application/main-window.cpp:252
+#: ../src/application/main-window.cpp:250
 msgid "_View"
 msgstr "_Ver"
 
-#: ../src/application/main-window.cpp:256
+#: ../src/application/main-window.cpp:254
 msgid "_Toolbar"
 msgstr "Barra de _herramientas"
 
-#: ../src/application/main-window.cpp:257
+#: ../src/application/main-window.cpp:255
 msgid "Show or hide the toolbar in the current window"
 msgstr "Muestra u oculta la barra de herramientas en la ventana actual"
 
-#: ../src/application/main-window.cpp:263
+#: ../src/application/main-window.cpp:261
 msgid "_Statusbar"
 msgstr "Barra de _estado"
 
-#: ../src/application/main-window.cpp:264
+#: ../src/application/main-window.cpp:262
 msgid "Show or hide the statusbar in the current window"
 msgstr "Muestra u oculta la barra de estado en la ventana actual"
 
-#: ../src/application/main-window.cpp:271
+#: ../src/application/main-window.cpp:269
 msgid "_Full Screen"
 msgstr "Pantalla _completa"
 
-#: ../src/application/main-window.cpp:272
+#: ../src/application/main-window.cpp:270
 msgid "Show the current photo in full screen mode"
 msgstr "Mostrar la foto actual en modo a pantalla completa"
 
-#: ../src/application/main-window.cpp:289
+#: ../src/application/main-window.cpp:287
 msgid "_Help"
 msgstr "Ay_uda"
 
-#: ../src/application/main-window.cpp:593
+#: ../src/application/main-window.cpp:591
 msgid "A photo manager for GNOME"
 msgstr "Un gestor de fotos para GNOME"
 
 #. Translators: Put your names here.
-#: ../src/application/main-window.cpp:624
+#: ../src/application/main-window.cpp:622
 msgid "translator-credits"
 msgstr "Jorge González <jorgegonz@svn.gnome.org>, 2007-2008."
 
-#: ../src/application/main-window.cpp:629
+#: ../src/application/main-window.cpp:627
 msgctxt "Project website"
 msgid "%1 Website"
 msgstr "Página web %1"
@@ -166,27 +166,27 @@ msgstr "Quitar los filtros seleccionados de esta lista"
 msgid "Tags"
 msgstr "Etiquetas"
 
-#: ../src/attribute/tag-manager.cpp:100
+#: ../src/attribute/tag-manager.cpp:105
 msgid "_Tags"
 msgstr "E_tiquetas"
 
-#: ../src/attribute/tag-manager.cpp:105
+#: ../src/attribute/tag-manager.cpp:110
 msgid "Create New _Tag..."
 msgstr "Crear una e_tiqueta…"
 
-#: ../src/attribute/tag-manager.cpp:112
+#: ../src/attribute/tag-manager.cpp:117
 msgid "_Edit Selected Tag..."
 msgstr "_Editar la etiqueta seleccionada…"
 
-#: ../src/attribute/tag-manager.cpp:119
+#: ../src/attribute/tag-manager.cpp:124
 msgid "_Delete Selected Tag"
 msgstr "_Borrar la etiqueta seleccionada"
 
-#: ../src/attribute/tag-manager.cpp:125
+#: ../src/attribute/tag-manager.cpp:130
 msgid "_Attach Tag to Selection"
 msgstr "_Adjuntar etiqueta a la selección"
 
-#: ../src/attribute/tag-manager.cpp:132
+#: ../src/attribute/tag-manager.cpp:137
 msgid "_Remove Tag From Selection"
 msgstr "_Quitar la etiqueta de la selección"
 
@@ -373,11 +373,11 @@ msgstr "Rotando en sentido contrario al reloj…"
 msgid "Rotating..."
 msgstr "Rotando…"
 
-#: ../src/exporter/brasero-destination.cpp:143
+#: ../src/exporter/brasero-destination.cpp:144
 msgid "_CD/DVD..."
 msgstr "_CD/DVD…"
 
-#: ../src/exporter/brasero-destination.cpp:185
+#: ../src/exporter/brasero-destination.cpp:186
 msgid "Export to CD/DVD"
 msgstr "Exportar a CD/DVD"
 
@@ -385,59 +385,57 @@ msgstr "Exportar a CD/DVD"
 msgid "Exporting photos"
 msgstr "Exportando fotos"
 
-#: ../src/exporter/directory-destination.cpp:249
+#: ../src/exporter/directory-destination.cpp:181
 msgid "Select Folder"
 msgstr "Seleccionar carpeta"
 
-#: ../src/exporter/directory-destination.cpp:258
+#: ../src/exporter/directory-destination.cpp:190
 msgid "_Folder..."
 msgstr "_Carpeta…"
+
+#: ../src/exporter/exporter.cpp:192
+#| msgid "_Create an archive"
+msgid "Creating archive"
+msgstr "Creando archivador"
 
 #: ../src/exporter/exporter-dialog.cpp:33
 msgid "Export"
 msgstr "Exportar"
 
-#: ../src/exporter/exporter-dialog.cpp:42
-msgid "_Destination:"
-msgstr "_Destino:"
-
-#: ../src/exporter/exporter-dialog.cpp:44
-msgid "_Detect duplicates"
-msgstr "_Detectar duplicados"
-
-#: ../src/exporter/exporter-dialog.cpp:48
+#: ../src/exporter/exporter-dialog.cpp:45
 msgid "_Create an archive"
 msgstr "_Crear un archivador"
 
-#: ../src/exporter/exporter-dialog.cpp:66
+#: ../src/exporter/exporter-dialog.cpp:64
+#| msgid "_Destination:"
 msgctxt "A group of UI controls"
-msgid "General"
-msgstr "General"
+msgid "Destination"
+msgstr "Destino"
 
-#: ../src/exporter/exporter-dialog.cpp:78
+#: ../src/exporter/exporter-dialog.cpp:80
 msgctxt "A group of UI controls"
 msgid "Options"
 msgstr "Opciones"
 
-#: ../src/exporter/exporter-dialog.cpp:111
+#: ../src/exporter/exporter-dialog.cpp:105
 msgid "_Export"
 msgstr "_Exportar"
 
-#: ../src/renderer/browser-renderer.cpp:143
+#: ../src/renderer/browser-renderer.cpp:144
 #: ../src/renderer/enlarged-renderer.cpp:304
 msgid "_Slideshow"
 msgstr "_Diapositivas"
 
-#: ../src/renderer/browser-renderer.cpp:144
+#: ../src/renderer/browser-renderer.cpp:145
 #: ../src/renderer/enlarged-renderer.cpp:305
 msgid "Start a slideshow view of the photos"
 msgstr "Iniciar la muestra de las fotos como diapositivas"
 
-#: ../src/renderer/browser-renderer.cpp:153
+#: ../src/renderer/browser-renderer.cpp:154
 msgid "Enlarge or shrink the thumbnails"
 msgstr "Agrandar o encoger las miniaturas"
 
-#: ../src/renderer/browser-renderer.cpp:175
+#: ../src/renderer/browser-renderer.cpp:176
 #: ../src/renderer/enlarged-renderer.cpp:317
 #: ../src/renderer/enlarged-renderer.cpp:453
 #: ../src/renderer/enlarged-renderer.cpp:462
@@ -445,32 +443,32 @@ msgstr "Agrandar o encoger las miniaturas"
 msgid "_Zoom In"
 msgstr "_Ampliar"
 
-#: ../src/renderer/browser-renderer.cpp:176
+#: ../src/renderer/browser-renderer.cpp:177
 msgid "Enlarge the thumbnails"
 msgstr "Agrandar las miniaturas"
 
-#: ../src/renderer/browser-renderer.cpp:187
+#: ../src/renderer/browser-renderer.cpp:188
 msgid "_Zoom Out"
 msgstr "_Reducir"
 
-#: ../src/renderer/browser-renderer.cpp:188
+#: ../src/renderer/browser-renderer.cpp:189
 msgid "Shrink the thumbnails"
 msgstr "Encoger las miniaturas"
 
-#: ../src/renderer/browser-renderer.cpp:199
+#: ../src/renderer/browser-renderer.cpp:200
 #: ../src/renderer/enlarged-renderer.cpp:312
 msgid "_Go"
 msgstr "_Ir"
 
-#: ../src/renderer/browser-renderer.cpp:204
+#: ../src/renderer/browser-renderer.cpp:205
 msgid "_Previous Page"
 msgstr "Página _anterior"
 
-#: ../src/renderer/browser-renderer.cpp:205
+#: ../src/renderer/browser-renderer.cpp:206
 msgid "Go to the previous page in the collection"
 msgstr "Ir a la página anterior de la colección"
 
-#: ../src/renderer/browser-renderer.cpp:208
+#: ../src/renderer/browser-renderer.cpp:209
 #: ../src/renderer/enlarged-renderer.cpp:378
 #: ../src/renderer/slideshow-renderer.cpp:169
 #: ../src/renderer/slideshow-renderer.cpp:213
@@ -478,15 +476,15 @@ msgctxt "Navigation"
 msgid "Previous"
 msgstr "Anterior"
 
-#: ../src/renderer/browser-renderer.cpp:220
+#: ../src/renderer/browser-renderer.cpp:221
 msgid "_Next Page"
 msgstr "_Siguiente página"
 
-#: ../src/renderer/browser-renderer.cpp:221
+#: ../src/renderer/browser-renderer.cpp:222
 msgid "Go to the next page in the collection"
 msgstr "Ir a la siguiente página de la colección"
 
-#: ../src/renderer/browser-renderer.cpp:224
+#: ../src/renderer/browser-renderer.cpp:225
 #: ../src/renderer/enlarged-renderer.cpp:393
 #: ../src/renderer/slideshow-renderer.cpp:178
 #: ../src/renderer/slideshow-renderer.cpp:222
@@ -494,19 +492,19 @@ msgctxt "Navigation"
 msgid "Next"
 msgstr "Siguiente"
 
-#: ../src/renderer/browser-renderer.cpp:235
+#: ../src/renderer/browser-renderer.cpp:236
 msgid "_First Page"
 msgstr "_Primera página"
 
-#: ../src/renderer/browser-renderer.cpp:236
+#: ../src/renderer/browser-renderer.cpp:237
 msgid "Go to the first page in the collection"
 msgstr "Ir a la primera página de la colección"
 
-#: ../src/renderer/browser-renderer.cpp:248
+#: ../src/renderer/browser-renderer.cpp:249
 msgid "_Last Page"
 msgstr "Ú_ltima página"
 
-#: ../src/renderer/browser-renderer.cpp:249
+#: ../src/renderer/browser-renderer.cpp:250
 msgid "Go to the last page in the collection"
 msgstr "Ir a la última página de la colección"
 
@@ -647,3 +645,10 @@ msgstr "Primera"
 msgctxt "Navigation"
 msgid "Last"
 msgstr "Última"
+
+#~ msgid "_Detect duplicates"
+#~ msgstr "_Detectar duplicados"
+
+#~ msgctxt "A group of UI controls"
+#~ msgid "General"
+#~ msgstr "General"
