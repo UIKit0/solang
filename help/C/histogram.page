@@ -60,30 +60,47 @@
 <p>Histograms are useful because they let you see if your photos are correctly exposed. Take the following examples.</p>
 <table frame="all" rules="rows cols" shade="rows">
     <tr>
-    <td><p>Photo normal</p></td>
+    <td>
+  <figure>
+    <media type="image" src="figures/normal.jpg" mime="image/jpg" style="right">
+      <p>A correctly exposed photo</p>
+    </media>
+  </figure>
+</td>
     <td><p>Histogram</p></td>
     </tr>
     <tr>
     <td><p>Correctly exposed photo</p></td>
-    <td></td>
+    <td><p>This is an example of a correctly exposed image with a "good" histogram. The smooth curve downwards ending in 255 shows that the subtle highlight detail in the clouds and waves is preserved. Likewise, the shadow area starts at 0 and builds up gradually. </p></td>
     </tr>
 
     <tr>
-    <td><p>Photo overexposed</p></td>
+    <td>
+  <figure>
+    <media type="image" src="figures/over.jpg" mime="image/jpg" style="right">
+      <p>An overexposed photo</p>
+    </media>
+  </figure>
+ </td>
     <td><p>Histogram</p></td>
     </tr>
     <tr>
     <td><p>Overexposed photo</p></td>
-    <td></td>
+    <td><p>The histogram indicates there are a lot of pixels with value 255 or close to 255, which is an indication of "clipped highlights". Subtle highlight detail in the clouds and waves is lost. There are also very few pixels in the shadow area.</p></td>
     </tr>
 
     <tr>
-    <td><p>Photo underexposed</p></td>
+    <td>
+  <figure>
+    <media type="image" src="figures/under.jpg" mime="image/jpg" style="right">
+      <p>An underexposed photo</p>
+    </media>
+  </figure></td>
     <td><p>Histogram</p></td>
     </tr>
     <tr>
     <td><p>Underexposed photo</p></td>
-    <td></td>
+    <td><p>The histogram indicates there are a lot of pixels with value 0 or close to 0, which is an indication of "clipped shadows". Some shadow detail is lost forever as explained in the dynamic range topic. Unless there is a lot of pure black in the image, there should not be that many pure black pixels. There are also very few pixels in the highlight area.</p></td>
     </tr>
 
     <tr>
@@ -92,7 +109,7 @@
     </tr>
     <tr>
     <td><p>Photo with too much contrast</p></td>
-    <td></td>
+    <td><p>This image has both clipped shadows and highlights. The dynamic range of the scene is larger than the dynamic range of the camera. The dinamic range is the capability of a camera to capture both shadow and highlights details.</p></td>
     </tr>
 
     <tr>
@@ -101,16 +118,21 @@
     </tr>
     <tr>
     <td><p>Photo with too low contrast</p></td>
-    <td></td>
+    <td><p>This image only contains midtones and lacks contrast, resulting in a hazy image.</p></td>
     </tr>
 
     <tr>
-    <td><p>Photo modified</p></td>
+    <td>
+  <figure>
+    <media type="image" src="figures/modified.jpg" mime="image/jpg" style="right">
+     <p>A photo with modified contrast</p>
+    </media>
+  </figure></td>
     <td><p>Histogram</p></td>
     </tr>
     <tr>
     <td><p>Photo with modified contrast</p></td>
-    <td></td>
+    <td><p>When "stretching" the above histogram via a Levels or Curves adjustment, the contrast of the image improves, but since the tones are redistributed over a wider tonal range, some tones are missing, as indicated in this "combed" histogram. Too much combing can lead to posterization.</p></td>
     </tr>
 </table>
 

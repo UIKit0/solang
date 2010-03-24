@@ -48,7 +48,7 @@
 		<title>Tips and Tricks</title>
 		<info>
 			<link type="topic" xref="keys"/>
-			<!--<link type="topic" xref="histogram"/>-->
+			<link type="topic" xref="histogram"/>
 		</info>
 	</section>
 
