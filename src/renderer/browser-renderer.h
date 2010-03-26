@@ -73,6 +73,9 @@ class BrowserRenderer :
         virtual PhotoList
         get_current_selection() throw();
 
+        virtual TreePathList
+        get_selected_paths() const throw();
+
         virtual void
         present() throw();
 

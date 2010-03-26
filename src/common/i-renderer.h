@@ -45,6 +45,9 @@ class IRenderer :
         virtual PhotoList
         get_current_selection() throw() = 0;
 
+        virtual TreePathList
+        get_selected_paths() const throw() = 0;
+
         virtual void
         present() throw() = 0;
 

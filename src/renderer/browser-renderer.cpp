@@ -21,6 +21,8 @@
 #include "config.h"
 #endif // HAVE_CONFIG_H
 
+#include <algorithm>
+#include <functional>
 #include <sstream>
 #include <vector>
 
@@ -39,6 +41,67 @@
 
 namespace Solang
 {
+
+class ChildPathConverter :
+    public std::unary_function<const Gtk::TreePath &, Gtk::TreePath>
+{
+    public:
+        ChildPathConverter(
+            const TreeModelFilterPtr & tree_model_filter) throw();
+
+        ChildPathConverter(const ChildPathConverter & source) throw();
+
+        ~ChildPathConverter() throw();
+
+        ChildPathConverter &
+        operator=(const ChildPathConverter & source) throw();
+
+        Gtk::TreeModel::Path
+        operator()(const Gtk::TreeModel::Path & path) throw();
+
+    protected:
+        TreeModelFilterPtr treeModelFilter_;
+};
+
+ChildPathConverter::ChildPathConverter(
+                        const TreeModelFilterPtr & tree_model_filter)
+                        throw() :
+    std::unary_function<const Gtk::TreePath &, Gtk::TreePath>(),
+    treeModelFilter_(tree_model_filter)
+{
+}
+
+ChildPathConverter::ChildPathConverter(
+    const ChildPathConverter & source) throw() :
+    std::unary_function<const Gtk::TreePath &, Gtk::TreePath>(source),
+    treeModelFilter_(source.treeModelFilter_)
+{
+}
+
+ChildPathConverter::~ChildPathConverter() throw()
+{
+}
+
+ChildPathConverter &
+ChildPathConverter::operator=(const ChildPathConverter & source)
+                              throw()
+{
+    if (this != &source)
+    {
+        std::unary_function<const Gtk::TreePath &,
+                            Gtk::TreePath>::operator=(source);
+        treeModelFilter_ = source.treeModelFilter_;
+    }
+
+    return *this;
+}
+
+Gtk::TreeModel::Path
+ChildPathConverter::operator()(const Gtk::TreeModel::Path & path)
+                               throw()
+{
+    return treeModelFilter_->convert_path_to_child_path(path);
+}
 
 static const guint lowerZoomValue = 20;
 static const guint higherZoomValue = 100;
@@ -447,6 +510,16 @@ PhotoList
 BrowserRenderer::get_current_selection() throw()
 {
     return thumbnailView_.get_selected_photos();
+}
+
+TreePathList
+BrowserRenderer::get_selected_paths() const throw()
+{
+    TreePathList paths = thumbnailView_.get_selected_items();
+    std::transform(paths.begin(), paths.end(),
+                   paths.begin(),
+                   ChildPathConverter(treeModelFilter_));
+    return paths;
 }
 
 void

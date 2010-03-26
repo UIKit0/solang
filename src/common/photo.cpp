@@ -48,6 +48,7 @@ Photo::Photo(const Glib::ustring & uri,
     DBObject(),
     uri_(uri),
     contentType_(content_type),
+    state_(PHOTO_STATE_NONE),
     thumbnailPath_(),
     thumbnailState_(THUMBNAIL_STATE_NONE),
     buffer_( 0 ),
@@ -83,6 +84,20 @@ Glib::ustring
 Photo::get_save_query() const throw()
 {
     return Glib::ustring();
+}
+
+bool
+Photo::get_state_export_queue() const throw()
+{
+    return state_ & PHOTO_STATE_EXPORT_QUEUE;
+}
+
+void
+Photo::set_state_export_queue(bool export_queue) throw()
+{
+    state_ = (true == export_queue)
+             ? state_ | PHOTO_STATE_EXPORT_QUEUE
+             : state_ & ~PHOTO_STATE_EXPORT_QUEUE;
 }
 
 void

@@ -1,6 +1,6 @@
 /* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*- */
 /*
- * Copyright (C) 2009 Debarshi Ray <rishi@gnu.org>
+ * Copyright (C) 2009, 2010 Debarshi Ray <rishi@gnu.org>
  * Copyright (C) 2009 Santanu Sinha <santanu.sinha@gmail.com>
  *
  * Solang is free software: you can redistribute it and/or modify it
@@ -100,6 +100,12 @@ class Photo :
         void
         set_buffer( const PixbufPtr &buffer ) throw();
 
+        bool
+        get_state_export_queue() const throw();
+
+        void
+        set_state_export_queue(bool export_queue) throw();
+
         inline const PixbufPtr &
         get_thumbnail_buffer( ) const throw();
 
@@ -124,12 +130,21 @@ class Photo :
     private:
         friend class PhotoFactory;
 
+        // States may not be mutually exclusive.
+        enum State
+        {
+            PHOTO_STATE_NONE            = 0,
+            PHOTO_STATE_EXPORT_QUEUE    = 1 << 0
+        };
+
         Photo(const Glib::ustring & uri,
               const Glib::ustring & content_type) throw();
 
         Glib::ustring uri_;
 
         Glib::ustring contentType_; //content type
+
+        guint8 state_;
 
         std::string thumbnailPath_;
 

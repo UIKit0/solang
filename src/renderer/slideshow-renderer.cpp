@@ -256,6 +256,19 @@ SlideshowRenderer::get_current_selection() throw()
     return photos;
 }
 
+TreePathList
+SlideshowRenderer::get_selected_paths() const throw()
+{
+    const TreeModelPtr & tree_model = application_->get_list_store();
+    const Gtk::TreeModel::iterator & iter
+        = application_->get_list_store_iter();
+
+    TreePathList paths;
+    paths.push_back(tree_model->get_path(iter));
+
+    return paths;
+}
+
 void
 SlideshowRenderer::present() throw()
 {

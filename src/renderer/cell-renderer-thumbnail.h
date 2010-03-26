@@ -54,10 +54,15 @@ class CellRendererThumbnail :
                          gint thumbnail_width) throw();
 
         void
+        load_export_icon() throw();
+
+        void
         load_icons() throw();
 
         void
         on_icon_theme_changed() throw();
+
+        Cairo::RefPtr<Cairo::ImageSurface> exportIcon_;
 
         PhotoPtr photo_;
 

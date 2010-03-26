@@ -34,6 +34,7 @@ namespace Solang
 {
 CellRendererThumbnail::CellRendererThumbnail() throw() :
     Gtk::CellRendererPixbuf(),
+    exportIcon_(0),
     photo_(),
     imageLoading_(0)
 {
@@ -99,6 +100,27 @@ CellRendererThumbnail::create_thumbnail(gint thumbnail_height,
 }
 
 void
+CellRendererThumbnail::load_export_icon() throw()
+{
+    const IconThemePtr icon_theme = Gtk::IconTheme::get_default();
+    const Gtk::IconInfo icon_info
+        = icon_theme->lookup_icon(
+                          "conduit-source",
+                          22,
+                          Gtk::ICON_LOOKUP_FORCE_SIZE);
+
+    if (true == icon_info)
+    {
+        const Glib::ustring & filename = icon_info.get_filename();
+        exportIcon_ = Cairo::ImageSurface::create_from_png(filename);
+    }
+    else
+    {
+        exportIcon_.clear();
+    }
+}
+
+void
 CellRendererThumbnail::load_icons() throw()
 {
     const IconThemePtr icon_theme = Gtk::IconTheme::get_default();
@@ -137,6 +159,9 @@ CellRendererThumbnail::render_vfunc(
                          cell_area.get_width() - 6);
     }
 
+    const Cairo::RefPtr<Cairo::Context> context
+        = window->create_cairo_context();
+
     if (0 == (flags & (Gtk::CELL_RENDERER_SELECTED
                        | Gtk::CELL_RENDERER_PRELIT)))
     {
@@ -152,10 +177,7 @@ CellRendererThumbnail::render_vfunc(
         const gint x = background_area.get_x();
         const gint y = background_area.get_y();
 
-        const Cairo::RefPtr<Cairo::Context> context
-            = window->create_cairo_context();
         const StylePtr style = widget.get_style();
-
         const Gdk::Color color = style->get_dark(Gtk::STATE_NORMAL);
         Gdk::Cairo::set_source_color(context, color);
 
@@ -168,6 +190,22 @@ CellRendererThumbnail::render_vfunc(
 
     Gtk::CellRendererPixbuf::render_vfunc(window, widget, background_area,
                                           cell_area, expose_area, flags);
+
+    if (true == photo_->get_state_export_queue())
+    {
+        if (0 == exportIcon_)
+        {
+            load_export_icon();
+        }
+        if (0 != exportIcon_)
+        {
+            const gint x = background_area.get_x();
+            const gint y = background_area.get_y();
+
+            context->set_source(exportIcon_, x, y);
+            context->paint();
+        }
+    }
 }
 
 void
