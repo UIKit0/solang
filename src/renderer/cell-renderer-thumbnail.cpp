@@ -159,37 +159,11 @@ CellRendererThumbnail::render_vfunc(
                          cell_area.get_width() - 6);
     }
 
-    const Cairo::RefPtr<Cairo::Context> context
-        = window->create_cairo_context();
-
-    if (0 == (flags & (Gtk::CELL_RENDERER_SELECTED
-                       | Gtk::CELL_RENDERER_PRELIT)))
-    {
-        const gint height = background_area.get_height();
-        const gint width = background_area.get_width();
-
-        // Sometimes width is -1 - not sure what to do here.
-        if (width == -1)
-        {
-            return;
-        }
-
-        const gint x = background_area.get_x();
-        const gint y = background_area.get_y();
-
-        const StylePtr style = widget.get_style();
-        const Gdk::Color color = style->get_dark(Gtk::STATE_NORMAL);
-        Gdk::Cairo::set_source_color(context, color);
-
-        context->rectangle(x, y, width, height);
-        context->rectangle(x + 1, y + 1, width - 2, height - 2);
-
-        context->set_fill_rule(Cairo::FILL_RULE_EVEN_ODD);
-        context->fill();
-    }
-
     Gtk::CellRendererPixbuf::render_vfunc(window, widget, background_area,
                                           cell_area, expose_area, flags);
+
+    const Cairo::RefPtr<Cairo::Context> context
+        = window->create_cairo_context();
 
     if (true == photo_->get_state_export_queue())
     {
