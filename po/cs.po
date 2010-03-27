@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: solang master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=solang&component=General\n"
-"POT-Creation-Date: 2010-03-11 11:42+0000\n"
-"PO-Revision-Date: 2010-03-11 14:03+0100\n"
+"POT-Creation-Date: 2010-03-27 02:35+0000\n"
+"PO-Revision-Date: 2010-03-23 07:39+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -33,66 +33,70 @@ msgstr "Organizujte, užívejte si a sdílejte své fotografie"
 msgid "Photo Manager"
 msgstr "Správce fotografií"
 
-#: ../src/application/main-window.cpp:226
+#: ../src/application/main-window.cpp:224
 msgid "_Photo"
 msgstr "_Fotografie"
 
-#: ../src/application/main-window.cpp:235
-#: ../src/renderer/browser-renderer.cpp:130
+#: ../src/application/main-window.cpp:233
+#: ../src/renderer/browser-renderer.cpp:194
 msgid "_Edit"
 msgstr "_Upravit"
 
-#: ../src/application/main-window.cpp:240
-#: ../src/renderer/browser-renderer.cpp:135
+#: ../src/application/main-window.cpp:238
+#: ../src/renderer/browser-renderer.cpp:199
 msgid "_Add to Export Queue"
 msgstr "_Přidat do seznamu pro export"
 
-#: ../src/application/main-window.cpp:247
+#: ../src/application/main-window.cpp:245
 msgid "_Clear Export Queue"
 msgstr "_Vyčistit seznam pro export"
 
-#: ../src/application/main-window.cpp:252
+#: ../src/application/main-window.cpp:250
 msgid "_View"
 msgstr "_Zobrazení"
 
-#: ../src/application/main-window.cpp:256
+#: ../src/application/main-window.cpp:254
 msgid "_Toolbar"
 msgstr "_Nástrojová lišta"
 
-#: ../src/application/main-window.cpp:257
+#: ../src/application/main-window.cpp:255
 msgid "Show or hide the toolbar in the current window"
 msgstr "Zobrazit či skrýt v aktuálním okně nástrojovou lištu"
 
-#: ../src/application/main-window.cpp:263
+#: ../src/application/main-window.cpp:261
 msgid "_Statusbar"
 msgstr "_Stavová lišta"
 
-#: ../src/application/main-window.cpp:264
+#: ../src/application/main-window.cpp:262
 msgid "Show or hide the statusbar in the current window"
 msgstr "Zobrazit či skrýt stavovou lištu aktuálního okna"
 
-#: ../src/application/main-window.cpp:271
+#: ../src/application/main-window.cpp:269
 msgid "_Full Screen"
 msgstr "_Celá obrazovka"
 
-#: ../src/application/main-window.cpp:272
+#: ../src/application/main-window.cpp:270
 msgid "Show the current photo in full screen mode"
 msgstr "Zobrazit aktuální fotografii v režimu celé obrazovky"
 
-#: ../src/application/main-window.cpp:289
+#: ../src/application/main-window.cpp:287
 msgid "_Help"
 msgstr "_Nápověda"
 
-#: ../src/application/main-window.cpp:593
+#: ../src/application/main-window.cpp:292
+msgid "_Contents"
+msgstr ""
+
+#: ../src/application/main-window.cpp:597
 msgid "A photo manager for GNOME"
 msgstr "Správce fotografií pro GNOME"
 
 #. Translators: Put your names here.
-#: ../src/application/main-window.cpp:624
+#: ../src/application/main-window.cpp:628
 msgid "translator-credits"
 msgstr "Tomáš Novák <kuvaly@seznam.cz>"
 
-#: ../src/application/main-window.cpp:629
+#: ../src/application/main-window.cpp:633
 msgctxt "Project website"
 msgid "%1 Website"
 msgstr "Webové stránky %1"
@@ -169,27 +173,27 @@ msgstr "Odstranit všechny filtry na tomto seznamu"
 msgid "Tags"
 msgstr "Štítky"
 
-#: ../src/attribute/tag-manager.cpp:100
+#: ../src/attribute/tag-manager.cpp:105
 msgid "_Tags"
 msgstr "Š_títky"
 
-#: ../src/attribute/tag-manager.cpp:105
+#: ../src/attribute/tag-manager.cpp:110
 msgid "Create New _Tag..."
 msgstr "Vytvořit nový š_títek…"
 
-#: ../src/attribute/tag-manager.cpp:112
+#: ../src/attribute/tag-manager.cpp:117
 msgid "_Edit Selected Tag..."
 msgstr "_Upravit vybraný štítek…"
 
-#: ../src/attribute/tag-manager.cpp:119
+#: ../src/attribute/tag-manager.cpp:124
 msgid "_Delete Selected Tag"
 msgstr "_Odstranit vybraný štítek"
 
-#: ../src/attribute/tag-manager.cpp:125
+#: ../src/attribute/tag-manager.cpp:130
 msgid "_Attach Tag to Selection"
 msgstr "_Přiložit štítek k výběru"
 
-#: ../src/attribute/tag-manager.cpp:132
+#: ../src/attribute/tag-manager.cpp:137
 msgid "_Remove Tag From Selection"
 msgstr "_Odstranit štítek z výběru"
 
@@ -376,71 +380,67 @@ msgstr "Otáčí se proti směru hodinových ručiček…"
 msgid "Rotating..."
 msgstr "Otáčí se…"
 
-#: ../src/exporter/brasero-destination.cpp:143
+#: ../src/exporter/brasero-destination.cpp:144
 msgid "_CD/DVD..."
 msgstr "_CD/DVD…"
 
-#: ../src/exporter/brasero-destination.cpp:185
+#: ../src/exporter/brasero-destination.cpp:186
 msgid "Export to CD/DVD"
 msgstr "Export na CD/DVD"
 
-#: ../src/exporter/directory-destination.cpp:96
+#: ../src/exporter/directory-destination.cpp:95
 msgid "Exporting photos"
 msgstr "Exportují se fotografie"
 
-#: ../src/exporter/directory-destination.cpp:205
+#: ../src/exporter/directory-destination.cpp:181
 msgid "Select Folder"
 msgstr "Zvolte složku"
 
-#: ../src/exporter/directory-destination.cpp:214
+#: ../src/exporter/directory-destination.cpp:190
 msgid "_Folder..."
 msgstr "_Složka…"
+
+#: ../src/exporter/exporter.cpp:192
+msgid "Creating archive"
+msgstr "Vytváří se archiv"
 
 #: ../src/exporter/exporter-dialog.cpp:33
 msgid "Export"
 msgstr "Export"
 
-#: ../src/exporter/exporter-dialog.cpp:42
-msgid "_Destination:"
-msgstr "_Cíl:"
-
-#: ../src/exporter/exporter-dialog.cpp:44
-msgid "_Detect duplicates"
-msgstr "_Rozpoznat duplikáty"
-
-#: ../src/exporter/exporter-dialog.cpp:48
+#: ../src/exporter/exporter-dialog.cpp:45
 msgid "_Create an archive"
 msgstr "_Vytvořit archiv"
 
-#: ../src/exporter/exporter-dialog.cpp:66
+#: ../src/exporter/exporter-dialog.cpp:64
 msgctxt "A group of UI controls"
-msgid "General"
-msgstr "Obecné"
+msgid "Destination"
+msgstr "Cíl"
 
-#: ../src/exporter/exporter-dialog.cpp:78
+#: ../src/exporter/exporter-dialog.cpp:80
 msgctxt "A group of UI controls"
 msgid "Options"
 msgstr "Možnosti"
 
-#: ../src/exporter/exporter-dialog.cpp:111
+#: ../src/exporter/exporter-dialog.cpp:105
 msgid "_Export"
 msgstr "_Export"
 
-#: ../src/renderer/browser-renderer.cpp:143
+#: ../src/renderer/browser-renderer.cpp:207
 #: ../src/renderer/enlarged-renderer.cpp:304
 msgid "_Slideshow"
 msgstr "_Promítání snímků"
 
-#: ../src/renderer/browser-renderer.cpp:144
+#: ../src/renderer/browser-renderer.cpp:208
 #: ../src/renderer/enlarged-renderer.cpp:305
 msgid "Start a slideshow view of the photos"
 msgstr "Spustit promítání fotografií"
 
-#: ../src/renderer/browser-renderer.cpp:153
+#: ../src/renderer/browser-renderer.cpp:217
 msgid "Enlarge or shrink the thumbnails"
 msgstr "Zvětšit či zmenšit náhledy"
 
-#: ../src/renderer/browser-renderer.cpp:175
+#: ../src/renderer/browser-renderer.cpp:239
 #: ../src/renderer/enlarged-renderer.cpp:317
 #: ../src/renderer/enlarged-renderer.cpp:453
 #: ../src/renderer/enlarged-renderer.cpp:462
@@ -448,32 +448,32 @@ msgstr "Zvětšit či zmenšit náhledy"
 msgid "_Zoom In"
 msgstr "_Přiblížit"
 
-#: ../src/renderer/browser-renderer.cpp:176
+#: ../src/renderer/browser-renderer.cpp:240
 msgid "Enlarge the thumbnails"
 msgstr "Zvětšit náhledy"
 
-#: ../src/renderer/browser-renderer.cpp:187
+#: ../src/renderer/browser-renderer.cpp:251
 msgid "_Zoom Out"
 msgstr "_Oddálit"
 
-#: ../src/renderer/browser-renderer.cpp:188
+#: ../src/renderer/browser-renderer.cpp:252
 msgid "Shrink the thumbnails"
 msgstr "Změnšit náhledy"
 
-#: ../src/renderer/browser-renderer.cpp:199
+#: ../src/renderer/browser-renderer.cpp:263
 #: ../src/renderer/enlarged-renderer.cpp:312
 msgid "_Go"
 msgstr "_Přejít"
 
-#: ../src/renderer/browser-renderer.cpp:204
+#: ../src/renderer/browser-renderer.cpp:268
 msgid "_Previous Page"
 msgstr "_Předchozí stránka"
 
-#: ../src/renderer/browser-renderer.cpp:205
+#: ../src/renderer/browser-renderer.cpp:269
 msgid "Go to the previous page in the collection"
 msgstr "Přejít na předchozí stránku v kolekci stránek"
 
-#: ../src/renderer/browser-renderer.cpp:208
+#: ../src/renderer/browser-renderer.cpp:272
 #: ../src/renderer/enlarged-renderer.cpp:378
 #: ../src/renderer/slideshow-renderer.cpp:169
 #: ../src/renderer/slideshow-renderer.cpp:213
@@ -481,15 +481,15 @@ msgctxt "Navigation"
 msgid "Previous"
 msgstr "Předchozí"
 
-#: ../src/renderer/browser-renderer.cpp:220
+#: ../src/renderer/browser-renderer.cpp:284
 msgid "_Next Page"
 msgstr "_Následující stránka"
 
-#: ../src/renderer/browser-renderer.cpp:221
+#: ../src/renderer/browser-renderer.cpp:285
 msgid "Go to the next page in the collection"
 msgstr "Přejít na následující stránku v kolekci stránek"
 
-#: ../src/renderer/browser-renderer.cpp:224
+#: ../src/renderer/browser-renderer.cpp:288
 #: ../src/renderer/enlarged-renderer.cpp:393
 #: ../src/renderer/slideshow-renderer.cpp:178
 #: ../src/renderer/slideshow-renderer.cpp:222
@@ -497,19 +497,19 @@ msgctxt "Navigation"
 msgid "Next"
 msgstr "Následující"
 
-#: ../src/renderer/browser-renderer.cpp:235
+#: ../src/renderer/browser-renderer.cpp:299
 msgid "_First Page"
 msgstr "_První stránka"
 
-#: ../src/renderer/browser-renderer.cpp:236
+#: ../src/renderer/browser-renderer.cpp:300
 msgid "Go to the first page in the collection"
 msgstr "Přejít na první stránku v kolekci stránek"
 
-#: ../src/renderer/browser-renderer.cpp:248
+#: ../src/renderer/browser-renderer.cpp:312
 msgid "_Last Page"
 msgstr "_Poslední stránka"
 
-#: ../src/renderer/browser-renderer.cpp:249
+#: ../src/renderer/browser-renderer.cpp:313
 msgid "Go to the last page in the collection"
 msgstr "Přejít na poslední stránku v kolekci stránek"
 
