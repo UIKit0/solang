@@ -286,6 +286,12 @@ MainWindow::MainWindow() throw() :
         Gtk::Action::create(
             "ActionHelpMenu", _("_Help")));
 
+    actionGroup_->add(
+        Gtk::Action::create(
+            "ActionHelpContents", Gtk::Stock::HELP,
+            _("_Contents")),
+        Gtk::AccelKey("F1"),
+        sigc::mem_fun(*this, &MainWindow::on_action_help_contents));
 
     actionGroup_->add(
         Gtk::Action::create(
@@ -632,6 +638,14 @@ MainWindow::on_action_help_about() throw()
                       &MainWindow::on_about_activate_link_url));
 
     about_dialog.run();
+}
+
+void
+MainWindow::on_action_help_contents() throw()
+{
+    const ScreenPtr screen = get_screen();
+    gtk_show_uri(screen->gobj(), "ghelp:" PACKAGE_TARNAME,
+                 GDK_CURRENT_TIME, 0);
 }
 
 void

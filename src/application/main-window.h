@@ -100,6 +100,9 @@ class MainWindow :
         on_action_help_about() throw();
 
         void
+        on_action_help_contents() throw();
+
+        void
         on_action_photo_quit() throw();
 
         void

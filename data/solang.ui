@@ -36,6 +36,7 @@
 		<placeholder name="PlaceholderToolMenus"/>
 		<placeholder name="PlaceholderGoMenus"/>
 		<menu action="ActionHelpMenu">
+			<menuitem action="ActionHelpContents"/>
 			<menuitem action="ActionHelpAbout"/>
 		</menu>
 	</menubar>
