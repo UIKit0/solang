@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: solang master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=solang&component=General\n"
-"POT-Creation-Date: 2010-03-20 23:44+0000\n"
-"PO-Revision-Date: 2010-03-22 23:09+0100\n"
+"POT-Creation-Date: 2010-03-27 02:35+0000\n"
+"PO-Revision-Date: 2010-03-28 19:46+0100\n"
 "Last-Translator: Mario Blättermann <mariobl@gnome.org>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -37,12 +37,12 @@ msgid "_Photo"
 msgstr "_Foto"
 
 #: ../src/application/main-window.cpp:233
-#: ../src/renderer/browser-renderer.cpp:131
+#: ../src/renderer/browser-renderer.cpp:194
 msgid "_Edit"
 msgstr "_Bearbeiten"
 
 #: ../src/application/main-window.cpp:238
-#: ../src/renderer/browser-renderer.cpp:136
+#: ../src/renderer/browser-renderer.cpp:199
 msgid "_Add to Export Queue"
 msgstr "Zur Exportwarteschlange _hinzufügen"
 
@@ -82,18 +82,22 @@ msgstr "Das aktuelle Foto im Vollbildmodus anzeigen"
 msgid "_Help"
 msgstr "_Hilfe"
 
-#: ../src/application/main-window.cpp:591
+#: ../src/application/main-window.cpp:292
+msgid "_Contents"
+msgstr "_Inhalt"
+
+#: ../src/application/main-window.cpp:597
 msgid "A photo manager for GNOME"
 msgstr "Eine Fotoverwaltung für GNOME"
 
 #. Translators: Put your names here.
-#: ../src/application/main-window.cpp:622
+#: ../src/application/main-window.cpp:628
 msgid "translator-credits"
 msgstr ""
 "Mario Blättermann <mariobl@gnome.org>\n"
 "Christian Kirbach <Christian.Kirbach@gnome.org>"
 
-#: ../src/application/main-window.cpp:627
+#: ../src/application/main-window.cpp:633
 msgctxt "Project website"
 msgid "%1 Website"
 msgstr "%1-Webseite"
@@ -423,21 +427,21 @@ msgstr "Optionen"
 msgid "_Export"
 msgstr "_Exportieren"
 
-#: ../src/renderer/browser-renderer.cpp:144
+#: ../src/renderer/browser-renderer.cpp:207
 #: ../src/renderer/enlarged-renderer.cpp:304
 msgid "_Slideshow"
 msgstr "_Diaschau"
 
-#: ../src/renderer/browser-renderer.cpp:145
+#: ../src/renderer/browser-renderer.cpp:208
 #: ../src/renderer/enlarged-renderer.cpp:305
 msgid "Start a slideshow view of the photos"
 msgstr "Fotos in einer Diaschau anzeigen"
 
-#: ../src/renderer/browser-renderer.cpp:154
+#: ../src/renderer/browser-renderer.cpp:217
 msgid "Enlarge or shrink the thumbnails"
 msgstr "Vorschaubilder vergrößern oder verkleinern"
 
-#: ../src/renderer/browser-renderer.cpp:176
+#: ../src/renderer/browser-renderer.cpp:239
 #: ../src/renderer/enlarged-renderer.cpp:317
 #: ../src/renderer/enlarged-renderer.cpp:453
 #: ../src/renderer/enlarged-renderer.cpp:462
@@ -445,32 +449,32 @@ msgstr "Vorschaubilder vergrößern oder verkleinern"
 msgid "_Zoom In"
 msgstr "Ver_größern"
 
-#: ../src/renderer/browser-renderer.cpp:177
+#: ../src/renderer/browser-renderer.cpp:240
 msgid "Enlarge the thumbnails"
 msgstr "Vorschaubilder vergrößern"
 
-#: ../src/renderer/browser-renderer.cpp:188
+#: ../src/renderer/browser-renderer.cpp:251
 msgid "_Zoom Out"
 msgstr "Ver_kleinern"
 
-#: ../src/renderer/browser-renderer.cpp:189
+#: ../src/renderer/browser-renderer.cpp:252
 msgid "Shrink the thumbnails"
 msgstr "Vorschaubilder verkleinern"
 
-#: ../src/renderer/browser-renderer.cpp:200
+#: ../src/renderer/browser-renderer.cpp:263
 #: ../src/renderer/enlarged-renderer.cpp:312
 msgid "_Go"
 msgstr "_Gehe zu"
 
-#: ../src/renderer/browser-renderer.cpp:205
+#: ../src/renderer/browser-renderer.cpp:268
 msgid "_Previous Page"
 msgstr "_Vorherige Seite"
 
-#: ../src/renderer/browser-renderer.cpp:206
+#: ../src/renderer/browser-renderer.cpp:269
 msgid "Go to the previous page in the collection"
 msgstr "Zur vorherigen Seite in der Sammlung gehen"
 
-#: ../src/renderer/browser-renderer.cpp:209
+#: ../src/renderer/browser-renderer.cpp:272
 #: ../src/renderer/enlarged-renderer.cpp:378
 #: ../src/renderer/slideshow-renderer.cpp:169
 #: ../src/renderer/slideshow-renderer.cpp:213
@@ -478,15 +482,15 @@ msgctxt "Navigation"
 msgid "Previous"
 msgstr "Vorheriger"
 
-#: ../src/renderer/browser-renderer.cpp:221
+#: ../src/renderer/browser-renderer.cpp:284
 msgid "_Next Page"
 msgstr "_Nächste Seite"
 
-#: ../src/renderer/browser-renderer.cpp:222
+#: ../src/renderer/browser-renderer.cpp:285
 msgid "Go to the next page in the collection"
 msgstr "Zur nächsten Seite in der Sammlung gehen"
 
-#: ../src/renderer/browser-renderer.cpp:225
+#: ../src/renderer/browser-renderer.cpp:288
 #: ../src/renderer/enlarged-renderer.cpp:393
 #: ../src/renderer/slideshow-renderer.cpp:178
 #: ../src/renderer/slideshow-renderer.cpp:222
@@ -494,19 +498,19 @@ msgctxt "Navigation"
 msgid "Next"
 msgstr "Nächster"
 
-#: ../src/renderer/browser-renderer.cpp:236
+#: ../src/renderer/browser-renderer.cpp:299
 msgid "_First Page"
 msgstr "_Erste Seite"
 
-#: ../src/renderer/browser-renderer.cpp:237
+#: ../src/renderer/browser-renderer.cpp:300
 msgid "Go to the first page in the collection"
 msgstr "Zur ersten Seite in der Sammlung gehen"
 
-#: ../src/renderer/browser-renderer.cpp:249
+#: ../src/renderer/browser-renderer.cpp:312
 msgid "_Last Page"
 msgstr "_Letzte Seite"
 
-#: ../src/renderer/browser-renderer.cpp:250
+#: ../src/renderer/browser-renderer.cpp:313
 msgid "Go to the last page in the collection"
 msgstr "Zur letzten Seite in der Sammlung gehen"
 
