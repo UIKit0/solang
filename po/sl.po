@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: solang\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=solang&component=General\n"
-"POT-Creation-Date: 2010-03-11 19:43+0000\n"
-"PO-Revision-Date: 2010-03-12 18:43+0100\n"
+"POT-Creation-Date: 2010-03-28 17:48+0000\n"
+"PO-Revision-Date: 2010-03-28 21:23+0100\n"
 "Last-Translator: Andrej Žnidaršič <andrej.znidarsic@gmail.com>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -32,66 +32,70 @@ msgstr "Urejajte, občudujte in kažite vaše fotografije"
 msgid "Photo Manager"
 msgstr "Upravljalnik fotografij"
 
-#: ../src/application/main-window.cpp:226
+#: ../src/application/main-window.cpp:224
 msgid "_Photo"
 msgstr "_Fotografija"
 
-#: ../src/application/main-window.cpp:235
-#: ../src/renderer/browser-renderer.cpp:130
+#: ../src/application/main-window.cpp:233
+#: ../src/renderer/browser-renderer.cpp:194
 msgid "_Edit"
 msgstr "_Uredi"
 
-#: ../src/application/main-window.cpp:240
-#: ../src/renderer/browser-renderer.cpp:135
+#: ../src/application/main-window.cpp:238
+#: ../src/renderer/browser-renderer.cpp:199
 msgid "_Add to Export Queue"
 msgstr "_Dodaj v čakalno vrsto izvoza"
 
-#: ../src/application/main-window.cpp:247
+#: ../src/application/main-window.cpp:245
 msgid "_Clear Export Queue"
 msgstr "_Počisti čakalno vrsto izvoza"
 
-#: ../src/application/main-window.cpp:252
+#: ../src/application/main-window.cpp:250
 msgid "_View"
 msgstr "_Pogled"
 
-#: ../src/application/main-window.cpp:256
+#: ../src/application/main-window.cpp:254
 msgid "_Toolbar"
 msgstr "_Orodna vrstica"
 
-#: ../src/application/main-window.cpp:257
+#: ../src/application/main-window.cpp:255
 msgid "Show or hide the toolbar in the current window"
 msgstr "Pokaži ali skrij orodno vrstico v trenutnem oknu"
 
-#: ../src/application/main-window.cpp:263
+#: ../src/application/main-window.cpp:261
 msgid "_Statusbar"
 msgstr "_Vrstica stanja"
 
-#: ../src/application/main-window.cpp:264
+#: ../src/application/main-window.cpp:262
 msgid "Show or hide the statusbar in the current window"
 msgstr "Pokaži ali skrij vrstico stanja v trenutnem oknu"
 
-#: ../src/application/main-window.cpp:271
+#: ../src/application/main-window.cpp:269
 msgid "_Full Screen"
 msgstr "_Cel zaslon"
 
-#: ../src/application/main-window.cpp:272
+#: ../src/application/main-window.cpp:270
 msgid "Show the current photo in full screen mode"
 msgstr "Pokaži trenutno fotografijo v celozaslonskem načinu"
 
-#: ../src/application/main-window.cpp:289
+#: ../src/application/main-window.cpp:287
 msgid "_Help"
 msgstr "Pomo_č"
 
-#: ../src/application/main-window.cpp:593
+#: ../src/application/main-window.cpp:292
+msgid "_Contents"
+msgstr "_Vsebina"
+
+#: ../src/application/main-window.cpp:597
 msgid "A photo manager for GNOME"
 msgstr "Upravljalnik fotografij za GNOME"
 
 #. Translators: Put your names here.
-#: ../src/application/main-window.cpp:624
+#: ../src/application/main-window.cpp:628
 msgid "translator-credits"
 msgstr "Andrej Žnidaršič <andrej.znidarsic@gmail.com>"
 
-#: ../src/application/main-window.cpp:629
+#: ../src/application/main-window.cpp:633
 msgctxt "Project website"
 msgid "%1 Website"
 msgstr "Spletišče %1"
@@ -168,27 +172,27 @@ msgstr "Odstranitev izbranih filtrov iz tega seznama"
 msgid "Tags"
 msgstr "Oznake"
 
-#: ../src/attribute/tag-manager.cpp:100
+#: ../src/attribute/tag-manager.cpp:105
 msgid "_Tags"
 msgstr "_Oznake"
 
-#: ../src/attribute/tag-manager.cpp:105
+#: ../src/attribute/tag-manager.cpp:110
 msgid "Create New _Tag..."
 msgstr "Ustvari _novo oznako ..."
 
-#: ../src/attribute/tag-manager.cpp:112
+#: ../src/attribute/tag-manager.cpp:117
 msgid "_Edit Selected Tag..."
 msgstr "_Uredi izbrano oznako ..."
 
-#: ../src/attribute/tag-manager.cpp:119
+#: ../src/attribute/tag-manager.cpp:124
 msgid "_Delete Selected Tag"
 msgstr "_Izbriši izbrano oznako"
 
-#: ../src/attribute/tag-manager.cpp:125
+#: ../src/attribute/tag-manager.cpp:130
 msgid "_Attach Tag to Selection"
 msgstr "_Pripni oznako izboru"
 
-#: ../src/attribute/tag-manager.cpp:132
+#: ../src/attribute/tag-manager.cpp:137
 msgid "_Remove Tag From Selection"
 msgstr "_Odstrani oznako iz izbora"
 
@@ -375,71 +379,67 @@ msgstr "Vrtenje v nasprotni smeri urinega kazalca ..."
 msgid "Rotating..."
 msgstr "Vrtenje ..."
 
-#: ../src/exporter/brasero-destination.cpp:143
+#: ../src/exporter/brasero-destination.cpp:144
 msgid "_CD/DVD..."
 msgstr "_CD/DVD..."
 
-#: ../src/exporter/brasero-destination.cpp:185
+#: ../src/exporter/brasero-destination.cpp:186
 msgid "Export to CD/DVD"
 msgstr "Izvozi na CD/DVD"
 
-#: ../src/exporter/directory-destination.cpp:96
+#: ../src/exporter/directory-destination.cpp:95
 msgid "Exporting photos"
 msgstr "Izvažanje fotografij"
 
-#: ../src/exporter/directory-destination.cpp:205
+#: ../src/exporter/directory-destination.cpp:181
 msgid "Select Folder"
 msgstr "Izbor mape"
 
-#: ../src/exporter/directory-destination.cpp:214
+#: ../src/exporter/directory-destination.cpp:190
 msgid "_Folder..."
 msgstr "_Mapa ..."
+
+#: ../src/exporter/exporter.cpp:192
+msgid "Creating archive"
+msgstr "Ustvarjanje arhiva"
 
 #: ../src/exporter/exporter-dialog.cpp:33
 msgid "Export"
 msgstr "Izvozi"
 
-#: ../src/exporter/exporter-dialog.cpp:42
-msgid "_Destination:"
-msgstr "_Cilj:"
-
-#: ../src/exporter/exporter-dialog.cpp:44
-msgid "_Detect duplicates"
-msgstr "_Zaznaj dvojnike"
-
-#: ../src/exporter/exporter-dialog.cpp:48
+#: ../src/exporter/exporter-dialog.cpp:45
 msgid "_Create an archive"
 msgstr "Ustvari _arhiv"
 
-#: ../src/exporter/exporter-dialog.cpp:66
+#: ../src/exporter/exporter-dialog.cpp:64
 msgctxt "A group of UI controls"
-msgid "General"
-msgstr "Splošno"
+msgid "Destination"
+msgstr "Cilj"
 
-#: ../src/exporter/exporter-dialog.cpp:78
+#: ../src/exporter/exporter-dialog.cpp:80
 msgctxt "A group of UI controls"
 msgid "Options"
 msgstr "Možnosti"
 
-#: ../src/exporter/exporter-dialog.cpp:111
+#: ../src/exporter/exporter-dialog.cpp:105
 msgid "_Export"
 msgstr "_Izvozi"
 
-#: ../src/renderer/browser-renderer.cpp:143
+#: ../src/renderer/browser-renderer.cpp:207
 #: ../src/renderer/enlarged-renderer.cpp:304
 msgid "_Slideshow"
 msgstr "_Diaprojekcija"
 
-#: ../src/renderer/browser-renderer.cpp:144
+#: ../src/renderer/browser-renderer.cpp:208
 #: ../src/renderer/enlarged-renderer.cpp:305
 msgid "Start a slideshow view of the photos"
 msgstr "Začetek ogleda diaprojekcije fotografij "
 
-#: ../src/renderer/browser-renderer.cpp:153
+#: ../src/renderer/browser-renderer.cpp:217
 msgid "Enlarge or shrink the thumbnails"
 msgstr "Povečaj ali skrči sličice"
 
-#: ../src/renderer/browser-renderer.cpp:175
+#: ../src/renderer/browser-renderer.cpp:239
 #: ../src/renderer/enlarged-renderer.cpp:317
 #: ../src/renderer/enlarged-renderer.cpp:453
 #: ../src/renderer/enlarged-renderer.cpp:462
@@ -447,32 +447,32 @@ msgstr "Povečaj ali skrči sličice"
 msgid "_Zoom In"
 msgstr "Pov_ečaj"
 
-#: ../src/renderer/browser-renderer.cpp:176
+#: ../src/renderer/browser-renderer.cpp:240
 msgid "Enlarge the thumbnails"
 msgstr "Povečanje sličic"
 
-#: ../src/renderer/browser-renderer.cpp:187
+#: ../src/renderer/browser-renderer.cpp:251
 msgid "_Zoom Out"
 msgstr "Po_manjšaj"
 
-#: ../src/renderer/browser-renderer.cpp:188
+#: ../src/renderer/browser-renderer.cpp:252
 msgid "Shrink the thumbnails"
 msgstr "Skrčenje sličic"
 
-#: ../src/renderer/browser-renderer.cpp:199
+#: ../src/renderer/browser-renderer.cpp:263
 #: ../src/renderer/enlarged-renderer.cpp:312
 msgid "_Go"
 msgstr "Po_jdi"
 
-#: ../src/renderer/browser-renderer.cpp:204
+#: ../src/renderer/browser-renderer.cpp:268
 msgid "_Previous Page"
 msgstr "_Predhodna stran"
 
-#: ../src/renderer/browser-renderer.cpp:205
+#: ../src/renderer/browser-renderer.cpp:269
 msgid "Go to the previous page in the collection"
 msgstr "Pojdi na predhodno stran v zbirki"
 
-#: ../src/renderer/browser-renderer.cpp:208
+#: ../src/renderer/browser-renderer.cpp:272
 #: ../src/renderer/enlarged-renderer.cpp:378
 #: ../src/renderer/slideshow-renderer.cpp:169
 #: ../src/renderer/slideshow-renderer.cpp:213
@@ -480,15 +480,15 @@ msgctxt "Navigation"
 msgid "Previous"
 msgstr "Predhodna"
 
-#: ../src/renderer/browser-renderer.cpp:220
+#: ../src/renderer/browser-renderer.cpp:284
 msgid "_Next Page"
 msgstr "_Naslednja stran"
 
-#: ../src/renderer/browser-renderer.cpp:221
+#: ../src/renderer/browser-renderer.cpp:285
 msgid "Go to the next page in the collection"
 msgstr "Pojdi na naslednjo stran v zbirki"
 
-#: ../src/renderer/browser-renderer.cpp:224
+#: ../src/renderer/browser-renderer.cpp:288
 #: ../src/renderer/enlarged-renderer.cpp:393
 #: ../src/renderer/slideshow-renderer.cpp:178
 #: ../src/renderer/slideshow-renderer.cpp:222
@@ -496,19 +496,19 @@ msgctxt "Navigation"
 msgid "Next"
 msgstr "Naslednja"
 
-#: ../src/renderer/browser-renderer.cpp:235
+#: ../src/renderer/browser-renderer.cpp:299
 msgid "_First Page"
 msgstr "P_rva stran"
 
-#: ../src/renderer/browser-renderer.cpp:236
+#: ../src/renderer/browser-renderer.cpp:300
 msgid "Go to the first page in the collection"
 msgstr "Pojdi na prvo stran v zbirki"
 
-#: ../src/renderer/browser-renderer.cpp:248
+#: ../src/renderer/browser-renderer.cpp:312
 msgid "_Last Page"
 msgstr "_Zadnja stran"
 
-#: ../src/renderer/browser-renderer.cpp:249
+#: ../src/renderer/browser-renderer.cpp:313
 msgid "Go to the last page in the collection"
 msgstr "Pojdi na zadnjo stran v zbirki"
 
@@ -649,4 +649,10 @@ msgstr "Prva"
 msgctxt "Navigation"
 msgid "Last"
 msgstr "Zadnja"
+
+#~ msgid "_Detect duplicates"
+#~ msgstr "_Zaznaj dvojnike"
+#~ msgctxt "A group of UI controls"
+#~ msgid "General"
+#~ msgstr "Splošno"
 
