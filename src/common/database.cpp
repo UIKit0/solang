@@ -248,20 +248,45 @@ Database::get_dates_with_picture_count(const Glib::ustring & sql)
 }
 
 void
-Database::get_tags_async(const SlotAsyncTags & slot) const throw()
+Database::get_tags_async(bool all, const SlotAsyncTags & slot) const
+                         throw()
 {
+    std::ostringstream sout;
+    sout << "SELECT ";
+
+    if (false == all)
+    {
+        sout << "DISTINCT ";
+    }
+
+    sout << "nao:prefLabel(?tag) as ?label ?desc ?tag "
+            "WHERE {"
+            "  ?tag a nao:Tag ."
+            "  OPTIONAL {"
+            "    ?tag a nie:InformationElement ;"
+            "    nie:comment ?desc ."
+            "  }";
+
+    if (false == all)
+    {
+        sout << "  OPTIONAL {"
+                "    ?photo a nmm:Photo ;"
+                "    nao:hasTag ?tag ."
+                "  }"
+                "  FILTER ("
+                "    (SELECT COUNT(?u) WHERE {"
+                "        ?u nao:hasTag ?tag}) = 0"
+                "    || BOUND(?photo)"
+                "  )";
+    }
+
+    sout << "} "
+            "ORDER BY ASC (?label)";
+
     trackerClient_.sparql_query_async(
-        "SELECT DISTINCT ?t ?d ?u "
-        "WHERE {"
-        "  ?u a nao:Tag ;"
-        "  nao:prefLabel ?t ."
-        "  OPTIONAL {"
-        "      ?u a nie:InformationElement ;"
-        "      nie:comment ?d ."
-        "  }"
-        "} "
-        "ORDER BY ASC(?t)",
-        sigc::bind(sigc::mem_fun(*this, &Database::on_async_tags),
+        sout.str(),
+        sigc::bind(sigc::mem_fun(*this,
+                                 &Database::on_async_tags),
                    slot));
 }
 

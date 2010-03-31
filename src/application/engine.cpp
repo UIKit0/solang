@@ -90,10 +90,10 @@ Engine::erase(const PhotoList & photos)
 }
 
 void
-Engine::get_tags_async(const Database::SlotAsyncTags & slot) const
-                       throw()
+Engine::get_tags_async(bool all, const Database::SlotAsyncTags & slot)
+                       const throw()
 {
-    database_.get_tags_async(slot);
+    database_.get_tags_async(all, slot);
 }
 
 DatePhotoInfoList

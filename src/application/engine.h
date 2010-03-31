@@ -65,8 +65,8 @@ class Engine :
         erase(const PhotoList & photos);
 
         void
-        get_tags_async(const Database::SlotAsyncTags & slot) const
-                       throw();
+        get_tags_async(bool all, const Database::SlotAsyncTags & slot)
+                       const throw();
 
         //Group by year
         DatePhotoInfoList

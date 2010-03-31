@@ -75,6 +75,9 @@ class TagManager :
         on_action_remove_tag() throw();
 
         void
+        on_action_show_all_tags() throw();
+
+        void
         on_get_tags(TagList & tags) throw();
 
         void
@@ -114,6 +117,8 @@ class TagManager :
         Gtk::ScrolledWindow scrolledWindow_;
 
         TagView tagView_;
+
+        bool showAll_;
 
         sigc::connection signalRendererChanged_;
 

@@ -102,7 +102,8 @@ class Database
         get_dates_with_picture_count(gint year, gint month);
 
         void
-        get_tags_async(const SlotAsyncTags & slot) const throw();
+        get_tags_async(bool all, const SlotAsyncTags & slot) const
+                       throw();
 
     private:
         DatePhotoInfoList

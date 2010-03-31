@@ -57,6 +57,7 @@ TagManager::TagManager() throw() :
     vBox_( false, 6 ),
     scrolledWindow_(),
     tagView_( ),
+    showAll_(false),
     signalRendererChanged_()
 {
     Gtk::IconSource icon_source;
@@ -137,6 +138,12 @@ TagManager::TagManager() throw() :
             _("_Remove Tag From Selection")),
         Gtk::AccelKey(""),
         sigc::mem_fun(*this, &TagManager::on_action_remove_tag));
+
+    actionGroup_->add(
+        Gtk::ToggleAction::create("ActionTagsShowAll",
+                                   _("_Show All Tags")),
+        Gtk::AccelKey(""),
+        sigc::mem_fun(*this, &TagManager::on_action_show_all_tags));
 
     scrolledWindow_.set_policy(Gtk::POLICY_AUTOMATIC,
                                Gtk::POLICY_AUTOMATIC);
@@ -423,6 +430,13 @@ TagManager::on_action_remove_tag() throw()
 }
 
 void
+TagManager::on_action_show_all_tags() throw()
+{
+    showAll_ = !showAll_;
+    populate_view();
+}
+
+void
 TagManager::on_get_tags(TagList & tags) throw()
 {
     tagView_.populate(tags);
@@ -451,7 +465,8 @@ void
 TagManager::populate_view() throw()
 {
     Engine & engine = application_->get_engine();
-    engine.get_tags_async(sigc::mem_fun(
+    engine.get_tags_async(showAll_,
+                          sigc::mem_fun(
                               *this,
                               &TagManager::on_get_tags));
 }

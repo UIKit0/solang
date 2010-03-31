@@ -10,6 +10,8 @@
 			<separator name="TagsSeparator1"/>
 			<menuitem action="ActionTagsAttach"/>
 			<menuitem action="ActionTagsRemove"/>
+			<separator name="TagsSeparator2"/>
+			<menuitem action="ActionTagsShowAll"/>
 		</menu>
 		</placeholder>
 	</menubar>
