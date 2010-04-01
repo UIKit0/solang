@@ -12,7 +12,7 @@
 	<include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>
 </info>
 <title>Manage the export queue</title>
-<p>Before exporting photos you have to put them in the Export Queue.</p>
+<p>Before exporting photos you have to put them in the Export Queue. Photos in the Export Queue are marked with a little icon on the top-left corner of their thumbnail.</p>
 
 <steps>
 	<item>
