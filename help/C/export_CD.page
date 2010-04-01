@@ -3,6 +3,7 @@
       id="export_CD">
 <info>
 	<link type="guide" xref="index_export"/>
+	<link type="topic" xref="export_queue"/>
 	<desc>
 	To copy photos in a CD.
 	</desc>

@@ -3,6 +3,7 @@
       id="export_folder">
 <info>
 	<link type="guide" xref="index_export"/>
+	<link type="topic" xref="export_queue"/>
 	<desc>
 	To copy photos in a archive or a folder.
 	</desc>

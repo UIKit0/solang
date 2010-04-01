@@ -14,9 +14,10 @@
 </info>
 <title>How do I use the search function?</title>
 
-  <p>Actually you have to drag and drop one or more filters to the <gui>Search Basket</gui>. <app>Solang</app> will display only photos that correspond to all the filters you have chosen. Today only tags are filters.</p>
+  <p>Actually you have to drag and drop one or more filters to the <gui>Search Basket</gui>. <app>Solang</app> will display only photos that correspond to all the filters you have chosen. Tags and photos properties are filters.</p>
   <list>
-    <item><p>To add a filter drag a tag from the <gui>Tag List</gui> to the <gui>Search Basket</gui>.</p></item>
+    <item><p>To add a tag filter drag a tag from the <gui>Tag List</gui> to the <gui>Search Basket</gui>.</p></item>
+    <item><p>To add a property filter drag a property (for example Camera) from the <gui>Basic Properties List</gui> to the <gui>Search Basket</gui>.</p></item>
     <item><p>To remove all the filters, right-click on a filter and choose <gui>Select All</gui>, then righ-click on the same filter and choose <gui>Remove</gui>.</p></item>
     <item><p>To remove one filter, right-click on the filter you want to remove in the <gui>Search Basket</gui> and choose <gui>Remove</gui>.</p></item>
   </list>
