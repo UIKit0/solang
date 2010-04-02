@@ -57,7 +57,7 @@ Dependencies:
  - gegl
  - gtkimageview
  - gtkmm-2.4 >= 2.8
- - tracker-client-0.7 >= 0.7.25
+ - tracker-client-0.8
 
 Packages are available for Debian, Fedora and Ubuntu.
 

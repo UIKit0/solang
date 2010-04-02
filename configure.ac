@@ -45,7 +45,7 @@ PKG_CHECK_MODULES(GDL, [gdl-1.0])
 PKG_CHECK_MODULES(GEGLMM, [geglmm >= 0.1.0])
 PKG_CHECK_MODULES(GTKIMAGEVIEW, [gtkimageview])
 PKG_CHECK_MODULES(GTKMM, [gtkmm-2.4 >= 2.8])
-PKG_CHECK_MODULES(TRACKER, [tracker-client-0.7 >= 0.7.25])
+PKG_CHECK_MODULES(TRACKER, [tracker-client-0.8])
 
 AC_ARG_ENABLE(
     [brasero-exporter],
