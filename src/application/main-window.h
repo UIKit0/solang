@@ -86,6 +86,9 @@ class MainWindow :
         get_user_layout_file() throw();
 
         void
+        load_layout() throw();
+
+        void
         on_about_activate_link_url(Gtk::AboutDialog & about_dialog,
                                    const Glib::ustring & link)
                                    throw();
@@ -117,6 +120,9 @@ class MainWindow :
 
         virtual bool
         on_delete_event(GdkEventAny * event);
+
+        void
+        save_layout() throw();
 
         ApplicationPtr application_;
 

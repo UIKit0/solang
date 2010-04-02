@@ -385,23 +385,45 @@ MainWindow::init(Application & application) throw()
         }
     }
 
-    const bool result = gdl_dock_layout_load_from_file(
-                            GDL_DOCK_LAYOUT(layout_),
-                            layoutFile_.c_str());
+    load_layout();
 
-    if (true == result)
-    {
-        gdl_dock_layout_load_layout(GDL_DOCK_LAYOUT(layout_), 0);
-    }
-    else
-    {
-        g_warning("%s: File not found", layoutFile_.c_str());
-    }
+    present_dock_object(dockObjectsCenter_.front());
 }
 
 void
 MainWindow::final(Application & application) throw()
 {
+    // NB: + Hide all renderers except the browser before saving the
+    //       layout. Otherwise, all hell breaks loose when loading
+    //       the layout because GDL tries to place the renderers in a
+    //       Gtk::Notebook, which leads to spurious switch-page
+    //       signals being emitted.
+    //     + Do not save the layout if something other than a renderer
+    //       has been docked in the centre. In other words, when all
+    //       the other renderers have been hidden, the browser should
+    //       not be placed inside a Gtk::Notebook. The reason for this
+    //       is the same as above.
+
+    if (1 < dockObjectsCenter_.size())
+    {
+        const std::vector<DockObjectPtr>::iterator second
+            = dockObjectsCenter_.begin() + 1;
+
+        std::for_each(second, dockObjectsCenter_.end(), DockHider());
+        dockObjectsCenter_.erase(second, dockObjectsCenter_.end());
+
+        Gtk::Container * const dock_object
+            = Glib::wrap(GTK_CONTAINER(dockObjectsCenter_.front()),
+                         false);
+
+        if (0 != dynamic_cast<Gtk::Notebook *>(
+                     dock_object->get_parent()))
+        {
+            return;
+        }
+    }
+
+    save_layout();
 }
 
 void
@@ -429,6 +451,7 @@ MainWindow::dock_object_center(DockObjectPtr dock_object) throw()
 {
     gdl_dock_object_dock(dockObjectsCenter_.front(),
                          dock_object, GDL_DOCK_CENTER, NULL);
+    dockObjectsCenter_.push_back(dock_object);
 }
 
 void
@@ -440,7 +463,18 @@ MainWindow::undock_object_center(DockObjectPtr dock_object) throw()
         return;
     }
 
+    const std::vector<DockObjectPtr>::iterator iter
+        = std::find(dockObjectsCenter_.begin(),
+                    dockObjectsCenter_.end(),
+                    dock_object);
+
+    if (dockObjectsCenter_.end() == iter)
+    {
+        return;
+    }
+
     gdl_dock_item_hide_item(GDL_DOCK_ITEM(dock_object));
+    dockObjectsCenter_.erase(iter);
 }
 
 void
@@ -493,6 +527,29 @@ MainWindow::get_user_layout_file() throw()
     return Glib::get_user_data_dir() + "/"
                + Glib::get_prgname() + "/"
                + Glib::get_prgname() + "-layout.xml";
+}
+
+void
+MainWindow::load_layout() throw()
+{
+    if (false == gdl_dock_layout_load_from_file(
+                    GDL_DOCK_LAYOUT(layout_),
+                    get_user_layout_file().c_str()))
+    {
+        if (false == gdl_dock_layout_load_from_file(
+                         GDL_DOCK_LAYOUT(layout_),
+                         layoutFile_.c_str()))
+        {
+            g_warning("gdl_dock_layout_load_from_file: Failed");
+            return;
+        }
+    }
+
+    if (false == gdl_dock_layout_load_layout(GDL_DOCK_LAYOUT(layout_),
+                                             0))
+    {
+        g_warning("gdl_dock_layout_load_layout: Failed");
+    }
 }
 
 void
@@ -820,6 +877,19 @@ MainWindow::on_delete_event(GdkEventAny * event)
 
     hide();
     return return_value;
+}
+
+void
+MainWindow::save_layout() throw()
+{
+    gdl_dock_layout_save_layout(GDL_DOCK_LAYOUT(layout_), 0);
+
+    if (false == gdl_dock_layout_save_to_file(
+                     GDL_DOCK_LAYOUT(layout_),
+                     get_user_layout_file().c_str()))
+    {
+        g_warning("gdl_dock_layout_save_to_file: Failed");
+    }
 }
 
 void
