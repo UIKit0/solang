@@ -54,6 +54,19 @@
   </steps>
   </section>
 
+<section id="modify_tag" style="task">
+  <title>Show only the tags you need.</title>
+
+  <p>By default the <gui>Tag List</gui> shows only tags that are attached to your photos. But it can show the tags from your text documents, your videos...</p>
+
+  <steps>
+    <item>
+      <p>From the <gui>main</gui> window, choose <guiseq><gui>Tags</gui>
+      <gui>Show All Tags</gui></guiseq>.</p>
+    </item>
+  </steps>
+  </section>
+
 <section id="delete_tag" style="task">
   <title>Delete a tag.</title>
 
