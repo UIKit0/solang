@@ -1,0 +1,29 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="topic"
+      id="layout">
+<info>
+	<desc>
+	Adapt Solang's interface to your needs.
+	</desc>
+	<credit type="author">
+		<name>Florent Thévenet</name>
+		<email>feuloren@free.fr</email>
+	</credit>
+	<include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>
+</info>
+<title>Customize the layout</title>
+
+<p>You can easily adapt Solang's interface to your needs thanks to its customizable layout.</p>
+
+<p>Solang's interface is composed of several "dockable items" that you can move inside Solang's window.<br/>
+To change an item position click on its title and move your cursor while holding the button pressed. Then drop the item where you want in Solang's window.</p>
+
+  <figure>
+    <title>An item's title</title>
+    <desc>The title of the "Properties" item, drag and drop it in Solang's window to change the item position</desc>
+    <media type="image" src="figures/properties-title.png" mime="image/png" style="right">
+      <p>The title of the "Properties" item</p>
+    </media>
+  </figure>
+
+</page>

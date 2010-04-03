@@ -104,6 +104,10 @@
     <td><p>Last Photo</p></td> <td><p>Go to the last photo.</p></td>
     <td><p><keyseq><key>Alt</key><key>End</key></keyseq></p></td>
     </tr>
+    <tr>
+    <td><p>Quit Enlarged mode</p></td> <td><p>Quit the Enlarged mode and go to Browser mode.</p></td>
+    <td><p><key>Escape</key></p></td>
+    </tr>
 </table>
 </section>
 
