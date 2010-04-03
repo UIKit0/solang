@@ -46,4 +46,5 @@
 	<accelerator action="AccelViewEnlargedZoomIn2"/>
 	<accelerator action="AccelViewEnlargedZoomOut"/>
 	<accelerator action="AccelViewEnlargedZoomOut1"/>
+	<accelerator action="AccelQuitEnlarged"/>
 </ui>

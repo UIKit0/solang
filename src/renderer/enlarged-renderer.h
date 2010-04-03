@@ -101,6 +101,9 @@ class EnlargedRenderer :
         on_action_go_last() throw();
 
         void
+        on_action_quit_enlarged() throw();
+
+        void
         on_action_view_slideshow() throw();
 
         void

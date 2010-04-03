@@ -491,6 +491,13 @@ EnlargedRenderer::create_action_group() throw()
         Gtk::AccelKey("KP_Subtract"),
         sigc::mem_fun(*this,
                       &EnlargedRenderer::on_action_view_zoom_out));
+
+    actionGroup_->add(
+        Gtk::Action::create(
+            "AccelQuitEnlarged", Gtk::StockID()),
+        Gtk::AccelKey("Escape"),
+        sigc::mem_fun(*this,
+                      &EnlargedRenderer::on_action_quit_enlarged));
 }
 
 PhotoList
@@ -680,6 +687,23 @@ EnlargedRenderer::on_action_go_last() throw()
 
     Engine & engine = application_->get_engine();
     engine.selection_changed().emit();
+}
+
+void
+EnlargedRenderer::on_action_quit_enlarged() throw()
+{
+    RendererRegistry & renderer_registry
+        = application_->get_renderer_registry();
+    const IRendererPtr browser_renderer
+        = renderer_registry.select<BrowserRenderer>();
+
+    if (0 == browser_renderer)
+    {
+        return;
+    }
+
+    browser_renderer->present();
+    // NB: BrowserRenderer::render is a no-op.
 }
 
 void
