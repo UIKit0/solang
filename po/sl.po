@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: solang\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=solang&component=General\n"
-"POT-Creation-Date: 2010-03-28 17:48+0000\n"
-"PO-Revision-Date: 2010-03-28 21:23+0100\n"
+"POT-Creation-Date: 2010-04-03 00:11+0000\n"
+"PO-Revision-Date: 2010-04-03 08:31+0100\n"
 "Last-Translator: Andrej Žnidaršič <andrej.znidarsic@gmail.com>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -86,16 +86,16 @@ msgstr "Pomo_č"
 msgid "_Contents"
 msgstr "_Vsebina"
 
-#: ../src/application/main-window.cpp:597
+#: ../src/application/main-window.cpp:654
 msgid "A photo manager for GNOME"
 msgstr "Upravljalnik fotografij za GNOME"
 
 #. Translators: Put your names here.
-#: ../src/application/main-window.cpp:628
+#: ../src/application/main-window.cpp:685
 msgid "translator-credits"
 msgstr "Andrej Žnidaršič <andrej.znidarsic@gmail.com>"
 
-#: ../src/application/main-window.cpp:633
+#: ../src/application/main-window.cpp:690
 msgctxt "Project website"
 msgid "%1 Website"
 msgstr "Spletišče %1"
@@ -172,29 +172,33 @@ msgstr "Odstranitev izbranih filtrov iz tega seznama"
 msgid "Tags"
 msgstr "Oznake"
 
-#: ../src/attribute/tag-manager.cpp:105
+#: ../src/attribute/tag-manager.cpp:106
 msgid "_Tags"
 msgstr "_Oznake"
 
-#: ../src/attribute/tag-manager.cpp:110
+#: ../src/attribute/tag-manager.cpp:111
 msgid "Create New _Tag..."
 msgstr "Ustvari _novo oznako ..."
 
-#: ../src/attribute/tag-manager.cpp:117
+#: ../src/attribute/tag-manager.cpp:118
 msgid "_Edit Selected Tag..."
 msgstr "_Uredi izbrano oznako ..."
 
-#: ../src/attribute/tag-manager.cpp:124
+#: ../src/attribute/tag-manager.cpp:125
 msgid "_Delete Selected Tag"
 msgstr "_Izbriši izbrano oznako"
 
-#: ../src/attribute/tag-manager.cpp:130
+#: ../src/attribute/tag-manager.cpp:131
 msgid "_Attach Tag to Selection"
 msgstr "_Pripni oznako izboru"
 
-#: ../src/attribute/tag-manager.cpp:137
+#: ../src/attribute/tag-manager.cpp:138
 msgid "_Remove Tag From Selection"
 msgstr "_Odstrani oznako iz izbora"
+
+#: ../src/attribute/tag-manager.cpp:144
+msgid "_Show All Tags"
+msgstr "_Pokaži vse oznake"
 
 #: ../src/attribute/tag-new-dialog.cpp:39
 #: ../src/attribute/tag-new-dialog.cpp:69
