@@ -93,6 +93,7 @@ void
 Docker::operator()(DockObjectPtr const & requester) throw()
 {
     gdl_dock_object_dock(reference_, requester, placement_, NULL);
+    gtk_widget_show_all(GTK_WIDGET(requester));
 }
 
 class DockHider :
@@ -168,6 +169,7 @@ DockHider::operator()(DockObjectPtr const & dock_object) throw()
         return;
     }
 
+    gtk_widget_hide(GTK_WIDGET(dock_object));
     gdl_dock_item_hide_item(GDL_DOCK_ITEM(dock_object));
 }
 
@@ -347,6 +349,8 @@ MainWindow::init(Application & application) throw()
         gdl_dock_add_item(GDL_DOCK(dock_),
                           GDL_DOCK_ITEM(dockObjectsCenter_.front()),
                           GDL_DOCK_RIGHT);
+        gtk_widget_show_all(GTK_WIDGET(dockObjectsCenter_.front()));
+
         if (1 < dockObjectsCenter_.size())
         {
             std::for_each(++dockObjectsCenter_.begin(),
@@ -362,6 +366,8 @@ MainWindow::init(Application & application) throw()
         gdl_dock_add_item(GDL_DOCK(dock_),
                           GDL_DOCK_ITEM(dockObjectsLeftTop_.front()),
                           GDL_DOCK_LEFT);
+        gtk_widget_show_all(GTK_WIDGET(dockObjectsLeftTop_.front()));
+
         if (1 < dockObjectsLeftTop_.size())
         {
             std::for_each(++dockObjectsLeftTop_.begin(),
@@ -376,6 +382,8 @@ MainWindow::init(Application & application) throw()
         gdl_dock_add_item(GDL_DOCK(dock_),
             GDL_DOCK_ITEM(dockObjectsLeftBottom_.front()),
             GDL_DOCK_BOTTOM);
+        gtk_widget_show_all(GTK_WIDGET(dockObjectsLeftBottom_.front()));
+
         if (1 < dockObjectsLeftBottom_.size())
         {
             std::for_each(++dockObjectsLeftBottom_.begin(),
