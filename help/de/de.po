@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: solang master\n"
-"POT-Creation-Date: 2010-03-07 20:55+0000\n"
-"PO-Revision-Date: 2010-03-07 23:43+0100\n"
+"POT-Creation-Date: 2010-04-04 12:36+0000\n"
+"PO-Revision-Date: 2010-04-05 22:39+0100\n"
 "Last-Translator: Mario Blättermann <mariobl@gnome.org>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -44,7 +44,7 @@ msgstr "Erstellen, Bearbeiten und Löschen von Markierungen."
 #: C/tags_manage.page:11(name) C/keys.page:9(name) C/howto_search.page:10(name)
 #: C/tags_intro.page:9(name) C/intro.page:10(name)
 #: C/photos_by_page.page:10(name) C/index.page:7(name) C/tags_use.page:11(name)
-#: C/import.page:10(name) C/export_folder.page:10(name)
+#: C/import.page:10(name) C/export_folder.page:11(name)
 msgid "Florent Thévenet"
 msgstr "Florent Thévenet"
 
@@ -52,7 +52,7 @@ msgstr "Florent Thévenet"
 #: C/howto_search.page:11(email) C/tags_intro.page:10(email)
 #: C/intro.page:11(email) C/photos_by_page.page:11(email) C/index.page:8(email)
 #: C/tags_use.page:12(email) C/import.page:11(email)
-#: C/export_folder.page:11(email)
+#: C/export_folder.page:12(email)
 msgid "feuloren@free.fr"
 msgstr "feuloren@free.fr"
 
@@ -118,20 +118,44 @@ msgstr ""
 "speichern."
 
 #: C/tags_manage.page:58(title)
+msgid "Show only the tags you need."
+msgstr "Nur die Markierungen anzeigen, welche Sie benötigen."
+
+#: C/tags_manage.page:60(p)
+msgid ""
+"By default the <gui>Tag List</gui> shows only tags that are attached to your "
+"photos. But it can show the tags from your text documents, your videos..."
+msgstr ""
+"Standardmäßig zeigt die <gui>Markierungsliste</gui> nur Markierungen an, die "
+"Ihren Fotos zugeordnet sind. Sie können aber auch die Markierungen Ihrer "
+"Textdokumente, Ihrer Videos usw. anzeigen lassen."
+
+#: C/tags_manage.page:64(p)
+#| msgid ""
+#| "From the <gui>main</gui> window, choose <guiseq><gui>Tags</gui><gui>Create "
+#| "New Tag...</gui></guiseq>."
+msgid ""
+"From the <gui>main</gui> window, choose <guiseq><gui>Tags</gui><gui>Show All "
+"Tags</gui></guiseq>."
+msgstr ""
+"Wählen Sie im <gui>Hauptfenster</gui> <guiseq><gui>Markierungen</"
+"gui><gui>Alle Markierungen anzeigen</gui></guiseq>."
+
+#: C/tags_manage.page:71(title)
 msgid "Delete a tag."
 msgstr "Eine Markierung entfernen."
 
-#: C/tags_manage.page:60(p)
+#: C/tags_manage.page:73(p)
 msgid "You can delete a tag."
 msgstr "Sie können eine Markierung entfernen."
 
-#: C/tags_manage.page:64(p)
+#: C/tags_manage.page:77(p)
 msgid "In the <gui>Tag List</gui>, click on the tag you want to delete."
 msgstr ""
 "Klicken Sie in der <gui>Markierungsliste</gui> auf die Markierung, welche Sie "
 "löschen wollen."
 
-#: C/tags_manage.page:67(p)
+#: C/tags_manage.page:80(p)
 msgid ""
 "Choose <guiseq><gui>Tags</gui><gui>Delete Selected Tag</gui></guiseq> to "
 "delete this tag."
@@ -218,7 +242,7 @@ msgstr ""
 msgid "0"
 msgstr "0"
 
-#: C/keys.page:43(title) C/index.page:38(title)
+#: C/keys.page:43(title) C/index.page:39(title)
 msgid "Tags"
 msgstr "Markierungen"
 
@@ -328,6 +352,19 @@ msgstr "Letztes Foto"
 msgid "Go to the last photo."
 msgstr "Zum letzten Foto in der Sammlung gehen."
 
+#: C/keys.page:108(p)
+msgid "Quit Enlarged mode"
+msgstr "Vergrößert-Modus beenden"
+
+#: C/keys.page:108(p)
+#| msgid "Go to fullscreen mode and go back to windowed mode."
+msgid "Quit the Enlarged mode and go to Browser mode."
+msgstr "Den Vergrößert-Modus beenden und zum Browsermodus wechseln."
+
+#: C/keys.page:109(key)
+msgid "Escape"
+msgstr "Esc"
+
 #: C/howto_search.page:6(desc)
 msgid "Filters your photos."
 msgstr "Filtert Ihre Fotos."
@@ -337,26 +374,45 @@ msgid "How do I use the search function?"
 msgstr "Wie benutze ich die Suchfunktion?"
 
 #: C/howto_search.page:17(p)
+#| msgid ""
+#| "Actually you have to drag and drop one or more filters to the <gui>Search "
+#| "Basket</gui>. <app>Solang</app> will display only photos that correspond "
+#| "to all the filters you have chosen. Today only tags are filters."
 msgid ""
 "Actually you have to drag and drop one or more filters to the <gui>Search "
 "Basket</gui>. <app>Solang</app> will display only photos that correspond to "
-"all the filters you have chosen. Today only tags are filters."
+"all the filters you have chosen. Tags and photos properties are filters."
 msgstr ""
 "Derzeit müssen Sie einen oder mehrere Filter in den <gui>Suchkorb</gui> "
 "ziehen und dort ablegen. <app>Solang</app> zeigt dann nur Fotos an, die auf "
 "alle von Ihnen gewählten Filter passen. Gegenwärtig können nur Markierungen "
-"als Filter verwendet werden."
+"und Eigenschaften der Fotos als Filter verwendet werden."
 
 #: C/howto_search.page:19(p)
+#| msgid ""
+#| "To add a filter drag a tag from the <gui>Tag List</gui> to the <gui>Search "
+#| "Basket</gui>."
 msgid ""
-"To add a filter drag a tag from the <gui>Tag List</gui> to the <gui>Search "
-"Basket</gui>."
+"To add a tag filter drag a tag from the <gui>Tag List</gui> to the "
+"<gui>Search Basket</gui>."
 msgstr ""
 "Um einen Filter hinzuzufügen, ziehen Sie eine Markierung aus der "
 "<gui>Markierungsliste</gui> in den <gui>Suchkorb</gui> und legen Sie sie dort "
 "ab."
 
 #: C/howto_search.page:20(p)
+#| msgid ""
+#| "To add a filter drag a tag from the <gui>Tag List</gui> to the <gui>Search "
+#| "Basket</gui>."
+msgid ""
+"To add a property filter drag a property (for example Camera) from the "
+"<gui>Basic Properties List</gui> to the <gui>Search Basket</gui>."
+msgstr ""
+"Um einen Eigenschaftsfilter hinzuzufügen, ziehen Sie eine Eigenschaft (z.B. "
+"die Kamera) aus der <gui>Eigenschaftsliste</gui> in den <gui>Suchkorb</gui> "
+"und legen Sie sie dort ab."
+
+#: C/howto_search.page:21(p)
 msgid ""
 "To remove all the filters, right-click on a filter and choose <gui>Select "
 "All</gui>, then righ-click on the same filter and choose <gui>Remove</gui>."
@@ -365,7 +421,7 @@ msgstr ""
 "Filter und wählen Sie <gui>Alles auswählen</gui>. Dann klicken Sie erneut auf "
 "den gleichen Filter und wählen Sie <gui>Entfernen</gui>."
 
-#: C/howto_search.page:21(p)
+#: C/howto_search.page:22(p)
 msgid ""
 "To remove one filter, right-click on the filter you want to remove in the "
 "<gui>Search Basket</gui> and choose <gui>Remove</gui>."
@@ -374,7 +430,7 @@ msgstr ""
 "rechten Maustaste auf den gewünschten Filter und wählen Sie <gui>Entfernen</"
 "gui>."
 
-#: C/howto_search.page:24(p)
+#: C/howto_search.page:25(p)
 msgid ""
 "What's more you can use the <gui>Free text search</gui> entry to filter "
 "photos name."
@@ -382,12 +438,12 @@ msgstr ""
 "Sie können das <gui>Textsuchfeld</gui> verwenden, um Fotos nach Namen zu "
 "filtern."
 
-#: C/howto_search.page:26(p)
+#: C/howto_search.page:27(p)
 msgid ""
 "Write the text you want to search in the <gui>Free text search</gui> entry"
 msgstr "Geben Sie den zu suchenden Text in die <gui>Textsuchzeile</gui> ein."
 
-#: C/howto_search.page:27(p)
+#: C/howto_search.page:28(p)
 msgid "Press <key>Enter</key>"
 msgstr "Drücken Sie die <key>Eingabetaste</key>."
 
@@ -442,7 +498,7 @@ msgstr ""
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
 #: C/intro.page:24(None)
-msgid "@@image: 'figures/main-window.png'; md5=3531b20d31fd0896d595d3fd691e4944"
+msgid "@@image: 'figures/main-window.png'; md5=dd683ccfcb174192e89aaee8d58294ba"
 msgstr ""
 
 #: C/intro.page:6(desc)
@@ -593,7 +649,7 @@ msgstr "Allgemeine Fragen"
 msgid "Exporting photos"
 msgstr "Fotos exportieren"
 
-#: C/index.page:47(title)
+#: C/index.page:48(title)
 msgid "Tips and Tricks"
 msgstr "Tipps und Tricks"
 
@@ -694,54 +750,37 @@ msgstr ""
 "Um sicher zu gehen, dass <app>Tracker</app> Ihre Fotos indiziert, verwenden "
 "Sie die Einstellungen der <app>Tracker Suche</app> im Menü <gui>System</gui>."
 
-#: C/export_folder.page:6(desc)
+#: C/export_folder.page:7(desc)
 msgid "To copy photos in a archive or a folder."
 msgstr "Kopieren von Fotos in ein Archiv oder einen Ordner."
 
-#: C/export_folder.page:15(title)
+#: C/export_folder.page:16(title)
 msgid "Archive your photos"
 msgstr "Archivieren Ihrer Fotos"
 
-#: C/export_folder.page:16(p)
+#: C/export_folder.page:17(p)
 msgid ""
 "You can copy photos to a directory of your computer or put them in a archive."
 msgstr ""
 "Sie können Fotos in einen Ordner auf Ihrem Rechner kopieren oder sie in ein "
 "Archiv verschieben."
 
-#: C/export_folder.page:18(p)
+#: C/export_folder.page:19(p)
+#| msgid ""
+#| "First you have to add the photos you want to export to the export queue. "
+#| "There are many ways to add a photo to the Export Queue."
 msgid ""
-"First you have to add the photos you want to export to the export queue. "
-"There are many ways to add a photo to the Export Queue."
+"First you have to <link xref=\"export_queue\">add the photos you want to "
+"export to the Export Queue</link>."
 msgstr ""
-"Zunächst müssen Sie die zu exportierenden Fotos zur Exportwarteschlange "
-"hinzufügen. Es gibt mehrere Möglichkeiten, ein Foto zur Exportwarteschlange "
-"hinzuzufügen."
+"Zunächst müssen Sie die zu exportierenden Fotos <link xref=\"export_queue"
+"\">zur Exportwarteschlange hinzufügen</link>."
 
 #: C/export_folder.page:21(p)
-msgid "Right-click on a photo."
-msgstr "Klicken Sie mit der rechten Maustaste auf ein Foto."
-
-#: C/export_folder.page:24(p)
-msgid "Choose <gui>Add to Export Queue</gui>."
-msgstr "Wählen Sie <gui>Zur Exportwarteschlange hinzufügen</gui>."
-
-#: C/export_folder.page:29(p)
-msgid "Select one or more photos you want to export."
-msgstr ""
-"Wählen Sie ein Foto oder mehrere Fotos aus, welche Sie exportieren wollen."
-
-#: C/export_folder.page:32(p)
-msgid "Choose <guiseq><gui>Edit</gui><gui>Add to Export Queue</gui></guiseq>."
-msgstr ""
-"Wählen Sie <guiseq><gui>Bearbeiten</gui><gui>Zur Exportwarteschlange "
-"hinzufügen</gui></guiseq>."
-
-#: C/export_folder.page:36(p)
 msgid "Now you have to export your Export Queue to a folder."
 msgstr "Nun müssen Sie die Exportwarteschlange in einen Ordner exportieren."
 
-#: C/export_folder.page:39(p)
+#: C/export_folder.page:24(p)
 msgid ""
 "Choose <guiseq><gui>Photos</gui><gui>Export to</gui><gui>Folder...</gui></"
 "guiseq>."
@@ -749,7 +788,7 @@ msgstr ""
 "Wählen Sie <guiseq><gui>Fotos</gui><gui>Exportieren nach</gui><gui>Ordner …</"
 "gui></guiseq>."
 
-#: C/export_folder.page:42(p)
+#: C/export_folder.page:27(p)
 msgid ""
 "From the <gui>Export</gui> window, choose the directory you want your photos "
 "to be exported to."
@@ -757,7 +796,7 @@ msgstr ""
 "Wählen Sie im <gui>Export</gui>-Fenster den Ordner aus, in den Sie die Fotos "
 "exportieren wollen."
 
-#: C/export_folder.page:45(p)
+#: C/export_folder.page:30(p)
 msgid ""
 "Check <gui>Create an archive</gui> if you want your photos to be packed up in "
 "a compressed archive. It can be useful if you want to send the photos by e-"
@@ -772,7 +811,7 @@ msgstr ""
 "Ordner gespeichert. Anderenfalls werden die Fotos direkt in den von Ihnen "
 "gewählten Ordner kopiert."
 
-#: C/export_folder.page:49(p)
+#: C/export_folder.page:34(p)
 msgid "Choose <gui>Export</gui> to export the photos."
 msgstr "Wählen Sie <gui>Exportieren</gui>, um die Fotos zu exportieren."
 
@@ -780,3 +819,19 @@ msgstr "Wählen Sie <gui>Exportieren</gui>, um die Fotos zu exportieren."
 #: C/index.page:0(None)
 msgid "translator-credits"
 msgstr "Mario Blättermann <mariobl@gnome.org>, 2010."
+
+#~ msgid "Right-click on a photo."
+#~ msgstr "Klicken Sie mit der rechten Maustaste auf ein Foto."
+
+#~ msgid "Choose <gui>Add to Export Queue</gui>."
+#~ msgstr "Wählen Sie <gui>Zur Exportwarteschlange hinzufügen</gui>."
+
+#~ msgid "Select one or more photos you want to export."
+#~ msgstr ""
+#~ "Wählen Sie ein Foto oder mehrere Fotos aus, welche Sie exportieren wollen."
+
+#~ msgid ""
+#~ "Choose <guiseq><gui>Edit</gui><gui>Add to Export Queue</gui></guiseq>."
+#~ msgstr ""
+#~ "Wählen Sie <guiseq><gui>Bearbeiten</gui><gui>Zur Exportwarteschlange "
+#~ "hinzufügen</gui></guiseq>."
