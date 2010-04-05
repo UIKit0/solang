@@ -1,0 +1,653 @@
+# Serbian translation of Solang
+# Courtesy of Prevod.org team (http://prevod.org/) — 2010.
+#
+# This file is distributed under the same license as the Solang package.
+#
+# Милош Поповић <gpopac@gmail.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Solang 0.4.1\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=solang&component=General\n"
+"POT-Creation-Date: 2010-04-04 12:36+0000\n"
+"PO-Revision-Date: 2010-04-05 13:42+0200\n"
+"Last-Translator:   <gpopac@gmail.com>\n"
+"Language-Team: Serbian <sr@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/solang.desktop.in.in.h:1
+msgid "@PACKAGE_NAME@ Photo Manager"
+msgstr "@PACKAGE_NAME@ уредник фотографија"
+
+#: ../data/solang.desktop.in.in.h:2
+msgid "Organize, enjoy and share your photos"
+msgstr "Организујте, делите и уживајте у вашим фотографијама"
+
+#: ../data/solang.desktop.in.in.h:3
+msgid "Photo Manager"
+msgstr "Уредник фотографија"
+
+#: ../src/application/main-window.cpp:226
+msgid "_Photo"
+msgstr "_Фотографија"
+
+#: ../src/application/main-window.cpp:235
+#: ../src/renderer/browser-renderer.cpp:194
+msgid "_Edit"
+msgstr "_Уређивање"
+
+#: ../src/application/main-window.cpp:240
+#: ../src/renderer/browser-renderer.cpp:199
+msgid "_Add to Export Queue"
+msgstr "_Закажи за извоз"
+
+#: ../src/application/main-window.cpp:247
+msgid "_Clear Export Queue"
+msgstr "_Очисти заказане извозе"
+
+#: ../src/application/main-window.cpp:252
+msgid "_View"
+msgstr "П_реглед"
+
+#: ../src/application/main-window.cpp:256
+msgid "_Toolbar"
+msgstr "_Алатница"
+
+#: ../src/application/main-window.cpp:257
+msgid "Show or hide the toolbar in the current window"
+msgstr "Приказује или сакрива алатницу у тренутном прозору"
+
+#: ../src/application/main-window.cpp:263
+msgid "_Statusbar"
+msgstr "Трака _са стањем"
+
+#: ../src/application/main-window.cpp:264
+msgid "Show or hide the statusbar in the current window"
+msgstr "Приказује или сакрива траку са стањем у тренутном прозору"
+
+#: ../src/application/main-window.cpp:271
+msgid "_Full Screen"
+msgstr "_Цео екран"
+
+#: ../src/application/main-window.cpp:272
+msgid "Show the current photo in full screen mode"
+msgstr "Приказује фотографију преко целог екрана"
+
+#: ../src/application/main-window.cpp:289
+msgid "_Help"
+msgstr "_Помоћ"
+
+#: ../src/application/main-window.cpp:294
+msgid "_Contents"
+msgstr "_Садржај"
+
+#: ../src/application/main-window.cpp:662
+msgid "A photo manager for GNOME"
+msgstr "Уређивање фотографија у Гному"
+
+#. Translators: Put your names here.
+#: ../src/application/main-window.cpp:693
+msgid "translator-credits"
+msgstr "Милош Поповић <gpopac@gmail.com>"
+
+#: ../src/application/main-window.cpp:698
+msgctxt "Project website"
+msgid "%1 Website"
+msgstr "%1 веб страница"
+
+#: ../src/attribute/basic-exif-view.cpp:93
+msgid "Camera"
+msgstr "Фото-апарат"
+
+#: ../src/attribute/basic-exif-view.cpp:112
+msgid "Exposure time"
+msgstr "Експозиција"
+
+#: ../src/attribute/basic-exif-view.cpp:132
+msgid "Flash"
+msgstr "Блиц"
+
+#: ../src/attribute/basic-exif-view.cpp:152
+msgid "F-number"
+msgstr "Отвор бленде"
+
+#: ../src/attribute/basic-exif-view.cpp:171
+msgid "ISO speed"
+msgstr "ИСО вредност"
+
+#: ../src/attribute/basic-exif-view.cpp:190
+msgid "Metering mode"
+msgstr "Мерење светла"
+
+#: ../src/attribute/basic-exif-view.cpp:211
+msgid "Focal length"
+msgstr "Жижна даљина"
+
+#: ../src/attribute/basic-exif-view.cpp:231
+msgid "White balance"
+msgstr "Баланс беле"
+
+#: ../src/attribute/date-manager.cpp:50
+msgid "Picture Taken Date"
+msgstr "Датум настанка"
+
+#: ../src/attribute/property-manager.cpp:49
+msgid "Properties"
+msgstr "Особине"
+
+#: ../src/attribute/property-manager.cpp:75
+msgid "Basic"
+msgstr "Основно"
+
+#: ../src/attribute/property-manager.cpp:76
+msgid "Histogram"
+msgstr "Хистограм"
+
+#: ../src/attribute/search-manager.cpp:52
+msgid "Search"
+msgstr "Претрага"
+
+#: ../src/attribute/search-manager.cpp:66
+msgid "Select _All"
+msgstr "Изабери _све"
+
+#: ../src/attribute/search-manager.cpp:67
+msgid "Select all the filters in this list"
+msgstr "Бира све филтере са списка"
+
+#: ../src/attribute/search-manager.cpp:75
+msgid "_Remove"
+msgstr "_Уклони"
+
+#: ../src/attribute/search-manager.cpp:76
+msgid "Remove the selected filters from this list"
+msgstr "Уклања изабране филтере са списка"
+
+#: ../src/attribute/tag-manager.cpp:54
+msgid "Tags"
+msgstr "Ознаке"
+
+#: ../src/attribute/tag-manager.cpp:106
+msgid "_Tags"
+msgstr "_Ознаке"
+
+#: ../src/attribute/tag-manager.cpp:111
+msgid "Create New _Tag..."
+msgstr "_Направи нову ознаку..."
+
+#: ../src/attribute/tag-manager.cpp:118
+msgid "_Edit Selected Tag..."
+msgstr "_Уреди изабрану ознаку..."
+
+#: ../src/attribute/tag-manager.cpp:125
+msgid "_Delete Selected Tag"
+msgstr "Из_бриши изабрану ознаку"
+
+#: ../src/attribute/tag-manager.cpp:131
+msgid "_Attach Tag to Selection"
+msgstr "_Додај ознаку на изабране"
+
+#: ../src/attribute/tag-manager.cpp:138
+msgid "_Remove Tag From Selection"
+msgstr "У_клони ознаку из избора"
+
+#: ../src/attribute/tag-manager.cpp:144
+msgid "_Show All Tags"
+msgstr "_Прикажи све ознаке"
+
+#: ../src/attribute/tag-new-dialog.cpp:39
+#: ../src/attribute/tag-new-dialog.cpp:69
+msgid "Parent:"
+msgstr "Родитељска:"
+
+#: ../src/attribute/tag-new-dialog.cpp:44
+#: ../src/attribute/tag-new-dialog.cpp:74
+msgid "Name:"
+msgstr "Име:"
+
+#: ../src/attribute/tag-new-dialog.cpp:49
+#: ../src/attribute/tag-new-dialog.cpp:79
+msgid "Description:"
+msgstr "Опис:"
+
+#: ../src/attribute/tag-new-dialog.cpp:56
+msgid "Create New Tag"
+msgstr "Направи нову ознаку"
+
+#: ../src/attribute/tag-new-dialog.cpp:127
+msgid "Select Tag Icon"
+msgstr "Изаберите иконицу за ознаку"
+
+#: ../src/common/exif-data.cpp:161
+msgctxt "Flash"
+msgid "Off"
+msgstr "Искључено"
+
+#: ../src/common/exif-data.cpp:165
+msgctxt "Flash"
+msgid "On"
+msgstr "Укључено"
+
+#: ../src/common/exif-data.cpp:199
+msgctxt "Metering mode"
+msgid "Average"
+msgstr "Просек"
+
+#: ../src/common/exif-data.cpp:204
+msgctxt "Metering mode"
+msgid "Center Weighted Average"
+msgstr "Просек из центра"
+
+#: ../src/common/exif-data.cpp:208
+msgctxt "Metering mode"
+msgid "Spot"
+msgstr "Из тачке"
+
+#: ../src/common/exif-data.cpp:212
+msgctxt "Metering mode"
+msgid "Multi-spot"
+msgstr "Из више тачака"
+
+#: ../src/common/exif-data.cpp:216
+msgctxt "Metering mode"
+msgid "Pattern"
+msgstr "По образцу"
+
+#: ../src/common/exif-data.cpp:220
+msgctxt "Metering mode"
+msgid "Partial"
+msgstr "Делимично"
+
+#: ../src/common/exif-data.cpp:236
+msgctxt "White balance"
+msgid "Automatic"
+msgstr "Аутоматски"
+
+#: ../src/common/exif-data.cpp:240
+msgctxt "White balance"
+msgid "Manual"
+msgstr "Ручно"
+
+#: ../src/common/histogram-viewer.cpp:38
+msgid "Type"
+msgstr "Врста"
+
+#: ../src/common/histogram-viewer.cpp:43
+msgid "Channels"
+msgstr "Број канала"
+
+#: ../src/common/histogram-viewer.cpp:68
+msgctxt "Scale"
+msgid "Linear"
+msgstr "Линеарни"
+
+#: ../src/common/histogram-viewer.cpp:73
+msgctxt "Scale"
+msgid "Logarithmic"
+msgstr "Логаритамски"
+
+#: ../src/common/histogram-viewer.cpp:81
+msgid "RGB"
+msgstr "РГБ"
+
+#: ../src/common/histogram-viewer.cpp:86
+msgid "Red"
+msgstr "Црвена"
+
+#: ../src/common/histogram-viewer.cpp:91
+msgid "Green"
+msgstr "Зелена"
+
+#: ../src/common/histogram-viewer.cpp:96
+msgid "Blue"
+msgstr "Плава"
+
+#: ../src/common/progress-dialog.cpp:36
+msgid "Pending Operations"
+msgstr "Заказане радње"
+
+#: ../src/common/progress-observer.h:166
+msgid "%1 of %2 completed"
+msgstr "Завршена је %1 од %2"
+
+#: ../src/common/progress-observer.h:175
+msgid "%1%% complete"
+msgstr "%1%% завршених"
+
+#: ../src/editor/editor.cpp:114
+msgid "T_ools"
+msgstr "_Алатке"
+
+#: ../src/editor/editor.cpp:118
+msgid "_Transform"
+msgstr "_Трансформиши"
+
+#: ../src/editor/editor.cpp:124
+msgid "Flip _Horizontal"
+msgstr "Окрени _хоризонтално"
+
+#: ../src/editor/editor.cpp:125
+msgid "Mirror the photo horizontally"
+msgstr "Пресликава слику у односу на хоризонталну осу"
+
+#: ../src/editor/editor.cpp:136
+msgid "Flip _Vertical"
+msgstr "Окрени _вертикално"
+
+#: ../src/editor/editor.cpp:137
+msgid "Mirror the photo vertically"
+msgstr "Пресликава слику у односу на вертикалну осу"
+
+#: ../src/editor/editor.cpp:148
+msgid "_Rotate Clockwise"
+msgstr "Окрени у_десно"
+
+#: ../src/editor/editor.cpp:149
+msgid "Rotate the photo 90 degrees to the right"
+msgstr "Окреће слику за 90 степени удесно"
+
+#: ../src/editor/editor.cpp:160
+msgid "Rotate Counterc_lockwise"
+msgstr "Окрени у_лево"
+
+#: ../src/editor/editor.cpp:161
+msgid "Rotate the photo 90 degrees to the left"
+msgstr "Окреће слику за 90 степени улево"
+
+#: ../src/editor/flip-horiz-operation.cpp:43
+msgid "Flipping horizontally..."
+msgstr "Пресликавам хоризонтално..."
+
+#: ../src/editor/flip-operation.cpp:59
+msgid "Flipping..."
+msgstr "Пресликавам..."
+
+#: ../src/editor/flip-vert-operation.cpp:43
+msgid "Flipping vertically..."
+msgstr "Пресликавам вертикално..."
+
+#: ../src/editor/rotate-clock-operation.cpp:43
+msgid "Rotating clockwise..."
+msgstr "Окрећем удесно..."
+
+#: ../src/editor/rotate-counter-operation.cpp:43
+msgid "Rotating counterclockwise..."
+msgstr "Окрећем улево..."
+
+#: ../src/editor/rotate-operation.cpp:57
+msgid "Rotating..."
+msgstr "Окрећем..."
+
+#: ../src/exporter/brasero-destination.cpp:144
+msgid "_CD/DVD..."
+msgstr "_ЦД/ДВД..."
+
+#: ../src/exporter/brasero-destination.cpp:186
+msgid "Export to CD/DVD"
+msgstr "Извези на ЦД или ДВД диск"
+
+#: ../src/exporter/directory-destination.cpp:95
+msgid "Exporting photos"
+msgstr "Извозим фотографије"
+
+#: ../src/exporter/directory-destination.cpp:181
+msgid "Select Folder"
+msgstr "Изабери фасциклу"
+
+#: ../src/exporter/directory-destination.cpp:190
+msgid "_Folder..."
+msgstr "_Фасцикла..."
+
+#: ../src/exporter/exporter.cpp:192
+msgid "Creating archive"
+msgstr "Правим архиву"
+
+#: ../src/exporter/exporter-dialog.cpp:33
+msgid "Export"
+msgstr "Извези"
+
+#: ../src/exporter/exporter-dialog.cpp:45
+msgid "_Create an archive"
+msgstr "_Направи архиву"
+
+#: ../src/exporter/exporter-dialog.cpp:64
+msgctxt "A group of UI controls"
+msgid "Destination"
+msgstr "Одредиште"
+
+#: ../src/exporter/exporter-dialog.cpp:80
+msgctxt "A group of UI controls"
+msgid "Options"
+msgstr "Опције"
+
+#: ../src/exporter/exporter-dialog.cpp:105
+msgid "_Export"
+msgstr "_Извези"
+
+#: ../src/renderer/browser-renderer.cpp:207
+#: ../src/renderer/enlarged-renderer.cpp:304
+msgid "_Slideshow"
+msgstr "Пок_ретни приказ"
+
+#: ../src/renderer/browser-renderer.cpp:208
+#: ../src/renderer/enlarged-renderer.cpp:305
+msgid "Start a slideshow view of the photos"
+msgstr "Покреће покретни приказ фотографија"
+
+#: ../src/renderer/browser-renderer.cpp:217
+msgid "Enlarge or shrink the thumbnails"
+msgstr "Увећава или смањује умањене приказе слика"
+
+#: ../src/renderer/browser-renderer.cpp:239
+#: ../src/renderer/enlarged-renderer.cpp:317
+#: ../src/renderer/enlarged-renderer.cpp:453
+#: ../src/renderer/enlarged-renderer.cpp:462
+#: ../src/renderer/enlarged-renderer.cpp:471
+msgid "_Zoom In"
+msgstr "У_већај"
+
+#: ../src/renderer/browser-renderer.cpp:240
+msgid "Enlarge the thumbnails"
+msgstr "Повећава умањени приказ"
+
+#: ../src/renderer/browser-renderer.cpp:251
+msgid "_Zoom Out"
+msgstr "У_мањи"
+
+#: ../src/renderer/browser-renderer.cpp:252
+msgid "Shrink the thumbnails"
+msgstr "Умањује умањени приказ"
+
+#: ../src/renderer/browser-renderer.cpp:263
+#: ../src/renderer/enlarged-renderer.cpp:312
+msgid "_Go"
+msgstr "_Иди"
+
+#: ../src/renderer/browser-renderer.cpp:268
+msgid "_Previous Page"
+msgstr "_Претходна страница"
+
+#: ../src/renderer/browser-renderer.cpp:269
+msgid "Go to the previous page in the collection"
+msgstr "Иде на претходну страницу унутар збирке"
+
+#: ../src/renderer/browser-renderer.cpp:272
+#: ../src/renderer/enlarged-renderer.cpp:378
+#: ../src/renderer/slideshow-renderer.cpp:169
+#: ../src/renderer/slideshow-renderer.cpp:213
+msgctxt "Navigation"
+msgid "Previous"
+msgstr "Претходна"
+
+#: ../src/renderer/browser-renderer.cpp:284
+msgid "_Next Page"
+msgstr "_Наредна страница"
+
+#: ../src/renderer/browser-renderer.cpp:285
+msgid "Go to the next page in the collection"
+msgstr "Иде на наредну страницу унутар збирке"
+
+#: ../src/renderer/browser-renderer.cpp:288
+#: ../src/renderer/enlarged-renderer.cpp:393
+#: ../src/renderer/slideshow-renderer.cpp:178
+#: ../src/renderer/slideshow-renderer.cpp:222
+msgctxt "Navigation"
+msgid "Next"
+msgstr "Наредна"
+
+#: ../src/renderer/browser-renderer.cpp:299
+msgid "_First Page"
+msgstr "По_четна страница"
+
+#: ../src/renderer/browser-renderer.cpp:300
+msgid "Go to the first page in the collection"
+msgstr "Иде на почетну страницу збирке"
+
+#: ../src/renderer/browser-renderer.cpp:312
+msgid "_Last Page"
+msgstr "По_следња страница"
+
+#: ../src/renderer/browser-renderer.cpp:313
+msgid "Go to the last page in the collection"
+msgstr "Иде на последњу страницу збирке"
+
+#: ../src/renderer/enlarged-renderer.cpp:72
+msgctxt "Mode or view"
+msgid "Enlarged"
+msgstr "Увећано"
+
+#: ../src/renderer/enlarged-renderer.cpp:318
+#: ../src/renderer/enlarged-renderer.cpp:454
+#: ../src/renderer/enlarged-renderer.cpp:463
+#: ../src/renderer/enlarged-renderer.cpp:472
+#: ../src/renderer/slideshow-window.cpp:75
+#: ../src/renderer/slideshow-window.cpp:110
+#: ../src/renderer/slideshow-window.cpp:119
+#: ../src/renderer/slideshow-window.cpp:128
+msgid "Enlarge the photo"
+msgstr "Увећај фотографију"
+
+#: ../src/renderer/enlarged-renderer.cpp:320
+#: ../src/renderer/slideshow-window.cpp:74
+#: ../src/renderer/slideshow-window.cpp:109
+#: ../src/renderer/slideshow-window.cpp:118
+#: ../src/renderer/slideshow-window.cpp:127
+msgctxt "Zoom"
+msgid "In"
+msgstr "+"
+
+#: ../src/renderer/enlarged-renderer.cpp:331
+#: ../src/renderer/enlarged-renderer.cpp:480
+#: ../src/renderer/enlarged-renderer.cpp:489
+msgid "Zoom _Out"
+msgstr "У_мањи"
+
+#: ../src/renderer/enlarged-renderer.cpp:332
+#: ../src/renderer/enlarged-renderer.cpp:481
+#: ../src/renderer/enlarged-renderer.cpp:490
+#: ../src/renderer/slideshow-window.cpp:84
+#: ../src/renderer/slideshow-window.cpp:137
+#: ../src/renderer/slideshow-window.cpp:146
+msgid "Shrink the photo"
+msgstr "Смањује фотографију"
+
+#: ../src/renderer/enlarged-renderer.cpp:334
+#: ../src/renderer/slideshow-window.cpp:83
+#: ../src/renderer/slideshow-window.cpp:136
+#: ../src/renderer/slideshow-window.cpp:145
+msgctxt "Zoom"
+msgid "Out"
+msgstr "-"
+
+#: ../src/renderer/enlarged-renderer.cpp:345
+msgid "_Normal Size"
+msgstr "О_бична величина"
+
+#: ../src/renderer/enlarged-renderer.cpp:346
+#: ../src/renderer/slideshow-window.cpp:93
+msgid "Show the photo at its normal size"
+msgstr "Приказује фотографију у нормалној величини"
+
+#: ../src/renderer/enlarged-renderer.cpp:349
+#: ../src/renderer/slideshow-window.cpp:92
+msgctxt "Zoom"
+msgid "Normal"
+msgstr "Обична"
+
+#: ../src/renderer/enlarged-renderer.cpp:360
+msgid "Best _Fit"
+msgstr "Најбоље _уклопи"
+
+#: ../src/renderer/enlarged-renderer.cpp:361
+#: ../src/renderer/slideshow-window.cpp:102
+msgid "Fit the photo to the window"
+msgstr "Уклапа фотографију"
+
+#: ../src/renderer/enlarged-renderer.cpp:363
+#: ../src/renderer/slideshow-window.cpp:101
+msgctxt "Zoom"
+msgid "Fit"
+msgstr "Уклопи"
+
+#: ../src/renderer/enlarged-renderer.cpp:374
+#: ../src/renderer/enlarged-renderer.cpp:420
+msgid "_Previous Photo"
+msgstr "П_ретходна фотографија"
+
+#: ../src/renderer/enlarged-renderer.cpp:375
+#: ../src/renderer/enlarged-renderer.cpp:421
+#: ../src/renderer/slideshow-renderer.cpp:170
+#: ../src/renderer/slideshow-renderer.cpp:214
+msgid "Go to the previous photo in the collection"
+msgstr "Иде на претходну фотографију у збирци"
+
+#: ../src/renderer/enlarged-renderer.cpp:389
+#: ../src/renderer/enlarged-renderer.cpp:429
+msgid "_Next Photo"
+msgstr "_Наредна фотографија"
+
+#: ../src/renderer/enlarged-renderer.cpp:390
+#: ../src/renderer/enlarged-renderer.cpp:430
+#: ../src/renderer/slideshow-renderer.cpp:179
+#: ../src/renderer/slideshow-renderer.cpp:223
+msgid "Go to the next photo in the collection"
+msgstr "Иде на наредну фотографију у збирци"
+
+#: ../src/renderer/enlarged-renderer.cpp:404
+#: ../src/renderer/enlarged-renderer.cpp:437
+msgid "_First Photo"
+msgstr "_Почетна фотографија"
+
+#: ../src/renderer/enlarged-renderer.cpp:405
+#: ../src/renderer/enlarged-renderer.cpp:438
+#: ../src/renderer/slideshow-renderer.cpp:162
+#: ../src/renderer/slideshow-renderer.cpp:206
+msgid "Go to the first photo in the collection"
+msgstr "Иде на почетну фотографију у збирци"
+
+#: ../src/renderer/enlarged-renderer.cpp:412
+#: ../src/renderer/enlarged-renderer.cpp:445
+msgid "_Last Photo"
+msgstr "П_оследња фотографија"
+
+#: ../src/renderer/enlarged-renderer.cpp:413
+#: ../src/renderer/enlarged-renderer.cpp:446
+#: ../src/renderer/slideshow-renderer.cpp:187
+#: ../src/renderer/slideshow-renderer.cpp:231
+msgid "Go to the last photo in the collection"
+msgstr "Иде на последњу фотографију у збирци"
+
+#: ../src/renderer/slideshow-renderer.cpp:161
+#: ../src/renderer/slideshow-renderer.cpp:205
+msgctxt "Navigation"
+msgid "First"
+msgstr "Прва"
+
+#: ../src/renderer/slideshow-renderer.cpp:186
+#: ../src/renderer/slideshow-renderer.cpp:230
+msgctxt "Navigation"
+msgid "Last"
+msgstr "Последња"
