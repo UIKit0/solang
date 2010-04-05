@@ -83,8 +83,7 @@ TagNewDialog::TagNewDialog( const TagPtr &tag ) throw() :
     descriptionScrolledWindow_(),
     descriptionTextView_()
 {
-    Glib::ustring title = "Edit Tag:" + tag->get_name();
-    set_title(_( title.c_str() ));
+    set_title(_("Edit Tag"));
 
     setup_gui();
 
