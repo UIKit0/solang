@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: solang.po.master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=solang&component=General\n"
-"POT-Creation-Date: 2010-03-27 02:35+0000\n"
-"PO-Revision-Date: 2010-03-27 13:40+0100\n"
+"POT-Creation-Date: 2010-04-05 15:12+0000\n"
+"PO-Revision-Date: 2010-04-06 14:54+0200\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -30,70 +30,70 @@ msgstr "Organice, diviértase y comparta sus fotos"
 msgid "Photo Manager"
 msgstr "Gestor de fotografías"
 
-#: ../src/application/main-window.cpp:224
+#: ../src/application/main-window.cpp:226
 msgid "_Photo"
 msgstr "_Foto"
 
-#: ../src/application/main-window.cpp:233
+#: ../src/application/main-window.cpp:235
 #: ../src/renderer/browser-renderer.cpp:194
 msgid "_Edit"
 msgstr "_Editar"
 
-#: ../src/application/main-window.cpp:238
+#: ../src/application/main-window.cpp:240
 #: ../src/renderer/browser-renderer.cpp:199
 msgid "_Add to Export Queue"
 msgstr "_Añadir a la cola de exportación"
 
-#: ../src/application/main-window.cpp:245
+#: ../src/application/main-window.cpp:247
 msgid "_Clear Export Queue"
 msgstr "_Limpiar la cola de exportación"
 
-#: ../src/application/main-window.cpp:250
+#: ../src/application/main-window.cpp:252
 msgid "_View"
 msgstr "_Ver"
 
-#: ../src/application/main-window.cpp:254
+#: ../src/application/main-window.cpp:256
 msgid "_Toolbar"
 msgstr "Barra de _herramientas"
 
-#: ../src/application/main-window.cpp:255
+#: ../src/application/main-window.cpp:257
 msgid "Show or hide the toolbar in the current window"
 msgstr "Muestra u oculta la barra de herramientas en la ventana actual"
 
-#: ../src/application/main-window.cpp:261
+#: ../src/application/main-window.cpp:263
 msgid "_Statusbar"
 msgstr "Barra de _estado"
 
-#: ../src/application/main-window.cpp:262
+#: ../src/application/main-window.cpp:264
 msgid "Show or hide the statusbar in the current window"
 msgstr "Muestra u oculta la barra de estado en la ventana actual"
 
-#: ../src/application/main-window.cpp:269
+#: ../src/application/main-window.cpp:271
 msgid "_Full Screen"
 msgstr "Pantalla _completa"
 
-#: ../src/application/main-window.cpp:270
+#: ../src/application/main-window.cpp:272
 msgid "Show the current photo in full screen mode"
 msgstr "Mostrar la foto actual en modo a pantalla completa"
 
-#: ../src/application/main-window.cpp:287
+#: ../src/application/main-window.cpp:289
 msgid "_Help"
 msgstr "Ay_uda"
 
-#: ../src/application/main-window.cpp:292
+#: ../src/application/main-window.cpp:294
 msgid "_Contents"
 msgstr "Índ_ice"
 
-#: ../src/application/main-window.cpp:597
+#: ../src/application/main-window.cpp:662
 msgid "A photo manager for GNOME"
 msgstr "Un gestor de fotos para GNOME"
 
 #. Translators: Put your names here.
-#: ../src/application/main-window.cpp:628
+#: ../src/application/main-window.cpp:693
 msgid "translator-credits"
 msgstr "Jorge González <jorgegonz@svn.gnome.org>, 2007-2008."
 
-#: ../src/application/main-window.cpp:633
+#: ../src/application/main-window.cpp:698
 msgctxt "Project website"
 msgid "%1 Website"
 msgstr "Página web %1"
@@ -170,29 +170,33 @@ msgstr "Quitar los filtros seleccionados de esta lista"
 msgid "Tags"
 msgstr "Etiquetas"
 
-#: ../src/attribute/tag-manager.cpp:105
+#: ../src/attribute/tag-manager.cpp:106
 msgid "_Tags"
 msgstr "E_tiquetas"
 
-#: ../src/attribute/tag-manager.cpp:110
+#: ../src/attribute/tag-manager.cpp:111
 msgid "Create New _Tag..."
 msgstr "Crear una e_tiqueta…"
 
-#: ../src/attribute/tag-manager.cpp:117
+#: ../src/attribute/tag-manager.cpp:118
 msgid "_Edit Selected Tag..."
 msgstr "_Editar la etiqueta seleccionada…"
 
-#: ../src/attribute/tag-manager.cpp:124
+#: ../src/attribute/tag-manager.cpp:125
 msgid "_Delete Selected Tag"
 msgstr "_Borrar la etiqueta seleccionada"
 
-#: ../src/attribute/tag-manager.cpp:130
+#: ../src/attribute/tag-manager.cpp:131
 msgid "_Attach Tag to Selection"
 msgstr "_Adjuntar etiqueta a la selección"
 
-#: ../src/attribute/tag-manager.cpp:137
+#: ../src/attribute/tag-manager.cpp:138
 msgid "_Remove Tag From Selection"
 msgstr "_Quitar la etiqueta de la selección"
+
+#: ../src/attribute/tag-manager.cpp:144
+msgid "_Show All Tags"
+msgstr "_Mostrar todas las etiquetas"
 
 #: ../src/attribute/tag-new-dialog.cpp:39
 #: ../src/attribute/tag-new-dialog.cpp:69
@@ -213,7 +217,12 @@ msgstr "Descripción:"
 msgid "Create New Tag"
 msgstr "Crear nueva etiqueta"
 
-#: ../src/attribute/tag-new-dialog.cpp:127
+#: ../src/attribute/tag-new-dialog.cpp:86
+#| msgid "_Edit"
+msgid "Edit Tag"
+msgstr "Editar etiqueta"
+
+#: ../src/attribute/tag-new-dialog.cpp:126
 msgid "Select Tag Icon"
 msgstr "Seleccionar el icono de la etiqueta"
 
