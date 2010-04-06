@@ -1,4 +1,4 @@
-# German translation for solang.
+# German translation for the solang documentation.
 # Copyright (C) 2010 solang's COPYRIGHT HOLDER
 # This file is distributed under the same license as the solang package.
 # Mario Blättermann <mariobl@gnome.org>, 2010.
@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: solang master\n"
 "POT-Creation-Date: 2010-04-04 12:36+0000\n"
-"PO-Revision-Date: 2010-04-05 22:39+0100\n"
+"PO-Revision-Date: 2010-04-06 20:26+0100\n"
 "Last-Translator: Mario Blättermann <mariobl@gnome.org>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -131,9 +131,6 @@ msgstr ""
 "Textdokumente, Ihrer Videos usw. anzeigen lassen."
 
 #: C/tags_manage.page:64(p)
-#| msgid ""
-#| "From the <gui>main</gui> window, choose <guiseq><gui>Tags</gui><gui>Create "
-#| "New Tag...</gui></guiseq>."
 msgid ""
 "From the <gui>main</gui> window, choose <guiseq><gui>Tags</gui><gui>Show All "
 "Tags</gui></guiseq>."
@@ -374,10 +371,6 @@ msgid "How do I use the search function?"
 msgstr "Wie benutze ich die Suchfunktion?"
 
 #: C/howto_search.page:17(p)
-#| msgid ""
-#| "Actually you have to drag and drop one or more filters to the <gui>Search "
-#| "Basket</gui>. <app>Solang</app> will display only photos that correspond "
-#| "to all the filters you have chosen. Today only tags are filters."
 msgid ""
 "Actually you have to drag and drop one or more filters to the <gui>Search "
 "Basket</gui>. <app>Solang</app> will display only photos that correspond to "
@@ -389,9 +382,6 @@ msgstr ""
 "und Eigenschaften der Fotos als Filter verwendet werden."
 
 #: C/howto_search.page:19(p)
-#| msgid ""
-#| "To add a filter drag a tag from the <gui>Tag List</gui> to the <gui>Search "
-#| "Basket</gui>."
 msgid ""
 "To add a tag filter drag a tag from the <gui>Tag List</gui> to the "
 "<gui>Search Basket</gui>."
@@ -401,9 +391,6 @@ msgstr ""
 "ab."
 
 #: C/howto_search.page:20(p)
-#| msgid ""
-#| "To add a filter drag a tag from the <gui>Tag List</gui> to the <gui>Search "
-#| "Basket</gui>."
 msgid ""
 "To add a property filter drag a property (for example Camera) from the "
 "<gui>Basic Properties List</gui> to the <gui>Search Basket</gui>."
@@ -499,7 +486,7 @@ msgstr ""
 #. It doesn't matter what you translate it to: it's not used at all.
 #: C/intro.page:24(None)
 msgid "@@image: 'figures/main-window.png'; md5=dd683ccfcb174192e89aaee8d58294ba"
-msgstr ""
+msgstr "translated"
 
 #: C/intro.page:6(desc)
 msgid "Introduction to the <app>Solang</app> photos manager."
@@ -766,9 +753,6 @@ msgstr ""
 "Archiv verschieben."
 
 #: C/export_folder.page:19(p)
-#| msgid ""
-#| "First you have to add the photos you want to export to the export queue. "
-#| "There are many ways to add a photo to the Export Queue."
 msgid ""
 "First you have to <link xref=\"export_queue\">add the photos you want to "
 "export to the Export Queue</link>."
