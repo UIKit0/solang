@@ -2,33 +2,54 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2010-03-13 20:02+0000\n"
-"PO-Revision-Date: 2010-03-14 18:55+0200\n"
+"POT-Creation-Date: 2010-04-06 21:07+0000\n"
+"PO-Revision-Date: 2010-04-03 17:12+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <translation@linux.org.ua>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 1.0\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: C/legal.xml:3(p)
-msgid "This work is licensed under a <link href=\"http://creativecommons.org/licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported License</link>."
-msgstr "Ця робота розповсюджується за умов дотримання <link href=\"http://creativecommons.org/licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported License</link>."
+msgid ""
+"This work is licensed under a <link href=\"http://creativecommons.org/"
+"licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
+"License</link>."
+msgstr ""
+"Ця робота розповсюджується за умов дотримання <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/\">Creative Commons Attribution-Share "
+"Alike 3.0 Unported License</link>."
 
 #: C/legal.xml:6(p)
-msgid "As a special exception, the copyright holders give you permission to copy, modify, and distribute the example code contained in this document under the terms of your choosing, without restriction."
-msgstr "За виняткових обставин власники авторських прав можу надати вам дозвіл копіювати, змінювати і розповсюджувати приклади коду, що містяться у цьому документі, за довільних умов, без обмежень."
+msgid ""
+"As a special exception, the copyright holders give you permission to copy, "
+"modify, and distribute the example code contained in this document under the "
+"terms of your choosing, without restriction."
+msgstr ""
+"За виняткових обставин власники авторських прав можу надати вам дозвіл "
+"копіювати, змінювати і розповсюджувати приклади коду, що містяться у цьому "
+"документі, за довільних умов, без обмежень."
 
 #: C/tags_manage.page:7(desc)
 msgid "Create, modify and delete tags."
 msgstr "Створення, зміна та вилучення міток"
 
-#: C/tags_manage.page:11(name) C/keys.page:9(name) C/howto_search.page:10(name) C/tags_intro.page:9(name) C/intro.page:10(name) C/photos_by_page.page:10(name) C/index.page:7(name) C/tags_use.page:11(name) C/import.page:10(name) C/export_folder.page:10(name) C/index.page:7(name)
+#: C/tags_manage.page:11(name) C/keys.page:9(name)
+#: C/howto_search.page:10(name) C/tags_intro.page:9(name)
+#: C/intro.page:10(name) C/photos_by_page.page:10(name) C/index.page:7(name)
+#: C/tags_use.page:11(name) C/import.page:10(name)
+#: C/export_folder.page:11(name)
 msgid "Florent Thévenet"
 msgstr "Florent Thévenet"
 
-#: C/tags_manage.page:12(email) C/keys.page:10(email) C/howto_search.page:11(email) C/tags_intro.page:10(email) C/intro.page:11(email) C/photos_by_page.page:11(email) C/index.page:8(email) C/tags_use.page:12(email) C/import.page:11(email) C/export_folder.page:11(email) C/index.page:8(email)
+#: C/tags_manage.page:12(email) C/keys.page:10(email)
+#: C/howto_search.page:11(email) C/tags_intro.page:10(email)
+#: C/intro.page:11(email) C/photos_by_page.page:11(email)
+#: C/index.page:8(email) C/tags_use.page:12(email) C/import.page:11(email)
+#: C/export_folder.page:12(email)
 msgid "feuloren@free.fr"
 msgstr "feuloren@free.fr"
 
@@ -45,12 +66,19 @@ msgid "You can quickly create tags."
 msgstr "Ви можете швидко створювати мітки."
 
 #: C/tags_manage.page:25(p)
-msgid "From the <gui>main</gui> window, choose <guiseq><gui>Tags</gui><gui>Create New Tag...</gui></guiseq>."
-msgstr "У <gui>головному</gui> вікні скористайтеся пунктом меню <guiseq><gui>Мітки</gui><gui>Створити мітку…</gui></guiseq>."
+msgid ""
+"From the <gui>main</gui> window, choose <guiseq><gui>Tags</gui><gui>Create "
+"New Tag...</gui></guiseq>."
+msgstr ""
+"У <gui>головному</gui> вікні скористайтеся пунктом меню <guiseq><gui>Мітки</"
+"gui><gui>Створити мітку…</gui></guiseq>."
 
 #: C/tags_manage.page:29(p)
-msgid "In the <gui>Create New Tag</gui> window, enter the name of your tag and enter an optional description."
-msgstr "У вікні <gui>Створення мітки</gui> введіть назву мітки і необов’язковий опис."
+msgid ""
+"In the <gui>Create New Tag</gui> window, enter the name of your tag and "
+"enter an optional description."
+msgstr ""
+"У вікні <gui>Створення мітки</gui> введіть назву мітки і необов’язковий опис."
 
 #: C/tags_manage.page:32(p)
 msgid "Press <gui>OK</gui> to validate the creation of the tag."
@@ -65,8 +93,12 @@ msgid "You can modify the name and the description of a tag."
 msgstr "Ви можете змінювати назву та опис мітки."
 
 #: C/tags_manage.page:45(p)
-msgid "From the <gui>main</gui> window, choose <guiseq><gui>Tags</gui><gui>Edit Selected Tag...</gui></guiseq>."
-msgstr "У <gui>головному</gui> вікні скористайтеся пунктом меню <guiseq><gui>Мітки</gui><gui>Змінити позначену мітку…</gui></guiseq>."
+msgid ""
+"From the <gui>main</gui> window, choose <guiseq><gui>Tags</gui><gui>Edit "
+"Selected Tag...</gui></guiseq>."
+msgstr ""
+"У <gui>головному</gui> вікні скористайтеся пунктом меню <guiseq><gui>Мітки</"
+"gui><gui>Змінити позначену мітку…</gui></guiseq>."
 
 #: C/tags_manage.page:49(p)
 msgid "In the <gui>Edit Tag</gui> window, modify the field you want."
@@ -74,27 +106,56 @@ msgstr "У вікні <gui>Зміна мітки</gui> змініть значе
 
 #: C/tags_manage.page:52(p)
 msgid "Press <gui>OK</gui> to save the modifications of the tag."
-msgstr "Натисніть кнопку <gui>Гаразд</gui>, щоб зберегти внесені до мітки зміни."
+msgstr ""
+"Натисніть кнопку <gui>Гаразд</gui>, щоб зберегти внесені до мітки зміни."
 
 #: C/tags_manage.page:58(title)
+msgid "Show only the tags you need."
+msgstr "Показувати лише потрібні вам мітки."
+
+#: C/tags_manage.page:60(p)
+msgid ""
+"By default the <gui>Tag List</gui> shows only tags that are attached to your "
+"photos. But it can show the tags from your text documents, your videos..."
+msgstr ""
+"Типово, у <gui>Списку міток</gui> показуються лише теги, приєднані до ваших "
+"фотографій. Але у ньому можуть показуватись теги з ваших текстових "
+"документів, ваших відеофайлів..."
+
+#: C/tags_manage.page:64(p)
+msgid ""
+"From the <gui>main</gui> window, choose <guiseq><gui>Tags</gui><gui>Show All "
+"Tags</gui></guiseq>."
+msgstr ""
+"У <gui>головному</gui> вікні скористайтеся пунктом меню <guiseq><gui>Мітки</"
+"gui><gui>Показати всі мітки</gui></guiseq>."
+
+#: C/tags_manage.page:71(title)
 msgid "Delete a tag."
 msgstr "Вилучення мітки"
 
-#: C/tags_manage.page:60(p)
+#: C/tags_manage.page:73(p)
 msgid "You can delete a tag."
 msgstr "Ви можете вилучити мітку."
 
-#: C/tags_manage.page:64(p)
+#: C/tags_manage.page:77(p)
 msgid "In the <gui>Tag List</gui>, click on the tag you want to delete."
-msgstr "У <gui>Списку міток</gui> наведіть вказівник миші на пункт мітки, яку бажаєте вилучити, і клацніть лівою кнопкою миші."
+msgstr ""
+"У <gui>Списку міток</gui> наведіть вказівник миші на пункт мітки, яку "
+"бажаєте вилучити, і клацніть лівою кнопкою миші."
 
-#: C/tags_manage.page:67(p)
-msgid "Choose <guiseq><gui>Tags</gui><gui>Delete Selected Tag</gui></guiseq> to delete this tag."
-msgstr "Скористайтеся пунктом меню <guiseq><gui>Мітки</gui><gui>Вилучити позначену мітку</gui></guiseq>, щоб вилучити мітку."
+#: C/tags_manage.page:80(p)
+msgid ""
+"Choose <guiseq><gui>Tags</gui><gui>Delete Selected Tag</gui></guiseq> to "
+"delete this tag."
+msgstr ""
+"Скористайтеся пунктом меню <guiseq><gui>Мітки</gui><gui>Вилучити позначену "
+"мітку</gui></guiseq>, щоб вилучити мітку."
 
 #: C/keys.page:5(desc)
 msgid "You are going to love your keyboard."
-msgstr "Ви отримаєте задоволення від роботи з програмою за допомогою клавіатури."
+msgstr ""
+"Ви отримаєте задоволення від роботи з програмою за допомогою клавіатури."
 
 #: C/keys.page:14(title)
 msgid "Keyboard shortcuts"
@@ -110,7 +171,8 @@ msgstr "На повний екран"
 
 #: C/keys.page:20(p)
 msgid "Go to fullscreen mode and go back to windowed mode."
-msgstr "Перейти у повноекранний режим або повернутися до режиму звичайного вікна."
+msgstr ""
+"Перейти у повноекранний режим або повернутися до режиму звичайного вікна."
 
 #: C/keys.page:21(key)
 msgid "F11"
@@ -136,7 +198,8 @@ msgstr "Збільшити"
 msgid "Enlarge the picture or the thumbnails."
 msgstr "Збільшити зображення або мініатюри."
 
-#: C/keys.page:29(key) C/keys.page:33(key) C/keys.page:37(key) C/keys.page:47(key)
+#: C/keys.page:29(key) C/keys.page:33(key) C/keys.page:37(key)
+#: C/keys.page:47(key)
 msgid "Ctrl"
 msgstr "Ctrl"
 
@@ -162,13 +225,15 @@ msgstr "Звичайний розмір"
 
 #: C/keys.page:36(p)
 msgid "Display image in its normal size (only in <gui>Enlarged mode</gui>)."
-msgstr "Показати зображення з використанням його звичайних розмірів (лишу у <gui>Режимі збільшення</gui>)."
+msgstr ""
+"Показати зображення з використанням його звичайних розмірів (лишу у "
+"<gui>Режимі збільшення</gui>)."
 
 #: C/keys.page:37(key)
 msgid "0"
 msgstr "0"
 
-#: C/keys.page:43(title) C/index.page:38(title) C/index.page:38(title)
+#: C/keys.page:43(title) C/index.page:39(title)
 msgid "Tags"
 msgstr "Мітки"
 
@@ -196,7 +261,9 @@ msgstr "Попередня сторінка"
 msgid "Go to the previous page."
 msgstr "Перейти до попередньої сторінки."
 
-#: C/keys.page:71(key) C/keys.page:75(key) C/keys.page:79(key) C/keys.page:83(key) C/keys.page:93(key) C/keys.page:97(key) C/keys.page:101(key) C/keys.page:105(key)
+#: C/keys.page:71(key) C/keys.page:75(key) C/keys.page:79(key)
+#: C/keys.page:83(key) C/keys.page:93(key) C/keys.page:97(key)
+#: C/keys.page:101(key) C/keys.page:105(key)
 msgid "Alt"
 msgstr "Alt"
 
@@ -276,6 +343,18 @@ msgstr "Остання фотографія"
 msgid "Go to the last photo."
 msgstr "Перейти до останньої фотографії."
 
+#: C/keys.page:108(p)
+msgid "Quit Enlarged mode"
+msgstr "Вийти зі збільшеного режиму"
+
+#: C/keys.page:108(p)
+msgid "Quit the Enlarged mode and go to Browser mode."
+msgstr "Вийти зі збільшеного режиму та перейти до режиму огляду."
+
+#: C/keys.page:109(key)
+msgid "Escape"
+msgstr "Escape"
+
 #: C/howto_search.page:6(desc)
 msgid "Filters your photos."
 msgstr "Фільтрує ваші фотографії."
@@ -285,30 +364,65 @@ msgid "How do I use the search function?"
 msgstr "Як скористатися можливостями пошуку?"
 
 #: C/howto_search.page:17(p)
-msgid "Actually you have to drag and drop one or more filters to the <gui>Search Basket</gui>. <app>Solang</app> will display only photos that correspond to all the filters you have chosen. Today only tags are filters."
-msgstr "Вам достатньо перетягнути і скинути один або декілька фільтрів з <gui>Кошика пошуку</gui>. <app>Solang</app> покаже лише ті фотографії, які відповідатимуть всі вибраним вами фільтрам. У поточній версії фільтрування можливе лише за мітками."
+msgid ""
+"Actually you have to drag and drop one or more filters to the <gui>Search "
+"Basket</gui>. <app>Solang</app> will display only photos that correspond to "
+"all the filters you have chosen. Tags and photos properties are filters."
+msgstr ""
+"Вам достатньо перетягнути і скинути один або декілька фільтрів з <gui>Кошика "
+"пошуку</gui>. <app>Solang</app> покаже лише ті фотографії, які "
+"відповідатимуть всі вибраним вами фільтрам. Мітки і властивості фотографій є "
+"фільтрами."
 
 #: C/howto_search.page:19(p)
-msgid "To add a filter drag a tag from the <gui>Tag List</gui> to the <gui>Search Basket</gui>."
-msgstr "Щоб додати фільтр, перетягніть мітку зі <gui>Списку міток</gui> до <gui>Кошика пошуку</gui>."
+msgid ""
+"To add a tag filter drag a tag from the <gui>Tag List</gui> to the "
+"<gui>Search Basket</gui>."
+msgstr ""
+"Щоб додати фільтрування за міткою, перетягніть мітку зі <gui>Списку міток</"
+"gui> до <gui>Кошика пошуку</gui>."
 
 #: C/howto_search.page:20(p)
-msgid "To remove all the filters, right-click on a filter and choose <gui>Select All</gui>, then righ-click on the same filter and choose <gui>Remove</gui>."
-msgstr "Щоб скасувати будь-яке фільтрування, наведіть вказівник миші на позначку фільтра, клацніть правою кнопкою миші і виберіть у контекстному меню пункт <gui>Позначити всі</gui>, потім ще раз клацніть правою кнопкою миші на тому самому фільтрі і скористайтеся пунктом меню <gui>Вилучити</gui>."
+msgid ""
+"To add a property filter drag a property (for example Camera) from the "
+"<gui>Basic Properties List</gui> to the <gui>Search Basket</gui>."
+msgstr ""
+"Щоб додати фільтр за властивостями, перетягніть мітку (наприклад, назву "
+"фотоапарата) зі <gui>Списку основних властивостей</gui> до <gui>Кошика "
+"пошуку</gui>."
 
 #: C/howto_search.page:21(p)
-msgid "To remove one filter, right-click on the filter you want to remove in the <gui>Search Basket</gui> and choose <gui>Remove</gui>."
-msgstr "Щоб вилучити один фільтр, наведіть на його пункт вказівник миші, клацніть правою кнопкою і скористайтеся пунктом контекстного меню <gui>Вилучити</gui>."
+msgid ""
+"To remove all the filters, right-click on a filter and choose <gui>Select "
+"All</gui>, then righ-click on the same filter and choose <gui>Remove</gui>."
+msgstr ""
+"Щоб скасувати будь-яке фільтрування, наведіть вказівник миші на позначку "
+"фільтра, клацніть правою кнопкою миші і виберіть у контекстному меню пункт "
+"<gui>Позначити всі</gui>, потім ще раз клацніть правою кнопкою миші на тому "
+"самому фільтрі і скористайтеся пунктом меню <gui>Вилучити</gui>."
 
-#: C/howto_search.page:24(p)
-msgid "What's more you can use the <gui>Free text search</gui> entry to filter photos name."
-msgstr "Крім того, ви можете скористатися пунктом <gui>Пошук довільного тексту</gui>, щоб відфільтрувати фотографії за назвою."
+#: C/howto_search.page:22(p)
+msgid ""
+"To remove one filter, right-click on the filter you want to remove in the "
+"<gui>Search Basket</gui> and choose <gui>Remove</gui>."
+msgstr ""
+"Щоб вилучити один фільтр, наведіть на його пункт вказівник миші, клацніть "
+"правою кнопкою і скористайтеся пунктом контекстного меню <gui>Вилучити</gui>."
 
-#: C/howto_search.page:26(p)
-msgid "Write the text you want to search in the <gui>Free text search</gui> entry"
-msgstr "Впишіть текст ключа пошуку у поле <gui>Пошук довільного тексту</gui>"
+#: C/howto_search.page:25(p)
+msgid ""
+"What's more you can use the <gui>Free text search</gui> entry to filter "
+"photos name."
+msgstr ""
+"Крім того, ви можете скористатися пунктом <gui>Пошук довільного тексту</"
+"gui>, щоб відфільтрувати фотографії за назвою."
 
 #: C/howto_search.page:27(p)
+msgid ""
+"Write the text you want to search in the <gui>Free text search</gui> entry"
+msgstr "Впишіть текст ключа пошуку у поле <gui>Пошук довільного тексту</gui>"
+
+#: C/howto_search.page:28(p)
 msgid "Press <key>Enter</key>"
 msgstr "Натисніть клавішу <key>Enter</key>"
 
@@ -321,50 +435,99 @@ msgid "What's a tag?"
 msgstr "Що таке мітка?"
 
 #: C/tags_intro.page:15(p)
-msgid "Tags are keyword you can use to label and organize your photos. You may have already seen it in weblogs."
-msgstr "Мітки — ключові слова, яким ви можете скористатися для позначення і впорядкування ваших фотографій. Ймовірно, ви вже бачили такі мітки у блогах."
+msgid ""
+"Tags are keyword you can use to label and organize your photos. You may have "
+"already seen it in weblogs."
+msgstr ""
+"Мітки — ключові слова, яким ви можете скористатися для позначення і "
+"впорядкування ваших фотографій. Ймовірно, ви вже бачили такі мітки у блогах."
 
 #: C/tags_intro.page:16(p)
-msgid "<app>Solang</app> uses tags to help you organizing your photos. In fact, you can use tags to organize your photos the way you want!"
-msgstr "Програма <app>Solang</app> використовує мітки для того, щоб допомогти вам у впорядкуванні ваших фотографій. Фактично, ви можете скористатися мітками для впорядкування у будь-який бажаний для вас спосіб!"
+msgid ""
+"<app>Solang</app> uses tags to help you organizing your photos. In fact, you "
+"can use tags to organize your photos the way you want!"
+msgstr ""
+"Програма <app>Solang</app> використовує мітки для того, щоб допомогти вам у "
+"впорядкуванні ваших фотографій. Фактично, ви можете скористатися мітками для "
+"впорядкування у будь-який бажаний для вас спосіб!"
 
 #: C/tags_intro.page:17(p)
-msgid "For example, some people uses tags to create \"albums\" of their holiday photos. Some others use tags to show what friends are in their photos, to view only photos from one geographical place or distinguish the photos they have modified."
-msgstr "Наприклад, дехто використовує мітки для створення «альбомів» знімків з відпочинку. Дехто позначає іменами друзів фотографії, на яких зображено цих друзів. Хтось використовує мітки для впорядкування фотографій за місцем зйомки, хтось — для впорядкування фотографій за часом зміни."
+msgid ""
+"For example, some people uses tags to create \"albums\" of their holiday "
+"photos. Some others use tags to show what friends are in their photos, to "
+"view only photos from one geographical place or distinguish the photos they "
+"have modified."
+msgstr ""
+"Наприклад, дехто використовує мітки для створення «альбомів» знімків з "
+"відпочинку. Дехто позначає іменами друзів фотографії, на яких зображено цих "
+"друзів. Хтось використовує мітки для впорядкування фотографій за місцем "
+"зйомки, хтось — для впорядкування фотографій за часом зміни."
 
 #: C/tags_intro.page:19(p)
-msgid "<app>Solang</app> allows you to use tags as filters to view only photos that have some tags attached to them."
-msgstr "За допомогою <app>Solang</app> ви зможете скористатися мітками для перегляду певних наборів фотографій, позначених вказаними вами мітками."
+msgid ""
+"<app>Solang</app> allows you to use tags as filters to view only photos that "
+"have some tags attached to them."
+msgstr ""
+"За допомогою <app>Solang</app> ви зможете скористатися мітками для перегляду "
+"певних наборів фотографій, позначених вказаними вами мітками."
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
 #: C/intro.page:24(None)
-msgid "@@image: 'figures/main-window.png'; md5=3531b20d31fd0896d595d3fd691e4944"
-msgstr "@@image: 'figures/main-window.png'; md5=3531b20d31fd0896d595d3fd691e4944"
+msgid ""
+"@@image: 'figures/main-window.png'; md5=dd683ccfcb174192e89aaee8d58294ba"
+msgstr ""
+"@@image: 'figures/main-window.png'; md5=dd683ccfcb174192e89aaee8d58294ba"
 
 #: C/intro.page:6(desc)
 msgid "Introduction to the <app>Solang</app> photos manager."
-msgstr "Вступ до роботи з програмою для керування фотографіями <app>Solang</app>."
+msgstr ""
+"Вступ до роботи з програмою для керування фотографіями <app>Solang</app>."
 
 #: C/intro.page:15(title)
 msgid "Introduction to <app>Solang</app>"
 msgstr "Вступ до <app>Solang</app>"
 
 #: C/intro.page:16(p)
-msgid "<app>Solang</app> is a photo manager for the GNOME desktop. It lets you manage your collection of photos by tagging them and searching through them based on various criteria -- tags, EXIF data, dates."
-msgstr "<app>Solang</app> є програмою для керування фотографіями у GNOME. Ця програма надає вам змогу керувати вашою збіркою фотографій. Ви зможете позначати фотографії мітками та переглядати набори фотографій, визначені певними критеріями: мітками, даними EXIF, датами."
+msgid ""
+"<app>Solang</app> is a photo manager for the GNOME desktop. It lets you "
+"manage your collection of photos by tagging them and searching through them "
+"based on various criteria -- tags, EXIF data, dates."
+msgstr ""
+"<app>Solang</app> є програмою для керування фотографіями у GNOME. Ця "
+"програма надає вам змогу керувати вашою збіркою фотографій. Ви зможете "
+"позначати фотографії мітками та переглядати набори фотографій, визначені "
+"певними критеріями: мітками, даними EXIF, датами."
 
 #: C/intro.page:17(p)
-msgid "You don't need to care about importing your photos to view them, as soon as you add photos to your computer you can enjoy them right into <app>Solang</app>. In the same way, if you attached tags to a photo from the <app>File manager</app>, they are automatically recognized in <app>Solang</app>."
-msgstr "Вам не слід перейматися імпортуванням ваших фотографій для наступного перегляду: щойно фотографії опиняться на вашому комп’ютері, як ви зможете насолоджуватися ними безпосередньо у <app>Solang</app>. Крім того, якщо ви додасте мітки до фотографії за допомогою <app>Менеджера файлів</app>, ці мітки буде одразу автоматично розпізнано у <app>Solang</app>."
+msgid ""
+"You don't need to care about importing your photos to view them, as soon as "
+"you add photos to your computer you can enjoy them right into <app>Solang</"
+"app>. In the same way, if you attached tags to a photo from the <app>File "
+"manager</app>, they are automatically recognized in <app>Solang</app>."
+msgstr ""
+"Вам не слід перейматися імпортуванням ваших фотографій для наступного "
+"перегляду: щойно фотографії опиняться на вашому комп’ютері, як ви зможете "
+"насолоджуватися ними безпосередньо у <app>Solang</app>. Крім того, якщо ви "
+"додасте мітки до фотографії за допомогою <app>Менеджера файлів</app>, ці "
+"мітки буде одразу автоматично розпізнано у <app>Solang</app>."
 
 #: C/intro.page:18(p)
-msgid "If your photos are the wrong way around you can rotate them or flip them in one click."
-msgstr "Якщо під час створення зображення для показу його було повернуто повернуто неналежним чином, ви зможете розвернути або віддзеркалити зображення одним клацанням кнопкою миші."
+msgid ""
+"If your photos are the wrong way around you can rotate them or flip them in "
+"one click."
+msgstr ""
+"Якщо під час створення зображення для показу його було повернуто повернуто "
+"неналежним чином, ви зможете розвернути або віддзеркалити зображення одним "
+"клацанням кнопкою миші."
 
 #: C/intro.page:19(p)
-msgid "You can enjoy your photos with your friends thanks to the slideshow feature and the fullscreen mode."
-msgstr "Ви зможете насолодитися переглядом фотографій у колі друзів за допомогою можливості перегляду слайдів та повноекранного режиму роботи програми."
+msgid ""
+"You can enjoy your photos with your friends thanks to the slideshow feature "
+"and the fullscreen mode."
+msgstr ""
+"Ви зможете насолодитися переглядом фотографій у колі друзів за допомогою "
+"можливості перегляду слайдів та повноекранного режиму роботи програми."
 
 #: C/intro.page:22(title)
 msgid "<gui>Main</gui> window"
@@ -387,12 +550,17 @@ msgid "I don't see all my photos."
 msgstr "Я не бачу всіх своїх фотографій."
 
 #: C/photos_by_page.page:16(p)
-msgid "<app>Solang</app> only display 50 photos by page, so you can only preview 50 photos at once."
-msgstr "Програма <app>Solang</app> здатна показувати 50 фотографій на одній сторінці, отже ви зможете бачити мініатюри одразу 50 фотографій."
+msgid ""
+"<app>Solang</app> only display 50 photos by page, so you can only preview 50 "
+"photos at once."
+msgstr ""
+"Програма <app>Solang</app> здатна показувати 50 фотографій на одній "
+"сторінці, отже ви зможете бачити мініатюри одразу 50 фотографій."
 
 #: C/photos_by_page.page:17(p)
 msgid "Hopefully there are multiple pages."
-msgstr "На щастя, для цього передбачено можливість роботи з декількома сторінками."
+msgstr ""
+"На щастя, для цього передбачено можливість роботи з декількома сторінками."
 
 #: C/photos_by_page.page:18(p)
 msgid "To go to the next page you can"
@@ -400,15 +568,23 @@ msgstr "Щоб перейти до наступної сторінки ви мо
 
 #: C/photos_by_page.page:21(p)
 msgid "Click on the <gui>Next page</gui> button in the <gui>Toolbar</gui>."
-msgstr "натиснути кнопку <gui>Наступна сторінка</gui> на <gui>Панелі інструментів</gui>."
+msgstr ""
+"натиснути кнопку <gui>Наступна сторінка</gui> на <gui>Панелі інструментів</"
+"gui>."
 
 #: C/photos_by_page.page:24(p)
 msgid "Press <keyseq><key>Alt</key><key>Page Down</key></keyseq>."
-msgstr "Натиснути комбінацію клавіш <keyseq><key>Alt</key><key>Page Down</key></keyseq>."
+msgstr ""
+"Натиснути комбінацію клавіш <keyseq><key>Alt</key><key>Page Down</key></"
+"keyseq>."
 
 #: C/photos_by_page.page:27(p)
-msgid "Choose <guiseq><gui>Go</gui><gui>Next Page</gui></guiseq> from the <gui>Main Window</gui>."
-msgstr "Скористатися пунктом меню <guiseq><gui>Перейти</gui><gui>Наступна сторінка</gui></guiseq> у <gui>Головному вікні</gui>."
+msgid ""
+"Choose <guiseq><gui>Go</gui><gui>Next Page</gui></guiseq> from the <gui>Main "
+"Window</gui>."
+msgstr ""
+"Скористатися пунктом меню <guiseq><gui>Перейти</gui><gui>Наступна сторінка</"
+"gui></guiseq> у <gui>Головному вікні</gui>."
 
 #: C/photos_by_page.page:30(p)
 msgid "To go to the previous page you can"
@@ -416,33 +592,48 @@ msgstr "Щоб перейти до попередньої сторінки ви 
 
 #: C/photos_by_page.page:33(p)
 msgid "Click on the <gui>Previous page</gui> button in the <gui>Toolbar</gui>."
-msgstr "натиснути кнопку <gui>Попередня сторінка</gui> на <gui>Панелі інструментів</gui>."
+msgstr ""
+"натиснути кнопку <gui>Попередня сторінка</gui> на <gui>Панелі інструментів</"
+"gui>."
 
 #: C/photos_by_page.page:36(p)
 msgid "Press <keyseq><key>Alt</key><key>Page Up</key></keyseq>."
-msgstr "Натиснути комбінацію клавіш <keyseq><key>Alt</key><key>Page Up</key></keyseq>."
+msgstr ""
+"Натиснути комбінацію клавіш <keyseq><key>Alt</key><key>Page Up</key></"
+"keyseq>."
 
 #: C/photos_by_page.page:39(p)
-msgid "Choose <guiseq><gui>Go</gui><gui>Previous Page</gui></guiseq> from the <gui>Main Window</gui>."
-msgstr "Скористатися пунктом меню <guiseq><gui>Перейти</gui><gui>Попередня сторінка</gui></guiseq> у <gui>Головному вікні</gui>."
+msgid ""
+"Choose <guiseq><gui>Go</gui><gui>Previous Page</gui></guiseq> from the "
+"<gui>Main Window</gui>."
+msgstr ""
+"Скористатися пунктом меню <guiseq><gui>Перейти</gui><gui>Попередня сторінка</"
+"gui></guiseq> у <gui>Головному вікні</gui>."
 
-#: C/index.page:13(title) C/index.page:13(title)
+#: C/index.page:13(title)
 msgid "<app>Solang</app> Help"
 msgstr "Довідка з <app>Solang</app>"
 
-#: C/index.page:16(p) C/index.page:16(p)
-msgid "This guide is created for <app>Solang</app>'s 0.4 series. Since there have been some UI regressions from the 0.3 series, this guide may not cover some features of <app>Solang</app> 0.3, mostly the import process."
-msgstr "Цей підручник створено для версії <app>Solang</app> 0.4. Оскільки під час переходу від версії 0.3 до версії 0.4 сталося деяке спрощення інтерфейсу користувача програми, підручник не описує деяких можливостей <app>Solang</app> 0.3, зокрема тих, які стосуються процесу імпортування."
+#: C/index.page:16(p)
+msgid ""
+"This guide is created for <app>Solang</app>'s 0.4 series. Since there have "
+"been some UI regressions from the 0.3 series, this guide may not cover some "
+"features of <app>Solang</app> 0.3, mostly the import process."
+msgstr ""
+"Цей підручник створено для версії <app>Solang</app> 0.4. Оскільки під час "
+"переходу від версії 0.3 до версії 0.4 сталося деяке спрощення інтерфейсу "
+"користувача програми, підручник не описує деяких можливостей <app>Solang</"
+"app> 0.3, зокрема тих, які стосуються процесу імпортування."
 
-#: C/index.page:22(title) C/index.page:22(title)
+#: C/index.page:22(title)
 msgid "General Questions"
 msgstr "Загальні питання"
 
-#: C/index.page:31(title) C/index.page:31(title)
+#: C/index.page:31(title)
 msgid "Exporting photos"
 msgstr "Експортування фотографій"
 
-#: C/index.page:47(title) C/index.page:47(title)
+#: C/index.page:48(title)
 msgid "Tips and Tricks"
 msgstr "Підказки і рецепти"
 
@@ -463,16 +654,30 @@ msgid "You can attach a tag to one or more photos at once."
 msgstr "Ви можете додати мітку до однієї або декількох фотографій одразу."
 
 #: C/tags_use.page:25(p)
-msgid "From the <gui>main</gui> window, select one or more photos you want to tag."
-msgstr "У <gui>головному</gui> вікні програми позначте одну або декілька фотографій, до яких ви бажаєте призначити мітку."
+msgid ""
+"From the <gui>main</gui> window, select one or more photos you want to tag."
+msgstr ""
+"У <gui>головному</gui> вікні програми позначте одну або декілька фотографій, "
+"до яких ви бажаєте призначити мітку."
 
 #: C/tags_use.page:28(p)
-msgid "In the <gui>Tag List</gui>, click on the tag you want to attach to these photos."
-msgstr "У <gui>Списку міток</gui> наведіть вказівник миші на пункт мітки, яку бажаєте додати до фотографій, і клацніть лівою кнопкою миші."
+msgid ""
+"In the <gui>Tag List</gui>, click on the tag you want to attach to these "
+"photos."
+msgstr ""
+"У <gui>Списку міток</gui> наведіть вказівник миші на пункт мітки, яку "
+"бажаєте додати до фотографій, і клацніть лівою кнопкою миші."
 
 #: C/tags_use.page:31(p)
-msgid "Choose <guiseq><gui>Tags</gui><gui>Attach Tag to Selection</gui></guiseq> or press <keyseq><key>Ctrl</key><key>T</key></keyseq> to attach the tag to these photos."
-msgstr "Скористайтеся пунктом меню <guiseq><gui>Мітки</gui><gui>Додати мітку до позначеного</gui></guiseq> або натисніть комбінацію клавіш <keyseq><key>Ctrl</key><key>T</key></keyseq>, щоб додати мітку до цих фотографій."
+msgid ""
+"Choose <guiseq><gui>Tags</gui><gui>Attach Tag to Selection</gui></guiseq> or "
+"press <keyseq><key>Ctrl</key><key>T</key></keyseq> to attach the tag to "
+"these photos."
+msgstr ""
+"Скористайтеся пунктом меню <guiseq><gui>Мітки</gui><gui>Додати мітку до "
+"позначеного</gui></guiseq> або натисніть комбінацію клавіш "
+"<keyseq><key>Ctrl</key><key>T</key></keyseq>, щоб додати мітку до цих "
+"фотографій."
 
 #: C/tags_use.page:37(title)
 msgid "Remove a tag from photos."
@@ -483,16 +688,27 @@ msgid "You can remove a tag from one or more photos at once."
 msgstr "Ви можете вилучити мітку з однієї або декількох фотографій одразу."
 
 #: C/tags_use.page:43(p)
-msgid "From the <gui>main</gui> window, select one or more photos you want to untag."
-msgstr "У <gui>головному</gui> вікні програми позначте одну або декілька фотографій, з яких ви бажаєте вилучити мітки."
+msgid ""
+"From the <gui>main</gui> window, select one or more photos you want to untag."
+msgstr ""
+"У <gui>головному</gui> вікні програми позначте одну або декілька фотографій, "
+"з яких ви бажаєте вилучити мітки."
 
 #: C/tags_use.page:46(p)
-msgid "In the <gui>Tag List</gui>, click on the tag you want to remove from these photos."
-msgstr "У <gui>Списку міток</gui> наведіть вказівник миші на пункт мітки, яку бажаєте вилучити з фотографій, і клацніть лівою кнопкою миші."
+msgid ""
+"In the <gui>Tag List</gui>, click on the tag you want to remove from these "
+"photos."
+msgstr ""
+"У <gui>Списку міток</gui> наведіть вказівник миші на пункт мітки, яку "
+"бажаєте вилучити з фотографій, і клацніть лівою кнопкою миші."
 
 #: C/tags_use.page:49(p)
-msgid "Choose <guiseq><gui>Tags</gui><gui>Remove Tag From Selection</gui></guiseq> to remove the tag from these photos."
-msgstr "Скористайтеся пунктом меню <guiseq><gui>Мітки</gui><gui>Вилучити мітку з позначеного</gui></guiseq>, щоб вилучити мітку з позначених фотографій."
+msgid ""
+"Choose <guiseq><gui>Tags</gui><gui>Remove Tag From Selection</gui></guiseq> "
+"to remove the tag from these photos."
+msgstr ""
+"Скористайтеся пунктом меню <guiseq><gui>Мітки</gui><gui>Вилучити мітку з "
+"позначеного</gui></guiseq>, щоб вилучити мітку з позначених фотографій."
 
 #: C/import.page:6(desc)
 msgid "To view your photos in <app>Solang</app>."
@@ -503,66 +719,103 @@ msgid "I can't see any photos"
 msgstr "Я не бачу жодних фотографій"
 
 #: C/import.page:16(p)
-msgid "Solang only displays photos that are indexed by the <app>Tracker search tool</app>, if you don't see your photos Tracker may not be running or your photos may not be indexed. To make sure Tracker indexes your photos use the <app>Search tool preferences</app> from the <gui>System</gui> menu."
-msgstr "Solang може показувати лише ті фотографії, які було проіндексовано <app>інструментом пошуку Tracker</app>. Якщо ви не бачите ваших фотографій, ймовірно, Tracker не запущено або ваші фотографії ще не було проіндексовано. Накажіть Tracker проіндексувати ваші фотографії за допомогою пункту <app>Параметри інструменту пошуку</app> меню <gui>Система</gui>."
+msgid ""
+"Solang only displays photos that are indexed by the <app>Tracker search "
+"tool</app>, if you don't see your photos Tracker may not be running or your "
+"photos may not be indexed. To make sure Tracker indexes your photos use the "
+"<app>Search tool preferences</app> from the <gui>System</gui> menu."
+msgstr ""
+"Solang може показувати лише ті фотографії, які було проіндексовано "
+"<app>інструментом пошуку Tracker</app>. Якщо ви не бачите ваших фотографій, "
+"ймовірно, Tracker не запущено або ваші фотографії ще не було проіндексовано. "
+"Накажіть Tracker проіндексувати ваші фотографії за допомогою пункту "
+"<app>Параметри інструменту пошуку</app> меню <gui>Система</gui>."
 
-#: C/export_folder.page:6(desc)
+#: C/export_folder.page:7(desc)
 msgid "To copy photos in a archive or a folder."
 msgstr "Копіювання фотографій з архіву або теки."
 
-#: C/export_folder.page:15(title)
+#: C/export_folder.page:16(title)
 msgid "Archive your photos"
 msgstr "Архівування ваших фотографій"
 
-#: C/export_folder.page:16(p)
-msgid "You can copy photos to a directory of your computer or put them in a archive."
-msgstr "Ви можете скопіювати фотографії до каталогу на вашому комп’ютері або додати їх до архіву."
+#: C/export_folder.page:17(p)
+msgid ""
+"You can copy photos to a directory of your computer or put them in a archive."
+msgstr ""
+"Ви можете скопіювати фотографії до каталогу на вашому комп’ютері або додати "
+"їх до архіву."
 
-#: C/export_folder.page:18(p)
-msgid "First you have to add the photos you want to export to the export queue. There are many ways to add a photo to the Export Queue."
-msgstr "Спочатку вам слід додати фотографії, які ви бажаєте експортувати до черги експортування. Існує багато способів додавання фотографії до черги експортування."
+#: C/export_folder.page:19(p)
+msgid ""
+"First you have to <link xref=\"export_queue\">add the photos you want to "
+"export to the Export Queue</link>."
+msgstr ""
+"Спочатку вам слід <link xref=\"export_queue\">додати фотографії, які ви "
+"бажаєте експортувати до черги експортування</link>."
 
 #: C/export_folder.page:21(p)
-msgid "Right-click on a photo."
-msgstr "Наведіть вказівник миші на фотографію і клацніть правою кнопкою миші."
+msgid "Now you have to export your Export Queue to a folder."
+msgstr ""
+"Тепер вам слід експортувати пункти з черги експортування до певної теки."
 
 #: C/export_folder.page:24(p)
-msgid "Choose <gui>Add to Export Queue</gui>."
-msgstr "Виберіть у контекстному меню пункт <gui>Додати до черги експортування</gui>."
-
-#: C/export_folder.page:29(p)
-msgid "Select one or more photos you want to export."
-msgstr "Позначте одну або декілька фотографій, які ви бажаєте експортувати."
-
-#: C/export_folder.page:32(p)
-msgid "Choose <guiseq><gui>Edit</gui><gui>Add to Export Queue</gui></guiseq>."
-msgstr "Скористайтеся пунктом меню <guiseq><gui>Правка</gui><gui>Додати до черги експортування</gui></guiseq>."
-
-#: C/export_folder.page:36(p)
-msgid "Now you have to export your Export Queue to a folder."
-msgstr "Тепер вам слід експортувати пункти з черги експортування до певної теки."
-
-#: C/export_folder.page:39(p)
-msgid "Choose <guiseq><gui>Photos</gui><gui>Export to</gui><gui>Folder...</gui></guiseq>."
-msgstr "Скористайтеся пунктом меню <guiseq><gui>Фотографії</gui><gui>Експортувати до</gui><gui>Тека…</gui></guiseq>."
-
-#: C/export_folder.page:42(p)
-msgid "From the <gui>Export</gui> window, choose the directory you want your photos to be exported to."
-msgstr "У вікні <gui>Експорт</gui> виберіть каталог, до якого слід експортувати фотографії."
-
-#: C/export_folder.page:45(p)
-msgid "Check <gui>Create an archive</gui> if you want your photos to be packed up in a compressed archive. It can be useful if you want to send the photos by e-mail. The archive will be named with the current date following the pattern \"yyyymmdd.zip\" and saved in the directory you have chosen. Otherwise your photos will be copied directly to the directory you have chosen."
+msgid ""
+"Choose <guiseq><gui>Photos</gui><gui>Export to</gui><gui>Folder...</gui></"
+"guiseq>."
 msgstr ""
-"Позначте пункт <gui>Створити архів</gui>, якщо бажаєте, щоб ваші фотографії було запаковано до архіву. Такий архів з фотографіями зручно надсилати електронною поштою. Назву архіву буде визначено за поточною датою, відповідно до шаблону «ррррммдд.zip», архів буде збережено до вибраного вами каталогу. Якщо відповідний пункт позначено не буде, фотографії буде просто "
+"Скористайтеся пунктом меню <guiseq><gui>Фотографії</gui><gui>Експортувати "
+"до</gui><gui>Тека…</gui></guiseq>."
+
+#: C/export_folder.page:27(p)
+msgid ""
+"From the <gui>Export</gui> window, choose the directory you want your photos "
+"to be exported to."
+msgstr ""
+"У вікні <gui>Експорт</gui> виберіть каталог, до якого слід експортувати "
+"фотографії."
+
+#: C/export_folder.page:30(p)
+msgid ""
+"Check <gui>Create an archive</gui> if you want your photos to be packed up "
+"in a compressed archive. It can be useful if you want to send the photos by "
+"e-mail. The archive will be named with the current date following the "
+"pattern \"yyyymmdd.zip\" and saved in the directory you have chosen. "
+"Otherwise your photos will be copied directly to the directory you have "
+"chosen."
+msgstr ""
+"Позначте пункт <gui>Створити архів</gui>, якщо бажаєте, щоб ваші фотографії "
+"було запаковано до архіву. Такий архів з фотографіями зручно надсилати "
+"електронною поштою. Назву архіву буде визначено за поточною датою, "
+"відповідно до шаблону «ррррммдд.zip», архів буде збережено до вибраного вами "
+"каталогу. Якщо відповідний пункт позначено не буде, фотографії буде просто "
 "скопійовано до вказаного вами каталогу."
 
-#: C/export_folder.page:49(p)
+#: C/export_folder.page:34(p)
 msgid "Choose <gui>Export</gui> to export the photos."
-msgstr "Скористайтеся пунктом <gui>Експортувати</gui>, щоб наказати програмі експортувати фотографії."
+msgstr ""
+"Скористайтеся пунктом <gui>Експортувати</gui>, щоб наказати програмі "
+"експортувати фотографії."
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
 #: C/index.page:0(None)
 msgid "translator-credits"
 msgstr "Юрій Чорноіван <yurchor@ukr.net>"
 
+#~ msgid "Right-click on a photo."
+#~ msgstr ""
+#~ "Наведіть вказівник миші на фотографію і клацніть правою кнопкою миші."
 
+#~ msgid "Choose <gui>Add to Export Queue</gui>."
+#~ msgstr ""
+#~ "Виберіть у контекстному меню пункт <gui>Додати до черги експортування</"
+#~ "gui>."
+
+#~ msgid "Select one or more photos you want to export."
+#~ msgstr "Позначте одну або декілька фотографій, які ви бажаєте експортувати."
+
+#~ msgid ""
+#~ "Choose <guiseq><gui>Edit</gui><gui>Add to Export Queue</gui></guiseq>."
+#~ msgstr ""
+#~ "Скористайтеся пунктом меню <guiseq><gui>Правка</gui><gui>Додати до черги "
+#~ "експортування</gui></guiseq>."
