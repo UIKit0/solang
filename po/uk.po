@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-31 14:20+0300\n"
-"PO-Revision-Date: 2010-03-23 20:50+0200\n"
+"POT-Creation-Date: 2010-04-07 13:19+0300\n"
+"PO-Revision-Date: 2010-04-03 17:07+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <translation@linux.org.ua>\n"
 "MIME-Version: 1.0\n"
@@ -29,70 +29,70 @@ msgstr "Впорядкуйте, роздивіться і поділіться �
 msgid "Photo Manager"
 msgstr "Впорядник фотографій"
 
-#: ../src/application/main-window.cpp:224
+#: ../src/application/main-window.cpp:226
 msgid "_Photo"
 msgstr "_Фотографія"
 
-#: ../src/application/main-window.cpp:233
+#: ../src/application/main-window.cpp:235
 #: ../src/renderer/browser-renderer.cpp:194
 msgid "_Edit"
 msgstr "_Правка"
 
-#: ../src/application/main-window.cpp:238
+#: ../src/application/main-window.cpp:240
 #: ../src/renderer/browser-renderer.cpp:199
 msgid "_Add to Export Queue"
 msgstr "_Додати до черги експортування"
 
-#: ../src/application/main-window.cpp:245
+#: ../src/application/main-window.cpp:247
 msgid "_Clear Export Queue"
 msgstr "С_порожнити чергу експортування"
 
-#: ../src/application/main-window.cpp:250
+#: ../src/application/main-window.cpp:252
 msgid "_View"
 msgstr "П_ерегляд"
 
-#: ../src/application/main-window.cpp:254
+#: ../src/application/main-window.cpp:256
 msgid "_Toolbar"
 msgstr "Па_нель інструментів"
 
-#: ../src/application/main-window.cpp:255
+#: ../src/application/main-window.cpp:257
 msgid "Show or hide the toolbar in the current window"
 msgstr "Показати або приховати панель інструментів у поточному вікні"
 
-#: ../src/application/main-window.cpp:261
+#: ../src/application/main-window.cpp:263
 msgid "_Statusbar"
 msgstr "_Смужка стану"
 
-#: ../src/application/main-window.cpp:262
+#: ../src/application/main-window.cpp:264
 msgid "Show or hide the statusbar in the current window"
 msgstr "Показати або приховати смужку стану у поточному вікні"
 
-#: ../src/application/main-window.cpp:269
+#: ../src/application/main-window.cpp:271
 msgid "_Full Screen"
 msgstr "_Повноекранний режим"
 
-#: ../src/application/main-window.cpp:270
+#: ../src/application/main-window.cpp:272
 msgid "Show the current photo in full screen mode"
 msgstr "Показати поточну фотографію у повноекранному режимі"
 
-#: ../src/application/main-window.cpp:287
+#: ../src/application/main-window.cpp:289
 msgid "_Help"
 msgstr "_Довідка"
 
-#: ../src/application/main-window.cpp:292
+#: ../src/application/main-window.cpp:294
 msgid "_Contents"
 msgstr "_Зміст"
 
-#: ../src/application/main-window.cpp:597
+#: ../src/application/main-window.cpp:662
 msgid "A photo manager for GNOME"
 msgstr "Впорядник фотографій для GNOME"
 
 #. Translators: Put your names here.
-#: ../src/application/main-window.cpp:628
+#: ../src/application/main-window.cpp:693
 msgid "translator-credits"
 msgstr "Юрій Чорноіван <yurchor@ukr.net>"
 
-#: ../src/application/main-window.cpp:633
+#: ../src/application/main-window.cpp:698
 msgctxt "Project website"
 msgid "%1 Website"
 msgstr "Веб-сайт %1"
@@ -169,29 +169,33 @@ msgstr "Вилучити позначені фільтри зі списку"
 msgid "Tags"
 msgstr "Мітки"
 
-#: ../src/attribute/tag-manager.cpp:105
+#: ../src/attribute/tag-manager.cpp:106
 msgid "_Tags"
 msgstr "_Мітки"
 
-#: ../src/attribute/tag-manager.cpp:110
+#: ../src/attribute/tag-manager.cpp:111
 msgid "Create New _Tag..."
 msgstr "Створити _мітку…"
 
-#: ../src/attribute/tag-manager.cpp:117
+#: ../src/attribute/tag-manager.cpp:118
 msgid "_Edit Selected Tag..."
 msgstr "_Змінити позначену мітку…"
 
-#: ../src/attribute/tag-manager.cpp:124
+#: ../src/attribute/tag-manager.cpp:125
 msgid "_Delete Selected Tag"
 msgstr "Ви_лучити позначену мітку"
 
-#: ../src/attribute/tag-manager.cpp:130
+#: ../src/attribute/tag-manager.cpp:131
 msgid "_Attach Tag to Selection"
 msgstr "_Додати мітку до позначеного"
 
-#: ../src/attribute/tag-manager.cpp:137
+#: ../src/attribute/tag-manager.cpp:138
 msgid "_Remove Tag From Selection"
 msgstr "Ви_лучити мітку з позначеного"
+
+#: ../src/attribute/tag-manager.cpp:144
+msgid "_Show All Tags"
+msgstr "_Показати всі мітки"
 
 #: ../src/attribute/tag-new-dialog.cpp:39
 #: ../src/attribute/tag-new-dialog.cpp:69
@@ -212,7 +216,11 @@ msgstr "Опис:"
 msgid "Create New Tag"
 msgstr "Створення мітки"
 
-#: ../src/attribute/tag-new-dialog.cpp:127
+#: ../src/attribute/tag-new-dialog.cpp:86
+msgid "Edit Tag"
+msgstr "Правка мітки"
+
+#: ../src/attribute/tag-new-dialog.cpp:126
 msgid "Select Tag Icon"
 msgstr "Вибір піктограми мітки"
 
