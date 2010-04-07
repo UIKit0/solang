@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: solang master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-04-06 23:07+0200\n"
-"PO-Revision-Date: 2010-03-12 01:01I+0200\n"
+"POT-Creation-Date: 2010-04-07 23:54+0200\n"
+"PO-Revision-Date: 2010-04-07 01:01I+0200\n"
 "Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "MIME-Version: 1.0\n"
@@ -80,7 +80,7 @@ msgstr "_Hjælp"
 
 #: ../src/application/main-window.cpp:294
 msgid "_Contents"
-msgstr ""
+msgstr "_Indhold"
 
 #: ../src/application/main-window.cpp:662
 msgid "A photo manager for GNOME"
@@ -198,7 +198,7 @@ msgstr "_Fjern mærke fra udvælgelse"
 
 #: ../src/attribute/tag-manager.cpp:144
 msgid "_Show All Tags"
-msgstr ""
+msgstr "_Vis alle mærker"
 
 # afklar hvad det her er (så måske over- kan bruges)
 # frem for forældre:
@@ -222,9 +222,8 @@ msgid "Create New Tag"
 msgstr "Opret nyt mærke"
 
 #: ../src/attribute/tag-new-dialog.cpp:86
-#, fuzzy
 msgid "Edit Tag"
-msgstr "_Rediger"
+msgstr "Rediger mærke"
 
 #: ../src/attribute/tag-new-dialog.cpp:126
 msgid "Select Tag Icon"
@@ -411,9 +410,8 @@ msgid "_Folder..."
 msgstr "_Mappe..."
 
 #: ../src/exporter/exporter.cpp:192
-#, fuzzy
 msgid "Creating archive"
-msgstr "_Opret et arkiv"
+msgstr "Opretter arkiv"
 
 #: ../src/exporter/exporter-dialog.cpp:33
 msgid "Export"
@@ -424,10 +422,9 @@ msgid "_Create an archive"
 msgstr "_Opret et arkiv"
 
 #: ../src/exporter/exporter-dialog.cpp:64
-#, fuzzy
 msgctxt "A group of UI controls"
 msgid "Destination"
-msgstr "_Destination:"
+msgstr "Destination"
 
 #: ../src/exporter/exporter-dialog.cpp:80
 msgctxt "A group of UI controls"
