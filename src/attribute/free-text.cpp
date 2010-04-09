@@ -39,9 +39,21 @@ FreeText::~FreeText() throw()
 Glib::ustring
 FreeText::get_query_criteria() const throw()
 {
-    return Glib::ustring::compose("nie:url ?url . "
-                                  "FILTER REGEX (?url, '%1', 'i')",
-                                  text_);
+    // FIXME: ?photo is used to denote the nmm:Photo in the actual
+    //        query in Database::search_async. Need to find a better
+    //        way to do this.
+
+    return Glib::ustring::compose(
+        "nie:url ?url ."
+        "  OPTIONAL {"
+        "    ?photo nao:hasTag ?tag ."
+        "    ?tag nao:prefLabel ?label"
+        "  }"
+        "FILTER("
+        "  REGEX(?url, '%1', 'i')"
+        "  || (BOUND(?label) && REGEX(?label, '%1', 'i'))"
+        ")",
+        text_);
 }
 
 const Glib::ustring &
