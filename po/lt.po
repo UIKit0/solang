@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: solang master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-28 12:40+0300\n"
-"PO-Revision-Date: 2010-03-28 12:19+0300\n"
+"POT-Creation-Date: 2010-04-09 11:30+0300\n"
+"PO-Revision-Date: 2010-04-09 11:30+0300\n"
 "Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
 "Language-Team: Lithuanian <gnome-lt@lists.akl.lt>\n"
 "MIME-Version: 1.0\n"
@@ -28,72 +28,72 @@ msgstr "Tvarkykite, mėgaukitės ir dalinkitės savo nuotraukomis"
 msgid "Photo Manager"
 msgstr "Nuotraukų tvarkyklė"
 
-#: ../src/application/main-window.cpp:224
+#: ../src/application/main-window.cpp:226
 msgid "_Photo"
 msgstr "_Nuotrauka"
 
-#: ../src/application/main-window.cpp:233
+#: ../src/application/main-window.cpp:235
 #: ../src/renderer/browser-renderer.cpp:194
 msgid "_Edit"
 msgstr "_Keisti"
 
-#: ../src/application/main-window.cpp:238
+#: ../src/application/main-window.cpp:240
 #: ../src/renderer/browser-renderer.cpp:199
 msgid "_Add to Export Queue"
 msgstr "_Pridėti į eksportavimo eilę"
 
-#: ../src/application/main-window.cpp:245
+#: ../src/application/main-window.cpp:247
 msgid "_Clear Export Queue"
 msgstr "_Išvalyti eksportavimo eilę"
 
-#: ../src/application/main-window.cpp:250
+#: ../src/application/main-window.cpp:252
 msgid "_View"
 msgstr "_Rodyti"
 
-#: ../src/application/main-window.cpp:254
+#: ../src/application/main-window.cpp:256
 msgid "_Toolbar"
 msgstr "Įr_ankinė"
 
-#: ../src/application/main-window.cpp:255
+#: ../src/application/main-window.cpp:257
 msgid "Show or hide the toolbar in the current window"
 msgstr "Rodyti arba slėpti įrankinę esamame lange"
 
-#: ../src/application/main-window.cpp:261
+#: ../src/application/main-window.cpp:263
 msgid "_Statusbar"
 msgstr "_Būsenos juosta"
 
-#: ../src/application/main-window.cpp:262
+#: ../src/application/main-window.cpp:264
 msgid "Show or hide the statusbar in the current window"
 msgstr "Rodyti arba slėpti būsenos juostą esamame lange"
 
-#: ../src/application/main-window.cpp:269
+#: ../src/application/main-window.cpp:271
 msgid "_Full Screen"
 msgstr "_Visas ekranas"
 
-#: ../src/application/main-window.cpp:270
+#: ../src/application/main-window.cpp:272
 msgid "Show the current photo in full screen mode"
 msgstr "Rodyti nuotrauką viso ekrano veiksenoje"
 
-#: ../src/application/main-window.cpp:287
+#: ../src/application/main-window.cpp:289
 msgid "_Help"
 msgstr "_Žinynas"
 
-#: ../src/application/main-window.cpp:292
+#: ../src/application/main-window.cpp:294
 msgid "_Contents"
 msgstr "_Turinys"
 
-#: ../src/application/main-window.cpp:597
+#: ../src/application/main-window.cpp:662
 msgid "A photo manager for GNOME"
 msgstr "GNOME nuotraukų tvarkyklė"
 
 #. Translators: Put your names here.
-#: ../src/application/main-window.cpp:628
+#: ../src/application/main-window.cpp:693
 msgid "translator-credits"
 msgstr ""
 "Išvertė:\n"
 "Aurimas Černius"
 
-#: ../src/application/main-window.cpp:633
+#: ../src/application/main-window.cpp:698
 msgctxt "Project website"
 msgid "%1 Website"
 msgstr "%1 tinklalapis"
@@ -170,29 +170,33 @@ msgstr "Pašalinti pažymėtus filtrus iš sąrašo"
 msgid "Tags"
 msgstr "Žymos"
 
-#: ../src/attribute/tag-manager.cpp:105
+#: ../src/attribute/tag-manager.cpp:106
 msgid "_Tags"
 msgstr "_Žymos"
 
-#: ../src/attribute/tag-manager.cpp:110
+#: ../src/attribute/tag-manager.cpp:111
 msgid "Create New _Tag..."
 msgstr "Sukurti naują _žymą..."
 
-#: ../src/attribute/tag-manager.cpp:117
+#: ../src/attribute/tag-manager.cpp:118
 msgid "_Edit Selected Tag..."
 msgstr "_Keisti pasirinktą žymą..."
 
-#: ../src/attribute/tag-manager.cpp:124
+#: ../src/attribute/tag-manager.cpp:125
 msgid "_Delete Selected Tag"
 msgstr "_Trinti pasirinktą žymą"
 
-#: ../src/attribute/tag-manager.cpp:130
+#: ../src/attribute/tag-manager.cpp:131
 msgid "_Attach Tag to Selection"
 msgstr "_Pridėti žymą pažymėtiems"
 
-#: ../src/attribute/tag-manager.cpp:137
+#: ../src/attribute/tag-manager.cpp:138
 msgid "_Remove Tag From Selection"
 msgstr "Pa_šalinti žymą iš pažymėtų"
+
+#: ../src/attribute/tag-manager.cpp:144
+msgid "_Show All Tags"
+msgstr "_Rodyti visas žymas"
 
 #: ../src/attribute/tag-new-dialog.cpp:39
 #: ../src/attribute/tag-new-dialog.cpp:69
@@ -213,7 +217,11 @@ msgstr "Aprašymas:"
 msgid "Create New Tag"
 msgstr "Sukurti naują žymą"
 
-#: ../src/attribute/tag-new-dialog.cpp:127
+#: ../src/attribute/tag-new-dialog.cpp:86
+msgid "Edit Tag"
+msgstr "Keisti žymą"
+
+#: ../src/attribute/tag-new-dialog.cpp:126
 msgid "Select Tag Icon"
 msgstr "Pasirinkite žymos piktogramą"
 
