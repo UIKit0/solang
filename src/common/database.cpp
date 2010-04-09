@@ -167,7 +167,8 @@ Database::search_async(const IPhotoSearchCriteriaList & criteria,
               "WHERE {"
               "  ?photo a nmm:Photo ."
               "  %1"
-              "}",
+              "}"
+              "ORDER BY DESC(nfo:fileLastModified(?photo))",
               clauses);
 
     trackerClient_.sparql_query_async(
