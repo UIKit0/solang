@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: solang\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=solang&component=General\n"
-"POT-Creation-Date: 2010-04-03 00:11+0000\n"
-"PO-Revision-Date: 2010-04-03 08:31+0100\n"
+"POT-Creation-Date: 2010-04-10 17:52+0000\n"
+"PO-Revision-Date: 2010-04-11 11:06+0100\n"
 "Last-Translator: Andrej Žnidaršič <andrej.znidarsic@gmail.com>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -32,70 +32,70 @@ msgstr "Urejajte, občudujte in kažite vaše fotografije"
 msgid "Photo Manager"
 msgstr "Upravljalnik fotografij"
 
-#: ../src/application/main-window.cpp:224
+#: ../src/application/main-window.cpp:226
 msgid "_Photo"
 msgstr "_Fotografija"
 
-#: ../src/application/main-window.cpp:233
+#: ../src/application/main-window.cpp:235
 #: ../src/renderer/browser-renderer.cpp:194
 msgid "_Edit"
 msgstr "_Uredi"
 
-#: ../src/application/main-window.cpp:238
+#: ../src/application/main-window.cpp:240
 #: ../src/renderer/browser-renderer.cpp:199
 msgid "_Add to Export Queue"
 msgstr "_Dodaj v čakalno vrsto izvoza"
 
-#: ../src/application/main-window.cpp:245
+#: ../src/application/main-window.cpp:247
 msgid "_Clear Export Queue"
 msgstr "_Počisti čakalno vrsto izvoza"
 
-#: ../src/application/main-window.cpp:250
+#: ../src/application/main-window.cpp:252
 msgid "_View"
 msgstr "_Pogled"
 
-#: ../src/application/main-window.cpp:254
+#: ../src/application/main-window.cpp:256
 msgid "_Toolbar"
 msgstr "_Orodna vrstica"
 
-#: ../src/application/main-window.cpp:255
+#: ../src/application/main-window.cpp:257
 msgid "Show or hide the toolbar in the current window"
 msgstr "Pokaži ali skrij orodno vrstico v trenutnem oknu"
 
-#: ../src/application/main-window.cpp:261
+#: ../src/application/main-window.cpp:263
 msgid "_Statusbar"
 msgstr "_Vrstica stanja"
 
-#: ../src/application/main-window.cpp:262
+#: ../src/application/main-window.cpp:264
 msgid "Show or hide the statusbar in the current window"
 msgstr "Pokaži ali skrij vrstico stanja v trenutnem oknu"
 
-#: ../src/application/main-window.cpp:269
+#: ../src/application/main-window.cpp:271
 msgid "_Full Screen"
 msgstr "_Cel zaslon"
 
-#: ../src/application/main-window.cpp:270
+#: ../src/application/main-window.cpp:272
 msgid "Show the current photo in full screen mode"
 msgstr "Pokaži trenutno fotografijo v celozaslonskem načinu"
 
-#: ../src/application/main-window.cpp:287
+#: ../src/application/main-window.cpp:289
 msgid "_Help"
 msgstr "Pomo_č"
 
-#: ../src/application/main-window.cpp:292
+#: ../src/application/main-window.cpp:294
 msgid "_Contents"
 msgstr "_Vsebina"
 
-#: ../src/application/main-window.cpp:654
+#: ../src/application/main-window.cpp:662
 msgid "A photo manager for GNOME"
 msgstr "Upravljalnik fotografij za GNOME"
 
 #. Translators: Put your names here.
-#: ../src/application/main-window.cpp:685
+#: ../src/application/main-window.cpp:693
 msgid "translator-credits"
 msgstr "Andrej Žnidaršič <andrej.znidarsic@gmail.com>"
 
-#: ../src/application/main-window.cpp:690
+#: ../src/application/main-window.cpp:698
 msgctxt "Project website"
 msgid "%1 Website"
 msgstr "Spletišče %1"
@@ -219,7 +219,11 @@ msgstr "Opis:"
 msgid "Create New Tag"
 msgstr "Ustvari novo oznako"
 
-#: ../src/attribute/tag-new-dialog.cpp:127
+#: ../src/attribute/tag-new-dialog.cpp:86
+msgid "Edit Tag"
+msgstr "Urejanje oznake"
+
+#: ../src/attribute/tag-new-dialog.cpp:126
 msgid "Select Tag Icon"
 msgstr "Izbor ikone oznake"
 
