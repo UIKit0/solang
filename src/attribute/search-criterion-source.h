@@ -27,7 +27,7 @@ namespace Solang
 {
 
 class SearchCriterionSource :
-    public NonCopyable
+    private NonCopyable
 {
     public:
         virtual

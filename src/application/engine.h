@@ -37,7 +37,7 @@ namespace Solang
 {
 
 class Engine :
-    public NonCopyable
+    private NonCopyable
 {
     public:
         typedef std::map<Glib::ustring, IStoragePtr> StorageMap;

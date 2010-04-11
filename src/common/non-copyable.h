@@ -1,5 +1,6 @@
 /* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*- */
 /*
+ * Copyright (C) 2010 Debarshi Ray <rishi@gnu.org>
  * Copyright (C) 2009 Santanu Sinha <santanu.sinha@gmail.com>
  *
  * Solang is free software: you can redistribute it and/or modify it
@@ -24,13 +25,11 @@ namespace Solang
 
 class NonCopyable
 {
-public:
-    virtual
-    ~NonCopyable();
-
 protected:
     NonCopyable();
-		
+
+    ~NonCopyable();
+
 private:
     // Blocked.
     NonCopyable(const NonCopyable & source);

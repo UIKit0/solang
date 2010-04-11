@@ -33,7 +33,7 @@ class EnlargedRenderer;
 class SlideshowRenderer;
 
 class IPlugin :
-    public NonCopyable
+    private NonCopyable
 {
     public:
         virtual

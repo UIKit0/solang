@@ -38,7 +38,7 @@ typedef std::tr1::shared_ptr<const ArchiveEntry> ConstArchiveEntryPtr;
 typedef std::tr1::shared_ptr<ArchiveEntry> ArchiveEntryPtr;
 
 class ArchiveMaker :
-    public NonCopyable,
+    private NonCopyable,
     public sigc::trackable
 {
     public:

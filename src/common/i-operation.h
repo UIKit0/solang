@@ -36,7 +36,7 @@ namespace Solang
 {
 
 class IOperation :
-    public NonCopyable,
+    private NonCopyable,
     public sigc::trackable
 {
     public:

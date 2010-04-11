@@ -31,7 +31,7 @@ namespace Solang
 {
 
 class ContentTypeRepo
-        : public NonCopyable
+        : private NonCopyable
 {
     private:
         typedef Gdk::Pixbuf::SListHandle_PixbufFormat

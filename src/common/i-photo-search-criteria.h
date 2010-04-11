@@ -31,7 +31,7 @@ namespace Solang
 {
 
 class IPhotoSearchCriteria :
-    public NonCopyable
+    private NonCopyable
 {
     public:
         enum ClubbingOperationType

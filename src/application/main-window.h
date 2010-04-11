@@ -37,7 +37,7 @@ class Application;
 
 class MainWindow :
     public Gtk::Window,
-    public NonCopyable
+    private NonCopyable
 {
     public:
         MainWindow() throw();

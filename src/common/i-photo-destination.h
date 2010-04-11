@@ -33,7 +33,7 @@ namespace Solang
 class Application;
 
 class IPhotoDestination :
-    public NonCopyable
+    private NonCopyable
 {
     public:
         virtual

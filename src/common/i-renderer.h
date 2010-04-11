@@ -30,7 +30,7 @@ class IPlugin;
 class IRendererSelector;
 
 class IRenderer :
-    public NonCopyable
+    private NonCopyable
 {
     public:
         virtual

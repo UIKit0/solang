@@ -1,7 +1,7 @@
 /* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*- */
 /*
  * i-photo-source.h
- * Copyright (C) Debarshi Ray 2009 <rishi@gnu.org>
+ * Copyright (C) Debarshi Ray 2009, 2010 <rishi@gnu.org>
  * 
  * photo-source.h is free software: you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
@@ -34,7 +34,7 @@ class Database;
 class Tag;
 
 class IPhotoSource :
-    public NonCopyable
+    private NonCopyable
 {
     public:
         virtual

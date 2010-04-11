@@ -1,6 +1,6 @@
 /* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*- */
 /*
- * Copyright (C) 2009 Debarshi Ray <rishi@gnu.org>
+ * Copyright (C) 2009, 2010 Debarshi Ray <rishi@gnu.org>
  * Copyright (C) 2009 Santanu Sinha <santanu.sinha@gmail.com>
  *
  * Solang is free software: you can redistribute it and/or modify it
@@ -33,7 +33,7 @@ class Database;
 //Represents an object that is serialized to a database
 
 class DBObject :
-    public NonCopyable
+    private NonCopyable
 {
     public:
         typedef sigc::slot<void> SlotAsyncReady;

@@ -1,6 +1,7 @@
 /* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*- */
 /*
  * i-storage.h
+ * Copyright (C) Debarshi Ray 2010 <rishi@gnu.org>
  * Copyright (C) Santanu Sinha 2009 <santanu.sinha@gmail.com>
  * 
  * i-storage.h is free software: you can redistribute it and/or modify it
@@ -31,7 +32,7 @@ namespace Solang
 {
 
 class IStorage :
-    public NonCopyable
+    private NonCopyable
 {
     public:
         virtual

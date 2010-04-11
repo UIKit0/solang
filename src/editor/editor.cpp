@@ -39,7 +39,7 @@ namespace Solang
 {
 
 class IOperationFactory :
-    public NonCopyable
+    private NonCopyable
 {
     public:
         virtual

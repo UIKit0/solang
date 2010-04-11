@@ -27,7 +27,7 @@ namespace Solang
 {
 
 class Finally :
-    public NonCopyable
+    private NonCopyable
 {
     public:
         Finally(const sigc::slot<void> & s) throw();
