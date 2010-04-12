@@ -8,10 +8,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: solang master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=solang&component=General\n"
-"POT-Creation-Date: 2010-03-27 13:18+0000\n"
-"PO-Revision-Date: 2010-03-27 14:25+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-04-12 22:47+0200\n"
+"PO-Revision-Date: 2010-04-07 14:54+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -33,70 +32,70 @@ msgstr "Organizujte, užívejte si a sdílejte své fotografie"
 msgid "Photo Manager"
 msgstr "Správce fotografií"
 
-#: ../src/application/main-window.cpp:224
+#: ../src/application/main-window.cpp:226
 msgid "_Photo"
 msgstr "_Fotografie"
 
-#: ../src/application/main-window.cpp:233
+#: ../src/application/main-window.cpp:235
 #: ../src/renderer/browser-renderer.cpp:194
 msgid "_Edit"
 msgstr "_Upravit"
 
-#: ../src/application/main-window.cpp:238
+#: ../src/application/main-window.cpp:240
 #: ../src/renderer/browser-renderer.cpp:199
 msgid "_Add to Export Queue"
 msgstr "_Přidat do seznamu pro export"
 
-#: ../src/application/main-window.cpp:245
+#: ../src/application/main-window.cpp:247
 msgid "_Clear Export Queue"
 msgstr "_Vyčistit seznam pro export"
 
-#: ../src/application/main-window.cpp:250
+#: ../src/application/main-window.cpp:252
 msgid "_View"
 msgstr "_Zobrazení"
 
-#: ../src/application/main-window.cpp:254
+#: ../src/application/main-window.cpp:256
 msgid "_Toolbar"
 msgstr "_Nástrojová lišta"
 
-#: ../src/application/main-window.cpp:255
+#: ../src/application/main-window.cpp:257
 msgid "Show or hide the toolbar in the current window"
 msgstr "Zobrazit či skrýt v aktuálním okně nástrojovou lištu"
 
-#: ../src/application/main-window.cpp:261
+#: ../src/application/main-window.cpp:263
 msgid "_Statusbar"
 msgstr "_Stavová lišta"
 
-#: ../src/application/main-window.cpp:262
+#: ../src/application/main-window.cpp:264
 msgid "Show or hide the statusbar in the current window"
 msgstr "Zobrazit či skrýt stavovou lištu aktuálního okna"
 
-#: ../src/application/main-window.cpp:269
+#: ../src/application/main-window.cpp:271
 msgid "_Full Screen"
 msgstr "_Celá obrazovka"
 
-#: ../src/application/main-window.cpp:270
+#: ../src/application/main-window.cpp:272
 msgid "Show the current photo in full screen mode"
 msgstr "Zobrazit aktuální fotografii v režimu celé obrazovky"
 
-#: ../src/application/main-window.cpp:287
+#: ../src/application/main-window.cpp:289
 msgid "_Help"
 msgstr "_Nápověda"
 
-#: ../src/application/main-window.cpp:292
+#: ../src/application/main-window.cpp:294
 msgid "_Contents"
 msgstr "_Obsah"
 
-#: ../src/application/main-window.cpp:597
+#: ../src/application/main-window.cpp:662
 msgid "A photo manager for GNOME"
 msgstr "Správce fotografií pro GNOME"
 
 #. Translators: Put your names here.
-#: ../src/application/main-window.cpp:628
+#: ../src/application/main-window.cpp:693
 msgid "translator-credits"
 msgstr "Tomáš Novák <kuvaly@seznam.cz>"
 
-#: ../src/application/main-window.cpp:633
+#: ../src/application/main-window.cpp:698
 msgctxt "Project website"
 msgid "%1 Website"
 msgstr "Webové stránky %1"
@@ -173,29 +172,33 @@ msgstr "Odstranit všechny filtry na tomto seznamu"
 msgid "Tags"
 msgstr "Štítky"
 
-#: ../src/attribute/tag-manager.cpp:105
+#: ../src/attribute/tag-manager.cpp:106
 msgid "_Tags"
 msgstr "Š_títky"
 
-#: ../src/attribute/tag-manager.cpp:110
+#: ../src/attribute/tag-manager.cpp:111
 msgid "Create New _Tag..."
 msgstr "Vytvořit nový š_títek…"
 
-#: ../src/attribute/tag-manager.cpp:117
+#: ../src/attribute/tag-manager.cpp:118
 msgid "_Edit Selected Tag..."
 msgstr "_Upravit vybraný štítek…"
 
-#: ../src/attribute/tag-manager.cpp:124
+#: ../src/attribute/tag-manager.cpp:125
 msgid "_Delete Selected Tag"
 msgstr "_Odstranit vybraný štítek"
 
-#: ../src/attribute/tag-manager.cpp:130
+#: ../src/attribute/tag-manager.cpp:131
 msgid "_Attach Tag to Selection"
 msgstr "_Přiložit štítek k výběru"
 
-#: ../src/attribute/tag-manager.cpp:137
+#: ../src/attribute/tag-manager.cpp:138
 msgid "_Remove Tag From Selection"
 msgstr "_Odstranit štítek z výběru"
+
+#: ../src/attribute/tag-manager.cpp:144
+msgid "_Show All Tags"
+msgstr "_Zobrazit všechny štítky"
 
 #: ../src/attribute/tag-new-dialog.cpp:39
 #: ../src/attribute/tag-new-dialog.cpp:69
@@ -216,7 +219,11 @@ msgstr "Popis:"
 msgid "Create New Tag"
 msgstr "Vytvořit nový štítek"
 
-#: ../src/attribute/tag-new-dialog.cpp:127
+#: ../src/attribute/tag-new-dialog.cpp:86
+msgid "Edit Tag"
+msgstr "_Upravit štítek"
+
+#: ../src/attribute/tag-new-dialog.cpp:126
 msgid "Select Tag Icon"
 msgstr "Vybrat ikonu štítku"
 
@@ -650,4 +657,3 @@ msgstr "První"
 msgctxt "Navigation"
 msgid "Last"
 msgstr "Poslední"
-
