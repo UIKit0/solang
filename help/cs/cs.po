@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: solang master\n"
-"POT-Creation-Date: 2010-03-11 19:43+0000\n"
-"PO-Revision-Date: 2010-03-13 19:42+0100\n"
+"POT-Creation-Date: 2010-04-11 17:42+0000\n"
+"PO-Revision-Date: 2010-04-12 11:31+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,40 +16,42 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
 #: C/legal.xml:3(p)
-msgid "This work is licensed under a <link href=\"http://creativecommons.org/licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported License</link>."
-msgstr "Tato práce je licencovaná pod <link href=\"http://creativecommons.org/licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported License</link>."
+msgid ""
+"This work is licensed under a <link href=\"http://creativecommons.org/"
+"licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
+"License</link>."
+msgstr ""
+"Tato práce je licencovaná pod <link href=\"http://creativecommons.org/"
+"licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
+"License</link>."
 
 #: C/legal.xml:6(p)
-msgid "As a special exception, the copyright holders give you permission to copy, modify, and distribute the example code contained in this document under the terms of your choosing, without restriction."
-msgstr "Jako zvláštní výjimka se vám držitelem autorských práv uděluje svolení kopírovat, upravovat a šířit ukázkový kód obsažený v tomto dokumentu za podmínek, které si zvolíte, bez dalších omezení."
+msgid ""
+"As a special exception, the copyright holders give you permission to copy, "
+"modify, and distribute the example code contained in this document under the "
+"terms of your choosing, without restriction."
+msgstr ""
+"Jako zvláštní výjimka se vám držitelem autorských práv uděluje svolení "
+"kopírovat, upravovat a šířit ukázkový kód obsažený v tomto dokumentu za "
+"podmínek, které si zvolíte, bez dalších omezení."
 
 #: C/tags_manage.page:7(desc)
 msgid "Create, modify and delete tags."
 msgstr "Vytváření, úprava a mazání štítků."
 
-#: C/tags_manage.page:11(name)
-#: C/keys.page:9(name)
-#: C/howto_search.page:10(name)
-#: C/tags_intro.page:9(name)
-#: C/intro.page:10(name)
-#: C/photos_by_page.page:10(name)
-#: C/index.page:7(name)
-#: C/tags_use.page:11(name)
-#: C/import.page:10(name)
-#: C/export_folder.page:10(name)
+#: C/tags_manage.page:11(name) C/keys.page:9(name)
+#: C/howto_search.page:10(name) C/tags_intro.page:9(name)
+#: C/intro.page:10(name) C/photos_by_page.page:10(name) C/index.page:7(name)
+#: C/tags_use.page:11(name) C/import.page:10(name)
+#: C/export_folder.page:11(name)
 msgid "Florent Thévenet"
 msgstr "Florent Thévenet"
 
-#: C/tags_manage.page:12(email)
-#: C/keys.page:10(email)
-#: C/howto_search.page:11(email)
-#: C/tags_intro.page:10(email)
-#: C/intro.page:11(email)
-#: C/photos_by_page.page:11(email)
-#: C/index.page:8(email)
-#: C/tags_use.page:12(email)
-#: C/import.page:11(email)
-#: C/export_folder.page:11(email)
+#: C/tags_manage.page:12(email) C/keys.page:10(email)
+#: C/howto_search.page:11(email) C/tags_intro.page:10(email)
+#: C/intro.page:11(email) C/photos_by_page.page:11(email)
+#: C/index.page:8(email) C/tags_use.page:12(email) C/import.page:11(email)
+#: C/export_folder.page:12(email)
 msgid "feuloren@free.fr"
 msgstr "feuloren@free.fr"
 
@@ -66,12 +68,20 @@ msgid "You can quickly create tags."
 msgstr "Štítky můžete vytvořit rychle."
 
 #: C/tags_manage.page:25(p)
-msgid "From the <gui>main</gui> window, choose <guiseq><gui>Tags</gui><gui>Create New Tag...</gui></guiseq>."
-msgstr "V <gui>hlavním</gui> okně zvolte <guiseq><gui>Štítky</gui><gui>Vytvořit nový štítek…</gui></guiseq>."
+msgid ""
+"From the <gui>main</gui> window, choose <guiseq><gui>Tags</gui><gui>Create "
+"New Tag...</gui></guiseq>."
+msgstr ""
+"V <gui>hlavním</gui> okně zvolte <guiseq><gui>Štítky</gui><gui>Vytvořit nový "
+"štítek…</gui></guiseq>."
 
 #: C/tags_manage.page:29(p)
-msgid "In the <gui>Create New Tag</gui> window, enter the name of your tag and enter an optional description."
-msgstr "V okně <gui>Vytvoření nového štítku</gui> zadejte název vašeho štítku a případně zadejte i volitelný popis."
+msgid ""
+"In the <gui>Create New Tag</gui> window, enter the name of your tag and "
+"enter an optional description."
+msgstr ""
+"V okně <gui>Vytvoření nového štítku</gui> zadejte název vašeho štítku a "
+"případně zadejte i volitelný popis."
 
 #: C/tags_manage.page:32(p)
 msgid "Press <gui>OK</gui> to validate the creation of the tag."
@@ -86,8 +96,12 @@ msgid "You can modify the name and the description of a tag."
 msgstr "U štítku můžete upravit jeho název a popis."
 
 #: C/tags_manage.page:45(p)
-msgid "From the <gui>main</gui> window, choose <guiseq><gui>Tags</gui><gui>Edit Selected Tag...</gui></guiseq>."
-msgstr "V <gui>hlavním</gui> okně zvolte <guiseq><gui>Štítky</gui><gui>Upravit vybraný štítek…</gui></guiseq>."
+msgid ""
+"From the <gui>main</gui> window, choose <guiseq><gui>Tags</gui><gui>Edit "
+"Selected Tag...</gui></guiseq>."
+msgstr ""
+"V <gui>hlavním</gui> okně zvolte <guiseq><gui>Štítky</gui><gui>Upravit "
+"vybraný štítek…</gui></guiseq>."
 
 #: C/tags_manage.page:49(p)
 msgid "In the <gui>Edit Tag</gui> window, modify the field you want."
@@ -98,20 +112,45 @@ msgid "Press <gui>OK</gui> to save the modifications of the tag."
 msgstr "Zmáčknutím <gui>OK</gui> změny štítku uložíte."
 
 #: C/tags_manage.page:58(title)
+msgid "Show only the tags you need."
+msgstr "Jak zobrazit jen štítky, které potřebujete."
+
+#: C/tags_manage.page:60(p)
+msgid ""
+"By default the <gui>Tag List</gui> shows only tags that are attached to your "
+"photos. But it can show the tags from your text documents, your videos..."
+msgstr ""
+"Standardně jsou v <gui>seznamu štítků</gui> zobrazeny jen štítky, které jsou "
+"připojené k vašim fotografiím. Můžete ale zobrazit i štítky ze svých "
+"dokumentů, videí…"
+
+#: C/tags_manage.page:64(p)
+msgid ""
+"From the <gui>main</gui> window, choose <guiseq><gui>Tags</gui><gui>Show All "
+"Tags</gui></guiseq>."
+msgstr ""
+"V <gui>hlavním</gui> okně zvolte <guiseq><gui>Štítky</gui><gui>Zobrazit "
+"všechny štítky</gui></guiseq>."
+
+#: C/tags_manage.page:71(title)
 msgid "Delete a tag."
 msgstr "Jak smazat štítek"
 
-#: C/tags_manage.page:60(p)
+#: C/tags_manage.page:73(p)
 msgid "You can delete a tag."
 msgstr "Štítek můžete smazat."
 
-#: C/tags_manage.page:64(p)
+#: C/tags_manage.page:77(p)
 msgid "In the <gui>Tag List</gui>, click on the tag you want to delete."
 msgstr "V <gui>Seznamu štítků</gui> klikněte na štítek, který chcete smazat."
 
-#: C/tags_manage.page:67(p)
-msgid "Choose <guiseq><gui>Tags</gui><gui>Delete Selected Tag</gui></guiseq> to delete this tag."
-msgstr "Volbou <guiseq><gui>Štítky</gui><gui>Smazat vybraný štítek</gui></guiseq> štítek vymažete."
+#: C/tags_manage.page:80(p)
+msgid ""
+"Choose <guiseq><gui>Tags</gui><gui>Delete Selected Tag</gui></guiseq> to "
+"delete this tag."
+msgstr ""
+"Volbou <guiseq><gui>Štítky</gui><gui>Smazat vybraný štítek</gui></guiseq> "
+"štítek vymažete."
 
 #: C/keys.page:5(desc)
 msgid "You are going to love your keyboard."
@@ -157,9 +196,7 @@ msgstr "Přiblížit"
 msgid "Enlarge the picture or the thumbnails."
 msgstr "Zvětšit obrázek nebo náhledy."
 
-#: C/keys.page:29(key)
-#: C/keys.page:33(key)
-#: C/keys.page:37(key)
+#: C/keys.page:29(key) C/keys.page:33(key) C/keys.page:37(key)
 #: C/keys.page:47(key)
 msgid "Ctrl"
 msgstr "Ctrl"
@@ -186,14 +223,15 @@ msgstr "Normální velikost"
 
 #: C/keys.page:36(p)
 msgid "Display image in its normal size (only in <gui>Enlarged mode</gui>)."
-msgstr "Zobrazit obrázek v jeho normální velikosti (pouze v <gui>režimu zvětšení</gui>)."
+msgstr ""
+"Zobrazit obrázek v jeho normální velikosti (pouze v <gui>režimu zvětšení</"
+"gui>)."
 
 #: C/keys.page:37(key)
 msgid "0"
 msgstr "0"
 
-#: C/keys.page:43(title)
-#: C/index.page:38(title)
+#: C/keys.page:43(title) C/index.page:39(title)
 msgid "Tags"
 msgstr "Štítky"
 
@@ -221,19 +259,13 @@ msgstr "Předchozí stránka"
 msgid "Go to the previous page."
 msgstr "Přejít na předchozí stránku."
 
-#: C/keys.page:71(key)
-#: C/keys.page:75(key)
-#: C/keys.page:79(key)
-#: C/keys.page:83(key)
-#: C/keys.page:93(key)
-#: C/keys.page:97(key)
-#: C/keys.page:101(key)
-#: C/keys.page:105(key)
+#: C/keys.page:71(key) C/keys.page:75(key) C/keys.page:79(key)
+#: C/keys.page:83(key) C/keys.page:93(key) C/keys.page:97(key)
+#: C/keys.page:101(key) C/keys.page:105(key)
 msgid "Alt"
 msgstr "Alt"
 
-#: C/keys.page:71(key)
-#: C/keys.page:93(key)
+#: C/keys.page:71(key) C/keys.page:93(key)
 msgid "Left"
 msgstr "Vlevo"
 
@@ -245,8 +277,7 @@ msgstr "Následující stránka"
 msgid "Go to the next page."
 msgstr "Přejít na následující stránku."
 
-#: C/keys.page:75(key)
-#: C/keys.page:97(key)
+#: C/keys.page:75(key) C/keys.page:97(key)
 msgid "Right"
 msgstr "Vpravo"
 
@@ -258,8 +289,7 @@ msgstr "První stránka"
 msgid "Go to the first page."
 msgstr "Přejít na první stránku."
 
-#: C/keys.page:79(key)
-#: C/keys.page:101(key)
+#: C/keys.page:79(key) C/keys.page:101(key)
 msgid "Home"
 msgstr "Home"
 
@@ -271,8 +301,7 @@ msgstr "Poslední stránka"
 msgid "Go to the last page."
 msgstr "Přejít na poslední stránku."
 
-#: C/keys.page:83(key)
-#: C/keys.page:105(key)
+#: C/keys.page:83(key) C/keys.page:105(key)
 msgid "End"
 msgstr "End"
 
@@ -312,6 +341,18 @@ msgstr "Poslední fotografie"
 msgid "Go to the last photo."
 msgstr "Přejít na poslední fotografii."
 
+#: C/keys.page:108(p)
+msgid "Quit Enlarged mode"
+msgstr "Ukončit režim zvětšení"
+
+#: C/keys.page:108(p)
+msgid "Quit the Enlarged mode and go to Browser mode."
+msgstr "Ukončit režim zvětšení a přejít do režimu procházení."
+
+#: C/keys.page:109(key)
+msgid "Escape"
+msgstr "Escape"
+
 #: C/howto_search.page:6(desc)
 msgid "Filters your photos."
 msgstr "Filtrování vašich fotografií."
@@ -321,30 +362,66 @@ msgid "How do I use the search function?"
 msgstr "Jak mohu vyhledávat?"
 
 #: C/howto_search.page:17(p)
-msgid "Actually you have to drag and drop one or more filters to the <gui>Search Basket</gui>. <app>Solang</app> will display only photos that correspond to all the filters you have chosen. Today only tags are filters."
-msgstr "V současnosti musíte přetáhnout jeden nebo více filtrů do <gui>vyhledávacího koše</gui>. Aplikace <app>Solang</app> zobrazí jen fotografie, které odpovídají všem filtrům, které jste zvolili. Zatím mohou jako filtry vystupovat pouze štítky."
+msgid ""
+"Actually you have to drag and drop one or more filters to the <gui>Search "
+"Basket</gui>. <app>Solang</app> will display only photos that correspond to "
+"all the filters you have chosen. Tags and photos properties are filters."
+msgstr ""
+"V současnosti musíte přetáhnout jeden nebo více filtrů do <gui>vyhledávacího "
+"koše</gui>. Aplikace <app>Solang</app> zobrazí jen fotografie, které "
+"odpovídají všem filtrům, které jste zvolili. Zatím mohou jako filtry "
+"vystupovat pouze štítky a vlastnosti fotografií."
 
 #: C/howto_search.page:19(p)
-msgid "To add a filter drag a tag from the <gui>Tag List</gui> to the <gui>Search Basket</gui>."
-msgstr "Filtr přidáte tak, že přetáhnete štítek ze <gui>seznamu štítků</gui> do <gui>vyhledávacího koše</gui>."
+msgid ""
+"To add a tag filter drag a tag from the <gui>Tag List</gui> to the "
+"<gui>Search Basket</gui>."
+msgstr ""
+"Filtr štítků přidáte tak, že přetáhnete štítek ze <gui>seznamu štítků</gui> "
+"do <gui>vyhledávacího koše</gui>."
 
 #: C/howto_search.page:20(p)
-msgid "To remove all the filters, right-click on a filter and choose <gui>Select All</gui>, then righ-click on the same filter and choose <gui>Remove</gui>."
-msgstr "Všechny filtry odstraníte tak, že kliknete pravým tlačítkem na filtr a zvolíte <gui>Vybrat vše</gui>, potom klikněte na stejný filtr pravým tlačítkem a zvolte <gui>Odstranit</gui>."
+msgid ""
+"To add a property filter drag a property (for example Camera) from the "
+"<gui>Basic Properties List</gui> to the <gui>Search Basket</gui>."
+msgstr ""
+"Filtr vlastností přidáte tak, že přetáhnete vlastnost (např. Fotoaparát) ze "
+"<gui>seznamu základních vlastností</gui> do <gui>vyhledávacího koše</gui>."
 
 #: C/howto_search.page:21(p)
-msgid "To remove one filter, right-click on the filter you want to remove in the <gui>Search Basket</gui> and choose <gui>Remove</gui>."
-msgstr "Jeden filtr odstraníte tak, že kliknete pravým tlačítkem na filtr, který chcete odstranit ve <gui>vyhledávacím koši</gui> a zvolíte <gui>Odstranit</gui>."
+msgid ""
+"To remove all the filters, right-click on a filter and choose <gui>Select "
+"All</gui>, then righ-click on the same filter and choose <gui>Remove</gui>."
+msgstr ""
+"Všechny filtry odstraníte tak, že kliknete pravým tlačítkem na filtr a "
+"zvolíte <gui>Vybrat vše</gui>, potom klikněte na stejný filtr pravým "
+"tlačítkem a zvolte <gui>Odstranit</gui>."
 
-#: C/howto_search.page:24(p)
-msgid "What's more you can use the <gui>Free text search</gui> entry to filter photos name."
-msgstr "Jaké jsou další možnosti filtrování názvů fotografií pomocí pole <gui>Volné vyhledávání textu</gui>."
+#: C/howto_search.page:22(p)
+msgid ""
+"To remove one filter, right-click on the filter you want to remove in the "
+"<gui>Search Basket</gui> and choose <gui>Remove</gui>."
+msgstr ""
+"Jeden filtr odstraníte tak, že kliknete pravým tlačítkem na filtr, který "
+"chcete odstranit ve <gui>vyhledávacím koši</gui> a zvolíte <gui>Odstranit</"
+"gui>."
 
-#: C/howto_search.page:26(p)
-msgid "Write the text you want to search in the <gui>Free text search</gui> entry"
-msgstr "Do pole <gui>Volné vyhledávání textu</gui> zadejte text, který chcete vyhledat"
+#: C/howto_search.page:25(p)
+msgid ""
+"What's more you can use the <gui>Free text search</gui> entry to filter "
+"photos name."
+msgstr ""
+"Jaké jsou další možnosti filtrování názvů fotografií pomocí pole <gui>Volné "
+"vyhledávání textu</gui>."
 
 #: C/howto_search.page:27(p)
+msgid ""
+"Write the text you want to search in the <gui>Free text search</gui> entry"
+msgstr ""
+"Do pole <gui>Volné vyhledávání textu</gui> zadejte text, který chcete "
+"vyhledat"
+
+#: C/howto_search.page:28(p)
 msgid "Press <key>Enter</key>"
 msgstr "Zmáčkněte <key>Enter</key>"
 
@@ -357,26 +434,49 @@ msgid "What's a tag?"
 msgstr "Co je to štítek?"
 
 #: C/tags_intro.page:15(p)
-msgid "Tags are keyword you can use to label and organize your photos. You may have already seen it in weblogs."
-msgstr "Štítky jsou klíčová slova, která můžete použít jako popisky a roztřídit si s nimi své fotografie. Možná jste se s nimi již setkali u webových blogů."
+msgid ""
+"Tags are keyword you can use to label and organize your photos. You may have "
+"already seen it in weblogs."
+msgstr ""
+"Štítky jsou klíčová slova, která můžete použít jako popisky a roztřídit si s "
+"nimi své fotografie. Možná jste se s nimi již setkali u webových blogů."
 
 #: C/tags_intro.page:16(p)
-msgid "<app>Solang</app> uses tags to help you organizing your photos. In fact, you can use tags to organize your photos the way you want!"
-msgstr "Aplikace <app>Solang</app> používá štítky, aby vám pomohla organizovat vaše fotografie. Ve skutečnosti můžete štítky používat k organizování svých fotografií jakkoliv budete chtít!"
+msgid ""
+"<app>Solang</app> uses tags to help you organizing your photos. In fact, you "
+"can use tags to organize your photos the way you want!"
+msgstr ""
+"Aplikace <app>Solang</app> používá štítky, aby vám pomohla organizovat vaše "
+"fotografie. Ve skutečnosti můžete štítky používat k organizování svých "
+"fotografií jakkoliv budete chtít!"
 
 #: C/tags_intro.page:17(p)
-msgid "For example, some people uses tags to create \"albums\" of their holiday photos. Some others use tags to show what friends are in their photos, to view only photos from one geographical place or distinguish the photos they have modified."
-msgstr "Například někteří lidé používají štítky k vytváření „alb“ svých fotografií z dovolené. Jiní zase používají štítky zobrazení toho, kteří přátelé jsou na jejich fotografiích, k zobrazení fotografií jen z konkrétního místa nebo k rozlišení, které fotografie byly upravovány."
+msgid ""
+"For example, some people uses tags to create \"albums\" of their holiday "
+"photos. Some others use tags to show what friends are in their photos, to "
+"view only photos from one geographical place or distinguish the photos they "
+"have modified."
+msgstr ""
+"Například někteří lidé používají štítky k vytváření „alb“ svých fotografií z "
+"dovolené. Jiní zase používají štítky zobrazení toho, kteří přátelé jsou na "
+"jejich fotografiích, k zobrazení fotografií jen z konkrétního místa nebo k "
+"rozlišení, které fotografie byly upravovány."
 
 #: C/tags_intro.page:19(p)
-msgid "<app>Solang</app> allows you to use tags as filters to view only photos that have some tags attached to them."
-msgstr "Aplikace <app>Solang</app> vám umožňuje použít štítky jako filtry k zobrazení jen těch fotek, které mají konkrétní štítek přiložený."
+msgid ""
+"<app>Solang</app> allows you to use tags as filters to view only photos that "
+"have some tags attached to them."
+msgstr ""
+"Aplikace <app>Solang</app> vám umožňuje použít štítky jako filtry k "
+"zobrazení jen těch fotek, které mají konkrétní štítek přiložený."
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
 #: C/intro.page:24(None)
-msgid "@@image: 'figures/main-window.png'; md5=3531b20d31fd0896d595d3fd691e4944"
-msgstr "@@image: 'figures/main-window.png'; md5=3531b20d31fd0896d595d3fd691e4944"
+msgid ""
+"@@image: 'figures/main-window.png'; md5=dd683ccfcb174192e89aaee8d58294ba"
+msgstr ""
+"@@image: 'figures/main-window.png'; md5=dd683ccfcb174192e89aaee8d58294ba"
 
 #: C/intro.page:6(desc)
 msgid "Introduction to the <app>Solang</app> photos manager."
@@ -387,20 +487,43 @@ msgid "Introduction to <app>Solang</app>"
 msgstr "Úvod do aplikace <app>Solang</app>"
 
 #: C/intro.page:16(p)
-msgid "<app>Solang</app> is a photo manager for the GNOME desktop. It lets you manage your collection of photos by tagging them and searching through them based on various criteria -- tags, EXIF data, dates."
-msgstr "<app>Solang</app> je správce fotografií pro pracovní prostředí GNOME. Umožňuje vám spravovat své sbírky fotografií pomocí označování štítky a vyhledávání v nich podle různých věcí - štítků, dat EXIF, data."
+msgid ""
+"<app>Solang</app> is a photo manager for the GNOME desktop. It lets you "
+"manage your collection of photos by tagging them and searching through them "
+"based on various criteria -- tags, EXIF data, dates."
+msgstr ""
+"<app>Solang</app> je správce fotografií pro pracovní prostředí GNOME. "
+"Umožňuje vám spravovat své sbírky fotografií pomocí označování štítky a "
+"vyhledávání v nich podle různých věcí - štítků, dat EXIF, data."
 
 #: C/intro.page:17(p)
-msgid "You don't need to care about importing your photos to view them, as soon as you add photos to your computer you can enjoy them right into <app>Solang</app>. In the same way, if you attached tags to a photo from the <app>File manager</app>, they are automatically recognized in <app>Solang</app>."
-msgstr "Nemusíte se starat o nějaké importování fotografií, abyste je mohli zobrazit. Jakmile fotografie přidáte do svého počítač, můžete si je hned užívat v aplikaci <app>Solang</app>. Stejně tak, když fotografií přiložíte ve <app>správci souborů</app> štítek, je automaticky rozpoznán v aplikaci <app>Solang</app>."
+msgid ""
+"You don't need to care about importing your photos to view them, as soon as "
+"you add photos to your computer you can enjoy them right into <app>Solang</"
+"app>. In the same way, if you attached tags to a photo from the <app>File "
+"manager</app>, they are automatically recognized in <app>Solang</app>."
+msgstr ""
+"Nemusíte se starat o nějaké importování fotografií, abyste je mohli "
+"zobrazit. Jakmile fotografie přidáte do svého počítač, můžete si je hned "
+"užívat v aplikaci <app>Solang</app>. Stejně tak, když fotografií přiložíte "
+"ve <app>správci souborů</app> štítek, je automaticky rozpoznán v aplikaci "
+"<app>Solang</app>."
 
 #: C/intro.page:18(p)
-msgid "If your photos are the wrong way around you can rotate them or flip them in one click."
-msgstr "Pokud jsou vaše fotografie špatně otočené, můžete je otočit nebo překlopit jediným kliknutím."
+msgid ""
+"If your photos are the wrong way around you can rotate them or flip them in "
+"one click."
+msgstr ""
+"Pokud jsou vaše fotografie špatně otočené, můžete je otočit nebo překlopit "
+"jediným kliknutím."
 
 #: C/intro.page:19(p)
-msgid "You can enjoy your photos with your friends thanks to the slideshow feature and the fullscreen mode."
-msgstr "Své fotografie můžete snadno předvádět svým přátelům díky funkci promítání a režimu celá obrazovka."
+msgid ""
+"You can enjoy your photos with your friends thanks to the slideshow feature "
+"and the fullscreen mode."
+msgstr ""
+"Své fotografie můžete snadno předvádět svým přátelům díky funkci promítání a "
+"režimu celá obrazovka."
 
 #: C/intro.page:22(title)
 msgid "<gui>Main</gui> window"
@@ -423,8 +546,12 @@ msgid "I don't see all my photos."
 msgstr "Nevidím všechny své fotky"
 
 #: C/photos_by_page.page:16(p)
-msgid "<app>Solang</app> only display 50 photos by page, so you can only preview 50 photos at once."
-msgstr "Aplikace <app>Solang</app> zobrazuje pouze 50 fotografií na stránku, takže naráz můžete vidět pouze náhledy 50 fotografií."
+msgid ""
+"<app>Solang</app> only display 50 photos by page, so you can only preview 50 "
+"photos at once."
+msgstr ""
+"Aplikace <app>Solang</app> zobrazuje pouze 50 fotografií na stránku, takže "
+"naráz můžete vidět pouze náhledy 50 fotografií."
 
 #: C/photos_by_page.page:17(p)
 msgid "Hopefully there are multiple pages."
@@ -436,15 +563,21 @@ msgstr "Na následující stránku se můžete dostat"
 
 #: C/photos_by_page.page:21(p)
 msgid "Click on the <gui>Next page</gui> button in the <gui>Toolbar</gui>."
-msgstr "Kliknutím na tlačítko <gui>Následující stránka</gui> na <gui>panelu nástrojů</gui>."
+msgstr ""
+"Kliknutím na tlačítko <gui>Následující stránka</gui> na <gui>panelu "
+"nástrojů</gui>."
 
 #: C/photos_by_page.page:24(p)
 msgid "Press <keyseq><key>Alt</key><key>Page Down</key></keyseq>."
 msgstr "Zmáčknutím <keyseq><key>Alt</key><key>Page Down</key></keyseq>."
 
 #: C/photos_by_page.page:27(p)
-msgid "Choose <guiseq><gui>Go</gui><gui>Next Page</gui></guiseq> from the <gui>Main Window</gui>."
-msgstr "Volbou <guiseq><gui>Přejít</gui><gui>Následující stránka</gui></guiseq> v <gui>hlavním okně</gui>."
+msgid ""
+"Choose <guiseq><gui>Go</gui><gui>Next Page</gui></guiseq> from the <gui>Main "
+"Window</gui>."
+msgstr ""
+"Volbou <guiseq><gui>Přejít</gui><gui>Následující stránka</gui></guiseq> v "
+"<gui>hlavním okně</gui>."
 
 #: C/photos_by_page.page:30(p)
 msgid "To go to the previous page you can"
@@ -452,23 +585,36 @@ msgstr "Na předchozí stránku se můžete dostat"
 
 #: C/photos_by_page.page:33(p)
 msgid "Click on the <gui>Previous page</gui> button in the <gui>Toolbar</gui>."
-msgstr "Kliknutím na tlačítko <gui>Předchozí stránka</gui> na <gui>panelu nástrojů</gui>."
+msgstr ""
+"Kliknutím na tlačítko <gui>Předchozí stránka</gui> na <gui>panelu nástrojů</"
+"gui>."
 
 #: C/photos_by_page.page:36(p)
 msgid "Press <keyseq><key>Alt</key><key>Page Up</key></keyseq>."
 msgstr "Zmáčknutím <keyseq><key>Alt</key><key>Page Up</key></keyseq>."
 
 #: C/photos_by_page.page:39(p)
-msgid "Choose <guiseq><gui>Go</gui><gui>Previous Page</gui></guiseq> from the <gui>Main Window</gui>."
-msgstr "Volbou <guiseq><gui>Přejít</gui><gui>Předchozí stránka</gui></guiseq> v <gui>hlavním okně</gui>."
+msgid ""
+"Choose <guiseq><gui>Go</gui><gui>Previous Page</gui></guiseq> from the "
+"<gui>Main Window</gui>."
+msgstr ""
+"Volbou <guiseq><gui>Přejít</gui><gui>Předchozí stránka</gui></guiseq> v "
+"<gui>hlavním okně</gui>."
 
 #: C/index.page:13(title)
 msgid "<app>Solang</app> Help"
 msgstr "Nápověda k aplikaci <app>Solang</app>"
 
 #: C/index.page:16(p)
-msgid "This guide is created for <app>Solang</app>'s 0.4 series. Since there have been some UI regressions from the 0.3 series, this guide may not cover some features of <app>Solang</app> 0.3, mostly the import process."
-msgstr "Tato příručka je napsaná pro aplikaci <app>Solang</app> řady 0.4. Vzhledem k tomu, že oproti verzi 0.3 došlo k nějakým změnám v uživatelském rozhraní, nemusí tato příručka pokrývat všechny vlastnosti aplikace <app>Solang</app> 0.3, převážně postup importu."
+msgid ""
+"This guide is created for <app>Solang</app>'s 0.4 series. Since there have "
+"been some UI regressions from the 0.3 series, this guide may not cover some "
+"features of <app>Solang</app> 0.3, mostly the import process."
+msgstr ""
+"Tato příručka je napsaná pro aplikaci <app>Solang</app> řady 0.4. Vzhledem k "
+"tomu, že oproti verzi 0.3 došlo k nějakým změnám v uživatelském rozhraní, "
+"nemusí tato příručka pokrývat všechny vlastnosti aplikace <app>Solang</app> "
+"0.3, převážně postup importu."
 
 #: C/index.page:22(title)
 msgid "General Questions"
@@ -478,7 +624,7 @@ msgstr "Obecné otázky"
 msgid "Exporting photos"
 msgstr "Export fotografií"
 
-#: C/index.page:47(title)
+#: C/index.page:48(title)
 msgid "Tips and Tricks"
 msgstr "Tipy a triky"
 
@@ -496,19 +642,33 @@ msgstr "Jak přiložit štítek k fotografiím."
 
 #: C/tags_use.page:21(p)
 msgid "You can attach a tag to one or more photos at once."
-msgstr "Štítek můžete přiložit k jedné fotografii nebo k více fotografiím naráz."
+msgstr ""
+"Štítek můžete přiložit k jedné fotografii nebo k více fotografiím naráz."
 
 #: C/tags_use.page:25(p)
-msgid "From the <gui>main</gui> window, select one or more photos you want to tag."
-msgstr "V <gui>hlavním</gui> okně vyberte jednu nebo více fotografií, ke kterým chcete štítek připojit."
+msgid ""
+"From the <gui>main</gui> window, select one or more photos you want to tag."
+msgstr ""
+"V <gui>hlavním</gui> okně vyberte jednu nebo více fotografií, ke kterým "
+"chcete štítek připojit."
 
 #: C/tags_use.page:28(p)
-msgid "In the <gui>Tag List</gui>, click on the tag you want to attach to these photos."
-msgstr "V <gui>seznamu štítků</gui> klikněte na štítek, který chcete k těmto fotografiím přiložit."
+msgid ""
+"In the <gui>Tag List</gui>, click on the tag you want to attach to these "
+"photos."
+msgstr ""
+"V <gui>seznamu štítků</gui> klikněte na štítek, který chcete k těmto "
+"fotografiím přiložit."
 
 #: C/tags_use.page:31(p)
-msgid "Choose <guiseq><gui>Tags</gui><gui>Attach Tag to Selection</gui></guiseq> or press <keyseq><key>Ctrl</key><key>T</key></keyseq> to attach the tag to these photos."
-msgstr "Zvolte <guiseq><gui>Štítky</gui><gui>Přiložit štítek k výběru</gui></guiseq> nebo zmáčkněte <keyseq><key>Ctrl</key><key>T</key></keyseq> a štítek se k fotografiím přiloží."
+msgid ""
+"Choose <guiseq><gui>Tags</gui><gui>Attach Tag to Selection</gui></guiseq> or "
+"press <keyseq><key>Ctrl</key><key>T</key></keyseq> to attach the tag to "
+"these photos."
+msgstr ""
+"Zvolte <guiseq><gui>Štítky</gui><gui>Přiložit štítek k výběru</gui></guiseq> "
+"nebo zmáčkněte <keyseq><key>Ctrl</key><key>T</key></keyseq> a štítek se k "
+"fotografiím přiloží."
 
 #: C/tags_use.page:37(title)
 msgid "Remove a tag from photos."
@@ -516,19 +676,31 @@ msgstr "Jak odstranit štítek z fotografií."
 
 #: C/tags_use.page:39(p)
 msgid "You can remove a tag from one or more photos at once."
-msgstr "Štítek můžete odstranit z jedné fotografie nebo z více fotografií naráz."
+msgstr ""
+"Štítek můžete odstranit z jedné fotografie nebo z více fotografií naráz."
 
 #: C/tags_use.page:43(p)
-msgid "From the <gui>main</gui> window, select one or more photos you want to untag."
-msgstr "V <gui>hlavním</gui> okně vyberte jednu nebo více fotografií, kterým chcete štítek odebrat."
+msgid ""
+"From the <gui>main</gui> window, select one or more photos you want to untag."
+msgstr ""
+"V <gui>hlavním</gui> okně vyberte jednu nebo více fotografií, kterým chcete "
+"štítek odebrat."
 
 #: C/tags_use.page:46(p)
-msgid "In the <gui>Tag List</gui>, click on the tag you want to remove from these photos."
-msgstr "V <gui>seznamu štítků</gui> klikněte na štítek, který chcete z těchto fotografií odebrat."
+msgid ""
+"In the <gui>Tag List</gui>, click on the tag you want to remove from these "
+"photos."
+msgstr ""
+"V <gui>seznamu štítků</gui> klikněte na štítek, který chcete z těchto "
+"fotografií odebrat."
 
 #: C/tags_use.page:49(p)
-msgid "Choose <guiseq><gui>Tags</gui><gui>Remove Tag From Selection</gui></guiseq> to remove the tag from these photos."
-msgstr "Zvolte <guiseq><gui>Štítky</gui><gui>Odstranit štítek z výběru</gui></guiseq> a štítek bude z vybraných fotografií odstraněn."
+msgid ""
+"Choose <guiseq><gui>Tags</gui><gui>Remove Tag From Selection</gui></guiseq> "
+"to remove the tag from these photos."
+msgstr ""
+"Zvolte <guiseq><gui>Štítky</gui><gui>Odstranit štítek z výběru</gui></"
+"guiseq> a štítek bude z vybraných fotografií odstraněn."
 
 #: C/import.page:6(desc)
 msgid "To view your photos in <app>Solang</app>."
@@ -539,58 +711,77 @@ msgid "I can't see any photos"
 msgstr "Nevidím žádné fotky"
 
 #: C/import.page:16(p)
-msgid "Solang only displays photos that are indexed by the <app>Tracker search tool</app>, if you don't see your photos Tracker may not be running or your photos may not be indexed. To make sure Tracker indexes your photos use the <app>Search tool preferences</app> from the <gui>System</gui> menu."
-msgstr "Aplikace Solang zobrazuje pouze fotografie, které jsou zaindexované <app>prohledávacím nástrojem Tracker</app>, takže pokud své fotografie nevidíte, možná program Tracker neběží nebo nejsou fotografie zaindexované. Ujistěte se přes nabídku <gui>System</gui> v <app>Předvolbách prohledávacího nástroje</app>, že Tracker vaše fotografie indexuje."
+msgid ""
+"Solang only displays photos that are indexed by the <app>Tracker search "
+"tool</app>, if you don't see your photos Tracker may not be running or your "
+"photos may not be indexed. To make sure Tracker indexes your photos use the "
+"<app>Search tool preferences</app> from the <gui>System</gui> menu."
+msgstr ""
+"Aplikace Solang zobrazuje pouze fotografie, které jsou zaindexované "
+"<app>prohledávacím nástrojem Tracker</app>, takže pokud své fotografie "
+"nevidíte, možná program Tracker neběží nebo nejsou fotografie zaindexované. "
+"Ujistěte se přes nabídku <gui>System</gui> v <app>Předvolbách prohledávacího "
+"nástroje</app>, že Tracker vaše fotografie indexuje."
 
-#: C/export_folder.page:6(desc)
+#: C/export_folder.page:7(desc)
 msgid "To copy photos in a archive or a folder."
 msgstr "Jak kopírovat fotografie do archivu nebo do složky."
 
-#: C/export_folder.page:15(title)
+#: C/export_folder.page:16(title)
 msgid "Archive your photos"
 msgstr "Archivujte své fotografie"
 
-#: C/export_folder.page:16(p)
-msgid "You can copy photos to a directory of your computer or put them in a archive."
-msgstr "Fotografie můžete kopírovat do složky na svém počítači nebo je vložit do archivu."
+#: C/export_folder.page:17(p)
+msgid ""
+"You can copy photos to a directory of your computer or put them in a archive."
+msgstr ""
+"Fotografie můžete kopírovat do složky na svém počítači nebo je vložit do "
+"archivu."
 
-#: C/export_folder.page:18(p)
-msgid "First you have to add the photos you want to export to the export queue. There are many ways to add a photo to the Export Queue."
-msgstr "Nejdříve musíte fotografie, které chcete exportovat, přidat do seznamu pro export. Je řada způsobů, jak fotografie do seznamu přidat."
+#: C/export_folder.page:19(p)
+msgid ""
+"First you have to <link xref=\"export_queue\">add the photos you want to "
+"export to the Export Queue</link>."
+msgstr ""
+"Nejdříve musíte fotografie, <link xref=\"export_queue\">které chcete "
+"exportovat, přidat do fronty exportu</link>."
 
 #: C/export_folder.page:21(p)
-msgid "Right-click on a photo."
-msgstr "Klikněte pravým tlačítkem na fotografii."
+msgid "Now you have to export your Export Queue to a folder."
+msgstr "Nyní musíte svoji frontu exportu vyexportovat do složky."
 
 #: C/export_folder.page:24(p)
-msgid "Choose <gui>Add to Export Queue</gui>."
-msgstr "Zvolte <gui>Přidat do seznamu pro export</gui>."
+msgid ""
+"Choose <guiseq><gui>Photos</gui><gui>Export to</gui><gui>Folder...</gui></"
+"guiseq>."
+msgstr ""
+"Zvolte <guiseq><gui>Fotografie</gui><gui>Export do</gui><gui>Složka…</gui></"
+"guiseq>."
 
-#: C/export_folder.page:29(p)
-msgid "Select one or more photos you want to export."
-msgstr "Vyberte jednu nebo více fotografií, které chcete exportovat."
+#: C/export_folder.page:27(p)
+msgid ""
+"From the <gui>Export</gui> window, choose the directory you want your photos "
+"to be exported to."
+msgstr ""
+"Z okna <gui>Export</gui> zvolte složku, do které chcete fotografie "
+"vyexportovat."
 
-#: C/export_folder.page:32(p)
-msgid "Choose <guiseq><gui>Edit</gui><gui>Add to Export Queue</gui></guiseq>."
-msgstr "Zvolte <guiseq><gui>Upravit</gui><gui>Přidat do seznamu pro export</gui></guiseq>."
+#: C/export_folder.page:30(p)
+msgid ""
+"Check <gui>Create an archive</gui> if you want your photos to be packed up "
+"in a compressed archive. It can be useful if you want to send the photos by "
+"e-mail. The archive will be named with the current date following the "
+"pattern \"yyyymmdd.zip\" and saved in the directory you have chosen. "
+"Otherwise your photos will be copied directly to the directory you have "
+"chosen."
+msgstr ""
+"Zaškrtněte <gui>Vytvořit archiv</gui>, pokud chcete, aby byly vaše "
+"fotografie zabaleny do komprimovaného archivu. To se může hodit, když chcete "
+"fotografie poslat přes e-mail. Archiv bude pojmenován podle současného data "
+"dle vzoru „rrrrmmdd.zip“ a uložen ve složce, kterou si zvolíte. Pokud volbu "
+"nezaškrtnete, budou fotografie do vybrané složky přímo nakopírovány."
 
-#: C/export_folder.page:36(p)
-msgid "Now you have to export your Export Queue to a folder."
-msgstr "Nyní musíte seznam vyexportovat do složky."
-
-#: C/export_folder.page:39(p)
-msgid "Choose <guiseq><gui>Photos</gui><gui>Export to</gui><gui>Folder...</gui></guiseq>."
-msgstr "Zvolte <guiseq><gui>Fotografie</gui><gui>Export do</gui><gui>Složka…</gui></guiseq>."
-
-#: C/export_folder.page:42(p)
-msgid "From the <gui>Export</gui> window, choose the directory you want your photos to be exported to."
-msgstr "Z okna <gui>Export</gui> zvolte složku, do které chcete fotografie vyexportovat."
-
-#: C/export_folder.page:45(p)
-msgid "Check <gui>Create an archive</gui> if you want your photos to be packed up in a compressed archive. It can be useful if you want to send the photos by e-mail. The archive will be named with the current date following the pattern \"yyyymmdd.zip\" and saved in the directory you have chosen. Otherwise your photos will be copied directly to the directory you have chosen."
-msgstr "Zaškrtněte <gui>Vytvořit archiv</gui>, pokud chcete, aby byly vaše fotografie zabaleny do komprimovaného archivu. To se může hodit, když chcete fotografie poslat přes e-mail. Archiv bude pojmenován podle současného data dle vzoru „rrrrmmdd.zip“ a uložen ve složce, kterou si zvolíte. Pokud volbu nezaškrtnete, budou fotografie do vybrané složky přímo nakopírovány."
-
-#: C/export_folder.page:49(p)
+#: C/export_folder.page:34(p)
 msgid "Choose <gui>Export</gui> to export the photos."
 msgstr "Volbou <gui>Export</gui> se export fotografií provede."
 
@@ -599,3 +790,17 @@ msgstr "Volbou <gui>Export</gui> se export fotografií provede."
 msgid "translator-credits"
 msgstr "Marek Černocký <marek@manet.cz>, 2010"
 
+#~ msgid "Right-click on a photo."
+#~ msgstr "Klikněte pravým tlačítkem na fotografii."
+
+#~ msgid "Choose <gui>Add to Export Queue</gui>."
+#~ msgstr "Zvolte <gui>Přidat do seznamu pro export</gui>."
+
+#~ msgid "Select one or more photos you want to export."
+#~ msgstr "Vyberte jednu nebo více fotografií, které chcete exportovat."
+
+#~ msgid ""
+#~ "Choose <guiseq><gui>Edit</gui><gui>Add to Export Queue</gui></guiseq>."
+#~ msgstr ""
+#~ "Zvolte <guiseq><gui>Upravit</gui><gui>Přidat do seznamu pro export</gui></"
+#~ "guiseq>."
