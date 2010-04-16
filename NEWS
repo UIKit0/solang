@@ -1,60 +1,50 @@
-Solang NEWS                                    -*- outline -*-
+0.4 - 2010-01-22
 
-* Noteworthy changes in release 0.4 (2010-01-22)
+New Features:
 
-** New features
-
-  Replaced our own database with Tracker. SPARQL is used to gain
+* Replaced our own database with Tracker. SPARQL is used to gain
   access to the meta information about the photos. Photos are in the
   Nepomuk desktop ontology represented by the class nmm:Photo [1].
   Tags are in the same ontology represented in its annotation
   section [2]. They are represented by the class nao:Tag.
-
-  The folder importer is now obsolete and has been removed because
+* The folder importer is now obsolete and has been removed because
   Tracker automatically indexes all photos on the system.
-
-  Photo meta-data are now obtained from Tracker instead of reading
+* Photo meta-data are now obtained from Tracker instead of reading
   Exif directly.
-
-  Improved thumbnail management. Rely on an implementation of the
+* Improved thumbnail management. Rely on an implementation of the
   Thumbnail Management Specification [3], such as Tumbler, for creating
   thumbnails. Created thumbnails are now stored according to the
   Thumbnail Managing Standard [4].
-
-  No separate editor renderer. Photos can now be edited directly in
+* No separate editor renderer. Photos can now be edited directly in
   the enlarged renderer.
-
-  Moved the UI controls for the browser render's pagination bar and
+* Moved the UI controls for the browser render's pagination bar and
   zoomer to more standard locations. The previous and next buttons,
   and slider are now part of the main toolbar, while the currently
   displayed range is indicated in the status bar.
-
-  UI cleanup. No text is shown in the thumbnail view and all additions
+* UI cleanup. No text is shown in the thumbnail view and all additions
   or removals to the search basket are now automatic.
-
-  New dependencies on GEGLmm, Tracker, D-Bus GLib and the
+* New dependencies on GEGLmm, Tracker, D-Bus GLib and the
   org.freedesktop.thumbnails.xxx D-Bus services. Minimum required
   version of GEGL is 0.1.x.
-
-  Dropped dependencies on Exiv2, Flickcurl, LibGdamm, LibGPhoto2,
+* Dropped dependencies on Exiv2, Flickcurl, LibGdamm, LibGPhoto2,
   LibSoup and WebKit Gtk+.
 
-** Regressions
+Regressions:
 
-  Camera and Flickr importers are absent.
-
-  There is no date view or searching based on dates.
-
-  Changes made to photos can not be saved and there is no undo/redo.
-
-  The scale, brightness, contrast and saturation operations are missing
+* Camera and Flickr importers are absent.
+* There is no date view or searching based on dates.
+* Changes made to photos can not be saved and there is no undo/redo.
+* The scale, brightness, contrast and saturation operations are missing
   from the editor.
+* Tags do not have an icon associated with them.
 
-  Tags do not have an icon associated with them.
+Translations:
 
-** New and updated translations
-
-  Bengali (India) (bn_IN), French (fr), Hebrew (he), Polish (pl).
+* Added translations:
+  - Bengali (India) (bn_IN)
+  - French (fr)
+  - Hebrew (he)
+  - Polish (pl)
 
 ----
 
@@ -64,106 +54,80 @@ Solang NEWS                                    -*- outline -*-
 [4] http://jens.triq.net/thumbnail-spec/
 
 
-* Noteworthy changes in release 0.3 (2009-09-17)
+0.3  - 2009-09-17
 
-** New features
+New Features:
 
-  A new logo and .desktop file.
-
-  Context sensitive popup on right-clicking a photo in the browser
+* A new logo and .desktop file.
+* Context sensitive popup on right-clicking a photo in the browser
   renderer.
-
-  Folder exporter to export selected photos to a folder.
-
-  Improved editing abilities. A new GEGL based editing engine; and
+* Folder exporter to export selected photos to a folder.
+* Improved editing abilities. A new GEGL based editing engine; and
   support for brightness, contrast, saturation and scaling. Of these
   only the first two operations are based on GEGL. The rest will be
   migrated as GEGL improves in the future.
-
-  Introduced a histogram in the editor renderer and the property
+* Introduced a histogram in the editor renderer and the property
   manager.
-
-  It is now possible to copy a set of applied operations from one
+* It is now possible to copy a set of applied operations from one
   photo and paste it onto others.
-
-  New vertical toolbox for the editor renderer. The flip, rotate and
+* New vertical toolbox for the editor renderer. The flip, rotate and
   scale operations are now placed in this toolbox, and their
   corresponding entries have been removed from the menu.
-
-  Support for slideshows.
-
-  The date, property and tag managers, and the search basket are
+* Support for slideshows.
+* The date, property and tag managers, and the search basket are
   hidden when using the editor renderer.
-
-  The main horizontal toolbar style has been set to "icons only".
-
-  Use a black background for the photo when in fullscreen mode and do
+* The main horizontal toolbar style has been set to "icons only".
+* Use a black background for the photo when in fullscreen mode and do
   not draw a frame it.
+* New dependencies on BABL and GEGL.
 
-  New dependencies on BABL and GEGL.
+Translations:
 
-** New and updated translations
+* Added translations:
+  - Bulgarian (bg)
+  - Italian (it)
 
-  Bulgarian (bg), Italian (it).
 
+0.2 - 2009-07-09
 
-* Noteworthy changes in release 0.2 (2009-07-09)
+New Features:
 
-** New features
-
-  Pagination bar and zoomer for the browser renderer.
-
-  Support for zooming within the enlarged renderer.
-
-  UI elements for navigating within the browser renderer -- previous
+* Pagination bar and zoomer for the browser renderer.
+* Support for zooming within the enlarged renderer.
+* UI elements for navigating within the browser renderer -- previous
   page, next page, first page and last page.
-
-  Added a new non-deletable "All Photos" tag.
-
-  Queue based object deletion framework. Ability to delete tags and
+* Added a new non-deletable "All Photos" tag.
+* Queue based object deletion framework. Ability to delete tags and
   remove them from selected photos.
-
-  Flickr importer to import photos from Flickr.
-
-  Editor infrastructure. A new editor renderer; and support for
+* Flickr importer to import photos from Flickr.
+* Editor infrastructure. A new editor renderer; and support for
   rotation, flipping, and undo, redo of operations.
-
-  Various improvements to the importer dialog, importer, progress
+* Various improvements to the importer dialog, importer, progress
   dialog and progress observer.
+* New dependencies on Flickcurl, LibSoup and WebKit Gtk+.
+* Ported to Exiv2 version 0.18.
+* Removed dependency on GraphicsMagick++/ImageMagick++.
 
-  New dependencies on Flickcurl, LibSoup and WebKit Gtk+.
+Fixes:
 
-  Ported to Exiv2 version 0.18.
-
-  Removed dependency on GraphicsMagick++/ImageMagick++.
-
-** Bug fixes
-
-  Fixed the value of solangdocdir.
+* Fixed the value of solangdocdir.
 
 
-* Noteworthy changes in release 0.1 (2009-06-01)
+0.1 - 2009-06-01
 
-** New features
+New Features:
 
-  Browser and enlarged renderer for viewing the entire collection and
+* Browser and enlarged renderer for viewing the entire collection and
   a single photo respectively.
-
-  Camera and folder importer to import photos from cameras in PTP mode
+* Camera and folder importer to import photos from cameras in PTP mode
   and folders respectively.
-
-  Date view for showing photo dates.
-
-  Support for tagging photos and Exif data.
-
-  Thumbnails for showing RAW files in the browser renderer.
-
-  Search basket for drag and drop search using multiple tags, Exif
+* Date view for showing photo dates.
+* Support for tagging photos and Exif data.
+* Thumbnails for showing RAW files in the browser renderer.
+* Search basket for drag and drop search using multiple tags, Exif
   fields and/or dates.
-
-  Fast and efficient operation.
-
-  Dependencies on Cairomm, Exiv2, LibGdamm (SQLite backend), Giomm,
+* Fast and efficient operation.
+* Dependencies on Cairomm, Exiv2, LibGdamm (SQLite backend), Giomm,
   Glibmm, LibGPhoto2, GNOME Docking Library,
   GraphicsMagick++/ImageMagick++, GtkImageView and Gtkmm.
 
