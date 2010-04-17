@@ -1,3 +1,57 @@
+0.4.1 - 2010-04-16
+
+New Features:
+
+* Create archives using libarchive instead of File Roller.
+* Brasero exporter to burn selected photos to a CD/DVD.
+* End user help written in Mallard.
+* Free text search that looks at the URIs and tags of photos.
+* Photos are sorted in reverse chronological order based on when they
+  were last modified.
+* Replaced the buttons of the search basket with a context menu.
+* Thumbnails in the browser do not have a frame around them.
+* New dependencies on Brasero (optional) and libarchive. Minimum
+  required version of Brasero is 2.28.3, Tracker is 0.8.0 and
+  libarchive is 2.8.0.
+
+Fixes:
+
+* Display human readable strings for metering mode instead of the
+  internal representation used in Tracker.
+* Fixed the flip and rotate operations so that the dimensions of the
+  photo remain correct.
+* Mark photos that are going to be exported in the browser.
+* Read the flash and white balance properties of photos.
+* Select the first photo when a new page is shown in the browser.
+* The exporter dialog is now closer to the GNOME Human Interface
+  Guidelines.
+* Wake up the thumbnailer only when there is a pending request.
+* Updated SPARQL queries to reflect changes in Tracker.
+* 608826 - Add comments and context information to aid translation
+* 613499 - Quit enlarged mode with Escape
+* 613518 - Layout is not saved
+
+Translations:
+
+* Updated translations:
+  - Bengali (India)
+  - Bulgarian (bg)
+  - French (fr)
+  - Polish (pl)
+* Added translations:
+  - Czech (cs)
+  - Danish (da)
+  - German (de)
+  - Spanish (es)
+  - Lithuanian (lt)
+  - Slovenian (sl)
+  - Serbian (sr)
+  - Serbian Latin (sr@latin)
+  - Swedish (sv)
+  - Russian (ru)
+  - Ukrainian (uk)
+  - Chinese (Taiwan) (zh_TW)
+
 0.4 - 2010-01-22
 
 New Features:

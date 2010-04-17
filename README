@@ -14,21 +14,22 @@ Website: http://projects.gnome.org/solang
 
 Motivation for the project
 --------------------------
-The idea is to develop a free photo manager that will act as a front-end for
-directory based local storage as well as remote photo-storage systems, as can
-be said, on the "Cloud". Basic editing support is also planned as well as a
-small pipelaine for RAW processing. Please check the TODO file for more
-details.
+The idea is to develop a free photo manager that will use Tracker as a
+meta-data store and act as a front-end to directory based local
+storage as well as remote photo-storage systems. Basic editing support
+is also planned as well as a small pipelaine for RAW processing.
+Please check the TODO file for more details.
 
-Another motivation for this project is to break the performance charecteristics
-of current popular photo management softwares and provide a fast and reliable
-alternative that does not place humongous demands on user's hardware resources
-even to meet basic functionality.
+Another motivation for this project is to break the performance
+charecteristics of current popular photo management softwares and
+provide a fast and reliable alternative that does not place humongous
+demands on user's hardware resources even to meet basic functionality.
 
 Why is it called "Solang"?
 --------------------------
-While looking for a random name, we noticed the name on one of our office
-workstations. It was called "solang" and so we stand here today with this name.
+While looking for a random name, we noticed the name on one of our
+office workstations. It was called "solang" and so we stand here today
+with this name.
 
 Also, take a look at: http://en.wikipedia.org/wiki/Solang_valley
 
@@ -38,20 +39,20 @@ Features:
   collection, editing, a single photo and slideshows respectively.
 - Exporters to export selected photos to a folder or CD/DVD.
 - Date view for showing photo dates.
-- Basic editing like brightness, contrast, flipping, rotation, saturation and
-  scaling, and undo, redo of operations.
-- Ability to copy a set of applied operations from one photo and paste it
-  onto others.
+- Basic editing like brightness, contrast, flipping, rotation,
+  saturation and scaling, and undo, redo of operations.
+- Ability to copy a set of applied operations from one photo and paste
+  it onto others.
 - Support for tagging photos and Exif data.
 - Thumbnails for showing RAW files in the browser renderer.
-- Search basket for drag and drop search using multiple tags, Exif fields
-  and/or dates.
+- Search basket for drag and drop search using multiple tags, Exif
+  fields and/or dates.
 
 Dependencies:
 -------------
  - babl
- - libarchive
- - libbrasero-burn >= 2.28.3 & libbrasero-media >= 2.28.3
+ - libarchive >= 2.8.0
+ - libbrasero-burn >= 2.28.3 & libbrasero-media >= 2.28.3 (optional)
  - dbus-glib-1
  - gdl-1.0
  - gegl
@@ -63,22 +64,23 @@ Packages are available for Debian, Fedora and Ubuntu.
 
 ----
 
-Solang is licensed under the GNU General Public License as published by the
-Free Software Foundation, either version 3 of the License, or (at your option)
-any later version.
+Solang is licensed under the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or (at
+your option) any later version.
 
 The following pieces of artwork were borrowed from Conduit
-(http://www.conduit-project.org/). These are copyrighted by John Stowers
-<john.stowers@gmail.com>, and originally licensed under the GNU General Public
-License version 2.
+(http://www.conduit-project.org/). These are copyrighted by John
+Stowers <john.stowers@gmail.com>, and originally licensed under the
+GNU General Public License version 2.
 
 + data/flickr.png
 + data/icons/16x16/status/conduit-source.png
 
 The following pieces of artwork were borrowed from Eye of GNOME
-(http://projects.gnome.org/eog/). These are copyrighted by Andreas Nilsson
-<nisses.mail@home.se> and Michael Montreal <michael.monreal@gmx.net>, and
-originally licensed under the GNU General Public License version 2 or later.
+(http://projects.gnome.org/eog/). These are copyrighted by Andreas
+Nilsson <nisses.mail@home.se> and Michael Montreal
+<michael.monreal@gmx.net>, and originally licensed under the GNU
+General Public License version 2 or later.
 
 + data/icons/scalable/actions/slideshow-play.svg
 + data/icons/16x16/actions/slideshow-play.png
@@ -87,9 +89,10 @@ originally licensed under the GNU General Public License version 2 or later.
 + data/icons/22x22/actions/slideshow-play.png
 + data/icons/48x48/actions/slideshow-play.png
 
-The following pieces of artwork were borrowed from F-Spot (http://f-spot.org/).
-These are copyrighted by Jakub Steiner <jimmac@ximian.com> and Novell, and
-originally licensed under the GNU General Public License version 2.
+The following pieces of artwork were borrowed from F-Spot
+(http://f-spot.org/). These are copyrighted by Jakub Steiner
+<jimmac@ximian.com> and Novell, and originally licensed under the GNU
+General Public License version 2.
 
 + data/camera-photo-16.png
 + data/camera-photo-22.png
@@ -109,6 +112,6 @@ originally licensed under the GNU General Public License version 2.
 + data/tag-new-22.png
 + data/tag-new-24.png
 
-We are thankful to the respective copyright owners for letting us use and
-distribute these files as a part of Solang under our own licensing terms as
-mentioned above.
+We are thankful to the respective copyright owners for letting us use
+and distribute these files as a part of Solang under our own licensing
+terms as mentioned above.
