@@ -1,0 +1,662 @@
+# Chinese (China) translation for solang.
+# Copyright (C) 2010 solang's COPYRIGHT HOLDER
+# This file is distributed under the same license as the solang package.
+# 微尘 <squeeze@189.cn>, 2010
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: solang master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=solang&component=General\n"
+"POT-Creation-Date: 2010-04-17 12:57+0000\n"
+"PO-Revision-Date: 2010-04-19 12:41+0800\n"
+"Last-Translator: 微尘 <squeeze@189.cn>\n"
+"Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/solang.desktop.in.in.h:1
+msgid "@PACKAGE_NAME@ Photo Manager"
+msgstr "@PACKAGE_NAME@ 照片管理程序"
+
+#: ../data/solang.desktop.in.in.h:2
+msgid "Organize, enjoy and share your photos"
+msgstr "组织和分享您的照片"
+
+#: ../data/solang.desktop.in.in.h:3
+msgid "Photo Manager"
+msgstr "照片管理"
+
+#: ../src/application/main-window.cpp:226
+msgid "_Photo"
+msgstr "照片(_P)"
+
+#: ../src/application/main-window.cpp:235
+#: ../src/renderer/browser-renderer.cpp:194
+msgid "_Edit"
+msgstr "编辑(_E)"
+
+#: ../src/application/main-window.cpp:240
+#: ../src/renderer/browser-renderer.cpp:199
+msgid "_Add to Export Queue"
+msgstr "添加到导出队列(_A)"
+
+#: ../src/application/main-window.cpp:247
+msgid "_Clear Export Queue"
+msgstr "清除导出队列(_C)"
+
+#: ../src/application/main-window.cpp:252
+msgid "_View"
+msgstr "查看(_V)"
+
+#: ../src/application/main-window.cpp:256
+msgid "_Toolbar"
+msgstr "工具栏(_T)"
+
+#: ../src/application/main-window.cpp:257
+msgid "Show or hide the toolbar in the current window"
+msgstr "在当前窗口显示或隐藏工具栏"
+
+#: ../src/application/main-window.cpp:263
+msgid "_Statusbar"
+msgstr "状态栏(_S)"
+
+#: ../src/application/main-window.cpp:264
+msgid "Show or hide the statusbar in the current window"
+msgstr "在当前窗口显示或隐藏状态栏"
+
+#: ../src/application/main-window.cpp:271
+msgid "_Full Screen"
+msgstr "全屏(_F)"
+
+#: ../src/application/main-window.cpp:272
+msgid "Show the current photo in full screen mode"
+msgstr "使用全屏模式显示当前照片"
+
+#: ../src/application/main-window.cpp:289
+msgid "_Help"
+msgstr "帮助(_H)"
+
+#: ../src/application/main-window.cpp:294
+msgid "_Contents"
+msgstr "目录(_C)"
+
+#: ../src/application/main-window.cpp:662
+msgid "A photo manager for GNOME"
+msgstr "一个 GNOME 的照片管理程序"
+
+#. Translators: Put your names here.
+#: ../src/application/main-window.cpp:693
+msgid "translator-credits"
+msgstr "微尘 <squeeze@189.cn>, 2010"
+
+#: ../src/application/main-window.cpp:698
+msgctxt "Project website"
+msgid "%1 Website"
+msgstr "%1 网站"
+
+#: ../src/attribute/basic-exif-view.cpp:93
+msgid "Camera"
+msgstr "相机"
+
+#: ../src/attribute/basic-exif-view.cpp:112
+msgid "Exposure time"
+msgstr "曝光时间"
+
+#: ../src/attribute/basic-exif-view.cpp:132
+msgid "Flash"
+msgstr "闪光"
+
+#: ../src/attribute/basic-exif-view.cpp:152
+msgid "F-number"
+msgstr "F 值"
+
+#: ../src/attribute/basic-exif-view.cpp:171
+msgid "ISO speed"
+msgstr "ISO 速度"
+
+#: ../src/attribute/basic-exif-view.cpp:190
+msgid "Metering mode"
+msgstr "测光模式"
+
+#: ../src/attribute/basic-exif-view.cpp:211
+msgid "Focal length"
+msgstr "焦距"
+
+#: ../src/attribute/basic-exif-view.cpp:231
+msgid "White balance"
+msgstr "白平衡"
+
+#: ../src/attribute/date-manager.cpp:50
+msgid "Picture Taken Date"
+msgstr "摄制时间"
+
+#: ../src/attribute/property-manager.cpp:49
+msgid "Properties"
+msgstr "属性"
+
+#: ../src/attribute/property-manager.cpp:75
+msgid "Basic"
+msgstr "基本"
+
+#: ../src/attribute/property-manager.cpp:76
+msgid "Histogram"
+msgstr "光暗分布图"
+
+#: ../src/attribute/search-manager.cpp:52
+msgid "Search"
+msgstr "查找"
+
+#: ../src/attribute/search-manager.cpp:66
+msgid "Select _All"
+msgstr "全部选择(_A)"
+
+#: ../src/attribute/search-manager.cpp:67
+msgid "Select all the filters in this list"
+msgstr "选择列表内所有过滤条件"
+
+#: ../src/attribute/search-manager.cpp:75
+msgid "_Remove"
+msgstr "移除(_R)"
+
+#: ../src/attribute/search-manager.cpp:76
+msgid "Remove the selected filters from this list"
+msgstr "从列表内移出所选的过滤条件"
+
+#: ../src/attribute/tag-manager.cpp:54
+msgid "Tags"
+msgstr "标签"
+
+#: ../src/attribute/tag-manager.cpp:106
+msgid "_Tags"
+msgstr "标签(_T)"
+
+#: ../src/attribute/tag-manager.cpp:111
+msgid "Create New _Tag..."
+msgstr "创建新标签(_T)..."
+
+#: ../src/attribute/tag-manager.cpp:118
+msgid "_Edit Selected Tag..."
+msgstr "编辑所选标签(_E)..."
+
+#: ../src/attribute/tag-manager.cpp:125
+msgid "_Delete Selected Tag"
+msgstr "删除所选标签(_D)"
+
+#: ../src/attribute/tag-manager.cpp:131
+msgid "_Attach Tag to Selection"
+msgstr "附加标签到所选项目(_A)"
+
+#: ../src/attribute/tag-manager.cpp:138
+msgid "_Remove Tag From Selection"
+msgstr "从所选项目移除标签(_R)"
+
+#: ../src/attribute/tag-manager.cpp:144
+msgid "_Show All Tags"
+msgstr "显示所有标签(_S)"
+
+#: ../src/attribute/tag-new-dialog.cpp:39
+#: ../src/attribute/tag-new-dialog.cpp:69
+msgid "Parent:"
+msgstr "亲代："
+
+#: ../src/attribute/tag-new-dialog.cpp:44
+#: ../src/attribute/tag-new-dialog.cpp:74
+msgid "Name:"
+msgstr "名称："
+
+#: ../src/attribute/tag-new-dialog.cpp:49
+#: ../src/attribute/tag-new-dialog.cpp:79
+msgid "Description:"
+msgstr "描述："
+
+#: ../src/attribute/tag-new-dialog.cpp:56
+msgid "Create New Tag"
+msgstr "创建新标签"
+
+#: ../src/attribute/tag-new-dialog.cpp:86
+msgid "Edit Tag"
+msgstr "编辑标签"
+
+#: ../src/attribute/tag-new-dialog.cpp:126
+msgid "Select Tag Icon"
+msgstr "选择标签图标"
+
+#: ../src/common/exif-data.cpp:161
+msgctxt "Flash"
+msgid "Off"
+msgstr "关闭"
+
+#: ../src/common/exif-data.cpp:165
+msgctxt "Flash"
+msgid "On"
+msgstr "开启"
+
+#: ../src/common/exif-data.cpp:199
+msgctxt "Metering mode"
+msgid "Average"
+msgstr "平均"
+
+#: ../src/common/exif-data.cpp:204
+msgctxt "Metering mode"
+msgid "Center Weighted Average"
+msgstr "中央权重平均"
+
+#: ../src/common/exif-data.cpp:208
+msgctxt "Metering mode"
+msgid "Spot"
+msgstr "单点"
+
+#: ../src/common/exif-data.cpp:212
+msgctxt "Metering mode"
+msgid "Multi-spot"
+msgstr "多点"
+
+#: ../src/common/exif-data.cpp:216
+msgctxt "Metering mode"
+msgid "Pattern"
+msgstr "模式"
+
+#: ../src/common/exif-data.cpp:220
+msgctxt "Metering mode"
+msgid "Partial"
+msgstr "局部"
+
+#: ../src/common/exif-data.cpp:236
+msgctxt "White balance"
+msgid "Automatic"
+msgstr "自动"
+
+#: ../src/common/exif-data.cpp:240
+msgctxt "White balance"
+msgid "Manual"
+msgstr "手动"
+
+#: ../src/common/histogram-viewer.cpp:38
+msgid "Type"
+msgstr "类型"
+
+#: ../src/common/histogram-viewer.cpp:43
+msgid "Channels"
+msgstr "通道"
+
+#: ../src/common/histogram-viewer.cpp:68
+msgctxt "Scale"
+msgid "Linear"
+msgstr "线性"
+
+#: ../src/common/histogram-viewer.cpp:73
+msgctxt "Scale"
+msgid "Logarithmic"
+msgstr "对数"
+
+#: ../src/common/histogram-viewer.cpp:81
+msgid "RGB"
+msgstr "RGB"
+
+#: ../src/common/histogram-viewer.cpp:86
+msgid "Red"
+msgstr "红"
+
+#: ../src/common/histogram-viewer.cpp:91
+msgid "Green"
+msgstr "绿"
+
+#: ../src/common/histogram-viewer.cpp:96
+msgid "Blue"
+msgstr "蓝"
+
+#: ../src/common/progress-dialog.cpp:36
+msgid "Pending Operations"
+msgstr "未完成的作业"
+
+#: ../src/common/progress-observer.h:166
+msgid "%1 of %2 completed"
+msgstr "%2 的 %1 已完成"
+
+#: ../src/common/progress-observer.h:175
+msgid "%1%% complete"
+msgstr "%1%% 完成"
+
+#: ../src/editor/editor.cpp:114
+msgid "T_ools"
+msgstr "工具(_O)"
+
+#: ../src/editor/editor.cpp:118
+msgid "_Transform"
+msgstr "变换(_T)"
+
+#: ../src/editor/editor.cpp:124
+msgid "Flip _Horizontal"
+msgstr "水平翻转(_H)"
+
+#: ../src/editor/editor.cpp:125
+msgid "Mirror the photo horizontally"
+msgstr "水平镜像照片"
+
+#: ../src/editor/editor.cpp:136
+msgid "Flip _Vertical"
+msgstr "垂直翻转(_V)"
+
+#: ../src/editor/editor.cpp:137
+msgid "Mirror the photo vertically"
+msgstr "垂直镜像照片"
+
+#: ../src/editor/editor.cpp:148
+msgid "_Rotate Clockwise"
+msgstr "顺时针旋转(_R)"
+
+#: ../src/editor/editor.cpp:149
+msgid "Rotate the photo 90 degrees to the right"
+msgstr "向右旋转照片 90 度"
+
+#: ../src/editor/editor.cpp:160
+msgid "Rotate Counterc_lockwise"
+msgstr "逆时针旋转(_L)"
+
+#: ../src/editor/editor.cpp:161
+msgid "Rotate the photo 90 degrees to the left"
+msgstr "向左旋转照片 90 度"
+
+#: ../src/editor/flip-horiz-operation.cpp:43
+msgid "Flipping horizontally..."
+msgstr "正在水平翻转..."
+
+#: ../src/editor/flip-operation.cpp:59
+msgid "Flipping..."
+msgstr "翻转中..."
+
+#: ../src/editor/flip-vert-operation.cpp:43
+msgid "Flipping vertically..."
+msgstr "垂直翻转中..."
+
+#: ../src/editor/rotate-clock-operation.cpp:43
+msgid "Rotating clockwise..."
+msgstr "顺时针旋转中..."
+
+#: ../src/editor/rotate-counter-operation.cpp:43
+msgid "Rotating counterclockwise..."
+msgstr "逆时针旋转中..."
+
+#: ../src/editor/rotate-operation.cpp:57
+msgid "Rotating..."
+msgstr "旋转中"
+
+#: ../src/exporter/brasero-destination.cpp:144
+msgid "_CD/DVD..."
+msgstr "_CD/DVD..."
+
+#: ../src/exporter/brasero-destination.cpp:186
+msgid "Export to CD/DVD"
+msgstr "导出到 CD/DVD"
+
+#: ../src/exporter/directory-destination.cpp:95
+msgid "Exporting photos"
+msgstr "导出照片"
+
+#: ../src/exporter/directory-destination.cpp:181
+msgid "Select Folder"
+msgstr "选择文件夹"
+
+#: ../src/exporter/directory-destination.cpp:190
+msgid "_Folder..."
+msgstr "文件夹(_F)..."
+
+#: ../src/exporter/exporter.cpp:192
+msgid "Creating archive"
+msgstr "创建存档"
+
+#: ../src/exporter/exporter-dialog.cpp:33
+msgid "Export"
+msgstr "导出"
+
+#: ../src/exporter/exporter-dialog.cpp:45
+msgid "_Create an archive"
+msgstr "创建一个存档(_C)"
+
+#: ../src/exporter/exporter-dialog.cpp:64
+msgctxt "A group of UI controls"
+msgid "Destination"
+msgstr "目的地"
+
+#: ../src/exporter/exporter-dialog.cpp:80
+msgctxt "A group of UI controls"
+msgid "Options"
+msgstr "选项"
+
+#: ../src/exporter/exporter-dialog.cpp:105
+msgid "_Export"
+msgstr "导出(_E)"
+
+#: ../src/renderer/browser-renderer.cpp:207
+#: ../src/renderer/enlarged-renderer.cpp:304
+msgid "_Slideshow"
+msgstr "幻灯片(_S)"
+
+#: ../src/renderer/browser-renderer.cpp:208
+#: ../src/renderer/enlarged-renderer.cpp:305
+msgid "Start a slideshow view of the photos"
+msgstr "以幻灯片模式查看照片"
+
+#: ../src/renderer/browser-renderer.cpp:217
+msgid "Enlarge or shrink the thumbnails"
+msgstr "放大或缩小预览图"
+
+#: ../src/renderer/browser-renderer.cpp:239
+#: ../src/renderer/enlarged-renderer.cpp:317
+#: ../src/renderer/enlarged-renderer.cpp:453
+#: ../src/renderer/enlarged-renderer.cpp:462
+#: ../src/renderer/enlarged-renderer.cpp:471
+msgid "_Zoom In"
+msgstr "放大(_Z)"
+
+#: ../src/renderer/browser-renderer.cpp:240
+msgid "Enlarge the thumbnails"
+msgstr "放大预览图"
+
+#: ../src/renderer/browser-renderer.cpp:251
+msgid "_Zoom Out"
+msgstr "缩小(_Z)"
+
+#: ../src/renderer/browser-renderer.cpp:252
+msgid "Shrink the thumbnails"
+msgstr "缩小预览图"
+
+#: ../src/renderer/browser-renderer.cpp:263
+#: ../src/renderer/enlarged-renderer.cpp:312
+msgid "_Go"
+msgstr "前往(_G)"
+
+#: ../src/renderer/browser-renderer.cpp:268
+msgid "_Previous Page"
+msgstr "上一页(_P)"
+
+#: ../src/renderer/browser-renderer.cpp:269
+msgid "Go to the previous page in the collection"
+msgstr "前往收藏夹的上一页"
+
+#: ../src/renderer/browser-renderer.cpp:272
+#: ../src/renderer/enlarged-renderer.cpp:378
+#: ../src/renderer/slideshow-renderer.cpp:169
+#: ../src/renderer/slideshow-renderer.cpp:213
+msgctxt "Navigation"
+msgid "Previous"
+msgstr "上"
+
+#: ../src/renderer/browser-renderer.cpp:284
+msgid "_Next Page"
+msgstr "下一页(_N)"
+
+#: ../src/renderer/browser-renderer.cpp:285
+msgid "Go to the next page in the collection"
+msgstr "前往收藏夹的下一页"
+
+#: ../src/renderer/browser-renderer.cpp:288
+#: ../src/renderer/enlarged-renderer.cpp:393
+#: ../src/renderer/slideshow-renderer.cpp:178
+#: ../src/renderer/slideshow-renderer.cpp:222
+msgctxt "Navigation"
+msgid "Next"
+msgstr "下"
+
+#: ../src/renderer/browser-renderer.cpp:299
+msgid "_First Page"
+msgstr "首页(_F)"
+
+#: ../src/renderer/browser-renderer.cpp:300
+msgid "Go to the first page in the collection"
+msgstr "前往收藏夹首页"
+
+#: ../src/renderer/browser-renderer.cpp:312
+msgid "_Last Page"
+msgstr "尾页(_L)"
+
+#: ../src/renderer/browser-renderer.cpp:313
+msgid "Go to the last page in the collection"
+msgstr "前往收藏夹最后一页"
+
+#: ../src/renderer/enlarged-renderer.cpp:72
+msgctxt "Mode or view"
+msgid "Enlarged"
+msgstr "已放大"
+
+#: ../src/renderer/enlarged-renderer.cpp:318
+#: ../src/renderer/enlarged-renderer.cpp:454
+#: ../src/renderer/enlarged-renderer.cpp:463
+#: ../src/renderer/enlarged-renderer.cpp:472
+#: ../src/renderer/slideshow-window.cpp:75
+#: ../src/renderer/slideshow-window.cpp:110
+#: ../src/renderer/slideshow-window.cpp:119
+#: ../src/renderer/slideshow-window.cpp:128
+msgid "Enlarge the photo"
+msgstr "已放大照片"
+
+#: ../src/renderer/enlarged-renderer.cpp:320
+#: ../src/renderer/slideshow-window.cpp:74
+#: ../src/renderer/slideshow-window.cpp:109
+#: ../src/renderer/slideshow-window.cpp:118
+#: ../src/renderer/slideshow-window.cpp:127
+msgctxt "Zoom"
+msgid "In"
+msgstr "放大"
+
+#: ../src/renderer/enlarged-renderer.cpp:331
+#: ../src/renderer/enlarged-renderer.cpp:480
+#: ../src/renderer/enlarged-renderer.cpp:489
+msgid "Zoom _Out"
+msgstr "缩小(_O)"
+
+#: ../src/renderer/enlarged-renderer.cpp:332
+#: ../src/renderer/enlarged-renderer.cpp:481
+#: ../src/renderer/enlarged-renderer.cpp:490
+#: ../src/renderer/slideshow-window.cpp:84
+#: ../src/renderer/slideshow-window.cpp:137
+#: ../src/renderer/slideshow-window.cpp:146
+msgid "Shrink the photo"
+msgstr "缩小照片"
+
+#: ../src/renderer/enlarged-renderer.cpp:334
+#: ../src/renderer/slideshow-window.cpp:83
+#: ../src/renderer/slideshow-window.cpp:136
+#: ../src/renderer/slideshow-window.cpp:145
+msgctxt "Zoom"
+msgid "Out"
+msgstr "缩小"
+
+#: ../src/renderer/enlarged-renderer.cpp:345
+msgid "_Normal Size"
+msgstr "正常大小(_N)"
+
+#: ../src/renderer/enlarged-renderer.cpp:346
+#: ../src/renderer/slideshow-window.cpp:93
+msgid "Show the photo at its normal size"
+msgstr "以正常大小查看照片"
+
+#: ../src/renderer/enlarged-renderer.cpp:349
+#: ../src/renderer/slideshow-window.cpp:92
+msgctxt "Zoom"
+msgid "Normal"
+msgstr "正常"
+
+#: ../src/renderer/enlarged-renderer.cpp:360
+msgid "Best _Fit"
+msgstr "最佳大小(_F)"
+
+#: ../src/renderer/enlarged-renderer.cpp:361
+#: ../src/renderer/slideshow-window.cpp:102
+msgid "Fit the photo to the window"
+msgstr "让照片适应窗口大小"
+
+#: ../src/renderer/enlarged-renderer.cpp:363
+#: ../src/renderer/slideshow-window.cpp:101
+msgctxt "Zoom"
+msgid "Fit"
+msgstr "适应"
+
+#: ../src/renderer/enlarged-renderer.cpp:374
+#: ../src/renderer/enlarged-renderer.cpp:420
+msgid "_Previous Photo"
+msgstr "上一张(_P)"
+
+#: ../src/renderer/enlarged-renderer.cpp:375
+#: ../src/renderer/enlarged-renderer.cpp:421
+#: ../src/renderer/slideshow-renderer.cpp:170
+#: ../src/renderer/slideshow-renderer.cpp:214
+msgid "Go to the previous photo in the collection"
+msgstr "前往收藏夹内的上一张照片"
+
+#: ../src/renderer/enlarged-renderer.cpp:389
+#: ../src/renderer/enlarged-renderer.cpp:429
+msgid "_Next Photo"
+msgstr "下一张(_N)"
+
+#: ../src/renderer/enlarged-renderer.cpp:390
+#: ../src/renderer/enlarged-renderer.cpp:430
+#: ../src/renderer/slideshow-renderer.cpp:179
+#: ../src/renderer/slideshow-renderer.cpp:223
+msgid "Go to the next photo in the collection"
+msgstr "前往收藏夹内的下一张照片"
+
+#: ../src/renderer/enlarged-renderer.cpp:404
+#: ../src/renderer/enlarged-renderer.cpp:437
+msgid "_First Photo"
+msgstr "第一张(_F)"
+
+#: ../src/renderer/enlarged-renderer.cpp:405
+#: ../src/renderer/enlarged-renderer.cpp:438
+#: ../src/renderer/slideshow-renderer.cpp:162
+#: ../src/renderer/slideshow-renderer.cpp:206
+msgid "Go to the first photo in the collection"
+msgstr "前往收藏夹内第一张照片"
+
+#: ../src/renderer/enlarged-renderer.cpp:412
+#: ../src/renderer/enlarged-renderer.cpp:445
+msgid "_Last Photo"
+msgstr "最后一张(_L)"
+
+#: ../src/renderer/enlarged-renderer.cpp:413
+#: ../src/renderer/enlarged-renderer.cpp:446
+#: ../src/renderer/slideshow-renderer.cpp:187
+#: ../src/renderer/slideshow-renderer.cpp:231
+msgid "Go to the last photo in the collection"
+msgstr "前往收藏夹内最后一张照片"
+
+#: ../src/renderer/slideshow-renderer.cpp:161
+#: ../src/renderer/slideshow-renderer.cpp:205
+msgctxt "Navigation"
+msgid "First"
+msgstr "第一张"
+
+#: ../src/renderer/slideshow-renderer.cpp:186
+#: ../src/renderer/slideshow-renderer.cpp:230
+msgctxt "Navigation"
+msgid "Last"
+msgstr "最后一张"
+
+#~ msgid "_Detect duplicates"
+#~ msgstr "删除副本(_D)"
+
+#~ msgctxt "A group of UI controls"
+#~ msgid "General"
+#~ msgstr "一般"
