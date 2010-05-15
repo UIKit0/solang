@@ -70,6 +70,9 @@ class Application :
 
         MainWindow &
         get_main_window() throw();
+        
+        GSettings *
+        get_settings() throw();
 
         ProgressDialog &
         get_progress_dialog() throw();
@@ -135,6 +138,8 @@ class Application :
         RendererRegistry rendererRegistry_;
 
         DragDropCriteriaMap dragItemMap_;
+        
+        GSettings * settings_;
 
         sigc::signal<void, Application &> initEnd_;
 

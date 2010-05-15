@@ -272,6 +272,10 @@ Application::init() throw()
         sigc::mem_fun(*this,
                       &Application::on_async_search));
 
+    //we use the gconf backend for gsettings
+    g_setenv("GSETTINGS_BACKEND", "gconf", FALSE);
+    settings_ = g_settings_new("org.gnome.solang");
+
     // Plugins.
 
 //    IPluginPtr date_manager(new DateManager());
@@ -502,6 +506,12 @@ MainWindow &
 Application::get_main_window() throw()
 {
     return mainWindow_;
+}
+
+GSettings *
+Application::get_settings() throw()
+{
+    return settings_;
 }
 
 ProgressDialog &
