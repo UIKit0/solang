@@ -27,6 +27,7 @@
 #include <glibmm/i18n.h>
 #include <sigc++/sigc++.h>
 
+#include "application.h"
 #include "export-queue-operations.h"
 #include "main-window.h"
 
@@ -218,7 +219,6 @@ MainWindow::MainWindow() throw() :
 {
     set_icon_name(PACKAGE_TARNAME);
     set_title("Solang");
-    set_default_size(800, 600);
     add(vBox_);
 
     actionGroup_->add(
@@ -343,6 +343,18 @@ void
 MainWindow::init(Application & application) throw()
 {
     application_ = &application;
+    
+    GSettings * settings = application.get_settings();
+    if (g_settings_get_boolean(settings, "window-maximized"))
+    {
+        maximize();
+    }
+    else
+    {
+        int width = g_settings_get_int(settings, "window-width");
+        int height = g_settings_get_int(settings, "window-height");
+        set_default_size(width, height);
+    }
 
     if (false == dockObjectsCenter_.empty())
     {
@@ -432,6 +444,18 @@ MainWindow::final(Application & application) throw()
     }
 
     save_layout();
+    
+    //I don't know if it's the right place to save the window size
+    GSettings * settings = application_->get_settings();
+    int width, height;
+    get_size(height, width);
+    g_settings_set_int(settings, "window-width", width);
+    g_settings_set_int(settings, "window-height", height);
+    //we get the state of the underlying Gdk::Window
+    WindowPtr window = get_window();
+    Gdk::WindowState state = window->get_state();
+    gboolean maximized = state | Gdk::WINDOW_STATE_MAXIMIZED;
+    g_settings_set_boolean(settings, "window-maximized", maximized);
 }
 
 void
