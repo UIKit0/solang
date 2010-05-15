@@ -195,6 +195,43 @@ BrowserRenderer::BrowserRenderer() throw() :
 
     actionGroup_->add(
         Gtk::Action::create(
+            "ActionViewColorMenu", _("Background _Color")));
+
+    {
+        actionGroup_->add(
+            Gtk::Action::create(
+                "ActionViewBrowserColorUnset", _("Use _Theme Color"),
+                _("Set the background color to theme color.")),
+            sigc::mem_fun(*this, 
+                &BrowserRenderer::on_action_unset_background_color));
+
+        actionGroup_->add(
+            Gtk::Action::create(
+                "ActionViewBrowserColorLG", _("_Light Gray"),
+                _("Set the background color to Light Gray.")),
+            sigc::bind<Glib::ustring>( sigc::mem_fun(
+                    *this, &BrowserRenderer::on_action_change_background_color),
+                "#A9A9A9"));
+
+        actionGroup_->add(
+            Gtk::Action::create(
+                "ActionViewBrowserColorG", _("_Gray"),
+                _("Set the background color to Gray.")),
+            sigc::bind<Glib::ustring>( sigc::mem_fun(
+                    *this, &BrowserRenderer::on_action_change_background_color),
+                "#6B6B6B"));
+
+        actionGroup_->add(
+            Gtk::Action::create(
+                "ActionViewBrowserColorDG", _("_Dark Gray"),
+                _("Set the background color to Dark Gray.")),
+            sigc::bind<Glib::ustring>( sigc::mem_fun(
+                    *this, &BrowserRenderer::on_action_change_background_color),
+                "#333333"));
+    }
+
+    actionGroup_->add(
+        Gtk::Action::create(
             "ActionEditAddToExportQueue", Gtk::Stock::ADD,
             _("_Add to Export Queue")),
         sigc::mem_fun(*this,
@@ -372,6 +409,13 @@ BrowserRenderer::init(Application & application) throw()
     RendererRegistry & renderer_registry
         = application.get_renderer_registry();
     renderer_registry.add(this);
+    
+    //we set the background color of the thumbnailView from GSettings
+    GSettings * settings = application.get_settings();
+    if (g_settings_get_boolean(settings, "use-background-color")) {
+        Glib::ustring color = g_settings_get_string(settings, "background-color");
+        thumbnailView_.set_base_color(color);
+    }
 
     const ListStorePtr & list_store = application.get_list_store();
 
@@ -572,6 +616,27 @@ void
 BrowserRenderer::on_action_go_last() throw()
 {
     paginationBar_.go_last();
+}
+
+void
+BrowserRenderer::on_action_change_background_color(
+                    Glib::ustring color_code) throw()
+{
+    thumbnailView_.set_base_color(color_code);
+    
+    //then we store it with GSettings
+    GSettings * settings = application_->get_settings();
+    g_settings_set_boolean(settings, "use-background-color", TRUE);
+    g_settings_set_string(settings, "background-color", color_code.data());
+}
+
+void
+BrowserRenderer::on_action_unset_background_color() throw()
+{
+    thumbnailView_.unset_base_color();
+    
+    GSettings * settings = application_->get_settings();
+    g_settings_set_boolean(settings, "use-background-color", FALSE);
 }
 
 void

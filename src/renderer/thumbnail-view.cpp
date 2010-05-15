@@ -153,6 +153,8 @@ ThumbnailView::configure(gint thumbnail_renderer_width,
     show_all_children();
 }
 
+
+
 PhotoPtr
 ThumbnailView::get_photo_from_path(const Gtk::TreeModel::Path & path)
                                    throw()
@@ -271,6 +273,27 @@ ThumbnailView::popup_menu(GdkEventButton * event) throw()
     }
 
     menu_->popup(button, time);
+}
+
+void
+ThumbnailView::set_base_color(Glib::ustring color_code) throw()
+{
+    const Gdk::Color color(color_code);
+    modify_base(Gtk::STATE_ACTIVE, color);
+    modify_base(Gtk::STATE_NORMAL, color);
+    modify_base(Gtk::STATE_PRELIGHT, color);
+    modify_base(Gtk::STATE_SELECTED, color);
+    modify_base(Gtk::STATE_INSENSITIVE, color);
+}
+
+void
+ThumbnailView::unset_base_color() throw()
+{
+    unset_base(Gtk::STATE_ACTIVE);
+    unset_base(Gtk::STATE_NORMAL);
+    unset_base(Gtk::STATE_PRELIGHT);
+    unset_base(Gtk::STATE_SELECTED);
+    unset_base(Gtk::STATE_INSENSITIVE);
 }
 
 void

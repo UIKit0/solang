@@ -121,6 +121,12 @@ class BrowserRenderer :
         on_action_go_last() throw();
 
         void
+        on_action_change_background_color(Glib::ustring color_code) throw();
+
+        void
+        on_action_unset_background_color() throw();
+
+        void
         on_dock_item_parent_changed(Gtk::Widget * previous_parent)
                                     throw();
 

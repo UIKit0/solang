@@ -60,6 +60,12 @@ class ThumbnailView :
         const UIManagerPtr &
         get_ui_manager() throw();
 
+        void
+        set_base_color(Glib::ustring color_code) throw();
+
+        void
+        unset_base_color() throw();
+
     protected:
         PhotoPtr
         get_photo_from_path(const Gtk::TreeModel::Path & path) throw();
