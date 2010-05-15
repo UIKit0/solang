@@ -1,35 +1,42 @@
 <!--*- xml -*-->
 <ui>
-	<menubar name="MenuBar">
-		<menu action="ActionViewMenu">
-			<placeholder name="PlaceholderFullScreenMenus">
-			<menuitem action="ActionViewBrowserSlideshow"/>
-			</placeholder>
-			<placeholder name="PlaceholderZoomMenus">
-			<menuitem action="ActionViewBrowserZoomIn"/>
-			<menuitem action="ActionViewBrowserZoomOut"/>
-			</placeholder>
-		</menu>
-		<placeholder name="PlaceholderGoMenus">
-		<menu action="ActionBrowserGoMenu">
-			<menuitem action="ActionGoBrowserPreviousPage"/>
-			<menuitem action="ActionGoBrowserNextPage"/>
-			<separator name="GoBrowserSeparator"/>
-			<menuitem action="ActionGoBrowserFirstPage"/>
-			<menuitem action="ActionGoBrowserLastPage"/>
-		</menu>
-		</placeholder>
-	</menubar>
-	<toolbar name="ToolBar">
-		<placeholder name="PlaceholderGoToolBar">
-		<toolitem action="ActionGoBrowserPreviousPage"/>
-		<toolitem action="ActionGoBrowserNextPage"/>
-		</placeholder>
-		<placeholder name="PlaceholderFullScreenToolBar">
-		<toolitem action="ActionViewBrowserSlideshow"/>
-		</placeholder>
-		<placeholder name="PlaceholderMiscToolBar">
-		<toolitem action="ActionViewBrowserZoom"/>
-		</placeholder>
-	</toolbar>
+    <menubar name="MenuBar">
+        <menu action="ActionViewMenu">
+            <placeholder name="PlaceholderFullScreenMenus">
+            <menuitem action="ActionViewBrowserSlideshow"/>
+            </placeholder>
+            <placeholder name="PlaceholderZoomMenus">
+            <menuitem action="ActionViewBrowserZoomIn"/>
+            <menuitem action="ActionViewBrowserZoomOut"/>
+            </placeholder>
+            <menu action="ActionViewColorMenu">
+                <menuitem action="ActionViewBrowserColorUnset"/>
+                <separator name="ColorMenuSeparator"/>
+                <menuitem action="ActionViewBrowserColorLG"/>
+                <menuitem action="ActionViewBrowserColorG"/>
+                <menuitem action="ActionViewBrowserColorDG"/>
+            </menu>
+        </menu>
+        <placeholder name="PlaceholderGoMenus">
+        <menu action="ActionBrowserGoMenu">
+            <menuitem action="ActionGoBrowserPreviousPage"/>
+            <menuitem action="ActionGoBrowserNextPage"/>
+            <separator name="GoBrowserSeparator"/>
+            <menuitem action="ActionGoBrowserFirstPage"/>
+            <menuitem action="ActionGoBrowserLastPage"/>
+        </menu>
+        </placeholder>
+    </menubar>
+    <toolbar name="ToolBar">
+        <placeholder name="PlaceholderGoToolBar">
+        <toolitem action="ActionGoBrowserPreviousPage"/>
+        <toolitem action="ActionGoBrowserNextPage"/>
+        </placeholder>
+        <placeholder name="PlaceholderFullScreenToolBar">
+        <toolitem action="ActionViewBrowserSlideshow"/>
+        </placeholder>
+        <placeholder name="PlaceholderMiscToolBar">
+        <toolitem action="ActionViewBrowserZoom"/>
+        </placeholder>
+    </toolbar>
 </ui>
