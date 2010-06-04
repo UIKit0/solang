@@ -1,0 +1,640 @@
+# Hungarian translation of solang
+# Copyright (C) 2010. Free Software Foundation, Inc.
+# This file is distributed under the same license as the solang package.
+#
+# Gabor Kelemen <kelemeng at gnome dot hu>, 2010.
+# Gyorgy Lakatos <redon13 at gmail dot com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: solang master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-02-23 04:09+0000\n"
+"PO-Revision-Date: 2010-06-04 04:14+0200\n"
+"Last-Translator: Gabor Kelemen <kelemeng at gnome dot hu>\n"
+"Language-Team: Hungarian <gnome at fsf dot hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Hungarian\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#: ../data/solang.desktop.in.in.h:1
+msgid "@PACKAGE_NAME@ Photo Manager"
+msgstr "@PACKAGE_NAME@ fotókezelő"
+
+#: ../data/solang.desktop.in.in.h:2
+msgid "Organize, enjoy and share your photos"
+msgstr "Fényképek rendszerezése és megosztása"
+
+#: ../data/solang.desktop.in.in.h:3
+msgid "Photo Manager"
+msgstr "Fényképkezelő"
+
+#: ../src/application/main-window.cpp:229
+msgid "_Photo"
+msgstr "_Fénykép"
+
+#: ../src/application/main-window.cpp:238
+#: ../src/renderer/browser-renderer.cpp:130
+msgid "_Edit"
+msgstr "S_zerkesztés"
+
+#: ../src/application/main-window.cpp:243
+#: ../src/renderer/browser-renderer.cpp:135
+msgid "_Add to Export Queue"
+msgstr "Hozzá_adás az exportálási sorhoz"
+
+#: ../src/application/main-window.cpp:250
+msgid "_Clear Export Queue"
+msgstr "Exportálási sor _törlése"
+
+#: ../src/application/main-window.cpp:255
+msgid "_View"
+msgstr "_Nézet"
+
+#: ../src/application/main-window.cpp:259
+msgid "_Toolbar"
+msgstr "_Eszköztár"
+
+#: ../src/application/main-window.cpp:260
+msgid "Show or hide the toolbar in the current window"
+msgstr "Eszköztár megjelenítése vagy rejtése a jelenlegi ablakban"
+
+#: ../src/application/main-window.cpp:266
+msgid "_Statusbar"
+msgstr "Á_llapotsor"
+
+#: ../src/application/main-window.cpp:267
+msgid "Show or hide the statusbar in the current window"
+msgstr "Állapotsor megjelenítése vagy rejtése a jelenlegi ablakban"
+
+#: ../src/application/main-window.cpp:274
+msgid "_Full Screen"
+msgstr "_Teljes képernyő"
+
+#: ../src/application/main-window.cpp:275
+msgid "Show the current photo in full screen mode"
+msgstr "A jelenlegi fotó megjelenítése teljes képernyőn"
+
+#: ../src/application/main-window.cpp:292
+msgid "_Help"
+msgstr "_Súgó"
+
+#: ../src/application/main-window.cpp:597
+msgid "A photo manager for GNOME"
+msgstr "Fotókezelő a GNOME-hoz"
+
+#. Translators: Put your names here.
+#: ../src/application/main-window.cpp:628
+msgid "translator-credits"
+msgstr "Kelemen Gábor <kelemeng@gnome.hu>"
+
+#: ../src/application/main-window.cpp:633
+msgctxt "Project website"
+msgid "%1 Website"
+msgstr "A %1 weboldala"
+
+#: ../src/attribute/basic-exif-view.cpp:93
+msgid "Camera"
+msgstr "Fényképezőgép"
+
+#: ../src/attribute/basic-exif-view.cpp:112
+msgid "Exposure time"
+msgstr "Expozíciós idő"
+
+#: ../src/attribute/basic-exif-view.cpp:132
+msgid "Flash"
+msgstr "Vaku"
+
+#: ../src/attribute/basic-exif-view.cpp:152
+msgid "F-number"
+msgstr "F-szám"
+
+#: ../src/attribute/basic-exif-view.cpp:171
+msgid "ISO speed"
+msgstr "ISO-sebesség"
+
+#: ../src/attribute/basic-exif-view.cpp:190
+msgid "Metering mode"
+msgstr "Mérési mód"
+
+#: ../src/attribute/basic-exif-view.cpp:211
+msgid "Focal length"
+msgstr "Fókusztávolság"
+
+#: ../src/attribute/basic-exif-view.cpp:231
+msgid "White balance"
+msgstr "Fehéregyensúly"
+
+#: ../src/attribute/date-manager.cpp:50
+msgid "Picture Taken Date"
+msgstr "Kép készítési dátuma"
+
+#: ../src/attribute/property-manager.cpp:49
+msgid "Properties"
+msgstr "Tulajdonságok"
+
+#: ../src/attribute/property-manager.cpp:75
+msgid "Basic"
+msgstr "Egyszerű"
+
+#: ../src/attribute/property-manager.cpp:76
+msgid "Histogram"
+msgstr "Hisztogram"
+
+#: ../src/attribute/search-manager.cpp:52
+msgid "Search"
+msgstr "Keresés"
+
+#: ../src/attribute/search-manager.cpp:66
+msgid "Select _All"
+msgstr "Összes ki_választása"
+
+#: ../src/attribute/search-manager.cpp:67
+msgid "Select all the filters in this list"
+msgstr "A lista összes szűrőjének kiválasztása"
+
+#: ../src/attribute/search-manager.cpp:75
+msgid "_Remove"
+msgstr "_Eltávolítás"
+
+#: ../src/attribute/search-manager.cpp:76
+msgid "Remove the selected filters from this list"
+msgstr "A kiválasztott szűrők eltávolítása a listából"
+
+#: ../src/attribute/tag-manager.cpp:54
+msgid "Tags"
+msgstr "Címkék"
+
+#: ../src/attribute/tag-manager.cpp:100
+msgid "_Tags"
+msgstr "_Címkék"
+
+#: ../src/attribute/tag-manager.cpp:105
+msgid "Create New _Tag..."
+msgstr "Új _címke létrehozása…"
+
+#: ../src/attribute/tag-manager.cpp:112
+msgid "_Edit Selected Tag..."
+msgstr "Kijelölt címke s_zerkesztése…"
+
+#: ../src/attribute/tag-manager.cpp:119
+msgid "_Delete Selected Tag"
+msgstr "Kijelölt címke _törlése"
+
+#: ../src/attribute/tag-manager.cpp:125
+msgid "_Attach Tag to Selection"
+msgstr "Cí_mke csatolása a kijelöléshez"
+
+#: ../src/attribute/tag-manager.cpp:132
+msgid "_Remove Tag From Selection"
+msgstr "Címke _eltávolítása a kijelölésből"
+
+#: ../src/attribute/tag-new-dialog.cpp:39
+#: ../src/attribute/tag-new-dialog.cpp:69
+msgid "Parent:"
+msgstr "Szülő:"
+
+#: ../src/attribute/tag-new-dialog.cpp:44
+#: ../src/attribute/tag-new-dialog.cpp:74
+msgid "Name:"
+msgstr "Név:"
+
+#: ../src/attribute/tag-new-dialog.cpp:49
+#: ../src/attribute/tag-new-dialog.cpp:79
+msgid "Description:"
+msgstr "Leírás:"
+
+#: ../src/attribute/tag-new-dialog.cpp:56
+msgid "Create New Tag"
+msgstr "Új címke létrehozása"
+
+#: ../src/attribute/tag-new-dialog.cpp:127
+msgid "Select Tag Icon"
+msgstr "Címkeikon kiválasztása"
+
+#: ../src/common/exif-data.cpp:161
+msgctxt "Flash"
+msgid "Off"
+msgstr "Ki"
+
+#: ../src/common/exif-data.cpp:165
+msgctxt "Flash"
+msgid "On"
+msgstr "Be"
+
+#: ../src/common/exif-data.cpp:199
+msgctxt "Metering mode"
+msgid "Average"
+msgstr "Átlag"
+
+#: ../src/common/exif-data.cpp:204
+msgctxt "Metering mode"
+msgid "Center Weighted Average"
+msgstr "Középre súlyozott átlag"
+
+#: ../src/common/exif-data.cpp:208
+msgctxt "Metering mode"
+msgid "Spot"
+msgstr "Pontbéli"
+
+#: ../src/common/exif-data.cpp:212
+msgctxt "Metering mode"
+msgid "Multi-spot"
+msgstr "Több pontos"
+
+#: ../src/common/exif-data.cpp:216
+msgctxt "Metering mode"
+msgid "Pattern"
+msgstr "Minta"
+
+#: ../src/common/exif-data.cpp:220
+msgctxt "Metering mode"
+msgid "Partial"
+msgstr "Részleges"
+
+#: ../src/common/exif-data.cpp:236
+msgctxt "White balance"
+msgid "Automatic"
+msgstr "Automatikus"
+
+#: ../src/common/exif-data.cpp:240
+msgctxt "White balance"
+msgid "Manual"
+msgstr "Kézi"
+
+#: ../src/common/histogram-viewer.cpp:38
+msgid "Type"
+msgstr "Típus"
+
+#: ../src/common/histogram-viewer.cpp:43
+msgid "Channels"
+msgstr "Csatornák"
+
+#: ../src/common/histogram-viewer.cpp:68
+msgctxt "Scale"
+msgid "Linear"
+msgstr "Lineáris"
+
+#: ../src/common/histogram-viewer.cpp:73
+msgctxt "Scale"
+msgid "Logarithmic"
+msgstr "Logaritmikus"
+
+#: ../src/common/histogram-viewer.cpp:81
+msgid "RGB"
+msgstr "RGB"
+
+#: ../src/common/histogram-viewer.cpp:86
+msgid "Red"
+msgstr "Vörös"
+
+#: ../src/common/histogram-viewer.cpp:91
+msgid "Green"
+msgstr "Zöld"
+
+#: ../src/common/histogram-viewer.cpp:96
+msgid "Blue"
+msgstr "Kék"
+
+#: ../src/editor/editor.cpp:113
+msgid "T_ools"
+msgstr "_Eszközök"
+
+#: ../src/editor/editor.cpp:117
+msgid "_Transform"
+msgstr "Á_talakítás"
+
+#: ../src/editor/editor.cpp:123
+msgid "Flip _Horizontal"
+msgstr "_Vízszintes tükrözés"
+
+#: ../src/editor/editor.cpp:124
+msgid "Mirror the photo horizontally"
+msgstr "A fénykép tükrözése vízszintesen"
+
+#: ../src/editor/editor.cpp:135
+msgid "Flip _Vertical"
+msgstr "_Függőleges tükrözés"
+
+#: ../src/editor/editor.cpp:136
+msgid "Mirror the photo vertically"
+msgstr "A fénykép tükrözése függőlesesen"
+
+#: ../src/editor/editor.cpp:147
+msgid "_Rotate Clockwise"
+msgstr "Forgatás az ó_ra járásának irányába"
+
+#: ../src/editor/editor.cpp:148
+msgid "Rotate the photo 90 degrees to the right"
+msgstr "A fénykép forgatása 90 fokkal jobbra"
+
+#: ../src/editor/editor.cpp:159
+msgid "Rotate Counterc_lockwise"
+msgstr "Forgatás az óra járásával _ellentétesen"
+
+#: ../src/editor/editor.cpp:160
+msgid "Rotate the photo 90 degrees to the left"
+msgstr "A fénykép forgatása 90 fokkal balra"
+
+#: ../src/editor/flip-horiz-operation.cpp:43
+msgid "Flipping horizontally..."
+msgstr "Tükrözés vízszintesen…"
+
+#: ../src/editor/flip-operation.cpp:59
+msgid "Flipping..."
+msgstr "Tükrözés…"
+
+#: ../src/editor/flip-vert-operation.cpp:43
+msgid "Flipping vertically..."
+msgstr "Tükrözés függőlegesen…"
+
+#: ../src/editor/rotate-clock-operation.cpp:43
+msgid "Rotating clockwise..."
+msgstr "Forgatás az óra járásának irányába…"
+
+#: ../src/editor/rotate-counter-operation.cpp:43
+msgid "Rotating counterclockwise..."
+msgstr "Forgatás az óra járásával ellentétesen…"
+
+#: ../src/editor/rotate-operation.cpp:57
+msgid "Rotating..."
+msgstr "Forgatás…"
+
+#: ../src/exporter/brasero-destination.cpp:91
+#: ../src/exporter/directory-destination.cpp:90
+msgid "Exporting photos"
+msgstr "Fotók exportálása"
+
+#: ../src/exporter/brasero-destination.cpp:166
+msgid "_CD/DVD..."
+msgstr "_CD/DVD…"
+
+#: ../src/exporter/brasero-destination.cpp:199
+msgid "Export to CD/DVD"
+msgstr "Exportálás CD/DVD-re"
+
+#: ../src/exporter/directory-destination.cpp:178
+msgid "Select Folder"
+msgstr "Válasszon mappát"
+
+#: ../src/exporter/directory-destination.cpp:187
+msgid "_Folder..."
+msgstr "_Mappa…"
+
+#: ../src/exporter/exporter-dialog.cpp:33
+msgid "Export"
+msgstr "Exportálás"
+
+#: ../src/exporter/exporter-dialog.cpp:42
+msgid "_Destination:"
+msgstr "_Cél:"
+
+#: ../src/exporter/exporter-dialog.cpp:44
+msgid "_Detect duplicates"
+msgstr "Másolatok _felismerése"
+
+#: ../src/exporter/exporter-dialog.cpp:48
+msgid "_Create an archive"
+msgstr "_Archívum létrehozása"
+
+#: ../src/exporter/exporter-dialog.cpp:66
+msgctxt "A group of UI controls"
+msgid "General"
+msgstr "Általános"
+
+#: ../src/exporter/exporter-dialog.cpp:78
+msgctxt "A group of UI controls"
+msgid "Options"
+msgstr "Beállítások"
+
+#: ../src/exporter/exporter-dialog.cpp:111
+msgid "_Export"
+msgstr "_Exportálás"
+
+#: ../src/renderer/browser-renderer.cpp:143
+#: ../src/renderer/enlarged-renderer.cpp:304
+msgid "_Slideshow"
+msgstr "_Diavetítés"
+
+#: ../src/renderer/browser-renderer.cpp:144
+#: ../src/renderer/enlarged-renderer.cpp:305
+msgid "Start a slideshow view of the photos"
+msgstr "Diavetítés indítása a fotókból"
+
+#: ../src/renderer/browser-renderer.cpp:153
+msgid "Enlarge or shrink the thumbnails"
+msgstr "Bélyegképek nagyítása vagy zsugorítása"
+
+#: ../src/renderer/browser-renderer.cpp:175
+#: ../src/renderer/enlarged-renderer.cpp:317
+#: ../src/renderer/enlarged-renderer.cpp:453
+#: ../src/renderer/enlarged-renderer.cpp:462
+#: ../src/renderer/enlarged-renderer.cpp:471
+msgid "_Zoom In"
+msgstr "_Nagyítás"
+
+#: ../src/renderer/browser-renderer.cpp:176
+msgid "Enlarge the thumbnails"
+msgstr "Bélyegképek nagyítása"
+
+#: ../src/renderer/browser-renderer.cpp:187
+msgid "_Zoom Out"
+msgstr "_Kicsinyítés"
+
+#: ../src/renderer/browser-renderer.cpp:188
+msgid "Shrink the thumbnails"
+msgstr "Bélyegképek kicsinyítése"
+
+#: ../src/renderer/browser-renderer.cpp:199
+#: ../src/renderer/enlarged-renderer.cpp:312
+msgid "_Go"
+msgstr "_Ugrás"
+
+#: ../src/renderer/browser-renderer.cpp:204
+msgid "_Previous Page"
+msgstr "Elő_ző oldal"
+
+#: ../src/renderer/browser-renderer.cpp:205
+msgid "Go to the previous page in the collection"
+msgstr "A gyűjtemény előző oldalára ugrás"
+
+#: ../src/renderer/browser-renderer.cpp:208
+#: ../src/renderer/enlarged-renderer.cpp:378
+#: ../src/renderer/slideshow-renderer.cpp:169
+#: ../src/renderer/slideshow-renderer.cpp:213
+msgctxt "Navigation"
+msgid "Previous"
+msgstr "Előző"
+
+#: ../src/renderer/browser-renderer.cpp:220
+msgid "_Next Page"
+msgstr "_Következő oldal"
+
+#: ../src/renderer/browser-renderer.cpp:221
+msgid "Go to the next page in the collection"
+msgstr "A gyűjtemény következő oldalára ugrás"
+
+#: ../src/renderer/browser-renderer.cpp:224
+#: ../src/renderer/enlarged-renderer.cpp:393
+#: ../src/renderer/slideshow-renderer.cpp:178
+#: ../src/renderer/slideshow-renderer.cpp:222
+msgctxt "Navigation"
+msgid "Next"
+msgstr "Következő"
+
+#: ../src/renderer/browser-renderer.cpp:235
+msgid "_First Page"
+msgstr "_Első oldal"
+
+#: ../src/renderer/browser-renderer.cpp:236
+msgid "Go to the first page in the collection"
+msgstr "A gyűjtemény első oldalára ugrás"
+
+#: ../src/renderer/browser-renderer.cpp:248
+msgid "_Last Page"
+msgstr "_Utolsó oldal"
+
+#: ../src/renderer/browser-renderer.cpp:249
+msgid "Go to the last page in the collection"
+msgstr "A gyűjtemény utolsó oldalára ugrás"
+
+#: ../src/renderer/enlarged-renderer.cpp:72
+msgctxt "Mode or view"
+msgid "Enlarged"
+msgstr "Nagyított"
+
+#: ../src/renderer/enlarged-renderer.cpp:318
+#: ../src/renderer/enlarged-renderer.cpp:454
+#: ../src/renderer/enlarged-renderer.cpp:463
+#: ../src/renderer/enlarged-renderer.cpp:472
+#: ../src/renderer/slideshow-window.cpp:75
+#: ../src/renderer/slideshow-window.cpp:110
+#: ../src/renderer/slideshow-window.cpp:119
+#: ../src/renderer/slideshow-window.cpp:128
+msgid "Enlarge the photo"
+msgstr "Fotó nagyítása"
+
+#: ../src/renderer/enlarged-renderer.cpp:320
+#: ../src/renderer/slideshow-window.cpp:74
+#: ../src/renderer/slideshow-window.cpp:109
+#: ../src/renderer/slideshow-window.cpp:118
+#: ../src/renderer/slideshow-window.cpp:127
+msgctxt "Zoom"
+msgid "In"
+msgstr "Be"
+
+#: ../src/renderer/enlarged-renderer.cpp:331
+#: ../src/renderer/enlarged-renderer.cpp:480
+#: ../src/renderer/enlarged-renderer.cpp:489
+msgid "Zoom _Out"
+msgstr "_Kicsinyítés"
+
+#: ../src/renderer/enlarged-renderer.cpp:332
+#: ../src/renderer/enlarged-renderer.cpp:481
+#: ../src/renderer/enlarged-renderer.cpp:490
+#: ../src/renderer/slideshow-window.cpp:84
+#: ../src/renderer/slideshow-window.cpp:137
+#: ../src/renderer/slideshow-window.cpp:146
+msgid "Shrink the photo"
+msgstr "A fotó kicsinyítése"
+
+#: ../src/renderer/enlarged-renderer.cpp:334
+#: ../src/renderer/slideshow-window.cpp:83
+#: ../src/renderer/slideshow-window.cpp:136
+#: ../src/renderer/slideshow-window.cpp:145
+msgctxt "Zoom"
+msgid "Out"
+msgstr "Ki"
+
+#: ../src/renderer/enlarged-renderer.cpp:345
+msgid "_Normal Size"
+msgstr "_Normál méret"
+
+#: ../src/renderer/enlarged-renderer.cpp:346
+#: ../src/renderer/slideshow-window.cpp:93
+msgid "Show the photo at its normal size"
+msgstr "A fotó megjelenítése normál méretben"
+
+#: ../src/renderer/enlarged-renderer.cpp:349
+#: ../src/renderer/slideshow-window.cpp:92
+msgctxt "Zoom"
+msgid "Normal"
+msgstr "Normál"
+
+#: ../src/renderer/enlarged-renderer.cpp:360
+msgid "Best _Fit"
+msgstr "Legjobb _illeszkedés"
+
+#: ../src/renderer/enlarged-renderer.cpp:361
+#: ../src/renderer/slideshow-window.cpp:102
+msgid "Fit the photo to the window"
+msgstr "A fotó illesztése az ablakhoz"
+
+#: ../src/renderer/enlarged-renderer.cpp:363
+#: ../src/renderer/slideshow-window.cpp:101
+msgctxt "Zoom"
+msgid "Fit"
+msgstr "Igazítás"
+
+#: ../src/renderer/enlarged-renderer.cpp:374
+#: ../src/renderer/enlarged-renderer.cpp:420
+msgid "_Previous Photo"
+msgstr "_Előző fotó"
+
+#: ../src/renderer/enlarged-renderer.cpp:375
+#: ../src/renderer/enlarged-renderer.cpp:421
+#: ../src/renderer/slideshow-renderer.cpp:170
+#: ../src/renderer/slideshow-renderer.cpp:214
+msgid "Go to the previous photo in the collection"
+msgstr "Menj az előző fotóra az albumban"
+
+#: ../src/renderer/enlarged-renderer.cpp:389
+#: ../src/renderer/enlarged-renderer.cpp:429
+msgid "_Next Photo"
+msgstr "_Következő fotó"
+
+#: ../src/renderer/enlarged-renderer.cpp:390
+#: ../src/renderer/enlarged-renderer.cpp:430
+#: ../src/renderer/slideshow-renderer.cpp:179
+#: ../src/renderer/slideshow-renderer.cpp:223
+msgid "Go to the next photo in the collection"
+msgstr "Menj az következő fotóra az albumban"
+
+#: ../src/renderer/enlarged-renderer.cpp:404
+#: ../src/renderer/enlarged-renderer.cpp:437
+msgid "_First Photo"
+msgstr "_Első fotó"
+
+#: ../src/renderer/enlarged-renderer.cpp:405
+#: ../src/renderer/enlarged-renderer.cpp:438
+#: ../src/renderer/slideshow-renderer.cpp:162
+#: ../src/renderer/slideshow-renderer.cpp:206
+msgid "Go to the first photo in the collection"
+msgstr "Menj az első fotóra az albumban"
+
+#: ../src/renderer/enlarged-renderer.cpp:412
+#: ../src/renderer/enlarged-renderer.cpp:445
+msgid "_Last Photo"
+msgstr "_Utolsó fotó"
+
+#: ../src/renderer/enlarged-renderer.cpp:413
+#: ../src/renderer/enlarged-renderer.cpp:446
+#: ../src/renderer/slideshow-renderer.cpp:187
+#: ../src/renderer/slideshow-renderer.cpp:231
+msgid "Go to the last photo in the collection"
+msgstr "Menj az utolsó fotóra az albumban"
+
+#: ../src/renderer/slideshow-renderer.cpp:161
+#: ../src/renderer/slideshow-renderer.cpp:205
+msgctxt "Navigation"
+msgid "First"
+msgstr "Első"
+
+#: ../src/renderer/slideshow-renderer.cpp:186
+#: ../src/renderer/slideshow-renderer.cpp:230
+msgctxt "Navigation"
+msgid "Last"
+msgstr "Utolsó"
+
