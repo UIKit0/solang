@@ -15,8 +15,10 @@
 
 <p>You can easily adapt Solang's interface to your needs thanks to its customizable layout.</p>
 
-<p>Solang's interface is composed of several "dockable items" that you can move inside Solang's window.<br/>
+<p>Solang's interface is composed of several "dockable items" that you can move inside Solang's window.
 To change an item position click on its title and move your cursor while holding the button pressed. Then drop the item where you want in Solang's window.</p>
+
+<p>You can even drop an item out of Solang's window, it will get its own window, to which you can drop other items!</p>
 
   <figure>
     <title>An item's title</title>

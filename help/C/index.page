@@ -12,12 +12,6 @@
 
 <title><app>Solang</app> Help</title>
 
-  <note style="tip">
-    <p>
-      This guide is created for <app>Solang</app>'s 0.4 series. Since there have been some UI regressions from the 0.3 series, this guide may not cover some features of <app>Solang</app> 0.3, mostly the import process.
-    </p>
-  </note>
-
 	<section id="index_questions" style="2column">
 		<title>General Questions</title>
 		<info>
@@ -38,8 +32,8 @@
 	<section id="index_tags" style="2column">
 		<title>Tags</title>
 		<info>
-			<link type="topic" xref="tags_intro"/>
 			<link type="topic" xref="tags_use"/>
+			<link type="topic" xref="tags_intro"/>
 			<link type="topic" xref="tags_manage"/>
 		</info>
 	</section>
@@ -48,7 +42,7 @@
 		<title>Tips and Tricks</title>
 		<info>
 			<link type="topic" xref="keys"/>
-			<link type="topic" xref="histogram"/>
+<!--			<link type="topic" xref="histogram"/>-->
 			<link type="topic" xref="layout"/>
 		</info>
 	</section>

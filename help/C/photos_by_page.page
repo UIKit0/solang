@@ -13,7 +13,7 @@
 	<include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>
 </info>
 <title>I don't see all my photos.</title>
-<p><app>Solang</app> only display 50 photos by page, so you can only preview 50 photos at once.</p>
+<p><app>Solang</app> only displays 50 photos by page, so you can only preview 50 photos at once.</p>
 <p>Hopefully there are multiple pages.</p>
 <p>To go to the next page you can</p>
 <list>

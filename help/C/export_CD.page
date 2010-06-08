@@ -14,7 +14,7 @@
 	<include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>
 </info>
 <title>Burn a photo CD</title>
-<p>You can burn a CD with your photos.</p>
+<p>You can burn a CD of your photos.</p>
 
 <p>First you have to <link xref="export_queue">add the photos you want to export to the Export Queue</link>.</p>
 
