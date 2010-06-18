@@ -81,6 +81,10 @@ class MainWindow :
         void
         set_busy(bool busy) throw();
 
+        void
+        display_status_message( const Glib::ustring &message,
+                                unsigned int timeout ) throw();
+
     protected:
         std::string
         get_user_layout_file() throw();
@@ -122,6 +126,9 @@ class MainWindow :
         on_delete_event(GdkEventAny * event);
 
         void
+        on_status_message_timeout(guint message_id) throw();
+
+        void
         save_layout() throw();
 
         ApplicationPtr application_;
@@ -155,6 +162,8 @@ class MainWindow :
         std::vector<DockObjectPtr> dockObjectsLeftBottom_;
 
         std::vector<DockObjectPtr> dockObjectsCenter_;
+        
+        guint status_message_context_id_;
 
     private:
         static const std::string artistsFile_;

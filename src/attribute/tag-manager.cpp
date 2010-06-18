@@ -417,6 +417,10 @@ TagManager::apply_tag(TagPtr tag, PhotoList *photos)
         PhotoTag photo_tag(*photos_iter, tag);
         photo_tag.save_async(*db, sigc::slot<void>());
     }
+    
+    application_->get_main_window().display_status_message(
+        Glib::ustring::compose(_("Tag '%1' added"), tag->get_name()),
+        3);
 }
 
 void

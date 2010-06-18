@@ -215,7 +215,8 @@ MainWindow::MainWindow() throw() :
     showStatusBar_(true),
     dockObjectsLeftTop_(),
     dockObjectsLeftBottom_(),
-    dockObjectsCenter_()
+    dockObjectsCenter_(),
+    status_message_context_id_(statusBar_.get_context_id("Messages"))
 {
     set_icon_name(PACKAGE_TARNAME);
     set_title("Solang");
@@ -944,6 +945,23 @@ MainWindow::set_busy(bool busy) throw()
     }
 
     spinnerToolItem_.set_spinning(busy);
+}
+
+void
+MainWindow::display_status_message( const Glib::ustring &message,
+                                unsigned int timeout ) throw()
+{
+    guint message_id = statusBar_.push(message, status_message_context_id_);
+
+    Glib::signal_timeout().connect_seconds_once(sigc::bind<guint>(
+        sigc::mem_fun(*this, &MainWindow::on_status_message_timeout),
+        message_id) , timeout);
+}
+
+void
+MainWindow::on_status_message_timeout(guint message_id) throw()
+{
+    statusBar_.remove_message(message_id, status_message_context_id_);
 }
 
 } // namespace Solang
