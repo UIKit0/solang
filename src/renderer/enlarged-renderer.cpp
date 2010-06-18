@@ -1,6 +1,7 @@
 /* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*- */
 /*
  * Copyright (C) 2009, 2010 Debarshi Ray <rishi@gnu.org>
+ * Copyright (C) 2010 Florent Thévenet <feuloren@free.fr>
  *
  * Solang is free software: you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
@@ -34,6 +35,8 @@
 #include "main-window.h"
 #include "photo.h"
 #include "pixbuf-maker.h"
+#include "tag-manager.h"
+#include "tag-key-manager.h"
 #include "types.h"
 
 namespace Solang
@@ -58,6 +61,25 @@ image_view_on_scroll_event(GtkImageView * view,
         = static_cast<EnlargedRenderer *>(user_data);
 
     enlarged_renderer->on_scroll_event(direction);
+}
+
+static void
+image_view_on_key_press_event(GtkImageView * view,
+                           GdkEventKey * event,
+                           gpointer user_data) throw()
+{
+    if (0 == user_data)
+    {
+        g_warning("Not an instance of EnlargedRenderer");
+        return;
+    }
+
+    EnlargedRenderer * enlarged_renderer
+        = static_cast<EnlargedRenderer *>(user_data);
+
+    enlarged_renderer->signal_key_press.emit(
+        &(enlarged_renderer->get_current_selection()),
+        Glib::ustring(event->string));
 }
 
 EnlargedRenderer::EnlargedRenderer() throw() :
@@ -228,6 +250,9 @@ EnlargedRenderer::on_pixbuf_maker_async_ready(
             return;
         }
 
+        int events = GDK_KEY_PRESS_MASK;
+        gtk_widget_add_events(imageView_, static_cast<GdkEventMask>(events));
+
         gtk_image_view_set_show_frame(GTK_IMAGE_VIEW(imageView_),
                                       FALSE);
 
@@ -260,6 +285,11 @@ EnlargedRenderer::on_pixbuf_maker_async_ready(
                          "mouse-wheel-scroll",
                          G_CALLBACK(image_view_on_scroll_event),
                          this);
+
+        g_signal_connect(GTK_IMAGE_VIEW(imageView_),
+                         "key-press-event",
+                         G_CALLBACK(image_view_on_key_press_event),
+                         this);
     }
 
     if (0 == imageScrollWin_)
@@ -282,6 +312,8 @@ EnlargedRenderer::on_pixbuf_maker_async_ready(
 
     gtk_image_view_set_pixbuf(GTK_IMAGE_VIEW(imageView_),
                               pixbuf->gobj(), TRUE);
+
+    gtk_widget_grab_focus(imageView_);
 }
 
 void
@@ -536,6 +568,8 @@ EnlargedRenderer::present() throw()
 
     MainWindow & main_window = application_->get_main_window();
     main_window.present_dock_object(GDL_DOCK_OBJECT(dockItem_));
+
+    gtk_widget_grab_focus(imageView_);
 }
 
 void

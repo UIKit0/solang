@@ -1,6 +1,7 @@
 /* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*- */
 /*
  * Copyright (C) 2009, 2010 Debarshi Ray <rishi@gnu.org>
+ * Copyright (C) 2010 Florent Thévenet <feuloren@free.fr>
  *
  * Solang is free software: you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
@@ -20,6 +21,7 @@
 #define SOLANG_TAG_MANAGER_H
 
 #include <string>
+#include <stdexcept>
 
 #include <gdl/gdl.h>
 #include <glibmm.h>
@@ -27,6 +29,7 @@
 
 #include "plugin.h"
 #include "tag-view.h"
+#include "tag-key-manager.h"
 
 namespace Solang
 {
@@ -58,6 +61,15 @@ class TagManager :
         virtual void
         visit_renderer(SlideshowRenderer & slideshow_renderer) throw();
 
+        virtual TagPtr
+        get_tag_for_urn(std::string) throw(std::runtime_error);
+
+        virtual inline TagKeyManager*
+        get_key_manager();
+
+        virtual inline Application*
+        get_application();
+
     protected:
         void
         on_action_tag_new() throw();
@@ -70,6 +82,9 @@ class TagManager :
 
         void
         on_action_apply_tag() throw();
+
+        void
+        apply_tag(TagPtr tag, PhotoList *photos);
 
         void
         on_action_remove_tag() throw();
@@ -96,6 +111,9 @@ class TagManager :
         void
         ui_show() throw();
 
+        void
+        on_enlarged_renderer_key_press(PhotoList *photos, Glib::ustring key);
+
         ApplicationPtr application_;
 
         IconFactoryPtr iconFactory_;
@@ -120,10 +138,24 @@ class TagManager :
 
         bool showAll_;
 
+        TagKeyManager keyManager_;
+
         sigc::connection signalRendererChanged_;
 
     private:
 };
+
+inline TagKeyManager*
+TagManager::get_key_manager()
+{
+    return &keyManager_;
+}
+
+inline Application*
+TagManager::get_application()
+{
+    return application_;
+}
 
 } // namespace Solang
 

@@ -1,17 +1,18 @@
 /* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*- */
 /*
  * Copyright (C) 2009, 2010 Debarshi Ray <rishi@gnu.org>
- * 
+ * Copyright (C) 2010 Florent Thévenet <feuloren@free.fr>
+ *
  * Solang is free software: you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
  * Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
- * 
+ *
  * Solang is distributed in the hope that it will be useful, but
  * WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU General Public License along
  * with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
@@ -20,6 +21,7 @@
 #include "config.h"
 #endif // HAVE_CONFIG_H
 
+#include <stdexcept>
 #include <glibmm/i18n.h>
 #include <sigc++/sigc++.h>
 
@@ -33,6 +35,8 @@
 #include "tag.h"
 #include "tag-manager.h"
 #include "tag-new-dialog.h"
+#include "tag-key-manager.h"
+#include "tag-view-model-column-record.h"
 
 namespace Solang
 {
@@ -58,6 +62,7 @@ TagManager::TagManager() throw() :
     scrolledWindow_(),
     tagView_( ),
     showAll_(false),
+    keyManager_(),
     signalRendererChanged_()
 {
     Gtk::IconSource icon_source;
@@ -206,6 +211,17 @@ TagManager::init(Application & application)
             &TagManager::populate_view),
         Glib::PRIORITY_DEFAULT_IDLE);
 
+    IRendererPtr i_enlarged_renderer
+        = renderer_registry.select<EnlargedRenderer>();
+    EnlargedRenderer *enlarged_renderer
+        = static_cast<EnlargedRenderer*>(i_enlarged_renderer);
+
+    if (enlarged_renderer != 0)
+    {
+        enlarged_renderer->signal_key_press.connect(sigc::mem_fun(
+            *this, &TagManager::on_enlarged_renderer_key_press));
+    }
+
     initialized_.emit(*this);
 }
 
@@ -247,7 +263,7 @@ TagManager::visit_renderer(SlideshowRenderer & slideshow_renderer)
 void
 TagManager::on_action_tag_new() throw()
 {
-    TagNewDialog tag_new_dialog;
+    TagNewDialog tag_new_dialog( this );
     tag_new_dialog.set_transient_for(application_->get_main_window());
 
     const gint response = tag_new_dialog.run();
@@ -298,7 +314,7 @@ TagManager::on_action_tag_edit() throw()
         Gtk::TreeModel::Row row = *model_iter;
         TagPtr tag = row[ rec.get_column_tag() ];
 
-        TagNewDialog tag_new_dialog( tag );
+        TagNewDialog tag_new_dialog( this, tag );
         tag_new_dialog.set_transient_for(
                                 application_->get_main_window());
 
@@ -308,6 +324,8 @@ TagManager::on_action_tag_edit() throw()
         {
             case Gtk::RESPONSE_OK:
             {
+                keyManager_.save_tag(tag_new_dialog.get_key(), tag->get_urn());
+
                 DatabasePtr db = application_->get_engine().get_db();
                 tag->edit_async(
                     tag_new_dialog.get_name(),
@@ -380,18 +398,25 @@ TagManager::on_action_apply_tag() throw()
         = application_->get_renderer_registry();
     const IRendererPtr renderer = renderer_registry.get_current();
 
-    const DatabasePtr db = application_->get_engine().get_db();
     PhotoList photos = renderer->get_current_selection();
 
-    for (PhotoList::const_iterator photos_iter = photos.begin();
-         photos.end() != photos_iter;
+    apply_tag(tag, &photos);
+
+    return;
+}
+
+void
+TagManager::apply_tag(TagPtr tag, PhotoList *photos)
+{
+    const DatabasePtr db = application_->get_engine().get_db();
+
+    for (PhotoList::const_iterator photos_iter = photos->begin();
+         photos->end() != photos_iter;
          photos_iter++)
     {
         PhotoTag photo_tag(*photos_iter, tag);
         photo_tag.save_async(*db, sigc::slot<void>());
     }
-
-    return;
 }
 
 void
@@ -471,6 +496,30 @@ TagManager::populate_view() throw()
                               &TagManager::on_get_tags));
 }
 
+TagPtr
+TagManager::get_tag_for_urn(std::string urn) throw(std::runtime_error)
+{
+    //THERE IS a better way to do it !
+    const TagViewModelColumnRecord &rec
+                                = tagView_.get_column_records();
+
+    typedef Gtk::TreeModel::Children type_children;
+    type_children children = tagView_.get_model()->children();
+
+    for(type_children::iterator iter = children.begin();
+        iter != children.end(); ++iter)
+    {
+        Gtk::TreeModel::Row row = *iter;
+
+        const TagPtr & tag = row[rec.get_column_tag()];
+        if (tag->get_urn() == urn)
+        {
+            return tag;
+        }
+    }
+    throw std::runtime_error("No such Tag");
+}
+
 void
 TagManager::ui_hide() throw()
 {
@@ -494,6 +543,23 @@ TagManager::ui_show() throw()
     if (false == GDL_DOCK_OBJECT_ATTACHED(dock_item))
     {
         gdl_dock_item_show_item(GDL_DOCK_ITEM(dockItem_));
+    }
+}
+
+void
+TagManager::on_enlarged_renderer_key_press(PhotoList *photos, Glib::ustring key)
+{
+    if (keyManager_.is_key_valid(key) && keyManager_.is_key_used(key))
+    {
+        try
+        {
+            TagPtr tag = get_tag_for_urn(keyManager_.get_tag_for_key(key));
+            apply_tag(tag, photos);
+        }
+        catch(std::runtime_error)
+        {
+            return;
+        }
     }
 }
 

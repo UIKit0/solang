@@ -2,6 +2,7 @@
 /*
  * Copyright (C) 2009, 2010 Debarshi Ray <rishi@gnu.org>
  * Copyright (C) 2009 Santanu Sinha <santanu.sinha@gmail.com>
+ * Copyright (C) 2010 Florent Thévenet <feuloren@free.fr>
  *
  * Solang is free software: you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the

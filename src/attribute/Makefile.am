@@ -33,6 +33,8 @@ libattribute_la_SOURCES = \
 	search-manager.h \
 	tag.cpp \
 	tag.h \
+	tag-key-manager.cpp \
+	tag-key-manager.h \
 	tag-manager.cpp \
 	tag-manager.h \
 	tag-new-dialog.cpp \

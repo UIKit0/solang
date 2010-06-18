@@ -1,6 +1,7 @@
 /* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*- */
 /*
  * Copyright (C) 2009, 2010 Debarshi Ray <rishi@gnu.org>
+ * Copyright (C) 2010 Florent Thévenet <feuloren@free.fr>
  *
  * Solang is free software: you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
@@ -273,7 +274,7 @@ Application::init() throw()
                       &Application::on_async_search));
 
     //we use the gconf backend for gsettings
-    g_setenv("GSETTINGS_BACKEND", "gconf", FALSE);
+    //g_setenv("GSETTINGS_BACKEND", "gconf", FALSE);
     settings_ = g_settings_new("org.gnome.solang");
 
     // Plugins.
@@ -290,9 +291,6 @@ Application::init() throw()
 
     IPluginPtr search_manager(new SearchManager());
     plugins_.push_back(search_manager);
-
-    IPluginPtr tag_manager(new TagManager( ));
-    plugins_.push_back(tag_manager);
 
     IPhotoDestinationPtr directory_destination(
                              new DirectoryDestination());
@@ -330,6 +328,9 @@ Application::init() throw()
 
     IPluginPtr slideshow_renderer(new SlideshowRenderer());
     plugins_.push_back(slideshow_renderer);
+
+    IPluginPtr tag_manager(new TagManager( ));
+    plugins_.push_back(tag_manager);
 
     std::for_each(plugins_.begin(), plugins_.end(),
                   Initializer<IPluginPtr>(this));

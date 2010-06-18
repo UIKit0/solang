@@ -2,6 +2,7 @@
 /*
  * Copyright (C) 2009, 2010 Debarshi Ray <rishi@gnu.org>
  * Copyright (C) 2009 Santanu Sinha <santanu.sinha@gmail.com>
+ * Copyright (C) 2010 Florent Thévenet <feuloren@free.fr>
  *
  * Solang is free software: you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
@@ -202,7 +203,7 @@ BrowserRenderer::BrowserRenderer() throw() :
             Gtk::Action::create(
                 "ActionViewBrowserColorUnset", _("Use _Theme Color"),
                 _("Set the background color to theme color.")),
-            sigc::mem_fun(*this, 
+            sigc::mem_fun(*this,
                 &BrowserRenderer::on_action_unset_background_color));
 
         actionGroup_->add(
@@ -409,7 +410,7 @@ BrowserRenderer::init(Application & application) throw()
     RendererRegistry & renderer_registry
         = application.get_renderer_registry();
     renderer_registry.add(this);
-    
+
     //we set the background color of the thumbnailView from GSettings
     GSettings * settings = application.get_settings();
     if (g_settings_get_boolean(settings, "use-background-color")) {
@@ -623,7 +624,7 @@ BrowserRenderer::on_action_change_background_color(
                     Glib::ustring color_code) throw()
 {
     thumbnailView_.set_base_color(color_code);
-    
+
     //then we store it with GSettings
     GSettings * settings = application_->get_settings();
     g_settings_set_boolean(settings, "use-background-color", TRUE);
@@ -634,7 +635,7 @@ void
 BrowserRenderer::on_action_unset_background_color() throw()
 {
     thumbnailView_.unset_base_color();
-    
+
     GSettings * settings = application_->get_settings();
     g_settings_set_boolean(settings, "use-background-color", FALSE);
 }

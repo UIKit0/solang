@@ -1,6 +1,7 @@
 /* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*- */
 /*
  * Copyright (C) 2009, 2010 Debarshi Ray <rishi@gnu.org>
+ * Copyright (C) 2010 Florent Thévenet <feuloren@free.fr>
  *
  * Solang is free software: you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
@@ -83,6 +84,8 @@ class EnlargedRenderer :
         virtual IRendererPtr
         receive_selector(IRendererSelector & selector,
                          const IRendererPtr & renderer) throw();
+
+        sigc::signal<void, PhotoList*, Glib::ustring> signal_key_press;
 
     protected:
         void
