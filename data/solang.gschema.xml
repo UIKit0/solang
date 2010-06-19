@@ -1,5 +1,7 @@
 <schemalist>
-  <schema id="org.gnome.solang" path="/org/gnome/solang">
+  <schema id="org.gnome.solang" path="/org/gnome/solang/">
+    <child name="uistate" schema="org.gnome.solang.uistate" />
+    <child name="keys" schema="org.gnome.solang.keys" />
     <key name="background-color" type="s">
       <default>""</default>
       <summary>Background color</summary>
@@ -10,6 +12,9 @@
       <summary>Use Background color</summary>
       <description>If True, the icon view will use the specified background-color instead of the gtk theme color.</description>
     </key>
+  </schema>
+    
+  <schema id="org.gnome.solang.uistate" path="/org/gnome/solang/uistate/">
     <key name="window-width" type="i">
       <default>800</default>
       <summary>Window width</summary>
@@ -25,10 +30,19 @@
       <summary>Window maximized</summary>
       <description>Save state of the main window</description>
     </key>
-    <child name="keys" schema="org.gnome.solang.keys" />
+    <key name="display-statusbar" type="b">
+      <default>true</default>
+      <summary>Display Statusbar</summary>
+      <description>Whether the statusbar should be displayed.</description>
+    </key>
+    <key name="display-toolbar" type="b">
+      <default>true</default>
+      <summary>Display Toolbar</summary>
+      <description>Whether the toolbar should be displayed.</description>
+    </key>
   </schema>
-  
-  <schema id="org.gnome.solang.keys" path="/org/gnome/solang/keys">
+
+  <schema id="org.gnome.solang.keys" path="/org/gnome/solang/keys/">
     <key name="key-a" type="s">
       <default>""</default>
       <summary>Tag associated to this key</summary>

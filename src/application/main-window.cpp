@@ -211,15 +211,26 @@ MainWindow::MainWindow() throw() :
     dock_(gdl_dock_new()),
     dockBar_(gdl_dock_bar_new(GDL_DOCK(dock_))),
     layout_(gdl_dock_layout_new(GDL_DOCK(dock_))),
-    showToolBar_(true),
-    showStatusBar_(true),
     dockObjectsLeftTop_(),
     dockObjectsLeftBottom_(),
     dockObjectsCenter_(),
-    status_message_context_id_(statusBar_.get_context_id("Messages"))
+    status_message_context_id_(statusBar_.get_context_id("Messages")),
+    settings_(g_settings_new("org.gnome.solang.uistate"))
 {
     set_icon_name(PACKAGE_TARNAME);
     set_title("Solang");
+
+    if (g_settings_get_boolean(settings_, "window-maximized"))
+    {
+        maximize();
+    }
+    else
+    {
+        int width = g_settings_get_int(settings_, "window-width");
+        int height = g_settings_get_int(settings_, "window-height");
+        set_default_size(width, height);
+    }
+
     add(vBox_);
 
     actionGroup_->add(
@@ -256,14 +267,14 @@ MainWindow::MainWindow() throw() :
         Gtk::ToggleAction::create(
             "ActionViewToolBar", _("_Toolbar"),
             _("Show or hide the toolbar in the current window"),
-            showToolBar_),
+            true),
         sigc::mem_fun(*this, &MainWindow::on_action_view_tool_bar));
 
     actionGroup_->add(
         Gtk::ToggleAction::create(
             "ActionViewStatusBar", _("_Statusbar"),
             _("Show or hide the statusbar in the current window"),
-            showStatusBar_),
+            true),
         sigc::mem_fun(*this, &MainWindow::on_action_view_status_bar));
 
     {
@@ -331,6 +342,21 @@ MainWindow::MainWindow() throw() :
     vBox_.pack_start(statusBar_, Gtk::PACK_SHRINK, 0);
 
     show_all_children();
+
+    /*We bind the settings for the visibility of the toolbar & statusbar
+     * after the show_all_children, because otherwise the settings would
+     * be set to true automatically*/
+
+    GtkAction * action_toolbar =
+        gtk_action_group_get_action(actionGroup_->gobj(), "ActionViewToolBar");
+    g_settings_bind(settings_, "display-toolbar",
+        G_OBJECT(action_toolbar), "active", G_SETTINGS_BIND_DEFAULT);
+
+    GtkAction * action_statusbar =
+        gtk_action_group_get_action(actionGroup_->gobj(),
+        "ActionViewStatusBar");
+    g_settings_bind(settings_, "display-statusbar",
+        G_OBJECT(action_statusbar), "active", G_SETTINGS_BIND_DEFAULT);
 }
 
 MainWindow::~MainWindow() throw()
@@ -344,18 +370,6 @@ void
 MainWindow::init(Application & application) throw()
 {
     application_ = &application;
-    
-    GSettings * settings = application.get_settings();
-    if (g_settings_get_boolean(settings, "window-maximized"))
-    {
-        maximize();
-    }
-    else
-    {
-        int width = g_settings_get_int(settings, "window-width");
-        int height = g_settings_get_int(settings, "window-height");
-        set_default_size(width, height);
-    }
 
     if (false == dockObjectsCenter_.empty())
     {
@@ -445,18 +459,17 @@ MainWindow::final(Application & application) throw()
     }
 
     save_layout();
-    
+
     //I don't know if it's the right place to save the window size
-    GSettings * settings = application_->get_settings();
     int width, height;
     get_size(height, width);
-    g_settings_set_int(settings, "window-width", width);
-    g_settings_set_int(settings, "window-height", height);
+    g_settings_set_int(settings_, "window-width", width);
+    g_settings_set_int(settings_, "window-height", height);
     //we get the state of the underlying Gdk::Window
     WindowPtr window = get_window();
     Gdk::WindowState state = window->get_state();
     gboolean maximized = state | Gdk::WINDOW_STATE_MAXIMIZED;
-    g_settings_set_boolean(settings, "window-maximized", maximized);
+    g_settings_set_boolean(settings_, "window-maximized", maximized);
 }
 
 void
@@ -765,12 +778,12 @@ MainWindow::on_action_view_full_screen(
             menu_bar->hide();
         }
 
-        if (0 != tool_bar && true == showToolBar_)
+        if (0 != tool_bar)
         {
             tool_bar->hide();
         }
 
-        if (true == showStatusBar_)
+        if (statusBar_.property_visible())
         {
             statusBar_.hide();
         }
@@ -823,12 +836,13 @@ MainWindow::on_action_view_full_screen(
             menu_bar->show_all();
         }
 
-        if (0 != tool_bar && true == showToolBar_)
+        if (0 != tool_bar 
+            && g_settings_get_boolean(settings_, "display-toolbar"))
         {
             tool_bar->show_all();
         }
 
-        if (true == showStatusBar_)
+        if (g_settings_get_boolean(settings_, "display-statusbar"))
         {
             statusBar_.show_all();
         }
@@ -885,20 +899,19 @@ MainWindow::on_action_view_full_screen(
 void
 MainWindow::on_action_view_status_bar() throw()
 {
-    showStatusBar_ = (true == showStatusBar_) ? false : true;
-    (true == showStatusBar_) ? statusBar_.show_all()
+    (g_settings_get_boolean(settings_, "display-statusbar") == true)
+                            ? statusBar_.show_all()
                              : statusBar_.hide();
 }
 
 void
 MainWindow::on_action_view_tool_bar() throw()
 {
-    showToolBar_ = (true == showToolBar_) ? false : true;
-
     Gtk::Widget * const tool_bar = uiManager_->get_widget("/ToolBar");
     if (NULL != tool_bar)
     {
-        (true == showToolBar_) ? tool_bar->show_all()
+        (g_settings_get_boolean(settings_, "display-toolbar") == true)
+                                ? tool_bar->show_all()
                                : tool_bar->hide();
     }
 }

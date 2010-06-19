@@ -153,17 +153,15 @@ class MainWindow :
 
         GdlDockLayout * const layout_;
 
-        bool showToolBar_;
-
-        bool showStatusBar_;
-
         std::vector<DockObjectPtr> dockObjectsLeftTop_;
 
         std::vector<DockObjectPtr> dockObjectsLeftBottom_;
 
         std::vector<DockObjectPtr> dockObjectsCenter_;
-        
+
         guint status_message_context_id_;
+
+        GSettings * settings_;
 
     private:
         static const std::string artistsFile_;

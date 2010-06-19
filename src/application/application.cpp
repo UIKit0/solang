@@ -353,7 +353,7 @@ Application::init() throw()
 void
 Application::run() throw()
 {
-    mainWindow_.show_all();
+    //mainWindow_.show_all();
     Gtk::Main::run(mainWindow_);
 }
 
