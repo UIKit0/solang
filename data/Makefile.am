@@ -5,6 +5,11 @@ desktop_in_files = $(PACKAGE_TARNAME).desktop.in.in
 desktop_DATA = $(desktop_in_files:.desktop.in.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 
+gsettings_SCHEMAS = \
+	org.gnome.solang.gschema.xml
+
+@GSETTINGS_RULES@
+
 layoutdir = $(datadir)/$(PACKAGE_TARNAME)
 layout_DATA = \
 	solang-layout.xml
