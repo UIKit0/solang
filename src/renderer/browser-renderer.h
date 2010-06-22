@@ -201,6 +201,8 @@ class BrowserRenderer :
 
         guint contextID_;
 
+        GSettings * settings_;
+
         sigc::connection signalInitEnd_;
 
         sigc::connection signalItemActivated_;

@@ -153,6 +153,7 @@ BrowserRenderer::BrowserRenderer() throw() :
     zoomValue_(initialZoomValue),
     pageNum_(-1),
     contextID_(),
+    settings_(g_settings_new("org.gnome.solang.browser")),
     signalInitEnd_(),
     signalListStoreChangeBegin_(),
     signalListStoreChangeEnd_(),
@@ -249,11 +250,19 @@ BrowserRenderer::BrowserRenderer() throw() :
                       &BrowserRenderer::on_action_view_slideshow));
 
     {
+        double saved_value = g_settings_get_double(settings_, "zoom-value");
+        if (saved_value >= lowerZoomValue && saved_value <= higherZoomValue)
+        {
+            zoomValue_ = saved_value;
+            set_thumbnail_size();
+        }
+
+
         const Glib::RefPtr<ScaleAction> scale_action
             = ScaleAction::create(
                   "ActionViewBrowserZoom",
                   _("Enlarge or shrink the thumbnails"),
-                  Gtk::Adjustment(initialZoomValue,
+                  Gtk::Adjustment(zoomValue_,
                                   lowerZoomValue,
                                   higherZoomValue,
                                   stepZoomValue,
@@ -352,6 +361,12 @@ BrowserRenderer::BrowserRenderer() throw() :
         Gtk::AccelKey("<alt>End"),
         sigc::mem_fun(*this, &BrowserRenderer::on_action_go_last));
 
+    //we set the background color of the thumbnailView from GSettings
+    if (g_settings_get_boolean(settings_, "use-background-color")) {
+        Glib::ustring color = g_settings_get_string(settings_, "background-color");
+        thumbnailView_.set_base_color(color);
+    }
+
     vBox_.pack_start(hBox_, Gtk::PACK_SHRINK, 0);
 
     scrolledWindow_.set_policy(Gtk::POLICY_AUTOMATIC,
@@ -411,13 +426,6 @@ BrowserRenderer::init(Application & application) throw()
         = application.get_renderer_registry();
     renderer_registry.add(this);
 
-    //we set the background color of the thumbnailView from GSettings
-    GSettings * settings = application.get_settings();
-    if (g_settings_get_boolean(settings, "use-background-color")) {
-        Glib::ustring color = g_settings_get_string(settings, "background-color");
-        thumbnailView_.set_base_color(color);
-    }
-
     const ListStorePtr & list_store = application.get_list_store();
 
     treeModelFilter_ = Gtk::TreeModelFilter::create(list_store);
@@ -471,6 +479,8 @@ BrowserRenderer::init(Application & application) throw()
 void
 BrowserRenderer::final(Application & application) throw()
 {
+    g_settings_set_double(settings_, "zoom-value", zoomValue_);
+
     signalItemActivated_.disconnect();
     signalListStoreChangeBegin_.disconnect();
     signalListStoreChangeEnd_.disconnect();
@@ -626,9 +636,8 @@ BrowserRenderer::on_action_change_background_color(
     thumbnailView_.set_base_color(color_code);
 
     //then we store it with GSettings
-    GSettings * settings = application_->get_settings();
-    g_settings_set_boolean(settings, "use-background-color", TRUE);
-    g_settings_set_string(settings, "background-color", color_code.data());
+    g_settings_set_boolean(settings_, "use-background-color", TRUE);
+    g_settings_set_string(settings_, "background-color", color_code.data());
 }
 
 void
@@ -636,8 +645,7 @@ BrowserRenderer::on_action_unset_background_color() throw()
 {
     thumbnailView_.unset_base_color();
 
-    GSettings * settings = application_->get_settings();
-    g_settings_set_boolean(settings, "use-background-color", FALSE);
+    g_settings_set_boolean(settings_, "use-background-color", FALSE);
 }
 
 void
@@ -825,11 +833,11 @@ BrowserRenderer::on_action_view_zoom_changed(
 
     connection.disconnect();
     connection
-        = Glib::signal_timeout().connect_seconds(
+        = Glib::signal_timeout().connect(
               sigc::bind_return(
                   sigc::mem_fun(*this,
                                 &BrowserRenderer::reload), false),
-              1, Glib::PRIORITY_DEFAULT);
+              300, Glib::PRIORITY_DEFAULT);
 }
 
 void

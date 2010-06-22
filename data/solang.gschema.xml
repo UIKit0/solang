@@ -2,6 +2,10 @@
   <schema id="org.gnome.solang" path="/org/gnome/solang/">
     <child name="uistate" schema="org.gnome.solang.uistate" />
     <child name="keys" schema="org.gnome.solang.keys" />
+    <child name="browser" schema="org.gnome.solang.browser" />
+  </schema>
+
+  <schema id="org.gnome.solang.browser" path="/org/gnome/solang/browser/">
     <key name="background-color" type="s">
       <default>""</default>
       <summary>Background color</summary>
@@ -11,6 +15,11 @@
       <default>false</default>
       <summary>Use Background color</summary>
       <description>If True, the icon view will use the specified background-color instead of the gtk theme color.</description>
+    </key>
+    <key name="zoom-value" type="d">
+      <default>-1</default>
+      <summary>Zoom factor</summary>
+      <description>Zoom factor for the thumbnails.</description>
     </key>
   </schema>
     
