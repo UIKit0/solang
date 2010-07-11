@@ -3,11 +3,12 @@
 # Copyright (C) 2010 solang's COPYRIGHT HOLDER
 # This file is distributed under the same license as the solang package.
 # Jorge González <jorgegonz@svn.gnome.org>, 2010.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: solang.help.master\n"
-"POT-Creation-Date: 2010-04-04 12:36+0000\n"
-"PO-Revision-Date: 2010-04-10 19:51+0200\n"
+"POT-Creation-Date: 2010-06-08 19:05+0000\n"
+"PO-Revision-Date: 2010-07-11 09:43+0200\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -36,25 +37,84 @@ msgstr ""
 "permiso para copiar, modificar y distribuir el ejemplo de código contenido "
 "en este documento bajo los términos que usted elija, sin restricción."
 
-#: C/tags_manage.page:7(desc)
-msgid "Create, modify and delete tags."
-msgstr "Crear, modificar y eliminar etiquetas."
+#: C/tags_use.page:7(desc)
+msgid "Attach tags to photos and remove them."
+msgstr ""
 
-#: C/tags_manage.page:11(name) C/keys.page:9(name)
-#: C/howto_search.page:10(name) C/tags_intro.page:9(name)
-#: C/intro.page:10(name) C/photos_by_page.page:10(name) C/index.page:7(name)
-#: C/tags_use.page:11(name) C/import.page:10(name)
-#: C/export_folder.page:11(name)
+#: C/tags_use.page:11(name) C/tags_manage.page:11(name)
+#: C/tags_intro.page:9(name) C/photos_by_page.page:10(name)
+#: C/layout.page:9(name) C/keys.page:9(name) C/howto_search.page:10(name)
+#: C/intro.page:10(name) C/index.page:7(name) C/import.page:10(name)
+#: C/export_folder.page:11(name) C/export_CD.page:11(name)
 msgid "Florent Thévenet"
 msgstr "Florent Thévenet"
 
-#: C/tags_manage.page:12(email) C/keys.page:10(email)
-#: C/howto_search.page:11(email) C/tags_intro.page:10(email)
-#: C/intro.page:11(email) C/photos_by_page.page:11(email)
-#: C/index.page:8(email) C/tags_use.page:12(email) C/import.page:11(email)
-#: C/export_folder.page:12(email)
+#: C/tags_use.page:12(email) C/tags_manage.page:12(email)
+#: C/tags_intro.page:10(email) C/photos_by_page.page:11(email)
+#: C/layout.page:10(email) C/keys.page:10(email) C/howto_search.page:11(email)
+#: C/intro.page:11(email) C/index.page:8(email) C/import.page:11(email)
+#: C/export_folder.page:12(email) C/export_CD.page:12(email)
 msgid "feuloren@free.fr"
 msgstr "feuloren@free.fr"
+
+#: C/tags_use.page:16(title)
+msgid "Attach tags to photos"
+msgstr "Adjuntar etiquetas a fotos"
+
+#: C/tags_use.page:19(title)
+msgid "Attach a tag to photos."
+msgstr "Adjuntar etiquetas a fotos."
+
+#: C/tags_use.page:21(p)
+msgid "You can attach a tag to one or more photos at once."
+msgstr "Puede adjuntar una etiqueta a más de una foto a la vez."
+
+#: C/tags_use.page:25(p)
+msgid ""
+"From the <gui>main</gui> window, select one or more photos you want to tag."
+msgstr ""
+
+#: C/tags_use.page:28(p)
+msgid ""
+"In the <gui>Tag List</gui>, click on the tag you want to attach to these "
+"photos."
+msgstr ""
+
+#: C/tags_use.page:31(p)
+msgid ""
+"Choose <guiseq><gui>Tags</gui><gui>Attach Tag to Selection</gui></guiseq> or "
+"press <keyseq><key>Ctrl</key><key>T</key></keyseq> to attach the tag to "
+"these photos."
+msgstr ""
+
+#: C/tags_use.page:37(title)
+msgid "Remove a tag from photos."
+msgstr "Eliminar una etiqueta de las fotos."
+
+#: C/tags_use.page:39(p)
+msgid "You can remove a tag from one or more photos at once."
+msgstr ""
+
+#: C/tags_use.page:43(p)
+msgid ""
+"From the <gui>main</gui> window, select one or more photos you want to untag."
+msgstr ""
+
+#: C/tags_use.page:46(p)
+msgid ""
+"In the <gui>Tag List</gui>, click on the tag you want to remove from these "
+"photos."
+msgstr ""
+
+#: C/tags_use.page:49(p)
+msgid ""
+"Choose <guiseq><gui>Tags</gui><gui>Remove Tag From Selection</gui></guiseq> "
+"to remove the tag from these photos."
+msgstr ""
+
+#: C/tags_manage.page:7(desc)
+msgid "Create, modify and delete tags."
+msgstr "Crear, modificar y eliminar etiquetas."
 
 #: C/tags_manage.page:16(title)
 msgid "Manage your tags"
@@ -115,7 +175,7 @@ msgstr ""
 
 #: C/tags_manage.page:58(title)
 msgid "Show only the tags you need."
-msgstr ""
+msgstr "Mostrar sólo las etiquetas que necesite."
 
 #: C/tags_manage.page:60(p)
 msgid ""
@@ -140,11 +200,148 @@ msgstr "Puede eliminar una etiqueta."
 #: C/tags_manage.page:77(p)
 msgid "In the <gui>Tag List</gui>, click on the tag you want to delete."
 msgstr ""
+"En la <gui>Lista de etiquetas</gui>, pulse sobre la etiqueta que quiere "
+"eliminar."
 
 #: C/tags_manage.page:80(p)
 msgid ""
 "Choose <guiseq><gui>Tags</gui><gui>Delete Selected Tag</gui></guiseq> to "
 "delete this tag."
+msgstr ""
+
+#: C/tags_intro.page:5(desc)
+msgid "An introduction to tags"
+msgstr "Una introducción a las etiquetas"
+
+#: C/tags_intro.page:14(title)
+msgid "What's a tag?"
+msgstr "¿Qué es una etiqueta?"
+
+#: C/tags_intro.page:15(p)
+msgid ""
+"Tags are keyword you can use to label and organize your photos. You may have "
+"already seen it in weblogs."
+msgstr ""
+
+#: C/tags_intro.page:16(p)
+msgid ""
+"<app>Solang</app> uses tags to help you organizing your photos. In fact, you "
+"can use tags to organize your photos the way you want!"
+msgstr ""
+
+#: C/tags_intro.page:17(p)
+msgid ""
+"For example, some people uses tags to create \"albums\" of their holiday "
+"photos. Some others use tags to show what friends are in their photos, to "
+"view only photos from one geographical place or distinguish the photos they "
+"have modified."
+msgstr ""
+
+#: C/tags_intro.page:19(p)
+msgid ""
+"<app>Solang</app> allows you to use tags as filters to view only photos that "
+"have some tags attached to them."
+msgstr ""
+
+#: C/photos_by_page.page:6(desc)
+msgid "To view more than 50 photos."
+msgstr "Para ver más de 50 fotos."
+
+#: C/photos_by_page.page:15(title)
+msgid "I don't see all my photos."
+msgstr "No veo todas mis fotos."
+
+#: C/photos_by_page.page:16(p)
+msgid ""
+"<app>Solang</app> only display 50 photos by page, so you can only preview 50 "
+"photos at once."
+msgstr ""
+
+#: C/photos_by_page.page:17(p)
+msgid "Hopefully there are multiple pages."
+msgstr ""
+
+#: C/photos_by_page.page:18(p)
+msgid "To go to the next page you can"
+msgstr "Para ir a la siguiente página puede"
+
+#: C/photos_by_page.page:21(p)
+msgid "Click on the <gui>Next page</gui> button in the <gui>Toolbar</gui>."
+msgstr ""
+"Pulse el botón <gui>Siguiente página</gui> en la <gui>Barra de herramientas</"
+"gui>."
+
+#: C/photos_by_page.page:24(p)
+msgid "Press <keyseq><key>Alt</key><key>Page Down</key></keyseq>."
+msgstr ""
+
+#: C/photos_by_page.page:27(p)
+msgid ""
+"Choose <guiseq><gui>Go</gui><gui>Next Page</gui></guiseq> from the <gui>Main "
+"Window</gui>."
+msgstr ""
+
+#: C/photos_by_page.page:30(p)
+msgid "To go to the previous page you can"
+msgstr "Para ir a la página anterior puede"
+
+#: C/photos_by_page.page:33(p)
+msgid "Click on the <gui>Previous page</gui> button in the <gui>Toolbar</gui>."
+msgstr ""
+"Pulsar el botón <gui>Página anterior</gui> en la <gui>Barra de herramientas</"
+"gui>."
+
+#: C/photos_by_page.page:36(p)
+msgid "Press <keyseq><key>Alt</key><key>Page Up</key></keyseq>."
+msgstr "Pulse <keyseq><key>Alt</key><key>Re Pág</key></keyseq>."
+
+#: C/photos_by_page.page:39(p)
+msgid ""
+"Choose <guiseq><gui>Go</gui><gui>Previous Page</gui></guiseq> from the "
+"<gui>Main Window</gui>."
+msgstr ""
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/layout.page:24(None)
+msgid ""
+"@@image: 'figures/properties-title.png'; md5=4b58586b170342ec20acbc2903a794be"
+msgstr ""
+
+#: C/layout.page:5(desc)
+msgid "Adapt Solang's interface to your needs."
+msgstr ""
+
+#: C/layout.page:14(title)
+msgid "Customize the layout"
+msgstr ""
+
+#: C/layout.page:16(p)
+msgid ""
+"You can easily adapt Solang's interface to your needs thanks to its "
+"customizable layout."
+msgstr ""
+
+#: C/layout.page:18(p)
+msgid ""
+"Solang's interface is composed of several \"dockable items\" that you can "
+"move inside Solang's window.<br/> To change an item position click on its "
+"title and move your cursor while holding the button pressed. Then drop the "
+"item where you want in Solang's window."
+msgstr ""
+
+#: C/layout.page:22(title)
+msgid "An item's title"
+msgstr ""
+
+#: C/layout.page:23(desc)
+msgid ""
+"The title of the \"Properties\" item, drag and drop it in Solang's window to "
+"change the item position"
+msgstr ""
+
+#: C/layout.page:25(p)
+msgid "The title of the \"Properties\" item"
 msgstr ""
 
 #: C/keys.page:5(desc)
@@ -400,45 +597,9 @@ msgstr ""
 msgid "Press <key>Enter</key>"
 msgstr "Pulse <key>Intro</key>"
 
-#: C/tags_intro.page:5(desc)
-msgid "An introduction to tags"
-msgstr "Una introducción a las etiquetas"
-
-#: C/tags_intro.page:14(title)
-msgid "What's a tag?"
-msgstr "¿Qué es una etiqueta?"
-
-#: C/tags_intro.page:15(p)
-msgid ""
-"Tags are keyword you can use to label and organize your photos. You may have "
-"already seen it in weblogs."
-msgstr ""
-
-#: C/tags_intro.page:16(p)
-msgid ""
-"<app>Solang</app> uses tags to help you organizing your photos. In fact, you "
-"can use tags to organize your photos the way you want!"
-msgstr ""
-
-#: C/tags_intro.page:17(p)
-msgid ""
-"For example, some people uses tags to create \"albums\" of their holiday "
-"photos. Some others use tags to show what friends are in their photos, to "
-"view only photos from one geographical place or distinguish the photos they "
-"have modified."
-msgstr ""
-
-#: C/tags_intro.page:19(p)
-msgid ""
-"<app>Solang</app> allows you to use tags as filters to view only photos that "
-"have some tags attached to them."
-msgstr ""
-
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
 #: C/intro.page:24(None)
-#| msgid ""
-#| "@@image: 'figures/main-window.png'; md5=3531b20d31fd0896d595d3fd691e4944"
 msgid ""
 "@@image: 'figures/main-window.png'; md5=dd683ccfcb174192e89aaee8d58294ba"
 msgstr ""
@@ -491,64 +652,6 @@ msgstr "Ventana principal de <app>Solang</app>"
 msgid "<app>Solang</app> main window."
 msgstr "Ventana principal de <app>Solang</app>."
 
-#: C/photos_by_page.page:6(desc)
-msgid "To view more than 50 photos."
-msgstr "Para ver más de 50 fotos."
-
-#: C/photos_by_page.page:15(title)
-msgid "I don't see all my photos."
-msgstr "No veo todas mis fotos."
-
-#: C/photos_by_page.page:16(p)
-msgid ""
-"<app>Solang</app> only display 50 photos by page, so you can only preview 50 "
-"photos at once."
-msgstr ""
-
-#: C/photos_by_page.page:17(p)
-msgid "Hopefully there are multiple pages."
-msgstr ""
-
-#: C/photos_by_page.page:18(p)
-msgid "To go to the next page you can"
-msgstr "Para ir a la siguiente página puede"
-
-#: C/photos_by_page.page:21(p)
-msgid "Click on the <gui>Next page</gui> button in the <gui>Toolbar</gui>."
-msgstr ""
-"Pulse el botón <gui>Siguiente página</gui> en la <gui>Barra de herramientas</"
-"gui>."
-
-#: C/photos_by_page.page:24(p)
-msgid "Press <keyseq><key>Alt</key><key>Page Down</key></keyseq>."
-msgstr ""
-
-#: C/photos_by_page.page:27(p)
-msgid ""
-"Choose <guiseq><gui>Go</gui><gui>Next Page</gui></guiseq> from the <gui>Main "
-"Window</gui>."
-msgstr ""
-
-#: C/photos_by_page.page:30(p)
-msgid "To go to the previous page you can"
-msgstr "Para ir a la página anterior puede"
-
-#: C/photos_by_page.page:33(p)
-msgid "Click on the <gui>Previous page</gui> button in the <gui>Toolbar</gui>."
-msgstr ""
-"Pulsar el botón <gui>Página anterior</gui> en la <gui>Barra de herramientas</"
-"gui>."
-
-#: C/photos_by_page.page:36(p)
-msgid "Press <keyseq><key>Alt</key><key>Page Up</key></keyseq>."
-msgstr "Pulse <keyseq><key>Alt</key><key>Re Pág</key></keyseq>."
-
-#: C/photos_by_page.page:39(p)
-msgid ""
-"Choose <guiseq><gui>Go</gui><gui>Previous Page</gui></guiseq> from the "
-"<gui>Main Window</gui>."
-msgstr ""
-
 #: C/index.page:13(title)
 msgid "<app>Solang</app> Help"
 msgstr "Ayuda de <app>Solang</app>"
@@ -571,65 +674,6 @@ msgstr "Exportando fotos"
 #: C/index.page:48(title)
 msgid "Tips and Tricks"
 msgstr "Sugerencias y trucos"
-
-#: C/tags_use.page:7(desc)
-msgid "Attach tags to photos and remove them."
-msgstr ""
-
-#: C/tags_use.page:16(title)
-msgid "Attach tags to photos"
-msgstr "Adjuntar etiquetas a fotos"
-
-#: C/tags_use.page:19(title)
-msgid "Attach a tag to photos."
-msgstr "Adjuntar etiquetas a fotos."
-
-#: C/tags_use.page:21(p)
-msgid "You can attach a tag to one or more photos at once."
-msgstr "Puede adjuntar una etiqueta a más de una foto a la vez."
-
-#: C/tags_use.page:25(p)
-msgid ""
-"From the <gui>main</gui> window, select one or more photos you want to tag."
-msgstr ""
-
-#: C/tags_use.page:28(p)
-msgid ""
-"In the <gui>Tag List</gui>, click on the tag you want to attach to these "
-"photos."
-msgstr ""
-
-#: C/tags_use.page:31(p)
-msgid ""
-"Choose <guiseq><gui>Tags</gui><gui>Attach Tag to Selection</gui></guiseq> or "
-"press <keyseq><key>Ctrl</key><key>T</key></keyseq> to attach the tag to "
-"these photos."
-msgstr ""
-
-#: C/tags_use.page:37(title)
-msgid "Remove a tag from photos."
-msgstr "Eliminar una etiqueta de las fotos."
-
-#: C/tags_use.page:39(p)
-msgid "You can remove a tag from one or more photos at once."
-msgstr ""
-
-#: C/tags_use.page:43(p)
-msgid ""
-"From the <gui>main</gui> window, select one or more photos you want to untag."
-msgstr ""
-
-#: C/tags_use.page:46(p)
-msgid ""
-"In the <gui>Tag List</gui>, click on the tag you want to remove from these "
-"photos."
-msgstr ""
-
-#: C/tags_use.page:49(p)
-msgid ""
-"Choose <guiseq><gui>Tags</gui><gui>Remove Tag From Selection</gui></guiseq> "
-"to remove the tag from these photos."
-msgstr ""
 
 #: C/import.page:6(desc)
 msgid "To view your photos in <app>Solang</app>."
@@ -660,7 +704,7 @@ msgid ""
 "You can copy photos to a directory of your computer or put them in a archive."
 msgstr ""
 
-#: C/export_folder.page:19(p)
+#: C/export_folder.page:19(p) C/export_CD.page:19(p)
 msgid ""
 "First you have to <link xref=\"export_queue\">add the photos you want to "
 "export to the Export Queue</link>."
@@ -692,9 +736,49 @@ msgid ""
 "chosen."
 msgstr ""
 
-#: C/export_folder.page:34(p)
+#: C/export_folder.page:34(p) C/export_CD.page:34(p)
 msgid "Choose <gui>Export</gui> to export the photos."
 msgstr "Elija <gui>Exportar</gui> para exportar las fotos."
+
+#: C/export_CD.page:7(desc)
+msgid "To copy photos in a CD."
+msgstr ""
+
+#: C/export_CD.page:16(title)
+msgid "Burn a photo CD"
+msgstr "Grabar un CD de fotos"
+
+#: C/export_CD.page:17(p)
+msgid "You can burn a CD with your photos."
+msgstr "Puede grabar un CD con sus fotos."
+
+#: C/export_CD.page:21(p)
+msgid "Now you can burn the photos from the Export Queue."
+msgstr ""
+
+#: C/export_CD.page:24(p)
+#| msgid ""
+#| "From the <gui>main</gui> window, choose <guiseq><gui>Tags</"
+#| "gui><gui>Create New Tag...</gui></guiseq>."
+msgid ""
+"Choose <guiseq><gui>Photos</gui><gui>Export to</gui><gui>CD...</gui></"
+"guiseq>."
+msgstr ""
+"Elija <guiseq><gui>Fotos</gui><gui>Exportar a</gui><gui>CD...</gui></guiseq>."
+
+#: C/export_CD.page:27(p)
+msgid ""
+"From the <gui>Export</gui> window, choose the CD you want to burn your "
+"photos on."
+msgstr ""
+
+#: C/export_CD.page:30(p)
+msgid ""
+"Check <gui>Create an archive</gui> if you want your photos to be packed up "
+"in a compressed archive. Thanks to this function you can put more photos on "
+"the same CD but devices like DVD players won't be able to display your "
+"photos. Otherwise your photos will be burned directly to the CD."
+msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
 #: C/index.page:0(None)
