@@ -1,0 +1,658 @@
+# Romanian translation for solang.
+# Copyright (C) 2010 solang's COPYRIGHT HOLDER
+# This file is distributed under the same license as the solang package.
+# Lucian Adrian Grijincu <lucian.grijincu@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: solang master\n"
+"Report-Msgid-Bugs-To: "
+"http://bugzilla.gnome.org/enter_bug.cgi?product=solang&component=General\n"
+"POT-Creation-Date: 2010-05-08 11:57+0000\n"
+"PO-Revision-Date: 2010-07-14 21:31+0300\n"
+"Last-Translator: Lucian Adrian Grijincu <lucian.grijincu@gmail.com>\n"
+"Language-Team: Romanian Gnome Team <gnomero-list@lists.sourceforge.net>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2);;\n"
+"X-Generator: Virtaal 0.6.1\n"
+
+#: ../data/solang.desktop.in.in.h:1
+msgid "@PACKAGE_NAME@ Photo Manager"
+msgstr "@PACKAGE_NAME@ Administrator de fotografii"
+
+#: ../data/solang.desktop.in.in.h:2
+msgid "Organize, enjoy and share your photos"
+msgstr "Organizați, priviți și partajați fotografii"
+
+#: ../data/solang.desktop.in.in.h:3
+msgid "Photo Manager"
+msgstr "Administrator de fotografii"
+
+#: ../src/application/main-window.cpp:226
+msgid "_Photo"
+msgstr "_Fotografie"
+
+#: ../src/application/main-window.cpp:235
+#: ../src/renderer/browser-renderer.cpp:194
+msgid "_Edit"
+msgstr "_Editare"
+
+#: ../src/application/main-window.cpp:240
+#: ../src/renderer/browser-renderer.cpp:199
+msgid "_Add to Export Queue"
+msgstr "_Adaugă la coada de exportare"
+
+#: ../src/application/main-window.cpp:247
+msgid "_Clear Export Queue"
+msgstr "_Curăță coada de exportare"
+
+#: ../src/application/main-window.cpp:252
+msgid "_View"
+msgstr "_Vizualizare"
+
+#: ../src/application/main-window.cpp:256
+msgid "_Toolbar"
+msgstr "_Bara de unelte"
+
+#: ../src/application/main-window.cpp:257
+msgid "Show or hide the toolbar in the current window"
+msgstr "Arată sau ascunde bara de unelte în fereastra curentă"
+
+#: ../src/application/main-window.cpp:263
+msgid "_Statusbar"
+msgstr "Bara de _stare"
+
+#: ../src/application/main-window.cpp:264
+msgid "Show or hide the statusbar in the current window"
+msgstr "Arată sau ascunde bara de stare în fereastra curentă"
+
+#: ../src/application/main-window.cpp:271
+msgid "_Full Screen"
+msgstr "_Afișare pe tot ecranul"
+
+#: ../src/application/main-window.cpp:272
+msgid "Show the current photo in full screen mode"
+msgstr "Afișează fotografia curentă pe tot ecranul"
+
+#: ../src/application/main-window.cpp:289
+msgid "_Help"
+msgstr "_Ajutor"
+
+#: ../src/application/main-window.cpp:294
+msgid "_Contents"
+msgstr "_Conținut"
+
+#: ../src/application/main-window.cpp:662
+msgid "A photo manager for GNOME"
+msgstr "Un administrator de fotografii pentru GNOME"
+
+#. Translators: Put your names here.
+#: ../src/application/main-window.cpp:693
+msgid "translator-credits"
+msgstr "Lucian Adrian Grijincu <lucian.grijincu@gmail.com>"
+
+#: ../src/application/main-window.cpp:698
+msgctxt "Project website"
+msgid "%1 Website"
+msgstr "Pagina web %1"
+
+#: ../src/attribute/basic-exif-view.cpp:93
+msgid "Camera"
+msgstr "Cameră"
+
+#: ../src/attribute/basic-exif-view.cpp:112
+msgid "Exposure time"
+msgstr "Timp expunere"
+
+#: ../src/attribute/basic-exif-view.cpp:132
+msgid "Flash"
+msgstr "Bliț"
+
+#: ../src/attribute/basic-exif-view.cpp:152
+msgid "F-number"
+msgstr "Diafragma"
+
+#: ../src/attribute/basic-exif-view.cpp:171
+msgid "ISO speed"
+msgstr "Viteză ISO"
+
+#: ../src/attribute/basic-exif-view.cpp:190
+msgid "Metering mode"
+msgstr "Mod de măsurare a expunerii"
+
+#: ../src/attribute/basic-exif-view.cpp:211
+msgid "Focal length"
+msgstr "Distanță focală"
+
+#: ../src/attribute/basic-exif-view.cpp:231
+msgid "White balance"
+msgstr "Balans alb"
+
+#: ../src/attribute/date-manager.cpp:50
+msgid "Picture Taken Date"
+msgstr "Data efectuării fotografiei"
+
+#: ../src/attribute/property-manager.cpp:49
+msgid "Properties"
+msgstr "Proprietăți"
+
+#: ../src/attribute/property-manager.cpp:75
+msgid "Basic"
+msgstr "Simplu"
+
+#: ../src/attribute/property-manager.cpp:76
+msgid "Histogram"
+msgstr "Histogramă"
+
+#: ../src/attribute/search-manager.cpp:52
+msgid "Search"
+msgstr "Caută"
+
+#: ../src/attribute/search-manager.cpp:66
+msgid "Select _All"
+msgstr "Selecte_ază toate"
+
+#: ../src/attribute/search-manager.cpp:67
+msgid "Select all the filters in this list"
+msgstr "Selectează toate filtrele din această listă"
+
+#: ../src/attribute/search-manager.cpp:75
+msgid "_Remove"
+msgstr "E_limină"
+
+#: ../src/attribute/search-manager.cpp:76
+msgid "Remove the selected filters from this list"
+msgstr "Elimină filtrele selectate din această listă"
+
+#: ../src/attribute/tag-manager.cpp:54
+msgid "Tags"
+msgstr "Etichete"
+
+#: ../src/attribute/tag-manager.cpp:106
+msgid "_Tags"
+msgstr "_Etichete"
+
+#: ../src/attribute/tag-manager.cpp:111
+msgid "Create New _Tag..."
+msgstr "Creează o e_tichetă nouă…"
+
+#: ../src/attribute/tag-manager.cpp:118
+msgid "_Edit Selected Tag..."
+msgstr "_Editează eticheta selectată…"
+
+#: ../src/attribute/tag-manager.cpp:125
+msgid "_Delete Selected Tag"
+msgstr "Șt_erge eticheta selectată"
+
+#: ../src/attribute/tag-manager.cpp:131
+msgid "_Attach Tag to Selection"
+msgstr "_Atașează eticheta selecției"
+
+#: ../src/attribute/tag-manager.cpp:138
+msgid "_Remove Tag From Selection"
+msgstr "E_limină eticheta din selecție"
+
+#: ../src/attribute/tag-manager.cpp:144
+msgid "_Show All Tags"
+msgstr "Afișea_ză toate etichetele"
+
+#: ../src/attribute/tag-new-dialog.cpp:39
+#: ../src/attribute/tag-new-dialog.cpp:69
+msgid "Parent:"
+msgstr "Părinte:"
+
+#: ../src/attribute/tag-new-dialog.cpp:44
+#: ../src/attribute/tag-new-dialog.cpp:74
+msgid "Name:"
+msgstr "Nume:"
+
+#: ../src/attribute/tag-new-dialog.cpp:49
+#: ../src/attribute/tag-new-dialog.cpp:79
+msgid "Description:"
+msgstr "Descriere:"
+
+#: ../src/attribute/tag-new-dialog.cpp:56
+msgid "Create New Tag"
+msgstr "Creează o etichetă nouă"
+
+#: ../src/attribute/tag-new-dialog.cpp:86
+msgid "Edit Tag"
+msgstr "Editează eticheta"
+
+#: ../src/attribute/tag-new-dialog.cpp:126
+msgid "Select Tag Icon"
+msgstr "Alege o iconiță pentru etichetă"
+
+#: ../src/common/exif-data.cpp:161
+msgctxt "Flash"
+msgid "Off"
+msgstr "Dezactivat"
+
+#: ../src/common/exif-data.cpp:165
+msgctxt "Flash"
+msgid "On"
+msgstr "Activat"
+
+#: ../src/common/exif-data.cpp:199
+msgctxt "Metering mode"
+msgid "Average"
+msgstr "Medie"
+
+#: ../src/common/exif-data.cpp:204
+msgctxt "Metering mode"
+msgid "Center Weighted Average"
+msgstr "Medie ponderată centrată"
+
+#: ../src/common/exif-data.cpp:208
+msgctxt "Metering mode"
+msgid "Spot"
+msgstr "Punct"
+
+#: ../src/common/exif-data.cpp:212
+msgctxt "Metering mode"
+msgid "Multi-spot"
+msgstr "Multi-punct"
+
+#: ../src/common/exif-data.cpp:216
+msgctxt "Metering mode"
+msgid "Pattern"
+msgstr "Mozaic"
+
+#: ../src/common/exif-data.cpp:220
+msgctxt "Metering mode"
+msgid "Partial"
+msgstr "Parțial"
+
+#: ../src/common/exif-data.cpp:236
+msgctxt "White balance"
+msgid "Automatic"
+msgstr "Automat"
+
+#: ../src/common/exif-data.cpp:240
+msgctxt "White balance"
+msgid "Manual"
+msgstr "Manual"
+
+#: ../src/common/histogram-viewer.cpp:38
+msgid "Type"
+msgstr "Tip"
+
+#: ../src/common/histogram-viewer.cpp:43
+msgid "Channels"
+msgstr "Canale"
+
+#: ../src/common/histogram-viewer.cpp:68
+msgctxt "Scale"
+msgid "Linear"
+msgstr "Liniară"
+
+#: ../src/common/histogram-viewer.cpp:73
+msgctxt "Scale"
+msgid "Logarithmic"
+msgstr "Logaritmică"
+
+#: ../src/common/histogram-viewer.cpp:81
+msgid "RGB"
+msgstr "RGB"
+
+#: ../src/common/histogram-viewer.cpp:86
+msgid "Red"
+msgstr "Roșu"
+
+#: ../src/common/histogram-viewer.cpp:91
+msgid "Green"
+msgstr "Verde"
+
+#: ../src/common/histogram-viewer.cpp:96
+msgid "Blue"
+msgstr "Albastru"
+
+#: ../src/common/progress-dialog.cpp:36
+msgid "Pending Operations"
+msgstr "Operații în așteptare"
+
+#: ../src/common/progress-observer.h:166
+msgid "%1 of %2 completed"
+msgstr "%1 din %2 complet"
+
+#: ../src/common/progress-observer.h:175
+msgid "%1%% complete"
+msgstr "%1%% complet"
+
+#: ../src/editor/editor.cpp:114
+msgid "T_ools"
+msgstr "_Unelte"
+
+#: ../src/editor/editor.cpp:118
+msgid "_Transform"
+msgstr "_Transformare"
+
+#: ../src/editor/editor.cpp:124
+msgid "Flip _Horizontal"
+msgstr "Întoarce _orizontal"
+
+#: ../src/editor/editor.cpp:125
+msgid "Mirror the photo horizontally"
+msgstr "Oglindește orizontal fotografia"
+
+#: ../src/editor/editor.cpp:136
+msgid "Flip _Vertical"
+msgstr "Răstoarnă _vertical"
+
+#: ../src/editor/editor.cpp:137
+msgid "Mirror the photo vertically"
+msgstr "Oglindește vertical fotografia"
+
+#: ../src/editor/editor.cpp:148
+msgid "_Rotate Clockwise"
+msgstr "_Rotește în sens orar"
+
+#: ../src/editor/editor.cpp:149
+msgid "Rotate the photo 90 degrees to the right"
+msgstr "Rotește fotografia cu 90° la dreapta"
+
+#: ../src/editor/editor.cpp:160
+msgid "Rotate Counterc_lockwise"
+msgstr "Rotește în sens _antiorar"
+
+#: ../src/editor/editor.cpp:161
+msgid "Rotate the photo 90 degrees to the left"
+msgstr "Rotește fotografia cu 90° la stânga"
+
+#: ../src/editor/flip-horiz-operation.cpp:43
+msgid "Flipping horizontally..."
+msgstr "Se oglindește orizontal…"
+
+#: ../src/editor/flip-operation.cpp:59
+msgid "Flipping..."
+msgstr "Se oglindește…"
+
+#: ../src/editor/flip-vert-operation.cpp:43
+msgid "Flipping vertically..."
+msgstr "Se oglindește vertical…"
+
+#: ../src/editor/rotate-clock-operation.cpp:43
+msgid "Rotating clockwise..."
+msgstr "Se rotește în sens orar…"
+
+#: ../src/editor/rotate-counter-operation.cpp:43
+msgid "Rotating counterclockwise..."
+msgstr "Se rotește în sens antiorar…"
+
+#: ../src/editor/rotate-operation.cpp:57
+msgid "Rotating..."
+msgstr "Se rotește…"
+
+#: ../src/exporter/brasero-destination.cpp:144
+msgid "_CD/DVD..."
+msgstr "_CD/DVD…"
+
+#: ../src/exporter/brasero-destination.cpp:186
+msgid "Export to CD/DVD"
+msgstr "Exportă pe un CD/DVD"
+
+#: ../src/exporter/directory-destination.cpp:95
+msgid "Exporting photos"
+msgstr "Exportare fotografii"
+
+#: ../src/exporter/directory-destination.cpp:181
+msgid "Select Folder"
+msgstr "Alegeți dosarul"
+
+#: ../src/exporter/directory-destination.cpp:190
+msgid "_Folder..."
+msgstr "_Dosar…"
+
+#: ../src/exporter/exporter.cpp:192
+msgid "Creating archive"
+msgstr "Creare arhivă"
+
+#: ../src/exporter/exporter-dialog.cpp:33
+msgid "Export"
+msgstr "Exportă"
+
+#: ../src/exporter/exporter-dialog.cpp:45
+msgid "_Create an archive"
+msgstr "_Crează o archivă"
+
+#: ../src/exporter/exporter-dialog.cpp:64
+msgctxt "A group of UI controls"
+msgid "Destination"
+msgstr "Destinație"
+
+#: ../src/exporter/exporter-dialog.cpp:80
+msgctxt "A group of UI controls"
+msgid "Options"
+msgstr "Opțiuni"
+
+#: ../src/exporter/exporter-dialog.cpp:105
+msgid "_Export"
+msgstr "_Exportă"
+
+#: ../src/renderer/browser-renderer.cpp:207
+#: ../src/renderer/enlarged-renderer.cpp:304
+msgid "_Slideshow"
+msgstr "_Diapozitive"
+
+#: ../src/renderer/browser-renderer.cpp:208
+#: ../src/renderer/enlarged-renderer.cpp:305
+msgid "Start a slideshow view of the photos"
+msgstr "Afișează fotografiile ca prezentare de diapozitive"
+
+#: ../src/renderer/browser-renderer.cpp:217
+msgid "Enlarge or shrink the thumbnails"
+msgstr "Mărește sau micșorează miniaturile"
+
+#: ../src/renderer/browser-renderer.cpp:239
+#: ../src/renderer/enlarged-renderer.cpp:317
+#: ../src/renderer/enlarged-renderer.cpp:453
+#: ../src/renderer/enlarged-renderer.cpp:462
+#: ../src/renderer/enlarged-renderer.cpp:471
+msgid "_Zoom In"
+msgstr "_Mărește"
+
+#: ../src/renderer/browser-renderer.cpp:240
+msgid "Enlarge the thumbnails"
+msgstr "Mărește miniaturile"
+
+#: ../src/renderer/browser-renderer.cpp:251
+msgid "_Zoom Out"
+msgstr "_Micșorează"
+
+#: ../src/renderer/browser-renderer.cpp:252
+msgid "Shrink the thumbnails"
+msgstr "Micșorează miniaturile"
+
+#: ../src/renderer/browser-renderer.cpp:263
+#: ../src/renderer/enlarged-renderer.cpp:312
+msgid "_Go"
+msgstr ""
+
+#: ../src/renderer/browser-renderer.cpp:268
+msgid "_Previous Page"
+msgstr "_Pagina precedentă"
+
+#: ../src/renderer/browser-renderer.cpp:269
+msgid "Go to the previous page in the collection"
+msgstr "Mergi la pagina precedentă din colecție"
+
+#: ../src/renderer/browser-renderer.cpp:272
+#: ../src/renderer/enlarged-renderer.cpp:378
+#: ../src/renderer/slideshow-renderer.cpp:169
+#: ../src/renderer/slideshow-renderer.cpp:213
+msgctxt "Navigation"
+msgid "Previous"
+msgstr "Precedentă"
+
+#: ../src/renderer/browser-renderer.cpp:284
+msgid "_Next Page"
+msgstr "Pagina ur_mătoare"
+
+#: ../src/renderer/browser-renderer.cpp:285
+msgid "Go to the next page in the collection"
+msgstr "Mergi la pagina următoare din colecție"
+
+#: ../src/renderer/browser-renderer.cpp:288
+#: ../src/renderer/enlarged-renderer.cpp:393
+#: ../src/renderer/slideshow-renderer.cpp:178
+#: ../src/renderer/slideshow-renderer.cpp:222
+msgctxt "Navigation"
+msgid "Next"
+msgstr "Următoare"
+
+#: ../src/renderer/browser-renderer.cpp:299
+msgid "_First Page"
+msgstr "P_rima pagină"
+
+#: ../src/renderer/browser-renderer.cpp:300
+msgid "Go to the first page in the collection"
+msgstr "Mergi la prima pagină din colecție"
+
+#: ../src/renderer/browser-renderer.cpp:312
+msgid "_Last Page"
+msgstr "U_ltima pagină"
+
+#: ../src/renderer/browser-renderer.cpp:313
+msgid "Go to the last page in the collection"
+msgstr "Mergi la ultima pagină din colecție"
+
+#: ../src/renderer/enlarged-renderer.cpp:72
+msgctxt "Mode or view"
+msgid "Enlarged"
+msgstr "Mărit"
+
+#: ../src/renderer/enlarged-renderer.cpp:318
+#: ../src/renderer/enlarged-renderer.cpp:454
+#: ../src/renderer/enlarged-renderer.cpp:463
+#: ../src/renderer/enlarged-renderer.cpp:472
+#: ../src/renderer/slideshow-window.cpp:75
+#: ../src/renderer/slideshow-window.cpp:110
+#: ../src/renderer/slideshow-window.cpp:119
+#: ../src/renderer/slideshow-window.cpp:128
+msgid "Enlarge the photo"
+msgstr "Mărește fotografia"
+
+#: ../src/renderer/enlarged-renderer.cpp:320
+#: ../src/renderer/slideshow-window.cpp:74
+#: ../src/renderer/slideshow-window.cpp:109
+#: ../src/renderer/slideshow-window.cpp:118
+#: ../src/renderer/slideshow-window.cpp:127
+msgctxt "Zoom"
+msgid "In"
+msgstr "Mărește"
+
+#: ../src/renderer/enlarged-renderer.cpp:331
+#: ../src/renderer/enlarged-renderer.cpp:480
+#: ../src/renderer/enlarged-renderer.cpp:489
+msgid "Zoom _Out"
+msgstr "Micș_orează"
+
+#: ../src/renderer/enlarged-renderer.cpp:332
+#: ../src/renderer/enlarged-renderer.cpp:481
+#: ../src/renderer/enlarged-renderer.cpp:490
+#: ../src/renderer/slideshow-window.cpp:84
+#: ../src/renderer/slideshow-window.cpp:137
+#: ../src/renderer/slideshow-window.cpp:146
+msgid "Shrink the photo"
+msgstr "Micșorează fotografia"
+
+#: ../src/renderer/enlarged-renderer.cpp:334
+#: ../src/renderer/slideshow-window.cpp:83
+#: ../src/renderer/slideshow-window.cpp:136
+#: ../src/renderer/slideshow-window.cpp:145
+msgctxt "Zoom"
+msgid "Out"
+msgstr "Micșorează"
+
+#: ../src/renderer/enlarged-renderer.cpp:345
+msgid "_Normal Size"
+msgstr "Dimensiune _normală"
+
+#: ../src/renderer/enlarged-renderer.cpp:346
+#: ../src/renderer/slideshow-window.cpp:93
+msgid "Show the photo at its normal size"
+msgstr "Afișează fotografia la dimensiunea ei normală"
+
+#: ../src/renderer/enlarged-renderer.cpp:349
+#: ../src/renderer/slideshow-window.cpp:92
+msgctxt "Zoom"
+msgid "Normal"
+msgstr "Normal"
+
+#: ../src/renderer/enlarged-renderer.cpp:360
+msgid "Best _Fit"
+msgstr "Cea mai bună potri_vire"
+
+#: ../src/renderer/enlarged-renderer.cpp:361
+#: ../src/renderer/slideshow-window.cpp:102
+msgid "Fit the photo to the window"
+msgstr "Potrivește fotografia la dimensiunea ferestrei"
+
+#: ../src/renderer/enlarged-renderer.cpp:363
+#: ../src/renderer/slideshow-window.cpp:101
+msgctxt "Zoom"
+msgid "Fit"
+msgstr "Potrivit"
+
+#: ../src/renderer/enlarged-renderer.cpp:374
+#: ../src/renderer/enlarged-renderer.cpp:420
+msgid "_Previous Photo"
+msgstr "Fotografia _precedentă"
+
+#: ../src/renderer/enlarged-renderer.cpp:375
+#: ../src/renderer/enlarged-renderer.cpp:421
+#: ../src/renderer/slideshow-renderer.cpp:170
+#: ../src/renderer/slideshow-renderer.cpp:214
+msgid "Go to the previous photo in the collection"
+msgstr "Sari la fotografia anterioară din colecție"
+
+#: ../src/renderer/enlarged-renderer.cpp:389
+#: ../src/renderer/enlarged-renderer.cpp:429
+msgid "_Next Photo"
+msgstr "Fotografia ur_mătoare"
+
+#: ../src/renderer/enlarged-renderer.cpp:390
+#: ../src/renderer/enlarged-renderer.cpp:430
+#: ../src/renderer/slideshow-renderer.cpp:179
+#: ../src/renderer/slideshow-renderer.cpp:223
+msgid "Go to the next photo in the collection"
+msgstr "Sari la fotografia următoare din colecție"
+
+#: ../src/renderer/enlarged-renderer.cpp:404
+#: ../src/renderer/enlarged-renderer.cpp:437
+msgid "_First Photo"
+msgstr "Prima _fotografie"
+
+#: ../src/renderer/enlarged-renderer.cpp:405
+#: ../src/renderer/enlarged-renderer.cpp:438
+#: ../src/renderer/slideshow-renderer.cpp:162
+#: ../src/renderer/slideshow-renderer.cpp:206
+msgid "Go to the first photo in the collection"
+msgstr "Sari la prima fotografie din colecție"
+
+#: ../src/renderer/enlarged-renderer.cpp:412
+#: ../src/renderer/enlarged-renderer.cpp:445
+msgid "_Last Photo"
+msgstr "U_ltima fotografie"
+
+#: ../src/renderer/enlarged-renderer.cpp:413
+#: ../src/renderer/enlarged-renderer.cpp:446
+#: ../src/renderer/slideshow-renderer.cpp:187
+#: ../src/renderer/slideshow-renderer.cpp:231
+msgid "Go to the last photo in the collection"
+msgstr "Sari la ultima fotografie din colecție"
+
+#: ../src/renderer/slideshow-renderer.cpp:161
+#: ../src/renderer/slideshow-renderer.cpp:205
+msgctxt "Navigation"
+msgid "First"
+msgstr "Prima"
+
+#: ../src/renderer/slideshow-renderer.cpp:186
+#: ../src/renderer/slideshow-renderer.cpp:230
+msgctxt "Navigation"
+msgid "Last"
+msgstr "Ultima"
