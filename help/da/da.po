@@ -8,8 +8,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: solang master\n"
-"POT-Creation-Date: 2010-04-07 10:26+0000\n"
-"PO-Revision-Date: 2010-04-13 12:42+0000\n"
+"POT-Creation-Date: 2010-07-08 10:19+0000\n"
+"PO-Revision-Date: 2010-09-05 12:42+0000\n"
 "Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "MIME-Version: 1.0\n"
@@ -37,25 +37,96 @@ msgstr ""
 "kopiere, ændre og distribuere eksempelkoden indeholdt i dette dokument under "
 "de betingelser du måtte vælge, uden begrænsning."
 
-#: C/tags_manage.page:7(desc)
-msgid "Create, modify and delete tags."
-msgstr "Oprette, ændre og slette mærker."
+#: C/tags_use.page:7(desc)
+msgid "Attach tags to photos and remove them."
+msgstr "Tilføj mærker til billeder og fjern dem."
 
-#: C/tags_manage.page:11(name) C/keys.page:9(name)
-#: C/howto_search.page:10(name) C/tags_intro.page:9(name)
-#: C/intro.page:10(name) C/photos_by_page.page:10(name) C/index.page:7(name)
-#: C/tags_use.page:11(name) C/import.page:10(name)
-#: C/export_folder.page:11(name)
+#: C/tags_use.page:11(name) C/tags_manage.page:11(name)
+#: C/tags_intro.page:9(name) C/photos_by_page.page:10(name)
+#: C/layout.page:9(name) C/keys.page:9(name) C/howto_search.page:10(name)
+#: C/intro.page:10(name) C/index.page:7(name) C/import.page:10(name)
+#: C/export_folder.page:11(name) C/export_CD.page:11(name)
 msgid "Florent Thévenet"
 msgstr "Florent Thévenet"
 
-#: C/tags_manage.page:12(email) C/keys.page:10(email)
-#: C/howto_search.page:11(email) C/tags_intro.page:10(email)
-#: C/intro.page:11(email) C/photos_by_page.page:11(email)
-#: C/index.page:8(email) C/tags_use.page:12(email) C/import.page:11(email)
-#: C/export_folder.page:12(email)
+#: C/tags_use.page:12(email) C/tags_manage.page:12(email)
+#: C/tags_intro.page:10(email) C/photos_by_page.page:11(email)
+#: C/layout.page:10(email) C/keys.page:10(email) C/howto_search.page:11(email)
+#: C/intro.page:11(email) C/index.page:8(email) C/import.page:11(email)
+#: C/export_folder.page:12(email) C/export_CD.page:12(email)
 msgid "feuloren@free.fr"
 msgstr "feuloren@free.fr"
+
+#: C/tags_use.page:16(title)
+msgid "Attach tags to photos"
+msgstr "Tilføj mærker til billeder"
+
+#: C/tags_use.page:19(title)
+msgid "Attach a tag to photos."
+msgstr "Tilføj et mærke til billeder."
+
+#: C/tags_use.page:21(p)
+msgid "You can attach a tag to one or more photos at once."
+msgstr "Du kan tilføje et mærke til et eller flere billeder på en gang."
+
+#: C/tags_use.page:25(p)
+msgid ""
+"From the <gui>main</gui> window, select one or more photos you want to tag."
+msgstr ""
+"Fra <gui>hovedvinduet</gui>, vælg et eller flere billeder du ønsker at mærke."
+
+#: C/tags_use.page:28(p)
+msgid ""
+"In the <gui>Tag List</gui>, click on the tag you want to attach to these "
+"photos."
+msgstr ""
+"I <gui>mærkelisten</gui>, klik på det mærke du ønsker at tilføje til disse "
+"billeder."
+
+#: C/tags_use.page:31(p)
+msgid ""
+"Choose <guiseq><gui>Tags</gui><gui>Attach Tag to Selection</gui></guiseq> or "
+"press <keyseq><key>Ctrl</key><key>T</key></keyseq> to attach the tag to "
+"these photos."
+msgstr ""
+"Vælg <guiseq><gui>Mærker</gui><gui>Tilføj mærke til udvælgelse</gui></"
+"guiseq> eller tryk <keyseq><key>Ctrl</key><key>T</key></keyseq> for at "
+"tilføje mærket til disse billeder."
+
+#: C/tags_use.page:37(title)
+msgid "Remove a tag from photos."
+msgstr "Fjern et mærke fra billeder."
+
+#: C/tags_use.page:39(p)
+msgid "You can remove a tag from one or more photos at once."
+msgstr "Du kan fjerne et mærke fra et eller flere billeder på en gang."
+
+#: C/tags_use.page:43(p)
+msgid ""
+"From the <gui>main</gui> window, select one or more photos you want to untag."
+msgstr ""
+"Fra <gui>hovedvinduet</gui>, vælg et eller flere billeder som du ønsker at "
+"fjerne mærker fra."
+
+#: C/tags_use.page:46(p)
+msgid ""
+"In the <gui>Tag List</gui>, click on the tag you want to remove from these "
+"photos."
+msgstr ""
+"I <gui>mærkelisten</gui>, klik på mærket du ønsker at fjerne fra disse "
+"billeder."
+
+#: C/tags_use.page:49(p)
+msgid ""
+"Choose <guiseq><gui>Tags</gui><gui>Remove Tag From Selection</gui></guiseq> "
+"to remove the tag from these photos."
+msgstr ""
+"Vælg <guiseq>><gui>Mærker</gui><gui>Fjern mærke fra udvælgelse</gui></"
+"guiseq> for at fjerne mærket fra disse billeder."
+
+#: C/tags_manage.page:7(desc)
+msgid "Create, modify and delete tags."
+msgstr "Oprette, ændre og slette mærker."
 
 #: C/tags_manage.page:16(title)
 msgid "Manage your tags"
@@ -74,16 +145,16 @@ msgid ""
 "From the <gui>main</gui> window, choose <guiseq><gui>Tags</gui><gui>Create "
 "New Tag...</gui></guiseq>."
 msgstr ""
-"Fra <gui>hovedvinduet</gui>, vælg <guiseq><gui>Mærker</gui><gui>Opret "
-"nyt mærke...</gui></guiseq>."
+"Fra <gui>hovedvinduet</gui>, vælg <guiseq><gui>Mærker</gui><gui>Opret nyt "
+"mærke...</gui></guiseq>."
 
 #: C/tags_manage.page:29(p)
 msgid ""
 "In the <gui>Create New Tag</gui> window, enter the name of your tag and "
 "enter an optional description."
 msgstr ""
-"I vinduet <gui>Opret nyt mærke</gui>, indtast navnet på dit mærke og "
-"indtast eventuelt en beskrivelse."
+"I vinduet <gui>Opret nyt mærke</gui>, indtast navnet på dit mærke og indtast "
+"eventuelt en beskrivelse."
 
 #: C/tags_manage.page:32(p)
 msgid "Press <gui>OK</gui> to validate the creation of the tag."
@@ -156,6 +227,163 @@ msgstr ""
 "Vælg <guiseq><gui>Mærker</gui><gui>Slet valgt mærke</gui></guiseq> for at "
 "slette dette mærke."
 
+#: C/tags_intro.page:5(desc)
+msgid "An introduction to tags"
+msgstr "En introduktion til mærker"
+
+#: C/tags_intro.page:14(title)
+msgid "What's a tag?"
+msgstr "Hvad er et mærke?"
+
+#: C/tags_intro.page:15(p)
+msgid ""
+"Tags are keyword you can use to label and organize your photos. You may have "
+"already seen it in weblogs."
+msgstr ""
+"Mærker er nøgleord du kan bruge til at mærke og organisere dine billeder. Du "
+"har måske allerede set det i internetlogge."
+
+#: C/tags_intro.page:16(p)
+msgid ""
+"<app>Solang</app> uses tags to help you organizing your photos. In fact, you "
+"can use tags to organize your photos the way you want!"
+msgstr ""
+"<app>Solang</app> bruger mærker for at hjælpe dig med at organisere dine "
+"billeder. Du kan bruge mærker til at organisere dine billeder på den måde "
+"der passer dig bedst!"
+
+#: C/tags_intro.page:17(p)
+msgid ""
+"For example, some people uses tags to create \"albums\" of their holiday "
+"photos. Some others use tags to show what friends are in their photos, to "
+"view only photos from one geographical place or distinguish the photos they "
+"have modified."
+msgstr ""
+"For eksempel bruger nogle folk mærker til at oprette \"album\" over deres "
+"feriebilleder. Andre bruger mærker til at vise hvilke venner der er på deres "
+"billeder, vise billeder fra et geografisk sted eller skelne de billeder de "
+"har behandlet fra de ubehandlede."
+
+#: C/tags_intro.page:19(p)
+msgid ""
+"<app>Solang</app> allows you to use tags as filters to view only photos that "
+"have some tags attached to them."
+msgstr ""
+"<app>Solang</app> tillader dig at bruge mærker som filtre for at vise "
+"billeder, som har bestemte mærker tilknyttet."
+
+#: C/photos_by_page.page:6(desc)
+msgid "To view more than 50 photos."
+msgstr "For at vise mere end 50 billeder."
+
+#: C/photos_by_page.page:15(title)
+msgid "I don't see all my photos."
+msgstr "Jeg ser ikke alle mine billeder."
+
+#: C/photos_by_page.page:16(p)
+msgid ""
+"<app>Solang</app> only display 50 photos by page, so you can only preview 50 "
+"photos at once."
+msgstr ""
+"<app>Solang</app> viser kun 50 billeder per side, så du kan kun forhåndsvise "
+"50 billeder på en gang."
+
+#: C/photos_by_page.page:17(p)
+msgid "Hopefully there are multiple pages."
+msgstr "Forhåbentlig er der flere sider."
+
+#: C/photos_by_page.page:18(p)
+msgid "To go to the next page you can"
+msgstr "For at gå til den næste side kan du"
+
+#: C/photos_by_page.page:21(p)
+msgid "Click on the <gui>Next page</gui> button in the <gui>Toolbar</gui>."
+msgstr "Klik på knappen <gui>Næste side</gui> i <gui>værktøjslinjen</gui>."
+
+#: C/photos_by_page.page:24(p)
+msgid "Press <keyseq><key>Alt</key><key>Page Down</key></keyseq>."
+msgstr "Tryk <keyseq><key>Alt</key><key>Side ned (Page Down)</key></keyseq>."
+
+#: C/photos_by_page.page:27(p)
+msgid ""
+"Choose <guiseq><gui>Go</gui><gui>Next Page</gui></guiseq> from the <gui>Main "
+"Window</gui>."
+msgstr ""
+"Vælg <guiseq><gui>Start</gui><gui>Næste side</gui></guiseq> fra "
+"<gui>hovedvinduet</gui>."
+
+#: C/photos_by_page.page:30(p)
+msgid "To go to the previous page you can"
+msgstr "For at gå til den forrige side kan du"
+
+#: C/photos_by_page.page:33(p)
+msgid "Click on the <gui>Previous page</gui> button in the <gui>Toolbar</gui>."
+msgstr "Klik på knappen <gui>Forrige side</gui> i <gui>værktøjslinjen</gui>."
+
+#: C/photos_by_page.page:36(p)
+msgid "Press <keyseq><key>Alt</key><key>Page Up</key></keyseq>."
+msgstr "Tryk <keyseq><key>Alt</key><key>Side op (Page Up)</key></keyseq>."
+
+#: C/photos_by_page.page:39(p)
+msgid ""
+"Choose <guiseq><gui>Go</gui><gui>Previous Page</gui></guiseq> from the "
+"<gui>Main Window</gui>."
+msgstr ""
+"Vælg <guiseq><gui>Start</gui><gui>Forrige side</gui></guiseq> fra "
+"<gui>Hovedvinduet</gui>."
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/layout.page:24(None)
+msgid ""
+"@@image: 'figures/properties-title.png'; md5=4b58586b170342ec20acbc2903a794be"
+msgstr ""
+"@@image: 'figures/properties-title.png'; md5=4b58586b170342ec20acbc2903a794be"
+
+#: C/layout.page:5(desc)
+msgid "Adapt Solang's interface to your needs."
+msgstr "Tilpas Solangs brugerflade til dine behov."
+
+#: C/layout.page:14(title)
+msgid "Customize the layout"
+msgstr "Tilpas layoutet"
+
+#: C/layout.page:16(p)
+msgid ""
+"You can easily adapt Solang's interface to your needs thanks to its "
+"customizable layout."
+msgstr ""
+"Du kan nemt tilpasse Solangs brugerflade til dine behov, takket være "
+"programmets tilpasningsparate layout."
+
+#: C/layout.page:18(p)
+msgid ""
+"Solang's interface is composed of several \"dockable items\" that you can "
+"move inside Solang's window.<br/> To change an item position click on its "
+"title and move your cursor while holding the button pressed. Then drop the "
+"item where you want in Solang's window."
+msgstr ""
+"Solangs brugerflade er opbygget af flere \"elementer der kan sammenkobles\", "
+"og som kan flytte indeni Solangs vindue.<br/> For at ændre et elements "
+"placering, så klik på dets titel og flyt din mus mens du holder knappen "
+"trykket ned. Slip så elementet hvor du ønsker det placeret."
+
+#: C/layout.page:22(title)
+msgid "An item's title"
+msgstr "Et elements titel"
+
+#: C/layout.page:23(desc)
+msgid ""
+"The title of the \"Properties\" item, drag and drop it in Solang's window to "
+"change the item position"
+msgstr ""
+"Titlen på elementet \"Egenskaber\", træk og slip den i Solangs vindue for "
+"at ændre elementets placering"
+
+#: C/layout.page:25(p)
+msgid "The title of the \"Properties\" item"
+msgstr "Titlen på elementet \"Egenskaber\""
+
 #: C/keys.page:5(desc)
 msgid "You are going to love your keyboard."
 msgstr "Du vil elske dit tastatur."
@@ -227,7 +455,8 @@ msgstr "Normal størrelse"
 
 #: C/keys.page:36(p)
 msgid "Display image in its normal size (only in <gui>Enlarged mode</gui>)."
-msgstr "Vis billede i sin normale størrelse (kun i <gui>Forstørret tilstand</gui>)."
+msgstr ""
+"Vis billede i sin normale størrelse (kun i <gui>Forstørret tilstand</gui>)."
 
 #: C/keys.page:37(key)
 msgid "0"
@@ -370,8 +599,8 @@ msgid ""
 "all the filters you have chosen. Tags and photos properties are filters."
 msgstr ""
 "Du skal trække og slippe et eller flere filtre til <gui>Søgekurven</gui>. "
-"<app>Solang</app> vil kun vise billeder som svarer til alle de filtre "
-"du har valgt. Mærker og billedegenskaber er filtre."
+"<app>Solang</app> vil kun vise billeder som svarer til alle de filtre du har "
+"valgt. Mærker og billedegenskaber er filtre."
 
 #: C/howto_search.page:19(p)
 msgid ""
@@ -386,16 +615,16 @@ msgid ""
 "To add a property filter drag a property (for example Camera) from the "
 "<gui>Basic Properties List</gui> to the <gui>Search Basket</gui>."
 msgstr ""
-"For at tilføje et egenskabsfilter trækkes en egenskab (for eksempel "
-"Kamera) fra <gui>Liste over baseegenskaber</gui> til <gui>Søgekurven</gui>."
+"For at tilføje et egenskabsfilter trækkes en egenskab (for eksempel Kamera) "
+"fra <gui>Liste over baseegenskaber</gui> til <gui>Søgekurven</gui>."
 
 #: C/howto_search.page:21(p)
 msgid ""
 "To remove all the filters, right-click on a filter and choose <gui>Select "
 "All</gui>, then righ-click on the same filter and choose <gui>Remove</gui>."
 msgstr ""
-"For at fjerne alle filtre, højreklik på et filter og vælg <gui>Vælg alle"
-"</gui>, højreklik så på det samme filter og vælg <gui>Fjern</gui>."
+"For at fjerne alle filtre, højreklik på et filter og vælg <gui>Vælg alle</"
+"gui>, højreklik så på det samme filter og vælg <gui>Fjern</gui>."
 
 #: C/howto_search.page:22(p)
 msgid ""
@@ -419,56 +648,11 @@ msgid ""
 "Write the text you want to search in the <gui>Free text search</gui> entry"
 msgstr ""
 "Skriv teksten du ønsker at søge efter i indtastningsfeltet <gui>Fri "
-"tekstsøgning</gui>."
+"tekstsøgning</gui>"
 
 #: C/howto_search.page:28(p)
 msgid "Press <key>Enter</key>"
 msgstr "Tryk <key>Retur</key>"
-
-#: C/tags_intro.page:5(desc)
-msgid "An introduction to tags"
-msgstr "En introduktion til mærker"
-
-#: C/tags_intro.page:14(title)
-msgid "What's a tag?"
-msgstr "Hvad er et mærke?"
-
-#: C/tags_intro.page:15(p)
-msgid ""
-"Tags are keyword you can use to label and organize your photos. You may have "
-"already seen it in weblogs."
-msgstr ""
-"Mærker er nøgleord du kan bruge til at mærke og organisere dine billeder. Du "
-"har måske allerede set det i internetlogge."
-
-#: C/tags_intro.page:16(p)
-msgid ""
-"<app>Solang</app> uses tags to help you organizing your photos. In fact, you "
-"can use tags to organize your photos the way you want!"
-msgstr ""
-"<app>Solang</app> bruger mærker for at hjælpe dig med at organisere dine "
-"billeder. Du kan bruge mærker til at organisere dine billeder på den måde "
-"der passer dig bedst!"
-
-#: C/tags_intro.page:17(p)
-msgid ""
-"For example, some people uses tags to create \"albums\" of their holiday "
-"photos. Some others use tags to show what friends are in their photos, to "
-"view only photos from one geographical place or distinguish the photos they "
-"have modified."
-msgstr ""
-"For eksempel bruger nogle folk mærker til at oprette \"album\" over deres "
-"feriebilleder. Andre bruger mærker til at vise hvilke venner der er på "
-"deres billeder, vise billeder fra et geografisk sted eller skelne "
-"de billeder de har behandlet fra de ubehandlede."
-
-#: C/tags_intro.page:19(p)
-msgid ""
-"<app>Solang</app> allows you to use tags as filters to view only photos that "
-"have some tags attached to them."
-msgstr ""
-"<app>Solang</app> tillader dig at bruge mærker som filtre for at vise billeder, "
-"som har bestemte mærker tilknyttet."
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
@@ -505,9 +689,10 @@ msgid ""
 "manager</app>, they are automatically recognized in <app>Solang</app>."
 msgstr ""
 "Du behøver ikke bekymre dig om at importere dine billeder for at vise dem, "
-"så snart du tilføjer billeder til din computer, kan du nyde dem i <app>Solang"
-"</app>. Ligeledes vil mærker, som du har tilføjet til billeder med "
-"<app>filhåndteringen</app>, automatisk blive genkendt af <app>Solang</app>."
+"så snart du tilføjer billeder til din computer, kan du nyde dem i "
+"<app>Solang</app>. Ligeledes vil mærker, som du har tilføjet til billeder "
+"med <app>filhåndteringen</app>, automatisk blive genkendt af <app>Solang</"
+"app>."
 
 # et enkelt klik
 #: C/intro.page:18(p)
@@ -515,8 +700,8 @@ msgid ""
 "If your photos are the wrong way around you can rotate them or flip them in "
 "one click."
 msgstr ""
-"Hvis dine billeder vender forkert kan du rotere dem eller vende dem med "
-"et klik."
+"Hvis dine billeder vender forkert kan du rotere dem eller vende dem med et "
+"klik."
 
 #: C/intro.page:19(p)
 msgid ""
@@ -538,66 +723,6 @@ msgstr "Hovedvinduet i <app>Solang</app>"
 msgid "<app>Solang</app> main window."
 msgstr "Hovedvinduet i <app>Solang</app>."
 
-#: C/photos_by_page.page:6(desc)
-msgid "To view more than 50 photos."
-msgstr "For at vise mere end 50 billeder."
-
-#: C/photos_by_page.page:15(title)
-msgid "I don't see all my photos."
-msgstr "Jeg ser ikke alle mine billeder."
-
-#: C/photos_by_page.page:16(p)
-msgid ""
-"<app>Solang</app> only display 50 photos by page, so you can only preview 50 "
-"photos at once."
-msgstr ""
-"<app>Solang</app> viser kun 50 billeder per side, så du kan kun forhåndsvise "
-"50 billeder på en gang."
-
-#: C/photos_by_page.page:17(p)
-msgid "Hopefully there are multiple pages."
-msgstr "Forhåbentlig er der flere sider."
-
-#: C/photos_by_page.page:18(p)
-msgid "To go to the next page you can"
-msgstr "For at gå til den næste side kan du"
-
-#: C/photos_by_page.page:21(p)
-msgid "Click on the <gui>Next page</gui> button in the <gui>Toolbar</gui>."
-msgstr "Klik på knappen <gui>Næste side</gui> i <gui>værktøjslinjen</gui>."
-
-#: C/photos_by_page.page:24(p)
-msgid "Press <keyseq><key>Alt</key><key>Page Down</key></keyseq>."
-msgstr "Tryk <keyseq><key>Alt</key><key>Side ned (Page Down)</key></keyseq>."
-
-#: C/photos_by_page.page:27(p)
-msgid ""
-"Choose <guiseq><gui>Go</gui><gui>Next Page</gui></guiseq> from the <gui>Main "
-"Window</gui>."
-msgstr ""
-"Vælg <guiseq><gui>Start</gui><gui>Næste side</gui></guiseq> fra "
-"<gui>hovedvinduet</gui>."
-
-#: C/photos_by_page.page:30(p)
-msgid "To go to the previous page you can"
-msgstr "For at gå til den forrige side kan du"
-
-#: C/photos_by_page.page:33(p)
-msgid "Click on the <gui>Previous page</gui> button in the <gui>Toolbar</gui>."
-msgstr "Klik på knappen <gui>Forrige side</gui> i <gui>værktøjslinjen</gui>."
-
-#: C/photos_by_page.page:36(p)
-msgid "Press <keyseq><key>Alt</key><key>Page Up</key></keyseq>."
-msgstr "Tryk <keyseq><key>Alt</key><key>Side op (Page Up)</key></keyseq>."
-
-#: C/photos_by_page.page:39(p)
-msgid ""
-"Choose <guiseq><gui>Go</gui><gui>Previous Page</gui></guiseq> from the "
-"<gui>Main Window</gui>."
-msgstr ""
-"Vælg <guiseq><gui>Start</gui><gui>Forrige side</gui></guiseq> fra "
-"<gui>Hovedvinduet</gui>."
-
 #: C/index.page:13(title)
 msgid "<app>Solang</app> Help"
 msgstr "Hjælp til <app>Solang</app>"
@@ -608,10 +733,10 @@ msgid ""
 "been some UI regressions from the 0.3 series, this guide may not cover some "
 "features of <app>Solang</app> 0.3, mostly the import process."
 msgstr ""
-"Denne vejledning er lavet til <app>Solangs</app> 0.4-serien. Da der har været "
-"nogle brugergrænsefladeregressioner fra 0.3-serien, vil denne vejledning "
-"ikke dække nogle af egenskaberne for <app>Solang</app> 0.3, primært vedrørende "
-"importprocessen."
+"Denne vejledning er lavet til <app>Solangs</app> 0.4-serien. Da der har "
+"været nogle brugergrænsefladeregressioner fra 0.3-serien, vil denne "
+"vejledning ikke dække nogle af egenskaberne for <app>Solang</app> 0.3, "
+"primært vedrørende importprocessen."
 
 #: C/index.page:22(title)
 msgid "General Questions"
@@ -624,76 +749,6 @@ msgstr "Eksportere billeder"
 #: C/index.page:48(title)
 msgid "Tips and Tricks"
 msgstr "Fif og ideer"
-
-#: C/tags_use.page:7(desc)
-msgid "Attach tags to photos and remove them."
-msgstr "Tilføj mærker til billeder og fjern dem."
-
-#: C/tags_use.page:16(title)
-msgid "Attach tags to photos"
-msgstr "Tilføj mærker til billeder"
-
-#: C/tags_use.page:19(title)
-msgid "Attach a tag to photos."
-msgstr "Tilføj et mærke til billeder."
-
-#: C/tags_use.page:21(p)
-msgid "You can attach a tag to one or more photos at once."
-msgstr "Du kan tilføje et mærke til et eller flere billeder på en gang."
-
-#: C/tags_use.page:25(p)
-msgid ""
-"From the <gui>main</gui> window, select one or more photos you want to tag."
-msgstr ""
-"Fra <gui>hovedvinduet</gui>, vælg et eller flere billeder du ønsker at mærke."
-
-#: C/tags_use.page:28(p)
-msgid ""
-"In the <gui>Tag List</gui>, click on the tag you want to attach to these "
-"photos."
-msgstr ""
-"I <gui>mærkelisten</gui>, klik på det mærke du ønsker at tilføje til disse "
-"billeder."
-
-#: C/tags_use.page:31(p)
-msgid ""
-"Choose <guiseq><gui>Tags</gui><gui>Attach Tag to Selection</gui></guiseq> or "
-"press <keyseq><key>Ctrl</key><key>T</key></keyseq> to attach the tag to "
-"these photos."
-msgstr ""
-"Vælg <guiseq><gui>Mærker</gui><gui>Tilføj mærke til udvælgelse</gui></guiseq> eller "
-"tryk <keyseq><key>Ctrl</key><key>T</key></keyseq> for at tilføje mærket til "
-"disse billeder."
-
-#: C/tags_use.page:37(title)
-msgid "Remove a tag from photos."
-msgstr "Fjern et mærke fra billeder."
-
-#: C/tags_use.page:39(p)
-msgid "You can remove a tag from one or more photos at once."
-msgstr "Du kan fjerne et mærke fra et eller flere billeder på en gang."
-
-#: C/tags_use.page:43(p)
-msgid ""
-"From the <gui>main</gui> window, select one or more photos you want to untag."
-msgstr ""
-"Fra <gui>hovedvinduet</gui>, vælg et eller flere billeder som du ønsker at fjerne "
-"mærker fra."
-
-#: C/tags_use.page:46(p)
-msgid ""
-"In the <gui>Tag List</gui>, click on the tag you want to remove from these "
-"photos."
-msgstr ""
-"I <gui>mærkelisten</gui>, klik på mærket du ønsker at fjerne fra disse billeder."
-
-#: C/tags_use.page:49(p)
-msgid ""
-"Choose <guiseq><gui>Tags</gui><gui>Remove Tag From Selection</gui></guiseq> "
-"to remove the tag from these photos."
-msgstr ""
-"Vælg <guiseq>><gui>Mærker</gui><gui>Fjern mærke fra udvælgelse</gui></guiseq> "
-"for at fjerne mærket fra disse billeder."
 
 #: C/import.page:6(desc)
 msgid "To view your photos in <app>Solang</app>."
@@ -710,10 +765,11 @@ msgid ""
 "photos may not be indexed. To make sure Tracker indexes your photos use the "
 "<app>Search tool preferences</app> from the <gui>System</gui> menu."
 msgstr ""
-"Solang viser kun billeder som er indekseret af <app>Tracker - søgeværktøjet</app>, "
-"hvis du ikke ser dine billeder kører Tracker måske ikke eller dine billeder er "
-"ikke indekseret. For at sikre at Tracker indekserer dine billeder bruges "
-"<app>Søgeværktøjets indstillinger</app> fra menuen <gui>System</gui>."
+"Solang viser kun billeder som er indekseret af <app>Tracker - søgeværktøjet</"
+"app>, hvis du ikke ser dine billeder kører Tracker måske ikke eller dine "
+"billeder er ikke indekseret. For at sikre at Tracker indekserer dine "
+"billeder bruges <app>Søgeværktøjets indstillinger</app> fra menuen "
+"<gui>System</gui>."
 
 #: C/export_folder.page:7(desc)
 msgid "To copy photos in a archive or a folder."
@@ -730,7 +786,7 @@ msgstr ""
 "Du kan kopier billeder til en mappe på din computer eller putte dem i et "
 "arkiv."
 
-#: C/export_folder.page:19(p)
+#: C/export_folder.page:19(p) C/export_CD.page:19(p)
 msgid ""
 "First you have to <link xref=\"export_queue\">add the photos you want to "
 "export to the Export Queue</link>."
@@ -768,14 +824,58 @@ msgid ""
 "chosen."
 msgstr ""
 "Afkryds <gui>Opret et arkiv</gui> hvis du ønsker dine billeder skal pakkes i "
-"et komprimeret arkiv. Det kan være velegnet, hvis du ønsker at sende billederne "
-"med e-post. Arkivet vil blive navngivet med den aktuelle dato efter mønsteret "
-"ååååmmdd.zip og gemt i den mappe du har valgt. Ellers vil dine billeder blive "
-"kopieret direkte til den mappe, du har valgt."
+"et komprimeret arkiv. Det kan være velegnet, hvis du ønsker at sende "
+"billederne med e-post. Arkivet vil blive navngivet med den aktuelle dato "
+"efter mønsteret ååååmmdd.zip og gemt i den mappe du har valgt. Ellers vil "
+"dine billeder blive kopieret direkte til den mappe, du har valgt."
 
-#: C/export_folder.page:34(p)
+#: C/export_folder.page:34(p) C/export_CD.page:34(p)
 msgid "Choose <gui>Export</gui> to export the photos."
 msgstr "Vælg <gui>Eksporter</gui> for at eksportere billederne."
+
+#: C/export_CD.page:7(desc)
+msgid "To copy photos in a CD."
+msgstr "At kopiere billeder til en cd."
+
+#: C/export_CD.page:16(title)
+msgid "Burn a photo CD"
+msgstr "Brænd en billed-cd"
+
+#: C/export_CD.page:17(p)
+msgid "You can burn a CD with your photos."
+msgstr "Du kan brænde en cd med dine billeder."
+
+#: C/export_CD.page:21(p)
+msgid "Now you can burn the photos from the Export Queue."
+msgstr "Nu kan du brænde dine billeder fra eksportkøen."
+
+#: C/export_CD.page:24(p)
+msgid ""
+"Choose <guiseq><gui>Photos</gui><gui>Export to</gui><gui>CD...</gui></"
+"guiseq>."
+msgstr ""
+"Vælg <guiseq><gui>Billeder</gui><gui>Eksporter til</gui><gui>Cd...</gui></"
+"guiseq>."
+
+#: C/export_CD.page:27(p)
+msgid ""
+"From the <gui>Export</gui> window, choose the CD you want to burn your "
+"photos on."
+msgstr ""
+"Fra <gui>Eksportvinduet</gui>, vælg cd'en du ønsker dine billeder skal "
+"brændes til."
+
+#: C/export_CD.page:30(p)
+msgid ""
+"Check <gui>Create an archive</gui> if you want your photos to be packed up "
+"in a compressed archive. Thanks to this function you can put more photos on "
+"the same CD but devices like DVD players won't be able to display your "
+"photos. Otherwise your photos will be burned directly to the CD."
+msgstr ""
+"Afkryds <gui>Opret et arkiv</gui> hvis du ønsker dine billeder skal pakkes i "
+"et komprimeret arkiv. Takket være denne funktion kan du placere flere "
+"billeder på den sammen cd, men enheder som dvd-afspillere vil ikke kunne vise "
+"dine billeder. Ellers vil dine billeder blive brændt direkte til cd'en."
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
 #: C/index.page:0(None)
@@ -785,5 +885,3 @@ msgstr ""
 "\n"
 "Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
 "Mere info: http://www.dansk-gruppen.dk"
-
-
