@@ -20,6 +20,6 @@ DOC_PAGES = \
 	tags_manage.page \
 	tags_use.page
 
-DOC_LINGUAS = cs da de es fr uk
+DOC_LINGUAS = cs da de es fr sl uk
 
 dist-hook: doc-dist-hook
