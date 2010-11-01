@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: solang help master\n"
 "POT-Creation-Date: 2010-10-22 12:52+0000\n"
-"PO-Revision-Date: 2010-11-01 21:40+0100\n"
+"PO-Revision-Date: 2010-11-01 21:43+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -698,7 +698,7 @@ msgstr "Iz <gui>Izvoz</gui> okna, izberite mapo kamor želite, da se vaše fotog
 
 #: C/export_folder.page:30(p)
 msgid "Check <gui>Create an archive</gui> if you want your photos to be packed up in a compressed archive. It can be useful if you want to send the photos by e-mail. The archive will be named with the current date following the pattern \"yyyymmdd.zip\" and saved in the directory you have chosen. Otherwise your photos will be copied directly to the directory you have chosen."
-msgstr "Preverite  <gui>Ustvarjanje arhiva</gui>, če želite da vaše fotografije, ki ste jih spakirali v arhiv. To je uporabno, če želite, da pošljete fotografije po e-pšti. Arhiv bo imenovan s trenutnim datumom v skladu z vzorcem \ \"yyyymmdd.zip \" in shranili v imenik. ki ste ga izbrali. V nasprotnem primeru bodo vaše fotografije kopira direktno v imenik, ki ste ga izbrali."
+msgstr "Preverite  <gui>Ustvarjanje arhiva</gui>, če želite da vaše fotografije, ki ste jih spakirali v arhiv. To je uporabno, če želite, da pošljete fotografije po e-pšti. Arhiv bo imenovan s trenutnim datumom v skladu z vzorcem  \"yyyymmdd.zip \" in shranili v imenik. ki ste ga izbrali. V nasprotnem primeru bodo vaše fotografije kopira direktno v imenik, ki ste ga izbrali."
 
 #: C/export_folder.page:34(p)
 #: C/export_CD.page:34(p)
