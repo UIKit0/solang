@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: solang help master\n"
 "POT-Creation-Date: 2010-10-22 12:52+0000\n"
-"PO-Revision-Date: 2010-11-01 21:36+0100\n"
+"PO-Revision-Date: 2010-11-01 21:40+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -232,7 +232,7 @@ msgstr "Pojdi na naslednjo stran v zbirki"
 
 #: C/photos_by_page.page:21(p)
 msgid "Click on the <gui>Next page</gui> button in the <gui>Toolbar</gui>."
-msgstr "Pritisnite na <gui>Naslednja stran</gui> gumb v <Orodni vrstici</gui>."
+msgstr "Pritisnite na <gui>Naslednja stran</gui> gumb v <gui>Orodni vrstici</gui>."
 
 #: C/photos_by_page.page:24(p)
 msgid "Press <keyseq><key>Alt</key><key>Page Down</key></keyseq>."
