@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: solang\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-12-31 03:22+0100\n"
-"PO-Revision-Date: 2010-12-31 03:26+0100\n"
+"POT-Creation-Date: 2010-12-31 04:09+0100\n"
+"PO-Revision-Date: 2010-12-31 04:12+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -134,7 +134,7 @@ msgstr "Vitbalans"
 
 #: ../src/attribute/date-manager.cpp:50
 msgid "Picture Taken Date"
-msgstr ""
+msgstr "Bilden togs den"
 
 #: ../src/attribute/property-manager.cpp:49
 msgid "Properties"
@@ -186,7 +186,7 @@ msgstr "R_edigera markerad tagg..."
 
 #: ../src/attribute/tag-manager.cpp:125
 msgid "_Delete Selected Tag"
-msgstr "_Ta bort markerad tagg"
+msgstr "Ta bort _markerad tagg"
 
 #: ../src/attribute/tag-manager.cpp:131
 msgid "_Attach Tag to Selection"
@@ -194,7 +194,7 @@ msgstr "_Fäst tagg till markering"
 
 #: ../src/attribute/tag-manager.cpp:138
 msgid "_Remove Tag From Selection"
-msgstr "_Ta bort tagg från markering"
+msgstr "Ta _bort tagg från markering"
 
 #: ../src/attribute/tag-manager.cpp:144
 msgid "_Show All Tags"
@@ -240,22 +240,22 @@ msgstr "På"
 #: ../src/common/exif-data.cpp:199
 msgctxt "Metering mode"
 msgid "Average"
-msgstr ""
+msgstr "Genomsnittlig"
 
 #: ../src/common/exif-data.cpp:204
 msgctxt "Metering mode"
 msgid "Center Weighted Average"
-msgstr ""
+msgstr "Mittenviktat genomsnitt"
 
 #: ../src/common/exif-data.cpp:208
 msgctxt "Metering mode"
 msgid "Spot"
-msgstr ""
+msgstr "Punkt"
 
 #: ../src/common/exif-data.cpp:212
 msgctxt "Metering mode"
 msgid "Multi-spot"
-msgstr ""
+msgstr "Flera punkter"
 
 #: ../src/common/exif-data.cpp:216
 msgctxt "Metering mode"
@@ -397,7 +397,7 @@ msgstr "Exportera till cd/dvd"
 
 #: ../src/exporter/directory-destination.cpp:95
 msgid "Exporting photos"
-msgstr ""
+msgstr "Export av foton"
 
 #: ../src/exporter/directory-destination.cpp:181
 msgid "Select Folder"
@@ -461,7 +461,7 @@ msgstr "Förstora miniatyrbilderna"
 
 #: ../src/renderer/browser-renderer.cpp:251
 msgid "_Zoom Out"
-msgstr "_Zooma ut"
+msgstr "Zooma _ut"
 
 #: ../src/renderer/browser-renderer.cpp:252
 msgid "Shrink the thumbnails"
@@ -506,7 +506,7 @@ msgstr "Nästa"
 
 #: ../src/renderer/browser-renderer.cpp:299
 msgid "_First Page"
-msgstr "_Första sidan"
+msgstr "Första si_dan"
 
 #: ../src/renderer/browser-renderer.cpp:300
 msgid "Go to the first page in the collection"
