@@ -8,8 +8,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: solang.help.master\n"
-"POT-Creation-Date: 2010-09-27 07:11+0000\n"
-"PO-Revision-Date: 2011-02-08 17:07+0100\n"
+"POT-Creation-Date: 2011-02-08 20:03+0000\n"
+"PO-Revision-Date: 2011-02-09 16:11+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -62,6 +62,8 @@ msgid ""
 "In the <gui>Tag List</gui>, click on the tag you want to attach to these "
 "photos."
 msgstr ""
+"En la <gui>Lista de etiquetas</gui>, pulse en la etiqueta que quiera "
+"adjuntar a estas fotos."
 
 #: C/tags_use.page:31(p)
 msgid ""
@@ -69,19 +71,24 @@ msgid ""
 "press <keyseq><key>Ctrl</key><key>T</key></keyseq> to attach the tag to "
 "these photos."
 msgstr ""
+"Elija <guiseq><gui>Etiquetas</gui><gui>Adjuntar etiqueta a la selección</"
+"gui></guiseq> o pulse <keyseq><key>Ctrl</key><key>T</key></keyseq> para "
+"adjuntar la etiqueta a estas fotos."
 
 #: C/tags_use.page:37(title)
 msgid "Remove a tag from photos."
-msgstr "Eliminar una etiqueta de las fotos."
+msgstr "Quitar una etiqueta de las fotos."
 
 #: C/tags_use.page:39(p)
 msgid "You can remove a tag from one or more photos at once."
-msgstr ""
+msgstr "Puede quitar una etiqueta de una o varias fotos a la vez."
 
 #: C/tags_use.page:43(p)
 msgid ""
 "From the <gui>main</gui> window, select one or more photos you want to untag."
 msgstr ""
+"En la ventana <gui>principal</gui>, seleccione una o más fotos que "
+"desetiquetar."
 
 #: C/tags_use.page:46(p)
 msgid ""
@@ -96,6 +103,8 @@ msgid ""
 "Choose <guiseq><gui>Tags</gui><gui>Remove Tag From Selection</gui></guiseq> "
 "to remove the tag from these photos."
 msgstr ""
+"Elija <guiseq><gui>Etiquetas</gui><gui>Quitar la etiqueta de la selección</"
+"gui></guiseq> para quitar la etiqueta de estas fotos."
 
 #: C/tags_manage.page:7(desc)
 msgid "Create, modify and delete tags."
@@ -152,6 +161,7 @@ msgstr ""
 #: C/tags_manage.page:49(p)
 msgid "In the <gui>Edit Tag</gui> window, modify the field you want."
 msgstr ""
+"En la ventana <gui>Editar etiqueta</gui>, modifique el campo que quiere."
 
 #: C/tags_manage.page:52(p)
 msgid "Press <gui>OK</gui> to save the modifications of the tag."
@@ -167,12 +177,17 @@ msgid ""
 "By default the <gui>Tag List</gui> shows only tags that are attached to your "
 "photos. But it can show the tags from your text documents, your videos..."
 msgstr ""
+"De manera predeterminada, la <gui>Lista de etiquetas</gui> sólo muestra las "
+"etiquetas añadidas a sus fotos. Pero puede mostrar las etiquetas de sus "
+"documentos de texto, sus vídeos, etc."
 
 #: C/tags_manage.page:64(p)
 msgid ""
 "From the <gui>main</gui> window, choose <guiseq><gui>Tags</gui><gui>Show All "
 "Tags</gui></guiseq>."
 msgstr ""
+"En la ventana <gui>principal</gui> elija <guiseq><gui>Etiquetas</"
+"gui><gui>Mostrar todas las etiquetas</gui></guiseq>."
 
 #: C/tags_manage.page:71(title)
 msgid "Delete a tag."
@@ -193,6 +208,8 @@ msgid ""
 "Choose <guiseq><gui>Tags</gui><gui>Delete Selected Tag</gui></guiseq> to "
 "delete this tag."
 msgstr ""
+"Elija <guiseq><gui>Etiquetas</gui><gui>Eliminar la etiqueta seleccionada</"
+"gui></guiseq> para eliminar esta etiqueta."
 
 #: C/tags_intro.page:5(desc)
 msgid "An introduction to tags"
@@ -207,6 +224,8 @@ msgid ""
 "Tags are keyword you can use to label and organize your photos. You may have "
 "already seen it in weblogs."
 msgstr ""
+"Las etiquetas son palabras clave que puede usar para etiquetar y organizar "
+"sus fotos. Puede haberlo visto en blogs."
 
 #: C/tags_intro.page:16(p)
 msgid ""
@@ -223,6 +242,10 @@ msgid ""
 "view only photos from one geographical place or distinguish the photos they "
 "have modified."
 msgstr ""
+"Por ejemplo, algunas personas usan etiquetas para crear «álbumes» de sus "
+"fotos de las vacaciones. Algunas otras usan las etiquetas para indicar qué "
+"amigos salen en las fotos, para ver fotos sólo de un lugar geográfico o "
+"distinguir las fotos que han modificado."
 
 #: C/tags_intro.page:19(p)
 msgid ""
@@ -293,6 +316,8 @@ msgid ""
 "Choose <guiseq><gui>Go</gui><gui>Previous Page</gui></guiseq> from the "
 "<gui>Main Window</gui>."
 msgstr ""
+"Elija <guiseq><gui>Ir</gui><gui>Página anterior</gui></guiseq> en la "
+"<gui>Ventana principal</gui>."
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
@@ -315,6 +340,8 @@ msgid ""
 "You can easily adapt Solang's interface to your needs thanks to its "
 "customizable layout."
 msgstr ""
+"Puede adaptar fácilmente la interfaz de Solang a sus necesidades gracias a "
+"su disposición personalizable."
 
 #: C/layout.page:18(p)
 msgid ""
@@ -323,6 +350,11 @@ msgid ""
 "title and move your cursor while holding the button pressed. Then drop the "
 "item where you want in Solang's window."
 msgstr ""
+"La interfaz de Solang se compone de varios «elementos empotrables» que puede "
+"mover dentro de la ventana de Solang.<br /> Para cambiar la posición de un "
+"elemento, pulse sobre su título y mueva el cursor mientras mantiene pulsado "
+"en botón. Entonces suelte el elemento donde quiera dentro de la ventana de "
+"Solang."
 
 #: C/layout.page:22(title)
 msgid "An item's title"
@@ -356,7 +388,7 @@ msgstr "Pantalla completa"
 
 #: C/keys.page:20(p)
 msgid "Go to fullscreen mode and go back to windowed mode."
-msgstr ""
+msgstr "Ir al modo a pantalla completa y volver al modo ventana."
 
 #: C/keys.page:21(key)
 msgid "F11"
@@ -410,6 +442,7 @@ msgstr "Tamaño normal"
 #: C/keys.page:36(p)
 msgid "Display image in its normal size (only in <gui>Enlarged mode</gui>)."
 msgstr ""
+"Mostrar la imagen a su tamaño normal (sólo en <gui>Modo agrandado</gui>)."
 
 #: C/keys.page:37(key)
 msgid "0"
@@ -433,7 +466,7 @@ msgstr "T"
 
 #: C/keys.page:67(title)
 msgid "Navigation (In <gui>Browser mode</gui>)"
-msgstr "Navegac"
+msgstr "Navegación (en <gui>Modo explorador</gui>)"
 
 #: C/keys.page:70(p)
 msgid "Previous Page"
@@ -531,7 +564,7 @@ msgstr "Salir del modo agrandado"
 
 #: C/keys.page:108(p)
 msgid "Quit the Enlarged mode and go to Browser mode."
-msgstr ""
+msgstr "Salir del modo «Agrandado» e ir al modo «Explorador»."
 
 #: C/keys.page:109(key)
 msgid "Escape"
@@ -586,6 +619,8 @@ msgstr ""
 msgid ""
 "Write the text you want to search in the <gui>Free text search</gui> entry"
 msgstr ""
+"Escriba el texto que quiere buscar en la entrada<gui>Búsqueda de texto "
+"libre</gui>"
 
 #: C/howto_search.page:28(p)
 msgid "Press <key>Enter</key>"
@@ -627,12 +662,15 @@ msgid ""
 "If your photos are the wrong way around you can rotate them or flip them in "
 "one click."
 msgstr ""
+"Si sus fotos están al revés las puede girar o voltear con una sola pulsación."
 
 #: C/intro.page:19(p)
 msgid ""
 "You can enjoy your photos with your friends thanks to the slideshow feature "
 "and the fullscreen mode."
 msgstr ""
+"Puede disfrutar de sus fotos con sus amigo gracias a la característica de "
+"presentación de diapositivas y al modo a pantalla completa."
 
 #: C/intro.page:22(title)
 msgid "<gui>Main</gui> window"
