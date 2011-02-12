@@ -8,8 +8,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: solang.help.master\n"
-"POT-Creation-Date: 2011-02-08 20:03+0000\n"
-"PO-Revision-Date: 2011-02-09 16:11+0100\n"
+"POT-Creation-Date: 2011-02-09 18:19+0000\n"
+"PO-Revision-Date: 2011-02-11 16:02+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -365,6 +365,8 @@ msgid ""
 "The title of the \"Properties\" item, drag and drop it in Solang's window to "
 "change the item position"
 msgstr ""
+"El título del elemento «Propiedades»; arrástrelo y suéltelo en la ventana de "
+"Solang para cambiar la posición del elemento"
 
 #: C/layout.page:25(p)
 msgid "The title of the \"Properties\" item"
@@ -590,6 +592,8 @@ msgid ""
 "To add a tag filter drag a tag from the <gui>Tag List</gui> to the "
 "<gui>Search Basket</gui>."
 msgstr ""
+"Para añadir una etiqueta, arrástrela desde la <gui>Lista de etiquetas</gui> "
+"a la <gui>Caja de búsqueda</gui>."
 
 #: C/howto_search.page:20(p)
 msgid ""
@@ -602,12 +606,17 @@ msgid ""
 "To remove all the filters, right-click on a filter and choose <gui>Select "
 "All</gui>, then righ-click on the same filter and choose <gui>Remove</gui>."
 msgstr ""
+"Para quitar todos los filtros, pulse con el botón derecho sobre un filtro y "
+"elija <gui>Seleccionar todos</gui>, pulse con el botón derecho sobre el "
+"mismo filtro y elija <gui>Quitar</gui>."
 
 #: C/howto_search.page:22(p)
 msgid ""
 "To remove one filter, right-click on the filter you want to remove in the "
 "<gui>Search Basket</gui> and choose <gui>Remove</gui>."
 msgstr ""
+"Para quitar un filtro, pulse con el botón derecho sobre el filtro que quiere "
+"en la <gui>Caja de búsqueda</gui> y elija <gui>Quitar</gui>."
 
 #: C/howto_search.page:25(p)
 msgid ""
@@ -735,12 +744,15 @@ msgstr "Archivar sus fotos"
 msgid ""
 "You can copy photos to a directory of your computer or put them in a archive."
 msgstr ""
+"Puede copiar sus fotos a una carpeta de su equipo o ponerlas en un archivo."
 
 #: C/export_folder.page:19(p) C/export_CD.page:19(p)
 msgid ""
 "First you have to <link xref=\"export_queue\">add the photos you want to "
 "export to the Export Queue</link>."
 msgstr ""
+"Primero tiene que <link xref=\"export_queue\">añadir las fotos que quiere "
+"exportar a la cola de exportación</link>."
 
 #: C/export_folder.page:21(p)
 msgid "Now you have to export your Export Queue to a folder."
@@ -751,6 +763,8 @@ msgid ""
 "Choose <guiseq><gui>Photos</gui><gui>Export to</gui><gui>Folder...</gui></"
 "guiseq>."
 msgstr ""
+"Elija <guiseq><gui>Fotos</gui><gui>Exportar a</gui><gui>Carpeta...</gui></"
+"guiseq>."
 
 #: C/export_folder.page:27(p)
 msgid ""
@@ -786,7 +800,7 @@ msgstr "Puede grabar un CD con sus fotos."
 
 #: C/export_CD.page:21(p)
 msgid "Now you can burn the photos from the Export Queue."
-msgstr ""
+msgstr "Ahora puede grabar sus fotos desde la cola de exportación."
 
 #: C/export_CD.page:24(p)
 msgid ""
@@ -800,6 +814,8 @@ msgid ""
 "From the <gui>Export</gui> window, choose the CD you want to burn your "
 "photos on."
 msgstr ""
+"Desde la ventana<gui>Exportar</gui>, elija el CD en el que quiere grabar sus "
+"fotos."
 
 #: C/export_CD.page:30(p)
 msgid ""
@@ -808,6 +824,10 @@ msgid ""
 "the same CD but devices like DVD players won't be able to display your "
 "photos. Otherwise your photos will be burned directly to the CD."
 msgstr ""
+"Marque <gui>Crear un archivo</gui> si quiere que sus fotos se empaqueten en "
+"un archivo comprimido. Gracias a esta función puede poner más fotos en el "
+"mismo CD, pero los reproductores de DVD no podrán mostrarlas. De otro otro, "
+"sus fotos se grabarán directamente en el CD."
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
 #: C/index.page:0(None)
