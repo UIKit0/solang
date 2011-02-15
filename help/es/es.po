@@ -8,8 +8,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: solang.help.master\n"
-"POT-Creation-Date: 2011-02-09 18:19+0000\n"
-"PO-Revision-Date: 2011-02-11 16:02+0100\n"
+"POT-Creation-Date: 2011-02-12 08:57+0000\n"
+"PO-Revision-Date: 2011-02-15 09:40+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -581,13 +581,19 @@ msgid "How do I use the search function?"
 msgstr "¿Cómo uso la función de búsqueda?"
 
 #: C/howto_search.page:17(p)
+#, fuzzy
 msgid ""
 "Actually you have to drag and drop one or more filters to the <gui>Search "
 "Basket</gui>. <app>Solang</app> will display only photos that correspond to "
 "all the filters you have chosen. Tags and photos properties are filters."
 msgstr ""
+"Actualmente tiene que arrastrar y soltar uno o más filtros a la <gui>Caja de "
+"búsqueda</gui>. <app>Solang</app> sólo mostrará las fotos que corresponden a "
+"todos los filtros que haya elegido. Las etiquetas y las propiedades de las "
+"fotos son filtros."
 
 #: C/howto_search.page:19(p)
+#, fuzzy
 msgid ""
 "To add a tag filter drag a tag from the <gui>Tag List</gui> to the "
 "<gui>Search Basket</gui>."
@@ -596,10 +602,14 @@ msgstr ""
 "a la <gui>Caja de búsqueda</gui>."
 
 #: C/howto_search.page:20(p)
+#, fuzzy
 msgid ""
 "To add a property filter drag a property (for example Camera) from the "
 "<gui>Basic Properties List</gui> to the <gui>Search Basket</gui>."
 msgstr ""
+"Para añadir un filtro adecuado, arrastre una propiedad (por ejemplo, "
+"«Cámara») desde la <gui>Lista básica de propiedades</gui> a la <gui>Caja de "
+"búsqueda</gui>."
 
 #: C/howto_search.page:21(p)
 msgid ""
@@ -611,6 +621,7 @@ msgstr ""
 "mismo filtro y elija <gui>Quitar</gui>."
 
 #: C/howto_search.page:22(p)
+#, fuzzy
 msgid ""
 "To remove one filter, right-click on the filter you want to remove in the "
 "<gui>Search Basket</gui> and choose <gui>Remove</gui>."
@@ -623,6 +634,8 @@ msgid ""
 "What's more you can use the <gui>Free text search</gui> entry to filter "
 "photos name."
 msgstr ""
+"Y lo que es más, puede usar la entrada <gui>Búsqueda de texto libre</gui> "
+"para filtrar nombres de fotos."
 
 #: C/howto_search.page:27(p)
 msgid ""
@@ -657,6 +670,9 @@ msgid ""
 "manage your collection of photos by tagging them and searching through them "
 "based on various criteria -- tags, EXIF data, dates."
 msgstr ""
+"<app>Solang</app> es un gestor de fotos para el escritorio GNOME. Le permite "
+"gestionar su colección de fotos etiquetándolas y buscando en ellas basándose "
+"en diversos criterios: etiquetas, datos EXIF, fechas."
 
 #: C/intro.page:17(p)
 msgid ""
@@ -665,6 +681,10 @@ msgid ""
 "app>. In the same way, if you attached tags to a photo from the <app>File "
 "manager</app>, they are automatically recognized in <app>Solang</app>."
 msgstr ""
+"No tiene que preocuparse de importar sus fotos para verlas, ya que puede "
+"disfrutar de ellas en <app>Solang</app> tan pronto como las añade a su "
+"equipo. Si añadió etiquetas a una foto desde el <app>Gestor de archivos</"
+"app>, <app>Solang</app> las reconocerá automáticamente."
 
 #: C/intro.page:18(p)
 msgid ""
@@ -703,6 +723,10 @@ msgid ""
 "been some UI regressions from the 0.3 series, this guide may not cover some "
 "features of <app>Solang</app> 0.3, mostly the import process."
 msgstr ""
+"Esta guía se ha creado para la versión 0.4 de <app>Solang</app>. Puesto que "
+"ha habido algunas regresiones de la IU a la versión 0.3, esta guía puede no "
+"cubrir algunas características de <app>Solang</app> 0.3, principalmente el "
+"proceso de importación."
 
 #: C/index.page:22(title)
 msgid "General Questions"
@@ -731,6 +755,11 @@ msgid ""
 "photos may not be indexed. To make sure Tracker indexes your photos use the "
 "<app>Search tool preferences</app> from the <gui>System</gui> menu."
 msgstr ""
+"Solang sólo muestra fotos indexadas por la <app>herramienta de búsqueda "
+"Tracker</app>. Si no ve sus fotos, es posible que Tracker no esté en "
+"ejecución o que no se hayan indexado. Para asegurarse de que Tracker indexa "
+"sus fotos, use las <app>preferencias de la herramienta Buscar</app> en el "
+"menú <gui>Sistema</gui>."
 
 #: C/export_folder.page:7(desc)
 msgid "To copy photos in a archive or a folder."
@@ -756,7 +785,7 @@ msgstr ""
 
 #: C/export_folder.page:21(p)
 msgid "Now you have to export your Export Queue to a folder."
-msgstr ""
+msgstr "Ahora tiene que exportar su «Cola de exportación» a una carpeta."
 
 #: C/export_folder.page:24(p)
 msgid ""
@@ -771,6 +800,8 @@ msgid ""
 "From the <gui>Export</gui> window, choose the directory you want your photos "
 "to be exported to."
 msgstr ""
+"Desde la ventana <gui>Exportar</gui>, elija la carpeta a la quiere exportar "
+"sus fotos."
 
 #: C/export_folder.page:30(p)
 msgid ""
@@ -781,6 +812,11 @@ msgid ""
 "Otherwise your photos will be copied directly to the directory you have "
 "chosen."
 msgstr ""
+"Marque <gui>Crear un archivo</gui> si quiere que sus fotos se empaqueten en "
+"un archivo comprimido. Puede ser útil si quiere enviar las fotos por correo-"
+"e. El archivo se nombrará con la fecha actual, siguiendo el patrón «aaaammdd."
+"zip», y se guardará en la carpeta que elija. Si no, sus fotos se copiarán "
+"directamente en la carpeta que haya elegido."
 
 #: C/export_folder.page:34(p) C/export_CD.page:34(p)
 msgid "Choose <gui>Export</gui> to export the photos."
