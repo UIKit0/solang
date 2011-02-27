@@ -2,15 +2,15 @@
 # Spanish translation for solang.
 # Copyright (C) 2010 solang's COPYRIGHT HOLDER
 # This file is distributed under the same license as the solang package.
-# Jorge González <jorgegonz@svn.gnome.org>, 2010.
 # Daniel Mustieles <daniel.mustieles@gmail.com>, 2011.
+# Jorge González <jorgegonz@svn.gnome.org>, 2010, 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: solang.help.master\n"
-"POT-Creation-Date: 2011-02-12 08:57+0000\n"
-"PO-Revision-Date: 2011-02-15 09:40+0100\n"
-"Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
+"POT-Creation-Date: 2011-02-15 20:17+0000\n"
+"PO-Revision-Date: 2011-02-27 12:02+0100\n"
+"Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -581,7 +581,6 @@ msgid "How do I use the search function?"
 msgstr "¿Cómo uso la función de búsqueda?"
 
 #: C/howto_search.page:17(p)
-#, fuzzy
 msgid ""
 "Actually you have to drag and drop one or more filters to the <gui>Search "
 "Basket</gui>. <app>Solang</app> will display only photos that correspond to "
@@ -593,16 +592,14 @@ msgstr ""
 "fotos son filtros."
 
 #: C/howto_search.page:19(p)
-#, fuzzy
 msgid ""
 "To add a tag filter drag a tag from the <gui>Tag List</gui> to the "
 "<gui>Search Basket</gui>."
 msgstr ""
-"Para añadir una etiqueta, arrástrela desde la <gui>Lista de etiquetas</gui> "
-"a la <gui>Caja de búsqueda</gui>."
+"Para añadir una etiqueta de filtro, arrástrela desde la <gui>Lista de "
+"etiquetas</gui> a la <gui>Caja de búsqueda</gui>."
 
 #: C/howto_search.page:20(p)
-#, fuzzy
 msgid ""
 "To add a property filter drag a property (for example Camera) from the "
 "<gui>Basic Properties List</gui> to the <gui>Search Basket</gui>."
@@ -621,7 +618,6 @@ msgstr ""
 "mismo filtro y elija <gui>Quitar</gui>."
 
 #: C/howto_search.page:22(p)
-#, fuzzy
 msgid ""
 "To remove one filter, right-click on the filter you want to remove in the "
 "<gui>Search Basket</gui> and choose <gui>Remove</gui>."
