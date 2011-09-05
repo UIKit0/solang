@@ -1,0 +1,3576 @@
+# Norwegian (bokmal) translation of gthumb.
+# Copyright (C) 2002-2004 Free Software Foundation, Inc.
+# Kjartan Maraas <kmaraas@gnome.org>, 2002-2011.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gthumb 2.13.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-09-05 15:41+0200\n"
+"PO-Revision-Date: 2011-07-03 19:13+0200\n"
+"Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
+"Language-Team: Norwegian/Bokmaal <i18n-nb@lister.ping.uio.no>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../data/solang.desktop.in.in.h:1
+msgid "@PACKAGE_NAME@ Photo Manager"
+msgstr ""
+
+#: ../data/solang.desktop.in.in.h:2
+msgid "Organize, enjoy and share your photos"
+msgstr ""
+
+#: ../data/solang.desktop.in.in.h:3
+msgid "Photo Manager"
+msgstr ""
+
+#: ../src/application/main-window.cpp:226
+msgid "_Photo"
+msgstr ""
+
+#: ../src/application/main-window.cpp:235
+#: ../src/renderer/browser-renderer.cpp:194
+msgid "_Edit"
+msgstr "R_ediger"
+
+#: ../src/application/main-window.cpp:240
+#: ../src/renderer/browser-renderer.cpp:199
+msgid "_Add to Export Queue"
+msgstr ""
+
+#: ../src/application/main-window.cpp:247
+msgid "_Clear Export Queue"
+msgstr ""
+
+#: ../src/application/main-window.cpp:252
+msgid "_View"
+msgstr "_Vis"
+
+#: ../src/application/main-window.cpp:256
+msgid "_Toolbar"
+msgstr "Verk_tøylinje"
+
+#: ../src/application/main-window.cpp:257
+#, fuzzy
+msgid "Show or hide the toolbar in the current window"
+msgstr "Vis eller skjul verktøylinjen i dette vinduet"
+
+#: ../src/application/main-window.cpp:263
+msgid "_Statusbar"
+msgstr "_Statuslinje"
+
+#: ../src/application/main-window.cpp:264
+#, fuzzy
+msgid "Show or hide the statusbar in the current window"
+msgstr "Vis eller skjul statuslinjen i dette vinduet"
+
+#: ../src/application/main-window.cpp:271
+msgid "_Full Screen"
+msgstr ""
+
+#: ../src/application/main-window.cpp:272
+#, fuzzy
+msgid "Show the current photo in full screen mode"
+msgstr "Start i fullskjermmodus"
+
+#: ../src/application/main-window.cpp:289
+msgid "_Help"
+msgstr "_Hjelp"
+
+#: ../src/application/main-window.cpp:294
+#, fuzzy
+msgid "_Contents"
+msgstr "Innhold"
+
+#: ../src/application/main-window.cpp:662
+msgid "A photo manager for GNOME"
+msgstr ""
+
+#. Translators: Put your names here.
+#: ../src/application/main-window.cpp:693
+#, fuzzy
+msgid "translator-credits"
+msgstr "Kjartan Maraas <kmaraas@gnome.org>"
+
+#: ../src/application/main-window.cpp:698
+msgctxt "Project website"
+msgid "%1 Website"
+msgstr ""
+
+#: ../src/attribute/basic-exif-view.cpp:93
+#, fuzzy
+msgid "Camera"
+msgstr "Rammehastighet"
+
+#: ../src/attribute/basic-exif-view.cpp:112
+#, fuzzy
+msgid "Exposure time"
+msgstr "E_ksporter til"
+
+#: ../src/attribute/basic-exif-view.cpp:132
+msgid "Flash"
+msgstr ""
+
+#: ../src/attribute/basic-exif-view.cpp:152
+msgid "F-number"
+msgstr ""
+
+#: ../src/attribute/basic-exif-view.cpp:171
+msgid "ISO speed"
+msgstr ""
+
+#: ../src/attribute/basic-exif-view.cpp:190
+msgid "Metering mode"
+msgstr ""
+
+#: ../src/attribute/basic-exif-view.cpp:211
+msgid "Focal length"
+msgstr ""
+
+#: ../src/attribute/basic-exif-view.cpp:231
+#, fuzzy
+msgid "White balance"
+msgstr "Korrigering av hvitbalanse"
+
+#: ../src/attribute/date-manager.cpp:50
+msgid "Picture Taken Date"
+msgstr ""
+
+#: ../src/attribute/property-manager.cpp:49
+msgid "Properties"
+msgstr "Egenskaper"
+
+#: ../src/attribute/property-manager.cpp:75
+msgid "Basic"
+msgstr ""
+
+#: ../src/attribute/property-manager.cpp:76
+msgid "Histogram"
+msgstr "Histogram"
+
+#: ../src/attribute/search-manager.cpp:52
+msgid "Search"
+msgstr "Søk"
+
+#: ../src/attribute/search-manager.cpp:66
+#, fuzzy
+msgid "Select _All"
+msgstr "Velg alle"
+
+#: ../src/attribute/search-manager.cpp:67
+msgid "Select all the filters in this list"
+msgstr ""
+
+#: ../src/attribute/search-manager.cpp:75
+msgid "_Remove"
+msgstr ""
+
+#: ../src/attribute/search-manager.cpp:76
+#, fuzzy
+msgid "Remove the selected filters from this list"
+msgstr "Fjern valgte filer"
+
+#: ../src/attribute/tag-manager.cpp:54
+msgid "Tags"
+msgstr "Merker"
+
+#: ../src/attribute/tag-manager.cpp:106
+#, fuzzy
+msgid "_Tags"
+msgstr "_Tagger:"
+
+#: ../src/attribute/tag-manager.cpp:111
+#, fuzzy
+msgid "Create New _Tag..."
+msgstr "Opprett _katalog"
+
+#: ../src/attribute/tag-manager.cpp:118
+msgid "_Edit Selected Tag..."
+msgstr ""
+
+#: ../src/attribute/tag-manager.cpp:125
+#, fuzzy
+msgid "_Delete Selected Tag"
+msgstr "Slett valgt tema"
+
+#: ../src/attribute/tag-manager.cpp:131
+msgid "_Attach Tag to Selection"
+msgstr ""
+
+#: ../src/attribute/tag-manager.cpp:138
+msgid "_Remove Tag From Selection"
+msgstr ""
+
+#: ../src/attribute/tag-manager.cpp:144
+#, fuzzy
+msgid "_Show All Tags"
+msgstr "Vis alle tagger"
+
+#: ../src/attribute/tag-new-dialog.cpp:39
+#: ../src/attribute/tag-new-dialog.cpp:69
+#, fuzzy
+msgid "Parent:"
+msgstr "(Åpne opphav)"
+
+#: ../src/attribute/tag-new-dialog.cpp:44
+#: ../src/attribute/tag-new-dialog.cpp:74
+#, fuzzy
+msgid "Name:"
+msgstr "_Navn:"
+
+#: ../src/attribute/tag-new-dialog.cpp:49
+#: ../src/attribute/tag-new-dialog.cpp:79
+#, fuzzy
+msgid "Description:"
+msgstr "B_eskrivelse:"
+
+#: ../src/attribute/tag-new-dialog.cpp:56
+#, fuzzy
+msgid "Create New Tag"
+msgstr "Lag et nytt tema"
+
+#: ../src/attribute/tag-new-dialog.cpp:86
+#, fuzzy
+msgid "Edit Tag"
+msgstr "_Mal:"
+
+#: ../src/attribute/tag-new-dialog.cpp:126
+#, fuzzy
+msgid "Select Tag Icon"
+msgstr "Velg en skrift"
+
+#: ../src/common/exif-data.cpp:161
+msgctxt "Flash"
+msgid "Off"
+msgstr ""
+
+#: ../src/common/exif-data.cpp:165
+#, fuzzy
+msgctxt "Flash"
+msgid "On"
+msgstr "Åpne"
+
+#: ../src/common/exif-data.cpp:199
+msgctxt "Metering mode"
+msgid "Average"
+msgstr ""
+
+#: ../src/common/exif-data.cpp:204
+msgctxt "Metering mode"
+msgid "Center Weighted Average"
+msgstr ""
+
+#: ../src/common/exif-data.cpp:208
+msgctxt "Metering mode"
+msgid "Spot"
+msgstr ""
+
+#: ../src/common/exif-data.cpp:212
+msgctxt "Metering mode"
+msgid "Multi-spot"
+msgstr ""
+
+#: ../src/common/exif-data.cpp:216
+msgctxt "Metering mode"
+msgid "Pattern"
+msgstr ""
+
+#: ../src/common/exif-data.cpp:220
+#, fuzzy
+msgctxt "Metering mode"
+msgid "Partial"
+msgstr "Fest"
+
+#: ../src/common/exif-data.cpp:236
+#, fuzzy
+msgctxt "White balance"
+msgid "Automatic"
+msgstr "_Automatisk undermapper"
+
+#: ../src/common/exif-data.cpp:240
+msgctxt "White balance"
+msgid "Manual"
+msgstr ""
+
+#: ../src/common/histogram-viewer.cpp:38
+msgid "Type"
+msgstr "Type"
+
+#: ../src/common/histogram-viewer.cpp:43
+msgid "Channels"
+msgstr "Kanaler"
+
+#: ../src/common/histogram-viewer.cpp:68
+msgctxt "Scale"
+msgid "Linear"
+msgstr ""
+
+#: ../src/common/histogram-viewer.cpp:73
+msgctxt "Scale"
+msgid "Logarithmic"
+msgstr ""
+
+#: ../src/common/histogram-viewer.cpp:81
+#, fuzzy
+msgid "RGB"
+msgstr "GB"
+
+#: ../src/common/histogram-viewer.cpp:86
+#, fuzzy
+msgid "Red"
+msgstr "Gjør på nytt"
+
+#: ../src/common/histogram-viewer.cpp:91
+msgid "Green"
+msgstr ""
+
+#: ../src/common/histogram-viewer.cpp:96
+msgid "Blue"
+msgstr ""
+
+#: ../src/common/progress-dialog.cpp:36
+#, fuzzy
+msgid "Pending Operations"
+msgstr "Vis egenskaper for bilde"
+
+#: ../src/common/progress-observer.h:166
+msgid "%1 of %2 completed"
+msgstr ""
+
+#: ../src/common/progress-observer.h:175
+#, fuzzy
+msgid "%1%% complete"
+msgstr "Søk fullført"
+
+#: ../src/editor/editor.cpp:114
+#, fuzzy
+msgid "T_ools"
+msgstr "Verktøy"
+
+#: ../src/editor/editor.cpp:118
+#, fuzzy
+msgid "_Transform"
+msgstr "_Gjennomsiktig"
+
+#: ../src/editor/editor.cpp:124
+#, fuzzy
+msgid "Flip _Horizontal"
+msgstr "_Horisontal:"
+
+#: ../src/editor/editor.cpp:125
+msgid "Mirror the photo horizontally"
+msgstr ""
+
+#: ../src/editor/editor.cpp:136
+#, fuzzy
+msgid "Flip _Vertical"
+msgstr "_Vertikal:"
+
+#: ../src/editor/editor.cpp:137
+#, fuzzy
+msgid "Mirror the photo vertically"
+msgstr "Roter bildet vertikalt"
+
+#: ../src/editor/editor.cpp:148
+msgid "_Rotate Clockwise"
+msgstr ""
+
+#: ../src/editor/editor.cpp:149
+#, fuzzy
+msgid "Rotate the photo 90 degrees to the right"
+msgstr "Roter valgte bilder 90° til høyre"
+
+#: ../src/editor/editor.cpp:160
+msgid "Rotate Counterc_lockwise"
+msgstr ""
+
+#: ../src/editor/editor.cpp:161
+#, fuzzy
+msgid "Rotate the photo 90 degrees to the left"
+msgstr "Roter valgte bilder 90° til venstre"
+
+#: ../src/editor/flip-horiz-operation.cpp:43
+msgid "Flipping horizontally..."
+msgstr ""
+
+#: ../src/editor/flip-operation.cpp:59
+msgid "Flipping..."
+msgstr ""
+
+#: ../src/editor/flip-vert-operation.cpp:43
+#, fuzzy
+msgid "Flipping vertically..."
+msgstr "Roter bildet vertikalt"
+
+#: ../src/editor/rotate-clock-operation.cpp:43
+#, fuzzy
+msgid "Rotating clockwise..."
+msgstr "Roter …"
+
+#: ../src/editor/rotate-counter-operation.cpp:43
+msgid "Rotating counterclockwise..."
+msgstr ""
+
+#: ../src/editor/rotate-operation.cpp:57
+#, fuzzy
+msgid "Rotating..."
+msgstr "Roter …"
+
+#: ../src/exporter/brasero-destination.cpp:144
+msgid "_CD/DVD..."
+msgstr ""
+
+#: ../src/exporter/brasero-destination.cpp:186
+#, fuzzy
+msgid "Export to CD/DVD"
+msgstr "Eksporter til %s"
+
+#: ../src/exporter/directory-destination.cpp:95
+#, fuzzy
+msgid "Exporting photos"
+msgstr "Importer bilder"
+
+#: ../src/exporter/directory-destination.cpp:181
+#, fuzzy
+msgid "Select Folder"
+msgstr "Velg ingen"
+
+#: ../src/exporter/directory-destination.cpp:190
+#, fuzzy
+msgid "_Folder..."
+msgstr "_Filtrer..."
+
+#: ../src/exporter/exporter.cpp:192
+#, fuzzy
+msgid "Creating archive"
+msgstr "Lager bilder"
+
+#: ../src/exporter/exporter-dialog.cpp:33
+#, fuzzy
+msgid "Export"
+msgstr "E_ksporter til"
+
+#: ../src/exporter/exporter-dialog.cpp:45
+#, fuzzy
+msgid "_Create an archive"
+msgstr "Lag et nytt tema"
+
+#: ../src/exporter/exporter-dialog.cpp:64
+#, fuzzy
+msgctxt "A group of UI controls"
+msgid "Destination"
+msgstr "Mål"
+
+#: ../src/exporter/exporter-dialog.cpp:80
+#, fuzzy
+msgctxt "A group of UI controls"
+msgid "Options"
+msgstr "Alternativer"
+
+#: ../src/exporter/exporter-dialog.cpp:105
+#, fuzzy
+msgid "_Export"
+msgstr "E_ksporter til"
+
+#: ../src/renderer/browser-renderer.cpp:207
+#: ../src/renderer/enlarged-renderer.cpp:304
+#, fuzzy
+msgid "_Slideshow"
+msgstr "Lysbildevisning"
+
+#: ../src/renderer/browser-renderer.cpp:208
+#: ../src/renderer/enlarged-renderer.cpp:305
+msgid "Start a slideshow view of the photos"
+msgstr ""
+
+#: ../src/renderer/browser-renderer.cpp:217
+#, fuzzy
+msgid "Enlarge or shrink the thumbnails"
+msgstr "Lager miniatyrer"
+
+#: ../src/renderer/browser-renderer.cpp:239
+#: ../src/renderer/enlarged-renderer.cpp:317
+#: ../src/renderer/enlarged-renderer.cpp:453
+#: ../src/renderer/enlarged-renderer.cpp:462
+#: ../src/renderer/enlarged-renderer.cpp:471
+#, fuzzy
+msgid "_Zoom In"
+msgstr "Zoom inn"
+
+#: ../src/renderer/browser-renderer.cpp:240
+#, fuzzy
+msgid "Enlarge the thumbnails"
+msgstr "Vis miniatyrer"
+
+#: ../src/renderer/browser-renderer.cpp:251
+#, fuzzy
+msgid "_Zoom Out"
+msgstr "Zoom ut"
+
+#: ../src/renderer/browser-renderer.cpp:252
+#, fuzzy
+msgid "Shrink the thumbnails"
+msgstr "Vis miniatyrer"
+
+#: ../src/renderer/browser-renderer.cpp:263
+#: ../src/renderer/enlarged-renderer.cpp:312
+msgid "_Go"
+msgstr "_Gå"
+
+#: ../src/renderer/browser-renderer.cpp:268
+#, fuzzy
+msgid "_Previous Page"
+msgstr "Forrige"
+
+#: ../src/renderer/browser-renderer.cpp:269
+#, fuzzy
+msgid "Go to the previous page in the collection"
+msgstr "Gå til sist besøkte lokasjon"
+
+#: ../src/renderer/browser-renderer.cpp:272
+#: ../src/renderer/enlarged-renderer.cpp:378
+#: ../src/renderer/slideshow-renderer.cpp:169
+#: ../src/renderer/slideshow-renderer.cpp:213
+#, fuzzy
+msgctxt "Navigation"
+msgid "Previous"
+msgstr "Forrige"
+
+#: ../src/renderer/browser-renderer.cpp:284
+#, fuzzy
+msgid "_Next Page"
+msgstr "Bilder per side:"
+
+#: ../src/renderer/browser-renderer.cpp:285
+#, fuzzy
+msgid "Go to the next page in the collection"
+msgstr "Gå til neste besøkte lokasjon"
+
+#: ../src/renderer/browser-renderer.cpp:288
+#: ../src/renderer/enlarged-renderer.cpp:393
+#: ../src/renderer/slideshow-renderer.cpp:178
+#: ../src/renderer/slideshow-renderer.cpp:222
+#, fuzzy
+msgctxt "Navigation"
+msgid "Next"
+msgstr "Neste"
+
+#: ../src/renderer/browser-renderer.cpp:299
+msgid "_First Page"
+msgstr ""
+
+#: ../src/renderer/browser-renderer.cpp:300
+#, fuzzy
+msgid "Go to the first page in the collection"
+msgstr "Gå til neste besøkte lokasjon"
+
+#: ../src/renderer/browser-renderer.cpp:312
+#, fuzzy
+msgid "_Last Page"
+msgstr "Bilder per side:"
+
+#: ../src/renderer/browser-renderer.cpp:313
+#, fuzzy
+msgid "Go to the last page in the collection"
+msgstr "Gå til neste besøkte lokasjon"
+
+#: ../src/renderer/enlarged-renderer.cpp:72
+msgctxt "Mode or view"
+msgid "Enlarged"
+msgstr ""
+
+#: ../src/renderer/enlarged-renderer.cpp:318
+#: ../src/renderer/enlarged-renderer.cpp:454
+#: ../src/renderer/enlarged-renderer.cpp:463
+#: ../src/renderer/enlarged-renderer.cpp:472
+#: ../src/renderer/slideshow-window.cpp:75
+#: ../src/renderer/slideshow-window.cpp:110
+#: ../src/renderer/slideshow-window.cpp:119
+#: ../src/renderer/slideshow-window.cpp:128
+#, fuzzy
+msgid "Enlarge the photo"
+msgstr "Henter bildelisten"
+
+#: ../src/renderer/enlarged-renderer.cpp:320
+#: ../src/renderer/slideshow-window.cpp:74
+#: ../src/renderer/slideshow-window.cpp:109
+#: ../src/renderer/slideshow-window.cpp:118
+#: ../src/renderer/slideshow-window.cpp:127
+#, fuzzy
+msgctxt "Zoom"
+msgid "In"
+msgstr "Inn"
+
+#: ../src/renderer/enlarged-renderer.cpp:331
+#: ../src/renderer/enlarged-renderer.cpp:480
+#: ../src/renderer/enlarged-renderer.cpp:489
+#, fuzzy
+msgid "Zoom _Out"
+msgstr "Zoom ut"
+
+#: ../src/renderer/enlarged-renderer.cpp:332
+#: ../src/renderer/enlarged-renderer.cpp:481
+#: ../src/renderer/enlarged-renderer.cpp:490
+#: ../src/renderer/slideshow-window.cpp:84
+#: ../src/renderer/slideshow-window.cpp:137
+#: ../src/renderer/slideshow-window.cpp:146
+#, fuzzy
+msgid "Shrink the photo"
+msgstr "Private bilder"
+
+#: ../src/renderer/enlarged-renderer.cpp:334
+#: ../src/renderer/slideshow-window.cpp:83
+#: ../src/renderer/slideshow-window.cpp:136
+#: ../src/renderer/slideshow-window.cpp:145
+#, fuzzy
+msgctxt "Zoom"
+msgid "Out"
+msgstr "Ut"
+
+#: ../src/renderer/enlarged-renderer.cpp:345
+msgid "_Normal Size"
+msgstr ""
+
+#: ../src/renderer/enlarged-renderer.cpp:346
+#: ../src/renderer/slideshow-window.cpp:93
+msgid "Show the photo at its normal size"
+msgstr ""
+
+#: ../src/renderer/enlarged-renderer.cpp:349
+#: ../src/renderer/slideshow-window.cpp:92
+#, fuzzy
+msgctxt "Zoom"
+msgid "Normal"
+msgstr "Format"
+
+#: ../src/renderer/enlarged-renderer.cpp:360
+msgid "Best _Fit"
+msgstr ""
+
+#: ../src/renderer/enlarged-renderer.cpp:361
+#: ../src/renderer/slideshow-window.cpp:102
+#, fuzzy
+msgid "Fit the photo to the window"
+msgstr "Tilpass til vinduet"
+
+#: ../src/renderer/enlarged-renderer.cpp:363
+#: ../src/renderer/slideshow-window.cpp:101
+#, fuzzy
+msgctxt "Zoom"
+msgid "Fit"
+msgstr "Tilpass"
+
+#: ../src/renderer/enlarged-renderer.cpp:374
+#: ../src/renderer/enlarged-renderer.cpp:420
+#, fuzzy
+msgid "_Previous Photo"
+msgstr "Forrige"
+
+#: ../src/renderer/enlarged-renderer.cpp:375
+#: ../src/renderer/enlarged-renderer.cpp:421
+#: ../src/renderer/slideshow-renderer.cpp:170
+#: ../src/renderer/slideshow-renderer.cpp:214
+#, fuzzy
+msgid "Go to the previous photo in the collection"
+msgstr "Gå til sist besøkte lokasjon"
+
+#: ../src/renderer/enlarged-renderer.cpp:389
+#: ../src/renderer/enlarged-renderer.cpp:429
+msgid "_Next Photo"
+msgstr ""
+
+#: ../src/renderer/enlarged-renderer.cpp:390
+#: ../src/renderer/enlarged-renderer.cpp:430
+#: ../src/renderer/slideshow-renderer.cpp:179
+#: ../src/renderer/slideshow-renderer.cpp:223
+#, fuzzy
+msgid "Go to the next photo in the collection"
+msgstr "Gå til neste besøkte lokasjon"
+
+#: ../src/renderer/enlarged-renderer.cpp:404
+#: ../src/renderer/enlarged-renderer.cpp:437
+msgid "_First Photo"
+msgstr ""
+
+#: ../src/renderer/enlarged-renderer.cpp:405
+#: ../src/renderer/enlarged-renderer.cpp:438
+#: ../src/renderer/slideshow-renderer.cpp:162
+#: ../src/renderer/slideshow-renderer.cpp:206
+#, fuzzy
+msgid "Go to the first photo in the collection"
+msgstr "Gå til mappen som inneholder valgt fil"
+
+#: ../src/renderer/enlarged-renderer.cpp:412
+#: ../src/renderer/enlarged-renderer.cpp:445
+msgid "_Last Photo"
+msgstr ""
+
+#: ../src/renderer/enlarged-renderer.cpp:413
+#: ../src/renderer/enlarged-renderer.cpp:446
+#: ../src/renderer/slideshow-renderer.cpp:187
+#: ../src/renderer/slideshow-renderer.cpp:231
+#, fuzzy
+msgid "Go to the last photo in the collection"
+msgstr "Gå til mappen som inneholder valgt fil"
+
+#: ../src/renderer/slideshow-renderer.cpp:161
+#: ../src/renderer/slideshow-renderer.cpp:205
+msgctxt "Navigation"
+msgid "First"
+msgstr ""
+
+#: ../src/renderer/slideshow-renderer.cpp:186
+#: ../src/renderer/slideshow-renderer.cpp:230
+msgctxt "Navigation"
+msgid "Last"
+msgstr ""
+
+#~ msgid "File is not a valid .desktop file"
+#~ msgstr "Filen er ikke en gyldig .desktop-fil"
+
+#~ msgid "Starting %s"
+#~ msgstr "Starter %s"
+
+#~ msgid "Image Viewer"
+#~ msgstr "Bildeviser"
+
+#~ msgid "View and organize your images"
+#~ msgstr "Vis og organiser dine bilder"
+
+#~ msgid "gThumb"
+#~ msgstr "gThumb"
+
+#~ msgid "gThumb Image Viewer"
+#~ msgstr "gThumb bildeviser"
+
+#~ msgid "Import the photos on your camera card"
+#~ msgstr "Importer bilder fra ditt kamera"
+
+#~ msgid "Photo Import Tool"
+#~ msgstr "Verktøy for import av bilder"
+
+#~ msgid ""
+#~ "Images over this size (in bytes) will not be thumbnailed. Use 0 if you "
+#~ "want to generate thumbnails for all images."
+#~ msgstr ""
+#~ "Bilder med størrelse over denne verdien (i bytes) vil det ikke vises "
+#~ "miniatyrer for. Bruk 0 hvis du vil generere miniatyrer for alle bilder."
+
+#~ msgid ""
+#~ "Possible values are: actual_size, fit, keep_prev, fit_if_larger, "
+#~ "fit_width_if_larger."
+#~ msgstr ""
+#~ "Mulige verdier er: actual_size, fit, keep_prev, fit_if_larger, "
+#~ "fit_width_if_larger."
+
+#~ msgid "Possible values are: high, low."
+#~ msgstr "Mulige verdier er: high, low."
+
+#~ msgid "Possible values are: light, midtone, dark."
+#~ msgstr "Mulige verdier er: light, midtone, dark."
+
+#~ msgid "Possible values are: list, thumbnails."
+#~ msgstr "Mulige verdier er: list, thumbnails."
+
+#~ msgid "Possible values are: small, medium, large."
+#~ msgstr "Mulige verdier er: small, medium, large."
+
+#~ msgid ""
+#~ "Possible values are: system, text_below, text_beside, text_only, "
+#~ "icons_only."
+#~ msgstr ""
+#~ "Mulige verdier er: system, text_below, text_beside, text_only, icons_only."
+
+#~ msgid "Possible values are: white, black, checked, none."
+#~ msgstr "Mulige verdier er: white, black, checked, none."
+
+#~ msgid "Whether to always use a black background."
+#~ msgstr "Alltid bruk sort bakgrunn."
+
+#~ msgid "More extensions..."
+#~ msgstr "Flere utvidelser..."
+
+#~ msgid "Some extensions are configurable."
+#~ msgstr "Noen utvidelser kan konfigureres."
+
+#~ msgid "_Extensions:"
+#~ msgstr "Utvid_elser:"
+
+#~ msgid "Filter _Name:"
+#~ msgstr "Filter_navn:"
+
+#~ msgid "_Limit to"
+#~ msgstr "_Begrens til"
+
+#~ msgid "_Match"
+#~ msgstr "_Treff"
+
+#~ msgid "selected by"
+#~ msgstr "valgt av"
+
+#~ msgid "Mean:"
+#~ msgstr "Middelverdi:"
+
+#~ msgid "Median:"
+#~ msgstr "Median:"
+
+#~ msgctxt "Pixels"
+#~ msgid "Max:"
+#~ msgstr "Maks:"
+
+#~ msgctxt "Pixels"
+#~ msgid "Selected:"
+#~ msgstr "Valgt:"
+
+#~ msgid "Pixels:"
+#~ msgstr "Piksler:"
+
+#~ msgid "Std dev:"
+#~ msgstr "Standardavvik:"
+
+#~ msgid "Do not overwrite _the old file"
+#~ msgstr "Ikke overskriv _den gamle filen"
+
+#~ msgid "Filename:"
+#~ msgstr "Filnavn:"
+
+#~ msgid "Modified:"
+#~ msgstr "Endret:"
+
+#~ msgid "New File:"
+#~ msgstr "Ny fil:"
+
+#~ msgid "Old File:"
+#~ msgstr "Gammel fil:"
+
+#~ msgid "Over_write the old file"
+#~ msgstr "O_verskriv den gamle filen"
+
+#~ msgid "Overwrite _all files"
+#~ msgstr "Overskriv _alle filer"
+
+#~ msgid "Overwrite the old file with the new one?"
+#~ msgstr "Overskriv gammel fil med ny?"
+
+#~ msgid "Size:"
+#~ msgstr "Størrelse:"
+
+#~ msgid "_Do not overwrite any file"
+#~ msgstr "_Ikke overskriv noen filer"
+
+#~ msgid "_Save the new file as:"
+#~ msgstr "_Lagre den nye filen som:"
+
+#~ msgid "Filters"
+#~ msgstr "Filtre"
+
+#~ msgid "_General filter:"
+#~ msgstr "_Generelt filter:"
+
+#~ msgid "_Other filters:"
+#~ msgstr "_Andre filter:"
+
+#~ msgid "Activate items with a double click"
+#~ msgstr "Aktiver oppføringer med dobbeltklikk"
+
+#~ msgid "Activate items with a single click"
+#~ msgstr "Aktiver oppføringer med enkeltklikk"
+
+#~ msgid "Appearance"
+#~ msgstr "Utseende"
+
+#~ msgid "As_k confirmation before deleting files or catalogs"
+#~ msgstr "Spør om be_kreftelse før sletting av bilder eller kataloger"
+
+#~ msgid "Ask whether to save _modified files"
+#~ msgstr "Spør om å lagre _endrede bilder"
+
+#~ msgid "Black"
+#~ msgstr "Sort"
+
+#~ msgid "Browser"
+#~ msgstr "Leser"
+
+#~ msgid "Caption"
+#~ msgstr "Bildetekst"
+
+#~ msgid "Checked"
+#~ msgstr "Avkrysset"
+
+#~ msgid "Choose startup folder"
+#~ msgstr "Velg oppstartsmappe"
+
+#~ msgid "D_etermine image type from content (slower)"
+#~ msgstr "B_estem bildetype fra innholdet (saktere)"
+
+#~ msgid "Fit to width if larger"
+#~ msgstr "Tilpass til bredde hvis større"
+
+#~ msgid "Fit to window if larger"
+#~ msgstr "Tilpass til vinduet hvis større"
+
+#~ msgid "Follow Nautilus behaviour"
+#~ msgstr "Følg Nautilus' oppførsel"
+
+#~ msgid "General"
+#~ msgstr "Generelt"
+
+#~ msgid "Go to last _visited location"
+#~ msgstr "Gå til sist _besøkte lokasjon"
+
+#~ msgid "Go to this _folder:"
+#~ msgstr "Gå til denne _mappen:"
+
+#~ msgid "Icons only"
+#~ msgstr "Kun ikoner"
+
+#~ msgid "Keep previous zoom"
+#~ msgstr "Behold forrige zoom"
+
+#~ msgid "None"
+#~ msgstr "Ingen"
+
+#~ msgid "On startup:"
+#~ msgstr "Ved oppstart:"
+
+#~ msgid "Other"
+#~ msgstr "Andre"
+
+#~ msgid "Set image to actual size"
+#~ msgstr "Sett bilde til faktisk størrelse"
+
+#~ msgid "Set to C_urrent"
+#~ msgstr "Sett til _aktiv"
+
+#~ msgid "System settings"
+#~ msgstr "Systeminnstillinger"
+
+#~ msgid "T_humbnails in viewer:"
+#~ msgstr "Miniatyrer i _visning:"
+
+#~ msgid "Text below icons"
+#~ msgstr "Tekst under ikoner"
+
+#~ msgid "Text beside icons"
+#~ msgstr "Tekst ved siden av ikoner"
+
+#~ msgid "Text only"
+#~ msgstr "Kun tekst"
+
+#~ msgid "Thumbnail _size:"
+#~ msgstr "_Størrelse på miniatyrer:"
+
+#~ msgid "White"
+#~ msgstr "Hvit"
+
+#~ msgid "_Toolbar style:"
+#~ msgstr "Verk_tøylinjestil:"
+
+#~ msgid "gthumb Preferences"
+#~ msgstr "gthumb brukervalg"
+
+#~ msgid "Sort By"
+#~ msgstr "Sorter etter"
+
+#~ msgid "_Inverse order"
+#~ msgstr "Om_vendt rekkefølge"
+
+#~ msgid "_Sort by:"
+#~ msgstr "_Sorter etter:"
+
+#~ msgid "Add bookmarks support."
+#~ msgstr "Legg til støtte for bokmerker."
+
+#~ msgid "Bookmarks"
+#~ msgstr "Bokmerker"
+
+#~ msgid "_Bookmarks"
+#~ msgstr "_Bokmerker"
+
+#~ msgid "_System Bookmarks"
+#~ msgstr "_Systembokmerker"
+
+#~ msgid "_Add Bookmark"
+#~ msgstr "_Legg til bokmerke"
+
+#~ msgid "Add current location to bookmarks"
+#~ msgstr "Legg til aktiv lokasjon i bokmerker"
+
+#~ msgid "_Edit Bookmarks..."
+#~ msgstr "R_ediger bokmerker..."
+
+#~ msgid "Edit bookmarks"
+#~ msgstr "Rediger bokmerker"
+
+#~ msgid "_Bookmarks:"
+#~ msgstr "_Bokmerker:"
+
+#~ msgid "_Location"
+#~ msgstr "_Lokasjon"
+
+#~ msgid "_Name"
+#~ msgstr "_Navn"
+
+#~ msgid "Could not remove the bookmark"
+#~ msgstr "Kunne ikke fjerne bokmerket"
+
+#~ msgid "Burn CD/DVD"
+#~ msgstr "Skriv CD/DVD"
+
+#~ msgid "Save files to an optical disc."
+#~ msgstr "Lagre filer til en optisk disk."
+
+#~ msgid "Disc Name"
+#~ msgstr "Navn på plate"
+
+#~ msgid "Current _folder"
+#~ msgstr "A_ktiv mappe"
+
+#~ msgid "Source"
+#~ msgstr "Kilde"
+
+#~ msgid "_Selected files"
+#~ msgstr "_Valgte bilder"
+
+#~ msgid "Write to Disc"
+#~ msgstr "Skriv til plate"
+
+#~ msgid "Enter the catalog name: "
+#~ msgstr "Oppgi katalognavnet: "
+
+#~ msgid "C_reate"
+#~ msgstr "Opp_rett"
+
+#~ msgid "Could not create the catalog"
+#~ msgstr "Kunne ikke opprette katalogen"
+
+#~ msgid "Enter the library name: "
+#~ msgstr "Oppgi navn på biblioteket: "
+
+#~ msgid "Could not create the library"
+#~ msgstr "Kunne ikke opprette biblioteket"
+
+#~ msgid "Could not remove the catalog"
+#~ msgstr "Kunne ikke fjerne katalogen"
+
+#~ msgid "_Add to Catalog"
+#~ msgstr "_Legg til i katalog"
+
+#~ msgid "Open _Folder"
+#~ msgstr "Åpne _mappe"
+
+#~ msgid "Other..."
+#~ msgstr "Andre..."
+
+#~ msgid "Choose another catalog"
+#~ msgstr "Velg en annen katalog"
+
+#~ msgid "_Add to Catalog..."
+#~ msgstr "_Legg til i katalog..."
+
+#~ msgid "Add selected images to a catalog"
+#~ msgstr "Legg til valgte bilder i en katalog"
+
+#~ msgid "Remo_ve from Catalog"
+#~ msgstr "_Fjern fra katalog"
+
+#~ msgid "Remove selected images from the catalog"
+#~ msgstr "Fjern valgte bilder fra katalogen"
+
+#~ msgid "Create _Library"
+#~ msgstr "_Lag bibliotek"
+
+#~ msgid "Rena_me"
+#~ msgstr "E_ndre navn"
+
+#~ msgid "Command Line"
+#~ msgstr "Kommandolinje"
+
+#~ msgid "(Empty)"
+#~ msgstr "(Tom)"
+
+#~ msgid "Catalog Properties"
+#~ msgstr "Egenskaper for katalog"
+
+#~ msgid "Organize"
+#~ msgstr "Organiser"
+
+#~ msgid "Catalogs"
+#~ msgstr "Kataloger"
+
+#~ msgid "Create file collections."
+#~ msgstr "Lag filsamlinger."
+
+#~ msgid "Add to Catalog"
+#~ msgstr "Legg til i katalog"
+
+#~ msgid "C_atalogs:"
+#~ msgstr "K_ataloger:"
+
+#~ msgid "New _Library"
+#~ msgstr "Nytt _bibliotek"
+
+#~ msgid "_New Catalog"
+#~ msgstr "_Ny katalog"
+
+#~ msgid "_View the destination"
+#~ msgstr "_Vis målmappe"
+
+#~ msgid "Catalog"
+#~ msgstr "Katalog"
+
+#~ msgid "_Date:"
+#~ msgstr "_Dato:"
+
+#~ msgid "Catalog _Preview:"
+#~ msgstr "_Forhåndsvisning av katalog:"
+
+#~ msgid "Organization:"
+#~ msgstr "Organisering:"
+
+#~ msgid "Organize Files"
+#~ msgstr "Organiser filer"
+
+#~ msgid "Organizing files"
+#~ msgstr "Organiserer filer"
+
+#~ msgid "Date photo was taken"
+#~ msgstr "Dato bildet ble tatt"
+
+#, fuzzy
+#~ msgid "File modified date"
+#~ msgstr "Dato for siste endring"
+
+#~ msgid "Ignore catalogs with a single file"
+#~ msgstr "Overse kataloger med en enkelt fil"
+
+#~ msgid "Singles"
+#~ msgstr "Enkelfiler"
+
+#~ msgid "Tag"
+#~ msgstr "Merke"
+
+#~ msgid "Tag (embedded)"
+#~ msgstr "Merke (innebygget)"
+
+#~ msgid "_Group files by:"
+#~ msgstr "_Grupper filer etter:"
+
+#~ msgid "_Include sub-folders"
+#~ msgstr "_Ta med undermapper"
+
+#~ msgid "tag"
+#~ msgstr "merk"
+
+#~ msgid "Could not add the files to the catalog"
+#~ msgstr "Kunne ikke legge til bildene i katalogen"
+
+#~ msgid "Could not save the catalog"
+#~ msgstr "Kunne ikke lagre katalogen"
+
+#~ msgid "Could not load the catalog"
+#~ msgstr "Kunne ikke laste katalogen"
+
+#~ msgid "Over_write"
+#~ msgstr "Overskri_v"
+
+#~ msgid "Cannot move the files"
+#~ msgstr "Kan ikke flytte filene"
+
+#~ msgid "Cannot copy the files"
+#~ msgstr "Kan ikke kopiere filene"
+
+#~ msgid "Invalid destination."
+#~ msgstr "Ugyldig mål."
+
+#~ msgid "Copying files to '%s'"
+#~ msgstr "Kopierer filer til «%s»"
+
+#~ msgid "Could not remove the files from the catalog"
+#~ msgstr "Kunne ikke fjerne filene fra katalogen"
+
+#~ msgid "Invalid file format"
+#~ msgstr "Ugyldig filformat"
+
+#~ msgid "Change _Date..."
+#~ msgstr "Endre _dato..."
+
+#~ msgid "Change images last modified date"
+#~ msgstr "Endre bildets endringsdato"
+
+#~ msgid "Change date"
+#~ msgstr "Endringsdato"
+
+#~ msgid "Change the files date"
+#~ msgstr "Endre dato for filen"
+
+#~ msgid "A_djust by"
+#~ msgstr "_Juster med"
+
+#~ msgid "Change Date"
+#~ msgstr "Endre dato"
+
+#~ msgid "Change the following values:"
+#~ msgstr "Endre følgende verdier:"
+
+#~ msgid "Change to:"
+#~ msgstr "Endre til:"
+
+#~ msgid "Co_mment date"
+#~ msgstr "Ko_mmentardato"
+
+#~ msgid "Date p_hoto was taken"
+#~ msgstr "Dato _bildet ble tatt"
+
+#~ msgid "Exif DateTimeOriginal tag"
+#~ msgstr "Exif DateTimeOriginal tagg"
+
+#~ msgid "File _modified date"
+#~ msgstr "Filens e_ndringsdato"
+
+#~ msgid "File c_reation date"
+#~ msgstr "Filens opp_rettelsesdato"
+
+#~ msgid "The _following date:"
+#~ msgstr "_Følgende dato:"
+
+#~ msgid "_Last modified date"
+#~ msgstr "Dato for siste _endring"
+
+#~ msgid "hours"
+#~ msgstr "timer"
+
+#~ msgid "minutes"
+#~ msgstr "minutter"
+
+#~ msgid "seconds"
+#~ msgstr "sekunder"
+
+#~ msgid "Add comments and tags to any file type."
+#~ msgstr "Legg til kommentarer og merker på alle filtyper."
+
+#~ msgid "Comments and tags"
+#~ msgstr "Kommentarer og tagger"
+
+#~ msgid "Preferences"
+#~ msgstr "Brukervalg"
+
+#~ msgid "Comment"
+#~ msgstr "Kommentar"
+
+#~ msgid "Title"
+#~ msgstr "Tittel"
+
+#~ msgid "Description"
+#~ msgstr "Beskrivelse"
+
+#~ msgid "Place"
+#~ msgstr "Sted"
+
+#~ msgid "Date"
+#~ msgstr "Dato"
+
+#~ msgid "Rating"
+#~ msgstr "Poengsum"
+
+#, fuzzy
+#~ msgid "Image _Wall..."
+#~ msgstr "Endre _dato..."
+
+#, fuzzy
+#~ msgid ""
+#~ "Create an index image displaying the thumbnails of the selected files."
+#~ msgstr "Rediger kommentar eller annen informasjon for valgte filer"
+
+#~ msgid "     "
+#~ msgstr "     "
+
+#~ msgid "Background"
+#~ msgstr "Bakgrunn"
+
+#~ msgid "Caption:"
+#~ msgstr "Bildetekst:"
+
+#~ msgid "Frame"
+#~ msgstr "Ramme"
+
+#~ msgid "Select a color"
+#~ msgstr "Velg en farge"
+
+#~ msgid "Shadow only"
+#~ msgstr "Kun skygge"
+
+#~ msgid "Simple"
+#~ msgstr "Enkel"
+
+#~ msgid "Simple with shadow"
+#~ msgstr "Enkel med skygge"
+
+#~ msgid "Slide"
+#~ msgstr "Lysbilde"
+
+#~ msgid "Text"
+#~ msgstr "Tekst"
+
+#~ msgid "_Gradient"
+#~ msgstr "_Gradient"
+
+#~ msgid "_Solid color"
+#~ msgstr "_Helfylt farge"
+
+#~ msgid "_Style:"
+#~ msgstr "_Stil:"
+
+#~ msgid "#"
+#~ msgstr "#"
+
+#~ msgid "###"
+#~ msgstr "###"
+
+#~ msgid "%D{ format }"
+#~ msgstr "%D{ format }"
+
+#~ msgid "%n"
+#~ msgstr "%n"
+
+#~ msgid "%p"
+#~ msgstr "%p"
+
+#~ msgid "All images on a single page"
+#~ msgstr "Alle bilder på en enkelt side"
+
+#~ msgid "Choose destination folder"
+#~ msgstr "Velg målmappe"
+
+#~ msgid "Columns:"
+#~ msgstr "Kolonner:"
+
+#~ msgid "Edit the selected theme"
+#~ msgstr "Rediger valgt tema"
+
+#~ msgid "File_name:"
+#~ msgstr "Fil_navn:"
+
+#~ msgid "Images per page:"
+#~ msgstr "Bilder per side:"
+
+#~ msgid "Layout"
+#~ msgstr "Plassering"
+
+#~ msgid "Re_verse order"
+#~ msgstr "Om_vendt rekkefølge"
+
+#~ msgid "S_ort:"
+#~ msgstr "S_orter:"
+
+#~ msgid "Saving"
+#~ msgstr "Lagrer"
+
+#~ msgid "Special code"
+#~ msgstr "Spesialkode"
+
+#, fuzzy
+#~ msgid "Sq_uared"
+#~ msgstr "Firkantet"
+
+#~ msgid "The current date"
+#~ msgstr "Dagens dato"
+
+#~ msgid "The total number of pages"
+#~ msgstr "Totalt antall sider"
+
+#~ msgid "Theme"
+#~ msgstr "Tema"
+
+#~ msgid "Thumbnails"
+#~ msgstr "Miniatyrer"
+
+#~ msgid "_All pages with the same size"
+#~ msgstr "_Alle sider med samme størrelse"
+
+#~ msgid "_Destination:"
+#~ msgstr "_Mål:"
+
+#~ msgid "_Size:"
+#~ msgstr "_Størrelse:"
+
+#~ msgid "Image Wall"
+#~ msgstr "Bildevegg"
+
+#~ msgid "Could not save the theme"
+#~ msgstr "Kunne ikke lagre tema"
+
+#~ msgid "Could not delete the theme"
+#~ msgstr "Kunne ikke slette tema"
+
+#~ msgid "Theme Properties"
+#~ msgstr "Egenskaper for tema"
+
+#~ msgid "Copy _From"
+#~ msgstr "Kopier _fra"
+
+#~ msgid "New theme"
+#~ msgstr "Nytt tema"
+
+#~ msgid "Convert Format..."
+#~ msgstr "Konverter format..."
+
+#~ msgid "Convert image format"
+#~ msgstr "Konverter bildeformat"
+
+#~ msgid "Convert format"
+#~ msgstr "Konverter format"
+
+#~ msgid "Save images in a different format"
+#~ msgstr "Lagre bilder i et annet format"
+
+#~ msgid "Convert Format"
+#~ msgstr "Konverter format"
+
+#~ msgid "New format"
+#~ msgstr "Nytt format"
+
+#, fuzzy
+#~ msgid "_Use the original image folder"
+#~ msgstr "_Behold originale filnavn"
+
+#~ msgid "Converting images"
+#~ msgstr "Konvertererer bilder"
+
+#~ msgid "Could not show the desktop background properties"
+#~ msgstr "Kunne ikke vise egenskaper for skrivebordsbakgrunn"
+
+#~ msgid "Could not set the desktop background"
+#~ msgstr "Kunne ikke sette skrivebordsbakgrunn"
+
+#~ msgid "Set as Desktop Background"
+#~ msgstr "Sett som skrivebordsbakgrunn"
+
+#~ msgid "Set the image as desktop background"
+#~ msgstr "Sett bildet som skrivebordsbakgrunn"
+
+#~ msgid "Desktop background"
+#~ msgstr "Skrivebordsbakgrunn"
+
+#~ msgid "T_ags"
+#~ msgstr "_Etiketter"
+
+#~ msgid "Edit the comment and other information of the selected files"
+#~ msgstr "Rediger kommentar og annen informasjon for valgte filer"
+
+#~ msgid "Choose another tag"
+#~ msgstr "Velg en annen etikett"
+
+#~ msgid "Delete Metadata"
+#~ msgstr "Slett metadata"
+
+#~ msgid "Delete the comment and the embedded metadata of the selected files"
+#~ msgstr "Slett kommentar og innebygget metadata for valgte filer"
+
+#~ msgid "T_ags:"
+#~ msgstr "E_tiketter:"
+
+#~ msgid "_Place:"
+#~ msgstr "_Sted:"
+
+#~ msgid "_Rating:"
+#~ msgstr "Poeng_sum:"
+
+#~ msgid "_Title:"
+#~ msgstr "_Tittel:"
+
+#~ msgid "Could not save the file metadata"
+#~ msgstr "Kunne ikke lagre metadata for fil"
+
+#~ msgid "Cannot read file information"
+#~ msgstr "Kan ikke lese filinformasjon"
+
+#~ msgid "Allow to edit files metadata."
+#~ msgstr "Tillat redigering av metadata for filer."
+
+#~ msgid "Edit metadata"
+#~ msgstr "Rediger metadata"
+
+#~ msgid "No date"
+#~ msgstr "Ingen dato"
+
+#~ msgid "The following date"
+#~ msgstr "Følgende dato"
+
+#~ msgid "Current date"
+#~ msgstr "Dagens dato"
+
+#~ msgid "Last modified date"
+#~ msgstr "Dato for siste endring"
+
+#~ msgid "File creation date"
+#~ msgstr "Filopprettingsdato"
+
+#~ msgid "Do not modify"
+#~ msgstr "Ikke endre"
+
+#~ msgid "Save only cha_nged fields"
+#~ msgstr "Lagre ku_n endrede felter"
+
+#~ msgid "%s Metadata"
+#~ msgstr "%s metadata"
+
+#~ msgid "%d file"
+#~ msgid_plural "%d files"
+#~ msgstr[0] "%d fil"
+#~ msgstr[1] "%d filer"
+
+#~ msgid "New tag"
+#~ msgstr "Ny etikett"
+
+#~ msgid "Assign Tags"
+#~ msgstr "Tildel etiketter"
+
+#, fuzzy
+#~ msgid "Assigning tags to the selected files"
+#~ msgstr "Endre navn på valgte filer"
+
+#~ msgid "Writing files"
+#~ msgstr "Skriver filer"
+
+#~ msgid "Reading files"
+#~ msgstr "Leser filer"
+
+#~ msgid "Example"
+#~ msgstr "Eksempel"
+
+#~ msgid "C_opyright:"
+#~ msgstr "_Opphavsrett:"
+
+#~ msgid "Co_untry:"
+#~ msgstr "Lan_d:"
+
+#, fuzzy
+#~ msgid "Cr_edit:"
+#~ msgstr "_Høyde:"
+
+#, fuzzy
+#~ msgid "_Byline:"
+#~ msgstr "_Lysstyrke:"
+
+#~ msgid "_City:"
+#~ msgstr "_By:"
+
+#~ msgid "_Code:"
+#~ msgstr "_Kode:"
+
+#~ msgid "_Language:"
+#~ msgstr "_Språk:"
+
+#~ msgid "_Object Name:"
+#~ msgstr "Navn på _objekt:"
+
+#~ msgid "_Source:"
+#~ msgstr "_Kilde:"
+
+#~ msgid "_Urgency:"
+#~ msgstr "_Viktighet:"
+
+#~ msgid "Exif General"
+#~ msgstr "Exif generelt"
+
+#~ msgid "Exif Conditions"
+#~ msgstr "Exif-betingelser"
+
+#~ msgid "Exif Structure"
+#~ msgstr "Exif-struktur"
+
+#~ msgid "Exif Thumbnail"
+#~ msgstr "Exif-miniatyr"
+
+#~ msgid "Exif GPS"
+#~ msgstr "Exif-GPS"
+
+#~ msgid "Exif Versions"
+#~ msgstr "Exif-versjoner"
+
+#~ msgid "Exif Other"
+#~ msgstr "Exif - Annet"
+
+#~ msgid "IPTC"
+#~ msgstr "IPTC"
+
+#~ msgid "XMP Embedded"
+#~ msgstr "XMP-innebygget"
+
+#~ msgid "date photo was taken"
+#~ msgstr "dato bildet ble tatt"
+
+#~ msgid "Share"
+#~ msgstr "Del"
+
+#~ msgid "Face_book..."
+#~ msgstr "Face_book..."
+
+#~ msgid "Upload photos to Facebook"
+#~ msgstr "Last opp bilder til Facebook"
+
+#~ msgid "A_lbum:"
+#~ msgstr "A_lbum:"
+
+#~ msgid "Add a new album"
+#~ msgstr "Legg til et nytt album"
+
+#~ msgid "Edit accounts"
+#~ msgstr "Rediger kontoer"
+
+#~ msgid "Export to Flickr"
+#~ msgstr "Eksporter til Flickr"
+
+#~ msgid "_Account:"
+#~ msgstr "_Konto:"
+
+#~ msgid "_Upload"
+#~ msgstr "Last _opp"
+
+#~ msgid "A_ccount:"
+#~ msgstr "_Konto:"
+
+#~ msgid "A_ccounts:"
+#~ msgstr "_Kontoer:"
+
+#~ msgid "Private"
+#~ msgstr "Privat"
+
+#~ msgid "Private photos, visible to friends"
+#~ msgstr "Private bilder - synlig for venner"
+
+#~ msgid "Public photos"
+#~ msgstr "Offentlige bilder"
+
+#~ msgid "_Location:"
+#~ msgstr "_Lokasjon:"
+
+#~ msgid "_Visibility:"
+#~ msgstr "_Synlighet:"
+
+#~ msgid "_Authorize..."
+#~ msgstr "_Autoriser..."
+
+#~ msgid "C_ontinue"
+#~ msgstr "F_ortsett"
+
+#~ msgid "_Open in the Browser"
+#~ msgstr "_Åpne i bildevisning"
+
+#~ msgid "Could not connect to the server"
+#~ msgstr "Kunne ikke koble til tjener"
+
+#~ msgid "Could not upload the files"
+#~ msgstr "Kunne ikke laste opp filene"
+
+#~ msgid "Could not create the album"
+#~ msgstr "Kunne ikke lage album"
+
+#~ msgid "New Album"
+#~ msgstr "Nytt album"
+
+#~ msgid "No valid file selected."
+#~ msgstr "Ingen gyldig fil valgt."
+
+#~ msgid "Could not export the files"
+#~ msgstr "Kunne ikke eksportere filene"
+
+#~ msgid "%d file (%s)"
+#~ msgid_plural "%d files (%s)"
+#~ msgstr[0] "%d fil (%s)"
+#~ msgstr[1] "%d filer (%s)"
+
+#~ msgid "New authentication..."
+#~ msgstr "Ny autentisering..."
+
+#~ msgid "Choose _Account..."
+#~ msgstr "Velg _konto..."
+
+#~ msgid "Choose Account"
+#~ msgstr "Velg konto"
+
+#~ msgid "Edit Accounts"
+#~ msgstr "Rediger kontoer"
+
+#~ msgid "Connecting to the server"
+#~ msgstr "Kobler til tjener"
+
+#~ msgid "Facebook"
+#~ msgstr "Facebook"
+
+#~ msgid "Getting account information"
+#~ msgstr "Henter kontoinformasjon"
+
+#~ msgid "Getting the album list"
+#~ msgstr "Henter albumliste"
+
+#~ msgid "Creating the new album"
+#~ msgstr "Lager nytt album"
+
+#~ msgid "Could not upload '%s': %s"
+#~ msgstr "Kunne ikke laste opp «%s»: %s"
+
+#~ msgid "Uploading '%s'"
+#~ msgstr "Laster opp «%s»"
+
+#~ msgid "Enter the folder name: "
+#~ msgstr "Oppgi navn på mappen: "
+
+#~ msgid "Could not create the folder"
+#~ msgstr "Kunne ikke opprette mappen"
+
+#~ msgid "Could not move the files"
+#~ msgstr "Kunne ikke flytte filene"
+
+#~ msgid "Could not open the location"
+#~ msgstr "Kunne ikke åpne lokasjonen"
+
+#, fuzzy
+#~ msgid ""
+#~ "The folder is not empty, do you want to delete the folder and its content "
+#~ "permanently?"
+#~ msgstr ""
+#~ "Bildene kan ikke flyttes til søppelkurven. Vil du slette dem permanent?"
+
+#~ msgid "Could not delete the folder"
+#~ msgstr "Kunne ikke slette mappen"
+
+#, fuzzy
+#~ msgid ""
+#~ "The folder cannot be moved to the Trash. Do you want to delete it "
+#~ "permanently?"
+#~ msgstr ""
+#~ "Bildene kan ikke flyttes til søppelkurven. Vil du slette dem permanent?"
+
+#~ msgid "Could not move the folder to the Trash"
+#~ msgstr "Kan ikke flytte mappen til papirkurven"
+
+#~ msgid "Are you sure you want to permanently delete \"%s\"?"
+#~ msgstr "Er du sikker på at du vil slette «%s» for godt?"
+
+#~ msgid "If you delete a file, it will be permanently lost."
+#~ msgstr "Hvis du sletter en fil vil den bli borte for godt."
+
+#~ msgid "Move To"
+#~ msgstr "Flytt til"
+
+#~ msgid "Copy To"
+#~ msgstr "Kopier til"
+
+#~ msgid "Move"
+#~ msgstr "Flytt"
+
+#~ msgid "Copy"
+#~ msgstr "Kopier"
+
+#~ msgid "Create _Folder"
+#~ msgstr "Lag _mappe"
+
+#, fuzzy
+#~ msgid "Create a new empty folder inside this folder"
+#~ msgstr "Opprett en ny mappe"
+
+#~ msgid "D_uplicate"
+#~ msgstr "D_upliser"
+
+#~ msgid "Duplicate the selected files"
+#~ msgstr "Dupliser valgte filer"
+
+#~ msgid "Mo_ve to Trash"
+#~ msgstr "Flytt til papirkur_ven"
+
+#~ msgid "Move the selected files to the Trash"
+#~ msgstr "Flytt valgte bilder til papirkurven"
+
+#~ msgid "_Delete"
+#~ msgstr "_Slett"
+
+#~ msgid "Delete the selected files"
+#~ msgstr "Slett valgte filer"
+
+#~ msgid "_Rename"
+#~ msgstr "End_re navn"
+
+#~ msgid "Rename the selected files"
+#~ msgstr "Endre navn på valgte filer"
+
+#~ msgid "Open with the _File Manager"
+#~ msgstr "Åpne med _filhåndtereren"
+
+#~ msgid "_Paste Into Folder"
+#~ msgstr "_Lim inn i mappe"
+
+#~ msgid "Copy to..."
+#~ msgstr "Kopier til …"
+
+#, fuzzy
+#~ msgid "Copy the selected folder to another folder"
+#~ msgstr "Flytt valgte bilder til søppelkurven"
+
+#~ msgid "Move to..."
+#~ msgstr "Flytt til …"
+
+#, fuzzy
+#~ msgid "Move the selected folder to another folder"
+#~ msgstr "Flytt valgte bilder til søppelkurven"
+
+#, fuzzy
+#~ msgid "Copy the selected files to another folder"
+#~ msgstr "Flytt valgte bilder til søppelkurven"
+
+#, fuzzy
+#~ msgid "Move the selected files to another folder"
+#~ msgstr "Flytt valgte bilder til søppelkurven"
+
+#~ msgid "Could not perform the operation"
+#~ msgstr "Kunne ikke utføre operasjonen"
+
+#~ msgid "File manager"
+#~ msgstr "Filhåndterer"
+
+#~ msgid "Deleting files"
+#~ msgstr "Sletter filer"
+
+#~ msgid "B_rightness:"
+#~ msgstr "Lyssty_rke:"
+
+#~ msgid "Color Levels"
+#~ msgstr "Fargenivåer"
+
+#~ msgid "Con_trast:"
+#~ msgstr "Kon_trast:"
+
+#~ msgid "Cyan-_Red:"
+#~ msgstr "Cyan-_rød:"
+
+#~ msgid "G_amma:"
+#~ msgstr "G_amma:"
+
+#~ msgid "_Magenta-Green:"
+#~ msgstr "_Magenta-grønn:"
+
+#~ msgid "_Reset"
+#~ msgstr "_Nullstill"
+
+#~ msgid "_Saturation:"
+#~ msgstr "_Metning:"
+
+#~ msgid "_Yellow-Blue:"
+#~ msgstr "_Gul-blå:"
+
+#~ msgid "Aspect ratio"
+#~ msgstr "Høyde-/breddeforhold"
+
+#~ msgid "C_rop"
+#~ msgstr "Beskjæ_r"
+
+#~ msgid "Center"
+#~ msgstr "Midtstill"
+
+#~ msgid "I_nvert aspect ratio"
+#~ msgstr "I_nverter aspektraten"
+
+#~ msgid "Maximize"
+#~ msgstr "Maksimer"
+
+#~ msgid "Selection"
+#~ msgstr "Utvalg"
+
+#~ msgid "_Grid:"
+#~ msgstr "Rute_nett:"
+
+#~ msgid "_Position:"
+#~ msgstr "_Posisjon:"
+
+#~ msgid "%"
+#~ msgstr "%"
+
+#~ msgid "Dimensions"
+#~ msgstr "Dimensjoner"
+
+#~ msgid "Heigh_t:"
+#~ msgstr "H_øyde:"
+
+#~ msgid "High _quality"
+#~ msgstr "Høy _kvalitet"
+
+#~ msgid "Information"
+#~ msgstr "Informasjon"
+
+#~ msgid "New dimensions:"
+#~ msgstr "Nye dimensjoner:"
+
+#~ msgid "Original dimensions:"
+#~ msgstr "Opprinnelige dimensjoner:"
+
+#~ msgid "Scale factor:"
+#~ msgstr "Skaleringsfaktor:"
+
+#~ msgid "_Width:"
+#~ msgstr "_Bredde:"
+
+#~ msgid "pixels"
+#~ msgstr "piksler"
+
+#~ msgid "Align"
+#~ msgstr "Juster"
+
+#~ msgid "Alignment"
+#~ msgstr "Justering"
+
+#~ msgid "Angle"
+#~ msgstr "Vinkel"
+
+#~ msgid "Crop borders"
+#~ msgstr "Beskjær kanter"
+
+#~ msgid "Grid:"
+#~ msgstr "Rutenett:"
+
+#~ msgid "Image size"
+#~ msgstr "Bildestørrelse"
+
+#, fuzzy
+#~ msgid "Keep aspect ratio"
+#~ msgstr "Høyde-/breddeforhold"
+
+#~ msgid "Original size"
+#~ msgstr "Opprinnelig størrelse"
+
+#~ msgid "Parallel"
+#~ msgstr "Paralell"
+
+#~ msgid "Point 1:"
+#~ msgstr "Punkt 1:"
+
+#~ msgid "Point 2:"
+#~ msgstr "Punkt 2:"
+
+#~ msgid "Reset"
+#~ msgstr "Nullstill"
+
+#~ msgid "_Background:"
+#~ msgstr "_Bakgrunn:"
+
+#~ msgid "Amount:"
+#~ msgstr "Beløp:"
+
+#~ msgid "Radius:"
+#~ msgstr "Radius:"
+
+#~ msgid "Threshold:"
+#~ msgstr "Terskel:"
+
+#~ msgid "_Preview:"
+#~ msgstr "_Forhåndsvis:"
+
+#~ msgid "Image tools"
+#~ msgstr "Bildeverktøy"
+
+#~ msgid "Adjust Colors..."
+#~ msgstr "Juster farger..."
+
+#~ msgid "Adjust Colors"
+#~ msgstr "Juster farger"
+
+#~ msgid "Square"
+#~ msgstr "Firkantet"
+
+#~ msgid "%d x %d (Image)"
+#~ msgstr "%d x %d (bilde)"
+
+#~ msgid "%d x %d (Screen)"
+#~ msgstr "%d x %d (Skjerm)"
+
+#~ msgid "5:4"
+#~ msgstr "5:4"
+
+#~ msgid "4:3 (DVD, Book)"
+#~ msgstr "4:3 (DVD, bok)"
+
+#~ msgid "7:5"
+#~ msgstr "7:5"
+
+#~ msgid "3:2 (Postcard)"
+#~ msgstr "3:2 (Postkort)"
+
+#~ msgid "16:10"
+#~ msgstr "16:10"
+
+#~ msgid "16:9 (DVD)"
+#~ msgstr "16:9 (DVD)"
+
+#~ msgid "1.85:1"
+#~ msgstr "1.85:1"
+
+#~ msgid "2.39:1"
+#~ msgstr "2.39:1"
+
+#~ msgid "Custom"
+#~ msgstr "Tilpasset"
+
+#, fuzzy
+#~ msgid "Center Lines"
+#~ msgstr "Sentrert"
+
+#~ msgid "Crop..."
+#~ msgstr "Beskjær …"
+
+#~ msgid "Crop"
+#~ msgstr "Beskjær"
+
+#~ msgid "Applying changes"
+#~ msgstr "Påfører endringer"
+
+#~ msgid "Desaturate"
+#~ msgstr "Senk metning"
+
+#~ msgid "Enhance Colors"
+#~ msgstr "Forbedre farger"
+
+#~ msgid "Equalizing image histogram"
+#~ msgstr "Jevner ut bildehistogrammet"
+
+#~ msgid "Equalize"
+#~ msgstr "Jevn ut"
+
+#~ msgid "Equalize image histogram"
+#~ msgstr "Jevn ut bildehistogrammet"
+
+#~ msgid "Flip"
+#~ msgstr "Vend"
+
+#~ msgid "Mirror"
+#~ msgstr "Speil"
+
+#~ msgid "Negative"
+#~ msgstr "Negativ"
+
+#~ msgid "Redo"
+#~ msgstr "Gjør på nytt"
+
+#~ msgid "Resize..."
+#~ msgstr "Endre størrelse …"
+
+#~ msgid "Resize"
+#~ msgstr "Endre størrelse"
+
+#~ msgid "Rotate"
+#~ msgstr "Roter"
+
+#~ msgid "Freely rotate the image"
+#~ msgstr "Roter bildet fritt"
+
+#~ msgid "Rotate Left"
+#~ msgstr "Roter til venstre"
+
+#~ msgid "Rotate Right"
+#~ msgstr "Roter til høyre"
+
+#~ msgid "Save As"
+#~ msgstr "Lagre som"
+
+#~ msgid "Save"
+#~ msgstr "Lagre"
+
+#, fuzzy
+#~ msgid "Sharpening image"
+#~ msgstr "Lagre bilder"
+
+#~ msgid "Enhance Focus..."
+#~ msgstr "Forbedre fokus …"
+
+#~ msgid "Enhance Focus"
+#~ msgstr "Forbedre fokus"
+
+#~ msgid "Undo"
+#~ msgstr "Angre"
+
+#~ msgid "Find _Duplicates..."
+#~ msgstr "Finn _duplikater …"
+
+#, fuzzy
+#~ msgid "Find duplicated files in the current location"
+#~ msgstr "Kunne ikke åpne lokasjonen"
+
+#~ msgid "_Folders:"
+#~ msgstr "_Mapper:"
+
+#~ msgid "Duplicates:"
+#~ msgstr "Duplikater:"
+
+#~ msgid "Files:"
+#~ msgstr "Filer:"
+
+#~ msgid "No duplicates found."
+#~ msgstr "Ingen duplikater funnet."
+
+#~ msgid "Search for Duplicates"
+#~ msgstr "Søk etter duplikater"
+
+#~ msgid "Find Duplicates"
+#~ msgstr "Finn Duplikater"
+
+#~ msgid "Start _at:"
+#~ msgstr "Start _ved:"
+
+#~ msgid "_Filter:"
+#~ msgstr "_Filter:"
+
+#~ msgid "Find duplicated files."
+#~ msgstr "Finn dupliserte filer."
+
+#, fuzzy
+#~ msgid "leave the newest duplicates"
+#~ msgstr "_Lagre den nye filen som:"
+
+#, fuzzy
+#~ msgid "leave the oldest duplicates"
+#~ msgstr "Endre dato for filen"
+
+#~ msgid "by folder..."
+#~ msgstr "etter mappe …"
+
+#~ msgid "all files"
+#~ msgstr "alle filer"
+
+#~ msgid "no file"
+#~ msgstr "ingen fil"
+
+#~ msgid "%d duplicate"
+#~ msgid_plural "%d duplicates"
+#~ msgstr[0] "%d duplikat"
+#~ msgstr[1] "%d duplikater"
+
+#~ msgid "Searching for duplicates"
+#~ msgstr "Søker etter duplikater"
+
+#~ msgid "%d file remaining"
+#~ msgid_plural "%d files remaining"
+#~ msgstr[0] "%d fil gjenstår"
+#~ msgstr[1] "%d filer gjenstår"
+
+#~ msgid "Getting the file list"
+#~ msgstr "Henter filliste"
+
+#~ msgid "Duplicates"
+#~ msgstr "Duplikater"
+
+#~ msgid "Select"
+#~ msgstr "Velg"
+
+#~ msgid "_Flickr..."
+#~ msgstr "_Flickr..."
+
+#~ msgid "Download photos from Flickr"
+#~ msgstr "Last ned bilder fra Flickr"
+
+#~ msgid "Upload photos to Flickr"
+#~ msgstr "Last opp bilder til Flickr"
+
+#~ msgid "Free space:"
+#~ msgstr "Ledig plass:"
+
+#~ msgid "Safe content"
+#~ msgstr "Trygt innhold"
+
+#~ msgid "_Import"
+#~ msgstr "_importer"
+
+#~ msgid "Could not get the photo list"
+#~ msgstr "Kunne ikke hente bildelisten"
+
+#~ msgid "No album selected"
+#~ msgstr "Ingen album valgt"
+
+#~ msgid "Import from %s"
+#~ msgstr "Importer fra %s"
+
+#~ msgid "Flicker"
+#~ msgstr "Flicker"
+
+#~ msgid "Upload images to Flickr"
+#~ msgstr "Last opp bilder til Flickr"
+
+#~ msgid "Could not save the file"
+#~ msgstr "Kunne ikke lagre filen"
+
+#~ msgid "Could not take a screenshot"
+#~ msgstr "Kunne ikke ta et skjermdump"
+
+#~ msgid "Save Image"
+#~ msgstr "Lagre bilde"
+
+#~ msgctxt "Filename"
+#~ msgid "Screenshot"
+#~ msgstr "Skjermdump"
+
+#~ msgid "--:--"
+#~ msgstr "--.--"
+
+#~ msgid "Faster"
+#~ msgstr "Raskere"
+
+#~ msgid "Play"
+#~ msgstr "Spill"
+
+#~ msgid "Slower"
+#~ msgstr "Saktere"
+
+#~ msgid "Time:"
+#~ msgstr "Tid:"
+
+#~ msgid "Toggle volume"
+#~ msgstr "Slå av/på volum"
+
+#~ msgctxt "time"
+#~ msgid "/"
+#~ msgstr "/"
+
+#~ msgid "Choose a folder"
+#~ msgstr "Velg en mappe"
+
+#~ msgid "Audio/Video support"
+#~ msgstr "Støtte for lyd/video"
+
+#~ msgid "Play audio and video files."
+#~ msgstr "Spill av lyd- og videofiler."
+
+#~ msgid "Screenshot"
+#~ msgstr "Skjermdump"
+
+#~ msgid "Take a screenshot"
+#~ msgstr "Ta et skjermdump"
+
+#~ msgid "Playing video"
+#~ msgstr "Spiller av video"
+
+#~ msgid "Pause"
+#~ msgstr "Pause"
+
+#~ msgid "Video"
+#~ msgstr "Video"
+
+#~ msgid "Audio"
+#~ msgstr "Lyd"
+
+#~ msgid "Artist"
+#~ msgstr "Artist"
+
+#~ msgid "Album"
+#~ msgstr "Album"
+
+#~ msgid "Bitrate"
+#~ msgstr "Bitrate"
+
+#~ msgid "Encoder"
+#~ msgstr "Koder"
+
+#~ msgid "Codec"
+#~ msgstr "Kodek"
+
+#~ msgid "Width"
+#~ msgstr "Bredde"
+
+#~ msgid "Height"
+#~ msgstr "Høyde"
+
+#, fuzzy
+#~ msgid "Sample rate"
+#~ msgstr "Skaler bildet"
+
+#~ msgid "Stereo"
+#~ msgstr "Stereo"
+
+#~ msgid "Mono"
+#~ msgstr "Mono"
+
+#~ msgid "Could not print the selected files"
+#~ msgstr "Kunne ikke skrive ut valgte filer"
+
+#~ msgid "Print the selected images"
+#~ msgstr "Skriv ut valgte bilder"
+
+#~ msgid "Centered"
+#~ msgstr "Sentrert"
+
+#~ msgid "Image"
+#~ msgstr "Bilde"
+
+#~ msgid "Left"
+#~ msgstr "Venstre"
+
+#~ msgid "Position:"
+#~ msgstr "Posisjon:"
+
+#~ msgid "Preview"
+#~ msgstr "Forhåndsvis"
+
+#~ msgid "Rotation:"
+#~ msgstr "Rotering:"
+
+#~ msgid "The event description"
+#~ msgstr "Beskrivelse av hendelsen"
+
+#~ msgid "The total number of files"
+#~ msgstr "Totalt antall filer"
+
+#~ msgid "Top"
+#~ msgstr "Topp"
+
+#~ msgid "Unit:"
+#~ msgstr "Enhet:"
+
+#~ msgid "_Rows:"
+#~ msgstr "_Rader:"
+
+#~ msgid "inches"
+#~ msgstr "tommer"
+
+#~ msgid "millimeters"
+#~ msgstr "millimetre"
+
+#~ msgid "Fonts"
+#~ msgstr "Skrifter"
+
+#~ msgid "Select Caption Font"
+#~ msgstr "Velg en skrift for bildetekst"
+
+#, fuzzy
+#~ msgid "Select Footer Font"
+#~ msgstr "Velg en skrift for bildetekst"
+
+#, fuzzy
+#~ msgid "Select Header Font"
+#~ msgstr "Velg en skrift for bildetekst"
+
+#~ msgid "Page %d of %d"
+#~ msgstr "Side %d av %d"
+
+#~ msgid "Could not print"
+#~ msgstr "Kunne ikke skrive ut"
+
+#~ msgid "Images"
+#~ msgstr "Bilder"
+
+#~ msgid "Loading \"%s\""
+#~ msgstr "Laster «%s»"
+
+#~ msgid "Loading images"
+#~ msgstr "Laster bilder"
+
+#~ msgid "Image print"
+#~ msgstr "Bildeutskrift"
+
+#~ msgid "Rotate Physically"
+#~ msgstr "Roter fysisk"
+
+#, fuzzy
+#~ msgid "Rotate the selected images according to the embedded orientation"
+#~ msgstr "Roter valgte bilder 90° til høyre"
+
+#, fuzzy
+#~ msgid "Reset the EXIF Orientation"
+#~ msgstr "Kunne ikke åpne lokasjonen"
+
+#~ msgid "Image rotation"
+#~ msgstr "Bilderotering"
+
+#~ msgid "Rotate images without data loss."
+#~ msgstr "Roter bilder uten tap av kvalitet."
+
+#~ msgid "Problem transforming the image: %s"
+#~ msgstr "Problem under transformering av bilde: %s"
+
+#~ msgid "_Trim"
+#~ msgstr "_Juster"
+
+#, fuzzy
+#~ msgid ""
+#~ "Possible values are: actual-size, keep-prev, fit-size, fit-size-if-"
+#~ "larger, fit-width, fit-width-if-larger."
+#~ msgstr ""
+#~ "Mulige verdier er: actual_size, fit, keep_prev, fit_if_larger, "
+#~ "fit_width_if_larger."
+
+#, fuzzy
+#~ msgid "Whether to resize the window to fit the size of the image"
+#~ msgstr "Bruk dette vinduet om igjen for å vise andre bilder"
+
+#~ msgid "After loading an image:"
+#~ msgstr "Etter lasting av et bilde:"
+
+#~ msgid "High"
+#~ msgstr "Høy"
+
+#~ msgid "Low"
+#~ msgstr "Lav"
+
+#~ msgid "Transparency _type:"
+#~ msgstr "_Type gjennomsiktighet:"
+
+#~ msgid "_Zoom quality:"
+#~ msgstr "Kvalitet på _zoom"
+
+#~ msgid "Copy Image"
+#~ msgstr "Kopier bilde"
+
+#~ msgid "Paste Image"
+#~ msgstr "Lim inn bilde"
+
+#, fuzzy
+#~ msgid "Paste the image from the clipboard"
+#~ msgstr "Fjern valgte bilder fra katalogen"
+
+#~ msgid "1:1"
+#~ msgstr "1:1"
+
+#~ msgid "Actual size"
+#~ msgstr "Faktisk størrelse"
+
+#~ msgid "Zoom to fit window"
+#~ msgstr "Zoom tilpasset vindu"
+
+#~ msgid "Zoom to fit width"
+#~ msgstr "Zoom tilpasset vindu"
+
+#, fuzzy
+#~ msgid "_Fit Window to Image"
+#~ msgstr "Tilpass til vinduet hvis større"
+
+#, fuzzy
+#~ msgid "Resize the window to the size of the image"
+#~ msgstr "Bruk dette vinduet om igjen for å vise andre bilder"
+
+#~ msgid "Image viewer"
+#~ msgstr "Bildeviser"
+
+#~ msgid "Set to actual size"
+#~ msgstr "Sett til faktisk størrelse"
+
+#~ msgid "Fit to width"
+#~ msgstr "Tilpass til bredde"
+
+#~ msgid "Viewer"
+#~ msgstr "Visning"
+
+#, fuzzy
+#~ msgid "Possible values are: none, file_date, current_date"
+#~ msgstr "Mulige verdier er: none, deflate, jpeg."
+
+#, fuzzy
+#~ msgid "Possible values are: yyyymmdd, yyyymm, yyyy"
+#~ msgstr "Mulige verdier er: mm, in."
+
+#~ msgid "The day of the month"
+#~ msgstr "Dag i måneden"
+
+#~ msgid "The hour"
+#~ msgstr "Timen"
+
+#~ msgid "The minutes"
+#~ msgstr "Minutter"
+
+#~ msgid "The month"
+#~ msgstr "Måneden"
+
+#~ msgid "The seconds"
+#~ msgstr "Sekundene"
+
+#~ msgid "The year"
+#~ msgstr "Året"
+
+#~ msgid "_Destination"
+#~ msgstr "_Mål"
+
+#, fuzzy
+#~ msgid "as _single subfolder"
+#~ msgstr "_Ta med undermapper"
+
+#, fuzzy
+#~ msgid "Invalid Destination"
+#~ msgstr "Mål"
+
+#~ msgid "example: %s"
+#~ msgstr "eksempel: %s"
+
+#, fuzzy
+#~ msgid "File date"
+#~ msgstr "Fil_navn"
+
+#~ msgid "year-month-day"
+#~ msgstr "år-måned-dag"
+
+#~ msgid "year-month"
+#~ msgstr "år-måned"
+
+#~ msgid "year"
+#~ msgstr "år"
+
+#, fuzzy
+#~ msgid "custom format"
+#~ msgstr "_Ta med undermapper"
+
+#~ msgid "Importing files"
+#~ msgstr "Importerer filer"
+
+#~ msgid "No file imported"
+#~ msgstr "Ingen fil importert"
+
+#~ msgid "Could not delete the files"
+#~ msgstr "Kunne ikke slette filene"
+
+#, fuzzy
+#~ msgid "Delete operation not supported."
+#~ msgstr "Bildetypen er ikke støttet: %s"
+
+#~ msgid "Last imported"
+#~ msgstr "Sist importert"
+
+#~ msgid "Personalize..."
+#~ msgstr "Personliggjør..."
+
+#~ msgid "_Skip"
+#~ msgstr "_Hopp over"
+
+#~ msgid "Co_mmands:"
+#~ msgstr "Ko_mmandoer:"
+
+#~ msgid "Commands"
+#~ msgstr "Kommandoer"
+
+#~ msgid "%B"
+#~ msgstr "%B"
+
+#~ msgid "%E"
+#~ msgstr "%E"
+
+#~ msgid "%F"
+#~ msgstr "%F"
+
+#~ msgid "%N"
+#~ msgstr "%N"
+
+#~ msgid "%P"
+#~ msgstr "%P"
+
+#~ msgid "%U"
+#~ msgstr "%U"
+
+#, fuzzy
+#~ msgid "The file basename"
+#~ msgstr "Ta med filnavn:"
+
+#, fuzzy
+#~ msgid "The file extension"
+#~ msgstr "Bestem etter filtype"
+
+#, fuzzy
+#~ msgid "The file path"
+#~ msgstr "Sti _til fil"
+
+#, fuzzy
+#~ msgid "The parent folder path"
+#~ msgstr "Flytt aktiv mappe"
+
+#~ msgid "_Command:"
+#~ msgstr "_Kommando:"
+
+#~ msgid "Script"
+#~ msgstr "Skript"
+
+#~ msgid "Show"
+#~ msgstr "Vis:"
+
+#, fuzzy
+#~ msgid "Could not save the script"
+#~ msgstr "Kunne ikke flytte oppføringene:"
+
+#~ msgid "New Command"
+#~ msgstr "Ny kommando"
+
+#~ msgid "Edit Command"
+#~ msgstr "Rediger kommando"
+
+#~ msgid "Enter a value:"
+#~ msgstr "Oppgi en verdi:"
+
+#, fuzzy
+#~ msgid "No name specified"
+#~ msgstr "Ingen kamera funnet"
+
+#, fuzzy
+#~ msgctxt "Cardinal point"
+#~ msgid "N"
+#~ msgstr "%N"
+
+#, fuzzy
+#~ msgctxt "Cardinal point"
+#~ msgid "E"
+#~ msgstr "%E"
+
+#, fuzzy
+#~ msgid "1 megabyte file size"
+#~ msgstr "filstørrelse"
+
+#, fuzzy
+#~ msgid "_Resize to:"
+#~ msgstr "Endre størrelse"
+
+#, fuzzy
+#~ msgid "_Scramble filenames"
+#~ msgstr "Behold originalt filnavn"
+
+#, fuzzy
+#~ msgid "_Container:"
+#~ msgstr "_Fortsett"
+
+#, fuzzy
+#~ msgid "2 megabyte file size"
+#~ msgstr "filstørrelse"
+
+#, fuzzy
+#~ msgid "After importing from a device:"
+#~ msgstr "Etter lasting av et bilde:"
+
+#, fuzzy
+#~ msgid "_Rotate the images physically"
+#~ msgstr "_Roter bilder fysisk"
+
+#~ msgid "S_how:"
+#~ msgstr "V_is:"
+
+#, fuzzy
+#~ msgid "_Delete the imported files from the source"
+#~ msgstr "Slett importerte bilder fra kameraet"
+
+#~ msgid "_Event:"
+#~ msgstr "H_endelse:"
+
+#~ msgid "Files to import: %d (%s)"
+#~ msgstr "Filer som skal importeres: %d (%s)"
+
+#~ msgid "Could not load the folder"
+#~ msgstr "Kunne ikke laste mappen"
+
+#~ msgid "Getting folder listing..."
+#~ msgstr "Henter mappeliste..."
+
+#~ msgid "Empty"
+#~ msgstr "Tom"
+
+#, fuzzy
+#~ msgid "Import photos from removable devices."
+#~ msgstr "Importer bilder fra et digitalt kamera"
+
+#, fuzzy
+#~ msgid "_Picasa Web Album..."
+#~ msgstr "Opprett _web-album..."
+
+#~ msgid "_Albums:"
+#~ msgstr "_Album:"
+
+#~ msgid "_Album:"
+#~ msgstr "_Album:"
+
+#~ msgid "_E-Mail:"
+#~ msgstr "_E-post:"
+
+#~ msgid "_Password:"
+#~ msgstr "_Passord:"
+
+#~ msgid "Public"
+#~ msgstr "Offentlig"
+
+#~ msgid "Could not get the album list"
+#~ msgstr "Kunne ikke hente albumlisten"
+
+#, fuzzy
+#~ msgid "Picasa Web Album"
+#~ msgstr "Web-album"
+
+#~ msgid "Account"
+#~ msgstr "Konto"
+
+#~ msgid "Could not load the file"
+#~ msgstr "Kunne ikke laste filen"
+
+#, fuzzy
+#~ msgid "Picasa Web Albums"
+#~ msgstr "Web-album"
+
+#, fuzzy
+#~ msgid "Possible values are: jpeg, jpg."
+#~ msgstr "Mulige verdier er: high, low."
+
+#~ msgid "Possible values are: none, deflate, jpeg."
+#~ msgstr "Mulige verdier er: none, deflate, jpeg."
+
+#, fuzzy
+#~ msgid "Possible values are: tiff, tif."
+#~ msgstr "Mulige verdier er: high, low."
+
+#~ msgid "Opti_mize"
+#~ msgstr "Opti_mer"
+
+#, fuzzy
+#~ msgid "_Default extension:"
+#~ msgstr "Bestem etter filtype"
+
+#~ msgid "_Progressive"
+#~ msgstr "_Progressiv"
+
+#~ msgid "_Quality:"
+#~ msgstr "_Kvalitet:"
+
+#~ msgid "_Smoothing:"
+#~ msgstr "_Utjevning:"
+
+#~ msgid "Compression _level:"
+#~ msgstr "Kompresjons_nivå:"
+
+#~ msgid "_RLE compression"
+#~ msgstr "_RLE-kompresjon"
+
+#~ msgid "Compression"
+#~ msgstr "Kompresjon"
+
+#~ msgid "No_rmal (Deflate)"
+#~ msgstr "No_rmal (deflate)"
+
+#~ msgid "Resolution"
+#~ msgstr "Oppløsning"
+
+#~ msgid "_Loss compression (JPEG)"
+#~ msgstr "_Kompresjon med tap (JPEG)"
+
+#~ msgid "_No compression"
+#~ msgstr "I_ngen kompresjon"
+
+#~ msgid "dpi"
+#~ msgstr "dpi"
+
+#~ msgid "JPEG"
+#~ msgstr "JPEG"
+
+#~ msgid "PNG"
+#~ msgstr "PNG"
+
+#~ msgid "Insufficient memory"
+#~ msgstr "Ikke nok minne"
+
+#~ msgid "TGA"
+#~ msgstr "TGA"
+
+#~ msgid "TIFF"
+#~ msgstr "TIFF"
+
+#~ msgid "Save images"
+#~ msgstr "Lagre bilder"
+
+#~ msgid "_X:"
+#~ msgstr "_X:"
+
+#~ msgid "_Y:"
+#~ msgstr "_Y:"
+
+#~ msgid "Red Eye Removal..."
+#~ msgstr "Fjerning av røde øyne..."
+
+#~ msgid "Red Eye Removal"
+#~ msgstr "Fjerning av røde øyne"
+
+#~ msgid "Red-eye removal"
+#~ msgstr "Fjerning av røde øyne"
+
+#, fuzzy
+#~ msgid "Possible values: 0 (none), 1 (lower), 2 (upper)"
+#~ msgstr "Mulige verdier er: none, deflate, jpeg."
+
+#, fuzzy
+#~ msgid "format:"
+#~ msgstr "Format"
+
+#~ msgid "%A{ identifier }"
+#~ msgstr "%A{ identifikator }"
+
+#~ msgid "%M{ format }"
+#~ msgstr "%M{ format }"
+
+#~ msgid "Cas_e:"
+#~ msgstr "_Store/små bokstaver:"
+
+#, fuzzy
+#~ msgid "Edit template"
+#~ msgstr "Rediger filter"
+
+#~ msgid "Re_verse Order"
+#~ msgstr "Om_vendt rekkefølge"
+
+#~ msgid "Rename"
+#~ msgstr "Endre navn"
+
+#, fuzzy
+#~ msgid "The modification date"
+#~ msgstr "etter endrings_tidspunkt"
+
+#, fuzzy
+#~ msgid "The original enumerator"
+#~ msgstr "_Behold originale filnavn"
+
+#, fuzzy
+#~ msgid "The original extension"
+#~ msgstr "Bestem etter filtype"
+
+#~ msgid "The original filename"
+#~ msgstr "Behold originalt filnavn"
+
+#~ msgid "_Template:"
+#~ msgstr "_Mal:"
+
+#, fuzzy
+#~ msgid "Original filename"
+#~ msgstr "Behold originalt filnavn"
+
+#, fuzzy
+#~ msgid "Original extension"
+#~ msgstr "Bestem etter filtype"
+
+#, fuzzy
+#~ msgid "Original enumerator"
+#~ msgstr "_Behold originale filnavn"
+
+#, fuzzy
+#~ msgid "Modification date"
+#~ msgstr "etter endrings_tidspunkt"
+
+#, fuzzy
+#~ msgid "Digitalization date"
+#~ msgstr "Filopprettingsdato"
+
+#, fuzzy
+#~ msgid "File attribute"
+#~ msgstr "Fil_navn"
+
+#~ msgid "Could not rename the files"
+#~ msgstr "Kunne ikke endre navn på filene"
+
+#, fuzzy
+#~ msgid "Could not save the template"
+#~ msgstr "Kunne ikke lagre filter"
+
+#~ msgid "Old Name"
+#~ msgstr "Gammelt navn"
+
+#~ msgid "New Name"
+#~ msgstr "Nytt navn"
+
+#, fuzzy
+#~ msgid "Keep original case"
+#~ msgstr "Behold originale filnavn"
+
+#, fuzzy
+#~ msgid "Convert to lower-case"
+#~ msgstr "Konverter format"
+
+#, fuzzy
+#~ msgid "Convert to upper-case"
+#~ msgstr "Konverter format"
+
+#~ msgid "Renaming files"
+#~ msgstr "Endrer navn på filer"
+
+#~ msgid "Rename files"
+#~ msgstr "Endre navn på filer"
+
+#, fuzzy
+#~ msgid "Rename series of files."
+#~ msgstr "Endre navn på valgte bilder"
+
+#~ msgid "Resize Images..."
+#~ msgstr "Endre størrelse på bilder..."
+
+#~ msgid "Resize the selected images"
+#~ msgstr "Endre størrelse på valgte bilder"
+
+#, fuzzy
+#~ msgid "Possible values: pixels, percentage"
+#~ msgstr "Mulige verdier er: pixels, percentage."
+
+#~ msgid "New dimensions"
+#~ msgstr "Nye dimensjoner"
+
+#~ msgid "Resize Images"
+#~ msgstr "Endre størrelse på bilder"
+
+#~ msgid "_Height:"
+#~ msgstr "_Høyde:"
+
+#, fuzzy
+#~ msgid "_Preserve original aspect ratios"
+#~ msgstr "I_nverter aspektraten"
+
+#~ msgid "pixel"
+#~ msgstr "piksel"
+
+#~ msgid "Resizing images"
+#~ msgstr "Endrer størrelse på bilder"
+
+#, fuzzy
+#~ msgid "Keep the original format"
+#~ msgstr "Behold originale filnavn"
+
+#~ msgid "Resize images"
+#~ msgstr "Endre størrelse på bilder"
+
+#, fuzzy
+#~ msgid "Resize series of images."
+#~ msgstr "Endre størrelse på bildet"
+
+#~ msgid "Could not perform the search"
+#~ msgstr "Kunne ikke utføre søket"
+
+#~ msgid "Search Result"
+#~ msgstr "Søkeresultat"
+
+#~ msgid "Find"
+#~ msgstr "Finn"
+
+#~ msgid "Find files"
+#~ msgstr "Finn filer"
+
+#~ msgid "Search again"
+#~ msgstr "Søk igjen"
+
+#~ msgid "all the following rules"
+#~ msgstr "alle følgende regler"
+
+#, fuzzy
+#~ msgid "any of the following rules"
+#~ msgstr "<b>Endre følgende verdierr:</b>"
+
+#~ msgid "Searching..."
+#~ msgstr "Søker..."
+
+#, fuzzy
+#~ msgid "Cancel the operation"
+#~ msgstr "Avbryt operasjon"
+
+#~ msgid "View as a slideshow"
+#~ msgstr "Vis som lysbildevisning"
+
+#~ msgid "Slideshow"
+#~ msgstr "Lysbildevisning"
+
+#~ msgid "Playlist"
+#~ msgstr "Spilleliste"
+
+#, fuzzy
+#~ msgid "R_andom order"
+#~ msgstr "Tilfeldig"
+
+#~ msgid "_Personalize"
+#~ msgstr "_Personliggjør"
+
+#~ msgid "_Restart when finished"
+#~ msgstr "Sta_rt på nytt når fullført"
+
+#, fuzzy
+#~ msgid "Playing slideshow"
+#~ msgstr "Lysbildevisning"
+
+#~ msgid "Choose the files to play"
+#~ msgstr "Velg filer som skal spilles av"
+
+#~ msgid "Audio files"
+#~ msgstr "Lydfiler"
+
+#~ msgid "Random"
+#~ msgstr "Tilfeldig"
+
+#, fuzzy
+#~ msgid "Fade in"
+#~ msgstr "Skygg inn"
+
+#~ msgid "View images as a slideshow."
+#~ msgstr "Vis bilder som lysbildevisning."
+
+#, fuzzy
+#~ msgid "_Web Album..."
+#~ msgstr "Opprett _web-album..."
+
+#, fuzzy
+#~ msgid "Create a static web album"
+#~ msgstr "Lager nytt album"
+
+#, fuzzy
+#~ msgid "Click to view the image"
+#~ msgstr "Kunne ikke lagre filen"
+
+#, fuzzy
+#~ msgid "Image %d of %d"
+#~ msgstr "Side %d av %d"
+
+#, fuzzy
+#~ msgid "View the next image"
+#~ msgstr "Vis neste bilde"
+
+#, fuzzy
+#~ msgid "View the next page"
+#~ msgstr "Vis neste bilde"
+
+#, fuzzy
+#~ msgid "View the previous image"
+#~ msgstr "Vis forrige bilde"
+
+#, fuzzy
+#~ msgid "View the previous page"
+#~ msgstr "Vis forrige bilde"
+
+#, fuzzy
+#~ msgid "%C"
+#~ msgstr "%"
+
+#, fuzzy
+#~ msgid "%I"
+#~ msgstr "%"
+
+#, fuzzy
+#~ msgid "%i"
+#~ msgstr "%"
+
+#, fuzzy
+#~ msgid "Image Attributes"
+#~ msgstr "Bildeutskrift"
+
+#, fuzzy
+#~ msgid "Show the following attributes:"
+#~ msgstr "Endre følgende verdier:"
+
+#, fuzzy
+#~ msgid "The file comment"
+#~ msgstr "Sti _til fil"
+
+#, fuzzy
+#~ msgid "Thumbnail Caption"
+#~ msgstr "_Størrelse på miniatyrer:"
+
+#, fuzzy
+#~ msgid "Web Album"
+#~ msgstr "Nytt album"
+
+#, fuzzy
+#~ msgid "_Copy originals to destination"
+#~ msgstr "_Vis målmappe"
+
+#, fuzzy
+#~ msgid "_Resize if larger than:"
+#~ msgstr "Endre størrelse på bilder"
+
+#, fuzzy
+#~ msgid "Could not show the destination"
+#~ msgstr "Kunne ikke åpne lokasjonen"
+
+#, fuzzy
+#~ msgid "Saving images"
+#~ msgstr "Lagre bilder"
+
+#, fuzzy
+#~ msgid "Copying original images"
+#~ msgstr "Kopierer filer"
+
+#, fuzzy
+#~ msgid "Could not find the style folder"
+#~ msgstr "Kunne ikke slette mappen"
+
+#, fuzzy
+#~ msgid "Could not create a temporary folder"
+#~ msgstr "Kunne ikke opprette mappen"
+
+#, fuzzy
+#~ msgid "Create static web albums."
+#~ msgstr "Lager nytt album"
+
+#, fuzzy
+#~ msgid "Web Albums"
+#~ msgstr "Web-album"
+
+#~ msgid "Filter"
+#~ msgstr "Filter"
+
+#~ msgid "Could not save the filter"
+#~ msgstr "Kunne ikke lagre filter"
+
+#~ msgid "New Filter"
+#~ msgstr "Nytt filter"
+
+#~ msgid "Edit Filter"
+#~ msgstr "Rediger filter"
+
+#~ msgid "All"
+#~ msgstr "Alle"
+
+#, fuzzy
+#~ msgid "Viewers"
+#~ msgstr "Visning"
+
+#~ msgid "Metadata"
+#~ msgstr "Metadata"
+
+#, fuzzy
+#~ msgid "File tools"
+#~ msgstr "Bildeverktøy"
+
+#, fuzzy
+#~ msgid "List tools"
+#~ msgstr "_Begrens til"
+
+#, fuzzy
+#~ msgid "Importers"
+#~ msgstr "_importer"
+
+#~ msgid "Could not activate the extension"
+#~ msgstr "Kunne ikke aktivere utvidelsen"
+
+#~ msgid "Could not deactivate the extension"
+#~ msgstr "Kunne ikke deaktivere utvidelsen"
+
+#~ msgid "Extensions"
+#~ msgstr "Utvidelser"
+
+#~ msgid "Restart required"
+#~ msgstr "Omstart kreves"
+
+#~ msgid "_Continue"
+#~ msgstr "_Fortsett"
+
+#~ msgid "_Restart"
+#~ msgstr "Sta_rt på nytt"
+
+#~ msgid "File _Format: %s"
+#~ msgstr "Fil_format: %s"
+
+#~ msgid "All Files"
+#~ msgstr "Alle filer"
+
+#~ msgid "All Supported Files"
+#~ msgstr "Alle støttede filer"
+
+#~ msgid "File Format"
+#~ msgstr "Filformat"
+
+#~ msgid "Extension(s)"
+#~ msgstr "Utvidelse(r)"
+
+#~ msgid "Copying \"%s\" to \"%s\""
+#~ msgstr "Kopierer «%s» til «%s»"
+
+#~ msgid "Moving files"
+#~ msgstr "Flytter filer"
+
+#~ msgid "Copying files"
+#~ msgstr "Kopierer filer"
+
+#~ msgid "Getting file information"
+#~ msgstr "Henter filinformasjon"
+
+#~ msgctxt "long time format"
+#~ msgid "%d:%02d:%02d"
+#~ msgstr "%d.%02d.%02d"
+
+#~ msgctxt "short time format"
+#~ msgid "%d:%02d"
+#~ msgstr "%d.%02d"
+
+#~ msgid "An image viewer and browser for GNOME."
+#~ msgstr "Et program for å vise og bla gjennom bilder for GNOME."
+
+#~ msgid "_File"
+#~ msgstr "_Fil"
+
+#~ msgid "Open _With"
+#~ msgstr "Åpne _med"
+
+#~ msgid "I_mport From"
+#~ msgstr "I_mporter fra"
+
+#~ msgid "E_xport To"
+#~ msgstr "E_ksporter til"
+
+#~ msgid "New _Window"
+#~ msgstr "Nytt _vindu"
+
+#~ msgid "Open another window"
+#~ msgstr "Åpne et nytt vindu"
+
+#~ msgid "Open in New Window"
+#~ msgstr "Åpne i nytt vindu"
+
+#~ msgid "Edit various preferences"
+#~ msgstr "Rediger forskjellige brukervalg"
+
+#~ msgid "_Sort By..."
+#~ msgstr "_Sorter etter..."
+
+#, fuzzy
+#~ msgid "Stop loading the current location"
+#~ msgstr "Kunne ikke åpne lokasjonen"
+
+#, fuzzy
+#~ msgid "Reload the current location"
+#~ msgstr "Kunne ikke åpne lokasjonen"
+
+#~ msgid "View previous image"
+#~ msgstr "Vis forrige bilde"
+
+#~ msgid "View next image"
+#~ msgstr "Vis neste bilde"
+
+#, fuzzy
+#~ msgid "Switch to fullscreen"
+#~ msgstr "Start i fullskjermmodus"
+
+#~ msgid "Go up one level"
+#~ msgstr "Gå opp et nivå"
+
+#~ msgid "_Delete History"
+#~ msgstr "_Slett historikk"
+
+#~ msgid "Delete the list of visited locations"
+#~ msgstr "Slett listen med besøkte lokasjoner"
+
+#~ msgid "View the folders"
+#~ msgstr "Vis mapper"
+
+#~ msgid "Show information about gthumb"
+#~ msgstr "Vis informasjon om gThumb"
+
+#~ msgid "Display the gthumb Manual"
+#~ msgstr "Vis brukerhåndboken for gThumb"
+
+#~ msgid "_Keyboard Shortcuts"
+#~ msgstr "_Tastatursnarveier"
+
+#~ msgid "_Filterbar"
+#~ msgstr "_Filtreringslinje"
+
+#~ msgid "View or hide the filterbar of this window"
+#~ msgstr "Vis eller skjul filterverktøylinjen for dette vinduet"
+
+#~ msgid "_Sidebar"
+#~ msgstr "_Sidelinje"
+
+#~ msgid "View or hide the sidebar of this window"
+#~ msgstr "Vis eller skjul sidelinjen for dette vinduet"
+
+#, fuzzy
+#~ msgid "_Thumbnail Pane"
+#~ msgstr "_Miniatyrer"
+
+#, fuzzy
+#~ msgid "View or hide the thumbnail pane in viewer mode"
+#~ msgstr "Vis eller skjul statuslinjen i dette vinduet"
+
+#~ msgid "_Thumbnails"
+#~ msgstr "_Miniatyrer"
+
+#~ msgid "View thumbnails"
+#~ msgstr "Vis miniatyrer"
+
+#, fuzzy
+#~ msgid "_Hidden Files"
+#~ msgstr "Vis _skjulte filer"
+
+#~ msgid "Show hidden files and folders"
+#~ msgstr "Vis skjulte filer og mapper"
+
+#~ msgid "View file properties"
+#~ msgstr "Vis egenskaper for fil"
+
+#~ msgid "Edit"
+#~ msgstr "Rediger"
+
+#~ msgid "Edit file"
+#~ msgstr "Rediger fil"
+
+#~ msgid "Open %s"
+#~ msgstr "Åpne %s"
+
+#~ msgid "[modified]"
+#~ msgstr "[endret]"
+
+#~ msgid "gthumb"
+#~ msgstr "gthumb"
+
+#, fuzzy
+#~ msgid "%d file selected (%s)"
+#~ msgid_plural "%d files selected (%s)"
+#~ msgstr[0] "%d fil (%s)"
+#~ msgstr[1] "%d filer (%s)"
+
+#~ msgid "Could not load the position \"%s\""
+#~ msgstr "Kan ikke laste posisjon «%s»"
+
+#~ msgid "Save changes to file '%s'?"
+#~ msgstr "Lagre endringer i fil «%s»?"
+
+#~ msgid "Do _Not Save"
+#~ msgstr "I_kke lagre"
+
+#, fuzzy
+#~ msgid "Could not change name"
+#~ msgstr "Kunne ikke kopiere bildet:"
+
+#~ msgid "Modified"
+#~ msgstr "Endret"
+
+#, fuzzy
+#~ msgid "View the list of visited locations"
+#~ msgstr "Slett listen med besøkte lokasjoner"
+
+#, fuzzy
+#~ msgid "View the list of upper locations"
+#~ msgstr "Slett listen med besøkte lokasjoner"
+
+#, fuzzy
+#~ msgid "File type not supported"
+#~ msgstr "Bildetypen er ikke støttet: %s"
+
+#, fuzzy
+#~ msgid "No suitable module found"
+#~ msgstr "Ingen bilder funnet"
+
+#, fuzzy
+#~ msgid "Could not open the module `%s`: %s"
+#~ msgstr "Kan ikke flytte mappen «%s»: %s"
+
+#~ msgid "Home Folder"
+#~ msgstr "Hjemmemappe"
+
+#~ msgid "File System"
+#~ msgstr "Filsystem"
+
+#, fuzzy
+#~ msgid ""
+#~ "The files cannot be moved to the Trash. Do you want to delete them "
+#~ "permanently?"
+#~ msgstr ""
+#~ "Bildene kan ikke flyttes til søppelkurven. Vil du slette dem permanent?"
+
+#~ msgid "Could not move the files to the Trash"
+#~ msgstr "Kunne ikke flytte filene til papirkurven"
+
+#~ msgid "Are you sure you want to move \"%s\" to trash?"
+#~ msgstr "Er du sikker på at du vil flytte «%s» til papirkurven?"
+
+#, fuzzy
+#~ msgid "Hide the filterbar"
+#~ msgstr "Vis mapper"
+
+#~ msgid "kB"
+#~ msgstr "kB"
+
+#~ msgid "MB"
+#~ msgstr "MB"
+
+#~ msgid "GB"
+#~ msgstr "GB"
+
+#~ msgid "files"
+#~ msgstr "filer"
+
+#~ msgid "ascending"
+#~ msgstr "stigende"
+
+#~ msgid "descending"
+#~ msgstr "synkende"
+
+#~ msgid "No limit specified"
+#~ msgstr "Ingen grense oppgitt"
+
+#~ msgid "Loading..."
+#~ msgstr "Laster..."
+
+#, fuzzy
+#~ msgid "Channel:"
+#~ msgstr "Kanaler"
+
+#, fuzzy
+#~ msgid "Reading file information"
+#~ msgstr "Henter filinformasjon"
+
+#~ msgid "File"
+#~ msgstr "Fil"
+
+#~ msgid "Name"
+#~ msgstr "Navn"
+
+#~ msgid "Size"
+#~ msgstr "Størrelse"
+
+#~ msgid "Full Name"
+#~ msgstr "Fullt navn"
+
+#~ msgid "Duration"
+#~ msgstr "Varighet"
+
+#~ msgid "file name"
+#~ msgstr "filnavn"
+
+#, fuzzy
+#~ msgid "file path"
+#~ msgstr "Sti _til fil"
+
+#~ msgid "file size"
+#~ msgstr "filstørrelse"
+
+#~ msgid "file modified date"
+#~ msgstr "tid for endring"
+
+#~ msgid "no sorting"
+#~ msgstr "ingen sortering"
+
+#, fuzzy
+#~ msgid "dimensions"
+#~ msgstr "Dimensjoner"
+
+#~ msgid "Media"
+#~ msgstr "Medie"
+
+#~ msgid "Text Files"
+#~ msgstr "Tekstfiler"
+
+#~ msgid "Filename"
+#~ msgstr "Filnavn"
+
+#, fuzzy
+#~ msgid "Description (embedded)"
+#~ msgstr "Beskrivelse"
+
+#, fuzzy
+#~ msgid "Could not rename the file"
+#~ msgstr "Kunne ikke endre navn på filene"
+
+#~ msgid "Cancel operation"
+#~ msgstr "Avbryt operasjon"
+
+#~ msgid "Create tag «%s»"
+#~ msgstr "Lag tagg «%s»"
+
+#~ msgid "Holidays"
+#~ msgstr "Ferier"
+
+#~ msgid "Temporary"
+#~ msgstr "Midlertidig"
+
+#~ msgid "Screenshots"
+#~ msgstr "Skjermdump"
+
+#~ msgid "Science"
+#~ msgstr "Vitenskap"
+
+#~ msgid "Favorite"
+#~ msgstr "Favoritt"
+
+#~ msgid "Important"
+#~ msgstr "Viktig"
+
+#~ msgid "GNOME"
+#~ msgstr "GNOME"
+
+#~ msgid "Games"
+#~ msgstr "Spill"
+
+#~ msgid "Birthday"
+#~ msgstr "Fødselsdag"
+
+#~ msgid "Astronomy"
+#~ msgstr "Astronomi"
+
+#~ msgid "Family"
+#~ msgstr "Familie"
+
+#~ msgid "is"
+#~ msgstr "er"
+
+#, fuzzy
+#~ msgid "is only"
+#~ msgstr "Kun ikoner"
+
+#~ msgid "is not"
+#~ msgstr "er ikke"
+
+#~ msgid "Add a new rule"
+#~ msgstr "Legg til en ny regel"
+
+#~ msgid "Remove this rule"
+#~ msgstr "Endre denne regelen"
+
+#~ msgid "contains"
+#~ msgstr "inneholder"
+
+#~ msgid "starts with"
+#~ msgstr "starter med"
+
+#~ msgid "ends with"
+#~ msgstr "slutter med"
+
+#~ msgid "does not contain"
+#~ msgstr "inneholder ikke"
+
+#~ msgid "matches"
+#~ msgstr "er lik"
+
+#~ msgid "is lower than"
+#~ msgstr "er lavere enn"
+
+#~ msgid "is greater than"
+#~ msgstr "er større enn"
+
+#~ msgid "is equal to"
+#~ msgstr "er lik"
+
+#~ msgid "is before"
+#~ msgstr "er før"
+
+#~ msgid "is after"
+#~ msgstr "er etter"
+
+#~ msgid "Today"
+#~ msgstr "I dag"
+
+#~ msgid "Now"
+#~ msgstr "Nå"
+
+#~ msgid "Close this window"
+#~ msgstr "Lukk dette vinduet"
+
+#~ msgid "Could not display help"
+#~ msgstr "Kunne ikke vise hjelp"
+
+#~ msgid "Could not launch the application"
+#~ msgstr "Kunne ikke starte programmet"
+
+#~ msgid "Open a new window"
+#~ msgstr "Åpne et nytt vindu"
+
+#~ msgid "Automatically start a slideshow"
+#~ msgstr "Start lysbildevisning automatisk"
+
+#~ msgid "Automatically import digital camera photos"
+#~ msgstr "Importer bilder dra digitalt kamera automatisk"
+
+#~ msgid "Show version"
+#~ msgstr "Vis versjon"
+
+#~ msgid "- Image browser and viewer"
+#~ msgstr "- Bla gjennom og se på bilder"
+
+#~ msgid "Could not find a suitable module to save the image as \"%s\""
+#~ msgstr "Kunne ikke finne en passende modul for å lagre bildet som «%s»"
