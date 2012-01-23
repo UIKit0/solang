@@ -1,7 +1,7 @@
 # Solang's Japanese translation.
 # Copyright (C) 2010 Solang's authors.
 # This file is distributed under the same license as the Solang package.
-# Hajime Taira <htaira@redhat.com>, 2010.
+# Hajime Taira <htaira@redhat.com>, 2010, 2011.
 # Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2010.
 #
 msgid ""
@@ -9,9 +9,9 @@ msgstr ""
 "Project-Id-Version: solang master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=solang&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2011-11-06 13:46+0000\n"
-"PO-Revision-Date: 2011-11-22 12:32+0900\n"
-"Last-Translator: Jiro Matsuzawa <jmatsuzawa@src.gnome.org>\n"
+"POT-Creation-Date: 2011-11-22 16:39+0000\n"
+"PO-Revision-Date: 2012-01-21 18:57+0900\n"
+"Last-Translator: Hajime Taira <htaira@redhat.com>\n"
 "Language-Team: Japanese <htaira@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -130,7 +130,7 @@ msgstr "レンズ焦点距離"
 
 #: ../src/attribute/basic-exif-view.cpp:231
 msgid "White balance"
-msgstr "露出"
+msgstr "ホワイトバランス"
 
 #: ../src/attribute/date-manager.cpp:50
 msgid "Picture Taken Date"
@@ -154,11 +154,11 @@ msgstr "検索"
 
 #: ../src/attribute/search-manager.cpp:66
 msgid "Select _All"
-msgstr "全て選択(_A)"
+msgstr "すべて選択(_A)"
 
 #: ../src/attribute/search-manager.cpp:67
 msgid "Select all the filters in this list"
-msgstr "このリストのフィルターを全て選択"
+msgstr "このリストのフィルターをすべて選択"
 
 #: ../src/attribute/search-manager.cpp:75
 msgid "_Remove"
@@ -198,7 +198,7 @@ msgstr "選択したものにタグを削除(_R)"
 
 #: ../src/attribute/tag-manager.cpp:144
 msgid "_Show All Tags"
-msgstr "全てのタグを表示(_S)"
+msgstr "すべてのタグを表示(_S)"
 
 #: ../src/attribute/tag-new-dialog.cpp:39
 #: ../src/attribute/tag-new-dialog.cpp:69
@@ -240,27 +240,27 @@ msgstr "オン"
 #: ../src/common/exif-data.cpp:199
 msgctxt "Metering mode"
 msgid "Average"
-msgstr "平均"
+msgstr "平均測光"
 
 #: ../src/common/exif-data.cpp:204
 msgctxt "Metering mode"
 msgid "Center Weighted Average"
-msgstr "中央重心"
+msgstr "中央部重点測光"
 
 #: ../src/common/exif-data.cpp:208
 msgctxt "Metering mode"
 msgid "Spot"
-msgstr "スポット"
+msgstr "スポット測光"
 
 #: ../src/common/exif-data.cpp:212
 msgctxt "Metering mode"
 msgid "Multi-spot"
-msgstr "マルチスポット"
+msgstr "マルチスポット測光"
 
 #: ../src/common/exif-data.cpp:216
 msgctxt "Metering mode"
 msgid "Pattern"
-msgstr "分割測光"
+msgstr "多分割測光"
 
 #: ../src/common/exif-data.cpp:220
 msgctxt "Metering mode"
@@ -270,12 +270,12 @@ msgstr "部分測光"
 #: ../src/common/exif-data.cpp:236
 msgctxt "White balance"
 msgid "Automatic"
-msgstr "自動"
+msgstr "オート"
 
 #: ../src/common/exif-data.cpp:240
 msgctxt "White balance"
 msgid "Manual"
-msgstr "手動"
+msgstr "マニュアル"
 
 #: ../src/common/histogram-viewer.cpp:38
 msgid "Type"
@@ -612,7 +612,7 @@ msgstr "前の写真へ(_P)"
 #: ../src/renderer/slideshow-renderer.cpp:170
 #: ../src/renderer/slideshow-renderer.cpp:214
 msgid "Go to the previous photo in the collection"
-msgstr "このコレクションの前の写真に戻る"
+msgstr "このコレクションの前の写真を表示する"
 
 #: ../src/renderer/enlarged-renderer.cpp:389
 #: ../src/renderer/enlarged-renderer.cpp:429
@@ -624,7 +624,7 @@ msgstr "次の写真へ(_N)"
 #: ../src/renderer/slideshow-renderer.cpp:179
 #: ../src/renderer/slideshow-renderer.cpp:223
 msgid "Go to the next photo in the collection"
-msgstr "このコレクションの次の写真へ行く"
+msgstr "このコレクションの次の写真を表示する"
 
 #: ../src/renderer/enlarged-renderer.cpp:404
 #: ../src/renderer/enlarged-renderer.cpp:437
@@ -636,7 +636,7 @@ msgstr "最初の写真(_F)"
 #: ../src/renderer/slideshow-renderer.cpp:162
 #: ../src/renderer/slideshow-renderer.cpp:206
 msgid "Go to the first photo in the collection"
-msgstr "このコレクションの最初の写真へ戻る"
+msgstr "このコレクションの最初の写真を表示する"
 
 #: ../src/renderer/enlarged-renderer.cpp:412
 #: ../src/renderer/enlarged-renderer.cpp:445
@@ -648,7 +648,7 @@ msgstr "最後の写真(_L)"
 #: ../src/renderer/slideshow-renderer.cpp:187
 #: ../src/renderer/slideshow-renderer.cpp:231
 msgid "Go to the last photo in the collection"
-msgstr "このコレクションの最後の写真に行く"
+msgstr "このコレクションの最後の写真を表示する"
 
 #: ../src/renderer/slideshow-renderer.cpp:161
 #: ../src/renderer/slideshow-renderer.cpp:205
