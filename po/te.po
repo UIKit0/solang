@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=solang&keywords=I18N+L10N&component=General\n"
 "POT-Creation-Date: 2011-07-08 20:48+0000\n"
-"PO-Revision-Date: 2012-03-17 01:11+0530\n"
+"PO-Revision-Date: 2012-03-17 01:16+0530\n"
 "Last-Translator: Praveen Illa <mail2ipn@gmail.com>\n"
 "Language-Team: Telugu <indlinux-telugu@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -30,7 +30,7 @@ msgstr "మీ ఛాయాచిత్రాలను పంచుకోండ�
 
 #: ../data/solang.desktop.in.in.h:3
 msgid "Photo Manager"
-msgstr "ఛాయాచిత్ర నిర్వాహకి"
+msgstr "ఛాయాచిత్ర నిర్వాహకం"
 
 #: ../src/application/main-window.cpp:226
 msgid "_Photo"
